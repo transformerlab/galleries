@@ -33,7 +33,8 @@
                     "type": "string",
                     "enum": [
                         "LlamaForCausalLM",
-                        "T5ForConditionalGeneration"
+                        "T5ForConditionalGeneration",
+                        "FalconForCausalLM"
                     ]
                 },
                 "huggingface_repo": {

@@ -66,6 +66,50 @@
         }
     },
     {
+        "uniqueID": "tiiuae/falcon-7b",
+        "name": "Falcon 7b",
+        "description": "Best overall smaller model. Fast responses. Instruction based. Trained by TII. Licensed for commercial use.",
+        "parameters": "7B",
+        "context": "4k",
+        "architecture": "FalconForCausalLM",
+        "huggingface_repo": "tiiuae/falcon-7b",
+        "transformers_version": "4.27.4",
+        "license": "Apache License 2.0",
+        "logo": "https://falconllm.tii.ae/assets/images/logo.svg",
+        "author": {
+            "name": "TII",
+            "url": "https://falconllm.tii.ae/index.html",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/tiiuae/falcon-7b",
+            "downloadUrl": "https://huggingface.co/tiiuae/falcon-7b",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "tiiuae/falcon-7b-instruct",
+        "name": "Falcon 7b Instruct",
+        "description": "Best overall smaller model. Fast responses. Instruction based. Trained by TII. Licensed for commercial use.",
+        "parameters": "7B",
+        "context": "4k",
+        "architecture": "FalconForCausalLM",
+        "huggingface_repo": "tiiuae/falcon-7b-instruct",
+        "transformers_version": "4.27.4",
+        "license": "Apache License 2.0",
+        "logo": "https://falconllm.tii.ae/assets/images/logo.svg",
+        "author": {
+            "name": "TII",
+            "url": "https://falconllm.tii.ae/index.html",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/tiiuae/falcon-7b-instruct",
+            "downloadUrl": "https://huggingface.co/tiiuae/falcon-7b-instruct",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "lmsys/fastchat-t5-3b-v1.0",
         "name": "FastChat-T5",
         "description": "Open-source chatbot trained by fine-tuning Flan-t5-xl (3B parameters) on user-shared conversations collected from ShareGPT. It is based on an encoder-decoder transformer architecture, and can autoregressively generate responses to users' inputs.",
