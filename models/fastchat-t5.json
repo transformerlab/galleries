@@ -1,0 +1,24 @@
+[
+    {
+        "uniqueID": "lmsys/fastchat-t5-3b-v1.0",
+        "name": "FastChat-T5",
+        "description": "Open-source chatbot trained by fine-tuning Flan-t5-xl (3B parameters) on user-shared conversations collected from ShareGPT. It is based on an encoder-decoder transformer architecture, and can autoregressively generate responses to users' inputs.",
+        "parameters": "3B",
+        "context": "4k",
+        "architecture": "T5ForConditionalGeneration",
+        "huggingface_repo": "lmsys/fastchat-t5-3b-v1.0",
+        "transformers_version": "4.28.1",
+        "license": "Apache License 2.0",
+        "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
+        "author": {
+            "name": "LMSYS Org",
+            "url": "https://lmsys.org/",
+            "blurb": "Large Model Systems Organization (LMSYS Org) is an open research organization founded by students and faculty from UC Berkeley in collaboration with UCSD and CMU."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/lmsys/fastchat-t5-3b-v1.0",
+            "downloadUrl": "https://huggingface.co/lmsys/fastchat-t5-3b-v1.0",
+            "paperUrl": "?"
+        }
+    }
+]

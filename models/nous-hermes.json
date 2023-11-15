@@ -1,0 +1,24 @@
+[
+    {
+        "uniqueID": "Nous-Hermes-13b",
+        "name": "Nous Hermes 13b",
+        "description": "Extremely good model. Instruction based. Gives long responses. Curated with 300,000 uncensored instructions. Trained by Nous Research. Cannot be used commercially",
+        "parameters": "13B",
+        "context": "?",
+        "architecture": "LlamaForCausalLM",
+        "huggingface_repo": "NousResearch/Nous-Hermes-13b",
+        "transformers_version": "4.29.2",
+        "license": "GPL",
+        "logo": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/62fc06a221c444a56f7cc595/ngyQKdhaykfC8lN6Jfqlz.png?w=200&h=200&f=face",
+        "author": {
+            "name": "Nous Research",
+            "url": "https://nousresearch.com/",
+            "blurb": "We are dedicated to advancing the field of natural language processing, in collaboration with the open-source community, through bleeding-edge research and a commitment to symbiotic development."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5",
+            "downloadUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5",
+            "paperUrl": "?"
+        }
+    }
+]

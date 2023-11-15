@@ -1,0 +1,112 @@
+[
+    {
+        "uniqueID": "vicuna-7b-v1.5",
+        "name": "Vicuna 7b",
+        "description": "Vicuna is a state-of-the-art chat assistant developed by LMSYS, leveraging the transformative power of an auto-regressive language model based on the transformer architecture. Trained via fine-tuning the Llama 2 model, Vicuna is used primarily for research in large language models and chatbots, catering to the needs of AI enthusiasts, machine learning researchers, and hobbyists. The model operates under the Llama 2 Community License Agreement. The latest version, Vicuna v1.5 (16k), has been fine-tuned using supervised instruction and linear RoPE scaling, with training data comprising around 125K conversations collected from ShareGPT.com, packed into sequences of 16K tokens each. A comprehensive explanation of the training details can be found in the appendix to the linked paper titled \"Training Details of Vicuna Models.\"",
+        "parameters": "13B",
+        "context": "4k",
+        "architecture": "LlamaForCausalLM",
+        "huggingface_repo": "lmsys/vicuna-7b-v1.5",
+        "transformers_version": "4.31.0",
+        "license": "Llama 2 Community License Agreement",
+        "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
+        "author": {
+            "name": "LMSYS Org",
+            "url": "https://lmsys.org/",
+            "blurb": "Large Model Systems Organization (LMSYS Org) is an open research organization founded by students and faculty from UC Berkeley in collaboration with UCSD and CMU."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5",
+            "downloadUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5",
+            "paperUrl": "https://arxiv.org/abs/2306.05685"
+        }
+    },
+    {
+        "uniqueID": "vicuna-13b-v1.5",
+        "name": "Vicuna 7b",
+        "description": "Vicuna is a state-of-the-art chat assistant developed by LMSYS, leveraging the transformative power of an auto-regressive language model based on the transformer architecture. Trained via fine-tuning the Llama 2 model, Vicuna is used primarily for research in large language models and chatbots, catering to the needs of AI enthusiasts, machine learning researchers, and hobbyists. The model operates under the Llama 2 Community License Agreement. The latest version, Vicuna v1.5 (16k), has been fine-tuned using supervised instruction and linear RoPE scaling, with training data comprising around 125K conversations collected from ShareGPT.com, packed into sequences of 16K tokens each. A comprehensive explanation of the training details can be found in the appendix to the linked paper titled \"Training Details of Vicuna Models.\"",
+        "parameters": "7B",
+        "context": "4k",
+        "architecture": "LlamaForCausalLM",
+        "huggingface_repo": "lmsys/vicuna-13b-v1.5",
+        "transformers_version": "4.31.0",
+        "license": "Llama 2 Community License Agreement",
+        "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
+        "author": {
+            "name": "LMSYS Org",
+            "url": "https://lmsys.org/",
+            "blurb": "Large Model Systems Organization (LMSYS Org) is an open research organization founded by students and faculty from UC Berkeley in collaboration with UCSD and CMU."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/lmsys/vicuna-13b-v1.5",
+            "downloadUrl": "https://huggingface.co/lmsys/vicuna-13b-v1.5",
+            "paperUrl": "https://arxiv.org/abs/2306.05685"
+        }
+    },
+    {
+        "uniqueID": "vicuna-7b-v1.5-16k",
+        "name": "Vicuna 7b - 16k",
+        "description": "Vicuna is a state-of-the-art chat assistant developed by LMSYS, leveraging the transformative power of an auto-regressive language model based on the transformer architecture. Trained via fine-tuning the Llama 2 model, Vicuna is used primarily for research in large language models and chatbots, catering to the needs of AI enthusiasts, machine learning researchers, and hobbyists. The model operates under the Llama 2 Community License Agreement. The latest version, Vicuna v1.5 (16k), has been fine-tuned using supervised instruction and linear RoPE scaling, with training data comprising around 125K conversations collected from ShareGPT.com, packed into sequences of 16K tokens each. A comprehensive explanation of the training details can be found in the appendix to the linked paper titled \"Training Details of Vicuna Models.\"",
+        "parameters": "7B",
+        "context": "16k",
+        "architecture": "LlamaForCausalLM",
+        "huggingface_repo": "lmsys/vicuna-7b-v1.5-16k",
+        "transformers_version": "4.31.0",
+        "license": "Llama 2 Community License Agreement",
+        "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
+        "author": {
+            "name": "LMSYS Org",
+            "url": "https://lmsys.org/",
+            "blurb": "Large Model Systems Organization (LMSYS Org) is an open research organization founded by students and faculty from UC Berkeley in collaboration with UCSD and CMU."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5-16k",
+            "downloadUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5-16k",
+            "paperUrl": "https://arxiv.org/abs/2306.05685"
+        }
+    },
+    {
+        "uniqueID": "lmsys/fastchat-t5-3b-v1.0",
+        "name": "FastChat-T5",
+        "description": "Open-source chatbot trained by fine-tuning Flan-t5-xl (3B parameters) on user-shared conversations collected from ShareGPT. It is based on an encoder-decoder transformer architecture, and can autoregressively generate responses to users' inputs.",
+        "parameters": "3B",
+        "context": "4k",
+        "architecture": "T5ForConditionalGeneration",
+        "huggingface_repo": "lmsys/fastchat-t5-3b-v1.0",
+        "transformers_version": "4.28.1",
+        "license": "Apache License 2.0",
+        "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
+        "author": {
+            "name": "LMSYS Org",
+            "url": "https://lmsys.org/",
+            "blurb": "Large Model Systems Organization (LMSYS Org) is an open research organization founded by students and faculty from UC Berkeley in collaboration with UCSD and CMU."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/lmsys/fastchat-t5-3b-v1.0",
+            "downloadUrl": "https://huggingface.co/lmsys/fastchat-t5-3b-v1.0",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Nous-Hermes-13b",
+        "name": "Nous Hermes 13b",
+        "description": "Extremely good model. Instruction based. Gives long responses. Curated with 300,000 uncensored instructions. Trained by Nous Research. Cannot be used commercially",
+        "parameters": "13B",
+        "context": "?",
+        "architecture": "LlamaForCausalLM",
+        "huggingface_repo": "NousResearch/Nous-Hermes-13b",
+        "transformers_version": "4.29.2",
+        "license": "GPL",
+        "logo": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/62fc06a221c444a56f7cc595/ngyQKdhaykfC8lN6Jfqlz.png?w=200&h=200&f=face",
+        "author": {
+            "name": "Nous Research",
+            "url": "https://nousresearch.com/",
+            "blurb": "We are dedicated to advancing the field of natural language processing, in collaboration with the open-source community, through bleeding-edge research and a commitment to symbiotic development."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5",
+            "downloadUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5",
+            "paperUrl": "?"
+        }
+    }
+]

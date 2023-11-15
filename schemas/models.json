@@ -1,0 +1,101 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "array",
+    "items": [
+        {
+            "type": "object",
+            "properties": {
+                "uniqueID": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "parameters": {
+                    "type": "string",
+                    "enum": [
+                        "3B",
+                        "7B",
+                        "13B",
+                        "15B",
+                        "30B",
+                        "65B",
+                        "unknown"
+                    ]
+                },
+                "context": {
+                    "type": "string"
+                },
+                "architecture": {
+                    "type": "string",
+                    "enum": [
+                        "LlamaForCausalLM",
+                        "T5ForConditionalGeneration"
+                    ]
+                },
+                "huggingface_repo": {
+                    "type": "string"
+                },
+                "transformers_version": {
+                    "type": "string"
+                },
+                "license": {
+                    "type": "string"
+                },
+                "logo": {
+                    "type": "string"
+                },
+                "author": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "url": {
+                            "type": "string"
+                        },
+                        "blurb": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "url",
+                        "blurb"
+                    ]
+                },
+                "resources": {
+                    "type": "object",
+                    "properties": {
+                        "canonicalUrl": {
+                            "type": "string"
+                        },
+                        "downloadUrl": {
+                            "type": "string"
+                        },
+                        "paperUrl": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "canonicalUrl",
+                        "downloadUrl",
+                        "paperUrl"
+                    ]
+                }
+            },
+            "required": [
+                "uniqueID",
+                "name",
+                "parameters",
+                "architecture",
+                "huggingface_repo",
+                "transformers_version",
+                "license"
+            ]
+        }
+    ]
+}
