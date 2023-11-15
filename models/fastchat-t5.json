@@ -8,7 +8,7 @@
         "architecture": "T5ForConditionalGeneration",
         "huggingface_repo": "lmsys/fastchat-t5-3b-v1.0",
         "transformers_version": "4.28.1",
-        "license": "Apache License 2.0",
+        "license": "Apache 2.0",
         "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
         "author": {
             "name": "LMSYS Org",
