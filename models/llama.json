@@ -1,0 +1,24 @@
+[
+    {
+        "uniqueID": "huggyllama/llama-7b",
+        "name": "HuggyLLama LLama 7B",
+        "description": "Best overall smaller model. Fast responses. Instruction based. Trained by TII. Licensed for commercial use.",
+        "parameters": "7B",
+        "context": "4k",
+        "architecture": "FalconForCausalLM",
+        "huggingface_repo": "huggyllama/llama-7b",
+        "transformers_version": "4.27.4",
+        "license": "Meta Custom",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "author": {
+            "name": "Meta",
+            "url": "https://huggingface.co/meta-llama/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/huggyllama/llama-7b",
+            "downloadUrl": "https://huggingface.co/huggyllama/llama-7b",
+            "paperUrl": "?"
+        }
+    }
+]
