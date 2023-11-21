@@ -176,6 +176,28 @@
         }
     },
     {
+        "uniqueID": "google/flan-t5-small",
+        "name": "Google Flan T5 Small",
+        "description": "",
+        "parameters": "80M",
+        "context": "2048",
+        "architecture": "T5ForConditionalGeneration",
+        "huggingface_repo": "google/flan-t5-small",
+        "transformers_version": "4.23.1",
+        "license": "Apache 2.0",
+        "logo": "https://ai.google/static/images/share.png",
+        "author": {
+            "name": "Google",
+            "url": "https://github.com/google-research/FLAN",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/google/flan-t5-small",
+            "downloadUrl": "https://huggingface.co/google/flan-t5-small",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "lmsys/fastchat-t5-3b-v1.0",
         "name": "FastChat-T5",
         "description": "Open-source chatbot trained by fine-tuning Flan-t5-xl (3B parameters) on user-shared conversations collected from ShareGPT. It is based on an encoder-decoder transformer architecture, and can autoregressively generate responses to users' inputs.",
