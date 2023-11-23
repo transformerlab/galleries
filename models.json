@@ -154,6 +154,50 @@
         }
     },
     {
+        "uniqueID": "openlm-research/open_llama_3b_v2",
+        "name": "Open LLama 3b v2",
+        "description": " we are releasing our public preview of OpenLLaMA, a permissively licensed open source reproduction of Meta AI\u2019s LLaMA. We are releasing a series of 3B, 7B and 13B models trained on different data mixtures. Our model weights can serve as the drop in replacement of LLaMA in existing implementations.",
+        "parameters": "3B",
+        "context": "4k",
+        "architecture": "LlamaForCausalLM",
+        "huggingface_repo": "openlm-research/open_llama_3b_v2",
+        "transformers_version": "4.31.0.dev0",
+        "license": "Apache 2.0",
+        "logo": "https://avatars.githubusercontent.com/u/132110378?s=48&v=4",
+        "author": {
+            "name": "OpenLLaMA",
+            "url": "https://github.com/openlm-research/open_llama",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/openlm-research/open_llama_3b",
+            "downloadUrl": "https://huggingface.co/openlm-research/open_llama_3b",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "openlm-research/open_llama_7b_v2",
+        "name": "Open LLama 7b v2",
+        "description": " we are releasing our public preview of OpenLLaMA, a permissively licensed open source reproduction of Meta AI\u2019s LLaMA. We are releasing a series of 3B, 7B and 13B models trained on different data mixtures. Our model weights can serve as the drop in replacement of LLaMA in existing implementations.",
+        "parameters": "7B",
+        "context": "4k",
+        "architecture": "LlamaForCausalLM",
+        "huggingface_repo": "openlm-research/open_llama_7b_v2",
+        "transformers_version": "4.31.0.dev0",
+        "license": "Apache 2.0",
+        "logo": "https://avatars.githubusercontent.com/u/132110378?s=48&v=4",
+        "author": {
+            "name": "OpenLLaMA",
+            "url": "https://github.com/openlm-research/open_llama",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/openlm-research/open_llama_3b",
+            "downloadUrl": "https://huggingface.co/openlm-research/open_llama_3b",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "huggyllama/llama-7b",
         "name": "LLama 7B",
         "description": "",
