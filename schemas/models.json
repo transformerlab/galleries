@@ -34,7 +34,8 @@
                     "LlamaForCausalLM",
                     "T5ForConditionalGeneration",
                     "FalconForCausalLM",
-                    "MistralForCausalLM"
+                    "MistralForCausalLM",
+                    "GPTBigCodeForCausalLM"
                 ]
             },
             "huggingface_repo": {
