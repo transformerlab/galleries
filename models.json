@@ -336,7 +336,7 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
-        "huggingface_repo": "huggyllama/llama-7b",
+        "huggingface_repo": "berkeley-nest/Starling-LM-7B-alpha",
         "transformers_version": "4.27.4",
         "license": "Non commercial license",
         "logo": "https://starling.cs.berkeley.edu/starling.png",
