@@ -27,7 +27,7 @@ def read_and_combine_json_files(directory: str):
     combined_json = []
 
     for file in files_json:
-        with open(file=os.path.join('models', file), mode='r') as f:
+        with open(file=os.path.join(directory, file), mode='r') as f:
             file_contents = json.load(fp=f)
             # The files contain an array of JSON objects, so we need to iterate through them
             for sub_object in file_contents:
