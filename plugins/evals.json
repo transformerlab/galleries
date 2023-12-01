@@ -1,0 +1,10 @@
+[
+    {
+        "uniqueId": "eleuther-ai-lm-evaluation-harness",
+        "name": "Eleuther AI Evaluation Harness",
+        "slug": "eleuther-ai-lm-evaluation-harness",
+        "type": "EVALUATION",
+        "description": "A comprehensive evaluation harness for LLMs.",
+        "url": "http://127.0.0.1:8000/plugin-gallery/eleuther-ai-lm-evaluation-harness/"
+    }
+]
