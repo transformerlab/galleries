@@ -35,10 +35,14 @@
                     "T5ForConditionalGeneration",
                     "FalconForCausalLM",
                     "MistralForCausalLM",
-                    "GPTBigCodeForCausalLM"
+                    "GPTBigCodeForCausalLM",
+                    "GGUF"
                 ]
             },
             "huggingface_repo": {
+                "type": "string"
+            },
+            "huggingface_filename": {
                 "type": "string"
             },
             "transformers_version": {
@@ -95,7 +99,6 @@
             "parameters",
             "architecture",
             "huggingface_repo",
-            "transformers_version",
             "license"
         ]
     }

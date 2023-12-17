@@ -438,5 +438,49 @@
             "downloadUrl": "https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha",
             "paperUrl": "?"
         }
+    },
+    {
+        "uniqueID": "llama2:7b-chat",
+        "name": "LLama 2 - 7B chat - GGUF - Q4_0",
+        "description": "Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 7B fine-tuned model, optimized for dialogue use cases and converted for the Hugging Face Transformers format.",
+        "parameters": "7B",
+        "context": "4k",
+        "architecture": "GGUF",
+        "huggingface_repo": "TheBloke/Llama-2-7B-Chat-GGUF",
+        "huggingface_filename:": "llama-2-7b.Q4_0.gguf",
+        "license": "Meta Custom",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "author": {
+            "name": "Meta",
+            "url": "https://huggingface.co/meta-llama/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/meta-llama/Llama-2-7b-chat",
+            "downloadUrl": "https://huggingface.co/meta-llama/Llama-2-7b-chat",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "llama2:7b",
+        "name": "LLama 2 - 7B - GGUF - Q4_0",
+        "description": "Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 7B fine-tuned model, optimized for dialogue use cases and converted for the Hugging Face Transformers format.",
+        "parameters": "7B",
+        "context": "4k",
+        "architecture": "GGUF",
+        "huggingface_repo": "TheBloke/Llama-2-7B-GGUF",
+        "huggingface_filename:": "llama-2-7b.Q4_0.gguf",
+        "license": "Meta Custom",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "author": {
+            "name": "Meta",
+            "url": "https://huggingface.co/meta-llama/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/meta-llama/Llama-2-7b-chat",
+            "downloadUrl": "https://huggingface.co/meta-llama/Llama-2-7b-chat",
+            "paperUrl": "?"
+        }
     }
 ]
