@@ -17,6 +17,8 @@
                 "type": "string",
                 "enum": [
                     "80M",
+                    "1.1B",
+                    "2.7B",
                     "3B",
                     "7B",
                     "13B",
@@ -36,6 +38,7 @@
                     "FalconForCausalLM",
                     "MistralForCausalLM",
                     "GPTBigCodeForCausalLM",
+                    "PhiForCausalLM",
                     "GGUF",
                     "MLX"
                 ]
