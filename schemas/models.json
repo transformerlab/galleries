@@ -36,7 +36,8 @@
                     "FalconForCausalLM",
                     "MistralForCausalLM",
                     "GPTBigCodeForCausalLM",
-                    "GGUF"
+                    "GGUF",
+                    "MLX"
                 ]
             },
             "huggingface_repo": {
