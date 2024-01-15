@@ -1,0 +1,24 @@
+[
+    {
+        "uniqueID": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "name": "Tiny Llama 1.1B Chat",
+        "description": "The TinyLlama project aims to pretrain a 1.1B Llama model on 3 trillion tokens. With some proper optimization, we can achieve this within a span of 90 days using 16 A100-40G GPUs 🚀🚀. The training has started on 2023-09-01.",
+        "parameters": "1.1B",
+        "context": "4k",
+        "architecture": "LlamaForCausalLM",
+        "huggingface_repo": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "transformers_version": "4.35.0",
+        "license": "Apache 2.0",
+        "logo": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf495f117670d330a/65985db56b9c04040d633f56/image.png?width=700&auto=webp&quality=80&disable=upscale",
+        "author": {
+            "name": "TinyLlama",
+            "url": "https://github.com/jzhang38/TinyLlama",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://github.com/jzhang38/TinyLlama",
+            "downloadUrl": "https://github.com/jzhang38/TinyLlama",
+            "paperUrl": "?"
+        }
+    }
+]
