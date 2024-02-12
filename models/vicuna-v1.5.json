@@ -54,6 +54,7 @@
         "transformers_version": "4.31.0",
         "license": "Llama 2 CLA",
         "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
+        "size_of_model_in_mb": 8737.3,
         "author": {
             "name": "LMSYS Org",
             "url": "https://lmsys.org/",

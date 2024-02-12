@@ -32,6 +32,7 @@
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
         "logo": "https://docs.mistral.ai/img/logo.svg",
+        "size_of_model_in_mb": 56254.8,
         "author": {
             "name": "Mistral AI",
             "url": "https://docs.mistral.ai/",
