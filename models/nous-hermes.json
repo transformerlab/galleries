@@ -20,5 +20,27 @@
             "downloadUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5",
             "paperUrl": "?"
         }
+    },
+    {
+        "uniqueID": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+        "name": "Nous Hermes 2 - Mixtral 8x7B - DPO",
+        "description": "Nous Hermes 2 Mixtral 8x7B DPO is the new flagship Nous Research model trained over the Mixtral 8x7B MoE LLM.",
+        "parameters": "7B",
+        "context": "4k",
+        "architecture": "MixtralForCausalLM",
+        "huggingface_repo": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+        "transformers_version": "4.37.0.dev0",
+        "license": "Apache 2.0",
+        "logo": "https://pbs.twimg.com/profile_images/1722061115453272064/dydqIH88_400x400.jpg",
+        "author": {
+            "name": "Nous Research",
+            "url": "https://nousresearch.com/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+            "downloadUrl": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+            "paperUrl": "?"
+        }
     }
 ]

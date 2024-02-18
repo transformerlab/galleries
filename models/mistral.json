@@ -22,13 +22,13 @@
         }
     },
     {
-        "uniqueID": "Mistral-7B-v0.1 Instruct",
-        "name": "Mistral-7B-Instruct-v0.1",
-        "description": "The Mistral-7B-Instruct-v0.1 Large Language Model (LLM) is a instruct fine-tuned version of the Mistral-7B-v0.1 generative text model using a variety of publicly available conversation datasets.",
+        "uniqueID": "Mistral-7B-v0.2 Instruct",
+        "name": "Mistral-7B-Instruct-v0.2",
+        "description": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is a instruct fine-tuned version of the Mistral-7B-v0.1 generative text model using a variety of publicly available conversation datasets.",
         "parameters": "7B",
         "context": "4k",
         "architecture": "MistralForCausalLM",
-        "huggingface_repo": "mistralai/Mistral-7B-Instruct-v0.1",
+        "huggingface_repo": "mistralai/Mistral-7B-Instruct-v0.2",
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
         "logo": "https://docs.mistral.ai/img/logo.svg",
@@ -41,6 +41,29 @@
         "resources": {
             "canonicalUrl": "https://huggingface.co/mistralai/Mistral-7B-v0.1",
             "downloadUrl": "https://huggingface.co/mistralai/Mistral-7B-v0.1",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Mixtral-8x7B-Instruct-v0.1",
+        "name": "Mixtral 8x7B Instruct",
+        "description": "The Mixtral-8x7B Large Language Model (LLM) is a pretrained generative Sparse Mixture of Experts. The Mistral-8x7B outperforms Llama 2 70B on most benchmarks we tested.",
+        "parameters": "7B",
+        "context": "4k",
+        "architecture": "MixtralForCausalLM",
+        "huggingface_repo": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+        "transformers_version": "4.36.0.dev0",
+        "license": "Apache 2.0",
+        "logo": "https://mistral.ai/images/product/models/mistral-8x7b-v0.1.jpg",
+        "size_of_model_in_mb": 56254.8,
+        "author": {
+            "name": "Mistral AI",
+            "url": "https://mistral.ai/news/mixtral-of-experts/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://mistral.ai/news/mixtral-of-experts/",
+            "downloadUrl": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
             "paperUrl": "?"
         }
     }

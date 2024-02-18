@@ -37,6 +37,7 @@
                     "T5ForConditionalGeneration",
                     "FalconForCausalLM",
                     "MistralForCausalLM",
+                    "MixtralForCausalLM",
                     "GPTBigCodeForCausalLM",
                     "PhiForCausalLM",
                     "GGUF",
