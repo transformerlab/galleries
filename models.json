@@ -208,7 +208,7 @@
         "architecture": "GemmaForCausalLM",
         "huggingface_repo": "google/gemma-7b",
         "transformers_version": "4.38.0.dev0",
-        "license": "Apache 2.0",
+        "license": "Gemma",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
         "author": {
             "name": "Google",
@@ -230,7 +230,7 @@
         "architecture": "GemmaForCausalLM",
         "huggingface_repo": "google/gemma-7b-it",
         "transformers_version": "4.38.0.dev0",
-        "license": "Apache 2.0",
+        "license": "Gemma",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
         "author": {
             "name": "Google",
@@ -252,7 +252,7 @@
         "architecture": "GemmaForCausalLM",
         "huggingface_repo": "google/gemma-2b-it",
         "transformers_version": "4.38.0.dev0",
-        "license": "Apache 2.0",
+        "license": "Gemma",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
         "author": {
             "name": "Google",
@@ -266,24 +266,24 @@
         }
     },
     {
-        "uniqueID": "google/gemma-7b",
-        "name": "Gemma 7B",
+        "uniqueID": "google/gemma-2b",
+        "name": "Gemma 2B",
         "description": "Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. They are text-to-text, decoder-only large language models, available in English, with open weights, pre-trained variants, and instruction-tuned variants. Gemma models are well-suited for a variety of text generation tasks, including question answering, summarization, and reasoning. Their relatively small size makes it possible to deploy them in environments with limited resources such as a laptop, desktop or your own cloud infrastructure, democratizing access to state of the art AI models and helping foster innovation for everyone.",
-        "parameters": "7B",
+        "parameters": "2B",
         "context": "8192",
         "architecture": "GemmaForCausalLM",
-        "huggingface_repo": "google/gemma-7b",
+        "huggingface_repo": "google/gemma-2b",
         "transformers_version": "4.38.0.dev0",
-        "license": "Apache 2.0",
+        "license": "Gemma",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
         "author": {
             "name": "Google",
-            "url": "https://huggingface.co/google/gemma-7b",
+            "url": "https://huggingface.co/google/gemma-2b",
             "blurb": ""
         },
         "resources": {
-            "canonicalUrl": "https://huggingface.co/google/gemma-7b",
-            "downloadUrl": "https://huggingface.co/google/gemma-7b",
+            "canonicalUrl": "https://huggingface.co/google/gemma-2b",
+            "downloadUrl": "https://huggingface.co/google/gemma-2b",
             "paperUrl": "?"
         }
     },
