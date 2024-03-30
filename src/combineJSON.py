@@ -19,6 +19,9 @@ def validate_json(json, schema):
 def read_and_combine_json_files(directory: str):
     print(f'Combining JSON files in {directory} directory')
 
+    if not os.path.exists(directory):
+        return
+
     # Get all the JSON files in the subdirectories
     files_json: list[str] = [f for f in os.listdir(
         path=directory) if f.endswith('.json')]
