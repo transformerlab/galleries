@@ -18,7 +18,7 @@
                 "enum": [
                     "80M",
                     "1.1B",
-                    "2.7B",
+                    "2B",
                     "3B",
                     "7B",
                     "13B",
@@ -41,7 +41,8 @@
                     "GPTBigCodeForCausalLM",
                     "PhiForCausalLM",
                     "GGUF",
-                    "MLX"
+                    "MLX",
+                    "GemmaForCausalLM"
                 ]
             },
             "huggingface_repo": {
