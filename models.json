@@ -98,7 +98,7 @@
         "transformers_version": "4.31.0",
         "license": "Llama 2 CLA",
         "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
-        "size_of_model_in_mb": 12247.3,
+        "size_of_model_in_mb": 12853.1,
         "author": {
             "name": "LMSYS Org",
             "url": "https://lmsys.org/",
@@ -210,6 +210,7 @@
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
+        "size_of_model_in_mb": 16305.1,
         "author": {
             "name": "Google",
             "url": "https://huggingface.co/google/gemma-7b",
@@ -298,6 +299,7 @@
         "transformers_version": "4.27.4",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "size_of_model_in_mb": 24783.0,
         "author": {
             "name": "Meta",
             "url": "https://huggingface.co/meta-llama/",
@@ -339,18 +341,18 @@
         "context": "4k",
         "architecture": "MistralForCausalLM",
         "huggingface_repo": "mistralai/Mistral-7B-Instruct-v0.2",
-        "transformers_version": "4.34.0.dev0",
+        "transformers_version": "4.36.0",
         "license": "Apache 2.0",
         "logo": "https://docs.mistral.ai/img/logo.svg",
-        "size_of_model_in_mb": 56254.8,
+        "size_of_model_in_mb": 28127.4,
         "author": {
             "name": "Mistral AI",
             "url": "https://docs.mistral.ai/",
             "blurb": ""
         },
         "resources": {
-            "canonicalUrl": "https://huggingface.co/mistralai/Mistral-7B-v0.1",
-            "downloadUrl": "https://huggingface.co/mistralai/Mistral-7B-v0.1",
+            "canonicalUrl": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2",
+            "downloadUrl": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2",
             "paperUrl": "?"
         }
     },
@@ -498,6 +500,7 @@
         "transformers_version": "4.37.0.dev0",
         "license": "MIT",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTwt9xAK7ih0gG74r3XLTpbiWmcd-9PTwXAQ&usqp=CAU",
+        "size_of_model_in_mb": 5305.2,
         "author": {
             "name": "Microsoft",
             "url": "https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/",
@@ -520,6 +523,7 @@
         "transformers_version": "4.29.2",
         "license": "GPL",
         "logo": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/62fc06a221c444a56f7cc595/ngyQKdhaykfC8lN6Jfqlz.png?w=200&h=200&f=face",
+        "size_of_model_in_mb": 24826.4,
         "author": {
             "name": "Nous Research",
             "url": "https://nousresearch.com/",
@@ -586,6 +590,7 @@
         "transformers_version": "4.34.0",
         "license": "MIT",
         "logo": "https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha/resolve/main/thumbnail.png",
+        "size_of_model_in_mb": 27628.1,
         "author": {
             "name": "HuggingFace H4",
             "url": "https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha",
@@ -630,6 +635,7 @@
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
         "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
+        "size_of_model_in_mb": 772.2,
         "author": {
             "name": "",
             "url": "",
@@ -642,16 +648,17 @@
         }
     },
     {
-        "uniqueID": "mlx-community/Mistral-7B-Instruct-v0.2-4-bit",
+        "uniqueID": "mlx-community/Mistral-7B-Instruct-v0.2-4bit",
         "name": "Mistral-7B-Instruct-v0.2 4 bit MLX",
         "description": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an improved instruct fine-tuned version of Mistral-7B-Instruct-v0.1.",
         "parameters": "7B",
         "context": "4k",
         "architecture": "MLX",
-        "huggingface_repo": "mlx-community/Mistral-7B-Instruct-v0.2-4-bit",
-        "transformers_version": "4.34.0.dev0",
+        "huggingface_repo": "mlx-community/Mistral-7B-Instruct-v0.2-4bit",
+        "transformers_version": "4.39.0.dev0",
         "license": "Apache 2.0",
         "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
+        "size_of_model_in_mb": 4067.1,
         "author": {
             "name": "",
             "url": "",
@@ -718,6 +725,7 @@
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
         "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
+        "size_of_model_in_mb": 3795.5,
         "author": {
             "name": "",
             "url": "",
@@ -740,6 +748,7 @@
         "huggingface_filename": "llama-2-7b-chat.Q4_0.gguf",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "size_of_model_in_mb": 3648.6,
         "author": {
             "name": "Meta",
             "url": "https://huggingface.co/meta-llama/",
@@ -762,6 +771,7 @@
         "huggingface_filename": "llama-2-7b.Q4_0.gguf",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "size_of_model_in_mb": 3648.6,
         "author": {
             "name": "Meta",
             "url": "https://huggingface.co/meta-llama/",
