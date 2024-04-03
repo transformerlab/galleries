@@ -10,6 +10,7 @@
         "huggingface_filename": "llama-2-7b-chat.Q4_0.gguf",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "size_of_model_in_mb": 3648.6,
         "author": {
             "name": "Meta",
             "url": "https://huggingface.co/meta-llama/",
@@ -32,6 +33,7 @@
         "huggingface_filename": "llama-2-7b.Q4_0.gguf",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "size_of_model_in_mb": 3648.6,
         "author": {
             "name": "Meta",
             "url": "https://huggingface.co/meta-llama/",

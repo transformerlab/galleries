@@ -10,6 +10,7 @@
         "transformers_version": "4.29.2",
         "license": "GPL",
         "logo": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/62fc06a221c444a56f7cc595/ngyQKdhaykfC8lN6Jfqlz.png?w=200&h=200&f=face",
+        "size_of_model_in_mb": 24826.4,
         "author": {
             "name": "Nous Research",
             "url": "https://nousresearch.com/",
