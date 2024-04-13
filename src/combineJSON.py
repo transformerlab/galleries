@@ -4,6 +4,7 @@ and publishes them to the root of the repository.
 """
 import os
 import json
+import yaml
 from jsonschema import validate, ValidationError
 
 
@@ -24,17 +25,22 @@ def read_and_combine_json_files(directory: str):
 
     # Get all the JSON files in the subdirectories
     files_json: list[str] = [f for f in os.listdir(
-        path=directory) if f.endswith('.json')]
+        path=directory) if (f.endswith('.json') or f.endswith('.yaml'))]
 
     # Combine the JSON files into a single dictionary
     combined_json = []
 
     for file in files_json:
         with open(file=os.path.join(directory, file), mode='r') as f:
-            file_contents = json.load(fp=f)
-            # The files contain an array of JSON objects, so we need to iterate through them
-            for sub_object in file_contents:
-                combined_json.append(sub_object)
+            print(f' - Processing {file}')
+            if file.endswith('.yaml'):
+                file_contents = yaml.load(stream=f, Loader=yaml.FullLoader)
+                combined_json.append(file_contents)
+            else:
+                file_contents = json.load(fp=f)
+                # The files contain an array of JSON objects, so we need to iterate through them
+                for sub_object in file_contents:
+                    combined_json.append(sub_object)
 
     # Validate the combined_json to see if it is valid JSON:
     try:
@@ -58,3 +64,4 @@ def read_and_combine_json_files(directory: str):
 read_and_combine_json_files(directory='models')
 read_and_combine_json_files(directory='datasets')
 read_and_combine_json_files(directory='plugins')
+read_and_combine_json_files(directory='prompts')

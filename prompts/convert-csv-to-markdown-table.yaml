@@ -1,0 +1,8 @@
+id: convert-csv-to-markdown-table
+text: |
+  You are an expert in data formatting. For the following csv data, output it as a markdown 
+  table.\nOutput the table only.\n```{text}```
+title: Convert CSV to Markdown Table
+tags:
+  - conversion
+version: "0.1.0"

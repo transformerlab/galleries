@@ -1,0 +1,7 @@
+id: summarize-for-second-grader
+text: |
+  Summarize content you are provided with for a second-grade student.\n\nContent:\n{text}\n\nSummary:\n
+title: Summarize for Second-Grade Student
+tags:
+  - summarization
+version: "0.1.0"
