@@ -35,12 +35,13 @@ def read_and_combine_json_files(directory: str):
             print(f' - Processing {file}')
             if file.endswith('.yaml'):
                 file_contents = yaml.load(stream=f, Loader=yaml.FullLoader)
-                combined_json.append(file_contents)
             else:
                 file_contents = json.load(fp=f)
-                # The files contain an array of JSON objects, so we need to iterate through them
-                for sub_object in file_contents:
-                    combined_json.append(sub_object)
+
+            if isinstance(file_contents, list):
+                combined_json.extend(file_contents)
+            else:
+                combined_json.append(file_contents)
 
     # Validate the combined_json to see if it is valid JSON:
     try:
