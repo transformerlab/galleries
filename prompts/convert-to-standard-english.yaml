@@ -3,7 +3,7 @@ text: |
   You will be provided with a statement, and your task is to convert it to standard English.\n\n
   Statement:\n\n
   {text}\n\n
-  Standard English:\n'
+  Standard English:\n
 title: Convert any text to standard English
 parameters:
   temperature: 0.7
