@@ -619,8 +619,8 @@
             "blurb": "We are dedicated to advancing the field of natural language processing, in collaboration with the open-source community, through bleeding-edge research and a commitment to symbiotic development."
         },
         "resources": {
-            "canonicalUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5",
-            "downloadUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5",
+            "canonicalUrl": "https://huggingface.co/NousResearch/Nous-Hermes-13b",
+            "downloadUrl": "https://huggingface.co/NousResearch/Nous-Hermes-13b",
             "paperUrl": "?"
         }
     },
