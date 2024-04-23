@@ -1,0 +1,90 @@
+[
+  {
+    "uniqueID": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "name": "LLama 3 8B - Instruct",
+    "description": "Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.",
+    "parameters": "8B",
+    "context": "8k",
+    "architecture": "LlamaForCausalLM",
+    "huggingface_repo": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "transformers_version": "4.38",
+    "license": "Meta Custom",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+    "author": {
+      "name": "Meta",
+      "url": "https://huggingface.co/meta-llama/",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "paperUrl": "?"
+    }
+  },
+  {
+    "uniqueID": "meta-llama/Meta-Llama-3-8B",
+    "name": "LLama 3 8B",
+    "description": "Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.",
+    "parameters": "8B",
+    "context": "8k",
+    "architecture": "LlamaForCausalLM",
+    "huggingface_repo": "meta-llama/Meta-Llama-3-8B",
+    "transformers_version": "4.38",
+    "license": "Meta Custom",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+    "author": {
+      "name": "Meta",
+      "url": "https://huggingface.co/meta-llama/",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "paperUrl": "?"
+    }
+  },
+  {
+    "uniqueID": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+    "name": "Llama 3 8B Instruct 4bit MLX",
+    "description": "Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.",
+    "parameters": "8B",
+    "context": "8k",
+    "architecture": "MLX",
+    "huggingface_repo": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+    "transformers_version": "4.38",
+    "license": "Meta Custom",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+    "author": {
+      "name": "Meta",
+      "url": "https://huggingface.co/meta-llama/",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "paperUrl": "?"
+    }
+  },
+  {
+    "uniqueID": "mlx-community/Meta-Llama-3-70B-Instruct-4bit",
+    "name": "Llama 3 70B Instruct 4bit MLX",
+    "description": "Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.",
+    "parameters": "8B",
+    "context": "8k",
+    "architecture": "MLX",
+    "huggingface_repo": "mlx-community/Meta-Llama-3-70B-Instruct-4bit",
+    "transformers_version": "4.38",
+    "license": "Meta Custom",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+    "author": {
+      "name": "Meta",
+      "url": "https://huggingface.co/meta-llama/",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "paperUrl": "?"
+    }
+  }
+]

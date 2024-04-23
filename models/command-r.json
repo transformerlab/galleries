@@ -9,7 +9,7 @@
     "huggingface_repo": "CohereForAI/c4ai-command-r-v01",
     "transformers_version": "4.38.2",
     "license": "CC-BY-NC-4.0",
-    "logo": "https://txt.cohere.com/content/images/size/w2000/2024/04/r--Blog-Header.png",
+    "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
     "author": {
       "name": "Cohere 4 AI",
       "url": "https://cohere.com/research",
@@ -31,7 +31,7 @@
     "huggingface_repo": "mlx-community/c4ai-command-r-v01-4bit",
     "transformers_version": "4.38.2",
     "license": "CC-BY-NC-4.0",
-    "logo": "https://txt.cohere.com/content/images/size/w2000/2024/04/r--Blog-Header.png",
+    "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
     "author": {
       "name": "Cohere 4 AI",
       "url": "https://cohere.com/research",
@@ -53,7 +53,7 @@
     "huggingface_repo": "CohereForAI/c4ai-command-r-v01-4bit",
     "transformers_version": "4.38.2",
     "license": "CC-BY-NC-4.0",
-    "logo": "https://txt.cohere.com/content/images/size/w2000/2024/04/r--Blog-Header.png",
+    "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
     "author": {
       "name": "Cohere 4 AI",
       "url": "https://cohere.com/research",
