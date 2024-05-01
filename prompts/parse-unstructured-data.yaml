@@ -1,8 +1,11 @@
 id: parse-unstructured-data
 text: |
   You are a data scientist tasked with parsing unstructured data. 
-  Given the following text, output the structured data.\n\n
-  {text}\n\nStructured Data:\n
+  Given the following text, output the structured data.
+
+  {text}
+
+  Structured Data:
 title: Parse unstructured data
 tags:
   - conversion
