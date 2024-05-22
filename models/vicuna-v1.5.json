@@ -6,6 +6,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "lmsys/vicuna-7b-v1.5",
         "transformers_version": "4.31.0",
         "license": "Llama 2 CLA",
@@ -29,6 +32,9 @@
         "parameters": "13B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "lmsys/vicuna-13b-v1.5",
         "transformers_version": "4.31.0",
         "license": "Llama 2 CLA",
@@ -51,6 +57,9 @@
         "parameters": "7B",
         "context": "16k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "lmsys/vicuna-7b-v1.5-16k",
         "transformers_version": "4.31.0",
         "license": "Llama 2 CLA",

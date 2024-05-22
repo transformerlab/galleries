@@ -4,6 +4,7 @@ description: "Zephyr is a series of language models that are trained to act as h
 parameters: "7B"
 context: "4k"
 architecture: "MistralForCausalLM"
+formats: ["PyTorch"]
 huggingface_repo: "HuggingFaceH4/zephyr-7b-alpha"
 transformers_version: "4.34.0"
 license: "MIT"
