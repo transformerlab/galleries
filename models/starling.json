@@ -6,6 +6,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MistralForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "berkeley-nest/Starling-LM-7B-alpha",
         "transformers_version": "4.35.0",
         "license": "Non commercial license",

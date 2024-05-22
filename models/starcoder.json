@@ -6,6 +6,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "GPTBigCodeForCausalLM",
+        "formats": [
+          "Pytorch"
+        ],
         "huggingface_repo": "bigcode/starcoder",
         "transformers_version": "4.28.1",
         "license": "bigcode-openrail-m",
