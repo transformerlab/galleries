@@ -94,6 +94,9 @@
         "parameters": "35B",
         "context": "8192",
         "architecture": "CohereForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "CohereForAI/c4ai-command-r-v01",
         "transformers_version": "4.38.2",
         "license": "CC-BY-NC-4.0",
@@ -116,6 +119,9 @@
         "parameters": "35B",
         "context": "8192",
         "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "mlx-community/c4ai-command-r-v01-4bit",
         "transformers_version": "4.38.2",
         "license": "CC-BY-NC-4.0",
@@ -138,6 +144,9 @@
         "parameters": "35B",
         "context": "8192",
         "architecture": "CohereForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "CohereForAI/c4ai-command-r-v01-4bit",
         "transformers_version": "4.38.2",
         "license": "CC-BY-NC-4.0",
@@ -160,6 +169,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "lmsys/vicuna-7b-v1.5",
         "transformers_version": "4.31.0",
         "license": "Llama 2 CLA",
@@ -183,6 +195,9 @@
         "parameters": "13B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "lmsys/vicuna-13b-v1.5",
         "transformers_version": "4.31.0",
         "license": "Llama 2 CLA",
@@ -205,6 +220,9 @@
         "parameters": "7B",
         "context": "16k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "lmsys/vicuna-7b-v1.5-16k",
         "transformers_version": "4.31.0",
         "license": "Llama 2 CLA",
@@ -228,6 +246,9 @@
         "parameters": "3B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "openlm-research/open_llama_3b_v2",
         "transformers_version": "4.31.0.dev0",
         "license": "Apache 2.0",
@@ -250,6 +271,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "openlm-research/open_llama_7b_v2",
         "transformers_version": "4.31.0.dev0",
         "license": "Apache 2.0",
@@ -272,6 +296,9 @@
         "parameters": "8B",
         "context": "8k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "meta-llama/Meta-Llama-3-8B-Instruct",
         "transformers_version": "4.38",
         "license": "Meta Custom",
@@ -294,6 +321,9 @@
         "parameters": "8B",
         "context": "8k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "meta-llama/Meta-Llama-3-8B",
         "transformers_version": "4.38",
         "license": "Meta Custom",
@@ -316,6 +346,9 @@
         "parameters": "8B",
         "context": "8k",
         "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
         "transformers_version": "4.38",
         "license": "Meta Custom",
@@ -338,6 +371,9 @@
         "parameters": "8B",
         "context": "8k",
         "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "mlx-community/Meta-Llama-3-70B-Instruct-4bit",
         "transformers_version": "4.38",
         "license": "Meta Custom",
@@ -360,6 +396,10 @@
         "parameters": "7B",
         "context": "8192",
         "architecture": "GemmaForCausalLM",
+        "formats": [
+            "Safetensors",
+            "GGUF"
+        ],
         "huggingface_repo": "google/gemma-7b",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
@@ -383,6 +423,10 @@
         "parameters": "7B",
         "context": "8192",
         "architecture": "GemmaForCausalLM",
+        "formats": [
+            "Safetensors",
+            "GGUF"
+        ],
         "huggingface_repo": "google/gemma-7b-it",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
@@ -405,6 +449,10 @@
         "parameters": "2B",
         "context": "8192",
         "architecture": "GemmaForCausalLM",
+        "formats": [
+            "Safetensors",
+            "GGUF"
+        ],
         "huggingface_repo": "google/gemma-2b-it",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
@@ -427,6 +475,10 @@
         "parameters": "2B",
         "context": "8192",
         "architecture": "GemmaForCausalLM",
+        "formats": [
+            "Safetensors",
+            "GGUF"
+        ],
         "huggingface_repo": "google/gemma-2b",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
@@ -449,6 +501,10 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
         "huggingface_repo": "huggyllama/llama-7b",
         "transformers_version": "4.27.4",
         "license": "Meta Custom",
@@ -466,12 +522,16 @@
         }
     },
     {
-        "uniqueID": "Mistral-7B-v0.1",
+        "uniqueID": "mistralai/Mistral-7B-v0.1",
         "name": "Mistral 7B v0.1",
         "description": "The Mistral-7B-v0.1 Large Language Model (LLM) is a pretrained generative text model with 7 billion parameters. Mistral-7B-v0.1 outperforms Llama 2 13B on all benchmarks we tested.",
         "parameters": "7B",
         "context": "4k",
         "architecture": "MistralForCausalLM",
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
         "huggingface_repo": "mistralai/Mistral-7B-v0.1",
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
@@ -488,12 +548,16 @@
         }
     },
     {
-        "uniqueID": "Mistral-7B-v0.2 Instruct",
+        "uniqueID": "mistralai/Mistral-7B-Instruct-v0.2",
         "name": "Mistral-7B-Instruct-v0.2",
         "description": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is a instruct fine-tuned version of the Mistral-7B-v0.1 generative text model using a variety of publicly available conversation datasets.",
         "parameters": "7B",
         "context": "4k",
         "architecture": "MistralForCausalLM",
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
         "huggingface_repo": "mistralai/Mistral-7B-Instruct-v0.2",
         "transformers_version": "4.36.0",
         "license": "Apache 2.0",
@@ -517,6 +581,10 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MixtralForCausalLM",
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
         "huggingface_repo": "mistralai/Mixtral-8x7B-Instruct-v0.1",
         "transformers_version": "4.36.0.dev0",
         "license": "Apache 2.0",
@@ -540,6 +608,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "FalconForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "tiiuae/falcon-7b",
         "transformers_version": "4.27.4",
         "license": "Apache 2.0",
@@ -562,6 +633,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "FalconForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "tiiuae/falcon-7b-instruct",
         "transformers_version": "4.27.4",
         "license": "Apache 2.0",
@@ -584,6 +658,10 @@
         "parameters": "80M",
         "context": "2048",
         "architecture": "T5ForConditionalGeneration",
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
         "huggingface_repo": "google/flan-t5-small",
         "transformers_version": "4.23.1",
         "license": "Apache 2.0",
@@ -606,6 +684,9 @@
         "parameters": "72B",
         "context": "32768",
         "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "mlx-community/Liberated-Qwen1.5-72B-4bit",
         "transformers_version": "4.39.3",
         "license": "CC-BY-NC-4.0",
@@ -628,6 +709,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MistralForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "berkeley-nest/Starling-LM-7B-alpha",
         "transformers_version": "4.35.0",
         "license": "Non commercial license",
@@ -651,6 +735,9 @@
         "parameters": "3B",
         "context": "4k",
         "architecture": "T5ForConditionalGeneration",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "lmsys/fastchat-t5-3b-v1.0",
         "transformers_version": "4.28.1",
         "license": "Apache 2.0",
@@ -673,6 +760,9 @@
         "parameters": "2B",
         "context": "?k",
         "architecture": "PhiForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "microsoft/phi-2",
         "transformers_version": "4.37.0.dev0",
         "license": "MIT",
@@ -696,6 +786,9 @@
         "parameters": "13B",
         "context": "?",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "NousResearch/Nous-Hermes-13b",
         "transformers_version": "4.29.2",
         "license": "GPL",
@@ -719,6 +812,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MixtralForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
         "transformers_version": "4.37.0.dev0",
         "license": "Apache 2.0",
@@ -741,6 +837,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "GPTBigCodeForCausalLM",
+        "formats": [
+            "Pytorch"
+        ],
         "huggingface_repo": "bigcode/starcoder",
         "transformers_version": "4.28.1",
         "license": "bigcode-openrail-m",
@@ -763,6 +862,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "mlx-community/Mistral-7B-Instruct-v0.1-4bit-mlx",
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
@@ -785,6 +887,9 @@
         "parameters": "1.1B",
         "context": "4k",
         "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "mlx-community/TinyDolphin-2.8-1.1b-4bit-mlx",
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
@@ -808,6 +913,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "mlx-community/Mistral-7B-Instruct-v0.2-4bit",
         "transformers_version": "4.39.0.dev0",
         "license": "Apache 2.0",
@@ -831,6 +939,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MLX",
+        "formats": [
+            "NPZ"
+        ],
         "huggingface_repo": "mlx-community/Mistral-7B-Instruct-v0.2",
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
@@ -853,6 +964,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MLX",
+        "formats": [
+            "NPZ"
+        ],
         "huggingface_repo": "mlx-community/Llama-2-7b-mlx",
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
@@ -875,6 +989,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MLX",
+        "formats": [
+            "NPZ"
+        ],
         "huggingface_repo": "mlx-community/Llama-2-7b-chat-4-bit",
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
@@ -898,6 +1015,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "GGUF",
+        "formats": [
+            "GGUF"
+        ],
         "huggingface_repo": "TheBloke/Llama-2-7B-Chat-GGUF",
         "huggingface_filename": "llama-2-7b-chat.Q4_0.gguf",
         "license": "Meta Custom",
@@ -921,6 +1041,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "GGUF",
+        "formats": [
+            "GGUF"
+        ],
         "huggingface_repo": "TheBloke/Llama-2-7B-GGUF",
         "huggingface_filename": "llama-2-7b.Q4_0.gguf",
         "license": "Meta Custom",
@@ -944,6 +1067,9 @@
         "parameters": "3.8B",
         "context": "128K",
         "architecture": "Phi3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "microsoft/Phi-3-mini-128k-instruct",
         "transformers_version": "4.39.3",
         "license": "MIT",
@@ -966,6 +1092,9 @@
         "parameters": "3.8B",
         "context": "4K",
         "architecture": "Phi3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "microsoft/Phi-3-mini-4k-instruct",
         "transformers_version": "4.39.3",
         "license": "MIT",
@@ -988,6 +1117,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MistralForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "HuggingFaceH4/zephyr-7b-alpha",
         "transformers_version": "4.34.0",
         "license": "MIT",
@@ -1011,6 +1143,9 @@
         "parameters": "1.1B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
         "transformers_version": "4.35.0",
         "license": "Apache 2.0",
