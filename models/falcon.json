@@ -6,6 +6,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "FalconForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "tiiuae/falcon-7b",
         "transformers_version": "4.27.4",
         "license": "Apache 2.0",
@@ -28,6 +31,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "FalconForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "tiiuae/falcon-7b-instruct",
         "transformers_version": "4.27.4",
         "license": "Apache 2.0",

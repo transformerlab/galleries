@@ -6,7 +6,7 @@
     "parameters": "35B",
     "context": "8192",
     "architecture": "CohereForCausalLM",
-    "formats":[
+    "formats": [
       "Safetensors"
     ],
     "huggingface_repo": "CohereForAI/c4ai-command-r-v01",
@@ -31,7 +31,7 @@
     "parameters": "35B",
     "context": "8192",
     "architecture": "MLX",
-    "formats":[
+    "formats": [
       "Safetensors"
     ],
     "huggingface_repo": "mlx-community/c4ai-command-r-v01-4bit",
