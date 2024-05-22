@@ -6,6 +6,10 @@
         "parameters": "7B",
         "context": "8192",
         "architecture": "GemmaForCausalLM",
+        "formats": [
+            "Safetensors",
+            "GGUF"
+        ],
         "huggingface_repo": "google/gemma-7b",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
@@ -29,6 +33,10 @@
         "parameters": "7B",
         "context": "8192",
         "architecture": "GemmaForCausalLM",
+        "formats": [
+            "Safetensors",
+            "GGUF"
+        ],
         "huggingface_repo": "google/gemma-7b-it",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
@@ -51,6 +59,10 @@
         "parameters": "2B",
         "context": "8192",
         "architecture": "GemmaForCausalLM",
+        "formats": [
+            "Safetensors",
+            "GGUF"
+        ],
         "huggingface_repo": "google/gemma-2b-it",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
@@ -73,6 +85,10 @@
         "parameters": "2B",
         "context": "8192",
         "architecture": "GemmaForCausalLM",
+        "formats": [
+            "Safetensors",
+            "GGUF"
+        ],
         "huggingface_repo": "google/gemma-2b",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
