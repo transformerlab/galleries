@@ -97,7 +97,7 @@
         "huggingface_repo": "CohereForAI/c4ai-command-r-v01",
         "transformers_version": "4.38.2",
         "license": "CC-BY-NC-4.0",
-        "logo": "https://txt.cohere.com/content/images/size/w2000/2024/04/r--Blog-Header.png",
+        "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
         "author": {
             "name": "Cohere 4 AI",
             "url": "https://cohere.com/research",
@@ -119,7 +119,7 @@
         "huggingface_repo": "mlx-community/c4ai-command-r-v01-4bit",
         "transformers_version": "4.38.2",
         "license": "CC-BY-NC-4.0",
-        "logo": "https://txt.cohere.com/content/images/size/w2000/2024/04/r--Blog-Header.png",
+        "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
         "author": {
             "name": "Cohere 4 AI",
             "url": "https://cohere.com/research",
@@ -141,7 +141,7 @@
         "huggingface_repo": "CohereForAI/c4ai-command-r-v01-4bit",
         "transformers_version": "4.38.2",
         "license": "CC-BY-NC-4.0",
-        "logo": "https://txt.cohere.com/content/images/size/w2000/2024/04/r--Blog-Header.png",
+        "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
         "author": {
             "name": "Cohere 4 AI",
             "url": "https://cohere.com/research",
@@ -262,6 +262,94 @@
         "resources": {
             "canonicalUrl": "https://huggingface.co/openlm-research/open_llama_3b",
             "downloadUrl": "https://huggingface.co/openlm-research/open_llama_3b",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "name": "LLama 3 8B - Instruct",
+        "description": "Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.",
+        "parameters": "8B",
+        "context": "8k",
+        "architecture": "LlamaForCausalLM",
+        "huggingface_repo": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "transformers_version": "4.38",
+        "license": "Meta Custom",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "author": {
+            "name": "Meta",
+            "url": "https://huggingface.co/meta-llama/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+            "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "meta-llama/Meta-Llama-3-8B",
+        "name": "LLama 3 8B",
+        "description": "Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.",
+        "parameters": "8B",
+        "context": "8k",
+        "architecture": "LlamaForCausalLM",
+        "huggingface_repo": "meta-llama/Meta-Llama-3-8B",
+        "transformers_version": "4.38",
+        "license": "Meta Custom",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "author": {
+            "name": "Meta",
+            "url": "https://huggingface.co/meta-llama/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+            "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+        "name": "Llama 3 8B Instruct 4bit MLX",
+        "description": "Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.",
+        "parameters": "8B",
+        "context": "8k",
+        "architecture": "MLX",
+        "huggingface_repo": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+        "transformers_version": "4.38",
+        "license": "Meta Custom",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "author": {
+            "name": "Meta",
+            "url": "https://huggingface.co/meta-llama/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+            "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "mlx-community/Meta-Llama-3-70B-Instruct-4bit",
+        "name": "Llama 3 70B Instruct 4bit MLX",
+        "description": "Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.",
+        "parameters": "8B",
+        "context": "8k",
+        "architecture": "MLX",
+        "huggingface_repo": "mlx-community/Meta-Llama-3-70B-Instruct-4bit",
+        "transformers_version": "4.38",
+        "license": "Meta Custom",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "author": {
+            "name": "Meta",
+            "url": "https://huggingface.co/meta-llama/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+            "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
             "paperUrl": "?"
         }
     },
@@ -847,6 +935,50 @@
             "canonicalUrl": "https://huggingface.co/meta-llama/Llama-2-7b-chat",
             "downloadUrl": "https://huggingface.co/meta-llama/Llama-2-7b-chat",
             "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "microsoft/Phi-3-mini-128k-instruct",
+        "name": "Phi 3 Mini 128K Instruct",
+        "description": "The Phi-3-Mini-128K-Instruct is a 3.8B parameters, lightweight, state-of-the-art open model trained with the Phi-3 datasets that includes both synthetic data and the filtered publicly available websites data with a focus on high-quality and reasoning dense properties. The model belongs to the Phi-3 family with the Mini version in two variants 4K and 128K which is the context length (in tokens) that it can support. The model has underwent a post-training process that incorporates both supervised fine-tuning and direct preference optimization for the instruction following and safety measures. When assessed against benchmarks testing common sense, language understanding, math, code, long context and logical reasoning, Phi-3 Mini-4K-Instruct showcased a robust and state-of-the-art performance among models with less than 13 billion parameters.",
+        "parameters": "3.8B",
+        "context": "128K",
+        "architecture": "Phi3ForCausalLM",
+        "huggingface_repo": "microsoft/Phi-3-mini-128k-instruct",
+        "transformers_version": "4.39.3",
+        "license": "MIT",
+        "logo": "https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg",
+        "author": {
+            "name": "Microsoft",
+            "url": "https://huggingface.co/papers/2404.14219",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
+            "downloadUrl": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
+            "paperUrl": "https://huggingface.co/papers/2404.14219"
+        }
+    },
+    {
+        "uniqueID": "microsoft/Phi-3-mini-4k-instruct",
+        "name": "Phi 3 Mini 4K Instruct",
+        "description": "The Phi-3-Mini-4K-Instruct is a 3.8B parameters, lightweight, state-of-the-art open model trained with the Phi-3 datasets that includes both synthetic data and the filtered publicly available websites data with a focus on high-quality and reasoning dense properties. The model belongs to the Phi-3 family with the Mini version in two variants 4K and 128K which is the context length (in tokens) that it can support. The model has underwent a post-training process that incorporates both supervised fine-tuning and direct preference optimization for the instruction following and safety measures. When assessed against benchmarks testing common sense, language understanding, math, code, long context and logical reasoning, Phi-3 Mini-4K-Instruct showcased a robust and state-of-the-art performance among models with less than 13 billion parameters.",
+        "parameters": "3.8B",
+        "context": "4K",
+        "architecture": "Phi3ForCausalLM",
+        "huggingface_repo": "microsoft/Phi-3-mini-4k-instruct",
+        "transformers_version": "4.39.3",
+        "license": "MIT",
+        "logo": "https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg",
+        "author": {
+            "name": "Microsoft",
+            "url": "https://huggingface.co/papers/2404.14219",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
+            "downloadUrl": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
+            "paperUrl": "https://huggingface.co/papers/2404.14219"
         }
     },
     {

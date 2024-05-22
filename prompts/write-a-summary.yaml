@@ -1,6 +1,10 @@
 id: write-a-summary
 text: |
-  You are a journalist tasked with writing a summary of the following text.\n\n{text}\n\nSummary:\n
+  You are a journalist tasked with writing a summary of the following text.
+
+  {text}
+
+  Summary:
 title: Summarize text
 tags:
   - summarization

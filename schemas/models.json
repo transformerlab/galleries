@@ -31,7 +31,8 @@
           "GGUF",
           "MLX",
           "GemmaForCausalLM",
-          "CohereForCausalLM"
+          "CohereForCausalLM",
+          "Phi3ForCausalLM"
         ]
       },
       "huggingface_repo": {
