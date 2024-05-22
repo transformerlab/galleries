@@ -6,6 +6,9 @@
     "parameters": "35B",
     "context": "8192",
     "architecture": "CohereForCausalLM",
+    "formats":[
+      "Safetensors"
+    ],
     "huggingface_repo": "CohereForAI/c4ai-command-r-v01",
     "transformers_version": "4.38.2",
     "license": "CC-BY-NC-4.0",
@@ -28,6 +31,9 @@
     "parameters": "35B",
     "context": "8192",
     "architecture": "MLX",
+    "formats":[
+      "Safetensors"
+    ],
     "huggingface_repo": "mlx-community/c4ai-command-r-v01-4bit",
     "transformers_version": "4.38.2",
     "license": "CC-BY-NC-4.0",
@@ -50,6 +56,9 @@
     "parameters": "35B",
     "context": "8192",
     "architecture": "CohereForCausalLM",
+    "formats":[
+      "Safetensors"
+    ],
     "huggingface_repo": "CohereForAI/c4ai-command-r-v01-4bit",
     "transformers_version": "4.38.2",
     "license": "CC-BY-NC-4.0",
