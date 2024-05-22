@@ -6,6 +6,9 @@
         "parameters": "3B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "openlm-research/open_llama_3b_v2",
         "transformers_version": "4.31.0.dev0",
         "license": "Apache 2.0",
@@ -28,6 +31,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "openlm-research/open_llama_7b_v2",
         "transformers_version": "4.31.0.dev0",
         "license": "Apache 2.0",

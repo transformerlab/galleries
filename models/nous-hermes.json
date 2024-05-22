@@ -6,6 +6,9 @@
         "parameters": "13B",
         "context": "?",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "NousResearch/Nous-Hermes-13b",
         "transformers_version": "4.29.2",
         "license": "GPL",
@@ -29,6 +32,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MixtralForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
         "transformers_version": "4.37.0.dev0",
         "license": "Apache 2.0",
