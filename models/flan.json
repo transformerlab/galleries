@@ -6,6 +6,10 @@
         "parameters": "80M",
         "context": "2048",
         "architecture": "T5ForConditionalGeneration",
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
         "huggingface_repo": "google/flan-t5-small",
         "transformers_version": "4.23.1",
         "license": "Apache 2.0",

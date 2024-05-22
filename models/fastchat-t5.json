@@ -6,6 +6,9 @@
         "parameters": "3B",
         "context": "4k",
         "architecture": "T5ForConditionalGeneration",
+        "formats": [
+            "PyTorch"
+        ],
         "huggingface_repo": "lmsys/fastchat-t5-3b-v1.0",
         "transformers_version": "4.28.1",
         "license": "Apache 2.0",
