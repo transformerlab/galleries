@@ -6,6 +6,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "mlx-community/Mistral-7B-Instruct-v0.1-4bit-mlx",
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
@@ -28,6 +31,9 @@
         "parameters": "1.1B",
         "context": "4k",
         "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "mlx-community/TinyDolphin-2.8-1.1b-4bit-mlx",
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
@@ -51,6 +57,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
         "huggingface_repo": "mlx-community/Mistral-7B-Instruct-v0.2-4bit",
         "transformers_version": "4.39.0.dev0",
         "license": "Apache 2.0",
@@ -74,6 +83,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MLX",
+        "formats": [
+            "NPZ"
+        ],
         "huggingface_repo": "mlx-community/Mistral-7B-Instruct-v0.2",
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
@@ -96,6 +108,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MLX",
+        "formats": [
+            "NPZ"
+        ],
         "huggingface_repo": "mlx-community/Llama-2-7b-mlx",
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
@@ -118,6 +133,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "MLX",
+        "formats": [
+            "NPZ"
+        ],
         "huggingface_repo": "mlx-community/Llama-2-7b-chat-4-bit",
         "transformers_version": "4.34.0.dev0",
         "license": "Apache 2.0",
