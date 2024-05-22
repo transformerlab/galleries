@@ -6,6 +6,9 @@
         "parameters": "2B",
         "context": "?k",
         "architecture": "PhiForCausalLM",
+        "formats": [
+          "Safetensors"
+        ],
         "huggingface_repo": "microsoft/phi-2",
         "transformers_version": "4.37.0.dev0",
         "license": "MIT",

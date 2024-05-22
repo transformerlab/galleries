@@ -6,6 +6,9 @@
     "parameters": "3.8B",
     "context": "128K",
     "architecture": "Phi3ForCausalLM",
+    "formats": [
+      "Safetensors"
+    ],
     "huggingface_repo": "microsoft/Phi-3-mini-128k-instruct",
     "transformers_version": "4.39.3",
     "license": "MIT",
@@ -28,6 +31,9 @@
     "parameters": "3.8B",
     "context": "4K",
     "architecture": "Phi3ForCausalLM",
+    "formats": [
+      "Safetensors"
+    ],
     "huggingface_repo": "microsoft/Phi-3-mini-4k-instruct",
     "transformers_version": "4.39.3",
     "license": "MIT",
