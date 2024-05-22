@@ -50,6 +50,9 @@
     "parameters": "8B",
     "context": "8k",
     "architecture": "MLX",
+    "formats": [
+      "Safetensors"
+    ],
     "huggingface_repo": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
     "transformers_version": "4.38",
     "license": "Meta Custom",

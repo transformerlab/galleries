@@ -6,6 +6,10 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
         "huggingface_repo": "huggyllama/llama-7b",
         "transformers_version": "4.27.4",
         "license": "Meta Custom",

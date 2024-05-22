@@ -6,6 +6,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "GGUF",
+        "formats": [
+            "GGUF"
+        ],
         "huggingface_repo": "TheBloke/Llama-2-7B-Chat-GGUF",
         "huggingface_filename": "llama-2-7b-chat.Q4_0.gguf",
         "license": "Meta Custom",
@@ -29,6 +32,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "GGUF",
+        "formats": [
+            "GGUF"
+        ],
         "huggingface_repo": "TheBloke/Llama-2-7B-GGUF",
         "huggingface_filename": "llama-2-7b.Q4_0.gguf",
         "license": "Meta Custom",
