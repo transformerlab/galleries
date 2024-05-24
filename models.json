@@ -522,6 +522,38 @@
         }
     },
     {
+        "uniqueID": "mistralai/Mistral-7B-v0.3",
+        "name": "Mistral-7B-v0.3",
+        "description": "The Mistral-7B-v0.3 Large Language Model (LLM) is a Mistral-7B-v0.2 with extended vocabulary. Mistral-7B-v0.3 has the following changes compared to Mistral-7B-v0.2: Extended vocabulary to 32768",
+        "parameters": "7B",
+        "context": "32768",
+        "architecture": "MistralForCausalLM",
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
+        "huggingface_repo": "mistralai/Mistral-7B-v0.3",
+        "transformers_version": "4.42.0.dev0",
+        "license": "Apache 2.0",
+        "logo": "https://docs.mistral.ai/img/logo.svg"
+    },
+    {
+        "uniqueID": "mistralai/Mistral-7B-Instruct-v0.3",
+        "name": "Mistral-7B-Instruct-v0.3",
+        "description": "The Mistral-7B-Instruct-v0.3 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.3. Mistral-7B-v0.3 has the following changes compared to Mistral-7B-v0.2 Extended vocabulary to 32768. Supports v3 Tokenizer. Supports function calling",
+        "parameters": "7B",
+        "context": "32768",
+        "architecture": "MistralForCausalLM",
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
+        "huggingface_repo": "mistralai/Mistral-7B-Instruct-v0.3",
+        "transformers_version": "4.42.0.dev0",
+        "license": "Apache 2.0",
+        "logo": "https://docs.mistral.ai/img/logo.svg"
+    },
+    {
         "uniqueID": "mistralai/Mistral-7B-v0.1",
         "name": "Mistral 7B v0.1",
         "description": "The Mistral-7B-v0.1 Large Language Model (LLM) is a pretrained generative text model with 7 billion parameters. Mistral-7B-v0.1 outperforms Llama 2 13B on all benchmarks we tested.",
