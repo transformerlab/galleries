@@ -1,0 +1,11 @@
+uniqueID: "CohereForAI/aya-23-8B"
+name: "Aya 23 8B"
+description: "Aya 23 is an open weights research release of an instruction fine-tuned model with highly advanced multilingual capabilities. Aya 23 focuses on pairing a highly performant pre-trained Command family of models with the recently released Aya Collection. The result is a powerful multilingual large language model serving 23 languages."
+parameters: "8B"
+context: "8192"
+architecture: "CohereForCausalLM"
+formats: ["PyTorch"]
+huggingface_repo: "CohereForAI/aya-23-8B"
+transformers_version: "4.40.0.dev0"
+license: "CC-By-NC-4.0"
+logo: "https://cdn.sanity.io/images/rjtqmwfu/production/5bc885878e9f0f1e202b742c86f543c7fe765376-409x144.svg"
