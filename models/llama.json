@@ -12,6 +12,7 @@
         ],
         "huggingface_repo": "huggyllama/llama-7b",
         "transformers_version": "4.27.4",
+        "gated": false,
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "size_of_model_in_mb": 24783.0,

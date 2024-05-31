@@ -11,6 +11,7 @@
         ],
         "huggingface_repo": "NousResearch/Nous-Hermes-13b",
         "transformers_version": "4.29.2",
+        "gated": false,
         "license": "GPL",
         "logo": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/62fc06a221c444a56f7cc595/ngyQKdhaykfC8lN6Jfqlz.png?w=200&h=200&f=face",
         "size_of_model_in_mb": 24826.4,
@@ -37,6 +38,7 @@
         ],
         "huggingface_repo": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
         "transformers_version": "4.37.0.dev0",
+        "gated": false,
         "license": "Apache 2.0",
         "logo": "https://pbs.twimg.com/profile_images/1722061115453272064/dydqIH88_400x400.jpg",
         "author": {

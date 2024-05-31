@@ -11,6 +11,7 @@
             "PyTorch"
         ],
         "transformers_version": "4.31.0.dev0",
+        "gated": "manual",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "author": {
@@ -36,6 +37,7 @@
         ],
         "huggingface_repo": "meta-llama/Llama-2-7b-hf",
         "transformers_version": "4.31.0.dev0",
+        "gated": "manual",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "author": {
@@ -61,6 +63,7 @@
         ],
         "huggingface_repo": "meta-llama/Llama-2-13b-hf",
         "transformers_version": "4.31.0.dev0",
+        "gated": "manual",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "author": {
@@ -86,6 +89,7 @@
         ],
         "huggingface_repo": "meta-llama/Llama-2-13b-chat-hf",
         "transformers_version": "4.31.0.dev0",
+        "gated": "manual",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "author": {

@@ -12,6 +12,7 @@
         ],
         "huggingface_repo": "mistralai/Mistral-7B-v0.1",
         "transformers_version": "4.34.0.dev0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://docs.mistral.ai/img/logo.svg",
         "author": {
@@ -38,6 +39,7 @@
         ],
         "huggingface_repo": "mistralai/Mistral-7B-Instruct-v0.2",
         "transformers_version": "4.36.0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://docs.mistral.ai/img/logo.svg",
         "size_of_model_in_mb": 28127.4,
@@ -65,6 +67,7 @@
         ],
         "huggingface_repo": "mistralai/Mixtral-8x7B-Instruct-v0.1",
         "transformers_version": "4.36.0.dev0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://mistral.ai/images/product/models/mistral-8x7b-v0.1.jpg",
         "size_of_model_in_mb": 56254.8,

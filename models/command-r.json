@@ -11,6 +11,7 @@
     ],
     "huggingface_repo": "CohereForAI/c4ai-command-r-v01",
     "transformers_version": "4.38.2",
+    "gated": true,
     "license": "CC-BY-NC-4.0",
     "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
     "author": {
@@ -36,6 +37,7 @@
     ],
     "huggingface_repo": "mlx-community/c4ai-command-r-v01-4bit",
     "transformers_version": "4.38.2",
+    "gated": false,
     "license": "CC-BY-NC-4.0",
     "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
     "author": {
@@ -61,6 +63,7 @@
     ],
     "huggingface_repo": "CohereForAI/c4ai-command-r-v01-4bit",
     "transformers_version": "4.38.2",
+    "gated": true,
     "license": "CC-BY-NC-4.0",
     "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
     "author": {

@@ -11,6 +11,7 @@
         ],
         "huggingface_repo": "tiiuae/falcon-7b",
         "transformers_version": "4.27.4",
+        "gated": false,
         "license": "Apache 2.0",
         "logo": "https://falconllm.tii.ae/assets/images/logo.svg",
         "author": {
@@ -36,6 +37,7 @@
         ],
         "huggingface_repo": "tiiuae/falcon-7b-instruct",
         "transformers_version": "4.27.4",
+        "gated": false,
         "license": "Apache 2.0",
         "logo": "https://falconllm.tii.ae/assets/images/logo.svg",
         "author": {

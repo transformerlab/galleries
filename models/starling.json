@@ -11,6 +11,7 @@
         ],
         "huggingface_repo": "berkeley-nest/Starling-LM-7B-alpha",
         "transformers_version": "4.35.0",
+        "gated": false,
         "license": "Non commercial license",
         "logo": "https://starling.cs.berkeley.edu/starling.png",
         "size_of_model_in_mb": 13814.8,

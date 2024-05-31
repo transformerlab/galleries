@@ -13,6 +13,7 @@
         "huggingface_repo": "google/gemma-7b",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
+        "gated": "manual",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
         "size_of_model_in_mb": 16305.1,
         "author": {
@@ -40,6 +41,7 @@
         "huggingface_repo": "google/gemma-7b-it",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
+        "gated": "manual",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
         "author": {
             "name": "Google",
@@ -66,6 +68,7 @@
         "huggingface_repo": "google/gemma-2b-it",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
+        "gated": "manual",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
         "author": {
             "name": "Google",
@@ -92,6 +95,7 @@
         "huggingface_repo": "google/gemma-2b",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
+        "gated": "manual",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
         "author": {
             "name": "Google",

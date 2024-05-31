@@ -11,6 +11,7 @@
         ],
         "huggingface_repo": "bigcode/starcoder",
         "transformers_version": "4.28.1",
+        "gated": "auto",
         "license": "bigcode-openrail-m",
         "logo": "https://www.bigcode-project.org/flow.png",
         "author": {

@@ -7,5 +7,6 @@ architecture: "CohereForCausalLM"
 formats: ["PyTorch"]
 huggingface_repo: "CohereForAI/aya-23-8B"
 transformers_version: "4.40.0.dev0"
+gated: true
 license: "CC-By-NC-4.0"
 logo: "https://cdn.sanity.io/images/rjtqmwfu/production/5bc885878e9f0f1e202b742c86f543c7fe765376-409x144.svg"

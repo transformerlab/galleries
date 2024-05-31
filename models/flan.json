@@ -12,6 +12,7 @@
         ],
         "huggingface_repo": "google/flan-t5-small",
         "transformers_version": "4.23.1",
+        "gated": false,
         "license": "Apache 2.0",
         "logo": "https://ai.google/static/images/share.png",
         "author": {

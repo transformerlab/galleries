@@ -11,6 +11,7 @@
             "PyTorch"
         ],
         "transformers_version": "4.31.0.dev0",
+        "gated": "manual",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "author": {
@@ -36,6 +37,7 @@
         ],
         "huggingface_repo": "meta-llama/Llama-2-7b-hf",
         "transformers_version": "4.31.0.dev0",
+        "gated": "manual",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "author": {
@@ -61,6 +63,7 @@
         ],
         "huggingface_repo": "meta-llama/Llama-2-13b-hf",
         "transformers_version": "4.31.0.dev0",
+        "gated": "manual",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "author": {
@@ -86,6 +89,7 @@
         ],
         "huggingface_repo": "meta-llama/Llama-2-13b-chat-hf",
         "transformers_version": "4.31.0.dev0",
+        "gated": "manual",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "author": {
@@ -111,6 +115,7 @@
         ],
         "huggingface_repo": "CohereForAI/c4ai-command-r-v01",
         "transformers_version": "4.38.2",
+        "gated": true,
         "license": "CC-BY-NC-4.0",
         "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
         "author": {
@@ -136,6 +141,7 @@
         ],
         "huggingface_repo": "mlx-community/c4ai-command-r-v01-4bit",
         "transformers_version": "4.38.2",
+        "gated": false,
         "license": "CC-BY-NC-4.0",
         "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
         "author": {
@@ -161,6 +167,7 @@
         ],
         "huggingface_repo": "CohereForAI/c4ai-command-r-v01-4bit",
         "transformers_version": "4.38.2",
+        "gated": true,
         "license": "CC-BY-NC-4.0",
         "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
         "author": {
@@ -186,6 +193,7 @@
         ],
         "huggingface_repo": "CohereForAI/aya-23-8B",
         "transformers_version": "4.40.0.dev0",
+        "gated": true,
         "license": "CC-By-NC-4.0",
         "logo": "https://cdn.sanity.io/images/rjtqmwfu/production/5bc885878e9f0f1e202b742c86f543c7fe765376-409x144.svg"
     },
@@ -201,6 +209,7 @@
         ],
         "huggingface_repo": "lmsys/vicuna-7b-v1.5",
         "transformers_version": "4.31.0",
+        "gated": false,
         "license": "Llama 2 CLA",
         "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
         "size_of_model_in_mb": 12853.1,
@@ -227,6 +236,7 @@
         ],
         "huggingface_repo": "lmsys/vicuna-13b-v1.5",
         "transformers_version": "4.31.0",
+        "gated": false,
         "license": "Llama 2 CLA",
         "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
         "author": {
@@ -252,6 +262,7 @@
         ],
         "huggingface_repo": "lmsys/vicuna-7b-v1.5-16k",
         "transformers_version": "4.31.0",
+        "gated": false,
         "license": "Llama 2 CLA",
         "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
         "size_of_model_in_mb": 8737.3,
@@ -278,6 +289,7 @@
         ],
         "huggingface_repo": "openlm-research/open_llama_3b_v2",
         "transformers_version": "4.31.0.dev0",
+        "gated": false,
         "license": "Apache 2.0",
         "logo": "https://avatars.githubusercontent.com/u/132110378?s=48&v=4",
         "author": {
@@ -303,6 +315,7 @@
         ],
         "huggingface_repo": "openlm-research/open_llama_7b_v2",
         "transformers_version": "4.31.0.dev0",
+        "gated": false,
         "license": "Apache 2.0",
         "logo": "https://avatars.githubusercontent.com/u/132110378?s=48&v=4",
         "author": {
@@ -328,6 +341,7 @@
         ],
         "huggingface_repo": "meta-llama/Meta-Llama-3-8B-Instruct",
         "transformers_version": "4.38",
+        "gated": "manual",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "author": {
@@ -353,6 +367,7 @@
         ],
         "huggingface_repo": "meta-llama/Meta-Llama-3-8B",
         "transformers_version": "4.38",
+        "gated": "manual",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "author": {
@@ -378,6 +393,7 @@
         ],
         "huggingface_repo": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
         "transformers_version": "4.38",
+        "gated": false,
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "author": {
@@ -403,6 +419,7 @@
         ],
         "huggingface_repo": "mlx-community/Meta-Llama-3-70B-Instruct-4bit",
         "transformers_version": "4.38",
+        "gated": false,
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "author": {
@@ -430,6 +447,7 @@
         "huggingface_repo": "google/gemma-7b",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
+        "gated": "manual",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
         "size_of_model_in_mb": 16305.1,
         "author": {
@@ -457,6 +475,7 @@
         "huggingface_repo": "google/gemma-7b-it",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
+        "gated": "manual",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
         "author": {
             "name": "Google",
@@ -483,6 +502,7 @@
         "huggingface_repo": "google/gemma-2b-it",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
+        "gated": "manual",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
         "author": {
             "name": "Google",
@@ -509,6 +529,7 @@
         "huggingface_repo": "google/gemma-2b",
         "transformers_version": "4.38.0.dev0",
         "license": "Gemma",
+        "gated": "manual",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
         "author": {
             "name": "Google",
@@ -534,6 +555,7 @@
         ],
         "huggingface_repo": "huggyllama/llama-7b",
         "transformers_version": "4.27.4",
+        "gated": false,
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "size_of_model_in_mb": 24783.0,
@@ -561,6 +583,7 @@
         ],
         "huggingface_repo": "mistralai/Mistral-7B-v0.3",
         "transformers_version": "4.42.0.dev0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://docs.mistral.ai/img/logo.svg"
     },
@@ -577,6 +600,7 @@
         ],
         "huggingface_repo": "mistralai/Mistral-7B-Instruct-v0.3",
         "transformers_version": "4.42.0.dev0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://docs.mistral.ai/img/logo.svg"
     },
@@ -593,6 +617,7 @@
         ],
         "huggingface_repo": "mistralai/Mistral-7B-v0.1",
         "transformers_version": "4.34.0.dev0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://docs.mistral.ai/img/logo.svg",
         "author": {
@@ -619,6 +644,7 @@
         ],
         "huggingface_repo": "mistralai/Mistral-7B-Instruct-v0.2",
         "transformers_version": "4.36.0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://docs.mistral.ai/img/logo.svg",
         "size_of_model_in_mb": 28127.4,
@@ -646,6 +672,7 @@
         ],
         "huggingface_repo": "mistralai/Mixtral-8x7B-Instruct-v0.1",
         "transformers_version": "4.36.0.dev0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://mistral.ai/images/product/models/mistral-8x7b-v0.1.jpg",
         "size_of_model_in_mb": 56254.8,
@@ -672,6 +699,7 @@
         ],
         "huggingface_repo": "tiiuae/falcon-7b",
         "transformers_version": "4.27.4",
+        "gated": false,
         "license": "Apache 2.0",
         "logo": "https://falconllm.tii.ae/assets/images/logo.svg",
         "author": {
@@ -697,6 +725,7 @@
         ],
         "huggingface_repo": "tiiuae/falcon-7b-instruct",
         "transformers_version": "4.27.4",
+        "gated": false,
         "license": "Apache 2.0",
         "logo": "https://falconllm.tii.ae/assets/images/logo.svg",
         "author": {
@@ -723,6 +752,7 @@
         ],
         "huggingface_repo": "google/flan-t5-small",
         "transformers_version": "4.23.1",
+        "gated": false,
         "license": "Apache 2.0",
         "logo": "https://ai.google/static/images/share.png",
         "author": {
@@ -748,6 +778,7 @@
         ],
         "huggingface_repo": "mlx-community/Liberated-Qwen1.5-72B-4bit",
         "transformers_version": "4.39.3",
+        "gated": false,
         "license": "CC-BY-NC-4.0",
         "logo": "https://cdn-uploads.huggingface.co/production/uploads/63111b2d88942700629f5771/xCWGByXr8YNwGxKVh_x9H.png",
         "author": {
@@ -773,6 +804,7 @@
         ],
         "huggingface_repo": "berkeley-nest/Starling-LM-7B-alpha",
         "transformers_version": "4.35.0",
+        "gated": false,
         "license": "Non commercial license",
         "logo": "https://starling.cs.berkeley.edu/starling.png",
         "size_of_model_in_mb": 13814.8,
@@ -799,6 +831,7 @@
         ],
         "huggingface_repo": "lmsys/fastchat-t5-3b-v1.0",
         "transformers_version": "4.28.1",
+        "gated": false,
         "license": "Apache 2.0",
         "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
         "author": {
@@ -824,6 +857,7 @@
         ],
         "huggingface_repo": "microsoft/phi-2",
         "transformers_version": "4.37.0.dev0",
+        "gated": false,
         "license": "MIT",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTwt9xAK7ih0gG74r3XLTpbiWmcd-9PTwXAQ&usqp=CAU",
         "size_of_model_in_mb": 5305.2,
@@ -850,6 +884,7 @@
         ],
         "huggingface_repo": "NousResearch/Nous-Hermes-13b",
         "transformers_version": "4.29.2",
+        "gated": false,
         "license": "GPL",
         "logo": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/62fc06a221c444a56f7cc595/ngyQKdhaykfC8lN6Jfqlz.png?w=200&h=200&f=face",
         "size_of_model_in_mb": 24826.4,
@@ -876,6 +911,7 @@
         ],
         "huggingface_repo": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
         "transformers_version": "4.37.0.dev0",
+        "gated": false,
         "license": "Apache 2.0",
         "logo": "https://pbs.twimg.com/profile_images/1722061115453272064/dydqIH88_400x400.jpg",
         "author": {
@@ -901,6 +937,7 @@
         ],
         "huggingface_repo": "bigcode/starcoder",
         "transformers_version": "4.28.1",
+        "gated": "auto",
         "license": "bigcode-openrail-m",
         "logo": "https://www.bigcode-project.org/flow.png",
         "author": {
@@ -926,6 +963,7 @@
         ],
         "huggingface_repo": "mlx-community/Mistral-7B-Instruct-v0.1-4bit-mlx",
         "transformers_version": "4.34.0.dev0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
         "author": {
@@ -951,6 +989,7 @@
         ],
         "huggingface_repo": "mlx-community/TinyDolphin-2.8-1.1b-4bit-mlx",
         "transformers_version": "4.34.0.dev0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
         "size_of_model_in_mb": 772.2,
@@ -977,6 +1016,7 @@
         ],
         "huggingface_repo": "mlx-community/Mistral-7B-Instruct-v0.2-4bit",
         "transformers_version": "4.39.0.dev0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
         "size_of_model_in_mb": 4067.1,
@@ -1003,6 +1043,7 @@
         ],
         "huggingface_repo": "mlx-community/Mistral-7B-Instruct-v0.2",
         "transformers_version": "4.34.0.dev0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
         "author": {
@@ -1028,6 +1069,7 @@
         ],
         "huggingface_repo": "mlx-community/Llama-2-7b-mlx",
         "transformers_version": "4.34.0.dev0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
         "author": {
@@ -1053,6 +1095,7 @@
         ],
         "huggingface_repo": "mlx-community/Llama-2-7b-chat-4-bit",
         "transformers_version": "4.34.0.dev0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
         "size_of_model_in_mb": 3795.5,
@@ -1079,6 +1122,7 @@
         ],
         "huggingface_repo": "TheBloke/Llama-2-7B-Chat-GGUF",
         "huggingface_filename": "llama-2-7b-chat.Q4_0.gguf",
+        "gated": "auto",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "size_of_model_in_mb": 3648.6,
@@ -1105,6 +1149,7 @@
         ],
         "huggingface_repo": "TheBloke/Llama-2-7B-GGUF",
         "huggingface_filename": "llama-2-7b.Q4_0.gguf",
+        "gated": "auto",
         "license": "Meta Custom",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "size_of_model_in_mb": 3648.6,
@@ -1131,6 +1176,7 @@
         ],
         "huggingface_repo": "microsoft/Phi-3-mini-128k-instruct",
         "transformers_version": "4.39.3",
+        "gated": "auto",
         "license": "MIT",
         "logo": "https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg",
         "author": {
@@ -1156,6 +1202,7 @@
         ],
         "huggingface_repo": "microsoft/Phi-3-mini-4k-instruct",
         "transformers_version": "4.39.3",
+        "gated": "auto",
         "license": "MIT",
         "logo": "https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg",
         "author": {
@@ -1181,6 +1228,7 @@
         ],
         "huggingface_repo": "HuggingFaceH4/zephyr-7b-alpha",
         "transformers_version": "4.34.0",
+        "gated": "auto",
         "license": "MIT",
         "logo": "https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha/resolve/main/thumbnail.png",
         "size_of_model_in_mb": 27628.1,
@@ -1207,6 +1255,7 @@
         ],
         "huggingface_repo": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
         "transformers_version": "4.35.0",
+        "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf495f117670d330a/65985db56b9c04040d633f56/image.png?width=700&auto=webp&quality=80&disable=upscale",
         "size_of_model_in_mb": 4200.9,

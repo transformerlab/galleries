@@ -11,6 +11,7 @@
     ],
     "huggingface_repo": "microsoft/Phi-3-mini-128k-instruct",
     "transformers_version": "4.39.3",
+    "gated": "auto",
     "license": "MIT",
     "logo": "https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg",
     "author": {
@@ -36,6 +37,7 @@
     ],
     "huggingface_repo": "microsoft/Phi-3-mini-4k-instruct",
     "transformers_version": "4.39.3",
+    "gated": "auto",
     "license": "MIT",
     "logo": "https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg",
     "author": {

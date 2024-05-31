@@ -9,6 +9,7 @@
     - "PyTorch"
   huggingface_repo: "mistralai/Mistral-7B-v0.3"
   transformers_version: "4.42.0.dev0"
+  gated: "auto"
   license: "Apache 2.0"
   logo: "https://docs.mistral.ai/img/logo.svg"
 
@@ -23,5 +24,6 @@
     - "PyTorch"
   huggingface_repo: "mistralai/Mistral-7B-Instruct-v0.3"
   transformers_version: "4.42.0.dev0"
+  gated: "auto"
   license: "Apache 2.0"
   logo: "https://docs.mistral.ai/img/logo.svg"

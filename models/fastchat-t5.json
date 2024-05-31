@@ -11,6 +11,7 @@
         ],
         "huggingface_repo": "lmsys/fastchat-t5-3b-v1.0",
         "transformers_version": "4.28.1",
+        "gated": false,
         "license": "Apache 2.0",
         "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
         "author": {
