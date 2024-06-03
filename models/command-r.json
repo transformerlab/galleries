@@ -14,6 +14,7 @@
     "gated": true,
     "license": "CC-BY-NC-4.0",
     "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
+    "size_of_model_in_mb": 43306.2173233032,
     "author": {
       "name": "Cohere 4 AI",
       "url": "https://cohere.com/research",
