@@ -20,8 +20,8 @@
       "blurb": ""
     },
     "resources": {
-      "canonicalUrl": "",
-      "downloadUrl": "",
+      "canonicalUrl": "https://huggingface.co/CohereForAI/c4ai-command-r-v01",
+      "downloadUrl": "https://huggingface.co/CohereForAI/c4ai-command-r-v01",
       "paperUrl": "?"
     }
   },
@@ -46,8 +46,8 @@
       "blurb": ""
     },
     "resources": {
-      "canonicalUrl": "",
-      "downloadUrl": "",
+      "canonicalUrl": "https://huggingface.co/mlx-community/c4ai-command-r-v01-4bit",
+      "downloadUrl": "https://huggingface.co/mlx-community/c4ai-command-r-v01-4bit",
       "paperUrl": "?"
     }
   },
@@ -72,8 +72,8 @@
       "blurb": ""
     },
     "resources": {
-      "canonicalUrl": "",
-      "downloadUrl": "",
+      "canonicalUrl": "https://huggingface.co/CohereForAI/c4ai-command-r-v01-4bit",
+      "downloadUrl": "https://huggingface.co/CohereForAI/c4ai-command-r-v01-4bit",
       "paperUrl": "?"
     }
   }
