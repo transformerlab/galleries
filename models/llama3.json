@@ -46,8 +46,8 @@
       "blurb": ""
     },
     "resources": {
-      "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
-      "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
       "paperUrl": "?"
     }
   },
@@ -72,8 +72,8 @@
       "blurb": ""
     },
     "resources": {
-      "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
-      "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "canonicalUrl": "https://huggingface.co/mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+      "downloadUrl": "https://huggingface.co/mlx-community/Meta-Llama-3-8B-Instruct-4bit",
       "paperUrl": "?"
     }
   },
@@ -98,8 +98,8 @@
       "blurb": ""
     },
     "resources": {
-      "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
-      "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "canonicalUrl": "https://huggingface.co/mlx-community/Meta-Llama-3-70B-Instruct-4bit",
+      "downloadUrl": "https://huggingface.co/mlx-community/Meta-Llama-3-70B-Instruct-4bit",
       "paperUrl": "?"
     }
   }
