@@ -70,6 +70,7 @@
         "license": "Gemma",
         "gated": "manual",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
+        "size_of_model_in_mb": 4801.0,
         "author": {
             "name": "Google",
             "url": "https://huggingface.co/google/gemma-2b-it",
@@ -97,6 +98,7 @@
         "license": "Gemma",
         "gated": "manual",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
+        "size_of_model_in_mb": 4801.0,
         "author": {
             "name": "Google",
             "url": "https://huggingface.co/google/gemma-2b",

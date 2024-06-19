@@ -14,7 +14,7 @@
         "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf495f117670d330a/65985db56b9c04040d633f56/image.png?width=700&auto=webp&quality=80&disable=upscale",
-        "size_of_model_in_mb": 4200.9,
+        "size_of_model_in_mb": 2100.4,
         "author": {
             "name": "TinyLlama",
             "url": "https://github.com/jzhang38/TinyLlama",
