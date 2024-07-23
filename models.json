@@ -628,6 +628,60 @@
         }
     },
     {
+        "uniqueID": "bczhou/tiny-llava-v1-hf",
+        "name": "TinyLlava v1",
+        "description": "Small scale large multimodal model. Able to take in image input and assess web links.",
+        "parameters": "1.41B",
+        "context": "4k",
+        "architecture": "LlavaForConditionalGeneration",
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
+        "huggingface_repo": "bczhou/tiny-llava-v1-hf",
+        "transformers_version": "4.42.4",
+        "gated": false,
+        "license": "Apache 2.0",
+        "logo": "https://media.datadriveninvestor.com/uploads/2020/10/llava_logo.png",
+        "author": {
+            "name": "bczhou",
+            "url": "https://huggingface.co/bczhou",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/bczhou/tiny-llava-v1-hf",
+            "downloadUrl": "https://huggingface.co/bczhou/tiny-llava-v1-hf",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "llava-hf/llava-1.5-7b-hf",
+        "name": "LLaVA 1.5 7B",
+        "description": "LLaVA is an open-source chatbot trained by fine-tuning LLaMA/Vicuna on GPT-generated multimodal instruction-following data.",
+        "parameters": "7B",
+        "context": "4k",
+        "architecture": "LlavaForConditionalGeneration",
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
+        "huggingface_repo": "llava-hf/llava-1.5-7b-hf",
+        "transformers_version": "4.42.4",
+        "gated": false,
+        "license": "Apache 2.0",
+        "logo": "https://media.datadriveninvestor.com/uploads/2020/10/llava_logo.png",
+        "author": {
+            "name": "llava-hf",
+            "url": "https://huggingface.co/llava-hf",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/llava-hf/llava-1.5-7b-hf",
+            "downloadUrl": "https://huggingface.co/llava-hf/llava-1.5-7b-hf",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "mistralai/Mistral-7B-v0.3",
         "name": "Mistral-7B-v0.3",
         "description": "The Mistral-7B-v0.3 Large Language Model (LLM) is a Mistral-7B-v0.2 with extended vocabulary. Mistral-7B-v0.3 has the following changes compared to Mistral-7B-v0.2: Extended vocabulary to 32768",

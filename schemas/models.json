@@ -21,6 +21,7 @@
       },
       "architecture": {
         "enum": [
+          "LlavaForConditionalGeneration",
           "LlamaForCausalLM",
           "T5ForConditionalGeneration",
           "FalconForCausalLM",
