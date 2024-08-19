@@ -14,6 +14,7 @@
         "gated": false,
         "license": "Apache 2.0",
         "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
+        "size_of_model_in_mb": 6396.3,
         "author": {
             "name": "LMSYS Org",
             "url": "https://lmsys.org/",

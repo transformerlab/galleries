@@ -15,6 +15,7 @@
         "gated": false,
         "license": "Apache 2.0",
         "logo": "https://media.datadriveninvestor.com/uploads/2020/10/llava_logo.png",
+        "size_of_model_in_mb": 5381.1,
         "author": {
             "name": "bczhou",
             "url": "https://huggingface.co/bczhou",
