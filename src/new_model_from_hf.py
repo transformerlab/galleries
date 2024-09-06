@@ -7,8 +7,12 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--model_id', type=str,
                     help='The model id in huggingface e.g. Qwen/Qwen2-VL-7B-Instruct', required=True)
+# add a paramter that is the output filename you want:
+parser.add_argument('--output_file_name', type=str,
+                    help='The short output file name e.g. "qwen"', required=False)
 args = parser.parse_args()
 model_id = args.model_id
+output_file_name = args.output_file_name
 
 # end part of model name is the part after the / in the model name
 model_author = model_id.split('/')[0]
@@ -35,6 +39,7 @@ print("-----------MODEL DETAILS")
 architecture = config_json['architectures'][0]
 print(architecture)
 context_length = config_json['max_position_embeddings']
+context_length = str(context_length)
 print(context_length)
 transformers_version = config_json['transformers_version']
 print(transformers_version)
@@ -104,8 +109,11 @@ print(yaml.dump(model_object, sort_keys=False))
 
 # Now we want to write this file to ../models/name.yaml
 # make a clean slug without symbols for the file name:
-model_slug = model_name.lower().replace(' ', '-').replace('/', '-')
-file_name = f"../models/{model_slug}.yaml"
+if output_file_name:
+    model_slug = output_file_name
+else:
+    model_slug = model_name.lower().replace(' ', '-').replace('/', '-')
+    file_name = f"../models/{model_slug}.yaml"
 
 print("writing to: ", file_name)
 
