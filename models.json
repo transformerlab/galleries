@@ -1596,6 +1596,33 @@
         }
     },
     {
+        "uniqueID": "mattshumer/Reflection-Llama-3.1-70B",
+        "name": "Reflection-Llama-3.1-70B",
+        "description": "",
+        "parameters": "",
+        "context": "8192",
+        "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
+        "huggingface_repo": "mattshumer/Reflection-Llama-3.1-70B",
+        "transformers_version": "4.40.0",
+        "gated": false,
+        "license": "llama3.1",
+        "logo": "https://pbs.twimg.com/profile_images/1669714060269461506/9LY7fML7_400x400.jpg",
+        "size_of_model_in_mb": 0,
+        "author": {
+            "name": "mattshumer",
+            "url": "https://huggingface.co/mattshumer/Reflection-Llama-3.1-70B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mattshumer/Reflection-Llama-3.1-70B",
+            "downloadUrl": "https://huggingface.co/mattshumer/Reflection-Llama-3.1-70B",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
         "name": "Tiny Llama 1.1B Chat",
         "description": "The TinyLlama project aims to pretrain a 1.1B Llama model on 3 trillion tokens. With some proper optimization, we can achieve this within a span of 90 days using 16 A100-40G GPUs \ud83d\ude80\ud83d\ude80. The training has started on 2023-09-01.",

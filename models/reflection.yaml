@@ -1,8 +1,8 @@
 uniqueID: mattshumer/Reflection-Llama-3.1-70B
 name: Reflection-Llama-3.1-70B
 description: ""
-parameters: "70b"
-context: 8192
+parameters: ""
+context: "8192"
 architecture: LlamaForCausalLM
 formats:
   - PyTorch
