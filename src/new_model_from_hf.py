@@ -44,6 +44,17 @@ print(context_length)
 transformers_version = config_json['transformers_version']
 print(transformers_version)
 
+# gated information is USUALLY stored in config
+# But newer models seem to not set this and then set a custom
+# gated prompt on the model card
+gated = config_json.get('gated', False)
+if not gated:
+    for line in readme.split('\n'):
+        if line.startswith('extra_gated_prompt:') or line.startswith('extra_gated_fields:'):
+            gated = "manual"
+            break
+print(gated)
+
 # parse the readme file and see if at the start there is metadata
 # that is set like this:
 # license: apache-2.0
@@ -88,10 +99,10 @@ model_object['description'] = ""
 model_object['parameters'] = ""
 model_object['context'] = context_length
 model_object['architecture'] = architecture
-model_object['formats'] = ["PyTorch"]
+model_object['formats'] = ["Safetensors"]
 model_object['huggingface_repo'] = model_id
 model_object['transformers_version'] = transformers_version
-model_object['gated'] = False
+model_object['gated'] = gated
 model_object['license'] = license
 model_object['logo'] = ""
 model_object['size_of_model_in_mb'] = 0
