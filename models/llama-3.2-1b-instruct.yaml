@@ -1,22 +1,22 @@
 uniqueID: meta-llama/Llama-3.2-1B-Instruct
-name: Llama-3.2-1B-Instruct
-description: 'The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use cases, including agentic retrieval and summarization tasks. They outperform many of the available open source and closed chat models on common industry benchmarks.'
-parameters: '1B'
-context: '131072'
+name: Llama 3.2 1B Instruct
+description: "The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use cases, including agentic retrieval and summarization tasks. They outperform many of the available open source and closed chat models on common industry benchmarks."
+parameters: "1B"
+context: "131072"
 architecture: LlamaForCausalLM
 formats:
-- Safetensors
+  - Safetensors
 huggingface_repo: meta-llama/Llama-3.2-1B-Instruct
 transformers_version: 4.45.0.dev0
 gated: manual
 license: llama3.2
-logo: ''
+logo: ""
 size_of_model_in_mb: 2365.9
 author:
   name: meta-llama
   url: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
-  blurb: ''
+  blurb: ""
 resources:
   canonicalUrl: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
   downloadUrl: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
-  paperUrl: '?'
+  paperUrl: "?"

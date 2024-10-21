@@ -1,22 +1,22 @@
 uniqueID: meta-llama/Llama-3.2-1B
-name: Llama-3.2-1B
-description: 'Llama 3.2 is an auto-regressive language model that uses an optimized transformer architecture. The tuned versions use supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align with human preferences for helpfulness and safety.'
-parameters: '1B'
-context: '131072'
+name: Llama 3.2 1B
+description: "Llama 3.2 is an auto-regressive language model that uses an optimized transformer architecture. The tuned versions use supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align with human preferences for helpfulness and safety."
+parameters: "1B"
+context: "131072"
 architecture: LlamaForCausalLM
 formats:
-- Safetensors
+  - Safetensors
 huggingface_repo: meta-llama/Llama-3.2-1B
 transformers_version: 4.45.0.dev0
 gated: manual
 license: llama3.2
-logo: ''
+logo: ""
 size_of_model_in_mb: 2365.9
 author:
   name: meta-llama
   url: https://huggingface.co/meta-llama/Llama-3.2-1B
-  blurb: ''
+  blurb: ""
 resources:
   canonicalUrl: https://huggingface.co/meta-llama/Llama-3.2-1B
   downloadUrl: https://huggingface.co/meta-llama/Llama-3.2-1B
-  paperUrl: '?'
+  paperUrl: "?"
