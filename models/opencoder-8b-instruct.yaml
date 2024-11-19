@@ -1,0 +1,22 @@
+uniqueID: infly/OpenCoder-8B-Instruct
+name: OpenCoder 8B Instruct
+description: 'OpenCoder is pretrained on 2.5 trillion tokens composed of 90% raw code and 10% code-related web data, and supervised finetuned on over 4.5M high-quality SFT examples.'
+parameters: '8B'
+context: '8192'
+architecture: LlamaForCausalLM
+formats:
+- Safetensors
+huggingface_repo: infly/OpenCoder-8B-Instruct
+transformers_version: 4.37.0
+gated: false
+license: other
+logo: https://raw.githubusercontent.com/OpenCoder-llm/opencoder-llm.github.io/refs/heads/main/static/images/opencoder_icon.jpg
+size_of_model_in_mb: 16000.0
+author:
+  name: infly
+  url: https://huggingface.co/infly/OpenCoder-8B-Instruct
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/infly/OpenCoder-8B-Instruct
+  downloadUrl: https://huggingface.co/infly/OpenCoder-8B-Instruct
+  paperUrl: '?'

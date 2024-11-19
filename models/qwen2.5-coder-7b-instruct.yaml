@@ -1,0 +1,22 @@
+uniqueID: Qwen/Qwen2.5-Coder-7B-Instruct
+name: Qwen2.5 Coder 7B Instruct
+description: 'Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen) and performs at a level comparable to the best proprietary models.'
+parameters: '7B'
+context: '32768'
+architecture: Qwen2ForCausalLM
+formats:
+- Safetensors
+huggingface_repo: Qwen/Qwen2.5-Coder-7B-Instruct
+transformers_version: 4.44.0
+gated: false
+license: apache-2.0
+logo: https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png
+size_of_model_in_mb: 16096.9
+author:
+  name: Qwen
+  url: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
+  downloadUrl: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
+  paperUrl: '?'
