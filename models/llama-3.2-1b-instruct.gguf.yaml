@@ -14,7 +14,7 @@ logo: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png'
 size_of_model_in_mb: 1044
 author:
   name: Meta
-  url: 'https://huggingface.co/meta-llama/''
+  url: 'https://huggingface.co/meta-llama/'
   blurb: ''
 resources:
   canonicalUrl: https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF
