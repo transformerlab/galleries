@@ -8,8 +8,7 @@
         "context": "8192",
         "architecture": "GemmaForCausalLM",
         "formats": [
-            "Safetensors",
-            "GGUF"
+            "Safetensors"
         ],
         "huggingface_repo": "google/gemma-7b",
         "transformers_version": "4.38.0.dev0",
@@ -36,8 +35,7 @@
         "context": "8192",
         "architecture": "GemmaForCausalLM",
         "formats": [
-            "Safetensors",
-            "GGUF"
+            "Safetensors"
         ],
         "huggingface_repo": "google/gemma-7b-it",
         "transformers_version": "4.38.0.dev0",
@@ -65,8 +63,7 @@
         "context": "8192",
         "architecture": "GemmaForCausalLM",
         "formats": [
-            "Safetensors",
-            "GGUF"
+            "Safetensors"
         ],
         "huggingface_repo": "google/gemma-2b-it",
         "transformers_version": "4.38.0.dev0",
@@ -94,8 +91,7 @@
         "context": "8192",
         "architecture": "GemmaForCausalLM",
         "formats": [
-            "Safetensors",
-            "GGUF"
+            "Safetensors"
         ],
         "huggingface_repo": "google/gemma-2b",
         "transformers_version": "4.38.0.dev0",
