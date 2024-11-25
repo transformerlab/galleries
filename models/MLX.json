@@ -2,6 +2,7 @@
   {
     "uniqueID": "mlx-community/Mistral-7B-Instruct-v0.1-4bit-mlx",
     "name": "Mistral-7B-Instruct-v0.1 MLX 4bit",
+    "archived": true,
     "description": "The Mistral-7B-Instruct-v0.1 Large Language Model (LLM) is a instruct fine-tuned version of the Mistral-7B-v0.1 generative text model using a variety of publicly available conversation datasets.",
     "parameters": "7B",
     "context": "4k",
@@ -51,6 +52,7 @@
   {
     "uniqueID": "mlx-community/Mistral-7B-Instruct-v0.2-4bit",
     "name": "Mistral-7B-Instruct-v0.2 4 bit MLX",
+    "archived": true,
     "description": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an improved instruct fine-tuned version of Mistral-7B-Instruct-v0.1.",
     "parameters": "7B",
     "context": "4k",
@@ -76,6 +78,7 @@
   {
     "uniqueID": "mlx-community/Mistral-7B-Instruct-v0.2",
     "name": "Mistral-7B-Instruct-v0.2 MLX",
+    "archived": true,
     "description": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an improved instruct fine-tuned version of Mistral-7B-Instruct-v0.1.",
     "parameters": "7B",
     "context": "4k",
@@ -100,6 +103,7 @@
   {
     "uniqueID": "mlx-community/Llama-2-7b-mlx",
     "name": "Llama 2 7b MLX",
+    "archived": true,
     "description": "Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 7B fine-tuned model, in npz format suitable for use in Apple's MLX framework.",
     "parameters": "7B",
     "context": "4k",
@@ -124,6 +128,7 @@
   {
     "uniqueID": "mlx-community/Llama-2-7b-chat-4-bit",
     "name": "Llama 2 7B Chat 4-bit MLX",
+    "archived": true,
     "description": "Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 7B fine-tuned model, in npz format suitable for use in Apple's MLX framework.",
     "parameters": "7B",
     "context": "4k",

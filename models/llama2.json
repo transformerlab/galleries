@@ -2,6 +2,7 @@
     {
         "uniqueID": "meta-llama/Llama-2-7b-chat-hf",
         "name": "LLama 2 7B - Chat",
+        "archived": true,
         "description": "Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 7B fine-tuned model, optimized for dialogue use cases and converted for the Hugging Face Transformers format.",
         "parameters": "7B",
         "context": "4k",
@@ -28,6 +29,7 @@
     {
         "uniqueID": "meta-llama/Llama-2-7b-hf",
         "name": "LLama 2 7B",
+        "archived": true,
         "description": "Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 7B pretrained model, converted for the Hugging Face Transformers format",
         "parameters": "7B",
         "context": "4k",
@@ -54,6 +56,7 @@
     {
         "uniqueID": "meta-llama/Llama-2-13b-hf",
         "name": "LLama 2 13B",
+        "archived": true,
         "description": "Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 7B pretrained model, converted for the Hugging Face Transformers format",
         "parameters": "13B",
         "context": "4k",
@@ -80,6 +83,7 @@
     {
         "uniqueID": "meta-llama/Llama-2-13b-chat-hf",
         "name": "LLama 2 13B - Chat",
+        "archived": true,
         "description": "Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 7B pretrained model, converted for the Hugging Face Transformers format",
         "parameters": "7B",
         "context": "4k",

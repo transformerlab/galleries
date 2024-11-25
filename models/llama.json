@@ -2,6 +2,7 @@
     {
         "uniqueID": "huggyllama/llama-7b",
         "name": "LLama 7B",
+        "archived": true,
         "description": "",
         "parameters": "7B",
         "context": "4k",
