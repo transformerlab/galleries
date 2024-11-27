@@ -1,6 +1,7 @@
 uniqueID: Qwen/Qwen2.5-7B
 name: Qwen2.5 7B
 description: 'Qwen2.5 is the latest series of Qwen large language models'
+added: '2024-11-19'
 parameters: '7B'
 context: '131072'
 architecture: Qwen2ForCausalLM

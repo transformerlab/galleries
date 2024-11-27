@@ -1,6 +1,7 @@
 uniqueID: mlx-community/Qwen2.5-Coder-14B-Instruct-4bit
 name: Qwen2.5 Coder 14B Instruct 4bit MLX
 description: 'Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen) and performs at a level comparable to the best proprietary models.'
+added: '2024-11-19'
 parameters: '14B'
 context: '32768'
 architecture: Qwen2ForCausalLM
