@@ -1,4 +1,4 @@
-schemaVersion: 0.1
+schemaVersion: '0.1'
 metadata:
   author: ''
   name: Dialogue Summarizing
