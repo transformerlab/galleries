@@ -14,7 +14,7 @@
     "gated": true,
     "license": "CC-BY-NC-4.0",
     "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
-    "size_of_model_in_mb": 43306.2173233032,
+    "size_of_model_in_mb": 66732.91,
     "author": {
       "name": "Cohere 4 AI",
       "url": "https://cohere.com/research",
@@ -41,7 +41,7 @@
     "gated": false,
     "license": "CC-BY-NC-4.0",
     "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
-    "size_of_model_in_mb": 1265.4,
+    "size_of_model_in_mb": 21653.11,
     "author": {
       "name": "Cohere 4 AI",
       "url": "https://cohere.com/research",
@@ -68,6 +68,7 @@
     "gated": true,
     "license": "CC-BY-NC-4.0",
     "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
+    "size_of_model_in_mb": 21653.17,
     "author": {
       "name": "Cohere 4 AI",
       "url": "https://cohere.com/research",

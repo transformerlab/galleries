@@ -14,6 +14,7 @@
         "gated": false,
         "license": "Apache 2.0",
         "logo": "https://falconllm.tii.ae/assets/images/logo.svg",
+        "size_of_model_in_mb": 27534.19,
         "author": {
             "name": "TII",
             "url": "https://falconllm.tii.ae/index.html",
@@ -40,6 +41,7 @@
         "gated": false,
         "license": "Apache 2.0",
         "logo": "https://falconllm.tii.ae/assets/images/logo.svg",
+        "size_of_model_in_mb": 27534.19,
         "author": {
             "name": "TII",
             "url": "https://falconllm.tii.ae/index.html",

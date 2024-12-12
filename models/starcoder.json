@@ -14,6 +14,7 @@
         "gated": "auto",
         "license": "bigcode-openrail-m",
         "logo": "https://www.bigcode-project.org/flow.png",
+        "size_of_model_in_mb": 120695.78,
         "author": {
             "name": "Big Code",
             "url": "https://www.bigcode-project.org/",

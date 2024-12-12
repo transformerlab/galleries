@@ -14,7 +14,7 @@
     "gated": "auto",
     "license": "MIT",
     "logo": "https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg",
-    "size_of_model_in_mb": 7290.5,
+    "size_of_model_in_mb": 7290.59,
     "author": {
       "name": "Microsoft",
       "url": "https://huggingface.co/papers/2404.14219",
@@ -41,7 +41,7 @@
     "gated": "auto",
     "license": "MIT",
     "logo": "https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg",
-    "size_of_model_in_mb": 7290.5,
+    "size_of_model_in_mb": 7290.58,
     "author": {
       "name": "Microsoft",
       "url": "https://huggingface.co/papers/2404.14219",

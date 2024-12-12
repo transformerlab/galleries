@@ -15,6 +15,7 @@
     "gated": false,
     "license": "Apache 2.0",
     "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+    "size_of_model_in_mb": 14535.05,
     "author": {
       "name": "Alibaba Cloud",
       "url": "",
@@ -42,6 +43,7 @@
     "gated": false,
     "license": "Apache 2.0",
     "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+    "size_of_model_in_mb": 14535.05,
     "author": {
       "name": "Alibaba Cloud",
       "url": "",
@@ -68,7 +70,7 @@
     "gated": false,
     "license": "Apache 2.0",
     "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
-    "size_of_model_in_mb": 2955.4,
+    "size_of_model_in_mb": 2953.79,
     "author": {
       "name": "Alibaba Cloud",
       "url": "",
@@ -95,6 +97,7 @@
     "gated": false,
     "license": "CC-BY-NC-4.0",
     "logo": "https://cdn-uploads.huggingface.co/production/uploads/63111b2d88942700629f5771/xCWGByXr8YNwGxKVh_x9H.png",
+    "size_of_model_in_mb": 40500.27,
     "author": {
       "name": "AbacusAI",
       "url": "",

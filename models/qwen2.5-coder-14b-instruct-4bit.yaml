@@ -12,7 +12,7 @@ transformers_version: 4.43.1
 gated: false
 license: apache-2.0
 logo: https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png
-size_of_model_in_mb: 8096.9
+size_of_model_in_mb: 7934.02
 author:
   name: mlx-community
   url: https://huggingface.co/mlx-community/Qwen2.5-Coder-14B-Instruct-4bit

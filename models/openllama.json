@@ -14,6 +14,7 @@
         "gated": false,
         "license": "Apache 2.0",
         "logo": "https://avatars.githubusercontent.com/u/132110378?s=48&v=4",
+        "size_of_model_in_mb": 6536.06,
         "author": {
             "name": "OpenLLaMA",
             "url": "https://github.com/openlm-research/open_llama",
@@ -40,6 +41,7 @@
         "gated": false,
         "license": "Apache 2.0",
         "logo": "https://avatars.githubusercontent.com/u/132110378?s=48&v=4",
+        "size_of_model_in_mb": 12853.14,
         "author": {
             "name": "OpenLLaMA",
             "url": "https://github.com/openlm-research/open_llama",

@@ -41,6 +41,7 @@
         "gated": false,
         "license": "Apache 2.0",
         "logo": "https://pbs.twimg.com/profile_images/1722061115453272064/dydqIH88_400x400.jpg",
+        "size_of_model_in_mb": 89080.94,
         "author": {
             "name": "Nous Research",
             "url": "https://nousresearch.com/",

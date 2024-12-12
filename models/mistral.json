@@ -16,6 +16,7 @@
         "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://docs.mistral.ai/img/logo.svg",
+        "size_of_model_in_mb": 28127.37,
         "author": {
             "name": "Mistral AI",
             "url": "https://docs.mistral.ai/",
@@ -44,7 +45,7 @@
         "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://docs.mistral.ai/img/logo.svg",
-        "size_of_model_in_mb": 28127.4,
+        "size_of_model_in_mb": 28127.38,
         "author": {
             "name": "Mistral AI",
             "url": "https://docs.mistral.ai/",
@@ -99,6 +100,7 @@
         "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://docs.mistral.ai/img/logo.svg",
+        "size_of_model_in_mb": 46747.18,
         "author": {
             "name": "Mistral AI",
             "url": "https://docs.mistral.ai/",
@@ -125,6 +127,7 @@
         "gated": "auto",
         "license": "Apache 2.0",
         "logo": "https://docs.mistral.ai/img/logo.svg",
+        "size_of_model_in_mb": 46747.18,
         "author": {
             "name": "Mistral AI",
             "url": "https://docs.mistral.ai/",

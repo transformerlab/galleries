@@ -15,7 +15,7 @@
         "gated": false,
         "license": "MIT",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTwt9xAK7ih0gG74r3XLTpbiWmcd-9PTwXAQ&usqp=CAU",
-        "size_of_model_in_mb": 5305.2,
+        "size_of_model_in_mb": 5304.69,
         "author": {
             "name": "Microsoft",
             "url": "https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/",

@@ -15,8 +15,7 @@
     "gated": "manual",
     "license": "Meta Custom",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
-    "size_of_model_in_mb": 15325.3,
-
+    "size_of_model_in_mb": 15325.28,
     "author": {
       "name": "Meta",
       "url": "https://huggingface.co/meta-llama/",
@@ -44,7 +43,7 @@
     "gated": "manual",
     "license": "Meta Custom",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
-    "size_of_model_in_mb": 15325.3,
+    "size_of_model_in_mb": 15325.28,
     "author": {
       "name": "Meta",
       "url": "https://huggingface.co/meta-llama/",
@@ -72,7 +71,7 @@
     "gated": false,
     "license": "Meta Custom",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
-    "size_of_model_in_mb": 5037.2,
+    "size_of_model_in_mb": 5037.17,
     "author": {
       "name": "Meta",
       "url": "https://huggingface.co/meta-llama/",
@@ -100,6 +99,7 @@
     "gated": false,
     "license": "Meta Custom",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+    "size_of_model_in_mb": 37858.83,
     "author": {
       "name": "Meta",
       "url": "https://huggingface.co/meta-llama/",
@@ -126,7 +126,7 @@
     "gated": "manual",
     "license": "Meta Custom",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
-    "size_of_model_in_mb": 15325.3,
+    "size_of_model_in_mb": 15325.28,
     "author": {
       "name": "Meta",
       "url": "https://huggingface.co/meta-llama/",
@@ -153,7 +153,7 @@
     "gated": "manual",
     "license": "Meta Custom",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
-    "size_of_model_in_mb": 15325.3,
+    "size_of_model_in_mb": 15325.28,
     "author": {
       "name": "Meta",
       "url": "https://huggingface.co/meta-llama/",

@@ -13,7 +13,7 @@
     "gated": "manual",
 
     "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
-    "size_of_model_in_mb": 17648.0,
+    "size_of_model_in_mb": 17648.05,
     "author": {
       "name": "Google",
       "url": "https://huggingface.co/google/gemma-2-9b-it",
@@ -39,6 +39,7 @@
     "transformers_version": "4.42.0.dev0",
     "license": "Gemma",
     "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
+    "size_of_model_in_mb": 51952.53,
     "author": {
       "name": "Google",
       "url": "https://huggingface.co/google/gemma-2-27b-it",
@@ -64,6 +65,7 @@
     "gated": "manual",
 
     "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
+    "size_of_model_in_mb": 5007.32,
     "author": {
       "name": "Google",
       "url": "https://huggingface.co/google/gemma-2-2b-it",

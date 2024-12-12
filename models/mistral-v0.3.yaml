@@ -21,7 +21,7 @@
   gated: "auto"
   license: "Apache 2.0"
   logo: "https://docs.mistral.ai/img/logo.svg"
-  size_of_model_in_mb: 27652.2
+  size_of_model_in_mb: 27652.22
 
 - uniqueID: "mistralai/Mistral-7B-Instruct-v0.3"
   name: "Mistral-7B-Instruct-v0.3"
@@ -46,4 +46,4 @@
   gated: "auto"
   license: "Apache 2.0"
   logo: "https://docs.mistral.ai/img/logo.svg"
-  size_of_model_in_mb: 27652.2
+  size_of_model_in_mb: 27652.23

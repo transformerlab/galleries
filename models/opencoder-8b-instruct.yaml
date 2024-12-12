@@ -12,7 +12,7 @@ transformers_version: 4.37.0
 gated: false
 license: other
 logo: https://raw.githubusercontent.com/OpenCoder-llm/opencoder-llm.github.io/refs/heads/main/static/images/opencoder_icon.jpg
-size_of_model_in_mb: 16000.0
+size_of_model_in_mb: 14824.05
 author:
   name: infly
   url: https://huggingface.co/infly/OpenCoder-8B-Instruct

@@ -13,6 +13,7 @@
     "gated": "auto",
     "license": "Apache 2.0",
     "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
+    "size_of_model_in_mb": 4066.62,
     "author": {
       "name": "Mistral AI",
       "url": "https://docs.mistral.ai/",
@@ -37,7 +38,7 @@
     "gated": "auto",
     "license": "Apache 2.0",
     "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
-    "size_of_model_in_mb": 772.2,
+    "size_of_model_in_mb": 772.23,
     "author": {
       "name": "",
       "url": "",
@@ -63,7 +64,7 @@
     "gated": "auto",
     "license": "Apache 2.0",
     "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
-    "size_of_model_in_mb": 4067.1,
+    "size_of_model_in_mb": 4067.14,
     "author": {
       "name": "",
       "url": "",
@@ -89,6 +90,7 @@
     "gated": "auto",
     "license": "Apache 2.0",
     "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
+    "size_of_model_in_mb": 13813.07,
     "author": {
       "name": "",
       "url": "",
@@ -114,6 +116,7 @@
     "gated": "auto",
     "license": "Apache 2.0",
     "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
+    "size_of_model_in_mb": 12853.07,
     "author": {
       "name": "",
       "url": "",
@@ -139,7 +142,7 @@
     "gated": "auto",
     "license": "Apache 2.0",
     "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
-    "size_of_model_in_mb": 3795.5,
+    "size_of_model_in_mb": 3795.51,
     "author": {
       "name": "",
       "url": "",
