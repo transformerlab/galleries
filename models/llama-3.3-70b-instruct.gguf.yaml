@@ -10,7 +10,7 @@ formats:
 huggingface_repo: bartowski/Llama-3.3-70B-Instruct-GGUF
 huggingface_filename: 'Llama-3.3-70B-Instruct-IQ2_M.gguf'
 gated: false
-license: llama3.2
+license: llama3.3
 logo: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png'
 size_of_model_in_mb: 24678.4
 author:
