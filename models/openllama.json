@@ -2,6 +2,7 @@
     {
         "uniqueID": "openlm-research/open_llama_3b_v2",
         "name": "Open LLama 3b v2",
+        "archived": true,
         "description": " we are releasing our public preview of OpenLLaMA, a permissively licensed open source reproduction of Meta AI’s LLaMA. We are releasing a series of 3B, 7B and 13B models trained on different data mixtures. Our model weights can serve as the drop in replacement of LLaMA in existing implementations.",
         "parameters": "3B",
         "context": "4k",
@@ -29,6 +30,7 @@
     {
         "uniqueID": "openlm-research/open_llama_7b_v2",
         "name": "Open LLama 7b v2",
+        "archived": true,
         "description": " we are releasing our public preview of OpenLLaMA, a permissively licensed open source reproduction of Meta AI’s LLaMA. We are releasing a series of 3B, 7B and 13B models trained on different data mixtures. Our model weights can serve as the drop in replacement of LLaMA in existing implementations.",
         "parameters": "7B",
         "context": "4k",
