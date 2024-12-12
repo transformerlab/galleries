@@ -1,0 +1,22 @@
+uniqueID: mlx-community/Llama-3.3-70B-Instruct-4bit
+name: Llama-3.3-70B-Instruct-4bit
+description: 'MLX export of Llama 3.3 70B Instruct model quantized to 4 bit. Loses some quality but useful for systems with lower RAM.'
+parameters: '70B'
+context: '131072'
+architecture: LlamaForCausalLM
+formats:
+- Safetensors
+huggingface_repo: mlx-community/Llama-3.3-70B-Instruct-4bit
+transformers_version: 4.47.0.dev0
+gated: false
+license: llama3.3
+logo: ''
+size_of_model_in_mb: 37866.60
+author:
+  name: mlx-community
+  url: https://huggingface.co/mlx-community/Llama-3.3-70B-Instruct-4bit
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/mlx-community/Llama-3.3-70B-Instruct-4bit
+  downloadUrl: https://huggingface.co/mlx-community/Llama-3.3-70B-Instruct-4bit
+  paperUrl: '?'
