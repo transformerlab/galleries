@@ -1278,7 +1278,7 @@
         "transformers_version": "4.47.0.dev0",
         "gated": false,
         "license": "llama3.3",
-        "logo": "",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "size_of_model_in_mb": 37866.6,
         "author": {
             "name": "mlx-community",
