@@ -93,5 +93,28 @@
             "config_json": "{\"template_name\":\"WikiSQL\",\"plugin_name\":\"mlx_lora_trainer\",\"model_name\":\"meta-llama/Llama-3.2-1B\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"Given the following description of an SQL table and its columns, provide the corresponding SQL to answer the question.\\n{{text}}\",\"dataset_name\":\"mlx-community/wikisql\",\"lora_layers\":\"8\",\"batch_size\":\"4\",\"learning_rate\":\"0.0001\",\"lora_rank\":\"8\",\"lora_alpha\":\"160\",\"iters\":\"200\",\"steps_per_report\":\"10\",\"steps_per_eval\":\"50\",\"save_every\":\"50\",\"adaptor_name\":\"ml-qa\"}"
         },
         "test": {}
+    },
+    {
+        "schemaVersion": "0.1",
+        "metadata": {
+            "author": "",
+            "name": "1.0",
+            "description": "Trains TinyLlama to speak like a pirate"
+        },
+        "model": {
+            "name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "path": "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+        },
+        "datasets": {
+            "name": "Peyton3995/dolly-15k-mistral-pirate",
+            "path": "Peyton3995/dolly-15k-mistral-pirate"
+        },
+        "training": {
+            "type": "LoRA",
+            "plugin": "llama_trainer",
+            "formatting_template": "Instruction: {{instruction}}\nResponse: {{response}}",
+            "config_json": "{\"template_name\": \"Pirate Speech\", \"plugin_name\": \"llama_trainer\", \"model_name\": \"TinyLlama/TinyLlama-1.1B-Chat-v1.0\", \"model_architecture\": \"LlamaForCausalLM\", \"formatting_template\": \"Instruction: {{instruction}}\\nResponse: {{response}}\", \"dataset_name\": \"Peyton3995/dolly-15k-mistral-pirate\", \"maximum_sequence_length\": \"2048\", \"learning_rate\": \"0.004\", \"num_train_epochs\": \"1\", \"max_steps\": \"-1\", \"lora_r\": \"32\", \"lora_alpha\": \"64\", \"lora_dropout\": \"0.05\", \"adaptor_name\": \"Pirate_Speech\"}"
+        },
+        "test": {}
     }
 ]
