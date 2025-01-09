@@ -1223,7 +1223,7 @@
         "transformers_version": "4.23.1",
         "gated": false,
         "license": "Apache 2.0",
-        "logo": "https://ai.google/static/images/share.png",
+        "logo": "",
         "size_of_model_in_mb": 589.56,
         "author": {
             "name": "Google",
