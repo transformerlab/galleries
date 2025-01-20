@@ -1,0 +1,23 @@
+uniqueID: phi-4-q4.gguf
+name: LLama 3.2 1B Instruct GGUF - Q6_K
+description: "GGUF export of Microsoft's Phi-4 using 4-bit quantization."
+added: '2024-1-20'
+parameters: '14B'
+context: '16384'
+architecture: GGUF
+formats:
+- GGUF
+huggingface_repo: microsoft/phi-4-gguf
+huggingface_filename: 'phi-4-q4.gguf'
+gated: false
+license: mit
+logo: https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg
+size_of_model_in_mb: 0
+author:
+  name: microsoft
+  url: https://huggingface.co/microsoft/phi-4
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/microsoft/phi-4
+  downloadUrl: https://huggingface.co/microsoft/phi-4
+  paperUrl: '?'
