@@ -12,7 +12,7 @@ huggingface_filename: 'phi-4-q4.gguf'
 gated: false
 license: mit
 logo: https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg
-size_of_model_in_mb: 0
+size_of_model_in_mb: 9267.2
 author:
   name: microsoft
   url: https://huggingface.co/microsoft/phi-4
