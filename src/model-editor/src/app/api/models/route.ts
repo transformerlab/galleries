@@ -1,18 +1,19 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
+import yaml from 'yaml';
 
 export async function GET() {
   try {
     const modelsDir = path.join(process.cwd(), '/../../models');
     const files = await fs.readdir(modelsDir);
-    const jsonFiles = files.filter(file => file.endsWith('.json'));
+    const modelFiles = files.filter(file => file.endsWith('.json') || file.endsWith('.yaml') || file.endsWith('.yml'));
     
-    const models = await Promise.all(jsonFiles.map(async (file) => {
+    const models = await Promise.all(modelFiles.map(async (file) => {
       const content = await fs.readFile(path.join(modelsDir, file), 'utf8');
       return {
         filename: file,
-        content: JSON.parse(content)
+        content: file.endsWith('.json') ? JSON.parse(content) : yaml.parse(content)
       };
     }));
     

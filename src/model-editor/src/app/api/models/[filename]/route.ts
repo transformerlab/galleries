@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
-
+import yaml from 'yaml';
 export async function POST(
   request: NextRequest,
   context: { params: { filename: string } }
@@ -12,10 +12,10 @@ export async function POST(
     const modelsDir = path.join(process.cwd(), '/../../models');
     const filePath = path.join(modelsDir, filename);
     
-    // Validate that the file exists and is a .json file
-    if (!filename.endsWith('.json')) {
+    // Validate that the file exists and is either a .json or .yaml/.yml file
+    if (!filename.endsWith('.json') && !filename.endsWith('.yaml') && !filename.endsWith('.yml')) {
       return NextResponse.json(
-        { error: 'Invalid file type' },
+        { error: 'Invalid file type. Must be .json, .yaml, or .yml' },
         { status: 400 }
       );
     }
@@ -23,12 +23,16 @@ export async function POST(
     // Get the content from the request body
     const content = await request.text();
     
-    // Validate JSON
+    // Validate content based on file type
     try {
-      JSON.parse(content);
+      if (filename.endsWith('.json')) {
+        JSON.parse(content);
+      } else if (filename.endsWith('.yaml') || filename.endsWith('.yml')) {
+        yaml.parse(content);
+      }
     } catch (e) {
       return NextResponse.json(
-        { error: 'Invalid JSON content' },
+        { error: 'Invalid file content' },
         { status: 400 }
       );
     }
