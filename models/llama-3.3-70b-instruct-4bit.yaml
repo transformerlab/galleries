@@ -3,7 +3,7 @@ name: Llama-3.3-70B-Instruct-4bit
 description: 'MLX export of Llama 3.3 70B Instruct model quantized to 4 bit. Loses some quality but useful for systems with lower RAM.'
 parameters: '70B'
 context: '131072'
-architecture: LlamaForCausalLM
+architecture: MLX
 formats:
 - Safetensors
 huggingface_repo: mlx-community/Llama-3.3-70B-Instruct-4bit

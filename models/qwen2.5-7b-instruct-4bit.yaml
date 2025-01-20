@@ -4,7 +4,7 @@ description: 'Qwen2.5 is the latest series of Qwen large language models.'
 added: '2024-11-19'
 parameters: '7B'
 context: '32768'
-architecture: Qwen2ForCausalLM
+architecture: MLX
 formats:
 - Safetensors
 huggingface_repo: mlx-community/Qwen2.5-7B-Instruct-4bit

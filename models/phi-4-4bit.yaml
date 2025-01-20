@@ -4,7 +4,7 @@ description: "MLX export of Microsoft's Phi-4 using 4-bit quantization."
 added: '2024-1-20'
 parameters: '14B'
 context: '16384'
-architecture: Phi3ForCausalLM
+architecture: MLX
 formats:
 - Safetensors
 huggingface_repo: mlx-community/phi-4-4bit
