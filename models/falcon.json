@@ -2,6 +2,7 @@
     {
         "uniqueID": "tiiuae/falcon-7b",
         "name": "Falcon 7b",
+        "archived": true,
         "description": "Best overall smaller model. Fast responses. Instruction based. Trained by TII. Licensed for commercial use.",
         "parameters": "7B",
         "context": "4k",
@@ -29,6 +30,7 @@
     {
         "uniqueID": "tiiuae/falcon-7b-instruct",
         "name": "Falcon 7b Instruct",
+        "archived": true,
         "description": "Best overall smaller model. Fast responses. Instruction based. Trained by TII. Licensed for commercial use.",
         "parameters": "7B",
         "context": "4k",
