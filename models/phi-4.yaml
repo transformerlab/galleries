@@ -10,7 +10,7 @@ formats:
 huggingface_repo: microsoft/phi-4
 transformers_version: 4.47.0
 gated: false
-license: mit
+license: MIT
 logo: https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg
 size_of_model_in_mb: 27966.45
 author:
