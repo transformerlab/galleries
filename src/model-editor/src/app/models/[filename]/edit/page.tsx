@@ -57,7 +57,7 @@ export default function EditModelPage() {
         throw new Error('Failed to update models');
       }
 
-      router.push(`/models/${params.filename}`);
+      router.push(`/models/${params.filename}/edit`);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to update models');
     }

@@ -4,6 +4,8 @@ import path from 'path';
 import yaml from 'yaml';
 import { ModelConfig } from '@/types/ModelConfig';
 
+const modelsDir = path.join(process.cwd(), '/../../models');
+
 export async function POST(
   request: NextRequest,
   context: { params: { filename: string } }
@@ -11,7 +13,6 @@ export async function POST(
   const { filename } = await context.params;
 
   try {
-    const modelsDir = path.join(process.cwd(), '/../../models');
     const filePath = path.join(modelsDir, filename);
     
     // Validate that the file exists and is either a .json or .yaml/.yml file
@@ -60,7 +61,6 @@ export async function GET(
   const { filename } = await context.params;
 
   try {
-    const modelsDir = path.join(process.cwd(), '/../../models');
     const filePath = path.join(modelsDir, filename);
     const fileContent = await fs.readFile(filePath, 'utf-8');
     
@@ -94,15 +94,17 @@ export async function PUT(
 
   try {
     const modelData: ModelConfig = await request.json();
-    const filePath = path.join(process.cwd(), 'models', filename);
+    const filePath = path.join(modelsDir, filename);
+
+    console.log('Model data:', modelData);
     
     // Only validate required name field
-    if (!modelData.name) {
-      return NextResponse.json(
-        { error: 'Name is required' },
-        { status: 400 }
-      );
-    }
+    // if (!modelData.name) {
+    //   return NextResponse.json(
+    //     { error: 'Name is required' },
+    //     { status: 400 }
+    //   );
+    // }
 
     await fs.writeFile(filePath, JSON.stringify(modelData, null, 2));
     return NextResponse.json(modelData);
