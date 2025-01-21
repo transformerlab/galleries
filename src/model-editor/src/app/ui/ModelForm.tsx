@@ -1,7 +1,17 @@
+interface ModelData {
+  uniqueID?: string;
+  name: string;
+  description: string;
+  parameters?: string;
+  context?: string;
+  architecture?: string;
+  license?: string;
+}
+
 interface ModelFormProps {
   model: {
     filename: string;
-    content: any;
+    content: ModelData | ModelData[];
   };
   content: string;
   error: string;
@@ -16,9 +26,9 @@ function SingleModelForm({
   index, 
   onChange 
 }: { 
-  modelData: any, 
+  modelData: ModelData, 
   index?: number,
-  onChange: (field: string, value: any, index?: number) => void 
+  onChange: (field: string, value: string, index?: number) => void 
 }) {
   return (
     <div className="border rounded-lg p-6 bg-white shadow-sm mb-6">
@@ -127,7 +137,7 @@ export function ModelForm({
   const isArray = Array.isArray(modelData);
 
   // Handle individual field changes
-  const handleFieldChange = (field: string, value: any, index?: number) => {
+  const handleFieldChange = (field: string, value: string, index?: number) => {
     if (isArray) {
       const updatedContent = [...modelData];
       updatedContent[index!] = { ...updatedContent[index!], [field]: value };
@@ -150,7 +160,7 @@ export function ModelForm({
 
       <div className="space-y-4">
         {isArray ? (
-          modelData.map((item: any, index: number) => (
+          modelData.map((item: ModelData, index: number) => (
             <SingleModelForm
               key={index}
               modelData={item}

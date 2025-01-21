@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { ModelList } from './ModelList';
-import { ModelForm } from './ModelForm';
+import { useState } from "react";
+import { ModelList } from "./ModelList";
+import { ModelForm } from "./ModelForm";
 
 interface ModelEditorProps {
   models: {
@@ -14,37 +14,37 @@ interface ModelEditorProps {
 
 export function ModelEditor({ models, onSave }: ModelEditorProps) {
   const [editingModel, setEditingModel] = useState<string | null>(null);
-  const [content, setContent] = useState('');
-  const [error, setError] = useState('');
+  const [content, setContent] = useState("");
+  const [error, setError] = useState("");
 
   const handleSave = async () => {
     try {
       JSON.parse(content);
-      
+
       const response = await fetch(`/api/models/${editingModel}`, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: content,
       });
 
       if (!response.ok) {
-        throw new Error('Failed to save');
+        throw new Error("Failed to save");
       }
 
       setEditingModel(null);
-      setError('');
+      setError("");
       onSave();
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Invalid JSON');
+      setError(err instanceof Error ? err.message : "Invalid JSON");
     }
   };
 
   const handleCancel = () => {
     setEditingModel(null);
-    setContent('');
-    setError('');
+    setContent("");
+    setError("");
   };
 
   const handleEdit = (model: { filename: string; content: any }) => {
@@ -53,7 +53,7 @@ export function ModelEditor({ models, onSave }: ModelEditorProps) {
   };
 
   if (editingModel) {
-    const model = models.find(m => m.filename === editingModel);
+    const model = models.find((m) => m.filename === editingModel);
     if (!model) return null;
 
     return (
@@ -69,4 +69,4 @@ export function ModelEditor({ models, onSave }: ModelEditorProps) {
   }
 
   return <ModelList models={models} onEdit={handleEdit} />;
-} 
+}

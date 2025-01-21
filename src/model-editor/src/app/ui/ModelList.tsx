@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface ModelListProps {
   models: {
     filename: string;
@@ -22,12 +24,7 @@ export function ModelList({ models, onEdit }: ModelListProps) {
             <tr key={model.filename} className="border-b">
               <td className="py-2">{model.filename}</td>
               <td className="text-right">
-                <button
-                  onClick={() => onEdit(model)}
-                  className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
-                >
-                  Edit
-                </button>
+                <Link href={`models/${model.filename}/edit`}>Edit</Link>
               </td>
             </tr>
           ))}
@@ -35,4 +32,4 @@ export function ModelList({ models, onEdit }: ModelListProps) {
       </table>
     </div>
   );
-} 
+}
