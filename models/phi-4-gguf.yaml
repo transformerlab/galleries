@@ -1,7 +1,7 @@
 uniqueID: phi-4-q4.gguf
 name: Phi-4 GGUF - 4bit
 description: "GGUF export of Microsoft's Phi-4 using 4-bit quantization."
-added: '2024-1-20'
+added: '2025-1-20'
 parameters: '14B'
 context: '16384'
 architecture: GGUF

@@ -1,7 +1,7 @@
 uniqueID: microsoft/phi-4
 name: Phi-4
 description: "Fourth generation of Microsoft's Phi model. Text, best suited for prompts in the chat format."
-added: '2024-1-20'
+added: '2025-1-20'
 parameters: '14B'
 context: '16384'
 architecture: Phi3ForCausalLM
