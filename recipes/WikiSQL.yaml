@@ -1,20 +1,19 @@
 schemaVersion: '0.1'
 metadata:
   author: ''
-  version: '0.1'
-  name: WikiSQL
-  description: 'Trains a model to answer SQL queries. Adapted from https://github.com/ml-explore/mlx-examples/'
+  name: 'WikiSQL'
+  version: '1.0'
+  description: 'Trains a model to answer SQL queries'
 model:
-  name: meta-llama/Llama-3.2-1B
-  path: meta-llama/Llama-3.2-1B
+  name: Qwen/Qwen2.5-1.5B-Instruct
+  path: Qwen/Qwen2.5-1.5B-Instruct
 datasets:
   name: mlx-community/wikisql
   path: mlx-community/wikisql
 training:
   type: LoRA
-  plugin: mlx_lora_trainer
-  formatting_template: 'Given the following description of an SQL table and its columns, provide the corresponding SQL to answer the question.
-    {{text}}'
-  config_json: '{"template_name":"WikiSQL","plugin_name":"mlx_lora_trainer","model_name":"meta-llama/Llama-3.2-1B","model_architecture":"LlamaForCausalLM","formatting_template":"Given
-    the following description of an SQL table and its columns, provide the corresponding SQL to answer the question.\n{{text}}","dataset_name":"mlx-community/wikisql","lora_layers":"8","batch_size":"4","learning_rate":"0.0001","lora_rank":"8","lora_alpha":"160","iters":"200","steps_per_report":"10","steps_per_eval":"50","save_every":"50","adaptor_name":"ml-qa"}'
+  plugin: llama_trainer
+  formatting_template: '{{text}} ;'
+  config_json: '{"template_name":"Wiki SQL","plugin_name":"llama_trainer","model_name":"Qwen/Qwen2.5-1.5B-Instruct","model_architecture":"Qwen2ForCausalLM","formatting_template":"{{text}}
+    ;","dataset_name":"mlx-community/wikisql","maximum_sequence_length":"2048","batch_size":"1","learning_rate":"0.005","num_train_epochs":"2","max_steps":"-1","lora_r":"32","lora_alpha":"64","lora_dropout":"0.1","adaptor_name":"WikiSQL"}'
 test: {}
