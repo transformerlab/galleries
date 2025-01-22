@@ -3,7 +3,8 @@
         "schemaVersion": "0.1",
         "metadata": {
             "author": "",
-            "name": "1.0",
+            "name": "Dialogue Summarizing",
+            "version": "1.0",
             "description": "Trains TinyLlama to summarize conversations."
         },
         "model": {
@@ -122,7 +123,8 @@
         "schemaVersion": "0.1",
         "metadata": {
             "author": "",
-            "name": "1.0",
+            "version": "1.0",
+            "name": "Pirate Speech",
             "description": "Trains TinyLlama to speak like a pirate"
         },
         "model": {

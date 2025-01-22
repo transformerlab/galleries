@@ -1,7 +1,8 @@
 schemaVersion: '0.1'
 metadata:
   author: ''
-  name: '1.0'
+  name: 'Dialogue Summarizing'
+  version: '1.0'
   description: Trains TinyLlama to summarize conversations.
 model:
   name: TinyLlama/TinyLlama-1.1B-Chat-v1.0
