@@ -1,7 +1,8 @@
 schemaVersion: '0.1'
 metadata:
   author: ''
-  name: '1.0'
+  version: '1.0'
+  name: 'Pirate Speech'
   description: Trains TinyLlama to speak like a pirate
 model:
   name: TinyLlama/TinyLlama-1.1B-Chat-v1.0

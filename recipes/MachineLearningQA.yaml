@@ -1,0 +1,18 @@
+schemaVersion: '0.1'
+metadata:
+  author: ''
+  version: '1.0'
+  name: 'Machine Learning QA'
+  description: 'Trains a Qwen 2.5 model to answer machine learning questions'
+model:
+  name: Qwen/Qwen2.5-1.5B-Instruct
+  path: Qwen/Qwen2.5-1.5B-Instruct
+datasets:
+  name: win-wang/Machine_Learning_QA_Collection
+  path: win-wang/Machine_Learning_QA_Collection
+training:
+  type: LoRA
+  plugin: llama_trainer
+  formatting_template: '{{text}}'
+  config_json: '{"template_name":"MachineLearningQA","plugin_name":"llama_trainer","model_name":"Qwen/Qwen2.5-1.5B-Instruct","model_architecture":"Qwen2ForCausalLM","formatting_template":"{{text}}\n","dataset_name":"win-wang/Machine_Learning_QA_Collection","maximum_sequence_length":"2048","batch_size":"1","learning_rate":"0.00005","num_train_epochs":"1","max_steps":"-1","lora_r":"16","lora_alpha":"64","lora_dropout":"0.1","adaptor_name":"ML-QA"}'
+test: {}
