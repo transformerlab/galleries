@@ -1,7 +1,7 @@
 schemaVersion: '0.1'
 metadata:
   author: ''
-  name: 'Wiki SQL'
+  name: 'WikiSQL'
   version: '1.0'
   description: 'Trains a model to answer SQL queries'
 model:

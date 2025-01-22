@@ -2,7 +2,7 @@ schemaVersion: '0.1'
 metadata:
   author: ''
   version: '1.0'
-  name: 'Machine Learning QA'
+  name: 'MachineLearningQnA'
   description: 'Trains a Qwen 2.5 model to answer machine learning questions'
 model:
   name: Qwen/Qwen2.5-1.5B-Instruct
