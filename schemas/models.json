@@ -21,21 +21,22 @@
       },
       "architecture": {
         "enum": [
-          "LlavaForConditionalGeneration",
-          "LlamaForCausalLM",
-          "T5ForConditionalGeneration",
+          "CohereForCausalLM",
+          "DeepseekV3ForCausalLM",
           "FalconForCausalLM",
-          "MistralForCausalLM",
-          "MixtralForCausalLM",
-          "GPTBigCodeForCausalLM",
-          "PhiForCausalLM",
-          "GGUF",
-          "MLX",
           "GemmaForCausalLM",
           "Gemma2ForCausalLM",
-          "CohereForCausalLM",
+          "GGUF",
+          "GPTBigCodeForCausalLM",
+          "LlamaForCausalLM",
+          "LlavaForConditionalGeneration",
+          "MistralForCausalLM",
+          "MixtralForCausalLM",
+          "MLX",
+          "PhiForCausalLM",
+          "Phi3ForCausalLM",
           "Qwen2ForCausalLM",
-          "Phi3ForCausalLM"
+          "T5ForConditionalGeneration"
         ]
       },
       "huggingface_repo": {
