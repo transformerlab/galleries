@@ -12,7 +12,7 @@ transformers_version: 4.46.3
 gated: false
 license: MIT
 logo: 'https://www.deepseek.com/favicon.ico'
-size_of_model_in_mb: 0
+size_of_model_in_mb: 656703.53
 author:
   name: deepseek-ai
   url: https://huggingface.co/deepseek-ai/DeepSeek-R1
