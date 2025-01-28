@@ -1,0 +1,23 @@
+uniqueID: deepseek-ai/DeepSeek-R1
+name: DeepSeek-R1
+description: "Full version of DeepSeek's flagship Chain-of-Thought model."
+added: '2025-01-27'
+parameters: '671B'
+context: '163840'
+architecture: DeepseekV3ForCausalLM
+formats:
+- Safetensors
+huggingface_repo: deepseek-ai/DeepSeek-R1
+transformers_version: 4.46.3
+gated: false
+license: MIT
+logo: 'https://www.deepseek.com/favicon.ico'
+size_of_model_in_mb: 0
+author:
+  name: deepseek-ai
+  url: https://huggingface.co/deepseek-ai/DeepSeek-R1
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/deepseek-ai/DeepSeek-R1
+  downloadUrl: https://huggingface.co/deepseek-ai/DeepSeek-R1
+  paperUrl: '?'

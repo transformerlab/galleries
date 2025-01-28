@@ -1,0 +1,23 @@
+uniqueID: mlx-community/DeepSeek-R1-Distill-Qwen-32B-4bit
+name: DeepSeek-R1-Distill-Qwen-32B-4bit
+description: "A 4-bit quantized MLX-formatted version of DeeSeek R1 Qwen Distill that is good for running on Apple Silicon."
+added: '2025-01-27'
+parameters: '32B'
+context: '131072'
+architecture: Qwen2ForCausalLM
+formats:
+- Safetensors
+huggingface_repo: mlx-community/DeepSeek-R1-Distill-Qwen-32B-4bit
+transformers_version: 4.43.1
+gated: false
+license: MIT
+logo: 'https://www.deepseek.com/favicon.ico'
+size_of_model_in_mb: 0
+author:
+  name: mlx-community
+  url: https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Qwen-32B-4bit
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Qwen-32B-4bit
+  downloadUrl: https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Qwen-32B-4bit
+  paperUrl: '?'

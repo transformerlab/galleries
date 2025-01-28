@@ -1,0 +1,24 @@
+uniqueID: unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF
+name: DeepSeek R1 Distill Qwen 14B GGUF - Q6_K4
+description: "A Q6_K quantized GGUF version of DeepSeek R1 Qwen Distill 14B."
+added: '2025-01-27'
+parameters: '14B'
+context: '131072'
+architecture: GGUF
+formats:
+- GGUF
+huggingface_repo: unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF
+huggingface_filename: 'DeepSeek-R1-Distill-Qwen-14B-Q6_K.gguf'
+transformers_version: 4.43.1
+gated: false
+license: MIT
+logo: 'https://www.deepseek.com/favicon.ico'
+size_of_model_in_mb: 12390.4
+author:
+  name: unsloth
+  url: hhttps://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF
+  downloadUrl: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF
+  paperUrl: '?'
