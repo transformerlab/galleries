@@ -1686,7 +1686,7 @@
         "gated": false,
         "license": "apache-2.0",
         "logo": "",
-        "size_of_model_in_mb": 0,
+        "size_of_model_in_mb": 15325.28,
         "author": {
             "name": "watt-ai",
             "url": "https://huggingface.co/watt-ai/watt-tool-8B",
