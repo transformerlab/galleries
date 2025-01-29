@@ -1,0 +1,22 @@
+uniqueID: HuggingFaceTB/SmolLM-135M-Instruct
+name: SmolLM 135M Instruct
+description: "The SMOLest version of HuggingFace's SLM trained on publicly available datasets."
+parameters: '135M'
+context: '2048'
+architecture: LlamaForCausalLM
+formats:
+- Safetensors
+huggingface_repo: HuggingFaceTB/SmolLM-135M-Instruct
+transformers_version: 4.42.3
+gated: false
+license: apache-2.0
+logo: 'https://webml-community-smollm-webgpu.static.hf.space/logo.png'
+size_of_model_in_mb: 0
+author:
+  name: HuggingFaceTB
+  url: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
+  downloadUrl: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
+  paperUrl: 'https://huggingface.co/blog/smollm'
