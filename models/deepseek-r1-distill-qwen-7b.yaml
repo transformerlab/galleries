@@ -3,6 +3,8 @@ name: DeepSeek-R1-Distill-Qwen-7B
 description: "Qwen distillation of DeepSeek chain-of-thought model."
 added: '2025-01-27'
 parameters: '7B'
+tags:
+- Chain of Thought
 context: '131072'
 architecture: Qwen2ForCausalLM
 formats:

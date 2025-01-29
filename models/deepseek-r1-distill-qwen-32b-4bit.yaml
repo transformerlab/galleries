@@ -3,6 +3,8 @@ name: DeepSeek-R1-Distill-Qwen-32B-4bit
 description: "A 4-bit quantized MLX-formatted version of DeeSeek R1 Qwen Distill that is good for running on Apple Silicon."
 added: '2025-01-27'
 parameters: '32B'
+tags:
+- Chain of Thought
 context: '131072'
 architecture: Qwen2ForCausalLM
 formats:

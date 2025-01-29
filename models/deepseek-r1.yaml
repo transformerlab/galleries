@@ -3,6 +3,8 @@ name: DeepSeek-R1
 description: "Full version of DeepSeek's flagship Chain-of-Thought model."
 added: '2025-01-27'
 parameters: '671B'
+tags:
+- Chain of Thought
 context: '163840'
 architecture: DeepseekV3ForCausalLM
 formats:

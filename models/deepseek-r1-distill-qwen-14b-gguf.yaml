@@ -3,6 +3,8 @@ name: DeepSeek R1 Distill Qwen 14B GGUF - Q6_K4
 description: "A Q6_K quantized GGUF version of DeepSeek R1 Qwen Distill 14B."
 added: '2025-01-27'
 parameters: '14B'
+tags:
+- Chain of Thought
 context: '131072'
 architecture: GGUF
 formats:
