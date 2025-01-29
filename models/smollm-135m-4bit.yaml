@@ -11,7 +11,7 @@ transformers_version: 4.41.2
 gated: false
 license: apache-2.0
 logo: 'https://webml-community-smollm-webgpu.static.hf.space/logo.png'
-size_of_model_in_mb: 0
+size_of_model_in_mb: 75.10
 author:
   name: mlx-community
   url: https://huggingface.co/mlx-community/SmolLM-135M-4bit

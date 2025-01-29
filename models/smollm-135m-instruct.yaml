@@ -11,7 +11,7 @@ transformers_version: 4.42.3
 gated: false
 license: apache-2.0
 logo: 'https://webml-community-smollm-webgpu.static.hf.space/logo.png'
-size_of_model_in_mb: 0
+size_of_model_in_mb: 259.37
 author:
   name: HuggingFaceTB
   url: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct

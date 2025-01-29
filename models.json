@@ -336,7 +336,7 @@
         "gated": false,
         "license": "apache-2.0",
         "logo": "https://webml-community-smollm-webgpu.static.hf.space/logo.png",
-        "size_of_model_in_mb": 0,
+        "size_of_model_in_mb": 259.37,
         "author": {
             "name": "HuggingFaceTB",
             "url": "https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct",
@@ -694,7 +694,7 @@
         "gated": false,
         "license": "apache-2.0",
         "logo": "https://webml-community-smollm-webgpu.static.hf.space/logo.png",
-        "size_of_model_in_mb": 0,
+        "size_of_model_in_mb": 3267.08,
         "author": {
             "name": "HuggingFaceTB",
             "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct",
@@ -1030,7 +1030,7 @@
         "gated": false,
         "license": "apache-2.0",
         "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
-        "size_of_model_in_mb": 0,
+        "size_of_model_in_mb": 14535.11,
         "author": {
             "name": "Qwen",
             "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M",
@@ -1835,7 +1835,7 @@
         "gated": false,
         "license": "apache-2.0",
         "logo": "https://webml-community-smollm-webgpu.static.hf.space/logo.png",
-        "size_of_model_in_mb": 0,
+        "size_of_model_in_mb": 75.1,
         "author": {
             "name": "mlx-community",
             "url": "https://huggingface.co/mlx-community/SmolLM-135M-4bit",
@@ -2223,7 +2223,7 @@
         "gated": false,
         "license": "apache-2.0",
         "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
-        "size_of_model_in_mb": 0,
+        "size_of_model_in_mb": 14980.7,
         "author": {
             "name": "mlx-community",
             "url": "https://huggingface.co/mlx-community/Qwen2.5-14B-Instruct-1M-8bit",
