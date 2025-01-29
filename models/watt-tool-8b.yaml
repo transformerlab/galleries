@@ -1,0 +1,24 @@
+uniqueID: watt-ai/watt-tool-8B
+name: watt-tool-8B
+description: 'Leading tool use model based on Llama architecture.'
+parameters: '8B'
+tags:
+- Tool USe
+context: '131072'
+architecture: LlamaForCausalLM
+formats:
+- Safetensors
+huggingface_repo: watt-ai/watt-tool-8B
+transformers_version: 4.45.2
+gated: false
+license: apache-2.0
+logo: ''
+size_of_model_in_mb: 0
+author:
+  name: watt-ai
+  url: https://huggingface.co/watt-ai/watt-tool-8B
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/watt-ai/watt-tool-8B
+  downloadUrl: https://huggingface.co/watt-ai/watt-tool-8B
+  paperUrl: '?'
