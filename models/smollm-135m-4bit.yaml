@@ -1,6 +1,7 @@
 uniqueID: mlx-community/SmolLM-135M-4bit
 name: SmolLM 135M MLX 4bit
 description: 'Tiny SLM created by HuggingFace in 4-bit MLX format.'
+added: '2025-01-28'
 parameters: '135M'
 context: '2048'
 architecture: MLX
