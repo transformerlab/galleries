@@ -1,5 +1,5 @@
 uniqueID: Llama-3.3-70B-Instruct-GGUF
-name: LLama 3.2 70B Instruct GGUF - IQ2_M
+name: LLama 3.2 70B Instruct (GGUF IQ2_M)
 description: 'GGUF export of Llama 3.3 70B Instruct model IQ2_M variant. Loses some quality but useful for systems with lower RAM.'
 added: '2024-12-12'
 parameters: '70B'

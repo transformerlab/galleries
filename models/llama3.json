@@ -57,7 +57,7 @@
   },
   {
     "uniqueID": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
-    "name": "Llama 3 8B Instruct 4bit MLX",
+    "name": "Llama 3 8B Instruct (MLX 4-bit)",
     "archived": true,
     "description": "Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.",
     "parameters": "8B",
@@ -85,7 +85,7 @@
   },
   {
     "uniqueID": "mlx-community/Meta-Llama-3-70B-Instruct-4bit",
-    "name": "Llama 3 70B Instruct 4bit MLX",
+    "name": "Llama 3 70B Instruct (MLX 4-bit)",
     "archived": true,
     "description": "Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.",
     "parameters": "8B",
@@ -113,7 +113,7 @@
   },
   {
     "uniqueID": "meta-llama/Meta-Llama-3.1-8B-Instruct",
-    "name": "LLama 3.1 8B - Instruct",
+    "name": "LLama 3.1 8B Instruct",
     "description": "The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models on common industry benchmarks.",
     "parameters": "8B",
     "context": "128k",

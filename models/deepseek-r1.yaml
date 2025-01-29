@@ -1,5 +1,5 @@
 uniqueID: deepseek-ai/DeepSeek-R1
-name: DeepSeek-R1
+name: DeepSeek R1
 description: "Full version of DeepSeek's flagship Chain-of-Thought model."
 added: '2025-01-27'
 parameters: '671B'

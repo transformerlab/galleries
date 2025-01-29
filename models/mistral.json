@@ -30,7 +30,7 @@
     },
     {
         "uniqueID": "mistralai/Mistral-7B-Instruct-v0.2",
-        "name": "Mistral-7B-Instruct-v0.2",
+        "name": "Mistral 7B Instruct v0.2",
         "archived": true,
         "description": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is a instruct fine-tuned version of the Mistral-7B-v0.1 generative text model using a variety of publicly available conversation datasets.",
         "parameters": "7B",

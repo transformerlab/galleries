@@ -1,5 +1,5 @@
 uniqueID: mlx-community/Qwen2.5-14B-Instruct-1M-8bit
-name: Qwen2.5 14B Instruct 1M (MLX 8bit)
+name: Qwen2.5 14B Instruct - 1M context (MLX 8bit)
 description: "MLX 8-bit version of the long-context version of Qwen's 2.5 model."
 parameters: '14B'
 added: '2025-01-28'

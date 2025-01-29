@@ -1,5 +1,5 @@
 uniqueID: Qwen/Qwen2.5-1.5B-Instruct
-name: Qwen2.5-1.5B-Instruct
+name: Qwen2.5 1.5B Instruct
 description: 'Qwen2.5 is the latest series of Qwen large language models.'
 parameters: '1.5B'
 context: '32768'

@@ -28,7 +28,7 @@
   },
   {
     "uniqueID": "mlx-community/c4ai-command-r-v01-4bit",
-    "name": "C4AI Command-R 4bit MLX",
+    "name": "C4AI Command-R (MLX 4-bit)",
     "description": "C4AI Command-R 4bit for MLX is a research release of a 35 billion parameter highly performant generative model. Command-R is a large language model with open weights optimized for a variety of use cases including reasoning, summarization, and question answering. Command-R has the capability for multilingual generation evaluated in 10 languages and highly performant RAG capabilities.",
     "parameters": "35B",
     "context": "8192",
