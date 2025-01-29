@@ -2,6 +2,7 @@ uniqueID: watt-ai/watt-tool-8B
 name: watt-tool-8B
 description: 'Leading tool use model based on Llama architecture.'
 parameters: '8B'
+added: '2025-01-28'
 tags:
 - Tool USe
 context: '131072'
