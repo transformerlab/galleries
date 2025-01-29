@@ -1,0 +1,22 @@
+uniqueID: Qwen/Qwen2.5-7B-Instruct-1M
+name: Qwen2.5-7B-Instruct-1M
+description: "Long-context version of the Qwen2.5 series models, supporting a context length of up to 1M tokens. Compared to the Qwen2.5 128K version, Qwen2.5-1M demonstrates significantly improved performance in handling long-context tasks while maintaining its capability in short tasks."
+parameters: '7B'
+context: '1010000'
+architecture: Qwen2ForCausalLM
+formats:
+- Safetensors
+huggingface_repo: Qwen/Qwen2.5-7B-Instruct-1M
+transformers_version: 4.47.1
+gated: false
+license: apache-2.0
+logo: 'https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png'
+size_of_model_in_mb: 0
+author:
+  name: Qwen
+  url: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M
+  downloadUrl: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M
+  paperUrl: '?'

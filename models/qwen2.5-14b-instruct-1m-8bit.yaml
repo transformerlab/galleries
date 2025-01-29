@@ -1,0 +1,22 @@
+uniqueID: mlx-community/Qwen2.5-14B-Instruct-1M-8bit
+name: Qwen2.5 14B Instruct 1M (MLX 8bit)
+description: "MLX 8-bit version of the long-context version of Qwen's 2.5 model."
+parameters: '14B'
+context: '1010000'
+architecture: MLX
+formats:
+- Safetensors
+huggingface_repo: mlx-community/Qwen2.5-14B-Instruct-1M-8bit
+transformers_version: 4.45.2
+gated: false
+license: apache-2.0
+logo: 'https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png'
+size_of_model_in_mb: 0
+author:
+  name: mlx-community
+  url: https://huggingface.co/mlx-community/Qwen2.5-14B-Instruct-1M-8bit
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/mlx-community/Qwen2.5-14B-Instruct-1M-8bit
+  downloadUrl: https://huggingface.co/mlx-community/Qwen2.5-14B-Instruct-1M-8bit
+  paperUrl: '?'
