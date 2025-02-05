@@ -166,5 +166,29 @@
             "config_json": "{\"template_name\": \"Pirate Speech\", \"plugin_name\": \"llama_trainer\", \"model_name\": \"TinyLlama/TinyLlama-1.1B-Chat-v1.0\", \"model_architecture\": \"LlamaForCausalLM\", \"formatting_template\": \"Instruction: {{instruction}}\\nResponse: {{response}}\", \"dataset_name\": \"Peyton3995/dolly-15k-mistral-pirate\", \"maximum_sequence_length\": \"2048\", \"batch_size\": \"4\", \"learning_rate\": \"0.004\", \"num_train_epochs\": \"1\", \"max_steps\": \"-1\", \"lora_r\": \"32\", \"lora_alpha\": \"64\", \"lora_dropout\": \"0.05\", \"adaptor_name\": \"Pirate_Speech\"}"
         },
         "test": {}
+    },
+    {
+        "schemaVersion": "0.1",
+        "metadata": {
+            "author": "",
+            "version": "1.0",
+            "name": "Instruct Tuning",
+            "description": "Trains a SmolLM base model to be conversational, and use a specific instruct format(XML tags)"
+        },
+        "model": {
+            "name": "HuggingFaceTB/SmolLM2-135M",
+            "path": "HuggingFaceTB/SmolLM2-135M"
+        },
+        "datasets": {
+            "name": "nickrosh/Evol-Instruct-Code-80k-v1",
+            "path": "nickrosh/Evol-Instruct-Code-80k-v1"
+        },
+        "training": {
+            "type": "LoRA",
+            "plugin": "llama_trainer",
+            "formatting_template": "<User>\n{{instruction}}\n</User>\n<Assistant>\n{{output}}\n</Assistant>\n",
+            "config_json": "{\"template_name\":\"InstructTuning\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"HuggingFaceTB/SmolLM2-135M\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"<User>\\n{{instruction}}\\n</User>\\n<Assistant>\\n{{output}}\\n</Assistant>\\n\",\"dataset_name\":\"nickrosh/Evol-Instruct-Code-80k-v1\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"4\",\"learning_rate\":\"0.00003\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"4\",\"lora_alpha\":\"16\",\"lora_dropout\":\"0.05\",\"adaptor_name\":\"instruct\"}"
+        },
+        "test": {}
     }
 ]
