@@ -3,6 +3,8 @@ name: Qwen2.5 Coder 7B Instruct
 description: 'Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen) and performs at a level comparable to the best proprietary models.'
 added: '2024-11-19'
 parameters: '7B'
+tags:
+- Coding
 context: '32768'
 architecture: Qwen2ForCausalLM
 formats:

@@ -174,6 +174,38 @@
         "added": "2025-1-20",
         "parameters": "14B",
         "context": "16384",
+        "uniqueID": "CohereForAI/c4ai-command-r-v01",
+        "name": "C4AI Command-R",
+        "description": "C4AI Command-R is a research release of a 35 billion parameter highly performant generative model. Command-R is a large language model with open weights optimized for a variety of use cases including reasoning, summarization, and question answering. Command-R has the capability for multilingual generation evaluated in 10 languages and highly performant RAG capabilities.",
+        "parameters": "35B",
+        "context": "8192",
+        "architecture": "CohereForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "CohereForAI/c4ai-command-r-v01",
+        "transformers_version": "4.38.2",
+        "gated": true,
+        "license": "CC-BY-NC-4.0",
+        "logo": "https://cohere-ai.ghost.io/content/images/2024/03/CMDR--1--1-1.png",
+        "size_of_model_in_mb": 66732.91,
+        "author": {
+            "name": "Cohere 4 AI",
+            "url": "https://cohere.com/research",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/CohereForAI/c4ai-command-r-v01",
+            "downloadUrl": "https://huggingface.co/CohereForAI/c4ai-command-r-v01",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "mlx-community/c4ai-command-r-v01-4bit",
+        "name": "C4AI Command-R (MLX 4-bit)",
+        "description": "C4AI Command-R 4bit for MLX is a research release of a 35 billion parameter highly performant generative model. Command-R is a large language model with open weights optimized for a variety of use cases including reasoning, summarization, and question answering. Command-R has the capability for multilingual generation evaluated in 10 languages and highly performant RAG capabilities.",
+        "parameters": "35B",
+        "context": "8192",
         "architecture": "MLX",
         "formats": [
             "Safetensors"
@@ -208,10 +240,60 @@
         ],
         "huggingface_repo": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
         "transformers_version": "4.44.0",
+        "huggingface_repo": "unsloth/Llama-3.2-1B-Instruct",
+        "transformers_version": "4.45.0.dev0",
+        "gated": false,
+        "license": "llama3.2",
+        "logo": "",
+        "size_of_model_in_mb": 2365.86,
+        "author": {
+            "name": "meta-llama",
+            "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
+            "downloadUrl": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "CohereForAI/aya-23-8B",
+        "name": "Aya 23 8B",
+        "description": "Aya 23 is an open weights research release of an instruction fine-tuned model with highly advanced multilingual capabilities. Aya 23 focuses on pairing a highly performant pre-trained Command family of models with the recently released Aya Collection. The result is a powerful multilingual large language model serving 23 languages.",
+        "parameters": "8B",
+        "context": "8192",
+        "architecture": "CohereForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
+        "huggingface_repo": "CohereForAI/aya-23-8B",
+        "transformers_version": "4.40.0.dev0",
+        "gated": true,
+        "license": "CC-By-NC-4.0",
+        "logo": "https://cdn.sanity.io/images/rjtqmwfu/production/5bc885878e9f0f1e202b742c86f543c7fe765376-409x144.svg",
+        "size_of_model_in_mb": 15328.09
+    },
+    {
+        "uniqueID": "deepseek-ai/DeepSeek-R1",
+        "name": "DeepSeek R1",
+        "description": "Full version of DeepSeek's flagship Chain-of-Thought model.",
+        "added": "2025-01-27",
+        "parameters": "671B",
+        "tags": [
+            "Chain of Thought"
+        ],
+        "context": "163840",
+        "architecture": "DeepseekV3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "deepseek-ai/DeepSeek-R1",
+        "transformers_version": "4.46.3",
         "gated": false,
         "license": "MIT",
         "logo": "https://www.deepseek.com/favicon.ico",
-        "size_of_model_in_mb": 0,
+        "size_of_model_in_mb": 656703.53,
         "author": {
             "name": "deepseek-ai",
             "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
@@ -252,11 +334,128 @@
         }
     },
     {
+        "uniqueID": "HuggingFaceTB/SmolLM-135M-Instruct",
+        "name": "SmolLM 135M Instruct",
+        "description": "The SMOLest version of HuggingFace's SLM trained on publicly available datasets.",
+        "added": "2025-01-28",
+        "parameters": "135M",
+        "context": "2048",
+        "architecture": "LlamaForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "HuggingFaceTB/SmolLM-135M-Instruct",
+        "transformers_version": "4.42.3",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://webml-community-smollm-webgpu.static.hf.space/logo.png",
+        "size_of_model_in_mb": 259.37,
+        "author": {
+            "name": "HuggingFaceTB",
+            "url": "https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct",
+            "downloadUrl": "https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct",
+            "paperUrl": "https://huggingface.co/blog/smollm"
+        }
+    },
+    {
         "uniqueID": "Llama-3.3-70B-Instruct-GGUF",
         "name": "LLama 3.2 70B Instruct GGUF - IQ2_M",
         "description": "GGUF export of Llama 3.3 70B Instruct model IQ2_M variant. Loses some quality but useful for systems with lower RAM.",
         "added": "2024-12-12",
         "parameters": "70B",
+        "uniqueID": "lmsys/vicuna-7b-v1.5",
+        "name": "Vicuna 7b",
+        "description": "Vicuna is a state-of-the-art chat assistant developed by LMSYS, leveraging the transformative power of an auto-regressive language model based on the transformer architecture. Trained via fine-tuning the Llama 2 model, Vicuna is used primarily for research in large language models and chatbots, catering to the needs of AI enthusiasts, machine learning researchers, and hobbyists. The model operates under the Llama 2 CLA. The latest version, Vicuna v1.5 (16k), has been fine-tuned using supervised instruction and linear RoPE scaling, with training data comprising around 125K conversations collected from ShareGPT.com, packed into sequences of 16K tokens each. A comprehensive explanation of the training details can be found in the appendix to the linked paper titled \"Training Details of Vicuna Models.\"",
+        "parameters": "7B",
+        "context": "4k",
+        "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
+        "huggingface_repo": "lmsys/vicuna-7b-v1.5",
+        "transformers_version": "4.31.0",
+        "gated": false,
+        "license": "Llama 2 CLA",
+        "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
+        "size_of_model_in_mb": 12853.13,
+        "author": {
+            "name": "LMSYS Org",
+            "url": "https://lmsys.org/",
+            "blurb": "Large Model Systems Organization (LMSYS Org) is an open research organization founded by students and faculty from UC Berkeley in collaboration with UCSD and CMU."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5",
+            "downloadUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5",
+            "paperUrl": "https://arxiv.org/abs/2306.05685"
+        }
+    },
+    {
+        "uniqueID": "lmsys/vicuna-13b-v1.5",
+        "name": "Vicuna 13b",
+        "description": "Vicuna is a state-of-the-art chat assistant developed by LMSYS, leveraging the transformative power of an auto-regressive language model based on the transformer architecture. Trained via fine-tuning the Llama 2 model, Vicuna is used primarily for research in large language models and chatbots, catering to the needs of AI enthusiasts, machine learning researchers, and hobbyists. The model operates under the Llama 2 CLA. The latest version, Vicuna v1.5 (16k), has been fine-tuned using supervised instruction and linear RoPE scaling, with training data comprising around 125K conversations collected from ShareGPT.com, packed into sequences of 16K tokens each. A comprehensive explanation of the training details can be found in the appendix to the linked paper titled \"Training Details of Vicuna Models.\"",
+        "parameters": "13B",
+        "context": "4k",
+        "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
+        "huggingface_repo": "lmsys/vicuna-13b-v1.5",
+        "transformers_version": "4.31.0",
+        "gated": false,
+        "license": "Llama 2 CLA",
+        "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
+        "size_of_model_in_mb": 24826.44,
+        "author": {
+            "name": "LMSYS Org",
+            "url": "https://lmsys.org/",
+            "blurb": "Large Model Systems Organization (LMSYS Org) is an open research organization founded by students and faculty from UC Berkeley in collaboration with UCSD and CMU."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/lmsys/vicuna-13b-v1.5",
+            "downloadUrl": "https://huggingface.co/lmsys/vicuna-13b-v1.5",
+            "paperUrl": "https://arxiv.org/abs/2306.05685"
+        }
+    },
+    {
+        "uniqueID": "lmsys/vicuna-7b-v1.5-16k",
+        "name": "Vicuna 7b - 16k",
+        "description": "Vicuna is a state-of-the-art chat assistant developed by LMSYS, leveraging the transformative power of an auto-regressive language model based on the transformer architecture. Trained via fine-tuning the Llama 2 model, Vicuna is used primarily for research in large language models and chatbots, catering to the needs of AI enthusiasts, machine learning researchers, and hobbyists. The model operates under the Llama 2 CLA. The latest version, Vicuna v1.5 (16k), has been fine-tuned using supervised instruction and linear RoPE scaling, with training data comprising around 125K conversations collected from ShareGPT.com, packed into sequences of 16K tokens each. A comprehensive explanation of the training details can be found in the appendix to the linked paper titled \"Training Details of Vicuna Models.\"",
+        "parameters": "7B",
+        "context": "16k",
+        "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
+        "huggingface_repo": "lmsys/vicuna-7b-v1.5-16k",
+        "transformers_version": "4.31.0",
+        "gated": false,
+        "license": "Llama 2 CLA",
+        "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
+        "size_of_model_in_mb": 12853.13,
+        "author": {
+            "name": "LMSYS Org",
+            "url": "https://lmsys.org/",
+            "blurb": "Large Model Systems Organization (LMSYS Org) is an open research organization founded by students and faculty from UC Berkeley in collaboration with UCSD and CMU."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5-16k",
+            "downloadUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5-16k",
+            "paperUrl": "https://arxiv.org/abs/2306.05685"
+        }
+    },
+    {
+        "uniqueID": "mlx-community/DeepSeek-R1-Distill-Qwen-32B-4bit",
+        "name": "DeepSeek R1 Distill Qwen 32B (MLX 4bit)",
+        "description": "A 4-bit quantized MLX-formatted version of DeeSeek R1 Qwen Distill that is good for running on Apple Silicon.",
+        "added": "2025-01-27",
+        "parameters": "32B",
+        "tags": [
+            "Chain of Thought"
+        ],
         "context": "131072",
         "architecture": "GGUF",
         "formats": [
@@ -268,6 +467,9 @@
         "license": "llama3.3",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
         "size_of_model_in_mb": 24678.4,
+        "license": "MIT",
+        "logo": "https://www.deepseek.com/favicon.ico",
+        "size_of_model_in_mb": 17588.67,
         "author": {
             "name": "Meta",
             "url": "https://huggingface.co/meta-llama/",
@@ -399,6 +601,13 @@
         "parameters": "12.2B",
         "context": "128k",
         "architecture": "MistralForCausalLM",
+        "uniqueID": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+        "name": "Llama 3 8B Instruct (MLX 4-bit)",
+        "archived": true,
+        "description": "Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.",
+        "parameters": "8B",
+        "context": "8k",
+        "architecture": "MLX",
         "formats": [
             "Safetensors"
         ],
@@ -426,6 +635,12 @@
         "added": "2024-11-19",
         "parameters": "14B",
         "context": "32768",
+        "uniqueID": "mlx-community/Meta-Llama-3-70B-Instruct-4bit",
+        "name": "Llama 3 70B Instruct (MLX 4-bit)",
+        "archived": true,
+        "description": "Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.",
+        "parameters": "8B",
+        "context": "8k",
         "architecture": "MLX",
         "formats": [
             "Safetensors"
@@ -455,6 +670,12 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "GPTBigCodeForCausalLM",
+        "uniqueID": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+        "name": "LLama 3.1 8B Instruct",
+        "description": "The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models on common industry benchmarks.",
+        "parameters": "8B",
+        "context": "128k",
+        "architecture": "LlamaForCausalLM",
         "formats": [
             "Pytorch"
         ],
@@ -478,6 +699,63 @@
     {
         "uniqueID": "Qwen/Qwen2-7B-Instruct",
         "name": "Qwen2 7B Instruct",
+        "uniqueID": "meta-llama/Meta-Llama-3.1-8B",
+        "name": "LLama 3.1 8B",
+        "description": "The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models on common industry benchmarks.",
+        "parameters": "8B",
+        "context": "128k",
+        "architecture": "LlamaForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "meta-llama/Meta-Llama-3.1-8B",
+        "transformers_version": "4.42.3",
+        "gated": "manual",
+        "license": "Meta Custom",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "size_of_model_in_mb": 15325.28,
+        "author": {
+            "name": "Meta",
+            "url": "https://huggingface.co/meta-llama/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B",
+            "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+        "name": "SmolLM2 1.7B Instruct",
+        "description": "1.7B parameter version of HuggingFace's SLM trained on publicly available datasets.",
+        "added": "2025-01-28",
+        "parameters": "1.7B",
+        "context": "8192",
+        "architecture": "LlamaForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+        "transformers_version": "4.42.3",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://webml-community-smollm-webgpu.static.hf.space/logo.png",
+        "size_of_model_in_mb": 3267.08,
+        "author": {
+            "name": "HuggingFaceTB",
+            "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct",
+            "downloadUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct",
+            "paperUrl": "https://huggingface.co/blog/smollm"
+        }
+    },
+    {
+        "uniqueID": "google/gemma-7b",
+        "name": "Gemma 7B",
         "archived": true,
         "description": "Qwen2 has generally surpassed most opensource models and demonstrated competitiveness against proprietary models across a series of benchmarks targeting for language understanding, language generation, multilingual capability, coding, mathematics, reasoning, etc. Qwen2-7B-Instruct supports a context length of up to 131,072 tokens, enabling the processing of extensive inputs. This repo contains the instruction-tuned 7B Qwen2 model.",
         "parameters": "7B",
@@ -588,6 +866,34 @@
         }
     },
     {
+        "uniqueID": "mlx-community/Mistral-Small-24B-Instruct-2501-4bit",
+        "name": "Mistral Small 24B Instruct 2501 (MLX 4-bit)",
+        "description": "Mistral Small 3 ( 2501 ) sets a new benchmark in the \"small\" Large Language Models category below 70B, boasting 24B parameters and achieving state-of-the-art capabilities comparable to larger models!",
+        "parameters": "24B",
+        "added": "2025-01-31",
+        "context": "32768",
+        "architecture": "MistralForCausalLM",
+        "formats": [
+            "MLX"
+        ],
+        "huggingface_repo": "mlx-community/Mistral-Small-24B-Instruct-2501-4bit",
+        "transformers_version": "4.49.0.dev0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://docs.mistral.ai/img/logo.svg",
+        "size_of_model_in_mb": 12662.46,
+        "author": {
+            "name": "mlx-community",
+            "url": "https://huggingface.co/mlx-community/Mistral-Small-24B-Instruct-2501-4bit",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mlx-community/Mistral-Small-24B-Instruct-2501-4bit",
+            "downloadUrl": "https://huggingface.co/mlx-community/Mistral-Small-24B-Instruct-2501-4bit",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF",
         "name": "DeepSeek R1 Distill Qwen 14B GGUF - Q6_K4",
         "description": "A Q6_K quantized GGUF version of DeepSeek R1 Qwen Distill 14B.",
@@ -671,6 +977,118 @@
         }
     },
     {
+        "uniqueID": "mistralai/Mistral-Small-24B-Instruct-2501",
+        "name": "Mistral Small 24B Instruct 2501",
+        "description": "Mistral Small 3 ( 2501 ) sets a new benchmark in the \"small\" Large Language Models category below 70B, boasting 24B parameters and achieving state-of-the-art capabilities comparable to larger models!",
+        "parameters": "24B",
+        "added": "2025-01-31",
+        "context": "32768",
+        "architecture": "MistralForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "mistralai/Mistral-Small-24B-Instruct-2501",
+        "transformers_version": "4.49.0.dev0",
+        "gated": "auto",
+        "license": "apache-2.0",
+        "logo": "https://docs.mistral.ai/img/logo.svg",
+        "size_of_model_in_mb": 89952.3,
+        "author": {
+            "name": "mistralai",
+            "url": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501",
+            "downloadUrl": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Llama-3.2-1B-Instruct-Q6_K.gguf",
+        "name": "LLama 3.2 1B Instruct (GGUF Q6_K)",
+        "description": "GGUF export of Llama 3.2 1B Instruct model using 6-bit K-quantization. Should maintain near perfect results to original model.",
+        "added": "2024-11-21",
+        "parameters": "1B",
+        "context": "131072",
+        "architecture": "GGUF",
+        "formats": [
+            "GGUF"
+        ],
+        "huggingface_repo": "bartowski/Llama-3.2-1B-Instruct-GGUF",
+        "huggingface_filename": "Llama-3.2-1B-Instruct-Q6_K.gguf",
+        "gated": false,
+        "license": "llama3.2",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "size_of_model_in_mb": 1044,
+        "author": {
+            "name": "Meta",
+            "url": "https://huggingface.co/meta-llama/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF",
+            "downloadUrl": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "mistralai/Mistral-7B-v0.3",
+        "name": "Mistral-7B-v0.3",
+        "description": "The Mistral-7B-v0.3 Large Language Model (LLM) is a Mistral-7B-v0.2 with extended vocabulary. Mistral-7B-v0.3 has the following changes compared to Mistral-7B-v0.2: Extended vocabulary to 32768",
+        "parameters": "7B",
+        "context": "32768",
+        "architecture": "MistralForCausalLM",
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
+        "huggingface_repo": "mistralai/Mistral-7B-v0.3",
+        "allow_patterns": [
+            "tokenizer.model.v3",
+            "*.json",
+            "*.safetensors",
+            "*.py",
+            "tokenizer.model",
+            "*.tiktoken",
+            "*.npz",
+            "*.bin"
+        ],
+        "transformers_version": "4.42.0.dev0",
+        "gated": "auto",
+        "license": "Apache 2.0",
+        "logo": "https://docs.mistral.ai/img/logo.svg",
+        "size_of_model_in_mb": 27652.22
+    },
+    {
+        "uniqueID": "mistralai/Mistral-7B-Instruct-v0.3",
+        "name": "Mistral-7B-Instruct-v0.3",
+        "description": "The Mistral-7B-Instruct-v0.3 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.3. Mistral-7B-v0.3 has the following changes compared to Mistral-7B-v0.2 Extended vocabulary to 32768. Supports v3 Tokenizer. Supports function calling",
+        "parameters": "7B",
+        "context": "32768",
+        "architecture": "MistralForCausalLM",
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
+        "huggingface_repo": "mistralai/Mistral-7B-Instruct-v0.3",
+        "allow_patterns": [
+            "tokenizer.model.v3",
+            "*.json",
+            "*.safetensors",
+            "*.py",
+            "tokenizer.model",
+            "*.tiktoken",
+            "*.npz",
+            "*.bin"
+        ],
+        "transformers_version": "4.42.0.dev0",
+        "gated": "auto",
+        "license": "Apache 2.0",
+        "logo": "https://docs.mistral.ai/img/logo.svg",
+        "size_of_model_in_mb": 27652.23
+    },
+    {
         "uniqueID": "Qwen/Qwen2.5-7B",
         "name": "Qwen2.5 7B",
         "description": "Qwen2.5 is the latest series of Qwen large language models",
@@ -699,8 +1117,69 @@
         }
     },
     {
+        "uniqueID": "Qwen/Qwen2.5-7B-Instruct-1M",
+        "name": "Qwen2.5-7B-Instruct-1M",
+        "description": "Long-context version of the Qwen2.5 series models, supporting a context length of up to 1M tokens. Compared to the Qwen2.5 128K version, Qwen2.5-1M demonstrates significantly improved performance in handling long-context tasks while maintaining its capability in short tasks.",
+        "parameters": "7B",
+        "added": "2025-01-28",
+        "context": "1010000",
+        "architecture": "Qwen2ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen2.5-7B-Instruct-1M",
+        "transformers_version": "4.47.1",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 14535.11,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "llama-2-7b-chat.Q4_0.gguf",
         "name": "LLama 2 - 7B chat - GGUF - Q4_0",
+        "uniqueID": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+        "name": "DeepSeek R1 Distill Qwen 7B",
+        "description": "Qwen distillation of DeepSeek chain-of-thought model.",
+        "added": "2025-01-27",
+        "parameters": "7B",
+        "tags": [
+            "Chain of Thought"
+        ],
+        "context": "131072",
+        "architecture": "Qwen2ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+        "transformers_version": "4.44.0",
+        "gated": false,
+        "license": "MIT",
+        "logo": "https://www.deepseek.com/favicon.ico",
+        "size_of_model_in_mb": 14532.41,
+        "author": {
+            "name": "deepseek-ai",
+            "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+            "downloadUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "mistralai/Mistral-7B-v0.1",
+        "name": "Mistral 7B v0.1",
         "archived": true,
         "description": "Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 7B fine-tuned model, optimized for dialogue use cases and converted for the Hugging Face Transformers format.",
         "parameters": "7B",
@@ -729,6 +1208,8 @@
     {
         "uniqueID": "llama-2-7b.Q4_0.gguf",
         "name": "LLama 2 - 7B - GGUF - Q4_0",
+        "uniqueID": "mistralai/Mistral-7B-Instruct-v0.2",
+        "name": "Mistral 7B Instruct v0.2",
         "archived": true,
         "description": "Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 7B fine-tuned model, optimized for dialogue use cases and converted for the Hugging Face Transformers format.",
         "parameters": "7B",
@@ -812,7 +1293,7 @@
     },
     {
         "uniqueID": "tiiuae/falcon-7b",
-        "name": "Falcon 7b",
+        "name": "Falcon 7B",
         "archived": true,
         "description": "Best overall smaller model. Fast responses. Instruction based. Trained by TII. Licensed for commercial use.",
         "parameters": "7B",
@@ -840,7 +1321,7 @@
     },
     {
         "uniqueID": "tiiuae/falcon-7b-instruct",
-        "name": "Falcon 7b Instruct",
+        "name": "Falcon 7B Instruct",
         "archived": true,
         "description": "Best overall smaller model. Fast responses. Instruction based. Trained by TII. Licensed for commercial use.",
         "parameters": "7B",
@@ -874,6 +1355,13 @@
         "parameters": "671B",
         "context": "163840",
         "architecture": "DeepseekV3ForCausalLM",
+        "uniqueID": "mlx-community/Llama-3.2-1B-Instruct-4bit",
+        "name": "Llama 3.2 1B Instruct (MLX 4bit)",
+        "description": "The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use cases, including agentic retrieval and summarization tasks. They outperform many of the available open source and closed chat models on common industry benchmarks.",
+        "added": "2024-09-27",
+        "parameters": "1B",
+        "context": "131072",
+        "architecture": "MLX",
         "formats": [
             "Safetensors"
         ],
@@ -891,6 +1379,36 @@
         "resources": {
             "canonicalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
             "downloadUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+            "canonicalUrl": "https://huggingface.co/mlx-community/Llama-3.2-1B-Instruct-4bit",
+            "downloadUrl": "https://huggingface.co/mlx-community/Llama-3.2-1B-Instruct-4bit",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Llama-3.3-70B-Instruct-GGUF",
+        "name": "LLama 3.2 70B Instruct (GGUF IQ2_M)",
+        "description": "GGUF export of Llama 3.3 70B Instruct model IQ2_M variant. Loses some quality but useful for systems with lower RAM.",
+        "added": "2024-12-12",
+        "parameters": "70B",
+        "context": "131072",
+        "architecture": "GGUF",
+        "formats": [
+            "GGUF"
+        ],
+        "huggingface_repo": "bartowski/Llama-3.3-70B-Instruct-GGUF",
+        "huggingface_filename": "Llama-3.3-70B-Instruct-IQ2_M.gguf",
+        "gated": false,
+        "license": "llama3.3",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "size_of_model_in_mb": 24678.4,
+        "author": {
+            "name": "Meta",
+            "url": "https://huggingface.co/meta-llama/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/bartowski/Llama-3.3-70B-Instruct-GGUF",
+            "downloadUrl": "https://huggingface.co/bartowski/Llama-3.3-70B-Instruct-GGUF",
             "paperUrl": "?"
         }
     },
@@ -1005,7 +1523,7 @@
     },
     {
         "uniqueID": "mlx-community/Llama-3.3-70B-Instruct-4bit",
-        "name": "Llama-3.3-70B-Instruct-4bit",
+        "name": "Llama 3.3 70B Instruct (MLX 4bit)",
         "description": "MLX export of Llama 3.3 70B Instruct model quantized to 4 bit. Loses some quality but useful for systems with lower RAM.",
         "parameters": "70B",
         "context": "131072",
@@ -1054,12 +1572,129 @@
         "resources": {
             "canonicalUrl": "https://huggingface.co/mattshumer/Reflection-Llama-3.1-70B",
             "downloadUrl": "https://huggingface.co/mattshumer/Reflection-Llama-3.1-70B",
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen2-7B-Instruct",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen2-7B-Instruct",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen2-7B",
+        "name": "Qwen2 7B",
+        "archived": true,
+        "description": "Qwen2 has generally surpassed most opensource models and demonstrated competitiveness against proprietary models across a series of benchmarks targeting for language understanding, language generation, multilingual capability, coding, mathematics, reasoning, etc. This repo contains the 7B Qwen2 base language model.",
+        "parameters": "7B",
+        "context": "32768",
+        "architecture": "Qwen2ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen2-7B",
+        "transformers_version": "4.41.2",
+        "gated": false,
+        "license": "Apache 2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 14535.05,
+        "author": {
+            "name": "Alibaba Cloud",
+            "url": "",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen2-7B",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen2-7B",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen2-1.5B-Instruct",
+        "name": "Qwen2 1.5B Instruct",
+        "archived": true,
+        "description": "Qwen2 has generally surpassed most opensource models and demonstrated competitiveness against proprietary models across a series of benchmarks targeting for language understanding, language generation, multilingual capability, coding, mathematics, reasoning, etc. This repo contains the instruction-tuned 1.5B Qwen2 model.",
+        "parameters": "1.5B",
+        "context": "32768",
+        "architecture": "Qwen2ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen2-1.5B-Instruct",
+        "transformers_version": "4.41.2",
+        "gated": false,
+        "license": "Apache 2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 2953.79,
+        "author": {
+            "name": "Alibaba Cloud",
+            "url": "",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen2-1.5B-Instruct",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen2-1.5B-Instruct",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "mlx-community/Liberated-Qwen1.5-72B-4bit",
+        "name": "Liberated Qwen1.5 72B",
+        "archived": true,
+        "description": "Brought to you by AbacusAI and Eric Hartford. This model is based on Qwen/Qwen1.5-72B and subject to the tongyi-qianwen license. Liberated consists of open source datasets, including SystemChat a new dataset I created, designed to teach the model compliance to the system prompt, over long multiturn conversations, even with unusual or mechanical system prompts. These are tasks that Open Source Models have been lacking in thus far. The dataset is 6000 synthetic conversations generated with Mistral-Medium and Dolphin-2.7-mixtral-8x7b. There are no guardrails or censorship added to the dataset. You are advised to implement your own alignment layer before exposing the model as a service. Please read my blog post about uncensored models. https://erichartford.com/uncensored-models.",
+        "parameters": "72B",
+        "context": "32768",
+        "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "mlx-community/Liberated-Qwen1.5-72B-4bit",
+        "transformers_version": "4.39.3",
+        "gated": false,
+        "license": "CC-BY-NC-4.0",
+        "logo": "https://cdn-uploads.huggingface.co/production/uploads/63111b2d88942700629f5771/xCWGByXr8YNwGxKVh_x9H.png",
+        "size_of_model_in_mb": 40500.27,
+        "author": {
+            "name": "AbacusAI",
+            "url": "",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "",
+            "downloadUrl": "",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "mlx-community/Qwen2.5-Coder-14B-Instruct-4bit",
+        "name": "Qwen2.5 Coder 14B Instruct (MLX 4bit)",
+        "description": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen) and performs at a level comparable to the best proprietary models.",
+        "added": "2024-11-19",
+        "parameters": "14B",
+        "tags": [
+            "Coding"
+        ],
+        "context": "32768",
+        "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "mlx-community/Qwen2.5-Coder-14B-Instruct-4bit",
+        "transformers_version": "4.43.1",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 7934.02,
+        "author": {
+            "name": "mlx-community",
+            "url": "https://huggingface.co/mlx-community/Qwen2.5-Coder-14B-Instruct-4bit",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mlx-community/Qwen2.5-Coder-14B-Instruct-4bit",
+            "downloadUrl": "https://huggingface.co/mlx-community/Qwen2.5-Coder-14B-Instruct-4bit",
             "paperUrl": "?"
         }
     },
     {
         "uniqueID": "Qwen/Qwen2.5-1.5B-Instruct",
-        "name": "Qwen2.5-1.5B-Instruct",
+        "name": "Qwen2.5 1.5B Instruct",
         "description": "Qwen2.5 is the latest series of Qwen large language models.",
         "parameters": "1.5B",
         "context": "32768",
@@ -1081,6 +1716,37 @@
         "resources": {
             "canonicalUrl": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
             "downloadUrl": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "watt-ai/watt-tool-8B",
+        "name": "Watt Tool Use 8B",
+        "description": "Leading tool use model based on Llama architecture.",
+        "parameters": "8B",
+        "added": "2025-01-28",
+        "tags": [
+            "Tool Use"
+        ],
+        "context": "131072",
+        "architecture": "LlamaForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "watt-ai/watt-tool-8B",
+        "transformers_version": "4.45.2",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "",
+        "size_of_model_in_mb": 15325.28,
+        "author": {
+            "name": "watt-ai",
+            "url": "https://huggingface.co/watt-ai/watt-tool-8B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/watt-ai/watt-tool-8B",
+            "downloadUrl": "https://huggingface.co/watt-ai/watt-tool-8B",
             "paperUrl": "?"
         }
     },
@@ -1119,6 +1785,16 @@
         "parameters": "3.8B",
         "context": "128K",
         "architecture": "Phi3ForCausalLM",
+        "uniqueID": "Qwen/Qwen2.5-Coder-7B-Instruct",
+        "name": "Qwen2.5 Coder 7B Instruct",
+        "description": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen) and performs at a level comparable to the best proprietary models.",
+        "added": "2024-11-19",
+        "parameters": "7B",
+        "tags": [
+            "Coding"
+        ],
+        "context": "32768",
+        "architecture": "Qwen2ForCausalLM",
         "formats": [
             "Safetensors"
         ],
@@ -1146,12 +1822,55 @@
         "parameters": "3.8B",
         "context": "4K",
         "architecture": "Phi3ForCausalLM",
+        "uniqueID": "lmsys/fastchat-t5-3b-v1.0",
+        "name": "FastChat T5",
+        "description": "Open-source chatbot trained by fine-tuning Flan-t5-xl (3B parameters) on user-shared conversations collected from ShareGPT. It is based on an encoder-decoder transformer architecture, and can autoregressively generate responses to users' inputs.",
+        "parameters": "3B",
+        "context": "4k",
+        "architecture": "T5ForConditionalGeneration",
         "formats": [
             "Safetensors"
         ],
         "huggingface_repo": "microsoft/Phi-3-mini-4k-instruct",
         "transformers_version": "4.39.3",
         "gated": "auto",
+            "PyTorch"
+        ],
+        "huggingface_repo": "lmsys/fastchat-t5-3b-v1.0",
+        "transformers_version": "4.28.1",
+        "gated": false,
+        "license": "Apache 2.0",
+        "logo": "https://lmsys.org/images/blog/vicuna/vicuna.jpeg",
+        "size_of_model_in_mb": 6395.57,
+        "author": {
+            "name": "LMSYS Org",
+            "url": "https://lmsys.org/",
+            "blurb": "Large Model Systems Organization (LMSYS Org) is an open research organization founded by students and faculty from UC Berkeley in collaboration with UCSD and CMU."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/lmsys/fastchat-t5-3b-v1.0",
+            "downloadUrl": "https://huggingface.co/lmsys/fastchat-t5-3b-v1.0",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF",
+        "name": "DeepSeek R1 Distill Qwen 14B (GGUF - Q6_K4)",
+        "description": "A Q6_K quantized GGUF version of DeepSeek R1 Qwen Distill 14B.",
+        "added": "2025-01-27",
+        "parameters": "14B",
+        "tags": [
+            "Chain of Thought"
+        ],
+        "context": "131072",
+        "architecture": "GGUF",
+        "formats": [
+            "GGUF"
+        ],
+        "huggingface_repo": "unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF",
+        "huggingface_filename": "DeepSeek-R1-Distill-Qwen-14B-Q6_K.gguf",
+        "transformers_version": "4.43.1",
+        "gated": false,
         "license": "MIT",
         "logo": "https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg",
         "size_of_model_in_mb": 7290.58,
@@ -1222,11 +1941,130 @@
         }
     },
     {
+        "uniqueID": "mlx-community/SmolLM-135M-4bit",
+        "name": "SmolLM 135M MLX 4bit",
+        "description": "Tiny SLM created by HuggingFace in 4-bit MLX format.",
+        "added": "2025-01-28",
+        "parameters": "135M",
+        "context": "2048",
+        "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "mlx-community/SmolLM-135M-4bit",
+        "transformers_version": "4.41.2",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://webml-community-smollm-webgpu.static.hf.space/logo.png",
+        "size_of_model_in_mb": 75.1,
+        "author": {
+            "name": "mlx-community",
+            "url": "https://huggingface.co/mlx-community/SmolLM-135M-4bit",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mlx-community/SmolLM-135M-4bit",
+            "downloadUrl": "https://huggingface.co/mlx-community/SmolLM-135M-4bit",
+            "paperUrl": "https://huggingface.co/blog/smollm"
+        }
+    },
+    {
         "uniqueID": "mlx-community/c4ai-command-r-v01-4bit",
         "name": "C4AI Command-R 4bit MLX",
         "description": "C4AI Command-R 4bit for MLX is a research release of a 35 billion parameter highly performant generative model. Command-R is a large language model with open weights optimized for a variety of use cases including reasoning, summarization, and question answering. Command-R has the capability for multilingual generation evaluated in 10 languages and highly performant RAG capabilities.",
         "parameters": "35B",
         "context": "8192",
+        "uniqueID": "Nous-Hermes-13b",
+        "name": "Nous Hermes 13b",
+        "description": "Extremely good model. Instruction based. Gives long responses. Curated with 300,000 uncensored instructions. Trained by Nous Research. Cannot be used commercially",
+        "parameters": "13B",
+        "context": "?",
+        "architecture": "LlamaForCausalLM",
+        "formats": [
+            "PyTorch"
+        ],
+        "huggingface_repo": "NousResearch/Nous-Hermes-13b",
+        "transformers_version": "4.29.2",
+        "gated": false,
+        "license": "GPL",
+        "logo": "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/62fc06a221c444a56f7cc595/ngyQKdhaykfC8lN6Jfqlz.png?w=200&h=200&f=face",
+        "size_of_model_in_mb": 24826.4,
+        "author": {
+            "name": "Nous Research",
+            "url": "https://nousresearch.com/",
+            "blurb": "We are dedicated to advancing the field of natural language processing, in collaboration with the open-source community, through bleeding-edge research and a commitment to symbiotic development."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/NousResearch/Nous-Hermes-13b",
+            "downloadUrl": "https://huggingface.co/NousResearch/Nous-Hermes-13b",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+        "name": "Nous Hermes 2 - Mixtral 8x7B - DPO",
+        "description": "Nous Hermes 2 Mixtral 8x7B DPO is the new flagship Nous Research model trained over the Mixtral 8x7B MoE LLM.",
+        "parameters": "7B",
+        "context": "4k",
+        "architecture": "MixtralForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+        "transformers_version": "4.37.0.dev0",
+        "gated": false,
+        "license": "Apache 2.0",
+        "logo": "https://pbs.twimg.com/profile_images/1722061115453272064/dydqIH88_400x400.jpg",
+        "size_of_model_in_mb": 89080.94,
+        "author": {
+            "name": "Nous Research",
+            "url": "https://nousresearch.com/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+            "downloadUrl": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "bigcode/starcoder",
+        "name": "StarCoder",
+        "description": "The StarCoder models are 15.5B parameter models trained on 80+ programming languages from The Stack (v1.2), with opt-out requests excluded. The model uses Multi Query Attention, a context window of 8192 tokens, and was trained using the Fill-in-the-Middle objective on 1 trillion tokens.",
+        "archived": true,
+        "parameters": "7B",
+        "tags": [
+            "Coding"
+        ],
+        "context": "4k",
+        "architecture": "GPTBigCodeForCausalLM",
+        "formats": [
+            "Pytorch"
+        ],
+        "huggingface_repo": "bigcode/starcoder",
+        "transformers_version": "4.28.1",
+        "gated": "auto",
+        "license": "bigcode-openrail-m",
+        "logo": "https://www.bigcode-project.org/flow.png",
+        "size_of_model_in_mb": 120695.78,
+        "author": {
+            "name": "Big Code",
+            "url": "https://www.bigcode-project.org/",
+            "blurb": "BigCode is an open scientific collaboration working on the responsible development and use of large language models for code"
+        },
+        "resources": {
+            "canonicalUrl": "https://www.bigcode-project.org/",
+            "downloadUrl": "https://huggingface.co/bigcode/starcoder",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "mlx-community/phi-4-4bit",
+        "name": "Phi-4 (MLX 4-bit)",
+        "description": "MLX export of Microsoft's Phi-4 using 4-bit quantization.",
+        "added": "2025-1-20",
+        "parameters": "14B",
+        "context": "16384",
         "architecture": "MLX",
         "formats": [
             "Safetensors"
@@ -1277,7 +2115,7 @@
     },
     {
         "uniqueID": "mlx-community/Mistral-7B-Instruct-v0.1-4bit-mlx",
-        "name": "Mistral-7B-Instruct-v0.1 MLX 4bit",
+        "name": "Mistral 7B Instruct v0.1 (MLX 4bit)",
         "archived": true,
         "description": "The Mistral-7B-Instruct-v0.1 Large Language Model (LLM) is a instruct fine-tuned version of the Mistral-7B-v0.1 generative text model using a variety of publicly available conversation datasets.",
         "parameters": "7B",
@@ -1305,7 +2143,7 @@
     },
     {
         "uniqueID": "mlx-community/TinyDolphin-2.8-1.1b-4bit-mlx",
-        "name": "TinyDolphin-2.8-1.1b MLX 4bit",
+        "name": "TinyDolphin 2.8 1.1B (MLX 4bit)",
         "description": "This is an experimental model trained on 2 3090's by Kearm on the new Dolphin 2.8 dataset by Eric Hartford https://erichartford.com/dolphin.",
         "parameters": "1.1B",
         "context": "4k",
@@ -2055,6 +2893,62 @@
         }
     },
     {
+        "uniqueID": "mlx-community/Qwen2.5-14B-Instruct-1M-8bit",
+        "name": "Qwen2.5 14B Instruct - 1M context (MLX 8bit)",
+        "description": "MLX 8-bit version of the long-context version of Qwen's 2.5 model.",
+        "parameters": "14B",
+        "added": "2025-01-28",
+        "context": "1010000",
+        "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "mlx-community/Qwen2.5-14B-Instruct-1M-8bit",
+        "transformers_version": "4.45.2",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 14980.7,
+        "author": {
+            "name": "mlx-community",
+            "url": "https://huggingface.co/mlx-community/Qwen2.5-14B-Instruct-1M-8bit",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mlx-community/Qwen2.5-14B-Instruct-1M-8bit",
+            "downloadUrl": "https://huggingface.co/mlx-community/Qwen2.5-14B-Instruct-1M-8bit",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "allenai/Llama-3.1-Tulu-3-8B",
+        "name": "Llama 3.1 Tulu 3 8B",
+        "description": "T\u00fclu3 is a leading instruction following model family, offering fully open-source data, code, and recipes designed to serve as a comprehensive guide for modern post-training techniques. T\u00fclu3 is designed for state-of-the-art performance on a diversity of tasks in addition to chat, such as MATH, GSM8K, and IFEval.",
+        "parameters": "8B",
+        "added": "2025-01-31",
+        "context": "131072",
+        "architecture": "LlamaForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "allenai/Llama-3.1-Tulu-3-8B",
+        "transformers_version": "4.43.4",
+        "gated": false,
+        "license": "llama3.1",
+        "logo": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_400x400.png",
+        "size_of_model_in_mb": 15325.4,
+        "author": {
+            "name": "allenai",
+            "url": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B",
+            "downloadUrl": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "meta-llama/Llama-2-7b-hf",
         "name": "LLama 2 7B",
         "archived": true,
@@ -2116,6 +3010,9 @@
         "archived": true,
         "description": "Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 7B pretrained model, converted for the Hugging Face Transformers format",
         "parameters": "7B",
+        "tags": [
+            "RAG"
+        ],
         "context": "4k",
         "architecture": "LlamaForCausalLM",
         "formats": [
@@ -2274,6 +3171,12 @@
         "parameters": "7B",
         "context": "32768",
         "architecture": "Qwen2ForCausalLM",
+        "parameters": "8B",
+        "tags": [
+            "Coding"
+        ],
+        "context": "8192",
+        "architecture": "LlamaForCausalLM",
         "formats": [
             "Safetensors"
         ],

@@ -1,7 +1,7 @@
 [
   {
     "uniqueID": "mlx-community/Mistral-7B-Instruct-v0.1-4bit-mlx",
-    "name": "Mistral-7B-Instruct-v0.1 MLX 4bit",
+    "name": "Mistral 7B Instruct v0.1 (MLX 4bit)",
     "archived": true,
     "description": "The Mistral-7B-Instruct-v0.1 Large Language Model (LLM) is a instruct fine-tuned version of the Mistral-7B-v0.1 generative text model using a variety of publicly available conversation datasets.",
     "parameters": "7B",
@@ -27,7 +27,7 @@
   },
   {
     "uniqueID": "mlx-community/TinyDolphin-2.8-1.1b-4bit-mlx",
-    "name": "TinyDolphin-2.8-1.1b MLX 4bit",
+    "name": "TinyDolphin 2.8 1.1B (MLX 4bit)",
     "description": "This is an experimental model trained on 2 3090's by Kearm on the new Dolphin 2.8 dataset by Eric Hartford https://erichartford.com/dolphin.",
     "parameters": "1.1B",
     "context": "4k",

@@ -1,7 +1,7 @@
 [
     {
         "uniqueID": "lmsys/fastchat-t5-3b-v1.0",
-        "name": "FastChat-T5",
+        "name": "FastChat T5",
         "description": "Open-source chatbot trained by fine-tuning Flan-t5-xl (3B parameters) on user-shared conversations collected from ShareGPT. It is based on an encoder-decoder transformer architecture, and can autoregressively generate responses to users' inputs.",
         "parameters": "3B",
         "context": "4k",

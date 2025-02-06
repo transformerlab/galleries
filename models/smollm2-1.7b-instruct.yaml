@@ -1,0 +1,23 @@
+uniqueID: HuggingFaceTB/SmolLM2-1.7B-Instruct
+name: SmolLM2 1.7B Instruct
+description: "1.7B parameter version of HuggingFace's SLM trained on publicly available datasets."
+added: '2025-01-28'
+parameters: '1.7B'
+context: '8192'
+architecture: LlamaForCausalLM
+formats:
+- Safetensors
+huggingface_repo: HuggingFaceTB/SmolLM2-1.7B-Instruct
+transformers_version: 4.42.3
+gated: false
+license: apache-2.0
+logo: 'https://webml-community-smollm-webgpu.static.hf.space/logo.png'
+size_of_model_in_mb: 3267.08
+author:
+  name: HuggingFaceTB
+  url: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
+  downloadUrl: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
+  paperUrl: 'https://huggingface.co/blog/smollm'

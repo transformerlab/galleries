@@ -1,0 +1,23 @@
+uniqueID: mlx-community/SmolLM-135M-4bit
+name: SmolLM 135M MLX 4bit
+description: 'Tiny SLM created by HuggingFace in 4-bit MLX format.'
+added: '2025-01-28'
+parameters: '135M'
+context: '2048'
+architecture: MLX
+formats:
+- Safetensors
+huggingface_repo: mlx-community/SmolLM-135M-4bit
+transformers_version: 4.41.2
+gated: false
+license: apache-2.0
+logo: 'https://webml-community-smollm-webgpu.static.hf.space/logo.png'
+size_of_model_in_mb: 75.10
+author:
+  name: mlx-community
+  url: https://huggingface.co/mlx-community/SmolLM-135M-4bit
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/mlx-community/SmolLM-135M-4bit
+  downloadUrl: https://huggingface.co/mlx-community/SmolLM-135M-4bit
+  paperUrl: 'https://huggingface.co/blog/smollm'

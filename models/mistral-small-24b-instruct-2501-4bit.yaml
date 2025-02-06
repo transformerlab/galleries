@@ -1,0 +1,23 @@
+uniqueID: mlx-community/Mistral-Small-24B-Instruct-2501-4bit
+name: Mistral Small 24B Instruct 2501 (MLX 4-bit)
+description: 'Mistral Small 3 ( 2501 ) sets a new benchmark in the "small" Large Language Models category below 70B, boasting 24B parameters and achieving state-of-the-art capabilities comparable to larger models!'
+parameters: '24B'
+added: '2025-01-31'
+context: '32768'
+architecture: MistralForCausalLM
+formats:
+- MLX
+huggingface_repo: mlx-community/Mistral-Small-24B-Instruct-2501-4bit
+transformers_version: 4.49.0.dev0
+gated: false
+license: apache-2.0
+logo: 'https://docs.mistral.ai/img/logo.svg'
+size_of_model_in_mb: 12662.46
+author:
+  name: mlx-community
+  url: https://huggingface.co/mlx-community/Mistral-Small-24B-Instruct-2501-4bit
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/mlx-community/Mistral-Small-24B-Instruct-2501-4bit
+  downloadUrl: https://huggingface.co/mlx-community/Mistral-Small-24B-Instruct-2501-4bit
+  paperUrl: '?'

@@ -1,5 +1,5 @@
 uniqueID: mlx-community/phi-4-4bit
-name: Phi-4 MLX 4-bit
+name: Phi-4 (MLX 4-bit)
 description: "MLX export of Microsoft's Phi-4 using 4-bit quantization."
 added: '2025-1-20'
 parameters: '14B'

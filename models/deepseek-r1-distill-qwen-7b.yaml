@@ -1,8 +1,10 @@
 uniqueID: deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
-name: DeepSeek-R1-Distill-Qwen-7B
+name: DeepSeek R1 Distill Qwen 7B
 description: "Qwen distillation of DeepSeek chain-of-thought model."
 added: '2025-01-27'
 parameters: '7B'
+tags:
+- Chain of Thought
 context: '131072'
 architecture: Qwen2ForCausalLM
 formats:
@@ -12,7 +14,7 @@ transformers_version: 4.44.0
 gated: false
 license: MIT
 logo: 'https://www.deepseek.com/favicon.ico'
-size_of_model_in_mb: 0
+size_of_model_in_mb: 14532.41
 author:
   name: deepseek-ai
   url: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
