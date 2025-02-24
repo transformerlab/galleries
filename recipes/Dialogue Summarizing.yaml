@@ -1,7 +1,7 @@
 schemaVersion: '0.1'
 metadata:
   author: ''
-  name: 'Dialogue Summarizing'
+  name: 'DialogueSummarizing'
   version: '1.0'
   description: Trains TinyLlama to summarize conversations.
 model:
@@ -18,7 +18,7 @@ training:
     Prompt: {{dialogue}}
 
     Generation: {{summary}}'
-  config_json: '{"template_name": "Dialogue Summarizer", "plugin_name": "llama_trainer",
+  config_json: '{"template_name": "DialogueSummarizing", "plugin_name": "llama_trainer",
     "model_name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0", "model_architecture": "LlamaForCausalLM",
     "formatting_template": "Instruction: Summarize the Following\nPrompt: {{dialogue}}\nGeneration:
     {{summary}}", "dataset_name": "samsum", "maximum_sequence_length": "2048", "batch_size": "4", "learning_rate":

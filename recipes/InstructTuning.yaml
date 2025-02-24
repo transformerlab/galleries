@@ -2,7 +2,7 @@ schemaVersion: '0.1'
 metadata:
   author: ''
   version: '1.0'
-  name: 'Instruct Tuning'
+  name: 'InstructTuning'
   description: 'Trains a SmolLM base model to be conversational, and use a specific instruct format(XML tags)'
 model:
   name: HuggingFaceTB/SmolLM2-135M
