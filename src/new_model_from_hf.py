@@ -1,3 +1,4 @@
+import os
 from huggingface_hub import hf_hub_download
 import yaml
 import json
@@ -127,18 +128,38 @@ if output_file_name:
     model_slug = output_file_name
 else:
     model_slug = model_name.lower().replace(' ', '-').replace('/', '-')
-    file_name = f"./models/{model_slug}.{yaml if format == 'yaml' else 'json'}"
+
+file_name = f"./models/{model_slug}.{yaml if format == 'yaml' else 'json'}"
 
 print("writing to: ", file_name)
+
+append = False
+# check if file exists already:
+if os.path.exists(file_name):
+    print("file exists, appending")
+    append = True
+
+if append:
+    with open(file_name, 'r') as file:
+        if file_name.endswith('.yaml'):
+            final_model_object = yaml.load(file, Loader=yaml.FullLoader)
+        else:
+            final_model_object = json.load(file)
+    if isinstance(final_model_object, list):
+        final_model_object.append(model_object)
+    else:
+        final_model_object = [final_model_object, model_object]
+else: 
+    final_model_object = model_object
 
 output = ""
 
 if format == 'json':
     print("writing as json")
-    output = json.dumps(model_object, indent=2, sort_keys=False)
+    output = json.dumps(final_model_object, indent=2, sort_keys=False)
 else:
     print("writing as yaml")
-    output = yaml.dump(model_object, sort_keys=False)
+    output = yaml.dump(final_model_object, sort_keys=False)
 
 with open(file_name, 'w+') as file:
     file.write(output)
