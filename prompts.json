@@ -1,8 +1,8 @@
 [
     {
-        "id": "parse-unstructured-data",
-        "text": "You are a data scientist tasked with parsing unstructured data. \nGiven the following text, output the structured data.\n\n{text}\n\nStructured Data:\n",
-        "title": "Parse unstructured data",
+        "id": "convert-csv-to-markdown-table",
+        "text": "You are an expert in data formatting. For the following csv data, output it as a markdown \ntable.\nOutput the table only.\n```{text}```\n",
+        "title": "Convert CSV to Markdown Table",
         "tags": [
             "conversion"
         ],
@@ -23,11 +23,11 @@
         "version": "0.1.0"
     },
     {
-        "id": "write-a-summary",
-        "text": "You are a journalist tasked with writing a summary of the following text.\n\n{text}\n\nSummary:\n",
-        "title": "Summarize text",
+        "id": "parse-unstructured-data",
+        "text": "You are a data scientist tasked with parsing unstructured data. \nGiven the following text, output the structured data.\n\n{text}\n\nStructured Data:\n",
+        "title": "Parse unstructured data",
         "tags": [
-            "summarization"
+            "conversion"
         ],
         "version": "0.1.0"
     },
@@ -50,11 +50,11 @@
         "version": "0.1.0"
     },
     {
-        "id": "convert-csv-to-markdown-table",
-        "text": "You are an expert in data formatting. For the following csv data, output it as a markdown \ntable.\nOutput the table only.\n```{text}```\n",
-        "title": "Convert CSV to Markdown Table",
+        "id": "write-a-summary",
+        "text": "You are a journalist tasked with writing a summary of the following text.\n\n{text}\n\nSummary:\n",
+        "title": "Summarize text",
         "tags": [
-            "conversion"
+            "summarization"
         ],
         "version": "0.1.0"
     }

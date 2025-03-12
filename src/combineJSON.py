@@ -26,6 +26,9 @@ def read_and_combine_json_files(directory: str):
     # Get all the JSON files in the subdirectories
     files_json: list[str] = [f for f in os.listdir(
         path=directory) if (f.endswith('.json') or f.endswith('.yaml'))]
+    
+    # sort the files by name:
+    files_json.sort()
 
     # Combine the JSON files into a single dictionary
     combined_json = []
