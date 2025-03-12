@@ -10,9 +10,12 @@ parser.add_argument('--model_id', type=str,
 # add a paramter that is the output filename you want:
 parser.add_argument('--output_file_name', type=str,
                     help='The short output file name e.g. "qwen"', required=False)
+parser.add_argument('--format', type=str,required=False, default='yaml',
+                    help='The format of the output file e.g. "yaml" or "json"')
 args = parser.parse_args()
 model_id = args.model_id
 output_file_name = args.output_file_name
+format = args.format
 
 # end part of model name is the part after the / in the model name
 model_author = model_id.split('/')[0]
@@ -124,10 +127,18 @@ if output_file_name:
     model_slug = output_file_name
 else:
     model_slug = model_name.lower().replace(' ', '-').replace('/', '-')
-    file_name = f"../models/{model_slug}.yaml"
+    file_name = f"./models/{model_slug}.{yaml if format == 'yaml' else 'json'}"
 
 print("writing to: ", file_name)
 
-# convert model_object to yaml and write to file:
-with open(file_name, 'w') as file:
-    yaml.dump(model_object, file, sort_keys=False)
+output = ""
+
+if format == 'json':
+    print("writing as json")
+    output = json.dumps(model_object, indent=2, sort_keys=False)
+else:
+    print("writing as yaml")
+    output = yaml.dump(model_object, sort_keys=False)
+
+with open(file_name, 'w+') as file:
+    file.write(output)
