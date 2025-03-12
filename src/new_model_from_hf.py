@@ -7,7 +7,7 @@ import argparse
 # take in one paramter called model_id as an argument:
 parser = argparse.ArgumentParser()
 parser.add_argument('--model_id', type=str,
-                    help='The model id in huggingface e.g. Qwen/Qwen2-VL-7B-Instruct', required=True)
+                    help='The model id in huggingface e.g. Qwen/Qwen2-VL-7B-Instruct you can also pass a group of models, comma separated', required=True)
 # add a paramter that is the output filename you want:
 parser.add_argument('--output_file_name', type=str,
                     help='The short output file name e.g. "qwen"', required=True)
@@ -59,7 +59,7 @@ for model_id in models:
     print("-----------MODEL DETAILS")
     architecture = config_json['architectures'][0]
     print(architecture)
-    context_length = config_json['max_position_embeddings']
+    context_length = config_json.get('max_position_embeddings', "2048")
     context_length = str(context_length)
     print(context_length)
     transformers_version = config_json['transformers_version']
