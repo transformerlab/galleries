@@ -58,8 +58,13 @@ def read_and_combine_json_files(directory: str):
     schema = json.load(fp=open(file=f'schemas/{directory}.json', mode='r'))
     validate_json(json=combined_json, schema=schema)
 
+    # generate the name of the file which matches what
+    # the API expects. e.g. plugins -> plugin-gallery.json
+    filename = directory[:-1]     # remove the tailing s:
+    filename = f'{filename}-gallery.json'
+    
     # Write the models out
-    with open(file=f'{directory}.json', mode='w') as f:
+    with open(file=filename, mode='w') as f:
         json.dump(obj=combined_json, fp=f, indent=4)
 
     print('---')
