@@ -142,7 +142,7 @@ for model_id in models:
     model_objects.append(model_object)
 
 
-file_name = f"./models/{output_file_name}.{yaml if format == 'yaml' else 'json'}"
+file_name = f"./models/{output_file_name}.{'yaml' if format == 'yaml' else 'json'}"
 print("writing to: ", file_name)
 
 append = False
