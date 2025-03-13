@@ -11,7 +11,7 @@ transformers_version: 4.48.0.dev0
 gated: manual
 license: cc-by-nc-4.0
 logo: 'https://avatars.githubusercontent.com/u/54850923?s=200&v=4'
-size_of_model_in_mb: 0
+size_of_model_in_mb: 222135
 author:
   name: CohereForAI
   url: https://huggingface.co/CohereForAI/c4ai-command-a-03-2025
