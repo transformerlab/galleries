@@ -40,7 +40,8 @@
           "Phi3ForCausalLM",
           "Qwen2ForCausalLM",
           "T5ForConditionalGeneration",
-          "Cohere2ForCausalLM"
+          "Cohere2ForCausalLM",
+          "ExaoneForCausalLM"
         ]
       },
       "huggingface_repo": {

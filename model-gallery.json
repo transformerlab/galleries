@@ -448,6 +448,90 @@
         }
     },
     {
+        "uniqueID": "LGAI-EXAONE/EXAONE-Deep-2.4B",
+        "name": "LGAI EXAONE Deep 2.4B",
+        "description": "EXAONE Deep exhibits superior capabilities in various reasoning tasks including math and coding benchmarks, ranging from 2.4B to 32B parameters developed and released by LG AI Research",
+        "parameters": "2.4B",
+        "context": "32768",
+        "architecture": "ExaoneForCausalLM",
+        "added": "2025-03-18",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "LGAI-EXAONE/EXAONE-Deep-2.4B",
+        "transformers_version": "4.43.1",
+        "gated": false,
+        "license": "other",
+        "logo": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B/resolve/main/assets/EXAONE_Symbol+BI_3d.png",
+        "size_of_model_in_mb": 4595.726956367493,
+        "author": {
+            "name": "LGAI-EXAONE",
+            "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B",
+            "downloadUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "LGAI-EXAONE/EXAONE-Deep-7.8B",
+        "name": "LGAI EXAONE Deep 7.8B",
+        "description": "EXAONE Deep exhibits superior capabilities in various reasoning tasks including math and coding benchmarks, ranging from 2.4B to 32B parameters developed and released by LG AI Research",
+        "parameters": "",
+        "context": "32768",
+        "architecture": "ExaoneForCausalLM",
+        "added": "2025-03-18",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "LGAI-EXAONE/EXAONE-Deep-7.8B",
+        "transformers_version": "4.43.1",
+        "gated": false,
+        "license": "other",
+        "logo": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B/resolve/main/assets/EXAONE_Symbol+BI_3d.png",
+        "size_of_model_in_mb": 14920.461790084839,
+        "author": {
+            "name": "LGAI-EXAONE",
+            "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B",
+            "downloadUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "LGAI-EXAONE/EXAONE-Deep-32B",
+        "name": "LGAI EXAONE Deep 32B",
+        "description": "EXAONE Deep exhibits superior capabilities in various reasoning tasks including math and coding benchmarks, ranging from 2.4B to 32B parameters developed and released by LG AI Research",
+        "parameters": "32B",
+        "context": "32768",
+        "architecture": "ExaoneForCausalLM",
+        "added": "2025-03-18",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "LGAI-EXAONE/EXAONE-Deep-32B",
+        "transformers_version": "4.43.1",
+        "gated": false,
+        "license": "other",
+        "logo": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B/resolve/main/assets/EXAONE_Symbol+BI_3d.png",
+        "size_of_model_in_mb": 61049.268359184265,
+        "author": {
+            "name": "LGAI-EXAONE",
+            "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B",
+            "downloadUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "tiiuae/falcon-7b",
         "name": "Falcon 7B",
         "archived": true,
