@@ -752,6 +752,62 @@
         }
     },
     {
+        "uniqueID": "mlx-community/gemma-3-1b-it-4bit",
+        "name": "Gemma 3 1B Instruct (4bit MLX)",
+        "description": "MLX formatted version of Google's Gemma 3 1B parameter instruction-trained model quantized to 4 bits.",
+        "parameters": "1B",
+        "context": "32768",
+        "added": "2025-03-19",
+        "architecture": "Gemma3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "mlx-community/gemma-3-1b-it-4bit",
+        "transformers_version": "4.50.0.dev0",
+        "gated": "manual",
+        "license": "gemma",
+        "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
+        "size_of_model_in_mb": 736.1,
+        "author": {
+            "name": "mlx-community",
+            "url": "https://huggingface.co/mlx-community/gemma-3-1b-it-4bit",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-4bit",
+            "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-4bit",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "mlx-community/gemma-3-12b-it-4bit",
+        "name": "Gemma 3 12B Instruct (4bit MLX)",
+        "description": "MLX formatted version of Google's Gemma 3 12B parameter instruction-trained model quantized to 4 bits.",
+        "parameters": "12B",
+        "context": "32768",
+        "added": "2025-03-19",
+        "architecture": "Gemma3ForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "mlx-community/gemma-3-12b-it-4bit",
+        "transformers_version": "4.50.0.dev0",
+        "gated": "manual",
+        "license": "gemma",
+        "logo": "https://ml-explore.github.io/mlx/build/html/_static/mlx_logo.png",
+        "size_of_model_in_mb": 7694.3,
+        "author": {
+            "name": "mlx-community",
+            "url": "https://huggingface.co/mlx-community/gemma-3-12b-it-4bit",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mlx-community/gemma-3-12b-it-4bit",
+            "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-12b-it-4bit",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "google/gemma-3-1b-pt",
         "name": "gemma-3-1b-pt",
         "description": "",
