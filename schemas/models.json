@@ -41,6 +41,7 @@
           "Qwen2ForCausalLM",
           "T5ForConditionalGeneration",
           "Cohere2ForCausalLM",
+          "ExaoneForCausalLM",
           "Mistral3ForConditionalGeneration"
         ]
       },
