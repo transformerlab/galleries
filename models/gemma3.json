@@ -1,10 +1,10 @@
 [
   {
     "uniqueID": "google/gemma-3-1b-pt",
-    "name": "gemma-3-1b-pt",
+    "name": "Gemma 3 1B Base",
     "description": "",
-    "parameters": "",
-    "context": "32768",
+    "parameters": "1B",
+    "context": "128000",
     "architecture": "Gemma3ForCausalLM",
     "formats": [
       "Safetensors"
@@ -14,7 +14,7 @@
     "gated": "manual",
     "license": "gemma",
     "logo": "",
-    "size_of_model_in_mb": 0,
+    "size_of_model_in_mb": 1944.6060609817505,
     "author": {
       "name": "google",
       "url": "https://huggingface.co/google/gemma-3-1b-pt",
@@ -28,10 +28,10 @@
   },
   {
     "uniqueID": "google/gemma-3-1b-it",
-    "name": "gemma-3-1b-it",
+    "name": "Gemma 3 1B Instruct",
     "description": "",
-    "parameters": "",
-    "context": "32768",
+    "parameters": "1B",
+    "context": "128000",
     "architecture": "Gemma3ForCausalLM",
     "formats": [
       "Safetensors"
@@ -41,7 +41,7 @@
     "gated": "manual",
     "license": "gemma",
     "logo": "",
-    "size_of_model_in_mb": 0,
+    "size_of_model_in_mb": 1944.6083211898804,
     "author": {
       "name": "google",
       "url": "https://huggingface.co/google/gemma-3-1b-it",
@@ -55,10 +55,10 @@
   },
   {
     "uniqueID": "google/gemma-3-4b-pt",
-    "name": "gemma-3-4b-pt",
+    "name": "Gemma 3 4B Base",
     "description": "",
     "parameters": "",
-    "context": "2048",
+    "context": "128000",
     "architecture": "Gemma3ForConditionalGeneration",
     "formats": [
       "Safetensors"
@@ -68,7 +68,7 @@
     "gated": "manual",
     "license": "gemma",
     "logo": "",
-    "size_of_model_in_mb": 0,
+    "size_of_model_in_mb": 8239.389072418213,
     "author": {
       "name": "google",
       "url": "https://huggingface.co/google/gemma-3-4b-pt",
@@ -82,10 +82,10 @@
   },
   {
     "uniqueID": "google/gemma-3-4b-it",
-    "name": "gemma-3-4b-it",
+    "name": "Gemma 3 4B Instruct",
     "description": "",
-    "parameters": "",
-    "context": "2048",
+    "parameters": "4B",
+    "context": "128000",
     "architecture": "Gemma3ForConditionalGeneration",
     "formats": [
       "Safetensors"
@@ -95,7 +95,7 @@
     "gated": "manual",
     "license": "gemma",
     "logo": "",
-    "size_of_model_in_mb": 0,
+    "size_of_model_in_mb": 8239.393244743347,
     "author": {
       "name": "google",
       "url": "https://huggingface.co/google/gemma-3-4b-it",
@@ -109,10 +109,10 @@
   },
   {
     "uniqueID": "google/gemma-3-12b-pt",
-    "name": "gemma-3-12b-pt",
+    "name": "Gemma 3 12B Base",
     "description": "",
-    "parameters": "",
-    "context": "2048",
+    "parameters": "12B",
+    "context": "128000",
     "architecture": "Gemma3ForConditionalGeneration",
     "formats": [
       "Safetensors"
@@ -122,7 +122,7 @@
     "gated": "manual",
     "license": "gemma",
     "logo": "",
-    "size_of_model_in_mb": 0,
+    "size_of_model_in_mb": 23283.15651702881,
     "author": {
       "name": "google",
       "url": "https://huggingface.co/google/gemma-3-12b-pt",
@@ -136,10 +136,10 @@
   },
   {
     "uniqueID": "google/gemma-3-12b-it",
-    "name": "gemma-3-12b-it",
+    "name": "Gemma 3 12B Instruct",
     "description": "",
-    "parameters": "",
-    "context": "2048",
+    "parameters": "12B",
+    "context": "128000",
     "architecture": "Gemma3ForConditionalGeneration",
     "formats": [
       "Safetensors"
@@ -149,7 +149,7 @@
     "gated": "manual",
     "license": "gemma",
     "logo": "",
-    "size_of_model_in_mb": 0,
+    "size_of_model_in_mb": 23283.160661697388,
     "author": {
       "name": "google",
       "url": "https://huggingface.co/google/gemma-3-12b-it",
@@ -163,10 +163,10 @@
   },
   {
     "uniqueID": "google/gemma-3-27b-pt",
-    "name": "gemma-3-27b-pt",
+    "name": "Gemma 3 27B Base",
     "description": "",
-    "parameters": "",
-    "context": "2048",
+    "parameters": "27B",
+    "context": "128000",
     "architecture": "Gemma3ForConditionalGeneration",
     "formats": [
       "Safetensors"
@@ -176,7 +176,7 @@
     "gated": "manual",
     "license": "gemma",
     "logo": "",
-    "size_of_model_in_mb": 0,
+    "size_of_model_in_mb": 52360.884380340576,
     "author": {
       "name": "google",
       "url": "https://huggingface.co/google/gemma-3-27b-pt",
@@ -190,10 +190,10 @@
   },
   {
     "uniqueID": "google/gemma-3-27b-it",
-    "name": "gemma-3-27b-it",
+    "name": "Gemma 3 27B Instruct",
     "description": "",
-    "parameters": "",
-    "context": "2048",
+    "parameters": "27B",
+    "context": "128000",
     "architecture": "Gemma3ForConditionalGeneration",
     "formats": [
       "Safetensors"
@@ -203,7 +203,7 @@
     "gated": "manual",
     "license": "gemma",
     "logo": "",
-    "size_of_model_in_mb": 0,
+    "size_of_model_in_mb": 52360.88702392578,
     "author": {
       "name": "google",
       "url": "https://huggingface.co/google/gemma-3-27b-it",
@@ -217,10 +217,10 @@
   },
   {
     "uniqueID": "google/shieldgemma-2-4b-it",
-    "name": "shieldgemma-2-4b-it",
+    "name": "ShieldGemma 2 4B Instruct",
     "description": "",
-    "parameters": "",
-    "context": "2048",
+    "parameters": "4B",
+    "context": "128000",
     "architecture": "ShieldGemmaForImageClassification",
     "formats": [
       "Safetensors"
@@ -230,7 +230,7 @@
     "gated": "manual",
     "license": "gemma",
     "logo": "",
-    "size_of_model_in_mb": 0,
+    "size_of_model_in_mb": 8239.389739990234,
     "author": {
       "name": "google",
       "url": "https://huggingface.co/google/shieldgemma-2-4b-it",
