@@ -900,6 +900,7 @@
         "description": "",
         "parameters": "1B",
         "context": "128000",
+        "added": "2025-03-19",
         "architecture": "Gemma3ForCausalLM",
         "formats": [
             "Safetensors"
@@ -927,6 +928,7 @@
         "description": "",
         "parameters": "1B",
         "context": "128000",
+        "added": "2025-03-19",
         "architecture": "Gemma3ForCausalLM",
         "formats": [
             "Safetensors"
@@ -954,6 +956,7 @@
         "description": "",
         "parameters": "",
         "context": "128000",
+        "added": "2025-03-19",
         "architecture": "Gemma3ForConditionalGeneration",
         "formats": [
             "Safetensors"
@@ -981,6 +984,7 @@
         "description": "",
         "parameters": "4B",
         "context": "128000",
+        "added": "2025-03-19",
         "architecture": "Gemma3ForConditionalGeneration",
         "formats": [
             "Safetensors"
@@ -1008,6 +1012,7 @@
         "description": "",
         "parameters": "12B",
         "context": "128000",
+        "added": "2025-03-19",
         "architecture": "Gemma3ForConditionalGeneration",
         "formats": [
             "Safetensors"
@@ -1035,6 +1040,7 @@
         "description": "",
         "parameters": "12B",
         "context": "128000",
+        "added": "2025-03-19",
         "architecture": "Gemma3ForConditionalGeneration",
         "formats": [
             "Safetensors"
@@ -1062,6 +1068,7 @@
         "description": "",
         "parameters": "27B",
         "context": "128000",
+        "added": "2025-03-19",
         "architecture": "Gemma3ForConditionalGeneration",
         "formats": [
             "Safetensors"
@@ -1089,6 +1096,7 @@
         "description": "",
         "parameters": "27B",
         "context": "128000",
+        "added": "2025-03-19",
         "architecture": "Gemma3ForConditionalGeneration",
         "formats": [
             "Safetensors"
@@ -1116,6 +1124,7 @@
         "description": "",
         "parameters": "4B",
         "context": "128000",
+        "added": "2025-03-19",
         "architecture": "ShieldGemmaForImageClassification",
         "formats": [
             "Safetensors"
