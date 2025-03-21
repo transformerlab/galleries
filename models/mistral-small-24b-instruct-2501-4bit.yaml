@@ -3,6 +3,7 @@ name: Mistral Small 24B Instruct 2501 (MLX 4-bit)
 description: 'Mistral Small 3 ( 2501 ) sets a new benchmark in the "small" Large Language Models category below 70B, boasting 24B parameters and achieving state-of-the-art capabilities comparable to larger models!'
 parameters: '24B'
 added: '2025-01-31'
+archived: true
 context: '32768'
 architecture: MistralForCausalLM
 formats:
