@@ -1,7 +1,9 @@
 import os
-from huggingface_hub import hf_hub_download
+from huggingface_hub import hf_hub_download, list_repo_tree
+from huggingface_hub.hf_api import RepoFile
 import yaml
 import json
+import fnmatch
 import argparse
 from datetime import datetime
 
@@ -106,6 +108,34 @@ for model_id in models:
     # Date added is used to show that this is a newly added model
     date_added = datetime.now().strftime("%Y-%m-%d")
 
+    # Calculate download size from HuggingFace
+    download_size = 0
+
+    # This is our default allow_patterns defined in download_huggingface_model.py
+    allow_patterns = [
+        "*.json",
+        "*.safetensors",
+        "*.py",
+        "tokenizer.model",
+        "*.tiktoken",
+        "*.npz",
+        "*.bin",
+    ]
+
+    # Get a list of all files in this repo. This can throw RepositoryNotFoundError
+    model_files = list_repo_tree(model_id)
+
+    # Iterate over files in the model repo and add up size if they are included in download
+    for file in model_files:
+        if isinstance(file, RepoFile):
+            # Only add this file if it matches one of the allow_patterns
+            for pattern in allow_patterns:
+                if fnmatch.fnmatch(file.path, pattern):
+                    # Our gallery expects sizes in MB but the file size is in bytes
+                    size_in_mb = file.size
+                    download_size += size_in_mb / (1024 * 1024)
+                    break
+
     # Try to figure out logo based on model info
     lc_model_name = model_name.lower()
     lc_architecture = architecture.lower()
@@ -179,7 +209,7 @@ for model_id in models:
     model_object["gated"] = gated
     model_object["license"] = license
     model_object["logo"] = logo
-    model_object["size_of_model_in_mb"] = 0
+    model_object["size_of_model_in_mb"] = download_size
     model_object["author"] = {}
     model_object["author"]["name"] = model_author
     model_object["author"]["url"] = f"https://huggingface.co/{model_id}"
