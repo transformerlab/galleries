@@ -108,6 +108,17 @@ for model_id in models:
     # Date added is used to show that this is a newly added model
     date_added = datetime.now().strftime("%Y-%m-%d")
 
+    # Try to figure out parameter count for the model by scanning through the name
+    # Look for a part in the model string that is numbers followed by a B or an M
+    parameter_count = ""
+    model_name_parts = model_name.split("-")
+    for part in model_name_parts:
+        if part[:-1].replace(".", "").isdigit() and (
+            part[-1].lower() == "b" or part[-1].lower() == "m"
+        ):
+            parameter_count = part.upper()
+            break
+
     # Calculate download size from HuggingFace
     download_size = 0
 
@@ -201,7 +212,7 @@ for model_id in models:
     model_object["description"] = ""
     model_object["added"] = date_added
     model_object["tags"] = []
-    model_object["parameters"] = ""
+    model_object["parameters"] = parameter_count
     model_object["context"] = context_length
     model_object["architecture"] = architecture
     model_object["formats"] = ["Safetensors"]
