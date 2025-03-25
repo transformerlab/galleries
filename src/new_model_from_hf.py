@@ -114,7 +114,7 @@ for model_id in models:
         logo = "https://avatars.githubusercontent.com/u/54850923?s=200&v=4"
     elif "deepseek" in lc_model_name:
         logo = "https://www.deepseek.com/favicon.ico"
-    elif "exaone" in lc_model_name:
+    elif "exaone" in lc_architecture:
         logo = "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B/resolve/main/assets/EXAONE_Symbol+BI_3d.png"
     elif "gemma" in lc_architecture:
         logo = "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp"
