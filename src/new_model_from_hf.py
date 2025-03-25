@@ -3,6 +3,7 @@ from huggingface_hub import hf_hub_download
 import yaml
 import json
 import argparse
+from datetime import datetime
 
 # take in one paramter called model_id as an argument:
 parser = argparse.ArgumentParser()
@@ -102,6 +103,9 @@ for model_id in models:
             print(license)
             break
 
+    # Date added is used to show that this is a newly added model
+    date_added = datetime.now().strftime("%Y-%m-%d")
+
     # Try to figure out logo based on model info
     lc_model_name = model_name.lower()
     lc_architecture = architecture.lower()
@@ -163,6 +167,7 @@ for model_id in models:
     model_object["uniqueID"] = model_id
     model_object["name"] = model_name
     model_object["description"] = ""
+    model_object["added"] = date_added
     model_object["parameters"] = ""
     model_object["context"] = context_length
     model_object["architecture"] = architecture
