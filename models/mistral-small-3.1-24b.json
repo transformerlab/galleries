@@ -53,7 +53,65 @@
       "canonicalUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503",
       "downloadUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503",
       "paperUrl": "?"
-
+    }
+  },
+  {
+    "uniqueID": "mlx-community/Mistral-Small-3.1-24B-Instruct-2503-4bit",
+    "name": "Mistral Small 3.1 24B Instruct 2503 (4bit MLX)",
+    "description": "MLX formatted 4-bit quantization of the 2503 release of Mistral's Small 3.1 model.",
+    "added": "2025-03-25",
+    "tags": [],
+    "parameters": "24B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mlx-community/Mistral-Small-3.1-24B-Instruct-2503-4bit",
+    "transformers_version": "4.50.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 13464.98053264618,
+    "author": {
+      "name": "mlx-community",
+      "url": "https://huggingface.co/mlx-community/Mistral-Small-3.1-24B-Instruct-2503-4bit",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mlx-community/Mistral-Small-3.1-24B-Instruct-2503-4bit",
+      "downloadUrl": "https://huggingface.co/mlx-community/Mistral-Small-3.1-24B-Instruct-2503-4bit",
+      "paperUrl": "?"
+    }
+  },
+  {
+    "uniqueID": "unsloth/Mistral-Small-3.1-24B-Instruct-2503-GGUF",
+    "name": "Mistral Small 3.1 24B Instruct 2503 (GGUF Q4_K_M)",
+    "description": "GGUF-formatted 4-bit quantization of the 2503 release of Mistral's Small 3.1 model.",
+    "added": "2025-03-25",
+    "tags": [],
+    "parameters": "24B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "unsloth/Mistral-Small-3.1-24B-Instruct-2503-GGUF",
+    "huggingface_filename": "Mistral-Small-3.1-24B-Instruct-2503-Q4_K_M.gguf",
+    "transformers_version": "4.50.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 14643.2,
+    "author": {
+      "name": "unsloth",
+      "url": "https://huggingface.co/unsloth/Mistral-Small-3.1-24B-Instruct-2503-GGUF",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/unsloth/Mistral-Small-3.1-24B-Instruct-2503-GGUF",
+      "downloadUrl": "https://huggingface.co/unsloth/Mistral-Small-3.1-24B-Instruct-2503-GGUF",
+      "paperUrl": "?"
     }
   }
 ]
