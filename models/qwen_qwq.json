@@ -4,7 +4,9 @@
     "name": "Qwen QwQ 32B",
     "description": "QwQ is the reasoning model of the Qwen series. Compared with conventional instruction-tuned models, QwQ, which is capable of thinking and reasoning, can achieve significantly enhanced performance in downstream tasks, especially hard problems.",
     "added": "2025-03-25",
-    "tags": [],
+    "tags": [
+      "Reasoning"
+    ],
     "parameters": "32B",
     "context": "40960",
     "architecture": "Qwen2ForCausalLM",
@@ -33,7 +35,9 @@
     "name": "Qwen QwQ 32B (MLX 4bit)",
     "description": "MLX-formatted version of Qwen's QwQ model quantized to 4 bits.",
     "added": "2025-03-25",
-    "tags": [],
+    "tags": [
+      "Reasoning"
+    ],
     "parameters": "32B",
     "context": "131072",
     "architecture": "Qwen2ForCausalLM",
@@ -62,7 +66,9 @@
     "name": "QwQ 32B (GGUF Q4_K_M)",
     "description": "GGUF formatted version of Qwen's QwQ model quantized to 4-bits.",
     "added": "2025-03-25",
-    "tags": [],
+    "tags": [
+      "Reasoning"
+    ],
     "parameters": "32B",
     "context": "131072",
     "architecture": "Qwen2ForCausalLM",
