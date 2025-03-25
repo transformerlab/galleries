@@ -200,6 +200,7 @@ for model_id in models:
     model_object["name"] = model_name
     model_object["description"] = ""
     model_object["added"] = date_added
+    model_object["tags"] = []
     model_object["parameters"] = ""
     model_object["context"] = context_length
     model_object["architecture"] = architecture
