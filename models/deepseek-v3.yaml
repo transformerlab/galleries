@@ -1,0 +1,24 @@
+uniqueID: deepseek-ai/DeepSeek-V3-0324
+name: DeepSeek V3 0324
+description: "March 2025 update to Deepseek's base model that improves in many categories."
+added: '2025-03-25'
+tags: []
+parameters: '671B'
+context: '163840'
+architecture: DeepseekV3ForCausalLM
+formats:
+- Safetensors
+huggingface_repo: deepseek-ai/DeepSeek-V3-0324
+transformers_version: 4.46.3
+gated: false
+license: mit
+logo: https://www.deepseek.com/favicon.ico
+size_of_model_in_mb: 656703.5347614288
+author:
+  name: deepseek-ai
+  url: https://huggingface.co/deepseek-ai/DeepSeek-V3-0324
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/deepseek-ai/DeepSeek-V3-0324
+  downloadUrl: https://huggingface.co/deepseek-ai/DeepSeek-V3-0324
+  paperUrl: '?'
