@@ -1794,6 +1794,122 @@
         }
     },
     {
+        "uniqueID": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+        "name": "Llama 4 Scout (17Bx16E) Instruct",
+        "description": "The Llama 4 collection of models are natively multimodal AI models that use a mixture-of-experts (MoE) architecture. The Scout series of models use a 17 billion parameter model with 16 experts.",
+        "added": "2025-04-05",
+        "tags": [],
+        "parameters": "17B",
+        "context": "10000000",
+        "architecture": "Llama4ForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+        "transformers_version": "4.51.0.dev0",
+        "gated": "manual",
+        "license": "other",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "size_of_model_in_mb": 207248.37054157257,
+        "author": {
+            "name": "meta-llama",
+            "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+            "downloadUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "meta-llama/Llama-4-Scout-17B-16E",
+        "name": "Llama 4 Scout (17Bx16E)",
+        "description": "The Llama 4 collection of models are natively multimodal AI models that use a mixture-of-experts (MoE) architecture. The Scout series of models use a 17 billion parameter model with 16 experts.",
+        "added": "2025-04-05",
+        "tags": [],
+        "parameters": "17B",
+        "context": "10000000",
+        "architecture": "Llama4ForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "meta-llama/Llama-4-Scout-17B-16E",
+        "transformers_version": "4.51.0.dev0",
+        "gated": "manual",
+        "license": "other",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "size_of_model_in_mb": 207248.36546897888,
+        "author": {
+            "name": "meta-llama",
+            "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E",
+            "downloadUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+        "name": "Llama 4 Maverick (17Bx128E) Instruct",
+        "description": "The Llama 4 collection of models are natively multimodal AI models that use a mixture-of-experts (MoE) architecture. The Maverick series of models use a 17 billion parameter model with 128 experts.",
+        "added": "2025-04-05",
+        "tags": [],
+        "parameters": "17B",
+        "context": "1000000",
+        "architecture": "Llama4ForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+        "transformers_version": "4.51.0.dev0",
+        "gated": "manual",
+        "license": "other",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "size_of_model_in_mb": 765990.8519887924,
+        "author": {
+            "name": "meta-llama",
+            "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+            "downloadUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "meta-llama/Llama-4-Maverick-17B-128E",
+        "name": "Llama 4 Maverick (17Bx128E)",
+        "description": "The Llama 4 collection of models are natively multimodal AI models that use a mixture-of-experts (MoE) architecture. The Maverick series of models use a 17 billion parameter model with 128 experts.",
+        "added": "2025-04-05",
+        "tags": [],
+        "parameters": "17B",
+        "context": "1000000",
+        "architecture": "Llama4ForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "meta-llama/Llama-4-Maverick-17B-128E",
+        "transformers_version": "4.51.0.dev0",
+        "gated": "manual",
+        "license": "other",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+        "size_of_model_in_mb": 765990.8467245102,
+        "author": {
+            "name": "meta-llama",
+            "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E",
+            "downloadUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "bczhou/tiny-llava-v1-hf",
         "name": "TinyLlava v1",
         "description": "Small scale large multimodal model. Able to take in image input and assess web links.",
