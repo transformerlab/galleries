@@ -185,7 +185,7 @@
     },
     {
         "uniqueID": "deepcogito/cogito-v1-preview-llama-3B",
-        "name": "cogito-v1-preview-llama-3B",
+        "name": "Cogito 3B",
         "description": "Cogito v1 Preview is a family of hybrid reasoning models by Deep Cogito that outperform the best available open models of the same size, including counterparts from LLaMA, DeepSeek, and Qwen across most standard benchmarks.",
         "added": "2025-04-09",
         "tags": [],
@@ -214,7 +214,7 @@
     },
     {
         "uniqueID": "deepcogito/cogito-v1-preview-llama-8B",
-        "name": "cogito-v1-preview-llama-8B",
+        "name": "Cogito 8B",
         "description": "Cogito v1 Preview is a family of hybrid reasoning models by Deep Cogito that outperform the best available open models of the same size, including counterparts from LLaMA, DeepSeek, and Qwen across most standard benchmarks.",
         "added": "2025-04-09",
         "tags": [],
@@ -243,7 +243,7 @@
     },
     {
         "uniqueID": "deepcogito/cogito-v1-preview-qwen-14B",
-        "name": "cogito-v1-preview-qwen-14B",
+        "name": "Cogito 14B",
         "description": "Cogito v1 Preview is a family of hybrid reasoning models by Deep Cogito that outperform the best available open models of the same size, including counterparts from LLaMA, DeepSeek, and Qwen across most standard benchmarks.",
         "added": "2025-04-09",
         "tags": [],
@@ -272,7 +272,7 @@
     },
     {
         "uniqueID": "deepcogito/cogito-v1-preview-qwen-32B",
-        "name": "cogito-v1-preview-qwen-32B",
+        "name": "Cogito 32B",
         "description": "Cogito v1 Preview is a family of hybrid reasoning models by Deep Cogito that outperform the best available open models of the same size, including counterparts from LLaMA, DeepSeek, and Qwen across most standard benchmarks.",
         "added": "2025-04-09",
         "tags": [],
@@ -301,7 +301,7 @@
     },
     {
         "uniqueID": "deepcogito/cogito-v1-preview-llama-70B",
-        "name": "cogito-v1-preview-llama-70B",
+        "name": "Cogito 70B",
         "description": "Cogito v1 Preview is a family of hybrid reasoning models by Deep Cogito that outperform the best available open models of the same size, including counterparts from LLaMA, DeepSeek, and Qwen across most standard benchmarks.",
         "added": "2025-04-09",
         "tags": [],
