@@ -1,0 +1,24 @@
+uniqueID: Zyphra/ZR1-1.5B
+name: ZR1-1.5B
+description: 'This small but powerful reasoning model excels at both math and code, making it one of the best models in these categories for its size. It also uses 60% less reasoning tokens than comparable models.'
+added: '2025-04-10'
+tags: []
+parameters: 1.5B
+context: '131072'
+architecture: Qwen2ForCausalLM
+formats:
+- Safetensors
+huggingface_repo: Zyphra/ZR1-1.5B
+transformers_version: 4.50.3
+gated: false
+license: mit
+logo: https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png
+size_of_model_in_mb: 6790.015851974487
+author:
+  name: Zyphra
+  url: https://huggingface.co/Zyphra/ZR1-1.5B
+  blurb: ''
+resources:
+  canonicalUrl: https://huggingface.co/Zyphra/ZR1-1.5B
+  downloadUrl: https://huggingface.co/Zyphra/ZR1-1.5B
+  paperUrl: '?'
