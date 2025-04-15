@@ -167,6 +167,64 @@
         }
     },
     {
+        "uniqueID": "ServiceNow-AI/Apriel-5B-Instruct",
+        "name": "Apriel-5B-Instruct",
+        "description": "Apriel is a family of models built for versatility, offering high throughput and efficiency across a wide range of tasks.",
+        "added": "2025-04-15",
+        "tags": [],
+        "parameters": "5B",
+        "context": "16384",
+        "architecture": "AprielForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "ServiceNow-AI/Apriel-5B-Instruct",
+        "transformers_version": "4.48.3",
+        "gated": false,
+        "license": "mit",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/63d3095c2727d7888cbb54e2/Uv-Lx8PVGviqokfOyYlCN.png",
+        "size_of_model_in_mb": 9233.023426055908,
+        "author": {
+            "name": "ServiceNow-AI",
+            "url": "https://huggingface.co/ServiceNow-AI/Apriel-5B-Instruct",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/ServiceNow-AI/Apriel-5B-Instruct",
+            "downloadUrl": "https://huggingface.co/ServiceNow-AI/Apriel-5B-Instruct",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "ServiceNow-AI/Apriel-5B-Base",
+        "name": "Apriel-5B-Base",
+        "description": "Apriel is a family of models built for versatility, offering high throughput and efficiency across a wide range of tasks.",
+        "added": "2025-04-15",
+        "tags": [],
+        "parameters": "5B",
+        "context": "16384",
+        "architecture": "AprielForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "ServiceNow-AI/Apriel-5B-Base",
+        "transformers_version": "4.48.3",
+        "gated": false,
+        "license": "mit",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/63d3095c2727d7888cbb54e2/Uv-Lx8PVGviqokfOyYlCN.png",
+        "size_of_model_in_mb": 9233.021151542664,
+        "author": {
+            "name": "ServiceNow-AI",
+            "url": "https://huggingface.co/ServiceNow-AI/Apriel-5B-Base",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/ServiceNow-AI/Apriel-5B-Base",
+            "downloadUrl": "https://huggingface.co/ServiceNow-AI/Apriel-5B-Base",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "CohereForAI/aya-23-8B",
         "name": "Aya 23 8B",
         "description": "Aya 23 is an open weights research release of an instruction fine-tuned model with highly advanced multilingual capabilities. Aya 23 focuses on pairing a highly performant pre-trained Command family of models with the recently released Aya Collection. The result is a powerful multilingual large language model serving 23 languages.",
