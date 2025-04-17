@@ -42,7 +42,8 @@
           "T5ForConditionalGeneration",
           "Cohere2ForCausalLM",
           "ExaoneForCausalLM",
-          "Mistral3ForConditionalGeneration"
+          "Mistral3ForConditionalGeneration",
+          "AprielForCausalLM"
         ]
       },
       "huggingface_repo": {
