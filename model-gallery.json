@@ -1439,6 +1439,122 @@
         }
     },
     {
+        "uniqueID": "ibm-granite/granite-3.3-2b-base",
+        "name": "granite-3.3-2b-base",
+        "description": "2B parameter base version of IBM's open-source language model.",
+        "added": "2025-04-21",
+        "tags": [],
+        "parameters": "2B",
+        "context": "131072",
+        "architecture": "GraniteForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "ibm-granite/granite-3.3-2b-base",
+        "transformers_version": "4.46.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/639bcaa2445b133a4e942436/CEW-OjXkRkDNmTxSu8Egh.png",
+        "size_of_model_in_mb": 4834.352711677551,
+        "author": {
+            "name": "ibm-granite",
+            "url": "https://huggingface.co/ibm-granite/granite-3.3-2b-base",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/ibm-granite/granite-3.3-2b-base",
+            "downloadUrl": "https://huggingface.co/ibm-granite/granite-3.3-2b-base",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "ibm-granite/granite-3.3-2b-instruct",
+        "name": "granite-3.3-2b-instruct",
+        "description": "2B parameter instruction-tuned version of IBM's open-source language model.",
+        "added": "2025-04-21",
+        "tags": [],
+        "parameters": "2B",
+        "context": "131072",
+        "architecture": "GraniteForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "ibm-granite/granite-3.3-2b-instruct",
+        "transformers_version": "4.49.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/639bcaa2445b133a4e942436/CEW-OjXkRkDNmTxSu8Egh.png",
+        "size_of_model_in_mb": 4836.479970932007,
+        "author": {
+            "name": "ibm-granite",
+            "url": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct",
+            "downloadUrl": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "ibm-granite/granite-3.3-8b-base",
+        "name": "granite-3.3-8b-base",
+        "description": "8B parameter base version of IBM's open-source language model.",
+        "added": "2025-04-21",
+        "tags": [],
+        "parameters": "8B",
+        "context": "131072",
+        "architecture": "GraniteForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "ibm-granite/granite-3.3-8b-base",
+        "transformers_version": "4.46.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/639bcaa2445b133a4e942436/CEW-OjXkRkDNmTxSu8Egh.png",
+        "size_of_model_in_mb": 15586.66934299469,
+        "author": {
+            "name": "ibm-granite",
+            "url": "https://huggingface.co/ibm-granite/granite-3.3-8b-base",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/ibm-granite/granite-3.3-8b-base",
+            "downloadUrl": "https://huggingface.co/ibm-granite/granite-3.3-8b-base",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "ibm-granite/granite-3.3-8b-instruct",
+        "name": "granite-3.3-8b-instruct",
+        "description": "8B parameter instruction-tuned version of IBM's open-source language model.",
+        "added": "2025-04-21",
+        "tags": [],
+        "parameters": "8B",
+        "context": "131072",
+        "architecture": "GraniteForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "ibm-granite/granite-3.3-8b-instruct",
+        "transformers_version": "4.49.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/639bcaa2445b133a4e942436/CEW-OjXkRkDNmTxSu8Egh.png",
+        "size_of_model_in_mb": 15588.823945999146,
+        "author": {
+            "name": "ibm-granite",
+            "url": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct",
+            "downloadUrl": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "allenai/Llama-3.1-Tulu-3-8B",
         "name": "Llama 3.1 Tulu 3 8B",
         "description": "T\u00fclu3 is a leading instruction following model family, offering fully open-source data, code, and recipes designed to serve as a comprehensive guide for modern post-training techniques. T\u00fclu3 is designed for state-of-the-art performance on a diversity of tasks in addition to chat, such as MATH, GSM8K, and IFEval.",

@@ -31,6 +31,7 @@
           "ShieldGemmaForImageClassification",
           "GGUF",
           "GPTBigCodeForCausalLM",
+          "GraniteForCausalLM",
           "LlamaForCausalLM",
           "LlavaForConditionalGeneration",
           "MistralForCausalLM",
@@ -74,7 +75,11 @@
             "type": "string"
           }
         },
-        "required": ["name", "url", "blurb"]
+        "required": [
+          "name",
+          "url",
+          "blurb"
+        ]
       },
       "resources": {
         "type": "object",
@@ -89,7 +94,11 @@
             "type": "string"
           }
         },
-        "required": ["canonicalUrl", "downloadUrl", "paperUrl"]
+        "required": [
+          "canonicalUrl",
+          "downloadUrl",
+          "paperUrl"
+        ]
       }
     },
     "required": [
