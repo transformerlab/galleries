@@ -1651,66 +1651,6 @@
         }
     },
     {
-        "uniqueID": "google/gemma-3-27b-it-qat-q4_0-gguf",
-        "name": "Gemma 3 QAT 27B IT (q4_0 GGUF)",
-        "description": "This 27B GGUF formatted version of Google's Gemma 3 model is built using Quantization Aware Training (QAT), which allows the model to preserve similar quality as bfloat16 while significantly reducing the memory requirements.",
-        "added": "2025-04-22",
-        "tags": [],
-        "parameters": "27B",
-        "context": "128000",
-        "architecture": "GGUF",
-        "formats": [
-            "GGUF"
-        ],
-        "huggingface_repo": "google/gemma-3-27b-it-qat-q4_0-gguf",
-        "huggingface_filename": "gemma-3-27b-it-q4_0.gguf",
-        "transformers_version": "4.51.3",
-        "gated": false,
-        "license": "other",
-        "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
-        "size_of_model_in_mb": 17249.45,
-        "author": {
-            "name": "google",
-            "url": "https://huggingface.co/google/gemma-3-27b-it-qat-q4_0-gguf",
-            "blurb": ""
-        },
-        "resources": {
-            "canonicalUrl": "https://huggingface.co/google/gemma-3-27b-it-qat-q4_0-gguf",
-            "downloadUrl": "https://huggingface.co/google/gemma-3-27b-it-qat-q4_0-gguf",
-            "paperUrl": "?"
-        }
-    },
-    {
-        "uniqueID": "google/gemma-3-12b-it-qat-q4_0-gguf",
-        "name": "Gemma 3 QAT 12B IT (q4_0 GGUF)",
-        "description": "This 12B GGUF formatted version of Google's Gemma 3 model is built using Quantization Aware Training (QAT), which allows the model to preserve similar quality as bfloat16 while significantly reducing the memory requirements.",
-        "added": "2025-04-22",
-        "tags": [],
-        "parameters": "12B",
-        "context": "128000",
-        "architecture": "GGUF",
-        "formats": [
-            "GGUF"
-        ],
-        "huggingface_repo": "google/gemma-3-12b-it-qat-q4_0-gguf",
-        "huggingface_filename": "gemma-3-12b-it-q4_0.gguf",
-        "transformers_version": "4.51.3",
-        "gated": false,
-        "license": "other",
-        "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
-        "size_of_model_in_mb": 8263.68,
-        "author": {
-            "name": "google",
-            "url": "https://huggingface.co/google/gemma-3-27b-it-qat-q4_0-gguf",
-            "blurb": ""
-        },
-        "resources": {
-            "canonicalUrl": "https://huggingface.co/google/gemma-3-12b-it-qat-q4_0-gguf",
-            "downloadUrl": "https://huggingface.co/google/gemma-3-12b-it-qat-q4_0-gguf",
-            "paperUrl": "?"
-        }
-    },
-    {
         "uniqueID": "google/gemma-3-1b-it-qat-q4_0-gguf",
         "name": "Gemma 3 QAT 1B IT (q4_0 GGUF)",
         "description": "This 1B GGUF formatted version of Google's Gemma 3 model is built using Quantization Aware Training (QAT), which allows the model to preserve similar quality as bfloat16 while significantly reducing the memory requirements.",
