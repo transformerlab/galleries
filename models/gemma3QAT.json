@@ -104,11 +104,7 @@
     "gated": false,
     "license": "other",
     "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
-<<<<<<< Updated upstream
-    "size_of_model_in_mb": 17612.8,
-=======
     "size_of_model_in_mb": 17249.45,
->>>>>>> Stashed changes
     "author": {
       "name": "google",
       "url": "https://huggingface.co/google/gemma-3-27b-it-qat-q4_0-gguf",
