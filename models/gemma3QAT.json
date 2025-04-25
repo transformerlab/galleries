@@ -71,7 +71,7 @@
     ],
     "huggingface_repo": "mlx-community/gemma-3-1b-it-qat-4bit",
     "transformers_version": "4.52.0.dev0",
-    "gated": "manual",
+    "gated": false,
     "license": "gemma",
     "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
     "size_of_model_in_mb": 736.1032953262329,
