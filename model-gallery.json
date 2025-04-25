@@ -495,6 +495,131 @@
         }
     },
     {
+        "uniqueID": "agentica-org/DeepCoder-14B-Preview",
+        "name": "DeepCoder 14B Preview",
+        "description": "DeepCoder is a code reasoning LLM fine-tuned from DeepSeek-R1-Distilled-Qwen-14B that achieves similar performance to OpenAI's o3-mini with just 14B parameters.",
+        "added": "2025-04-25",
+        "tags": [
+            "Coding"
+        ],
+        "parameters": "14B",
+        "context": "131072",
+        "architecture": "Qwen2ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "agentica-org/DeepCoder-14B-Preview",
+        "transformers_version": "4.47.1",
+        "gated": false,
+        "license": "mit",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 56354.21689414978,
+        "author": {
+            "name": "agentica-org",
+            "url": "https://huggingface.co/agentica-org/DeepCoder-14B-Preview",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/agentica-org/DeepCoder-14B-Preview",
+            "downloadUrl": "https://huggingface.co/agentica-org/DeepCoder-14B-Preview",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "agentica-org/DeepCoder-1.5B-Preview",
+        "name": "DeepCoder 1.5B Preview",
+        "description": "DeepCoder is a code reasoning LLM fine-tuned from DeepSeek-R1-Distilled-Qwen-1.5B using distributed reinforcement learning (RL) to scale up to long context lengths.",
+        "added": "2025-04-25",
+        "tags": [
+            "Coding"
+        ],
+        "parameters": "1.5B",
+        "context": "131072",
+        "architecture": "Qwen2ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "agentica-org/DeepCoder-1.5B-Preview",
+        "transformers_version": "4.49.0",
+        "gated": false,
+        "license": "mit",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 6790.017298698425,
+        "author": {
+            "name": "agentica-org",
+            "url": "https://huggingface.co/agentica-org/DeepCoder-1.5B-Preview",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/agentica-org/DeepCoder-1.5B-Preview",
+            "downloadUrl": "https://huggingface.co/agentica-org/DeepCoder-1.5B-Preview",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "bartowski/agentica-org_DeepCoder-14B-Preview-GGUF",
+        "name": "DeepCoder 14B Preview (GGUF Q6_K)",
+        "description": "DeepCoder is a code reasoning LLM fine-tuned from DeepSeek-R1-Distilled-Qwen-14B that achieves similar performance to OpenAI's o3-mini with just 14B parameters.",
+        "added": "2025-04-25",
+        "tags": [
+            "Coding"
+        ],
+        "parameters": "14B",
+        "context": "131072",
+        "architecture": "GGUF",
+        "formats": [
+            "GGUF"
+        ],
+        "huggingface_repo": "bartowski/agentica-org_DeepCoder-14B-Preview-GGUF",
+        "huggingface_filename": "bartowski/agentica-org_DeepCoder-14B-Preview-GGUF",
+        "transformers_version": "4.47.1",
+        "gated": false,
+        "license": "mit",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 12390.4,
+        "author": {
+            "name": "agentica-org",
+            "url": "https://huggingface.co/agentica-org/",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/bartowski/agentica-org_DeepCoder-14B-Preview-GGUF",
+            "downloadUrl": "https://huggingface.co/bartowski/agentica-org_DeepCoder-14B-Preview-GGUF",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "mlx-community/DeepCoder-14B-Preview-6bit",
+        "name": "DeepCoder 14B Preview (MLX 6-bit)",
+        "description": "DeepCoder is a code reasoning LLM fine-tuned from DeepSeek-R1-Distilled-Qwen-14B that achieves similar performance to OpenAI's o3-mini with just 14B parameters.",
+        "added": "2025-04-25",
+        "tags": [
+            "Coding"
+        ],
+        "parameters": "14B",
+        "context": "131072",
+        "architecture": "MLX",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "mlx-community/DeepCoder-14B-Preview-6bit",
+        "transformers_version": "4.47.1",
+        "gated": false,
+        "license": "mit",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 11456.805171966553,
+        "author": {
+            "name": "mlx-community",
+            "url": "https://huggingface.co/mlx-community/DeepCoder-14B-Preview-6bit",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mlx-community/DeepCoder-14B-Preview-6bit",
+            "downloadUrl": "https://huggingface.co/mlx-community/DeepCoder-14B-Preview-6bit",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
         "name": "DeepSeek R1 Distill Qwen 1.5B",
         "description": "Qwen distillation of DeepSeek chain-of-thought model.",
@@ -1510,7 +1635,7 @@
         ],
         "huggingface_repo": "mlx-community/gemma-3-1b-it-qat-4bit",
         "transformers_version": "4.52.0.dev0",
-        "gated": "manual",
+        "gated": false,
         "license": "gemma",
         "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
         "size_of_model_in_mb": 736.1032953262329,
@@ -1522,66 +1647,6 @@
         "resources": {
             "canonicalUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-qat-4bit",
             "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-qat-4bit",
-            "paperUrl": "?"
-        }
-    },
-    {
-        "uniqueID": "google/gemma-3-27b-it-qat-q4_0-gguf",
-        "name": "Gemma 3 QAT 27B IT (q4_0 GGUF)",
-        "description": "This 27B GGUF formatted version of Google's Gemma 3 model is built using Quantization Aware Training (QAT), which allows the model to preserve similar quality as bfloat16 while significantly reducing the memory requirements.",
-        "added": "2025-04-22",
-        "tags": [],
-        "parameters": "27B",
-        "context": "128000",
-        "architecture": "GGUF",
-        "formats": [
-            "GGUF"
-        ],
-        "huggingface_repo": "google/gemma-3-27b-it-qat-q4_0-gguf",
-        "huggingface_filename": "gemma-3-27b-it-q4_0.gguf",
-        "transformers_version": "4.51.3",
-        "gated": false,
-        "license": "other",
-        "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
-        "size_of_model_in_mb": 0,
-        "author": {
-            "name": "google",
-            "url": "https://huggingface.co/google/gemma-3-27b-it-qat-q4_0-gguf",
-            "blurb": ""
-        },
-        "resources": {
-            "canonicalUrl": "https://huggingface.co/google/gemma-3-27b-it-qat-q4_0-gguf",
-            "downloadUrl": "https://huggingface.co/google/gemma-3-27b-it-qat-q4_0-gguf",
-            "paperUrl": "?"
-        }
-    },
-    {
-        "uniqueID": "google/gemma-3-12b-it-qat-q4_0-gguf",
-        "name": "Gemma 3 QAT 12B IT (q4_0 GGUF)",
-        "description": "This 12B GGUF formatted version of Google's Gemma 3 model is built using Quantization Aware Training (QAT), which allows the model to preserve similar quality as bfloat16 while significantly reducing the memory requirements.",
-        "added": "2025-04-22",
-        "tags": [],
-        "parameters": "12B",
-        "context": "128000",
-        "architecture": "GGUF",
-        "formats": [
-            "GGUF"
-        ],
-        "huggingface_repo": "google/gemma-3-12b-it-qat-q4_0-gguf",
-        "huggingface_filename": "gemma-3-12b-it-q4_0.gguf",
-        "transformers_version": "4.51.3",
-        "gated": false,
-        "license": "other",
-        "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
-        "size_of_model_in_mb": 8263.68,
-        "author": {
-            "name": "google",
-            "url": "https://huggingface.co/google/gemma-3-27b-it-qat-q4_0-gguf",
-            "blurb": ""
-        },
-        "resources": {
-            "canonicalUrl": "https://huggingface.co/google/gemma-3-12b-it-qat-q4_0-gguf",
-            "downloadUrl": "https://huggingface.co/google/gemma-3-12b-it-qat-q4_0-gguf",
             "paperUrl": "?"
         }
     },
