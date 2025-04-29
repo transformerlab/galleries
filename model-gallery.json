@@ -3428,6 +3428,615 @@
         }
     },
     {
+        "uniqueID": "Qwen/Qwen3-30B-A3B",
+        "name": "Qwen3 30B A3B",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "30B",
+        "context": "40960",
+        "architecture": "Qwen3MoeForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-30B-A3B",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 58252.79786109924,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-32B",
+        "name": "Qwen3 32B",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "32B",
+        "context": "40960",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-32B",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 62502.47671127319,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-32B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-32B",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-32B",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-14B",
+        "name": "Qwen3 14B",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "14B",
+        "context": "40960",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-14B",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 28181.94607067108,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-14B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-14B",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-14B",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-8B",
+        "name": "Qwen3 8B",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "8B",
+        "context": "40960",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-8B",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 15636.21500301361,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-8B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-8B",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-8B",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-4B",
+        "name": "Qwen3 4B",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "4B",
+        "context": "40960",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-4B",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 7685.875841140747,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-4B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-4B",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-4B",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-1.7B",
+        "name": "Qwen3 1.7B",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "1.7B",
+        "context": "40960",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-1.7B",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 3888.846706390381,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-1.7B",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-1.7B",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-0.6B",
+        "name": "Qwen3 0.6B",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "0.6B",
+        "context": "40960",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-0.6B",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 1447.2107467651367,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-0.6B",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-0.6B",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-235B-A22B-FP8",
+        "name": "Qwen3 235B A22B FP8",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "235B",
+        "context": "40960",
+        "architecture": "Qwen3MoeForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-235B-A22B-FP8",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 227990.4952917099,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-FP8",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-FP8",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-FP8",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-30B-A3B-FP8",
+        "name": "Qwen3 30B A3B FP8",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "30B",
+        "context": "40960",
+        "architecture": "Qwen3MoeForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-30B-A3B-FP8",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 30963.201493263245,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-FP8",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B-FP8",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B-FP8",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-32B-FP8",
+        "name": "Qwen3 32B FP8",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "32B",
+        "context": "40960",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-32B-FP8",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 32746.197826385498,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-32B-FP8",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-32B-FP8",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-32B-FP8",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-14B-FP8",
+        "name": "Qwen3 14B FP8",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "14B",
+        "context": "40960",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-14B-FP8",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 15583.539617538452,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-14B-FP8",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-14B-FP8",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-14B-FP8",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-8B-FP8",
+        "name": "Qwen3 8B FP8",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "8B",
+        "context": "40960",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-8B-FP8",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 9013.075735092163,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-8B-FP8",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-8B-FP8",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-8B-FP8",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-4B-FP8",
+        "name": "Qwen3 4B FP8",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "4B",
+        "context": "40960",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-4B-FP8",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 4963.225378036499,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-4B-FP8",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-4B-FP8",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-4B-FP8",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-1.7B-FP8",
+        "name": "Qwen3 1.7B FP8",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "1.7B",
+        "context": "40960",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-1.7B-FP8",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 2545.0098791122437,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-1.7B-FP8",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-1.7B-FP8",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-1.7B-FP8",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-0.6B-FP8",
+        "name": "Qwen3 0.6B FP8",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "0.6B",
+        "context": "40960",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-0.6B-FP8",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 1027.2845468521118,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-0.6B-FP8",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-0.6B-FP8",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-0.6B-FP8",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-30B-A3B-Base",
+        "name": "Qwen3 30B A3B Base",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "30B",
+        "context": "32768",
+        "architecture": "Qwen3MoeForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-30B-A3B-Base",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 58248.6101732254,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Base",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Base",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Base",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-14B-Base",
+        "name": "Qwen3 14B Base",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "14B",
+        "context": "32768",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-14B-Base",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 28177.75838279724,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-14B-Base",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-14B-Base",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-14B-Base",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-8B-Base",
+        "name": "Qwen3 8B Base",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "8B",
+        "context": "32768",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-8B-Base",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 15632.02731513977,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-8B-Base",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-8B-Base",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-8B-Base",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-4B-Base",
+        "name": "Qwen3 4B Base",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "4B",
+        "context": "32768",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-4B-Base",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 7681.688153266907,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-4B-Base",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-4B-Base",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-4B-Base",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-1.7B-Base",
+        "name": "Qwen3 1.7B Base",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "1.7B",
+        "context": "32768",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-1.7B-Base",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 3291.1344776153564,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-1.7B-Base",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-1.7B-Base",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-1.7B-Base",
+            "paperUrl": "?"
+        }
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-0.6B-Base",
+        "name": "Qwen3 0.6B Base",
+        "description": "",
+        "added": "2025-04-28",
+        "tags": [],
+        "parameters": "0.6B",
+        "context": "32768",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-0.6B-Base",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 1146.2727680206299,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-0.6B-Base",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-0.6B-Base",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-0.6B-Base",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "Qwen/QwQ-32B",
         "name": "Qwen QwQ 32B",
         "description": "QwQ is the reasoning model of the Qwen series. Compared with conventional instruction-tuned models, QwQ, which is capable of thinking and reasoning, can achieve significantly enhanced performance in downstream tasks, especially hard problems.",
