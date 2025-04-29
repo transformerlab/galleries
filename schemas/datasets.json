@@ -1,5 +1,54 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "array",
-    "items": {}
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "integer"
+            },
+            "name": {
+                "type": "string"
+            },
+            "type": {
+                "type": "string",
+                "enum": [
+                    "Conversational",
+                    "Summarization",
+                    "Text-Generation",
+                    "Classification",
+                    "Question-Answering"
+                ]
+            },
+            "huggingfacerepo": {
+                "type": "string"
+            },
+            "website": {
+                "type": "string"
+            },
+            "description": {
+                "type": "string"
+            },
+            "size": {
+                "oneOf": [
+                    { "type": "string" },
+                    { "type": "number" }
+                ]
+            },
+            "license": {
+                "type": "string"
+            },
+            "dataset_config": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "id",
+            "name",
+            "type",
+            "description",
+            "size",
+            "license"
+        ]
+    }
 }
