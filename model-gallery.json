@@ -225,6 +225,35 @@
         }
     },
     {
+        "uniqueID": "ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+        "name": "Apriel Nemotron 15B Thinker",
+        "description": "Apriel-Nemotron-15b-Thinker is a 15\u202fbillion\u2011parameter reasoning model in ServiceNow\u2019s Apriel SLM series which achieves competitive performance against similarly sized state-of-the-art models like o1\u2011mini, QWQ\u201132b, and EXAONE\u2011Deep\u201132b, all while maintaining only half the memory footprint of those alternatives. It builds upon the Apriel\u201115b\u2011base checkpoint through a three\u2011stage training pipeline (CPT, SFT and GRPO).",
+        "added": "2025-05-07",
+        "tags": [],
+        "parameters": "15B",
+        "context": "65536",
+        "architecture": "MistralForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+        "transformers_version": "4.51.0",
+        "gated": false,
+        "license": "mit",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/63d3095c2727d7888cbb54e2/Uv-Lx8PVGviqokfOyYlCN.png",
+        "size_of_model_in_mb": 28570.078763961792,
+        "author": {
+            "name": "ServiceNow-AI",
+            "url": "https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+            "downloadUrl": "https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "CohereForAI/aya-23-8B",
         "name": "Aya 23 8B",
         "description": "Aya 23 is an open weights research release of an instruction fine-tuned model with highly advanced multilingual capabilities. Aya 23 focuses on pairing a highly performant pre-trained Command family of models with the recently released Aya Collection. The result is a powerful multilingual large language model serving 23 languages.",
