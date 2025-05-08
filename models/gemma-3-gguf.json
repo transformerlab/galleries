@@ -14,7 +14,7 @@
     "huggingface_repo": "unsloth/gemma-3-1b-it-GGUF",
     "huggingface_filename": "gemma-3-1b-it-Q8_0.gguf",
     "transformers_version": "4.50.0.dev0",
-    "gated": false,
+    "gated": "manual",
     "license": "gemma",
     "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
     "size_of_model_in_mb": 1095.68,
