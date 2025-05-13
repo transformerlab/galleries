@@ -1065,9 +1065,9 @@
         "tags": [],
         "parameters": "1B",
         "context": "32768",
-        "architecture": "Gemma3ForCausalLM",
+        "architecture": "GGUF",
         "formats": [
-            "Safetensors"
+            "GGUF"
         ],
         "huggingface_repo": "unsloth/gemma-3-1b-it-GGUF",
         "huggingface_filename": "gemma-3-1b-it-Q8_0.gguf",
@@ -1095,9 +1095,9 @@
         "tags": [],
         "parameters": "27B",
         "context": "2048",
-        "architecture": "Gemma3ForConditionalGeneration",
+        "architecture": "GGUF",
         "formats": [
-            "Safetensors"
+            "GGUF"
         ],
         "huggingface_repo": "unsloth/gemma-3-27b-it-GGUF",
         "huggingface_filename": "gemma-3-27b-it-Q4_K_M.gguf",
