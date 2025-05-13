@@ -1,0 +1,5 @@
+{
+  "name": "vicuna",
+  "description": "Vicuna models trained on open assistant datasets.",
+  "models": []
+}

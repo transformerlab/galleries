@@ -1,0 +1,5 @@
+{
+  "name": "command",
+  "description": "Cohere's Command family including instruction-tuned variants.",
+  "models": []
+}

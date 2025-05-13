@@ -1,0 +1,5 @@
+{
+  "name": "qwen",
+  "description": "Qwen and Qwen2.5 models including QwenCoder and instruction-tuned variants.",
+  "models": []
+}

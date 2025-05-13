@@ -1,0 +1,5 @@
+{
+  "name": "flan",
+  "description": "Google's FLAN series of instruction-tuned language models.",
+  "models": []
+}
