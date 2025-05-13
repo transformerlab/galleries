@@ -1,0 +1,5 @@
+{
+  "name": "zephyr",
+  "description": "Zephyr models from HuggingFace for chat-tuned generation.",
+  "models": []
+}
