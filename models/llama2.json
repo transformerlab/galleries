@@ -25,7 +25,8 @@
             "canonicalUrl": "https://huggingface.co/meta-llama/Llama-2-7b-chat",
             "downloadUrl": "https://huggingface.co/meta-llama/Llama-2-7b-chat",
             "paperUrl": "?"
-        }
+        },
+        "group": "llama"
     },
     {
         "uniqueID": "meta-llama/Llama-2-7b-hf",
@@ -53,7 +54,8 @@
             "canonicalUrl": "https://huggingface.co/meta-llama/Llama-2-7b-hf",
             "downloadUrl": "https://huggingface.co/meta-llama/Llama-2-7b-hf",
             "paperUrl": "?"
-        }
+        },
+        "group": "llama"
     },
     {
         "uniqueID": "meta-llama/Llama-2-13b-hf",
@@ -81,7 +83,8 @@
             "canonicalUrl": "https://huggingface.co/meta-llama/Llama-2-13b-hf",
             "downloadUrl": "https://huggingface.co/meta-llama/Llama-2-13b-hf",
             "paperUrl": "?"
-        }
+        },
+        "group": "llama"
     },
     {
         "uniqueID": "meta-llama/Llama-2-13b-chat-hf",
@@ -109,6 +112,7 @@
             "canonicalUrl": "https://huggingface.co/meta-llama/Llama-2-13b-chat-hf",
             "downloadUrl": "https://huggingface.co/meta-llama/Llama-2-13b-chat-hf",
             "paperUrl": "?"
-        }
+        },
+        "group": "llama"
     }
 ]

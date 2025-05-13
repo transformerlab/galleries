@@ -20,3 +20,4 @@ resources:
   canonicalUrl: https://huggingface.co/mattshumer/Reflection-Llama-3.1-70B
   downloadUrl: https://huggingface.co/mattshumer/Reflection-Llama-3.1-70B
   paperUrl: "?"
+group: reflection

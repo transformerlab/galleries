@@ -24,6 +24,7 @@
             "canonicalUrl": "https://huggingface.co/lmsys/fastchat-t5-3b-v1.0",
             "downloadUrl": "https://huggingface.co/lmsys/fastchat-t5-3b-v1.0",
             "paperUrl": "?"
-        }
+        },
+        "group": "fastchat-t5"
     }
 ]

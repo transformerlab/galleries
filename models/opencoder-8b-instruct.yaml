@@ -23,3 +23,4 @@ resources:
   canonicalUrl: https://huggingface.co/infly/OpenCoder-8B-Instruct
   downloadUrl: https://huggingface.co/infly/OpenCoder-8B-Instruct
   paperUrl: '?'
+group: opencoder

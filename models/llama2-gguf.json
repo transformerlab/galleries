@@ -25,7 +25,8 @@
             "canonicalUrl": "https://huggingface.co/meta-llama/Llama-2-7b-chat",
             "downloadUrl": "https://huggingface.co/meta-llama/Llama-2-7b-chat",
             "paperUrl": "?"
-        }
+        },
+        "group": "llama"
     },
     {
         "uniqueID": "llama-2-7b.Q4_0.gguf",
@@ -53,6 +54,7 @@
             "canonicalUrl": "https://huggingface.co/meta-llama/Llama-2-7b-chat",
             "downloadUrl": "https://huggingface.co/meta-llama/Llama-2-7b-chat",
             "paperUrl": "?"
-        }
+        },
+        "group": "llama"
     }
 ]

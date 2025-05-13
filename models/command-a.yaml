@@ -20,3 +20,4 @@ resources:
   canonicalUrl: https://huggingface.co/CohereForAI/c4ai-command-a-03-2025
   downloadUrl: https://huggingface.co/CohereForAI/c4ai-command-a-03-2025
   paperUrl: '?'
+group: command

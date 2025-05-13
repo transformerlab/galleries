@@ -28,7 +28,8 @@
       "canonicalUrl": "https://huggingface.co/agentica-org/DeepCoder-14B-Preview",
       "downloadUrl": "https://huggingface.co/agentica-org/DeepCoder-14B-Preview",
       "paperUrl": "?"
-    }
+    },
+    "group": "deepcoder"
   },
   {
     "uniqueID": "agentica-org/DeepCoder-1.5B-Preview",
@@ -59,7 +60,8 @@
       "canonicalUrl": "https://huggingface.co/agentica-org/DeepCoder-1.5B-Preview",
       "downloadUrl": "https://huggingface.co/agentica-org/DeepCoder-1.5B-Preview",
       "paperUrl": "?"
-    }
+    },
+    "group": "deepcoder"
   },
   {
     "uniqueID": "bartowski/agentica-org_DeepCoder-14B-Preview-GGUF",
@@ -91,7 +93,8 @@
       "canonicalUrl": "https://huggingface.co/bartowski/agentica-org_DeepCoder-14B-Preview-GGUF",
       "downloadUrl": "https://huggingface.co/bartowski/agentica-org_DeepCoder-14B-Preview-GGUF",
       "paperUrl": "?"
-    }
+    },
+    "group": "deepcoder"
   },
   {
     "uniqueID": "mlx-community/DeepCoder-14B-Preview-6bit",
@@ -122,6 +125,7 @@
       "canonicalUrl": "https://huggingface.co/mlx-community/DeepCoder-14B-Preview-6bit",
       "downloadUrl": "https://huggingface.co/mlx-community/DeepCoder-14B-Preview-6bit",
       "paperUrl": "?"
-    }
+    },
+    "group": "deepcoder"
   }
 ]

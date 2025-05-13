@@ -24,7 +24,8 @@
       "canonicalUrl": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-3B",
       "downloadUrl": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-3B",
       "paperUrl": "?"
-    }
+    },
+    "group": "cogito"
   },
   {
     "uniqueID": "deepcogito/cogito-v1-preview-llama-8B",
@@ -51,7 +52,8 @@
       "canonicalUrl": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-8B",
       "downloadUrl": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-8B",
       "paperUrl": "?"
-    }
+    },
+    "group": "cogito"
   },
   {
     "uniqueID": "deepcogito/cogito-v1-preview-qwen-14B",
@@ -78,7 +80,8 @@
       "canonicalUrl": "https://huggingface.co/deepcogito/cogito-v1-preview-qwen-14B",
       "downloadUrl": "https://huggingface.co/deepcogito/cogito-v1-preview-qwen-14B",
       "paperUrl": "?"
-    }
+    },
+    "group": "cogito"
   },
   {
     "uniqueID": "deepcogito/cogito-v1-preview-qwen-32B",
@@ -105,7 +108,8 @@
       "canonicalUrl": "https://huggingface.co/deepcogito/cogito-v1-preview-qwen-32B",
       "downloadUrl": "https://huggingface.co/deepcogito/cogito-v1-preview-qwen-32B",
       "paperUrl": "?"
-    }
+    },
+    "group": "cogito"
   },
   {
     "uniqueID": "deepcogito/cogito-v1-preview-llama-70B",
@@ -132,6 +136,7 @@
       "canonicalUrl": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-70B",
       "downloadUrl": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-70B",
       "paperUrl": "?"
-    }
+    },
+    "group": "cogito"
   }
 ]

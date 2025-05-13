@@ -25,7 +25,8 @@
       "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
       "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
       "paperUrl": "?"
-    }
+    },
+    "group": "llama"
   },
   {
     "uniqueID": "meta-llama/Meta-Llama-3-8B",
@@ -53,7 +54,8 @@
       "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
       "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
       "paperUrl": "?"
-    }
+    },
+    "group": "llama"
   },
   {
     "uniqueID": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
@@ -81,7 +83,8 @@
       "canonicalUrl": "https://huggingface.co/mlx-community/Meta-Llama-3-8B-Instruct-4bit",
       "downloadUrl": "https://huggingface.co/mlx-community/Meta-Llama-3-8B-Instruct-4bit",
       "paperUrl": "?"
-    }
+    },
+    "group": "llama"
   },
   {
     "uniqueID": "mlx-community/Meta-Llama-3-70B-Instruct-4bit",
@@ -109,7 +112,8 @@
       "canonicalUrl": "https://huggingface.co/mlx-community/Meta-Llama-3-70B-Instruct-4bit",
       "downloadUrl": "https://huggingface.co/mlx-community/Meta-Llama-3-70B-Instruct-4bit",
       "paperUrl": "?"
-    }
+    },
+    "group": "llama"
   },
   {
     "uniqueID": "meta-llama/Meta-Llama-3.1-8B-Instruct",
@@ -136,7 +140,8 @@
       "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct",
       "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct",
       "paperUrl": "?"
-    }
+    },
+    "group": "llama"
   },
   {
     "uniqueID": "meta-llama/Meta-Llama-3.1-8B",
@@ -163,6 +168,7 @@
       "canonicalUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B",
       "downloadUrl": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B",
       "paperUrl": "?"
-    }
+    },
+    "group": "llama"
   }
 ]

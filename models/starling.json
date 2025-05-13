@@ -24,6 +24,7 @@
             "canonicalUrl": "https://starling.cs.berkeley.edu/",
             "downloadUrl": "https://huggingface.co/berkeley-nest/Starling-LM-7B-alpha",
             "paperUrl": "?"
-        }
+        },
+        "group": "starling"
     }
 ]

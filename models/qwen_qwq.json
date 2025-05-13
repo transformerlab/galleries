@@ -28,7 +28,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/QwQ-32B",
       "downloadUrl": "https://huggingface.co/Qwen/QwQ-32B",
       "paperUrl": "?"
-    }
+    },
+    "group": "qwen"
   },
   {
     "uniqueID": "mlx-community/QwQ-32B-4bit",
@@ -59,7 +60,8 @@
       "canonicalUrl": "https://huggingface.co/mlx-community/QwQ-32B-4bit",
       "downloadUrl": "https://huggingface.co/mlx-community/QwQ-32B-4bit",
       "paperUrl": "?"
-    }
+    },
+    "group": "qwen"
   },
   {
     "uniqueID": "Qwen/QwQ-32B-GGUF",
@@ -91,6 +93,7 @@
       "canonicalUrl": "https://huggingface.co/Qwen/QwQ-32B-GGUF",
       "downloadUrl": "https://huggingface.co/Qwen/QwQ-32B-GGUF",
       "paperUrl": "?"
-    }
+    },
+    "group": "qwen"
   }
 ]

@@ -27,7 +27,8 @@
       "canonicalUrl": "https://huggingface.co/unsloth/gemma-3-1b-it-GGUF",
       "downloadUrl": "https://huggingface.co/unsloth/gemma-3-1b-it-GGUF",
       "paperUrl": "?"
-    }
+    },
+    "group": "gemma"
   },
   {
     "uniqueID": "unsloth/gemma-3-27b-it-GGUF",
@@ -57,6 +58,7 @@
       "canonicalUrl": "https://huggingface.co/unsloth/gemma-3-27b-it-GGUF",
       "downloadUrl": "https://huggingface.co/unsloth/gemma-3-27b-it-GGUF",
       "paperUrl": "?"
-    }
+    },
+    "group": "gemma"
   }
 ]

@@ -26,7 +26,8 @@
       "canonicalUrl": "https://huggingface.co/mlx-community/gemma-3-27b-it-qat-4bit",
       "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-27b-it-qat-4bit",
       "paperUrl": "?"
-    }
+    },
+    "group": "gemma"
   },
   {
     "uniqueID": "mlx-community/gemma-3-12b-it-qat-4bit",
@@ -55,7 +56,8 @@
       "canonicalUrl": "https://huggingface.co/mlx-community/gemma-3-12b-it-qat-4bit",
       "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-12b-it-qat-4bit",
       "paperUrl": "?"
-    }
+    },
+    "group": "gemma"
   },
   {
     "uniqueID": "mlx-community/gemma-3-1b-it-qat-4bit",
@@ -84,7 +86,8 @@
       "canonicalUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-qat-4bit",
       "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-qat-4bit",
       "paperUrl": "?"
-    }
+    },
+    "group": "gemma"
   },
   {
     "uniqueID": "google/gemma-3-1b-it-qat-q4_0-gguf",
@@ -114,6 +117,7 @@
       "canonicalUrl": "https://huggingface.co/google/gemma-3-1b-it-qat-q4_0-gguf",
       "downloadUrl": "https://huggingface.co/google/gemma-3-1b-it-qat-q4_0-gguf",
       "paperUrl": "?"
-    }
+    },
+    "group": "gemma"
   }
 ]

@@ -21,4 +21,4 @@ resources:
   canonicalUrl: https://huggingface.co/bartowski/Llama-3.3-70B-Instruct-GGUF
   downloadUrl: https://huggingface.co/bartowski/Llama-3.3-70B-Instruct-GGUF
   paperUrl: '?'
-  
+group: llama

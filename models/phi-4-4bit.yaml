@@ -21,3 +21,4 @@ resources:
   canonicalUrl: https://huggingface.co/mlx-community/phi-4-4bit
   downloadUrl: https://huggingface.co/mlx-community/phi-4-4bit
   paperUrl: '?'
+group: phi

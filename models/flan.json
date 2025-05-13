@@ -22,6 +22,7 @@
       "canonicalUrl": "https://huggingface.co/google/flan-t5-small",
       "downloadUrl": "https://huggingface.co/google/flan-t5-small",
       "paperUrl": "?"
-    }
+    },
+    "group": "flan"
   }
 ]

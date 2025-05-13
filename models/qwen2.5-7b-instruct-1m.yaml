@@ -21,3 +21,4 @@ resources:
   canonicalUrl: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M
   downloadUrl: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M
   paperUrl: '?'
+group: qwen
