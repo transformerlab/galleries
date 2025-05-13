@@ -1,5 +1,34 @@
 [
     {
+        "uniqueID": "PrimeIntellect/INTELLECT-2",
+        "name": "INTELLECT-2",
+        "description": "INTELLECT-2 is a 32 billion parameter language model trained through a reinforcement learning run leveraging globally distributed, permissionless GPU resources contributed by the community.",
+        "added": "2025-05-13",
+        "tags": [],
+        "parameters": "32B",
+        "context": "40960",
+        "architecture": "Qwen2ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "PrimeIntellect/INTELLECT-2",
+        "transformers_version": "4.51.3",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 124997.96606826782,
+        "author": {
+            "name": "PrimeIntellect",
+            "url": "https://huggingface.co/PrimeIntellect/INTELLECT-2",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/PrimeIntellect/INTELLECT-2",
+            "downloadUrl": "https://huggingface.co/PrimeIntellect/INTELLECT-2",
+            "paperUrl": "?"
+        }
+    },
+    {
         "uniqueID": "mlx-community/Mistral-7B-Instruct-v0.1-4bit-mlx",
         "name": "Mistral 7B Instruct v0.1 (MLX 4bit)",
         "archived": true,
