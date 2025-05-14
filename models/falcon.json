@@ -25,7 +25,8 @@
             "canonicalUrl": "https://huggingface.co/tiiuae/falcon-7b",
             "downloadUrl": "https://huggingface.co/tiiuae/falcon-7b",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "falcon"
     },
     {
         "uniqueID": "tiiuae/falcon-7b-instruct",
@@ -53,6 +54,7 @@
             "canonicalUrl": "https://huggingface.co/tiiuae/falcon-7b-instruct",
             "downloadUrl": "https://huggingface.co/tiiuae/falcon-7b-instruct",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "falcon"
     }
 ]

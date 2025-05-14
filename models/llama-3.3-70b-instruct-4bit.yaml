@@ -20,3 +20,4 @@ resources:
   canonicalUrl: https://huggingface.co/mlx-community/Llama-3.3-70B-Instruct-4bit
   downloadUrl: https://huggingface.co/mlx-community/Llama-3.3-70B-Instruct-4bit
   paperUrl: '?'
+model_group: llama

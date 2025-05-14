@@ -21,3 +21,4 @@ resources:
   canonicalUrl: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B
   downloadUrl: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B
   paperUrl: '?'
+model_group: llama

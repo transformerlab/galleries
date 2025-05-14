@@ -25,5 +25,6 @@
     "canonicalUrl": "https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
     "downloadUrl": "https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
     "paperUrl": "?"
-  }
+  },
+  "model_group": "apriel"
 }

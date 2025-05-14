@@ -24,3 +24,4 @@ resources:
   canonicalUrl: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF
   downloadUrl: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF
   paperUrl: '?'
+model_group: deepseek

@@ -23,7 +23,8 @@
       "canonicalUrl": "https://huggingface.co/mistralai/Mistral-7B-v0.1",
       "downloadUrl": "https://huggingface.co/mistralai/Mistral-7B-v0.1",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "mlx"
   },
   {
     "uniqueID": "mlx-community/TinyDolphin-2.8-1.1b-4bit-mlx",
@@ -48,7 +49,8 @@
       "canonicalUrl": "",
       "downloadUrl": "",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "mlx"
   },
   {
     "uniqueID": "mlx-community/Mistral-7B-Instruct-v0.2-4bit",
@@ -74,7 +76,8 @@
       "canonicalUrl": "",
       "downloadUrl": "",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "mlx"
   },
   {
     "uniqueID": "mlx-community/Mistral-7B-Instruct-v0.2",
@@ -100,7 +103,8 @@
       "canonicalUrl": "",
       "downloadUrl": "",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "mlx"
   },
   {
     "uniqueID": "mlx-community/Llama-2-7b-mlx",
@@ -126,7 +130,8 @@
       "canonicalUrl": "",
       "downloadUrl": "",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "mlx"
   },
   {
     "uniqueID": "mlx-community/Llama-2-7b-chat-4-bit",
@@ -152,6 +157,7 @@
       "canonicalUrl": "",
       "downloadUrl": "",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "mlx"
   }
 ]

@@ -25,7 +25,8 @@
             "canonicalUrl": "https://huggingface.co/bczhou/tiny-llava-v1-hf",
             "downloadUrl": "https://huggingface.co/bczhou/tiny-llava-v1-hf",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "llava"
     }, 
     {
         "uniqueID": "llava-hf/llava-1.5-7b-hf",
@@ -53,6 +54,7 @@
             "canonicalUrl": "https://huggingface.co/llava-hf/llava-1.5-7b-hf",
             "downloadUrl": "https://huggingface.co/llava-hf/llava-1.5-7b-hf",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "llava"
     }
 ]

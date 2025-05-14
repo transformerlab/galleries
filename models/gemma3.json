@@ -25,7 +25,8 @@
       "canonicalUrl": "https://huggingface.co/google/gemma-3-1b-pt",
       "downloadUrl": "https://huggingface.co/google/gemma-3-1b-pt",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "gemma"
   },
   {
     "uniqueID": "google/gemma-3-1b-it",
@@ -53,7 +54,8 @@
       "canonicalUrl": "https://huggingface.co/google/gemma-3-1b-it",
       "downloadUrl": "https://huggingface.co/google/gemma-3-1b-it",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "gemma"
   },
   {
     "uniqueID": "google/gemma-3-4b-pt",
@@ -81,7 +83,8 @@
       "canonicalUrl": "https://huggingface.co/google/gemma-3-4b-pt",
       "downloadUrl": "https://huggingface.co/google/gemma-3-4b-pt",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "gemma"
   },
   {
     "uniqueID": "google/gemma-3-4b-it",
@@ -109,7 +112,8 @@
       "canonicalUrl": "https://huggingface.co/google/gemma-3-4b-it",
       "downloadUrl": "https://huggingface.co/google/gemma-3-4b-it",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "gemma"
   },
   {
     "uniqueID": "google/gemma-3-12b-pt",
@@ -137,7 +141,8 @@
       "canonicalUrl": "https://huggingface.co/google/gemma-3-12b-pt",
       "downloadUrl": "https://huggingface.co/google/gemma-3-12b-pt",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "gemma"
   },
   {
     "uniqueID": "google/gemma-3-12b-it",
@@ -165,7 +170,8 @@
       "canonicalUrl": "https://huggingface.co/google/gemma-3-12b-it",
       "downloadUrl": "https://huggingface.co/google/gemma-3-12b-it",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "gemma"
   },
   {
     "uniqueID": "google/gemma-3-27b-pt",
@@ -193,7 +199,8 @@
       "canonicalUrl": "https://huggingface.co/google/gemma-3-27b-pt",
       "downloadUrl": "https://huggingface.co/google/gemma-3-27b-pt",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "gemma"
   },
   {
     "uniqueID": "google/gemma-3-27b-it",
@@ -221,7 +228,8 @@
       "canonicalUrl": "https://huggingface.co/google/gemma-3-27b-it",
       "downloadUrl": "https://huggingface.co/google/gemma-3-27b-it",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "gemma"
   },
   {
     "uniqueID": "google/shieldgemma-2-4b-it",
@@ -249,6 +257,7 @@
       "canonicalUrl": "https://huggingface.co/google/shieldgemma-2-4b-it",
       "downloadUrl": "https://huggingface.co/google/shieldgemma-2-4b-it",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "gemma"
   }
 ]

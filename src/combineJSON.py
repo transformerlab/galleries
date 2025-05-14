@@ -69,6 +69,35 @@ def read_and_combine_json_files(directory: str):
 
     print('---')
 
+    if directory == 'models':
+        # Load model group headers
+        model_groups_dir = 'model-groups'
+        model_groups = {}
+
+        for file in os.listdir(model_groups_dir):
+            if file.endswith('.json'):
+                with open(os.path.join(model_groups_dir, file), 'r') as f:
+                    try:
+                        group_data = json.load(f)
+                        group_data["models"] = []  # Reset
+                        model_groups[group_data["name"]] = group_data
+                    except Exception as e:
+                        print(f"Error reading model group {file}: {e}")
+
+        # Assign models to their group
+        for model in combined_json:
+            group_name = model.get("model_group")
+            if group_name and group_name in model_groups:
+                model_groups[group_name]["models"].append(model)
+            else:
+                print(f"Warning: Model '{model.get('name')}' missing or unknown group '{group_name}'")
+
+        # Write model-group-gallery.json
+        with open('model-group-gallery.json', 'w') as f:
+            json.dump(list(model_groups.values()), f, indent=4)
+
+        print('---')
+
 
 read_and_combine_json_files(directory='models')
 read_and_combine_json_files(directory='datasets')

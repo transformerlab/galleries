@@ -21,3 +21,4 @@ resources:
   canonicalUrl: https://huggingface.co/mlx-community/SmolLM-135M-4bit
   downloadUrl: https://huggingface.co/mlx-community/SmolLM-135M-4bit
   paperUrl: 'https://huggingface.co/blog/smollm'
+model_group: smollm

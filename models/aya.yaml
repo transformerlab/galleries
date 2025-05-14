@@ -11,3 +11,4 @@ gated: true
 license: "CC-By-NC-4.0"
 logo: "https://cdn.sanity.io/images/rjtqmwfu/production/5bc885878e9f0f1e202b742c86f543c7fe765376-409x144.svg"
 size_of_model_in_mb: 15328.09
+model_group: aya

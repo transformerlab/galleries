@@ -25,5 +25,6 @@
     "canonicalUrl": "https://huggingface.co/PrimeIntellect/INTELLECT-2",
     "downloadUrl": "https://huggingface.co/PrimeIntellect/INTELLECT-2",
     "paperUrl": "?"
-  }
+  },
+  "model_group": "intellect"
 }

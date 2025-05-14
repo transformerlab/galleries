@@ -24,7 +24,8 @@
       "canonicalUrl": "https://huggingface.co/microsoft/Phi-4-reasoning",
       "downloadUrl": "https://huggingface.co/microsoft/Phi-4-reasoning",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "phi"
   },
   {
     "uniqueID": "microsoft/Phi-4-reasoning-plus",
@@ -51,6 +52,7 @@
       "canonicalUrl": "https://huggingface.co/microsoft/Phi-4-reasoning-plus",
       "downloadUrl": "https://huggingface.co/microsoft/Phi-4-reasoning-plus",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "phi"
   }
 ]

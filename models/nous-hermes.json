@@ -24,7 +24,8 @@
             "canonicalUrl": "https://huggingface.co/NousResearch/Nous-Hermes-13b",
             "downloadUrl": "https://huggingface.co/NousResearch/Nous-Hermes-13b",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "nous-hermes"
     },
     {
         "uniqueID": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
@@ -51,6 +52,7 @@
             "canonicalUrl": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
             "downloadUrl": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "nous-hermes"
     }
 ]

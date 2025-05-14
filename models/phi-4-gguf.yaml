@@ -21,3 +21,4 @@ resources:
   canonicalUrl: https://huggingface.co/microsoft/phi-4
   downloadUrl: https://huggingface.co/microsoft/phi-4
   paperUrl: '?'
+model_group: phi

@@ -24,7 +24,8 @@
             "canonicalUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5",
             "downloadUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5",
             "paperUrl": "https://arxiv.org/abs/2306.05685"
-        }
+        },
+        "model_group": "vicuna"
     },
     {
         "uniqueID": "lmsys/vicuna-13b-v1.5",
@@ -51,7 +52,8 @@
             "canonicalUrl": "https://huggingface.co/lmsys/vicuna-13b-v1.5",
             "downloadUrl": "https://huggingface.co/lmsys/vicuna-13b-v1.5",
             "paperUrl": "https://arxiv.org/abs/2306.05685"
-        }
+        },
+        "model_group": "vicuna"
     },
     {
         "uniqueID": "lmsys/vicuna-7b-v1.5-16k",
@@ -78,6 +80,7 @@
             "canonicalUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5-16k",
             "downloadUrl": "https://huggingface.co/lmsys/vicuna-7b-v1.5-16k",
             "paperUrl": "https://arxiv.org/abs/2306.05685"
-        }
+        },
+        "model_group": "vicuna"
     }
 ]

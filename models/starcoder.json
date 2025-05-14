@@ -28,6 +28,7 @@
             "canonicalUrl": "https://www.bigcode-project.org/",
             "downloadUrl": "https://huggingface.co/bigcode/starcoder",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "starcoder"
     }
 ]

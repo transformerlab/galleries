@@ -25,7 +25,8 @@
       "canonicalUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B",
       "downloadUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "exaone"
   },
   {
     "uniqueID": "LGAI-EXAONE/EXAONE-Deep-7.8B",
@@ -53,7 +54,8 @@
       "canonicalUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B",
       "downloadUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "exaone"
   },
   {
     "uniqueID": "LGAI-EXAONE/EXAONE-Deep-32B",
@@ -81,6 +83,7 @@
       "canonicalUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B",
       "downloadUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "exaone"
   }
 ]
