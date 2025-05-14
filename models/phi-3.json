@@ -24,7 +24,8 @@
       "canonicalUrl": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
       "downloadUrl": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
       "paperUrl": "https://huggingface.co/papers/2404.14219"
-    }
+    },
+    "model_group": "phi"
   },
   {
     "uniqueID": "microsoft/Phi-3-mini-4k-instruct",
@@ -51,6 +52,7 @@
       "canonicalUrl": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
       "downloadUrl": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
       "paperUrl": "https://huggingface.co/papers/2404.14219"
-    }
+    },
+    "model_group": "phi"
   }
 ]

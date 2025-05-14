@@ -22,3 +22,4 @@ resources:
   canonicalUrl: https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
   downloadUrl: https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
   paperUrl: '?'
+model_group: mistral

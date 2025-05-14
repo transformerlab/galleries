@@ -25,7 +25,8 @@
             "canonicalUrl": "https://huggingface.co/openlm-research/open_llama_3b",
             "downloadUrl": "https://huggingface.co/openlm-research/open_llama_3b",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "openllama"
     },
     {
         "uniqueID": "openlm-research/open_llama_7b_v2",
@@ -53,6 +54,7 @@
             "canonicalUrl": "https://huggingface.co/openlm-research/open_llama_3b",
             "downloadUrl": "https://huggingface.co/openlm-research/open_llama_3b",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "openllama"
     }
 ]

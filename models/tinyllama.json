@@ -24,6 +24,7 @@
             "canonicalUrl": "https://github.com/jzhang38/TinyLlama",
             "downloadUrl": "https://github.com/jzhang38/TinyLlama",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "tinyllama"
     }
 ]

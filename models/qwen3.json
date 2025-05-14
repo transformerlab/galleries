@@ -24,7 +24,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-32B",
@@ -51,7 +52,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-32B",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-32B",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-14B",
@@ -78,7 +80,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-14B",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-14B",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-8B",
@@ -105,7 +108,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-8B",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-8B",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-4B",
@@ -132,7 +136,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-4B",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-4B",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-1.7B",
@@ -159,7 +164,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-1.7B",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-1.7B",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-0.6B",
@@ -186,7 +192,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-0.6B",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-0.6B",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-235B-A22B-FP8",
@@ -213,7 +220,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-FP8",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-FP8",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-30B-A3B-FP8",
@@ -240,7 +248,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B-FP8",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B-FP8",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-32B-FP8",
@@ -267,7 +276,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-32B-FP8",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-32B-FP8",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-14B-FP8",
@@ -294,7 +304,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-14B-FP8",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-14B-FP8",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-8B-FP8",
@@ -321,7 +332,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-8B-FP8",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-8B-FP8",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-4B-FP8",
@@ -348,7 +360,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-4B-FP8",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-4B-FP8",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-1.7B-FP8",
@@ -375,7 +388,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-1.7B-FP8",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-1.7B-FP8",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-0.6B-FP8",
@@ -402,7 +416,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-0.6B-FP8",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-0.6B-FP8",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-30B-A3B-Base",
@@ -429,7 +444,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Base",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Base",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-14B-Base",
@@ -456,7 +472,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-14B-Base",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-14B-Base",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-8B-Base",
@@ -483,7 +500,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-8B-Base",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-8B-Base",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-4B-Base",
@@ -510,7 +528,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-4B-Base",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-4B-Base",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-1.7B-Base",
@@ -537,7 +556,8 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-1.7B-Base",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-1.7B-Base",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   },
   {
     "uniqueID": "Qwen/Qwen3-0.6B-Base",
@@ -564,6 +584,7 @@
       "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-0.6B-Base",
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-0.6B-Base",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "qwen"
   }
 ]

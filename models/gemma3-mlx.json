@@ -25,7 +25,8 @@
       "canonicalUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-4bit",
       "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-4bit",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "gemma"
   },
   {
     "uniqueID": "mlx-community/gemma-3-12b-it-4bit",
@@ -53,6 +54,7 @@
       "canonicalUrl": "https://huggingface.co/mlx-community/gemma-3-12b-it-4bit",
       "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-12b-it-4bit",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "gemma"
   }
 ]

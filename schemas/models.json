@@ -93,6 +93,9 @@
           }
         },
         "required": ["canonicalUrl", "downloadUrl", "paperUrl"]
+      },
+      "model_group": {
+        "type": "string"
       }
     },
     "required": [

@@ -22,3 +22,4 @@ resources:
   canonicalUrl: https://huggingface.co/deepseek-ai/DeepSeek-V3-0324
   downloadUrl: https://huggingface.co/deepseek-ai/DeepSeek-V3-0324
   paperUrl: '?'
+model_group: deepseek

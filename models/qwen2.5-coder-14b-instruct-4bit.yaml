@@ -23,3 +23,4 @@ resources:
   canonicalUrl: https://huggingface.co/mlx-community/Qwen2.5-Coder-14B-Instruct-4bit
   downloadUrl: https://huggingface.co/mlx-community/Qwen2.5-Coder-14B-Instruct-4bit
   paperUrl: '?'
+model_group: qwen

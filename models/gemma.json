@@ -25,7 +25,8 @@
             "canonicalUrl": "https://huggingface.co/google/gemma-7b",
             "downloadUrl": "https://huggingface.co/google/gemma-7b",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "gemma"
     },
     {
         "uniqueID": "google/gemma-7b-it",
@@ -53,7 +54,8 @@
             "canonicalUrl": "https://huggingface.co/google/gemma-7b-it",
             "downloadUrl": "https://huggingface.co/google/gemma-7b-it",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "gemma"
     },
     {
         "uniqueID": "google/gemma-2b-it",
@@ -81,7 +83,8 @@
             "canonicalUrl": "https://huggingface.co/google/gemma-2b-it",
             "downloadUrl": "https://huggingface.co/google/gemma-2b-it",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "gemma"
     },
     {
         "uniqueID": "google/gemma-2b",
@@ -109,6 +112,7 @@
             "canonicalUrl": "https://huggingface.co/google/gemma-2b",
             "downloadUrl": "https://huggingface.co/google/gemma-2b",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "gemma"
     }
 ]

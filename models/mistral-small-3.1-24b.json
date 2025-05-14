@@ -25,7 +25,8 @@
       "canonicalUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
       "downloadUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "mistral"
   },
   {
     "uniqueID": "mistralai/Mistral-Small-3.1-24B-Base-2503",
@@ -53,7 +54,8 @@
       "canonicalUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503",
       "downloadUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "mistral"
   },
   {
     "uniqueID": "mlx-community/Mistral-Small-3.1-24B-Instruct-2503-4bit",
@@ -82,7 +84,8 @@
       "canonicalUrl": "https://huggingface.co/mlx-community/Mistral-Small-3.1-24B-Instruct-2503-4bit",
       "downloadUrl": "https://huggingface.co/mlx-community/Mistral-Small-3.1-24B-Instruct-2503-4bit",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "mistral"
   },
   {
     "uniqueID": "unsloth/Mistral-Small-3.1-24B-Instruct-2503-GGUF",
@@ -112,6 +115,7 @@
       "canonicalUrl": "https://huggingface.co/unsloth/Mistral-Small-3.1-24B-Instruct-2503-GGUF",
       "downloadUrl": "https://huggingface.co/unsloth/Mistral-Small-3.1-24B-Instruct-2503-GGUF",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "mistral"
   }
 ]

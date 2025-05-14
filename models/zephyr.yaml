@@ -21,3 +21,4 @@ resources:
   canonicalUrl: "https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha"
   downloadUrl: "https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha"
   paperUrl: "?"
+model_group: zephyr

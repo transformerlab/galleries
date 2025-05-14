@@ -26,7 +26,8 @@
       "canonicalUrl": "https://huggingface.co/ibm-granite/granite-3.3-2b-base",
       "downloadUrl": "https://huggingface.co/ibm-granite/granite-3.3-2b-base",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "granite"
   },
   {
     "uniqueID": "ibm-granite/granite-3.3-2b-instruct",
@@ -55,7 +56,8 @@
       "canonicalUrl": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct",
       "downloadUrl": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "granite"
   },
   {
     "uniqueID": "ibm-granite/granite-3.3-8b-base",
@@ -84,7 +86,8 @@
       "canonicalUrl": "https://huggingface.co/ibm-granite/granite-3.3-8b-base",
       "downloadUrl": "https://huggingface.co/ibm-granite/granite-3.3-8b-base",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "granite"
   },
   {
     "uniqueID": "ibm-granite/granite-3.3-8b-instruct",
@@ -113,6 +116,7 @@
       "canonicalUrl": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct",
       "downloadUrl": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "granite"
   }
 ]
