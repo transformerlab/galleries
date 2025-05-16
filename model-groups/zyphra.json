@@ -1,5 +1,6 @@
 {
   "name": "zyphra",
-  "description": "Zyphra models for efficient deployment in constrained environments.",
+  "description": "small yet powerful, excelling in code and math reasoning with high token efficiency.",
+  "tags": ["reasoning", "math", "code-generation"],
   "models": []
 }

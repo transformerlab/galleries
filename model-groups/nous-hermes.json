@@ -1,5 +1,6 @@
 {
   "name": "nous-hermes",
-  "description": "Instruction-tuned models by Nous Research based on Hermes.",
+  "description": "Refined instruction-tuned, capable of high-quality chat and reasoning outputs.",
+  "tags": ["instruction-tuned", "reasoning", "chat"],
   "models": []
 }

@@ -1,5 +1,6 @@
 {
   "name": "reflection",
-  "description": "Reflection-tuned LLMs for enhanced reasoning steps.",
+  "description": "Large-scale, optimized for self-improvement and reflective reasoning.",
+  "tags": ["meta", "reasoning", "self-improvement"],
   "models": []
 }

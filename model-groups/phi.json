@@ -1,5 +1,6 @@
 {
   "name": "phi",
-  "description": "Microsoft's Phi models for small, efficient LLM deployment.",
+  "description": "Small and efficient. Ideal for edge deployment and low-resource inference.",
+  "tags": ["small-model", "efficient", "microsoft"],
   "models": []
 }

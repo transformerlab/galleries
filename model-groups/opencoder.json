@@ -1,5 +1,6 @@
 {
   "name": "opencoder",
-  "description": "OpenCoder models optimized for code generation and understanding.",
+  "description": "Reasoning-enabled code generators optimized for programming assistance.",
+  "tags": ["code-generation", "reasoning", "code-generation"],
   "models": []
 }

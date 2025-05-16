@@ -1,5 +1,6 @@
 {
   "name": "falcon",
-  "description": "Falcon models, open-weight LLMs by TII UAE.",
+  "description": "Open-weight transformer with competitive performance across diverse language tasks.",
+  "tags": ["general-purpose", "open-weight"],
   "models": []
 }

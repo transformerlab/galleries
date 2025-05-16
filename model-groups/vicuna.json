@@ -1,5 +1,6 @@
 {
   "name": "vicuna",
-  "description": "Vicuna models trained on open assistant datasets.",
+  "description": "Fine-tuned and conversational. Derived from the Alpaca and LLaMA line.",
+  "tags": ["chat", "instruction-tuned", "alpaca-derivative"],
   "models": []
 }

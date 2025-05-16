@@ -1,5 +1,6 @@
 {
   "name": "cogito",
-  "description": "Cogito AI models targeting reasoning and language understanding.",
+  "description": "Hybrid reasoning capability. Outperforming peers across standard benchmarks in its size class.",
+  "tags": ["reasoning", "hybrid", "performance"],
   "models": []
 }

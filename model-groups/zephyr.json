@@ -1,5 +1,6 @@
 {
   "name": "zephyr",
-  "description": "Zephyr models from HuggingFace for chat-tuned generation.",
+  "description": "Hugging Face instruction-tuned model known for clean chat behavior and fast performance.",
+  "tags": ["instruction-tuned", "huggingface", "chat"],
   "models": []
 }

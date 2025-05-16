@@ -1,5 +1,6 @@
 {
   "name": "intellect",
-  "description": "INTELLECT models aimed at advanced reasoning and summarization.",
+  "description": "Reasoning-focused. Designed for analytical and structured language tasks.",
+  "tags": ["reasoning", "research"],
   "models": []
 }

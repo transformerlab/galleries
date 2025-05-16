@@ -1,5 +1,6 @@
 {
   "name": "watt",
-  "description": "Watt family of models for specialized domain tasks.",
+  "description": "Specialized for tool use and dynamic plugin-based reasoning tasks.",
+  "tags": ["tool-use", "inference", "plugins"],
   "models": []
 }

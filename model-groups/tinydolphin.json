@@ -1,5 +1,6 @@
 {
   "name": "tinydolphin",
-  "description": "Tiny Dolphin model compatible with Apple silicon.",
+  "description": "Experimental and compact, trained on curated instruction datasets.",
+  "tags": ["tiny-model", "experimental", "dolphin-dataset"],
   "models": []
 }

@@ -1,5 +1,6 @@
 {
   "name": "openllama",
-  "description": "OpenLLaMA models\u2014open versions of Meta\u2019s LLaMA architecture.",
+  "description": "Community-built open version of the LLaMA architecture for research and development.",
+  "tags": ["open-weight", "llama-compatible"],
   "models": []
 }

@@ -1,5 +1,6 @@
 {
   "name": "exaone",
-  "description": "EXAONE models tailored for Korean NLP and multilingual reasoning.",
+  "description": "Multimodal foundation, designed for enterprise-scale reasoning across language, vision, and code domains.",
+  "tags": ["multimodal", "multilingual", "reasoning"],
   "models": []
 }

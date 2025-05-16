@@ -1,5 +1,6 @@
 {
   "name": "apriel",
-  "description": "Models released under the Apriel family, including Nemotron variants.",
+  "description": "Compact and high-performance reasoning. Optimized for efficiency and low memory usage.",
+  "tags": ["reasoning", "inference", "efficient"],
   "models": []
 }

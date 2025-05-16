@@ -1,5 +1,6 @@
 {
   "name": "mistral",
-  "description": "Mistral models including the Instruct and 24B small variants.",
+  "description": "Fast, open-weight transformer optimized for low-latency inference.",
+  "tags": ["open-weight", "fast-inference", "efficient"],
   "models": []
 }
