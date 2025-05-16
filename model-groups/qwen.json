@@ -1,5 +1,6 @@
 {
   "name": "qwen",
-  "description": "Qwen and Qwen2.5 models including QwenCoder and instruction-tuned variants.",
+  "description": "Multilingual, high-accuracy transformer excelling in reasoning and benchmark tasks.",
+  "tags": ["performance", "reasoning", "multilingual"],
   "models": []
 }

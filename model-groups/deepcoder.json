@@ -1,5 +1,6 @@
 {
   "name": "deepcoder",
-  "description": "DeepCoder models focused on code generation and synthesis.",
+  "description": "Neural program synthesis model built to generate and complete code efficiently.",
+  "tags": ["code-generation", "microsoft", "programming"],
   "models": []
 }

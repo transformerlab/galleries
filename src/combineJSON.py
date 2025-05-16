@@ -90,7 +90,12 @@ def read_and_combine_json_files(directory: str):
             if group_name and group_name in model_groups:
                 model_groups[group_name]["models"].append(model)
             else:
-                print(f"Warning: Model '{model.get('name')}' missing or unknown group '{group_name}'")
+                print(f"Warning: Model '{model.get('name')}' missing or unknown group '{group_name}', adding to others")
+                model_groups["others"]["models"].append(model)
+
+        # Remove "others" group if it ended up empty
+        if not model_groups["others"]["models"]:
+            del model_groups["others"]
 
         # Write model-group-gallery.json
         with open('model-group-gallery.json', 'w') as f:

@@ -1,5 +1,6 @@
 {
   "name": "flan",
-  "description": "Google's FLAN series of instruction-tuned language models.",
+  "description": "Versatile instruction-tuned variant of T5 excelling across multitask benchmarks.",
+  "tags": ["instruction-tuned", "versatile", "t5"],
   "models": []
 }

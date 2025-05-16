@@ -1,5 +1,6 @@
 {
   "name": "starling",
-  "description": "Starling models focused on chat and dialogue optimization.",
+  "description": "General-purpose, designed for engaging instruction-following dialogues.",
+  "tags": ["chat", "instruct", "research"],
   "models": []
 }

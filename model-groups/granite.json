@@ -1,5 +1,6 @@
 {
   "name": "granite",
-  "description": "Granite models, high-performance open-source LLMs.",
+  "description": "Enterprise-grade. Tailored for secure, reliable, and general-purpose deployments.",
+  "tags": ["ibm", "enterprise", "general-purpose"],
   "models": []
 }

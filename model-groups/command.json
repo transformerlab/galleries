@@ -1,5 +1,6 @@
 {
   "name": "command",
-  "description": "Cohere's Command family including instruction-tuned variants.",
+  "description": "Robust and instruction-following. Designed for enterprise-scale NLP tasks.",
+  "tags": ["instruction-tuned", "enterprise", "cohere"],
   "models": []
 }

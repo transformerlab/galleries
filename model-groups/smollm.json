@@ -1,5 +1,6 @@
 {
   "name": "smollm",
-  "description": "Small open-source models for lightweight inference use cases.",
+  "description": "Tiny instruct models designed for experimentation and lightweight tasks.",
+  "tags": ["tiny-model", "instruct", "experimentation"],
   "models": []
 }

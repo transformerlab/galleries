@@ -1,5 +1,6 @@
 {
   "name": "llava",
-  "description": "LLaVA models for visual instruction tuning and multimodal tasks.",
+  "description": "Vision-language model capable of multimodal understanding and visual question answering.",
+  "tags": ["multimodal", "vision-language", "vqa", "image-captioning", "chat"],
   "models": []
 }

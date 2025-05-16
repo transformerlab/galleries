@@ -1,5 +1,6 @@
 {
   "name": "llama",
-  "description": "Meta's LLaMA series including LLaMA 2 and LLaMA 3.",
+  "description": "Foundational language models known for versatility and strong pretraining baseline by Meta.",
+  "tags": ["meta", "base-model", "general-purpose"],
   "models": []
 }
