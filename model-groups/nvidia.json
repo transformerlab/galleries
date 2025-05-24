@@ -1,0 +1,6 @@
+{
+  "name": "nvidia",
+  "description": "Reasoning models that are post trained for reasoning, human chat preferences, and tasks, such as RAG and tool calling.",
+  "tags": ["reasoning", "chat", "rag"],
+  "models": []
+}
