@@ -1,6 +1,6 @@
 {
   "name": "qwen",
   "description": "Multilingual, high-accuracy transformer excelling in reasoning and benchmark tasks.",
-  "tags": ["performance", "reasoning", "multilingual"],
+  "tags": ["Reasoning", "Multilingual"],
   "models": []
 }

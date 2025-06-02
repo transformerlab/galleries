@@ -3,7 +3,7 @@
   "name": "Seed-Coder-8B-Reasoning-bf16",
   "description": "A powerful, transparent, and parameter-efficient open-source code model",
   "added": "2025-05-21",
-  "tags": ["reasoning", "programming"],
+  "tags": ["Reasoning", "Coding"],
   "parameters": "8B",
   "context": "65536",
   "architecture": "LlamaForCausalLM",

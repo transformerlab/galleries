@@ -1,6 +1,6 @@
 {
   "name": "mistral",
   "description": "Fast, open-weight transformer optimized for low-latency inference.",
-  "tags": ["open-weight", "fast-inference", "efficient"],
+  "tags": [],
   "models": []
 }
