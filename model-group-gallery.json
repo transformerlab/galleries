@@ -4577,6 +4577,7 @@
             {
                 "uniqueID": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
                 "name": "DeepSeek R1 Distill Qwen 7B",
+                "archived": true,
                 "description": "Qwen distillation of DeepSeek chain-of-thought model.",
                 "added": "2025-01-27",
                 "parameters": "7B",
@@ -4609,6 +4610,7 @@
             {
                 "uniqueID": "deepseek-ai/DeepSeek-R1",
                 "name": "DeepSeek R1",
+                "archived": true,
                 "description": "Full version of DeepSeek's flagship Chain-of-Thought model.",
                 "added": "2025-01-27",
                 "parameters": "671B",
