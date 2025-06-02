@@ -4422,6 +4422,38 @@
         ],
         "models": [
             {
+                "uniqueID": "deepseek-ai/DeepSeek-R1-0528",
+                "name": "DeepSeek-R1-0528",
+                "description": "The DeepSeek R1 model has undergone a minor version upgrade, with the current version being DeepSeek-R1-0528.",
+                "added": "2025-05-30",
+                "tags": [
+                    "Chain of Thought"
+                ],
+                "parameters": "",
+                "context": "163840",
+                "architecture": "DeepseekV3ForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "deepseek-ai/DeepSeek-R1-0528",
+                "transformers_version": "4.46.3",
+                "gated": false,
+                "license": "mit",
+                "logo": "https://www.deepseek.com/favicon.ico",
+                "size_of_model_in_mb": 656703.5342264175,
+                "author": {
+                    "name": "deepseek-ai",
+                    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+                    "downloadUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+                    "paperUrl": "?"
+                },
+                "model_group": "deepseek"
+            },
+            {
                 "uniqueID": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
                 "name": "DeepSeek R1 Distill Qwen 1.5B",
                 "description": "Qwen distillation of DeepSeek chain-of-thought model.",
