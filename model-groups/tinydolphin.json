@@ -1,6 +1,6 @@
 {
   "name": "tinydolphin",
   "description": "Experimental and compact, trained on curated instruction datasets.",
-  "tags": ["tiny-model", "experimental", "dolphin-dataset"],
+  "tags": ["Tiny"],
   "models": []
 }

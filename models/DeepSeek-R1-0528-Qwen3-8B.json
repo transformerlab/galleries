@@ -3,7 +3,7 @@
   "name": "DeepSeek-R1-0528-Qwen3-8B",
   "description": "The DeepSeek R1 model has undergone a minor version upgrade, with the current version being DeepSeek-R1-0528.",
   "added": "2025-05-30",
-  "tags": ["Chain of Thought"],
+  "tags": ["Reasoning"],
   "parameters": "8B",
   "context": "131072",
   "architecture": "Qwen3ForCausalLM",

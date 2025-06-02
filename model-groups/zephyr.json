@@ -1,6 +1,6 @@
 {
   "name": "zephyr",
   "description": "Hugging Face instruction-tuned model known for clean chat behavior and fast performance.",
-  "tags": ["instruction-tuned", "huggingface", "chat"],
+  "tags": [],
   "models": []
 }

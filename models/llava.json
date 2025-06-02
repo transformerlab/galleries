@@ -6,6 +6,9 @@
         "parameters": "1.41B",
         "context": "4k",
         "architecture": "LlavaForConditionalGeneration",
+        "tags": [
+            "Multimodal"
+        ],
         "formats": [
             "Safetensors",
             "PyTorch"
@@ -35,6 +38,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "LlavaForConditionalGeneration",
+        "tags": [
+            "Multimodal"
+        ],
         "formats": [
             "Safetensors",
             "PyTorch"

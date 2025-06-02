@@ -3,7 +3,7 @@
   "name": "Devstral-Small-2505",
   "description": "Agentic LLM for software engineering tasks",
   "added": "2025-05-21",
-  "tags": ["coding", "lightweight"],
+  "tags": ["Coding"],
   "parameters": "",
   "context": "131072",
   "architecture": "MistralForCausalLM",

@@ -10,6 +10,9 @@
     "formats": [
       "Safetensors"
     ],
+    "tags": [
+      "Tool Use"
+    ],
     "huggingface_repo": "mlx-community/gemma-3-1b-it-4bit",
     "transformers_version": "4.50.0.dev0",
     "gated": "manual",
@@ -38,6 +41,9 @@
     "architecture": "Gemma3ForConditionalGeneration",
     "formats": [
       "Safetensors"
+    ],
+    "tags": [
+      "Tool Use"
     ],
     "huggingface_repo": "mlx-community/gemma-3-12b-it-4bit",
     "transformers_version": "4.50.0.dev0",

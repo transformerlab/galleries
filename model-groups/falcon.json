@@ -1,6 +1,6 @@
 {
   "name": "falcon",
   "description": "Open-weight transformer with competitive performance across diverse language tasks.",
-  "tags": ["general-purpose", "open-weight"],
+  "tags": [],
   "models": []
 }

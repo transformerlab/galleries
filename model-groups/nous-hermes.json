@@ -1,6 +1,6 @@
 {
   "name": "nous-hermes",
   "description": "Refined instruction-tuned, capable of high-quality chat and reasoning outputs.",
-  "tags": ["instruction-tuned", "reasoning", "chat"],
+  "tags": ["Reasoning"],
   "models": []
 }

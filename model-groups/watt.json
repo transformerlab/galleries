@@ -1,6 +1,6 @@
 {
   "name": "watt",
   "description": "Specialized for tool use and dynamic plugin-based reasoning tasks.",
-  "tags": ["tool-use", "inference", "plugins"],
+  "tags": ["Tool Use"],
   "models": []
 }

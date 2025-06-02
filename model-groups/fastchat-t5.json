@@ -1,6 +1,6 @@
 {
   "name": "fastchat-t5",
   "description": "Lightweight chatbot model optimized for fast response generation using the T5 architecture.",
-  "tags": ["chatbot", "fast-inference", "t5"],
+  "tags": [],
   "models": []
 }
