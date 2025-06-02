@@ -1,6 +1,6 @@
 {
   "name": "deepseek",
   "description": "General-purpose language models focused on strong downstream task performance.",
-  "tags": ["general-purpose", "performance", "chat"],
+  "tags": [],
   "models": []
 }

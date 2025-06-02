@@ -1,6 +1,6 @@
 {
   "name": "smollm",
   "description": "Tiny instruct models designed for experimentation and lightweight tasks.",
-  "tags": ["tiny-model", "instruct", "experimentation"],
+  "tags": ["Tiny"],
   "models": []
 }

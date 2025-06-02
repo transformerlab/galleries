@@ -1,6 +1,6 @@
 {
   "name": "llama",
   "description": "Foundational language models known for versatility and strong pretraining baseline by Meta.",
-  "tags": ["meta", "base-model", "general-purpose"],
+  "tags": [],
   "models": []
 }

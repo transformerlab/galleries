@@ -1,6 +1,6 @@
 {
   "name": "tinyllama",
   "description": "Miniature variant of LLaMA suitable for testing and fast inference scenarios.",
-  "tags": ["tiny-model", "llama-compatible"],
+  "tags": ["Tiny"],
   "models": []
 }

@@ -1,6 +1,6 @@
 {
   "name": "command",
   "description": "Robust and instruction-following. Designed for enterprise-scale NLP tasks.",
-  "tags": ["instruction-tuned", "enterprise", "cohere"],
+  "tags": ["Enterprise Focus"],
   "models": []
 }

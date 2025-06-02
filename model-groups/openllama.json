@@ -1,6 +1,6 @@
 {
   "name": "openllama",
   "description": "Community-built open version of the LLaMA architecture for research and development.",
-  "tags": ["open-weight", "llama-compatible"],
+  "tags": [],
   "models": []
 }

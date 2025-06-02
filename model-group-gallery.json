@@ -3,9 +3,9 @@
         "name": "exaone",
         "description": "Multimodal foundation, designed for enterprise-scale reasoning across language, vision, and code domains.",
         "tags": [
-            "multimodal",
-            "multilingual",
-            "reasoning"
+            "Multimodal",
+            "Multilingual",
+            "Reasoning"
         ],
         "models": [
             {
@@ -100,11 +100,7 @@
     {
         "name": "vicuna",
         "description": "Fine-tuned and conversational. Derived from the Alpaca and LLaMA line.",
-        "tags": [
-            "chat",
-            "instruction-tuned",
-            "alpaca-derivative"
-        ],
+        "tags": [],
         "models": [
             {
                 "uniqueID": "lmsys/vicuna-7b-v1.5",
@@ -196,9 +192,7 @@
         "name": "watt",
         "description": "Specialized for tool use and dynamic plugin-based reasoning tasks.",
         "tags": [
-            "tool-use",
-            "inference",
-            "plugins"
+            "Tool Use"
         ],
         "models": [
             {
@@ -239,9 +233,7 @@
         "name": "aya",
         "description": "Instruction-tuned and multilingual, supporting 23 languages with strong general-purpose capabilities.",
         "tags": [
-            "multilingual",
-            "instruction-tuned",
-            "general-purpose"
+            "Multilingual"
         ],
         "models": [
             {
@@ -267,10 +259,7 @@
     {
         "name": "openllama",
         "description": "Community-built open version of the LLaMA architecture for research and development.",
-        "tags": [
-            "open-weight",
-            "llama-compatible"
-        ],
+        "tags": [],
         "models": [
             {
                 "uniqueID": "openlm-research/open_llama_3b_v2",
@@ -335,11 +324,7 @@
     {
         "name": "gemma",
         "description": "Compact, research-focused language model developed for experimental scalability.",
-        "tags": [
-            "google",
-            "compact",
-            "research"
-        ],
+        "tags": [],
         "models": [
             {
                 "uniqueID": "unsloth/gemma-3-1b-it-GGUF",
@@ -1051,11 +1036,7 @@
     {
         "name": "llama",
         "description": "Foundational language models known for versatility and strong pretraining baseline by Meta.",
-        "tags": [
-            "meta",
-            "base-model",
-            "general-purpose"
-        ],
+        "tags": [],
         "models": [
             {
                 "uniqueID": "mlx-community/Llama-2-7b-mlx",
@@ -1699,11 +1680,7 @@
         "name": "llava",
         "description": "Vision-language model capable of multimodal understanding and visual question answering.",
         "tags": [
-            "multimodal",
-            "vision-language",
-            "vqa",
-            "image-captioning",
-            "chat"
+            "Multimodal"
         ],
         "models": [
             {
@@ -1770,8 +1747,7 @@
         "name": "intellect",
         "description": "Reasoning-focused. Designed for analytical and structured language tasks.",
         "tags": [
-            "reasoning",
-            "research"
+            "Reasoning"
         ],
         "models": [
             {
@@ -1810,9 +1786,7 @@
         "name": "smollm",
         "description": "Tiny instruct models designed for experimentation and lightweight tasks.",
         "tags": [
-            "tiny-model",
-            "instruct",
-            "experimentation"
+            "Tiny"
         ],
         "models": [
             {
@@ -1908,9 +1882,7 @@
         "name": "cogito",
         "description": "Hybrid reasoning capability. Outperforming peers across standard benchmarks in its size class.",
         "tags": [
-            "reasoning",
-            "hybrid",
-            "performance"
+            "Reasoning"
         ],
         "models": [
             {
@@ -2068,11 +2040,7 @@
     {
         "name": "mistral",
         "description": "Fast, open-weight transformer optimized for low-latency inference.",
-        "tags": [
-            "open-weight",
-            "fast-inference",
-            "efficient"
-        ],
+        "tags": [],
         "models": [
             {
                 "uniqueID": "mlx-community/Mistral-7B-Instruct-v0.1-4bit-mlx",
@@ -2581,10 +2549,7 @@
     {
         "name": "falcon",
         "description": "Open-weight transformer with competitive performance across diverse language tasks.",
-        "tags": [
-            "general-purpose",
-            "open-weight"
-        ],
+        "tags": [],
         "models": [
             {
                 "uniqueID": "tiiuae/falcon-7b",
@@ -2649,11 +2614,7 @@
     {
         "name": "flan",
         "description": "Versatile instruction-tuned variant of T5 excelling across multitask benchmarks.",
-        "tags": [
-            "instruction-tuned",
-            "versatile",
-            "t5"
-        ],
+        "tags": [],
         "models": [
             {
                 "uniqueID": "google/flan-t5-small",
@@ -2690,9 +2651,8 @@
         "name": "qwen",
         "description": "Multilingual, high-accuracy transformer excelling in reasoning and benchmark tasks.",
         "tags": [
-            "performance",
-            "reasoning",
-            "multilingual"
+            "Reasoning",
+            "Multilingual"
         ],
         "models": [
             {
@@ -3780,11 +3740,7 @@
     {
         "name": "starling",
         "description": "General-purpose, designed for engaging instruction-following dialogues.",
-        "tags": [
-            "chat",
-            "instruct",
-            "research"
-        ],
+        "tags": [],
         "models": [
             {
                 "uniqueID": "berkeley-nest/Starling-LM-7B-alpha",
@@ -3819,11 +3775,7 @@
     {
         "name": "fastchat-t5",
         "description": "Lightweight chatbot model optimized for fast response generation using the T5 architecture.",
-        "tags": [
-            "chatbot",
-            "fast-inference",
-            "t5"
-        ],
+        "tags": [],
         "models": [
             {
                 "uniqueID": "lmsys/fastchat-t5-3b-v1.0",
@@ -3859,9 +3811,8 @@
         "name": "bytedance",
         "description": "Parameter efficient family for reasoning and coding",
         "tags": [
-            "programming",
-            "reasoning",
-            "efficient"
+            "Coding",
+            "Reasoning"
         ],
         "models": [
             {
@@ -3903,9 +3854,7 @@
         "name": "command",
         "description": "Robust and instruction-following. Designed for enterprise-scale NLP tasks.",
         "tags": [
-            "instruction-tuned",
-            "enterprise",
-            "cohere"
+            "Enterprise Focus"
         ],
         "models": [
             {
@@ -4024,11 +3973,11 @@
     },
     {
         "name": "zyphra",
-        "description": "small yet powerful, excelling in code and math reasoning with high token efficiency.",
+        "description": "Small yet powerful, excelling in code and math reasoning with high token efficiency.",
         "tags": [
-            "reasoning",
-            "math",
-            "code-generation"
+            "Reasoning",
+            "Math",
+            "Coding"
         ],
         "models": [
             {
@@ -4066,11 +4015,7 @@
     {
         "name": "phi",
         "description": "Small and efficient. Ideal for edge deployment and low-resource inference.",
-        "tags": [
-            "small-model",
-            "efficient",
-            "microsoft"
-        ],
+        "tags": [],
         "models": [
             {
                 "uniqueID": "microsoft/Phi-3-mini-128k-instruct",
@@ -4310,9 +4255,7 @@
         "name": "nous-hermes",
         "description": "Refined instruction-tuned, capable of high-quality chat and reasoning outputs.",
         "tags": [
-            "instruction-tuned",
-            "reasoning",
-            "chat"
+            "Reasoning"
         ],
         "models": [
             {
@@ -4377,9 +4320,7 @@
         "name": "tinydolphin",
         "description": "Experimental and compact, trained on curated instruction datasets.",
         "tags": [
-            "tiny-model",
-            "experimental",
-            "dolphin-dataset"
+            "Tiny"
         ],
         "models": [
             {
@@ -4415,15 +4356,16 @@
     {
         "name": "deepseek",
         "description": "General-purpose language models focused on strong downstream task performance.",
-        "tags": [
-            "general-purpose",
-            "performance",
-            "chat"
-        ],
+        "tags": [],
         "models": [
             {
                 "uniqueID": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
                 "name": "DeepSeek-R1-0528-Qwen3-8B",
+                "description": "The DeepSeek R1 model has undergone a minor version upgrade, with the current version being DeepSeek-R1-0528.",
+                "added": "2025-05-30",
+                "tags": [
+                    "Chain of Thought"
+                ],
                 "parameters": "8B",
                 "context": "131072",
                 "architecture": "Qwen3ForCausalLM",
@@ -4677,9 +4619,7 @@
         "name": "starcoder",
         "description": "Leading in code-generation. Trained on open-source repositories for development tasks.",
         "tags": [
-            "code-generation",
-            "github",
-            "bigcode"
+            "Coding"
         ],
         "models": [
             {
@@ -4720,9 +4660,7 @@
         "name": "deepcoder",
         "description": "Neural program synthesis model built to generate and complete code efficiently.",
         "tags": [
-            "code-generation",
-            "microsoft",
-            "programming"
+            "Coding"
         ],
         "models": [
             {
@@ -4860,9 +4798,7 @@
         "name": "apriel",
         "description": "Compact and high-performance reasoning. Optimized for efficiency and low memory usage.",
         "tags": [
-            "reasoning",
-            "inference",
-            "efficient"
+            "Reasoning"
         ],
         "models": [
             {
@@ -4960,11 +4896,7 @@
     {
         "name": "zephyr",
         "description": "Hugging Face instruction-tuned model known for clean chat behavior and fast performance.",
-        "tags": [
-            "instruction-tuned",
-            "huggingface",
-            "chat"
-        ],
+        "tags": [],
         "models": [
             {
                 "uniqueID": "HuggingFaceH4/zephyr-7b-alpha",
@@ -5003,9 +4935,7 @@
         "name": "reflection",
         "description": "Large-scale, optimized for self-improvement and reflective reasoning.",
         "tags": [
-            "meta",
-            "reasoning",
-            "self-improvement"
+            "Reasoning"
         ],
         "models": [
             {
@@ -5042,9 +4972,8 @@
         "name": "opencoder",
         "description": "Reasoning-enabled code generators optimized for programming assistance.",
         "tags": [
-            "code-generation",
-            "reasoning",
-            "code-generation"
+            "Coding",
+            "Reasoning"
         ],
         "models": [
             {
@@ -5085,9 +5014,7 @@
         "name": "granite",
         "description": "Enterprise-grade. Tailored for secure, reliable, and general-purpose deployments.",
         "tags": [
-            "ibm",
-            "enterprise",
-            "general-purpose"
+            "Enterprise"
         ],
         "models": [
             {
@@ -5216,8 +5143,7 @@
         "name": "tinyllama",
         "description": "Miniature variant of LLaMA suitable for testing and fast inference scenarios.",
         "tags": [
-            "tiny-model",
-            "llama-compatible"
+            "Tiny"
         ],
         "models": [
             {

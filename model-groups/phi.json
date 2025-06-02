@@ -1,6 +1,6 @@
 {
   "name": "phi",
   "description": "Small and efficient. Ideal for edge deployment and low-resource inference.",
-  "tags": ["small-model", "efficient", "microsoft"],
+  "tags": [],
   "models": []
 }

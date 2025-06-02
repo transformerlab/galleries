@@ -1,6 +1,6 @@
 {
   "name": "aya",
   "description": "Instruction-tuned and multilingual, supporting 23 languages with strong general-purpose capabilities.",
-  "tags": ["multilingual", "instruction-tuned", "general-purpose"],
+  "tags": ["Multilingual"],
   "models": []
 }
