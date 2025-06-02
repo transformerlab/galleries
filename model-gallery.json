@@ -5,7 +5,7 @@
         "description": "The DeepSeek R1 model has undergone a minor version upgrade, with the current version being DeepSeek-R1-0528.",
         "added": "2025-05-30",
         "tags": [
-            "Chain of Thought"
+            "Reasoning"
         ],
         "parameters": "8B",
         "context": "131072",
@@ -37,7 +37,7 @@
         "description": "The DeepSeek R1 model has undergone a minor version upgrade, with the current version being DeepSeek-R1-0528.",
         "added": "2025-05-30",
         "tags": [
-            "Chain of Thought"
+            "Reasoning"
         ],
         "parameters": "",
         "context": "163840",
@@ -380,8 +380,8 @@
         "description": "A powerful, transparent, and parameter-efficient open-source code model",
         "added": "2025-05-21",
         "tags": [
-            "reasoning",
-            "programming"
+            "Reasoning",
+            "Coding"
         ],
         "parameters": "8B",
         "context": "65536",
@@ -995,8 +995,7 @@
         "description": "Agentic LLM for software engineering tasks",
         "added": "2025-05-21",
         "tags": [
-            "coding",
-            "lightweight"
+            "Coding"
         ],
         "parameters": "",
         "context": "131072",
@@ -1030,6 +1029,9 @@
         "context": "32768",
         "architecture": "ExaoneForCausalLM",
         "added": "2025-03-18",
+        "tags": [
+            "Reasoning"
+        ],
         "formats": [
             "Safetensors"
         ],
@@ -1059,6 +1061,9 @@
         "context": "32768",
         "architecture": "ExaoneForCausalLM",
         "added": "2025-03-18",
+        "tags": [
+            "Reasoning"
+        ],
         "formats": [
             "Safetensors"
         ],
@@ -1088,6 +1093,9 @@
         "context": "32768",
         "architecture": "ExaoneForCausalLM",
         "added": "2025-03-18",
+        "tags": [
+            "Reasoning"
+        ],
         "formats": [
             "Safetensors"
         ],
@@ -1229,12 +1237,14 @@
         "name": "Gemma 3 1B Instruct (GGUF Q8_0)",
         "description": "GGUF-formatted 8-bit quantization of Google's Gemma 3 1B instruction-tuned model.",
         "added": "2025-03-25",
-        "tags": [],
         "parameters": "1B",
         "context": "32768",
         "architecture": "GGUF",
         "formats": [
             "GGUF"
+        ],
+        "tags": [
+            "Tool Use"
         ],
         "huggingface_repo": "unsloth/gemma-3-1b-it-GGUF",
         "huggingface_filename": "gemma-3-1b-it-Q8_0.gguf",
@@ -1260,7 +1270,9 @@
         "name": "Gemma 3 27B Instruct (GGUF Q4_K_M)",
         "description": "GGUF-formatted 4-bit quantization of Google's Gemma 3 27B instruction-tuned model.",
         "added": "2025-03-25",
-        "tags": [],
+        "tags": [
+            "Tool Use"
+        ],
         "parameters": "27B",
         "context": "2048",
         "architecture": "GGUF",
@@ -1500,6 +1512,9 @@
         "formats": [
             "Safetensors"
         ],
+        "tags": [
+            "Tool Use"
+        ],
         "huggingface_repo": "mlx-community/gemma-3-1b-it-4bit",
         "transformers_version": "4.50.0.dev0",
         "gated": "manual",
@@ -1528,6 +1543,9 @@
         "architecture": "Gemma3ForConditionalGeneration",
         "formats": [
             "Safetensors"
+        ],
+        "tags": [
+            "Tool Use"
         ],
         "huggingface_repo": "mlx-community/gemma-3-12b-it-4bit",
         "transformers_version": "4.50.0.dev0",
@@ -1558,6 +1576,9 @@
         "formats": [
             "Safetensors"
         ],
+        "tags": [
+            "Tool Use"
+        ],
         "huggingface_repo": "google/gemma-3-1b-pt",
         "transformers_version": "4.50.0.dev0",
         "gated": "manual",
@@ -1586,6 +1607,9 @@
         "architecture": "Gemma3ForCausalLM",
         "formats": [
             "Safetensors"
+        ],
+        "tags": [
+            "Tool Use"
         ],
         "huggingface_repo": "google/gemma-3-1b-it",
         "transformers_version": "4.50.0.dev0",
@@ -1616,6 +1640,9 @@
         "formats": [
             "Safetensors"
         ],
+        "tags": [
+            "Tool Use"
+        ],
         "huggingface_repo": "google/gemma-3-4b-pt",
         "transformers_version": "4.50.0.dev0",
         "gated": "manual",
@@ -1644,6 +1671,9 @@
         "architecture": "Gemma3ForConditionalGeneration",
         "formats": [
             "Safetensors"
+        ],
+        "tags": [
+            "Tool Use"
         ],
         "huggingface_repo": "google/gemma-3-4b-it",
         "transformers_version": "4.50.0.dev0",
@@ -1674,6 +1704,9 @@
         "formats": [
             "Safetensors"
         ],
+        "tags": [
+            "Tool Use"
+        ],
         "huggingface_repo": "google/gemma-3-12b-pt",
         "transformers_version": "4.50.0.dev0",
         "gated": "manual",
@@ -1702,6 +1735,9 @@
         "architecture": "Gemma3ForConditionalGeneration",
         "formats": [
             "Safetensors"
+        ],
+        "tags": [
+            "Tool Use"
         ],
         "huggingface_repo": "google/gemma-3-12b-it",
         "transformers_version": "4.50.0.dev0",
@@ -1732,6 +1768,9 @@
         "formats": [
             "Safetensors"
         ],
+        "tags": [
+            "Tool Use"
+        ],
         "huggingface_repo": "google/gemma-3-27b-pt",
         "transformers_version": "4.50.0.dev0",
         "gated": "manual",
@@ -1761,6 +1800,9 @@
         "formats": [
             "Safetensors"
         ],
+        "tags": [
+            "Tool Use"
+        ],
         "huggingface_repo": "google/gemma-3-27b-it",
         "transformers_version": "4.50.0.dev0",
         "gated": "manual",
@@ -1789,6 +1831,9 @@
         "architecture": "ShieldGemmaForImageClassification",
         "formats": [
             "Safetensors"
+        ],
+        "tags": [
+            "Tool Use"
         ],
         "huggingface_repo": "google/shieldgemma-2-4b-it",
         "transformers_version": "4.50.0.dev0",
@@ -2634,6 +2679,9 @@
         "parameters": "1.41B",
         "context": "4k",
         "architecture": "LlavaForConditionalGeneration",
+        "tags": [
+            "Multimodal"
+        ],
         "formats": [
             "Safetensors",
             "PyTorch"
@@ -2663,6 +2711,9 @@
         "parameters": "7B",
         "context": "4k",
         "architecture": "LlavaForConditionalGeneration",
+        "tags": [
+            "Multimodal"
+        ],
         "formats": [
             "Safetensors",
             "PyTorch"
@@ -3332,7 +3383,9 @@
         "name": "Phi-4-reasoning",
         "description": "Phi-4-reasoning is a state-of-the-art open-weight reasoning model finetuned from Phi-4 using supervised fine-tuning on a dataset of chain-of-thought traces and reinforcement learning. The supervised fine-tuning dataset includes a blend of synthetic prompts and high-quality filtered data from public domain websites, focused on math, science, and coding skills as well as alignment data for safety and Responsible AI. The goal of this approach was to ensure that small capable models were trained with data focused on high quality and advanced reasoning.",
         "added": "2025-05-01",
-        "tags": [],
+        "tags": [
+            "Reasoning"
+        ],
         "parameters": "",
         "context": "32768",
         "architecture": "Phi3ForCausalLM",
@@ -3362,7 +3415,9 @@
         "name": "Phi-4-reasoning-plus",
         "description": "On top of Phi-4-reasoning, Phi-4-reasoning-plus has been trained additionally with Reinforcement Learning, hence, it has higher accuracy but generates on average 50% more tokens, thus having higher latency.",
         "added": "2025-05-01",
-        "tags": [],
+        "tags": [
+            "Reasoning"
+        ],
         "parameters": "",
         "context": "32768",
         "architecture": "Phi3ForCausalLM",

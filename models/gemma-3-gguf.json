@@ -4,12 +4,14 @@
     "name": "Gemma 3 1B Instruct (GGUF Q8_0)",
     "description": "GGUF-formatted 8-bit quantization of Google's Gemma 3 1B instruction-tuned model.",
     "added": "2025-03-25",
-    "tags": [],
     "parameters": "1B",
     "context": "32768",
     "architecture": "GGUF",
     "formats": [
       "GGUF"
+    ],
+    "tags": [
+      "Tool Use"
     ],
     "huggingface_repo": "unsloth/gemma-3-1b-it-GGUF",
     "huggingface_filename": "gemma-3-1b-it-Q8_0.gguf",
@@ -35,7 +37,9 @@
     "name": "Gemma 3 27B Instruct (GGUF Q4_K_M)",
     "description": "GGUF-formatted 4-bit quantization of Google's Gemma 3 27B instruction-tuned model.",
     "added": "2025-03-25",
-    "tags": [],
+    "tags": [
+      "Tool Use"
+    ],
     "parameters": "27B",
     "context": "2048",
     "architecture": "GGUF",

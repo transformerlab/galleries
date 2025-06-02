@@ -7,6 +7,9 @@
     "context": "32768",
     "architecture": "ExaoneForCausalLM",
     "added": "2025-03-18",
+    "tags": [
+        "Reasoning"
+    ],
     "formats": [
       "Safetensors"
     ],
@@ -36,6 +39,9 @@
     "context": "32768",
     "architecture": "ExaoneForCausalLM",
     "added": "2025-03-18",
+    "tags": [
+        "Reasoning"
+    ],
     "formats": [
       "Safetensors"
     ],
@@ -65,6 +71,9 @@
     "context": "32768",
     "architecture": "ExaoneForCausalLM",
     "added": "2025-03-18",
+    "tags": [
+        "Reasoning"
+    ],
     "formats": [
       "Safetensors"
     ],

@@ -3,7 +3,7 @@
   "name": "DeepSeek-R1-0528",
   "description": "The DeepSeek R1 model has undergone a minor version upgrade, with the current version being DeepSeek-R1-0528.",
   "added": "2025-05-30",
-  "tags": ["Chain of Thought"],
+  "tags": ["Reasoning"],
   "parameters": "",
   "context": "163840",
   "architecture": "DeepseekV3ForCausalLM",

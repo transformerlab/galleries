@@ -10,6 +10,9 @@
     "formats": [
       "Safetensors"
     ],
+    "tags": [
+      "Tool Use"
+    ],
     "huggingface_repo": "google/gemma-3-1b-pt",
     "transformers_version": "4.50.0.dev0",
     "gated": "manual",
@@ -38,6 +41,9 @@
     "architecture": "Gemma3ForCausalLM",
     "formats": [
       "Safetensors"
+    ],
+    "tags": [
+      "Tool Use"
     ],
     "huggingface_repo": "google/gemma-3-1b-it",
     "transformers_version": "4.50.0.dev0",
@@ -68,6 +74,9 @@
     "formats": [
       "Safetensors"
     ],
+    "tags": [
+      "Tool Use"
+    ],
     "huggingface_repo": "google/gemma-3-4b-pt",
     "transformers_version": "4.50.0.dev0",
     "gated": "manual",
@@ -96,6 +105,9 @@
     "architecture": "Gemma3ForConditionalGeneration",
     "formats": [
       "Safetensors"
+    ],
+    "tags": [
+      "Tool Use"
     ],
     "huggingface_repo": "google/gemma-3-4b-it",
     "transformers_version": "4.50.0.dev0",
@@ -126,6 +138,9 @@
     "formats": [
       "Safetensors"
     ],
+    "tags": [
+      "Tool Use"
+    ],
     "huggingface_repo": "google/gemma-3-12b-pt",
     "transformers_version": "4.50.0.dev0",
     "gated": "manual",
@@ -154,6 +169,9 @@
     "architecture": "Gemma3ForConditionalGeneration",
     "formats": [
       "Safetensors"
+    ],
+    "tags": [
+      "Tool Use"
     ],
     "huggingface_repo": "google/gemma-3-12b-it",
     "transformers_version": "4.50.0.dev0",
@@ -184,6 +202,9 @@
     "formats": [
       "Safetensors"
     ],
+    "tags": [
+      "Tool Use"
+    ],
     "huggingface_repo": "google/gemma-3-27b-pt",
     "transformers_version": "4.50.0.dev0",
     "gated": "manual",
@@ -213,6 +234,9 @@
     "formats": [
       "Safetensors"
     ],
+    "tags": [
+      "Tool Use"
+    ],
     "huggingface_repo": "google/gemma-3-27b-it",
     "transformers_version": "4.50.0.dev0",
     "gated": "manual",
@@ -241,6 +265,9 @@
     "architecture": "ShieldGemmaForImageClassification",
     "formats": [
       "Safetensors"
+    ],
+    "tags": [
+      "Tool Use"
     ],
     "huggingface_repo": "google/shieldgemma-2-4b-it",
     "transformers_version": "4.50.0.dev0",
