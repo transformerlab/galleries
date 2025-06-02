@@ -3126,9 +3126,8 @@
         "description": "Offers a great tradeoff between model accuracy and efficiency. The model fits on a single RTX GPU and can be used locally",
         "added": "2025-05-24",
         "tags": [
-            "reasoning",
-            "chat",
-            "rag"
+            "Reasoning",
+            "RAG"
         ],
         "parameters": "4B",
         "context": "131072",
@@ -3160,9 +3159,8 @@
         "description": "Offers a great tradeoff between model accuracy and efficiency. The model fits on a single RTX GPU and can be used locally",
         "added": "2025-05-24",
         "tags": [
-            "reasoning",
-            "chat",
-            "rag"
+            "Reasoning",
+            "RAG"
         ],
         "parameters": "8B",
         "context": "131072",
