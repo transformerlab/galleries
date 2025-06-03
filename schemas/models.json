@@ -46,7 +46,10 @@
           "Cohere2ForCausalLM",
           "ExaoneForCausalLM",
           "Mistral3ForConditionalGeneration",
-          "AprielForCausalLM"
+          "AprielForCausalLM",
+          "StableDiffusion3Pipeline",
+          "StableDiffusionXLPipeline",
+          "StableDiffusionPipeline"
         ]
       },
       "huggingface_repo": {
