@@ -4949,8 +4949,7 @@
         "added": "2025-06-03",
         "tags": [
             "Text-to-Image",
-            "Diffusion",
-            "Latest Generation"
+            "Diffusion"
         ],
         "formats": [
             "Safetensors"
