@@ -4,7 +4,7 @@
       "name": "FLUX.1 [dev]",
       "description": "FLUX.1 [dev] is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions. This model is designed for non-commercial use and development purposes, offering state-of-the-art performance in prompt adherence, visual quality, and image detail.",
       "parameters": "12B",
-      "context": "512",
+      "model_type": "diffusion",
       "architecture": "FluxPipeline",
       "added": "2025-06-03",
       "tags": [
@@ -40,7 +40,7 @@
       "name": "FLUX.1 [schnell]",
       "description": "FLUX.1 [schnell] is the fastest variant of the FLUX.1 model family, optimized for speed while maintaining high image quality. It can generate images in as few as 1-4 steps, making it ideal for real-time applications and rapid prototyping. Licensed under Apache 2.0 for commercial use.",
       "parameters": "12B",
-      "context": "512",
+      "model_type": "diffusion",
       "architecture": "FluxPipeline",
       "added": "2025-06-03",
       "tags": [

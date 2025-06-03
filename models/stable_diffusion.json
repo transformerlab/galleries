@@ -4,7 +4,6 @@
       "name": "Stable Diffusion v1.5",
       "description": "A latent text-to-image diffusion model capable of generating photo-realistic images given any text input. This is the improved version of the original Stable Diffusion model.",
       "parameters": "860M",
-      "context": "77",
       "architecture": "StableDiffusionPipeline",
       "added": "2025-06-03",
       "tags": [
@@ -26,6 +25,7 @@
         "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
         "blurb": "Runway is building the next era of art, entertainment and human creativity."
       },
+      "model_type": "diffusion",
       "resources": {
         "canonicalUrl": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
         "downloadUrl": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
@@ -38,7 +38,6 @@
       "name": "Stable Diffusion 2.1",
       "description": "An improved version of Stable Diffusion 2.0 with better image quality and fewer artifacts. Uses OpenCLIP-ViT/H as the text encoder and a 768x768 default resolution.",
       "parameters": "865M",
-      "context": "77",
       "architecture": "StableDiffusionPipeline",
       "added": "2025-06-03",
       "tags": [
@@ -51,6 +50,7 @@
       ],
       "huggingface_repo": "stabilityai/stable-diffusion-2-1",
       "transformers_version": "4.25.0",
+      "model_type": "diffusion",
       "gated": false,
       "license": "creativeml-openrail-m",
       "logo": "https://stability.ai/favicon.ico",
@@ -70,9 +70,9 @@
     {
       "uniqueID": "stabilityai/stable-diffusion-xl-base-1.0",
       "name": "Stable Diffusion XL Base 1.0",
+      "model_type": "diffusion",
       "description": "SDXL is a larger and more powerful version of Stable Diffusion, generating higher quality images at 1024x1024 resolution. This is the base model that can be used standalone or with the refiner.",
       "parameters": "3.5B",
-      "context": "77",
       "architecture": "StableDiffusionXLPipeline",
       "added": "2025-06-03",
       "tags": [
@@ -105,9 +105,9 @@
     {
       "uniqueID": "stabilityai/stable-diffusion-3-medium-diffusers",
       "name": "Stable Diffusion 3 Medium",
+      "model_type": "diffusion",
       "description": "The latest generation of Stable Diffusion with improved image quality, better text rendering, and enhanced prompt adherence. Features a new architecture with improved efficiency.",
       "parameters": "2B",
-      "context": "77",
       "architecture": "StableDiffusion3Pipeline",
       "added": "2025-06-03",
       "tags": [
@@ -140,7 +140,6 @@
       "name": "Stable Diffusion 3.5 Large",
       "description": "The most advanced version of Stable Diffusion with significantly improved image quality, better text rendering, and enhanced prompt following capabilities. Offers the best quality in the SD3 series.",
       "parameters": "8B",
-      "context": "77",
       "architecture": "StableDiffusion3Pipeline",
       "added": "2025-06-03",
       "tags": [
@@ -152,6 +151,7 @@
       ],
       "huggingface_repo": "stabilityai/stable-diffusion-3.5-large",
       "transformers_version": "4.45.0",
+      "model_type": "diffusion",
       "gated": true,
       "license": "other",
       "logo": "https://stability.ai/favicon.ico",
@@ -173,7 +173,7 @@
       "name": "Stable Diffusion 3.5 Medium",
       "description": "A balanced version of SD 3.5 offering excellent image quality with better efficiency than the Large model. Provides improved text rendering and prompt adherence.",
       "parameters": "2.5B",
-      "context": "77",
+      "model_type": "diffusion",
       "architecture": "StableDiffusion3Pipeline",
       "added": "2025-06-03",
       "tags": [
