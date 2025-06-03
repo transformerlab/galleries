@@ -2795,7 +2795,7 @@
         ]
     },
     {
-        "name": "stable_diffusion",
+        "name": "Stable Diffusion",
         "description": "Text-to-image diffusion models capable of generating high-quality images from text prompts, including various versions from SD 1.5 to SD 3.5 and SDXL.",
         "tags": [
             "Text-to-Image",
@@ -2836,7 +2836,7 @@
                     "downloadUrl": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
                     "paperUrl": "https://arxiv.org/abs/2112.10752"
                 },
-                "model_group": "stable_diffusion"
+                "model_group": "Stable Diffusion"
             },
             {
                 "uniqueID": "stabilityai/stable-diffusion-2-1",
@@ -2870,7 +2870,7 @@
                     "downloadUrl": "https://huggingface.co/stabilityai/stable-diffusion-2-1",
                     "paperUrl": "https://arxiv.org/abs/2112.10752"
                 },
-                "model_group": "stable_diffusion"
+                "model_group": "Stable Diffusion"
             },
             {
                 "uniqueID": "stabilityai/stable-diffusion-xl-base-1.0",
@@ -2905,7 +2905,7 @@
                     "downloadUrl": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
                     "paperUrl": "https://arxiv.org/abs/2307.01952"
                 },
-                "model_group": "stable_diffusion"
+                "model_group": "Stable Diffusion"
             },
             {
                 "uniqueID": "stabilityai/stable-diffusion-3-medium-diffusers",
@@ -2939,7 +2939,7 @@
                     "downloadUrl": "https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers",
                     "paperUrl": "https://arxiv.org/abs/2403.03206"
                 },
-                "model_group": "stable_diffusion"
+                "model_group": "Stable Diffusion"
             },
             {
                 "uniqueID": "stabilityai/stable-diffusion-3.5-large",
@@ -2973,7 +2973,7 @@
                     "downloadUrl": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
                     "paperUrl": "https://arxiv.org/abs/2403.03206"
                 },
-                "model_group": "stable_diffusion"
+                "model_group": "Stable Diffusion"
             },
             {
                 "uniqueID": "stabilityai/stable-diffusion-3.5-medium",
@@ -3007,7 +3007,7 @@
                     "downloadUrl": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium",
                     "paperUrl": "https://arxiv.org/abs/2403.03206"
                 },
-                "model_group": "stable_diffusion"
+                "model_group": "Stable Diffusion"
             }
         ]
     },
