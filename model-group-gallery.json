@@ -239,6 +239,92 @@
         ]
     },
     {
+        "name": "flux",
+        "description": "FLUX is a state-of-the-art text-to-image generation model developed by Black Forest Labs. It offers superior image quality, prompt adherence, and diverse styles with two main variants: FLUX.1 [dev] for development/non-commercial use and FLUX.1 [schnell] for fast generation.",
+        "tags": [
+            "Text-to-Image",
+            "Diffusion",
+            "Image Generation",
+            "Computer Vision",
+            "High Quality"
+        ],
+        "models": [
+            {
+                "uniqueID": "black-forest-labs/FLUX.1-dev",
+                "name": "FLUX.1 [dev]",
+                "description": "FLUX.1 [dev] is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions. This model is designed for non-commercial use and development purposes, offering state-of-the-art performance in prompt adherence, visual quality, and image detail.",
+                "parameters": "12B",
+                "context": "512",
+                "architecture": "FluxPipeline",
+                "added": "2025-06-03",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion",
+                    "Transformer",
+                    "High Quality"
+                ],
+                "formats": [
+                    "Safetensors",
+                    "PyTorch"
+                ],
+                "huggingface_repo": "black-forest-labs/FLUX.1-dev",
+                "transformers_version": "4.44.0",
+                "gated": true,
+                "license": "flux-1-dev-non-commercial-license",
+                "logo": "https://blackforestlabs.ai/favicon.ico",
+                "size_of_model_in_mb": 55198.33693885803,
+                "author": {
+                    "name": "Black Forest Labs",
+                    "url": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+                    "blurb": "Black Forest Labs develops cutting-edge generative AI models for media creation."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+                    "downloadUrl": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+                    "paperUrl": "https://blackforestlabs.ai/announcing-black-forest-labs/"
+                },
+                "model_group": "flux"
+            },
+            {
+                "uniqueID": "black-forest-labs/FLUX.1-schnell",
+                "name": "FLUX.1 [schnell]",
+                "description": "FLUX.1 [schnell] is the fastest variant of the FLUX.1 model family, optimized for speed while maintaining high image quality. It can generate images in as few as 1-4 steps, making it ideal for real-time applications and rapid prototyping. Licensed under Apache 2.0 for commercial use.",
+                "parameters": "12B",
+                "context": "512",
+                "architecture": "FluxPipeline",
+                "added": "2025-06-03",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion",
+                    "Transformer",
+                    "Fast Generation",
+                    "Commercial Use"
+                ],
+                "formats": [
+                    "Safetensors",
+                    "PyTorch"
+                ],
+                "huggingface_repo": "black-forest-labs/FLUX.1-schnell",
+                "transformers_version": "4.44.0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://blackforestlabs.ai/favicon.ico",
+                "size_of_model_in_mb": 55159.34513282776,
+                "author": {
+                    "name": "Black Forest Labs",
+                    "url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+                    "blurb": "Black Forest Labs develops cutting-edge generative AI models for media creation."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+                    "downloadUrl": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+                    "paperUrl": "https://blackforestlabs.ai/announcing-black-forest-labs/"
+                },
+                "model_group": "flux"
+            }
+        ]
+    },
+    {
         "name": "aya",
         "description": "Instruction-tuned and multilingual, supporting 23 languages with strong general-purpose capabilities.",
         "tags": [
@@ -2739,7 +2825,7 @@
                 "gated": false,
                 "license": "creativeml-openrail-m",
                 "logo": "https://stability.ai/favicon.ico",
-                "size_of_model_in_mb": 3440,
+                "size_of_model_in_mb": 45069.05603504181,
                 "author": {
                     "name": "RunwayML",
                     "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
@@ -2773,7 +2859,7 @@
                 "gated": false,
                 "license": "creativeml-openrail-m",
                 "logo": "https://stability.ai/favicon.ico",
-                "size_of_model_in_mb": 3460,
+                "size_of_model_in_mb": 34656.23947143555,
                 "author": {
                     "name": "Stability AI",
                     "url": "https://huggingface.co/stabilityai/stable-diffusion-2-1",
@@ -2808,7 +2894,7 @@
                 "gated": false,
                 "license": "openrail++",
                 "logo": "https://stability.ai/favicon.ico",
-                "size_of_model_in_mb": 6940,
+                "size_of_model_in_mb": 46841.37820529938,
                 "author": {
                     "name": "Stability AI",
                     "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
@@ -2842,7 +2928,7 @@
                 "gated": true,
                 "license": "other",
                 "logo": "https://stability.ai/favicon.ico",
-                "size_of_model_in_mb": 4280,
+                "size_of_model_in_mb": 29562.001874923706,
                 "author": {
                     "name": "Stability AI",
                     "url": "https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers",
@@ -2876,7 +2962,7 @@
                 "gated": true,
                 "license": "other",
                 "logo": "https://stability.ai/favicon.ico",
-                "size_of_model_in_mb": 16800,
+                "size_of_model_in_mb": 68245.66199302673,
                 "author": {
                     "name": "Stability AI",
                     "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
@@ -2910,7 +2996,7 @@
                 "gated": true,
                 "license": "other",
                 "logo": "https://stability.ai/favicon.ico",
-                "size_of_model_in_mb": 5200,
+                "size_of_model_in_mb": 46591.01168632507,
                 "author": {
                     "name": "Stability AI",
                     "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium",

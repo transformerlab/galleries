@@ -20,7 +20,7 @@
       "gated": false,
       "license": "creativeml-openrail-m",
       "logo": "https://stability.ai/favicon.ico",
-      "size_of_model_in_mb": 3440,
+      "size_of_model_in_mb": 45069.05603504181,
       "author": {
         "name": "RunwayML",
         "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
@@ -54,7 +54,7 @@
       "gated": false,
       "license": "creativeml-openrail-m",
       "logo": "https://stability.ai/favicon.ico",
-      "size_of_model_in_mb": 3460,
+      "size_of_model_in_mb": 34656.23947143555,
       "author": {
         "name": "Stability AI",
         "url": "https://huggingface.co/stabilityai/stable-diffusion-2-1",
@@ -89,7 +89,7 @@
       "gated": false,
       "license": "openrail++",
       "logo": "https://stability.ai/favicon.ico",
-      "size_of_model_in_mb": 6940,
+      "size_of_model_in_mb": 46841.37820529938,
       "author": {
         "name": "Stability AI",
         "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
@@ -123,7 +123,7 @@
       "gated": true,
       "license": "other",
       "logo": "https://stability.ai/favicon.ico",
-      "size_of_model_in_mb": 4280,
+      "size_of_model_in_mb": 29562.001874923706,
       "author": {
         "name": "Stability AI",
         "url": "https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers",
@@ -157,7 +157,7 @@
       "gated": true,
       "license": "other",
       "logo": "https://stability.ai/favicon.ico",
-      "size_of_model_in_mb": 16800,
+      "size_of_model_in_mb": 68245.66199302673,
       "author": {
         "name": "Stability AI",
         "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
@@ -191,7 +191,7 @@
       "gated": true,
       "license": "other",
       "logo": "https://stability.ai/favicon.ico",
-      "size_of_model_in_mb": 5200,
+      "size_of_model_in_mb": 46591.01168632507,
       "author": {
         "name": "Stability AI",
         "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium",
