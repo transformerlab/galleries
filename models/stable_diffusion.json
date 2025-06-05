@@ -77,8 +77,7 @@
       "added": "2025-06-03",
       "tags": [
         "Text-to-Image",
-        "Diffusion",
-        "High Resolution"
+        "Diffusion"
       ],
       "formats": [
         "Safetensors",
@@ -178,8 +177,7 @@
       "added": "2025-06-03",
       "tags": [
         "Text-to-Image",
-        "Diffusion",
-        "Efficient"
+        "Diffusion"
       ],
       "formats": [
         "Safetensors"

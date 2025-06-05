@@ -3,10 +3,7 @@
   "description": "FLUX is a state-of-the-art text-to-image generation model developed by Black Forest Labs. It offers superior image quality, prompt adherence, and diverse styles with two main variants: FLUX.1 [dev] for development/non-commercial use and FLUX.1 [schnell] for fast generation.",
   "tags": [
     "Text-to-Image",
-    "Diffusion",
-    "Image Generation",
-    "Computer Vision",
-    "High Quality"
-  ],
+    "Diffusion"  
+],
   "models": []
 }

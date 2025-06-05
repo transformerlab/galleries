@@ -9,9 +9,7 @@
       "added": "2025-06-03",
       "tags": [
         "Text-to-Image",
-        "Diffusion",
-        "Transformer",
-        "High Quality"
+        "Diffusion"
       ],
       "formats": [
         "Safetensors",
@@ -45,10 +43,7 @@
       "added": "2025-06-03",
       "tags": [
         "Text-to-Image",
-        "Diffusion",
-        "Transformer",
-        "Fast Generation",
-        "Commercial Use"
+        "Diffusion"
       ],
       "formats": [
         "Safetensors",
