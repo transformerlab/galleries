@@ -1,0 +1,9 @@
+{
+  "name": "Stable Diffusion",
+  "description": "Text-to-image diffusion models capable of generating high-quality images from text prompts, including various versions from SD 1.5 to SD 3.5 and SDXL.",
+  "tags": [
+    "Text-to-Image",
+    "Diffusion"
+  ],
+  "models": []
+}

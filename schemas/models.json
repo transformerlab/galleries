@@ -46,7 +46,11 @@
           "Cohere2ForCausalLM",
           "ExaoneForCausalLM",
           "Mistral3ForConditionalGeneration",
-          "AprielForCausalLM"
+          "AprielForCausalLM",
+          "StableDiffusion3Pipeline",
+          "StableDiffusionXLPipeline",
+          "StableDiffusionPipeline",
+          "FluxPipeline"
         ]
       },
       "huggingface_repo": {
@@ -93,6 +97,27 @@
           }
         },
         "required": ["canonicalUrl", "downloadUrl", "paperUrl"]
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "Coding",
+            "Reasoning",
+            "Chain of Thought", 
+            "Tool Use",
+            "RAG",
+            "Enterprise",
+            "Tiny",
+            "Multilingual",
+            "Multimodal",
+            "Math",
+            "Text-to-Image",
+            "Diffusion",
+            "Vision"
+          ]
+        }
       },
       "model_group": {
         "type": "string"
