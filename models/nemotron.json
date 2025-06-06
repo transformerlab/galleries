@@ -27,7 +27,7 @@
       "downloadUrl": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
       "paperUrl": "?"
     },
-    "model_group": "nvidia"
+    "model_group": "nemotron"
   },
   {
     "uniqueID": "nvidia/Llama-3.1-Nemotron-Nano-8B-v1",
@@ -57,6 +57,6 @@
       "downloadUrl": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Nano-8B-v1",
       "paperUrl": "?"
     },
-    "model_group": "nvidia"
+    "model_group": "nemotron"
   }
 ]
