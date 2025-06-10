@@ -1,6 +1,7 @@
 {
   "name": "phi",
   "description": "Small and efficient. Ideal for edge deployment and low-resource inference.",
+  "image": "https://gallery.transformerlab.net/phi-2.png",
   "tags": [],
   "models": []
 }
