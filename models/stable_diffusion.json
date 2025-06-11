@@ -199,5 +199,39 @@
         "paperUrl": "https://arxiv.org/abs/2403.03206"
       },
       "model_group": "Stable Diffusion"
+    },
+    {
+      "uniqueID": "stabilityai/sdxl-turbo",
+      "name": "SDXL Turbo",
+      "description": "A high-speed text-to-image diffusion model based on SDXL, developed by Stability AI. Designed for rapid image generation with strong quality and prompt adherence.",
+      "parameters": "3.1B",
+      "model_type": "diffusion",
+      "architecture": "StableDiffusionXLPipeline",
+      "added": "2025-06-11",
+      "tags": [
+        "Text-to-Image",
+        "Diffusion"
+      ],
+      "formats": [
+        "Safetensors",
+        "ONNX"
+      ],
+      "huggingface_repo": "stabilityai/sdxl-turbo",
+      "transformers_version": "4.31.0",
+      "gated": false,
+      "license": "sai-nc-community",
+      "logo": "https://stability.ai/favicon.ico",
+      "size_of_model_in_mb": 39700.6370840073,
+      "author": {
+        "name": "Stability AI",
+        "url": "https://huggingface.co/stabilityai/sdxl-turbo",
+        "blurb": "Stability AI is building the foundation to activate humanity's potential through open AI."
+      },
+      "resources": {
+        "canonicalUrl": "https://huggingface.co/stabilityai/sdxl-turbo",
+        "downloadUrl": "https://huggingface.co/stabilityai/sdxl-turbo",
+        "paperUrl": "https://huggingface.co/stabilityai/sdxl-turbo"
+      },
+      "model_group": "Stable Diffusion"
     }
   ]

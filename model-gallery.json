@@ -3401,6 +3401,139 @@
         "model_group": "openllama"
     },
     {
+        "uniqueID": "SG161222/RealVisXL_V5.0",
+        "name": "RealVisXL V5.0",
+        "description": "A high-quality text-to-image diffusion model based on SDXL, designed for photorealistic and artistic image generation. Known for its versatility and strong prompt adherence.",
+        "parameters": "2.5B",
+        "model_type": "diffusion",
+        "architecture": "StableDiffusionXLPipeline",
+        "added": "2025-06-11",
+        "tags": [
+            "Text-to-Image",
+            "Diffusion"
+        ],
+        "formats": [
+            "Safetensors",
+            "PyTorch"
+        ],
+        "huggingface_repo": "SG161222/RealVisXL_V5.0",
+        "transformers_version": "4.31.0",
+        "gated": false,
+        "license": "other",
+        "logo": "",
+        "size_of_model_in_mb": 39699.124364852905,
+        "author": {
+            "name": "SG161222",
+            "url": "https://huggingface.co/SG161222/RealVisXL_V5.0",
+            "blurb": "SG161222 is a prolific creator of high-quality Stable Diffusion models for the community."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/SG161222/RealVisXL_V5.0",
+            "downloadUrl": "https://huggingface.co/SG161222/RealVisXL_V5.0",
+            "paperUrl": "https://huggingface.co/SG161222/RealVisXL_V5.0"
+        },
+        "model_group": "Other Diffusion Models"
+    },
+    {
+        "uniqueID": "John6666/reality-pony-xl-reality-pxl-sdxl",
+        "name": "Reality Pony XL (Reality PXL SDXL)",
+        "description": "A photorealistic and game-inspired text-to-image diffusion model based on SDXL, designed for realistic and creative image generation. Features strong prompt adherence and versatility for various styles, including game and pony themes.",
+        "parameters": "Unknown",
+        "model_type": "diffusion",
+        "architecture": "StableDiffusionXLPipeline",
+        "added": "2025-06-11",
+        "tags": [
+            "Text-to-Image",
+            "Diffusion"
+        ],
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "John6666/reality-pony-xl-reality-pxl-sdxl",
+        "transformers_version": "4.31.0",
+        "gated": false,
+        "license": "faipl-1.0-sd",
+        "logo": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+        "size_of_model_in_mb": 6616.60403347015,
+        "author": {
+            "name": "John6666",
+            "url": "https://huggingface.co/John6666/reality-pony-xl-reality-pxl-sdxl",
+            "blurb": "John6666 is a creator of unique and creative Stable Diffusion models."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/John6666/reality-pony-xl-reality-pxl-sdxl",
+            "downloadUrl": "https://huggingface.co/John6666/reality-pony-xl-reality-pxl-sdxl",
+            "paperUrl": "https://huggingface.co/John6666/reality-pony-xl-reality-pxl-sdxl"
+        },
+        "model_group": "Other Diffusion Models"
+    },
+    {
+        "uniqueID": "RunDiffusion/Juggernaut-XL-v9",
+        "name": "Juggernaut XL v9",
+        "description": "A versatile and cinematic text-to-image diffusion model based on SDXL, excelling at art, people, photography, landscapes, interiors, food, cars, wildlife, and architecture. Known for its high quality and creative output.",
+        "parameters": "Unknown",
+        "model_type": "diffusion",
+        "architecture": "StableDiffusionXLPipeline",
+        "added": "2025-06-11",
+        "tags": [
+            "Text-to-Image",
+            "Diffusion"
+        ],
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "RunDiffusion/Juggernaut-XL-v9",
+        "transformers_version": "4.31.0",
+        "gated": false,
+        "license": "creativeml-openrail-m",
+        "logo": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+        "size_of_model_in_mb": 13392.792019844055,
+        "author": {
+            "name": "RunDiffusion",
+            "url": "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9",
+            "blurb": "RunDiffusion is a creator of high-quality and creative Stable Diffusion models."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9",
+            "downloadUrl": "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9",
+            "paperUrl": "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9"
+        },
+        "model_group": "Other Diffusion Models"
+    },
+    {
+        "uniqueID": "cagliostrolab/animagine-xl-4.0",
+        "name": "Animagine XL 4.0",
+        "description": "A high-quality text-to-image diffusion model based on SDXL, developed by Cagliostro Research Lab. Excels at generating creative, artistic, and photorealistic images with strong prompt adherence.",
+        "parameters": "Unknown",
+        "model_type": "diffusion",
+        "architecture": "StableDiffusionXLPipeline",
+        "added": "2025-06-11",
+        "tags": [
+            "Text-to-Image",
+            "Diffusion"
+        ],
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "cagliostrolab/animagine-xl-4.0",
+        "transformers_version": "4.31.0",
+        "gated": false,
+        "license": "openrail++",
+        "logo": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+        "size_of_model_in_mb": 19850.5365724564,
+        "author": {
+            "name": "Cagliostro Research Lab",
+            "url": "https://huggingface.co/cagliostrolab/animagine-xl-4.0",
+            "blurb": "Cagliostro Research Lab develops advanced diffusion models for creative and professional use."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/cagliostrolab/animagine-xl-4.0",
+            "downloadUrl": "https://huggingface.co/cagliostrolab/animagine-xl-4.0",
+            "paperUrl": "https://huggingface.co/cagliostrolab/animagine-xl-4.0"
+        },
+        "model_group": "Other Diffusion Models"
+    },
+    {
         "uniqueID": "microsoft/Phi-3-mini-128k-instruct",
         "name": "Phi 3 Mini 128K Instruct",
         "description": "The Phi-3-Mini-128K-Instruct is a 3.8B parameters, lightweight, state-of-the-art open model trained with the Phi-3 datasets that includes both synthetic data and the filtered publicly available websites data with a focus on high-quality and reasoning dense properties. The model belongs to the Phi-3 family with the Mini version in two variants 4K and 128K which is the context length (in tokens) that it can support. The model has underwent a post-training process that incorporates both supervised fine-tuning and direct preference optimization for the instruction following and safety measures. When assessed against benchmarks testing common sense, language understanding, math, code, long context and logical reasoning, Phi-3 Mini-4K-Instruct showcased a robust and state-of-the-art performance among models with less than 13 billion parameters.",
@@ -5029,6 +5162,40 @@
             "canonicalUrl": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium",
             "downloadUrl": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium",
             "paperUrl": "https://arxiv.org/abs/2403.03206"
+        },
+        "model_group": "Stable Diffusion"
+    },
+    {
+        "uniqueID": "stabilityai/sdxl-turbo",
+        "name": "SDXL Turbo",
+        "description": "A high-speed text-to-image diffusion model based on SDXL, developed by Stability AI. Designed for rapid image generation with strong quality and prompt adherence.",
+        "parameters": "3.1B",
+        "model_type": "diffusion",
+        "architecture": "StableDiffusionXLPipeline",
+        "added": "2025-06-11",
+        "tags": [
+            "Text-to-Image",
+            "Diffusion"
+        ],
+        "formats": [
+            "Safetensors",
+            "ONNX"
+        ],
+        "huggingface_repo": "stabilityai/sdxl-turbo",
+        "transformers_version": "4.31.0",
+        "gated": false,
+        "license": "sai-nc-community",
+        "logo": "https://stability.ai/favicon.ico",
+        "size_of_model_in_mb": 39700.6370840073,
+        "author": {
+            "name": "Stability AI",
+            "url": "https://huggingface.co/stabilityai/sdxl-turbo",
+            "blurb": "Stability AI is building the foundation to activate humanity's potential through open AI."
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/stabilityai/sdxl-turbo",
+            "downloadUrl": "https://huggingface.co/stabilityai/sdxl-turbo",
+            "paperUrl": "https://huggingface.co/stabilityai/sdxl-turbo"
         },
         "model_group": "Stable Diffusion"
     },
