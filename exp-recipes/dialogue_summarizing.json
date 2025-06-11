@@ -1,5 +1,5 @@
 {
-  "id": 9,
+  "id": "dialogue_summarizing",
   "title": "Dialogue Summarizing",
   "description": "Fine-tune a TinyLlama model to create concise, accurate summaries of conversations and dialogues. Perfect for chat logs, meeting transcripts, and customer service interactions.",
   "notes": "# Dialogue Summarization with TinyLlama\n\n## Overview\nThis recipe demonstrates how to fine-tune a TinyLlama model specifically for dialogue summarization using the SAMSum dataset.\n\n## Important Considerations\n- TinyLlama is optimized for efficiency while maintaining good performance\n- Uses LoRA for memory-efficient fine-tuning\n- Dataset contains diverse conversation styles and formats\n\n## Training Tips\n- Monitor the quality of generated summaries\n- Balance between brevity and information retention\n- Pay attention to maintaining conversation context\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Generate concise summaries of conversations\n- Maintain key points and context\n- Handle various dialogue formats and styles",

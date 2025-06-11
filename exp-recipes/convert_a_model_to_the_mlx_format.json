@@ -1,5 +1,5 @@
 {
-  "id": 4,
+  "id": "convert_to_mlx",
   "title": "Convert a Model to the MLX Format",
   "description": "Transform your model into the MLX format for compatibility with various deployment environments.",
   "notes": "# MLX Model Conversion\n\n## Overview\nThis recipe demonstrates how to convert a model to the MLX format for optimized performance on Apple Silicon.\n\n## Important Considerations\n- MLX format is optimized for Apple Silicon\n- Conversion preserves model architecture and weights\n- Enables efficient inference on Mac devices\n\n## Conversion Tips\n- Verify model compatibility\n- Check memory requirements\n- Test inference after conversion\n\n## Expected Outcomes\nAfter conversion, you will have:\n- MLX-compatible model\n- Optimized performance on Apple Silicon\n- Reduced memory footprint",

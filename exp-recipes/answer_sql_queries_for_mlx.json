@@ -1,5 +1,5 @@
 {
-  "id": 13,
+  "id": "answer_sql_queries_mlx",
   "title": "Answer SQL Queries (for MLX)",
   "description": "Fine-tune a Llama 3.2 1B model to understand and generate SQL queries, optimized for Apple Silicon using MLX framework.",
   "notes": "# SQL Query Assistant with MLX\n\n## Overview\nThis recipe adapts a Llama 3.2 1B model for SQL query generation and explanation, optimized for MLX.\n\n## Important Considerations\n- MLX optimization for Apple Silicon\n- Uses WikiSQL dataset for diverse query types\n- Focus on practical SQL scenarios\n\n## Training Tips\n- Monitor query correctness\n- Test across different SQL complexities\n- Validate query execution results\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Generate correct SQL queries\n- Explain query logic\n- Handle various database scenarios",

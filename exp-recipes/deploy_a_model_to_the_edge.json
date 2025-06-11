@@ -1,5 +1,5 @@
 {
-  "id": 6,
+  "id": "deploy_to_edge",
   "title": "Deploy a Model to the Edge",
   "description": "Seamlessly deploy your model to edge devices using deployment tools. Ensure low-latency and efficient performance.",
   "notes": "# Edge Deployment\n\n## Overview\nThis recipe demonstrates how to deploy a model to edge devices for efficient inference.\n\n## Important Considerations\n- Edge devices have limited resources\n- Optimization for target hardware\n- Balance between performance and size\n\n## Deployment Tips\n- Test on target hardware\n- Monitor resource usage\n- Optimize for specific use case\n\n## Expected Outcomes\nAfter deployment, you will have:\n- Edge-optimized model\n- Low-latency inference\n- Efficient resource usage",

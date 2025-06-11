@@ -1,5 +1,5 @@
 {
-  "id": 16,
+  "id": "conversational_intelligence",
   "title": "Train a Model to be Conversationally Intelligent",
   "description": "Enhance a SmolLM model with advanced conversational abilities and structured response formatting using XML tags, ideal for creating a sophisticated dialogue agent.",
   "notes": "# Conversational Intelligence Training\n\n## Overview\nThis recipe develops a SmolLM model into a sophisticated conversational agent using structured dialogue formats.\n\n## Important Considerations\n- XML-based response structuring\n- Focus on natural dialogue flow\n- Balanced conversation handling\n\n## Training Tips\n- Monitor response coherence\n- Validate XML format consistency\n- Test conversation flow\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Maintain structured conversations\n- Generate well-formatted responses\n- Handle diverse dialogue scenarios",

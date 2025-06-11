@@ -1,5 +1,5 @@
 {
-  "id": 12,
+  "id": "ml_qa",
   "title": "Machine Learning Q&A",
   "description": "Train a Qwen 2.5 model to provide expert-level answers to machine learning questions, suitable for both beginners and advanced practitioners.",
   "notes": "# Machine Learning Q&A with Qwen 2.5\n\n## Overview\nThis recipe fine-tunes a Qwen 2.5 model to become a specialized machine learning assistant.\n\n## Important Considerations\n- Comprehensive ML knowledge coverage\n- Balanced between theoretical and practical knowledge\n- Suitable for various ML expertise levels\n\n## Training Tips\n- Focus on explanation clarity\n- Balance technical depth with accessibility\n- Validate answers across ML domains\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Provide detailed ML explanations\n- Answer implementation questions\n- Guide through ML concepts progressively",

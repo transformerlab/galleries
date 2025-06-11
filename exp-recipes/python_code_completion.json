@@ -1,5 +1,5 @@
 {
-  "id": 10,
+  "id": "python_code_completion",
   "title": "Python Code Completion",
   "description": "Train a SmolLM Base model to provide intelligent Python code completions, suggestions, and assistance. Ideal for developers looking for an efficient coding assistant.",
   "notes": "# Python Code Completion Training\n\n## Overview\nThis recipe fine-tunes a SmolLM Base model to become a specialized Python code completion assistant.\n\n## Important Considerations\n- SmolLM is designed for efficient inference\n- Dataset contains diverse Python coding examples\n- Model learns common Python patterns and best practices\n\n## Training Tips\n- Focus on code context understanding\n- Balance between common and specialized completions\n- Monitor completion accuracy and relevance\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Provide context-aware code completions\n- Suggest appropriate Python syntax\n- Complete common programming patterns",

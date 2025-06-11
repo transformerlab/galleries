@@ -1,5 +1,5 @@
 {
-  "id": 5,
+  "id": "quantize_model",
   "title": "Quantize a Model",
   "description": "Optimize your model for faster inference and reduced size using quantization tools.",
   "notes": "# Model Quantization\n\n## Overview\nThis recipe demonstrates how to quantize a model to reduce its size and improve inference speed while maintaining performance.\n\n## Important Considerations\n- Quantization reduces model precision\n- Trade-off between size/speed and accuracy\n- Different quantization methods available\n\n## Quantization Tips\n- Test different quantization levels\n- Validate performance after quantization\n- Consider hardware compatibility\n\n## Expected Outcomes\nAfter quantization, you will have:\n- Reduced model size\n- Faster inference speed\n- Minimal accuracy loss",

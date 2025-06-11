@@ -1,5 +1,5 @@
 {
-  "id": 3,
+  "id": "evaluate_model",
   "title": "Evaluate a Model",
   "description": "Assess the performance of your model using Eleuther Labs AI Evaluation Harness. Gain insights into accuracy and reliability.",
   "notes": "# Model Evaluation\n\n## Overview\nThis recipe demonstrates how to evaluate a model's performance using the Eleuther AI Evaluation Harness.\n\n## Important Considerations\n- Uses standardized benchmarks for comparison\n- Evaluates multiple aspects of model performance\n- Provides detailed metrics and analysis\n\n## Evaluation Tips\n- Choose appropriate evaluation tasks\n- Consider using multiple benchmarks\n- Compare results with baseline models\n\n## Expected Outcomes\nThe evaluation will provide:\n- Detailed performance metrics\n- Task-specific scores\n- Comparative analysis with other models",

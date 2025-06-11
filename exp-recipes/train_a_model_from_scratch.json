@@ -1,5 +1,5 @@
 {
-  "id": 1,
+  "id": "train_from_scratch",
   "title": "Train a Model From Scratch",
   "description": "Build a new machine learning model from the ground up using MLX, optimized for Apple Silicon. Ideal for custom use cases and datasets.",
   "notes": "# Training a Model From Scratch\n\n## Overview\nThis recipe demonstrates how to train a new machine learning model from scratch using MLX framework, optimized for Apple Silicon.\n\n## Important Considerations\n- Optimized for Apple Silicon (M1/M2/M3)\n- Uses MLX for efficient training\n- Dataset is formatted for instruction following\n\n## Training Tips\n- Monitor loss curves carefully\n- Adjust batch size based on available memory\n- Use appropriate learning rate schedule\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Follow basic instructions\n- Generate coherent responses\n- Demonstrate basic language understanding",

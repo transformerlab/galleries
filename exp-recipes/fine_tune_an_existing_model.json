@@ -1,5 +1,5 @@
 {
-  "id": 2,
+  "id": "fine_tune_existing_model",
   "title": "Fine-tune an Existing Model",
   "description": "Adapt a pre-trained model to your specific needs using LoRA. Save time and resources by leveraging existing knowledge.",
   "notes": "# Fine-tuning with LoRA\n\n## Overview\nThis recipe demonstrates how to fine-tune a pre-trained model using Low-Rank Adaptation (LoRA) for efficient training.\n\n## Important Considerations\n- LoRA reduces memory requirements compared to full fine-tuning\n- Suitable for domain adaptation and task-specific training\n- Preserves base model knowledge while learning new tasks\n\n## Training Tips\n- Choose appropriate LoRA rank (typically 8-64)\n- Monitor training loss and validation metrics\n- Adjust learning rate and batch size based on task\n\n## Expected Outcomes\nAfter training, the model should:\n- Show improved performance on target domain\n- Maintain general language capabilities\n- Have smaller parameter footprint than full fine-tuning",
