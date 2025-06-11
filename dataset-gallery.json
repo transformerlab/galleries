@@ -117,5 +117,23 @@
         "description": "Touch Rugby Rules Dataset",
         "size": 369,
         "license": "CC BY-NC 4.0"
+    },
+    {
+        "id": 14,
+        "name": "Simpsons Blip Captions",
+        "type": "Text-to-Image",
+        "huggingfacerepo": "Norod78/simpsons-blip-captions",
+        "description": "A dataset of 755 images from the Simpsons TV show with captions.",
+        "size": 755,
+        "license": "CC BY-NC 4.0"
+    },
+    {
+        "id": 15,
+        "name": "Text to Image Dataset Sample",
+        "type": "Text-to-Image",
+        "huggingfacerepo": "datasets-examples/doc-image-6",
+        "description": "This dataset contains 4 jpeg files in the train/images/ subdirectory, along with a train/metadata.csv file that provides the data for other columns. The metadata file contains relative paths to the images.",
+        "size": 4,
+        "license": "GPL"
     }
 ]
