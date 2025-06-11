@@ -1,0 +1,63 @@
+{
+  "id": 7,
+  "title": "Run a Model on the Edge",
+  "description": "Execute your model on edge devices using runtime environment. Achieve real-time performance and low power consumption.",
+  "notes": "# Edge Inference\n\n## Overview\nThis recipe demonstrates how to run a model efficiently on edge devices.\n\n## Important Considerations\n- Resource constraints on edge devices\n- Real-time performance requirements\n- Power consumption optimization\n\n## Runtime Tips\n- Monitor inference latency\n- Optimize batch size for throughput\n- Balance CPU and GPU usage\n\n## Expected Outcomes\nAfter setup, you will have:\n- Efficient model inference\n- Real-time performance\n- Optimized resource usage",
+  "requiredMachineArchitecture": [
+    "cuda"
+  ],
+  "dependencies": [
+    {
+      "type": "model",
+      "name": "Qwen/Qwen2.5-1.5B-Instruct"
+    },
+    {
+      "type": "plugin",
+      "name": "fastchat_server"
+    },
+    {
+      "type": "plugin",
+      "name": "eleuther-ai-lm-evaluation-harness-mlx"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "setup_edge_inference",
+      "task_type": "LOADER",
+      "plugin": "fastchat_server",
+      "config_json": "{\"template_name\":\"EdgeInference\",\"plugin_name\":\"fastchat_server\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"load_compressed\":\"4-bit\",\"model_dtype\":\"float16\"}"
+    },
+    {
+      "name": "evaluate_inference",
+      "task_type": "EVAL",
+      "plugin": "eleuther-ai-lm-evaluation-harness-mlx",
+      "config_json": "{\"template_name\":\"EvalInference\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"tasks\":\"mmlu\",\"limit\":\"0.5\",\"run_name\":\"EvalInference\"}"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "Edge_Inference",
+      "config": {
+        "nodes": [
+          {
+            "id": "node_setup",
+            "type": "LOADER",
+            "task": "setup_edge_inference",
+            "name": "Edge Setup Task",
+            "out": [
+              "node_eval"
+            ]
+          },
+          {
+            "id": "node_eval",
+            "type": "EVAL",
+            "task": "evaluate_inference",
+            "name": "Evaluation Task",
+            "out": []
+          }
+        ]
+      }
+    }
+  ],
+  "cardImage": "https://images.unsplash.com/photo-1667984550708-a6beba23cb4c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}

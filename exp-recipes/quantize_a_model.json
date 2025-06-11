@@ -1,0 +1,64 @@
+{
+  "id": 5,
+  "title": "Quantize a Model",
+  "description": "Optimize your model for faster inference and reduced size using quantization tools.",
+  "notes": "# Model Quantization\n\n## Overview\nThis recipe demonstrates how to quantize a model to reduce its size and improve inference speed while maintaining performance.\n\n## Important Considerations\n- Quantization reduces model precision\n- Trade-off between size/speed and accuracy\n- Different quantization methods available\n\n## Quantization Tips\n- Test different quantization levels\n- Validate performance after quantization\n- Consider hardware compatibility\n\n## Expected Outcomes\nAfter quantization, you will have:\n- Reduced model size\n- Faster inference speed\n- Minimal accuracy loss",
+  "requiredMachineArchitecture": [
+    "mlx",
+    "cuda"
+  ],
+  "dependencies": [
+    {
+      "type": "model",
+      "name": "Qwen/Qwen2.5-1.5B-Instruct"
+    },
+    {
+      "type": "plugin",
+      "name": "llama_cpp_server"
+    },
+    {
+      "type": "plugin",
+      "name": "eleuther-ai-lm-evaluation-harness-mlx"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "quantize_model",
+      "task_type": "EXPORT",
+      "plugin": "llama_cpp_server",
+      "config_json": "{\"template_name\":\"Quantization\",\"plugin_name\":\"llama_cpp_server\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"quantization_type\":\"q4_k_m\",\"n_gpu_layers\":\"auto\"}"
+    },
+    {
+      "name": "evaluate_quantized",
+      "task_type": "EVAL",
+      "plugin": "eleuther-ai-lm-evaluation-harness-mlx",
+      "config_json": "{\"template_name\":\"EvalQuantized\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"tasks\":\"mmlu\",\"limit\":\"0.5\",\"run_name\":\"EvalQuantized\"}"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "Quantize_and_Evaluate",
+      "config": {
+        "nodes": [
+          {
+            "id": "node_quantize",
+            "type": "EXPORT",
+            "task": "quantize_model",
+            "name": "Quantization Task",
+            "out": [
+              "node_eval"
+            ]
+          },
+          {
+            "id": "node_eval",
+            "type": "EVAL",
+            "task": "evaluate_quantized",
+            "name": "Evaluation Task",
+            "out": []
+          }
+        ]
+      }
+    }
+  ],
+  "cardImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}

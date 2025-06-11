@@ -1,0 +1,35 @@
+{
+  "id": 15,
+  "title": "Train a Model to Speak like a Pirate",
+  "description": "Transform a SmolLM model into a charismatic pirate conversationalist, perfect for creating engaging and entertaining interactions with a nautical twist.",
+  "notes": "# Pirate Speech Transformation\n\n## Overview\nThis recipe transforms a SmolLM model into an engaging pirate-speaking assistant using specialized dialogue data.\n\n## Important Considerations\n- Maintains coherent pirate-style speech\n- Balances authenticity with understandability\n- Preserves helpful responses in pirate style\n\n## Training Tips\n- Monitor consistency of pirate speech\n- Balance entertainment with usefulness\n- Maintain appropriate language level\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Respond in consistent pirate dialect\n- Maintain helpful information delivery\n- Create engaging pirate-themed interactions",
+  "requiredMachineArchitecture": [
+    "cuda",
+    "amd"
+  ],
+  "dependencies": [
+    {
+      "type": "model",
+      "name": "HuggingFaceTB/SmolLM-135M-Instruct"
+    },
+    {
+      "type": "dataset",
+      "name": "Peyton3995/dolly-15k-mistral-pirate"
+    },
+    {
+      "type": "plugin",
+      "name": "llama_trainer"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "PirateSpeech",
+      "task_type": "TRAIN",
+      "type": "LoRA",
+      "plugin": "llama_trainer",
+      "config_json": "{\"template_name\":\"PirateSpeech\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"HuggingFaceTB/SmolLM-135M-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"<instruction>\\n{{instruction}}\\n</instruction>\\n<response>\\n{{response}}\\n</response>\",\"dataset_name\":\"Peyton3995/dolly-15k-mistral-pirate\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"4\",\"learning_rate_schedule\":\"cosine\",\"learning_rate\":\"0.01\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"64\",\"lora_alpha\":\"128\",\"lora_dropout\":\"0.05\",\"adaptor_name\":\"Pirate_Speech\",\"_tlab_recipe_datasets\":{\"name\":\"Peyton3995/dolly-15k-mistral-pirate\",\"path\":\"Peyton3995/dolly-15k-mistral-pirate\"},\"_tlab_recipe_models\":{\"name\":\"HuggingFaceTB/SmolLM-135M-Instruct\",\"path\":\"HuggingFaceTB/SmolLM-135M-Instruct\"}}"
+    }
+  ],
+  "workflows": [],
+  "cardImage": "https://images.unsplash.com/photo-1652447275071-4bf852aebdc5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}

@@ -1,0 +1,69 @@
+{
+  "id": 2,
+  "title": "Fine-tune an Existing Model",
+  "description": "Adapt a pre-trained model to your specific needs using LoRA. Save time and resources by leveraging existing knowledge.",
+  "notes": "# Fine-tuning with LoRA\n\n## Overview\nThis recipe demonstrates how to fine-tune a pre-trained model using Low-Rank Adaptation (LoRA) for efficient training.\n\n## Important Considerations\n- LoRA reduces memory requirements compared to full fine-tuning\n- Suitable for domain adaptation and task-specific training\n- Preserves base model knowledge while learning new tasks\n\n## Training Tips\n- Choose appropriate LoRA rank (typically 8-64)\n- Monitor training loss and validation metrics\n- Adjust learning rate and batch size based on task\n\n## Expected Outcomes\nAfter training, the model should:\n- Show improved performance on target domain\n- Maintain general language capabilities\n- Have smaller parameter footprint than full fine-tuning",
+  "requiredMachineArchitecture": [
+    "cuda"
+  ],
+  "dependencies": [
+    {
+      "type": "model",
+      "name": "Qwen/Qwen2.5-1.5B-Instruct"
+    },
+    {
+      "type": "plugin",
+      "name": "llama_trainer"
+    },
+    {
+      "type": "dataset",
+      "name": "knkarthick/samsum"
+    },
+    {
+      "type": "plugin",
+      "name": "eleuther-ai-lm-evaluation-harness-mlx"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "finetune_model",
+      "task_type": "TRAIN",
+      "type": "LoRA",
+      "plugin": "llama_trainer",
+      "formatting_template": "Instruction: Summarize the Following\nPrompt: {{dialogue}}\nGeneration: {{summary}}",
+      "config_json": "{\"template_name\":\"DialogueSummarizing\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"formatting_template\":\"Instruction: Summarize the Following\\nPrompt: {{dialogue}}\\nGeneration: {{summary}}\",\"dataset_name\":\"knkarthick/samsum\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"4\",\"learning_rate\":\"0.00005\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"32\",\"lora_alpha\":\"64\",\"lora_dropout\":\"0.05\",\"adaptor_name\":\"Summarizer\"}"
+    },
+    {
+      "name": "evaluate_finetuned",
+      "task_type": "EVAL",
+      "plugin": "eleuther-ai-lm-evaluation-harness-mlx",
+      "config_json": "{\"template_name\":\"EvalFineTuned\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"tasks\":\"mmlu\",\"limit\":\"0.5\",\"run_name\":\"EvalFineTuned\"}"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "Finetune_and_Evaluate",
+      "config": {
+        "nodes": [
+          {
+            "id": "node_finetune",
+            "type": "TRAIN",
+            "task": "finetune_model",
+            "name": "Fine-tuning Task",
+            "out": [
+              "node_eval"
+            ]
+          },
+          {
+            "id": "node_eval",
+            "type": "EVAL",
+            "task": "evaluate_finetuned",
+            "name": "Evaluation Task",
+            "out": []
+          }
+        ]
+      }
+    }
+  ],
+  "cardImage": "https://images.unsplash.com/photo-1561375996-8bbec3f2a481?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}

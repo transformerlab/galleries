@@ -1,0 +1,34 @@
+{
+  "id": 13,
+  "title": "Answer SQL Queries (for MLX)",
+  "description": "Fine-tune a Llama 3.2 1B model to understand and generate SQL queries, optimized for Apple Silicon using MLX framework.",
+  "notes": "# SQL Query Assistant with MLX\n\n## Overview\nThis recipe adapts a Llama 3.2 1B model for SQL query generation and explanation, optimized for MLX.\n\n## Important Considerations\n- MLX optimization for Apple Silicon\n- Uses WikiSQL dataset for diverse query types\n- Focus on practical SQL scenarios\n\n## Training Tips\n- Monitor query correctness\n- Test across different SQL complexities\n- Validate query execution results\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Generate correct SQL queries\n- Explain query logic\n- Handle various database scenarios",
+  "requiredMachineArchitecture": [
+    "mlx"
+  ],
+  "dependencies": [
+    {
+      "type": "model",
+      "name": "meta-llama/Llama-3.2-1B"
+    },
+    {
+      "type": "dataset",
+      "name": "mlx-community/wikisql"
+    },
+    {
+      "type": "plugin",
+      "name": "mlx_lora_trainer"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "WikiSQL-MLX",
+      "task_type": "TRAIN",
+      "type": "LoRA",
+      "plugin": "mlx_lora_trainer",
+      "config_json": "{\"template_name\":\"WikiSQL-MLX\",\"plugin_name\":\"mlx_lora_trainer\",\"model_name\":\"meta-llama/Llama-3.2-1B\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"Given the following description of an SQL table and its columns, provide the corresponding SQL to answer the question.\\n{{text}}\",\"dataset_name\":\"mlx-community/wikisql\",\"lora_layers\":\"8\",\"batch_size\":\"4\",\"learning_rate\":\"0.0001\",\"lora_rank\":\"8\",\"lora_alpha\":\"160\",\"iters\":\"200\",\"steps_per_report\":\"10\",\"steps_per_eval\":\"50\",\"save_every\":\"50\",\"adaptor_name\":\"ml-qa\",\"_tlab_recipe_datasets\":{\"name\":\"mlx-community/wikisql\",\"path\":\"mlx-community/wikisql\"},\"_tlab_recipe_models\":{\"name\":\"meta-llama/Llama-3.2-1B\",\"path\":\"meta-llama/Llama-3.2-1B\"}}"
+    }
+  ],
+  "workflows": [],
+  "cardImage": "https://images.unsplash.com/photo-1683322499436-f4383dd59f5a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}
