@@ -1,6 +1,7 @@
 {
   "name": "vicuna",
   "description": "Fine-tuned and conversational. Derived from the Alpaca and LLaMA line.",
+  "image": "https://gallery.transformerlab.net/vicuna.png",
   "tags": [],
   "models": []
 }

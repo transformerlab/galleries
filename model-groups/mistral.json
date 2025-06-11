@@ -1,6 +1,7 @@
 {
   "name": "mistral",
   "description": "Fast, open-weight transformer optimized for low-latency inference.",
+  "image": "https://gallery.transformerlab.net/mistralai.png",
   "tags": [],
   "models": []
 }
