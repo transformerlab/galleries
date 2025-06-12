@@ -1,0 +1,44 @@
+{
+  "id": "convert_to_mlx",
+  "title": "Convert a Model to the MLX Format",
+  "description": "Transform your model into the MLX format for compatibility with various deployment environments.",
+  "notes": "# MLX Model Conversion\n\n## Overview\nThis recipe demonstrates how to convert a model to the MLX format for optimized performance on Apple Silicon.\n\n## Important Considerations\n- MLX format is optimized for Apple Silicon\n- Conversion preserves model architecture and weights\n- Enables efficient inference on Mac devices\n\n## Conversion Tips\n- Verify model compatibility\n- Check memory requirements\n- Test inference after conversion\n\n## Expected Outcomes\nAfter conversion, you will have:\n- MLX-compatible model\n- Optimized performance on Apple Silicon\n- Reduced memory footprint",
+  "requiredMachineArchitecture": [
+    "mlx"
+  ],
+  "dependencies": [
+    {
+      "type": "model",
+      "name": "Qwen/Qwen2.5-1.5B-Instruct"
+    },
+    {
+      "type": "plugin",
+      "name": "airllm_mlx_server"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "convert_to_mlx",
+      "task_type": "EXPORT",
+      "plugin": "airllm_mlx_server",
+      "config_json": "{\"template_name\":\"MLXConversion\",\"plugin_name\":\"airllm_mlx_server\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"output_format\":\"mlx\"}"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "MLX_Conversion",
+      "config": {
+        "nodes": [
+          {
+            "id": "node_convert",
+            "type": "EXPORT",
+            "task": "convert_to_mlx",
+            "name": "MLX Conversion Task",
+            "out": []
+          }
+        ]
+      }
+    }
+  ],
+  "cardImage": "https://images.unsplash.com/photo-1563203369-26f2e4a5ccf7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "conversational_intelligence",
+  "title": "Train a Model to be Conversationally Intelligent",
+  "description": "Enhance a SmolLM model with advanced conversational abilities and structured response formatting using XML tags, ideal for creating a sophisticated dialogue agent.",
+  "notes": "# Conversational Intelligence Training\n\n## Overview\nThis recipe develops a SmolLM model into a sophisticated conversational agent using structured dialogue formats.\n\n## Important Considerations\n- XML-based response structuring\n- Focus on natural dialogue flow\n- Balanced conversation handling\n\n## Training Tips\n- Monitor response coherence\n- Validate XML format consistency\n- Test conversation flow\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Maintain structured conversations\n- Generate well-formatted responses\n- Handle diverse dialogue scenarios",
+  "requiredMachineArchitecture": [
+    "cuda",
+    "amd"
+  ],
+  "dependencies": [
+    {
+      "type": "model",
+      "name": "HuggingFaceTB/SmolLM2-135M"
+    },
+    {
+      "type": "dataset",
+      "name": "nickrosh/Evol-Instruct-Code-80k-v1"
+    },
+    {
+      "type": "plugin",
+      "name": "llama_trainer"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "InstructTuning",
+      "task_type": "TRAIN",
+      "type": "LoRA",
+      "plugin": "llama_trainer",
+      "config_json": "{\"template_name\":\"InstructTuning\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"HuggingFaceTB/SmolLM2-135M\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"<User>\\n{{instruction}}\\n</User>\\n<Assistant>\\n{{output}}\\n</Assistant>\\n\",\"dataset_name\":\"nickrosh/Evol-Instruct-Code-80k-v1\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"4\",\"learning_rate\":\"0.00003\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"4\",\"lora_alpha\":\"16\",\"lora_dropout\":\"0.05\",\"adaptor_name\":\"instruct\",\"_tlab_recipe_datasets\":{\"name\":\"nickrosh/Evol-Instruct-Code-80k-v1\",\"path\":\"nickrosh/Evol-Instruct-Code-80k-v1\"},\"_tlab_recipe_models\":{\"name\":\"HuggingFaceTB/SmolLM2-135M\",\"path\":\"HuggingFaceTB/SmolLM2-135M\"}}"
+    }
+  ],
+  "workflows": [],
+  "cardImage": "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}
