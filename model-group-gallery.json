@@ -5569,6 +5569,7 @@
         "tags": [
             "Reasoning"
         ],
+        "image": "https://gallery.transformerlab.net/reflection.png",
         "models": [
             {
                 "uniqueID": "mattshumer/Reflection-Llama-3.1-70B",
