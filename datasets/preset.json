@@ -8,8 +8,17 @@
     "size": "24200000",
     "license": "GPL"
   },
-  {
+    {
     "id": 2,
+    "name": "Simpsons Blip Captions",
+    "type": "Text-to-Image",
+    "huggingfacerepo": "Norod78/simpsons-blip-captions",
+    "description": "A dataset of 755 images from the Simpsons TV show with captions.",
+    "size": 755,
+    "license": "CC BY-NC 4.0"
+  },
+  {
+    "id": 3,
     "name": "Databricks Dolly 15k",
     "type": "Conversational",
     "huggingfacerepo": "databricks/databricks-dolly-15k",
@@ -18,7 +27,7 @@
     "license": "GPL"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "SAMSum Corpus",
     "type": "Summarization",
     "huggingfacerepo": "knkarthick/samsum",
@@ -27,7 +36,7 @@
     "license": "CC BY-NC 4.0"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "PKU-SafeRLHF",
     "type": "Text-Generation",
     "huggingfacerepo": "PKU-Alignment/PKU-SafeRLHF",
@@ -36,7 +45,7 @@
     "license": "CC BY-NC 4.0"
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Anthropic RLHF",
     "type": "Text-Generation",
     "huggingfacerepo": "Anthropic/hh-rlhf",
@@ -45,7 +54,7 @@
     "license": "GPL"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Nectar",
     "type": "Conversational",
     "huggingfacerepo": "berkeley-nest/Nectar",
@@ -54,7 +63,7 @@
     "license": "APACHE-2.0"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "OpenHermes",
     "type": "Text-Generation",
     "huggingfacerepo": "teknium/openhermes",
@@ -63,7 +72,7 @@
     "license": "GPL"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "MetaMathQA",
     "type": "Conversational",
     "huggingfacerepo": "meta-math/MetaMathQA",
@@ -72,7 +81,7 @@
     "license": "MIT"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "OpenWebText 10k",
     "type": "Text-Generation",
     "huggingfacerepo": "stas/openwebtext-10k",
@@ -81,7 +90,7 @@
     "license": "GPL"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "INTELLECT-2 RL Dataset",
     "type": "Conversational",
     "huggingfacerepo": "PrimeIntellect/INTELLECT-2-RL-Dataset",
@@ -90,7 +99,7 @@
     "license": "GPL"
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Agentica DeepCoder Dataset",
     "type": "Conversational",
     "huggingfacerepo": "agentica-org/DeepCoder-Preview-Dataset",
@@ -100,7 +109,7 @@
     "dataset_config": "taco"
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Wikipedia (20220301.en)",
     "type": "Text-Generation",
     "huggingfacerepo": "wikimedia/wikipedia",
@@ -110,13 +119,22 @@
     "dataset_config": "20231101.en"
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Touch Rugby Rules",
     "type": "Text-Generation",
     "huggingfacerepo": "Trelis/touch-rugby-rules",
     "description": "Touch Rugby Rules Dataset",
     "size": 369,
     "license": "CC BY-NC 4.0"
+  },
+{
+    "id": 15,
+    "name": "Text to Image Dataset Sample",
+    "type": "Text-to-Image",
+    "huggingfacerepo": "datasets-examples/doc-image-6",
+    "description": "This dataset contains 4 jpeg files in the train/images/ subdirectory, along with a train/metadata.csv file that provides the data for other columns. The metadata file contains relative paths to the images.",
+    "size": 4,
+    "license": "GPL"
   }
 
 ]

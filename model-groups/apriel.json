@@ -1,6 +1,7 @@
 {
   "name": "apriel",
   "description": "Compact and high-performance reasoning. Optimized for efficiency and low memory usage.",
+  "image": "https://gallery.transformerlab.net/apriel.png",
   "tags": ["Reasoning"],
   "models": []
 }

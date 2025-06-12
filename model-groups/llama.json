@@ -1,6 +1,7 @@
 {
   "name": "llama",
   "description": "Foundational language models known for versatility and strong pretraining baseline by Meta.",
+  "image": "https://gallery.transformerlab.net/meta-color.png",
   "tags": [],
   "models": []
 }

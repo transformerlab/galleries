@@ -1,0 +1,7 @@
+{
+  "name": "Other Diffusion Models",
+  "image": "https://gallery.transformerlab.net/sdxl.jpg",
+  "description": "Text-to-image diffusion models capable of generating high-quality images from text prompts.",
+  "tags": ["Text-to-Image", "Diffusion"],
+  "models": []
+}

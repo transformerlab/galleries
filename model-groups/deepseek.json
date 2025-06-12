@@ -1,6 +1,7 @@
 {
   "name": "deepseek",
   "description": "General-purpose language models focused on strong downstream task performance.",
+  "image": "https://gallery.transformerlab.net/deepseek-color.png",
   "tags": [],
   "models": []
 }

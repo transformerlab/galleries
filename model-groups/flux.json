@@ -1,0 +1,7 @@
+{
+  "name": "flux",
+  "description": "State-of-the-art text-to-image generation model developed by Black Forest Labs.",
+  "image": "https://gallery.transformerlab.net/flux.png",
+  "tags": ["Text-to-Image", "Diffusion"],
+  "models": []
+}

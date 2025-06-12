@@ -109,6 +109,7 @@
     {
         "name": "vicuna",
         "description": "Fine-tuned and conversational. Derived from the Alpaca and LLaMA line.",
+        "image": "https://gallery.transformerlab.net/vicuna.png",
         "tags": [],
         "models": [
             {
@@ -239,6 +240,85 @@
         ]
     },
     {
+        "name": "flux",
+        "description": "State-of-the-art text-to-image generation model developed by Black Forest Labs.",
+        "image": "https://gallery.transformerlab.net/flux.png",
+        "tags": [
+            "Text-to-Image",
+            "Diffusion"
+        ],
+        "models": [
+            {
+                "uniqueID": "black-forest-labs/FLUX.1-dev",
+                "name": "FLUX.1 [dev]",
+                "description": "FLUX.1 [dev] is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions. This model is designed for non-commercial use and development purposes, offering state-of-the-art performance in prompt adherence, visual quality, and image detail.",
+                "parameters": "12B",
+                "model_type": "diffusion",
+                "architecture": "FluxPipeline",
+                "added": "2025-06-03",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "formats": [
+                    "Safetensors",
+                    "PyTorch"
+                ],
+                "huggingface_repo": "black-forest-labs/FLUX.1-dev",
+                "transformers_version": "4.44.0",
+                "gated": true,
+                "license": "flux-1-dev-non-commercial-license",
+                "logo": "https://blackforestlabs.ai/favicon.ico",
+                "size_of_model_in_mb": 55198.33693885803,
+                "author": {
+                    "name": "Black Forest Labs",
+                    "url": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+                    "blurb": "Black Forest Labs develops cutting-edge generative AI models for media creation."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+                    "downloadUrl": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+                    "paperUrl": "https://blackforestlabs.ai/announcing-black-forest-labs/"
+                },
+                "model_group": "flux"
+            },
+            {
+                "uniqueID": "black-forest-labs/FLUX.1-schnell",
+                "name": "FLUX.1 [schnell]",
+                "description": "FLUX.1 [schnell] is the fastest variant of the FLUX.1 model family, optimized for speed while maintaining high image quality. It can generate images in as few as 1-4 steps, making it ideal for real-time applications and rapid prototyping. Licensed under Apache 2.0 for commercial use.",
+                "parameters": "12B",
+                "model_type": "diffusion",
+                "architecture": "FluxPipeline",
+                "added": "2025-06-03",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "formats": [
+                    "Safetensors",
+                    "PyTorch"
+                ],
+                "huggingface_repo": "black-forest-labs/FLUX.1-schnell",
+                "transformers_version": "4.44.0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://blackforestlabs.ai/favicon.ico",
+                "size_of_model_in_mb": 55159.34513282776,
+                "author": {
+                    "name": "Black Forest Labs",
+                    "url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+                    "blurb": "Black Forest Labs develops cutting-edge generative AI models for media creation."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+                    "downloadUrl": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+                    "paperUrl": "https://blackforestlabs.ai/announcing-black-forest-labs/"
+                },
+                "model_group": "flux"
+            }
+        ]
+    },
+    {
         "name": "aya",
         "description": "Instruction-tuned and multilingual, supporting 23 languages with strong general-purpose capabilities.",
         "tags": [
@@ -333,6 +413,7 @@
     {
         "name": "gemma",
         "description": "Compact, research-focused language model developed for experimental scalability.",
+        "image": "https://gallery.transformerlab.net/gemma.jpg",
         "tags": [],
         "models": [
             {
@@ -1082,6 +1163,7 @@
     {
         "name": "llama",
         "description": "Foundational language models known for versatility and strong pretraining baseline by Meta.",
+        "image": "https://gallery.transformerlab.net/meta-color.png",
         "tags": [],
         "models": [
             {
@@ -2169,6 +2251,7 @@
     {
         "name": "mistral",
         "description": "Fast, open-weight transformer optimized for low-latency inference.",
+        "image": "https://gallery.transformerlab.net/mistralai.png",
         "tags": [],
         "models": [
             {
@@ -2776,8 +2859,255 @@
         ]
     },
     {
+        "name": "Stable Diffusion",
+        "image": "https://gallery.transformerlab.net/stabilityai_small.png",
+        "description": "Text-to-image diffusion models capable of generating high-quality images from text prompts.",
+        "tags": [
+            "Text-to-Image",
+            "Diffusion"
+        ],
+        "models": [
+            {
+                "uniqueID": "runwayml/stable-diffusion-v1-5",
+                "name": "Stable Diffusion v1.5",
+                "description": "A latent text-to-image diffusion model capable of generating photo-realistic images given any text input. This is the improved version of the original Stable Diffusion model.",
+                "parameters": "860M",
+                "architecture": "StableDiffusionPipeline",
+                "added": "2025-06-03",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "formats": [
+                    "Safetensors",
+                    "PyTorch"
+                ],
+                "huggingface_repo": "runwayml/stable-diffusion-v1-5",
+                "transformers_version": "4.21.0",
+                "gated": false,
+                "license": "creativeml-openrail-m",
+                "logo": "https://stability.ai/favicon.ico",
+                "size_of_model_in_mb": 45069.05603504181,
+                "author": {
+                    "name": "RunwayML",
+                    "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
+                    "blurb": "Runway is building the next era of art, entertainment and human creativity."
+                },
+                "model_type": "diffusion",
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
+                    "downloadUrl": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
+                    "paperUrl": "https://arxiv.org/abs/2112.10752"
+                },
+                "model_group": "Stable Diffusion"
+            },
+            {
+                "uniqueID": "stabilityai/stable-diffusion-2-1",
+                "name": "Stable Diffusion 2.1",
+                "description": "An improved version of Stable Diffusion 2.0 with better image quality and fewer artifacts. Uses OpenCLIP-ViT/H as the text encoder and a 768x768 default resolution.",
+                "parameters": "865M",
+                "architecture": "StableDiffusionPipeline",
+                "added": "2025-06-03",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "formats": [
+                    "Safetensors",
+                    "PyTorch"
+                ],
+                "huggingface_repo": "stabilityai/stable-diffusion-2-1",
+                "transformers_version": "4.25.0",
+                "model_type": "diffusion",
+                "gated": false,
+                "license": "creativeml-openrail-m",
+                "logo": "https://stability.ai/favicon.ico",
+                "size_of_model_in_mb": 34656.23947143555,
+                "author": {
+                    "name": "Stability AI",
+                    "url": "https://huggingface.co/stabilityai/stable-diffusion-2-1",
+                    "blurb": "Stability AI is building the foundation to activate humanity's potential through open AI."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/stabilityai/stable-diffusion-2-1",
+                    "downloadUrl": "https://huggingface.co/stabilityai/stable-diffusion-2-1",
+                    "paperUrl": "https://arxiv.org/abs/2112.10752"
+                },
+                "model_group": "Stable Diffusion"
+            },
+            {
+                "uniqueID": "stabilityai/stable-diffusion-xl-base-1.0",
+                "name": "Stable Diffusion XL Base 1.0",
+                "model_type": "diffusion",
+                "description": "SDXL is a larger and more powerful version of Stable Diffusion, generating higher quality images at 1024x1024 resolution. This is the base model that can be used standalone or with the refiner.",
+                "parameters": "3.5B",
+                "architecture": "StableDiffusionXLPipeline",
+                "added": "2025-06-03",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "formats": [
+                    "Safetensors",
+                    "PyTorch"
+                ],
+                "huggingface_repo": "stabilityai/stable-diffusion-xl-base-1.0",
+                "transformers_version": "4.31.0",
+                "gated": false,
+                "license": "openrail++",
+                "logo": "https://stability.ai/favicon.ico",
+                "size_of_model_in_mb": 46841.37820529938,
+                "author": {
+                    "name": "Stability AI",
+                    "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+                    "blurb": "Stability AI is building the foundation to activate humanity's potential through open AI."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+                    "downloadUrl": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+                    "paperUrl": "https://arxiv.org/abs/2307.01952"
+                },
+                "model_group": "Stable Diffusion"
+            },
+            {
+                "uniqueID": "stabilityai/stable-diffusion-3-medium-diffusers",
+                "name": "Stable Diffusion 3 Medium",
+                "model_type": "diffusion",
+                "description": "The latest generation of Stable Diffusion with improved image quality, better text rendering, and enhanced prompt adherence. Features a new architecture with improved efficiency.",
+                "parameters": "2B",
+                "architecture": "StableDiffusion3Pipeline",
+                "added": "2025-06-03",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "stabilityai/stable-diffusion-3-medium-diffusers",
+                "transformers_version": "4.41.0",
+                "gated": true,
+                "license": "other",
+                "logo": "https://stability.ai/favicon.ico",
+                "size_of_model_in_mb": 29562.001874923706,
+                "author": {
+                    "name": "Stability AI",
+                    "url": "https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers",
+                    "blurb": "Stability AI is building the foundation to activate humanity's potential through open AI."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers",
+                    "downloadUrl": "https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers",
+                    "paperUrl": "https://arxiv.org/abs/2403.03206"
+                },
+                "model_group": "Stable Diffusion"
+            },
+            {
+                "uniqueID": "stabilityai/stable-diffusion-3.5-large",
+                "name": "Stable Diffusion 3.5 Large",
+                "description": "The most advanced version of Stable Diffusion with significantly improved image quality, better text rendering, and enhanced prompt following capabilities. Offers the best quality in the SD3 series.",
+                "parameters": "8B",
+                "architecture": "StableDiffusion3Pipeline",
+                "added": "2025-06-03",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "stabilityai/stable-diffusion-3.5-large",
+                "transformers_version": "4.45.0",
+                "model_type": "diffusion",
+                "gated": true,
+                "license": "other",
+                "logo": "https://stability.ai/favicon.ico",
+                "size_of_model_in_mb": 68245.66199302673,
+                "author": {
+                    "name": "Stability AI",
+                    "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
+                    "blurb": "Stability AI is building the foundation to activate humanity's potential through open AI."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
+                    "downloadUrl": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
+                    "paperUrl": "https://arxiv.org/abs/2403.03206"
+                },
+                "model_group": "Stable Diffusion"
+            },
+            {
+                "uniqueID": "stabilityai/stable-diffusion-3.5-medium",
+                "name": "Stable Diffusion 3.5 Medium",
+                "description": "A balanced version of SD 3.5 offering excellent image quality with better efficiency than the Large model. Provides improved text rendering and prompt adherence.",
+                "parameters": "2.5B",
+                "model_type": "diffusion",
+                "architecture": "StableDiffusion3Pipeline",
+                "added": "2025-06-03",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "stabilityai/stable-diffusion-3.5-medium",
+                "transformers_version": "4.45.0",
+                "gated": true,
+                "license": "other",
+                "logo": "https://stability.ai/favicon.ico",
+                "size_of_model_in_mb": 46591.01168632507,
+                "author": {
+                    "name": "Stability AI",
+                    "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium",
+                    "blurb": "Stability AI is building the foundation to activate humanity's potential through open AI."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium",
+                    "downloadUrl": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium",
+                    "paperUrl": "https://arxiv.org/abs/2403.03206"
+                },
+                "model_group": "Stable Diffusion"
+            },
+            {
+                "uniqueID": "stabilityai/sdxl-turbo",
+                "name": "SDXL Turbo",
+                "description": "A high-speed text-to-image diffusion model based on SDXL, developed by Stability AI. Designed for rapid image generation with strong quality and prompt adherence.",
+                "parameters": "3.1B",
+                "model_type": "diffusion",
+                "architecture": "StableDiffusionXLPipeline",
+                "added": "2025-06-11",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "formats": [
+                    "Safetensors",
+                    "ONNX"
+                ],
+                "huggingface_repo": "stabilityai/sdxl-turbo",
+                "transformers_version": "4.31.0",
+                "gated": false,
+                "license": "sai-nc-community",
+                "logo": "https://stability.ai/favicon.ico",
+                "size_of_model_in_mb": 39700.6370840073,
+                "author": {
+                    "name": "Stability AI",
+                    "url": "https://huggingface.co/stabilityai/sdxl-turbo",
+                    "blurb": "Stability AI is building the foundation to activate humanity's potential through open AI."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/stabilityai/sdxl-turbo",
+                    "downloadUrl": "https://huggingface.co/stabilityai/sdxl-turbo",
+                    "paperUrl": "https://huggingface.co/stabilityai/sdxl-turbo"
+                },
+                "model_group": "Stable Diffusion"
+            }
+        ]
+    },
+    {
         "name": "qwen",
         "description": "Multilingual, high-accuracy transformer excelling in reasoning and benchmark tasks.",
+        "image": "https://gallery.transformerlab.net/qwen2.png",
         "tags": [
             "Reasoning",
             "Multilingual"
@@ -3901,6 +4231,150 @@
         ]
     },
     {
+        "name": "Other Diffusion Models",
+        "image": "https://gallery.transformerlab.net/sdxl.jpg",
+        "description": "Text-to-image diffusion models capable of generating high-quality images from text prompts.",
+        "tags": [
+            "Text-to-Image",
+            "Diffusion"
+        ],
+        "models": [
+            {
+                "uniqueID": "SG161222/RealVisXL_V5.0",
+                "name": "RealVisXL V5.0",
+                "description": "A high-quality text-to-image diffusion model based on SDXL, designed for photorealistic and artistic image generation. Known for its versatility and strong prompt adherence.",
+                "parameters": "2.5B",
+                "model_type": "diffusion",
+                "architecture": "StableDiffusionXLPipeline",
+                "added": "2025-06-11",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "formats": [
+                    "Safetensors",
+                    "PyTorch"
+                ],
+                "huggingface_repo": "SG161222/RealVisXL_V5.0",
+                "transformers_version": "4.31.0",
+                "gated": false,
+                "license": "other",
+                "logo": "",
+                "size_of_model_in_mb": 39699.124364852905,
+                "author": {
+                    "name": "SG161222",
+                    "url": "https://huggingface.co/SG161222/RealVisXL_V5.0",
+                    "blurb": "SG161222 is a prolific creator of high-quality Stable Diffusion models for the community."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/SG161222/RealVisXL_V5.0",
+                    "downloadUrl": "https://huggingface.co/SG161222/RealVisXL_V5.0",
+                    "paperUrl": "https://huggingface.co/SG161222/RealVisXL_V5.0"
+                },
+                "model_group": "Other Diffusion Models"
+            },
+            {
+                "uniqueID": "John6666/reality-pony-xl-reality-pxl-sdxl",
+                "name": "Reality Pony XL (Reality PXL SDXL)",
+                "description": "A photorealistic and game-inspired text-to-image diffusion model based on SDXL, designed for realistic and creative image generation. Features strong prompt adherence and versatility for various styles, including game and pony themes.",
+                "parameters": "Unknown",
+                "model_type": "diffusion",
+                "architecture": "StableDiffusionXLPipeline",
+                "added": "2025-06-11",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "John6666/reality-pony-xl-reality-pxl-sdxl",
+                "transformers_version": "4.31.0",
+                "gated": false,
+                "license": "faipl-1.0-sd",
+                "logo": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+                "size_of_model_in_mb": 6616.60403347015,
+                "author": {
+                    "name": "John6666",
+                    "url": "https://huggingface.co/John6666/reality-pony-xl-reality-pxl-sdxl",
+                    "blurb": "John6666 is a creator of unique and creative Stable Diffusion models."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/John6666/reality-pony-xl-reality-pxl-sdxl",
+                    "downloadUrl": "https://huggingface.co/John6666/reality-pony-xl-reality-pxl-sdxl",
+                    "paperUrl": "https://huggingface.co/John6666/reality-pony-xl-reality-pxl-sdxl"
+                },
+                "model_group": "Other Diffusion Models"
+            },
+            {
+                "uniqueID": "RunDiffusion/Juggernaut-XL-v9",
+                "name": "Juggernaut XL v9",
+                "description": "A versatile and cinematic text-to-image diffusion model based on SDXL, excelling at art, people, photography, landscapes, interiors, food, cars, wildlife, and architecture. Known for its high quality and creative output.",
+                "parameters": "Unknown",
+                "model_type": "diffusion",
+                "architecture": "StableDiffusionXLPipeline",
+                "added": "2025-06-11",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "RunDiffusion/Juggernaut-XL-v9",
+                "transformers_version": "4.31.0",
+                "gated": false,
+                "license": "creativeml-openrail-m",
+                "logo": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+                "size_of_model_in_mb": 13392.792019844055,
+                "author": {
+                    "name": "RunDiffusion",
+                    "url": "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9",
+                    "blurb": "RunDiffusion is a creator of high-quality and creative Stable Diffusion models."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9",
+                    "downloadUrl": "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9",
+                    "paperUrl": "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9"
+                },
+                "model_group": "Other Diffusion Models"
+            },
+            {
+                "uniqueID": "cagliostrolab/animagine-xl-4.0",
+                "name": "Animagine XL 4.0",
+                "description": "A high-quality text-to-image diffusion model based on SDXL, developed by Cagliostro Research Lab. Excels at generating creative, artistic, and photorealistic images with strong prompt adherence.",
+                "parameters": "Unknown",
+                "model_type": "diffusion",
+                "architecture": "StableDiffusionXLPipeline",
+                "added": "2025-06-11",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "cagliostrolab/animagine-xl-4.0",
+                "transformers_version": "4.31.0",
+                "gated": false,
+                "license": "openrail++",
+                "logo": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+                "size_of_model_in_mb": 19850.5365724564,
+                "author": {
+                    "name": "Cagliostro Research Lab",
+                    "url": "https://huggingface.co/cagliostrolab/animagine-xl-4.0",
+                    "blurb": "Cagliostro Research Lab develops advanced diffusion models for creative and professional use."
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/cagliostrolab/animagine-xl-4.0",
+                    "downloadUrl": "https://huggingface.co/cagliostrolab/animagine-xl-4.0",
+                    "paperUrl": "https://huggingface.co/cagliostrolab/animagine-xl-4.0"
+                },
+                "model_group": "Other Diffusion Models"
+            }
+        ]
+    },
+    {
         "name": "fastchat-t5",
         "description": "Lightweight chatbot model optimized for fast response generation using the T5 architecture.",
         "tags": [],
@@ -3982,7 +4456,7 @@
         "name": "command",
         "description": "Robust and instruction-following. Designed for enterprise-scale NLP tasks.",
         "tags": [
-            "Enterprise Focus"
+            "Enterprise"
         ],
         "models": [
             {
@@ -4143,6 +4617,7 @@
     {
         "name": "phi",
         "description": "Small and efficient. Ideal for edge deployment and low-resource inference.",
+        "image": "https://gallery.transformerlab.net/phi-2.png",
         "tags": [],
         "models": [
             {
@@ -4488,6 +4963,7 @@
     {
         "name": "deepseek",
         "description": "General-purpose language models focused on strong downstream task performance.",
+        "image": "https://gallery.transformerlab.net/deepseek-color.png",
         "tags": [],
         "models": [
             {
@@ -4931,6 +5407,7 @@
     {
         "name": "apriel",
         "description": "Compact and high-performance reasoning. Optimized for efficiency and low memory usage.",
+        "image": "https://gallery.transformerlab.net/apriel.png",
         "tags": [
             "Reasoning"
         ],
