@@ -1,6 +1,7 @@
 {
   "name": "tinyllama",
   "description": "Miniature variant of LLaMA suitable for testing and fast inference scenarios.",
+  "image": "https://gallery.transformerlab.net/tinyllama.png",
   "tags": ["Tiny"],
   "models": []
 }

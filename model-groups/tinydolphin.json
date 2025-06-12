@@ -1,6 +1,7 @@
 {
   "name": "tinydolphin",
   "description": "Experimental and compact, trained on curated instruction datasets.",
+  "image": "https://gallery.transformerlab.net/tinydolphin.jpeg",
   "tags": ["Tiny"],
   "models": []
 }

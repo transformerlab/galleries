@@ -1,6 +1,7 @@
 {
   "name": "smollm",
   "description": "Tiny instruct models designed for experimentation and lightweight tasks.",
+  "image": "https://gallery.transformerlab.net/smollm.png",
   "tags": ["Tiny"],
   "models": []
 }

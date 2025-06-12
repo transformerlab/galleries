@@ -1,6 +1,7 @@
 {
   "name": "zephyr",
   "description": "Hugging Face instruction-tuned model known for clean chat behavior and fast performance.",
+  "image": "https://gallery.transformerlab.net/hfh4.png",
   "tags": [],
   "models": []
 }

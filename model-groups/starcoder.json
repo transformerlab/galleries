@@ -2,5 +2,6 @@
   "name": "starcoder",
   "description": "Leading in code-generation. Trained on open-source repositories for development tasks.",
   "tags": ["Coding"],
+  "image": "https://gallery.transformerlab.net/%20bigcode.png",
   "models": []
 }

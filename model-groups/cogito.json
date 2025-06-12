@@ -2,5 +2,6 @@
   "name": "cogito",
   "description": "Hybrid reasoning capability. Outperforming peers across standard benchmarks in its size class.",
   "tags": ["Reasoning"],
+  "image": "https://gallery.transformerlab.net/cogito.png",
   "models": []
 }

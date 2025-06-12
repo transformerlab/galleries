@@ -1,6 +1,7 @@
 {
   "name": "fastchat-t5",
   "description": "Lightweight chatbot model optimized for fast response generation using the T5 architecture.",
+  "image": "https://gallery.transformerlab.net/vicuna.png",
   "tags": [],
   "models": []
 }

@@ -1,6 +1,7 @@
 {
   "name": "aya",
   "description": "Instruction-tuned and multilingual, supporting 23 languages with strong general-purpose capabilities.",
+  "image": "https://gallery.transformerlab.net/coherelabs.png",
   "tags": ["Multilingual"],
   "models": []
 }

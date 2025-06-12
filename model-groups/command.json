@@ -2,5 +2,6 @@
   "name": "command",
   "description": "Robust and instruction-following. Designed for enterprise-scale NLP tasks.",
   "tags": ["Enterprise"],
+  "image": "https://gallery.transformerlab.net/coherelabs.png",
   "models": []
 }

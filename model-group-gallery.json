@@ -7,6 +7,7 @@
             "Multilingual",
             "Reasoning"
         ],
+        "image": "https://gallery.transformerlab.net/exaone.png",
         "models": [
             {
                 "uniqueID": "LGAI-EXAONE/EXAONE-Deep-2.4B",
@@ -204,6 +205,7 @@
         "tags": [
             "Tool Use"
         ],
+        "image": "https://gallery.transformerlab.net/watt.png",
         "models": [
             {
                 "uniqueID": "watt-ai/watt-tool-8B",
@@ -321,6 +323,7 @@
     {
         "name": "aya",
         "description": "Instruction-tuned and multilingual, supporting 23 languages with strong general-purpose capabilities.",
+        "image": "https://gallery.transformerlab.net/coherelabs.png",
         "tags": [
             "Multilingual"
         ],
@@ -348,6 +351,7 @@
     {
         "name": "openllama",
         "description": "Community-built open version of the LLaMA architecture for research and development.",
+        "image": "https://gallery.transformerlab.net/openlmresearch.png",
         "tags": [],
         "models": [
             {
@@ -1807,6 +1811,7 @@
     {
         "name": "llava",
         "description": "Vision-language model capable of multimodal understanding and visual question answering.",
+        "image": "https://gallery.transformerlab.net/llava.png",
         "tags": [
             "Multimodal"
         ],
@@ -1880,6 +1885,7 @@
     {
         "name": "intellect",
         "description": "Reasoning-focused. Designed for analytical and structured language tasks.",
+        "image": "https://gallery.transformerlab.net/prime-intellect.png",
         "tags": [
             "Reasoning"
         ],
@@ -1919,6 +1925,7 @@
     {
         "name": "nemotron",
         "description": "Reasoning models that are post trained for reasoning, human chat preferences, and tasks, such as RAG and tool calling.",
+        "image": "https://gallery.transformerlab.net/NVLogo_2D.jpg",
         "tags": [
             "reasoning",
             "chat",
@@ -1996,6 +2003,7 @@
     {
         "name": "smollm",
         "description": "Tiny instruct models designed for experimentation and lightweight tasks.",
+        "image": "https://gallery.transformerlab.net/smollm.png",
         "tags": [
             "Tiny"
         ],
@@ -2095,6 +2103,7 @@
         "tags": [
             "Reasoning"
         ],
+        "image": "https://gallery.transformerlab.net/cogito.png",
         "models": [
             {
                 "uniqueID": "deepcogito/cogito-v1-preview-llama-3B",
@@ -2760,6 +2769,7 @@
     {
         "name": "falcon",
         "description": "Open-weight transformer with competitive performance across diverse language tasks.",
+        "image": "https://gallery.transformerlab.net/falcon.png",
         "tags": [],
         "models": [
             {
@@ -2825,6 +2835,7 @@
     {
         "name": "flan",
         "description": "Versatile instruction-tuned variant of T5 excelling across multitask benchmarks.",
+        "image": "https://gallery.transformerlab.net/google.png",
         "tags": [],
         "models": [
             {
@@ -4198,6 +4209,7 @@
     {
         "name": "starling",
         "description": "General-purpose, designed for engaging instruction-following dialogues.",
+        "image": "https://gallery.transformerlab.net/starling.png",
         "tags": [],
         "models": [
             {
@@ -4377,6 +4389,7 @@
     {
         "name": "fastchat-t5",
         "description": "Lightweight chatbot model optimized for fast response generation using the T5 architecture.",
+        "image": "https://gallery.transformerlab.net/vicuna.png",
         "tags": [],
         "models": [
             {
@@ -4450,7 +4463,8 @@
                 },
                 "model_group": "bytedance"
             }
-        ]
+        ],
+        "image": "https://gallery.transformerlab.net/bytedance.png"
     },
     {
         "name": "command",
@@ -4458,6 +4472,7 @@
         "tags": [
             "Enterprise"
         ],
+        "image": "https://gallery.transformerlab.net/coherelabs.png",
         "models": [
             {
                 "uniqueID": "CohereForAI/c4ai-command-a-03-2025",
@@ -4576,6 +4591,7 @@
     {
         "name": "zyphra",
         "description": "Small yet powerful, excelling in code and math reasoning with high token efficiency.",
+        "image": "https://gallery.transformerlab.net/zyphra.png",
         "tags": [
             "Reasoning",
             "Math",
@@ -4864,6 +4880,7 @@
         "tags": [
             "Reasoning"
         ],
+        "image": "https://gallery.transformerlab.net/nousresearch.png",
         "models": [
             {
                 "uniqueID": "Nous-Hermes-13b",
@@ -4926,6 +4943,7 @@
     {
         "name": "tinydolphin",
         "description": "Experimental and compact, trained on curated instruction datasets.",
+        "image": "https://gallery.transformerlab.net/tinydolphin.jpeg",
         "tags": [
             "Tiny"
         ],
@@ -5231,6 +5249,7 @@
         "tags": [
             "Coding"
         ],
+        "image": "https://gallery.transformerlab.net/%20bigcode.png",
         "models": [
             {
                 "uniqueID": "bigcode/starcoder",
@@ -5272,6 +5291,7 @@
         "tags": [
             "Coding"
         ],
+        "image": "https://gallery.transformerlab.net/agentica.png",
         "models": [
             {
                 "uniqueID": "agentica-org/DeepCoder-14B-Preview",
@@ -5507,6 +5527,7 @@
     {
         "name": "zephyr",
         "description": "Hugging Face instruction-tuned model known for clean chat behavior and fast performance.",
+        "image": "https://gallery.transformerlab.net/hfh4.png",
         "tags": [],
         "models": [
             {
@@ -5548,6 +5569,7 @@
         "tags": [
             "Reasoning"
         ],
+        "image": "https://gallery.transformerlab.net/reflection.png",
         "models": [
             {
                 "uniqueID": "mattshumer/Reflection-Llama-3.1-70B",
@@ -5582,6 +5604,7 @@
     {
         "name": "opencoder",
         "description": "Reasoning-enabled code generators optimized for programming assistance.",
+        "image": "https://gallery.transformerlab.net/inftech.png",
         "tags": [
             "Coding",
             "Reasoning"
@@ -5624,6 +5647,7 @@
     {
         "name": "granite",
         "description": "Enterprise-grade. Tailored for secure, reliable, and general-purpose deployments.",
+        "image": "https://gallery.transformerlab.net/granite.png",
         "tags": [
             "Enterprise"
         ],
@@ -5753,6 +5777,7 @@
     {
         "name": "tinyllama",
         "description": "Miniature variant of LLaMA suitable for testing and fast inference scenarios.",
+        "image": "https://gallery.transformerlab.net/tinyllama.png",
         "tags": [
             "Tiny"
         ],

@@ -2,5 +2,6 @@
   "name": "reflection",
   "description": "Large-scale, optimized for self-improvement and reflective reasoning.",
   "tags": ["Reasoning"],
+  "image": "https://gallery.transformerlab.net/reflection.png",
   "models": []
 }

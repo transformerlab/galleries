@@ -1,6 +1,7 @@
 {
   "name": "intellect",
   "description": "Reasoning-focused. Designed for analytical and structured language tasks.",
+  "image": "https://gallery.transformerlab.net/prime-intellect.png",
   "tags": ["Reasoning"],
   "models": []
 }

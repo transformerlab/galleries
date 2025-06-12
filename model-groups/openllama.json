@@ -1,6 +1,7 @@
 {
   "name": "openllama",
   "description": "Community-built open version of the LLaMA architecture for research and development.",
+  "image": "https://gallery.transformerlab.net/openlmresearch.png",
   "tags": [],
   "models": []
 }

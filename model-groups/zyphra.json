@@ -1,6 +1,7 @@
 {
   "name": "zyphra",
   "description": "Small yet powerful, excelling in code and math reasoning with high token efficiency.",
+  "image": "https://gallery.transformerlab.net/zyphra.png",
   "tags": ["Reasoning", "Math", "Coding"],
   "models": []
 }

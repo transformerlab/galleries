@@ -2,5 +2,6 @@
   "name": "watt",
   "description": "Specialized for tool use and dynamic plugin-based reasoning tasks.",
   "tags": ["Tool Use"],
+  "image": "https://gallery.transformerlab.net/watt.png",
   "models": []
 }
