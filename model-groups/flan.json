@@ -1,6 +1,7 @@
 {
   "name": "flan",
   "description": "Versatile instruction-tuned variant of T5 excelling across multitask benchmarks.",
+  "image": "https://gallery.transformerlab.net/google.png",
   "tags": [],
   "models": []
 }

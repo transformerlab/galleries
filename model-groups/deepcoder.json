@@ -2,5 +2,6 @@
   "name": "deepcoder",
   "description": "Neural program synthesis model built to generate and complete code efficiently.",
   "tags": ["Coding"],
+  "image": "https://gallery.transformerlab.net/agentica.png",
   "models": []
 }

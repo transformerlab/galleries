@@ -2,5 +2,6 @@
   "name": "exaone",
   "description": "Multimodal foundation, designed for enterprise-scale reasoning across language, vision, and code domains.",
   "tags": ["Multimodal", "Multilingual", "Reasoning"],
+  "image": "https://gallery.transformerlab.net/exaone.png",
   "models": []
 }

@@ -1,6 +1,7 @@
 {
   "name": "falcon",
   "description": "Open-weight transformer with competitive performance across diverse language tasks.",
+  "image": "https://gallery.transformerlab.net/falcon.png",
   "tags": [],
   "models": []
 }

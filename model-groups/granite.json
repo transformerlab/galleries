@@ -1,6 +1,7 @@
 {
   "name": "granite",
   "description": "Enterprise-grade. Tailored for secure, reliable, and general-purpose deployments.",
+  "image": "https://gallery.transformerlab.net/granite.png",
   "tags": ["Enterprise"],
   "models": []
 }

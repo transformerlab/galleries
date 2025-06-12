@@ -1,6 +1,7 @@
 {
   "name": "opencoder",
   "description": "Reasoning-enabled code generators optimized for programming assistance.",
+  "image": "https://gallery.transformerlab.net/inftech.png",
   "tags": ["Coding", "Reasoning"],
   "models": []
 }

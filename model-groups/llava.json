@@ -1,6 +1,7 @@
 {
   "name": "llava",
   "description": "Vision-language model capable of multimodal understanding and visual question answering.",
+  "image": "https://gallery.transformerlab.net/llava.png",
   "tags": ["Multimodal"],
   "models": []
 }

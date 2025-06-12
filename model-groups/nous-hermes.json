@@ -2,5 +2,6 @@
   "name": "nous-hermes",
   "description": "Refined instruction-tuned, capable of high-quality chat and reasoning outputs.",
   "tags": ["Reasoning"],
+  "image": "https://gallery.transformerlab.net/nousresearch.png",
   "models": []
 }

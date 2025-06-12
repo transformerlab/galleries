@@ -2,5 +2,6 @@
   "name": "bytedance",
   "description": "Parameter efficient family for reasoning and coding",
   "tags": ["Coding", "Reasoning"],
-  "models": []
+  "models": [],
+  "image": "https://gallery.transformerlab.net/bytedance.png"
 }

@@ -1,6 +1,7 @@
 {
   "name": "starling",
   "description": "General-purpose, designed for engaging instruction-following dialogues.",
+  "image": "https://gallery.transformerlab.net/starling.png",
   "tags": [],
   "models": []
 }
