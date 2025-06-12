@@ -1,0 +1,35 @@
+{
+  "id": "ml_qa",
+  "title": "Machine Learning Q&A",
+  "description": "Train a Qwen 2.5 model to provide expert-level answers to machine learning questions, suitable for both beginners and advanced practitioners.",
+  "notes": "# Machine Learning Q&A with Qwen 2.5\n\n## Overview\nThis recipe fine-tunes a Qwen 2.5 model to become a specialized machine learning assistant.\n\n## Important Considerations\n- Comprehensive ML knowledge coverage\n- Balanced between theoretical and practical knowledge\n- Suitable for various ML expertise levels\n\n## Training Tips\n- Focus on explanation clarity\n- Balance technical depth with accessibility\n- Validate answers across ML domains\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Provide detailed ML explanations\n- Answer implementation questions\n- Guide through ML concepts progressively",
+  "requiredMachineArchitecture": [
+    "cuda",
+    "amd"
+  ],
+  "dependencies": [
+    {
+      "type": "model",
+      "name": "Qwen/Qwen2.5-1.5B-Instruct"
+    },
+    {
+      "type": "dataset",
+      "name": "win-wang/Machine_Learning_QA_Collection"
+    },
+    {
+      "type": "plugin",
+      "name": "llama_trainer"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "MachineLearningQnA",
+      "task_type": "TRAIN",
+      "type": "LoRA",
+      "plugin": "llama_trainer",
+      "config_json": "{\"template_name\":\"MachineLearningQnA\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"formatting_template\":\"{{text}}\\n\",\"dataset_name\":\"win-wang/Machine_Learning_QA_Collection\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"1\",\"learning_rate\":\"0.00005\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"16\",\"lora_alpha\":\"64\",\"lora_dropout\":\"0.1\",\"adaptor_name\":\"ML-QA\",\"_tlab_recipe_datasets\":{\"name\":\"win-wang/Machine_Learning_QA_Collection\",\"path\":\"win-wang/Machine_Learning_QA_Collection\"},\"_tlab_recipe_models\":{\"name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"path\":\"Qwen/Qwen2.5-1.5B-Instruct\"}}"
+    }
+  ],
+  "workflows": [],
+  "cardImage": "https://images.unsplash.com/photo-1557562645-4eee56b29bc1?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}

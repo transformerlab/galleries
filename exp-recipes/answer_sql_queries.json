@@ -1,0 +1,35 @@
+{
+  "id": "answer_sql_queries",
+  "title": "Answer SQL Queries",
+  "description": "Train a Qwen 2.5 model to excel at SQL query generation, understanding, and optimization across various database scenarios.",
+  "notes": "# SQL Query Assistant with Qwen 2.5\n\n## Overview\nThis recipe fine-tunes a Qwen 2.5 model to become a specialized SQL query assistant.\n\n## Important Considerations\n- Comprehensive SQL knowledge base\n- Focus on query optimization\n- Covers various SQL dialects\n\n## Training Tips\n- Balance between simple and complex queries\n- Test query correctness\n- Validate across different database types\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Write efficient SQL queries\n- Explain query optimization\n- Handle complex database operations",
+  "requiredMachineArchitecture": [
+    "cuda",
+    "amd"
+  ],
+  "dependencies": [
+    {
+      "type": "model",
+      "name": "Qwen/Qwen2.5-1.5B-Instruct"
+    },
+    {
+      "type": "dataset",
+      "name": "mlx-community/wikisql"
+    },
+    {
+      "type": "plugin",
+      "name": "llama_trainer"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "WikiSQL",
+      "task_type": "TRAIN",
+      "type": "LoRA",
+      "plugin": "llama_trainer",
+      "config_json": "{\"template_name\":\"Wiki SQL\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"formatting_template\":\"{{text}} ;\",\"dataset_name\":\"mlx-community/wikisql\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"1\",\"learning_rate\":\"0.005\",\"num_train_epochs\":\"2\",\"max_steps\":\"-1\",\"lora_r\":\"32\",\"lora_alpha\":\"64\",\"lora_dropout\":\"0.1\",\"adaptor_name\":\"WikiSQL\",\"_tlab_recipe_datasets\":{\"name\":\"mlx-community/wikisql\",\"path\":\"mlx-community/wikisql\"},\"_tlab_recipe_models\":{\"name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"path\":\"Qwen/Qwen2.5-1.5B-Instruct\"}}"
+    }
+  ],
+  "workflows": [],
+  "cardImage": "https://images.unsplash.com/photo-1683322499436-f4383dd59f5a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "ml_qa_mlx",
+  "title": "Machine Learning Q&A (for MLX)",
+  "description": "Fine-tune a Gemma 2 model to become an expert in answering machine learning questions, optimized for Apple Silicon using MLX framework.",
+  "notes": "# Machine Learning Q&A with Gemma 2\n\n## Overview\nThis recipe adapts a Gemma 2 model to specialize in machine learning concepts and explanations, optimized for MLX.\n\n## Important Considerations\n- MLX optimization for Apple Silicon\n- Comprehensive ML Q&A dataset coverage\n- Efficient inference on Mac devices\n\n## Training Tips\n- Balance technical accuracy with clarity\n- Monitor explanation quality\n- Test across different ML topics\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Explain ML concepts clearly\n- Provide technical insights\n- Answer both basic and advanced ML questions",
+  "requiredMachineArchitecture": [
+    "mlx"
+  ],
+  "dependencies": [
+    {
+      "type": "model",
+      "name": "google/gemma-2-2b-it"
+    },
+    {
+      "type": "dataset",
+      "name": "win-wang/Machine_Learning_QA_Collection"
+    },
+    {
+      "type": "plugin",
+      "name": "mlx_lora_trainer"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "train_gemma_2_ml_qa",
+      "task_type": "TRAIN",
+      "type": "LoRA",
+      "plugin": "mlx_lora_trainer",
+      "config_json": "{\"template_name\":\"MachineLearningQnA-MLX\",\"plugin_name\":\"mlx_lora_trainer\",\"model_name\":\"google/gemma-2-2b-it\",\"model_architecture\":\"Gemma2ForCausalLM\",\"formatting_template\":\"{{text}}\",\"dataset_name\":\"win-wang/Machine_Learning_QA_Collection\",\"lora_layers\":\"8\",\"batch_size\":\"4\",\"learning_rate\":\"0.0001\",\"lora_rank\":\"8\",\"lora_alpha\":\"160\",\"iters\":\"200\",\"steps_per_report\":\"10\",\"steps_per_eval\":\"50\",\"save_every\":\"50\",\"adaptor_name\":\"ml-qa\",\"_tlab_recipe_datasets\":{\"name\":\"Machine Learning QA Collection\",\"path\":\"win-wang/Machine_Learning_QA_Collection\"},\"_tlab_recipe_models\":{\"name\":\"google/gemma-2-2b-it\",\"path\":\"google/gemma-2-2b-it\"}}"
+    }
+  ],
+  "workflows": [],
+  "cardImage": "https://images.unsplash.com/photo-1557562645-4eee56b29bc1?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}

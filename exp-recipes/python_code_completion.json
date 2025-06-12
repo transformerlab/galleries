@@ -1,0 +1,36 @@
+{
+  "id": "python_code_completion",
+  "title": "Python Code Completion",
+  "description": "Train a SmolLM Base model to provide intelligent Python code completions, suggestions, and assistance. Ideal for developers looking for an efficient coding assistant.",
+  "notes": "# Python Code Completion Training\n\n## Overview\nThis recipe fine-tunes a SmolLM Base model to become a specialized Python code completion assistant.\n\n## Important Considerations\n- SmolLM is designed for efficient inference\n- Dataset contains diverse Python coding examples\n- Model learns common Python patterns and best practices\n\n## Training Tips\n- Focus on code context understanding\n- Balance between common and specialized completions\n- Monitor completion accuracy and relevance\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Provide context-aware code completions\n- Suggest appropriate Python syntax\n- Complete common programming patterns",
+  "requiredMachineArchitecture": [
+    "cuda",
+    "amd"
+  ],
+  "dependencies": [
+    {
+      "type": "model",
+      "name": "HuggingFaceTB/SmolLM2-135M"
+    },
+    {
+      "type": "dataset",
+      "name": "flytech/python-codes-25k"
+    },
+    {
+      "type": "plugin",
+      "name": "llama_trainer"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "train_smollm_python_completion",
+      "task_type": "TRAIN",
+      "type": "LoRA",
+      "plugin": "llama_trainer",
+      "formatting_template": "{{output}}",
+      "config_json": "{\"template_name\":\"PythonCompletion\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"HuggingFaceTB/SmolLM2-135M\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"{{output}}\\n\",\"dataset_name\":\"flytech/python-codes-25k\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"4\",\"learning_rate\":\"0.0005\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"64\",\"lora_alpha\":\"128\",\"lora_dropout\":\"0.05\",\"adaptor_name\":\"python\",\"_tlab_recipe_datasets\":{\"name\":\"flytech/python-codes-25k\",\"path\":\"flytech/python-codes-25k\"},\"_tlab_recipe_models\":{\"name\":\"HuggingFaceTB/SmolLM2-135M\",\"path\":\"HuggingFaceTB/SmolLM2-135M\"}}"
+    }
+  ],
+  "workflows": [],
+  "cardImage": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}
