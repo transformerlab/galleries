@@ -1,0 +1,29 @@
+{
+  "uniqueID": "Qwen/Qwen3-235B-A22B-MLX-4bit",
+  "name": "Qwen3 235B-A22B (MLX 4bit)",
+  "description": "MLX 4-bit version of the Qwen3 235B-A22B model.",
+  "added": "2025-06-16",
+  "tags": [],
+  "parameters": "235B",
+  "context": "32768",
+  "architecture": "MLX",
+  "formats": [
+    "Safetensors"
+  ],
+  "huggingface_repo": "Qwen/Qwen3-235B-A22B-MLX-4bit",
+  "transformers_version": "4.51.3",
+  "gated": false,
+  "license": "apache-2.0",
+  "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+  "size_of_model_in_mb": 122835.96503448486,
+  "author": {
+    "name": "Qwen",
+    "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-MLX-4bit",
+    "blurb": ""
+  },
+  "resources": {
+    "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-MLX-4bit",
+    "downloadUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-MLX-4bit",
+    "paperUrl": "?"
+  }
+}
