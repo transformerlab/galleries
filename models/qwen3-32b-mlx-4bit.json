@@ -25,5 +25,6 @@
     "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-32B-MLX-4bit",
     "downloadUrl": "https://huggingface.co/Qwen/Qwen3-32B-MLX-4bit",
     "paperUrl": "?"
-  }
+  },
+  "model_group": "qwen"
 }

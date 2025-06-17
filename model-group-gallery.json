@@ -3478,6 +3478,246 @@
                 "model_group": "qwen"
             },
             {
+                "uniqueID": "Qwen/Qwen3-0.6B-MLX-4bit",
+                "name": "Qwen3 0.6B (MLX 4bit)",
+                "description": "MLX 4-bit version of the Qwen3 0.6B model.",
+                "added": "2025-06-16",
+                "tags": [],
+                "parameters": "0.6B",
+                "context": "32768",
+                "architecture": "MLX",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "Qwen/Qwen3-0.6B-MLX-4bit",
+                "transformers_version": "4.51.3",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+                "size_of_model_in_mb": 315.7465543746948,
+                "author": {
+                    "name": "Qwen",
+                    "url": "https://huggingface.co/Qwen/Qwen3-0.6B-MLX-4bit",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-0.6B-MLX-4bit",
+                    "downloadUrl": "https://huggingface.co/Qwen/Qwen3-0.6B-MLX-4bit",
+                    "paperUrl": "?"
+                },
+                "model_group": "qwen"
+            },
+            {
+                "uniqueID": "Qwen/Qwen3-1.7B-MLX-8bit",
+                "name": "Qwen3 1.7B (MLX 8bit)",
+                "description": "MLX 8-bit version of the Qwen3 1.7B model.",
+                "added": "2025-06-16",
+                "tags": [],
+                "parameters": "1.7B",
+                "context": "32768",
+                "architecture": "MLX",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "Qwen/Qwen3-1.7B-MLX-8bit",
+                "transformers_version": "4.51.0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+                "size_of_model_in_mb": 1787.0989780426025,
+                "author": {
+                    "name": "Qwen",
+                    "url": "https://huggingface.co/Qwen/Qwen3-1.7B-MLX-8bit",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-1.7B-MLX-8bit",
+                    "downloadUrl": "https://huggingface.co/Qwen/Qwen3-1.7B-MLX-8bit",
+                    "paperUrl": "?"
+                },
+                "model_group": "qwen"
+            },
+            {
+                "uniqueID": "Qwen/Qwen3-14B-MLX-8bit",
+                "name": "Qwen3 14B (MLX 8bit)",
+                "description": "MLX 8-bit version of the Qwen3 14B model.",
+                "added": "2025-06-16",
+                "tags": [],
+                "parameters": "14B",
+                "context": "32768",
+                "architecture": "MLX",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "Qwen/Qwen3-14B-MLX-8bit",
+                "transformers_version": "4.51.3",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+                "size_of_model_in_mb": 14522.08442497253,
+                "author": {
+                    "name": "Qwen",
+                    "url": "https://huggingface.co/Qwen/Qwen3-14B-MLX-8bit",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-14B-MLX-8bit",
+                    "downloadUrl": "https://huggingface.co/Qwen/Qwen3-14B-MLX-8bit",
+                    "paperUrl": "?"
+                },
+                "model_group": "qwen"
+            },
+            {
+                "uniqueID": "Qwen/Qwen3-235B-A22B-MLX-4bit",
+                "name": "Qwen3 235B-A22B (MLX 4bit)",
+                "description": "MLX 4-bit version of the Qwen3 235B-A22B model.",
+                "added": "2025-06-16",
+                "tags": [],
+                "parameters": "235B",
+                "context": "32768",
+                "architecture": "MLX",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "Qwen/Qwen3-235B-A22B-MLX-4bit",
+                "transformers_version": "4.51.3",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+                "size_of_model_in_mb": 122835.96503448486,
+                "author": {
+                    "name": "Qwen",
+                    "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-MLX-4bit",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-MLX-4bit",
+                    "downloadUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-MLX-4bit",
+                    "paperUrl": "?"
+                },
+                "model_group": "qwen"
+            },
+            {
+                "uniqueID": "Qwen/Qwen3-30B-A3B-MLX-8bit",
+                "name": "Qwen3 30B-A3B (MLX 8bit)",
+                "description": "MLX 8-bit version of the Qwen3 30B-A3B model.",
+                "added": "2025-06-16",
+                "tags": [],
+                "parameters": "30B",
+                "context": "32768",
+                "architecture": "MLX",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "Qwen/Qwen3-30B-A3B-MLX-8bit",
+                "transformers_version": "4.51.0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+                "size_of_model_in_mb": 15489.05166292191,
+                "author": {
+                    "name": "Qwen",
+                    "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-MLX-8bit",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B-MLX-8bit",
+                    "downloadUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B-MLX-8bit",
+                    "paperUrl": "?"
+                },
+                "model_group": "qwen"
+            },
+            {
+                "uniqueID": "Qwen/Qwen3-32B-MLX-4bit",
+                "name": "Qwen3 32B (MLX 4bit)",
+                "description": "MLX 4-bit version of the Qwen3 32B model.",
+                "added": "2025-06-16",
+                "tags": [],
+                "parameters": "32B",
+                "context": "32768",
+                "architecture": "MLX",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "Qwen/Qwen3-32B-MLX-4bit",
+                "transformers_version": "4.51.3",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+                "size_of_model_in_mb": 17797.424089431763,
+                "author": {
+                    "name": "Qwen",
+                    "url": "https://huggingface.co/Qwen/Qwen3-32B-MLX-4bit",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-32B-MLX-4bit",
+                    "downloadUrl": "https://huggingface.co/Qwen/Qwen3-32B-MLX-4bit",
+                    "paperUrl": "?"
+                },
+                "model_group": "qwen"
+            },
+            {
+                "uniqueID": "Qwen/Qwen3-4B-MLX-8bit",
+                "name": "Qwen3 4B (MLX 8bit)",
+                "description": "MLX 8-bit version of the Qwen3 4B model.",
+                "added": "2025-06-16",
+                "tags": [],
+                "parameters": "4B",
+                "context": "32768",
+                "architecture": "MLX",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "Qwen/Qwen3-4B-MLX-8bit",
+                "transformers_version": "4.51.0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+                "size_of_model_in_mb": 3969.8953065872192,
+                "author": {
+                    "name": "Qwen",
+                    "url": "https://huggingface.co/Qwen/Qwen3-4B-MLX-8bit",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-4B-MLX-8bit",
+                    "downloadUrl": "https://huggingface.co/Qwen/Qwen3-4B-MLX-8bit",
+                    "paperUrl": "?"
+                },
+                "model_group": "qwen"
+            },
+            {
+                "uniqueID": "Qwen/Qwen3-8B-MLX-8bit",
+                "name": "Qwen3 8B (MLX 8bit)",
+                "description": "MLX 8-bit version of the Qwen3 8B model.",
+                "added": "2025-06-16",
+                "tags": [],
+                "parameters": "8B",
+                "context": "32768",
+                "architecture": "MLX",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "Qwen/Qwen3-8B-MLX-8bit",
+                "transformers_version": "4.51.3",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+                "size_of_model_in_mb": 8069.406330108643,
+                "author": {
+                    "name": "Qwen",
+                    "url": "https://huggingface.co/Qwen/Qwen3-8B-MLX-8bit",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-8B-MLX-8bit",
+                    "downloadUrl": "https://huggingface.co/Qwen/Qwen3-8B-MLX-8bit",
+                    "paperUrl": "?"
+                },
+                "model_group": "qwen"
+            },
+            {
                 "uniqueID": "Qwen/Qwen3-30B-A3B",
                 "name": "Qwen3 30B A3B",
                 "description": "",
