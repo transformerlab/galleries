@@ -275,6 +275,123 @@
         "cardImage": "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
+        "id": "eval-common-benchmarks-non-mlx",
+        "title": "Evaluate a Model on Common Benchmarks (MLX)",
+        "requiredMachineArchitecture": [
+            "mlx"
+        ],
+        "description": "Performs evaluation on common benchmarks using the Eleuther AI LM Eval Harness. It evaluates the model `mlx-community/Llama-3.2-1B-Instruct-4bit` on tasks such as MMLU, Winogrande, HellaSwag, and PIQA.",
+        "notes": "",
+        "dependencies": [
+            {
+                "type": "model",
+                "name": "mlx-community/Llama-3.2-1B-Instruct-4bit"
+            },
+            {
+                "type": "plugin",
+                "name": "common-eleuther-ai-lm-eval-harness-mlx"
+            }
+        ],
+        "tasks": [
+            {
+                "name": "CleanMink",
+                "task_type": "EVAL",
+                "plugin": "common-eleuther-ai-lm-eval-harness-mlx",
+                "config_json": "{\"template_name\":\"CleanMink\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"hellaswag,mmlu,piqa,winogrande\",\"limit\":\"1\",\"run_name\":\"CleanMink\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"CleanMink\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"hellaswag,mmlu,piqa,winogrande\",\"limit\":\"1\",\"run_name\":\"CleanMink\",\"predefined_tasks\":\"\"}}"
+            }
+        ],
+        "workflows": [
+            {
+                "name": "eval-on-common-benchmarks",
+                "config": {
+                    "nodes": [
+                        {
+                            "type": "START",
+                            "id": "99b97abd-82de-4745-b64a-6540801261c1",
+                            "name": "START",
+                            "out": [
+                                "06334a95-01c4-4ece-82fc-9a107a4036e2"
+                            ]
+                        },
+                        {
+                            "name": "Eval on Harness Benchmarks",
+                            "task": "CleanMink",
+                            "type": "EVAL",
+                            "metadata": {
+                                "position": {
+                                    "x": -75,
+                                    "y": 105
+                                }
+                            },
+                            "id": "06334a95-01c4-4ece-82fc-9a107a4036e2",
+                            "out": []
+                        }
+                    ]
+                }
+            }
+        ],
+        "card_image": "https://images.unsplash.com/photo-1553268169-8232852a2377?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": "eval-common-benchmarks-non-mlx",
+        "title": "Evaluate a Model on Common Benchmarks (Non-MLX)",
+        "requiredMachineArchitecture": [
+            "cuda",
+            "amd"
+        ],
+        "description": "Performs evaluation on common benchmarks using the Eleuther AI LM Eval Harness. It evaluates the model `unsloth/Llama-3.2-1B-Instruct` on tasks such as MMLU, Winogrande, HellaSwag, and PIQA.",
+        "notes": "",
+        "dependencies": [
+            {
+                "type": "model",
+                "name": "unsloth/Llama-3.2-1B-Instruct"
+            },
+            {
+                "type": "plugin",
+                "name": "common-eleuther-ai-lm-eval-harness"
+            }
+        ],
+        "tasks": [
+            {
+                "name": "KindMoose",
+                "task_type": "EVAL",
+                "plugin": "common-eleuther-ai-lm-eval-harness",
+                "config_json": "{\"template_name\":\"KindMoose\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"tasks\":\"mmlu,winogrande,hellaswag,piqa\",\"limit\":\"1\",\"run_name\":\"KindMoose\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"KindMoose\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"tasks\":\"mmlu,winogrande,hellaswag,piqa\",\"limit\":\"1\",\"run_name\":\"KindMoose\",\"predefined_tasks\":\"\"}}"
+            }
+        ],
+        "workflows": [
+            {
+                "name": "evaluate-on-common-benchmarks",
+                "config": {
+                    "nodes": [
+                        {
+                            "type": "START",
+                            "id": "bc9dc3a4-afba-4956-a55f-bd51e96da24f",
+                            "name": "START",
+                            "out": [
+                                "009309fa-1ed5-42bc-be5d-b84e32772bf1"
+                            ]
+                        },
+                        {
+                            "name": "EVAL HARNESS",
+                            "task": "KindMoose",
+                            "type": "EVAL",
+                            "metadata": {
+                                "position": {
+                                    "x": -60,
+                                    "y": 75
+                                }
+                            },
+                            "id": "009309fa-1ed5-42bc-be5d-b84e32772bf1",
+                            "out": []
+                        }
+                    ]
+                }
+            }
+        ],
+        "card_image": "https://images.unsplash.com/photo-1589595427524-2ddaf2d43fc9?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
         "id": "fine_tune_small_mlx",
         "title": "Fine Tune a Small Language Model using MLX",
         "description": "Train a Llama 3.2 1B model to understand and answer questions about Touch Rugby rules using the MLX framework. Perfect for rule-based question answering.",
