@@ -1,11 +1,12 @@
 uniqueID: Qwen/Qwen2.5-1.5B-Instruct
 name: Qwen2.5 1.5B Instruct
-description: 'Qwen2.5 is the latest series of Qwen large language models.'
-parameters: '1.5B'
-context: '32768'
+archived: true
+description: "Qwen2.5 is the latest series of Qwen large language models."
+parameters: "1.5B"
+context: "32768"
 architecture: Qwen2ForCausalLM
 formats:
-- Safetensors
+  - Safetensors
 huggingface_repo: Qwen/Qwen2.5-1.5B-Instruct
 transformers_version: 4.43.1
 gated: false
@@ -15,9 +16,9 @@ size_of_model_in_mb: 2953.80
 author:
   name: Qwen
   url: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-  blurb: ''
+  blurb: ""
 resources:
   canonicalUrl: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
   downloadUrl: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-  paperUrl: '?'
+  paperUrl: "?"
 model_group: qwen

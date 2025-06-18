@@ -3243,6 +3243,7 @@
             {
                 "uniqueID": "Qwen/Qwen2.5-1.5B-Instruct",
                 "name": "Qwen2.5 1.5B Instruct",
+                "archived": true,
                 "description": "Qwen2.5 is the latest series of Qwen large language models.",
                 "parameters": "1.5B",
                 "context": "32768",
@@ -3329,6 +3330,7 @@
             {
                 "uniqueID": "mlx-community/Qwen2.5-7B-Instruct-4bit",
                 "name": "Qwen2.5 7B Instruct 4bit MLX",
+                "archived": true,
                 "description": "Qwen2.5 is the latest series of Qwen large language models.",
                 "added": "2024-11-19",
                 "parameters": "7B",
@@ -3358,6 +3360,7 @@
             {
                 "uniqueID": "Qwen/Qwen2.5-7B-Instruct",
                 "name": "Qwen2.5 7B Instruct",
+                "archived": true,
                 "description": "Qwen2.5 is the latest series of Qwen large language models",
                 "added": "2024-11-19",
                 "parameters": "7B",
@@ -3387,6 +3390,7 @@
             {
                 "uniqueID": "Qwen/Qwen2.5-7B",
                 "name": "Qwen2.5 7B",
+                "archived": true,
                 "description": "Qwen2.5 is the latest series of Qwen large language models",
                 "added": "2024-11-19",
                 "parameters": "7B",

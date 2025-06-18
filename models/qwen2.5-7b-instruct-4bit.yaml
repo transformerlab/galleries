@@ -1,12 +1,13 @@
 uniqueID: mlx-community/Qwen2.5-7B-Instruct-4bit
 name: Qwen2.5 7B Instruct 4bit MLX
-description: 'Qwen2.5 is the latest series of Qwen large language models.'
-added: '2024-11-19'
-parameters: '7B'
-context: '32768'
+archived: true
+description: "Qwen2.5 is the latest series of Qwen large language models."
+added: "2024-11-19"
+parameters: "7B"
+context: "32768"
 architecture: MLX
 formats:
-- Safetensors
+  - Safetensors
 huggingface_repo: mlx-community/Qwen2.5-7B-Instruct-4bit
 transformers_version: 4.43.1
 gated: false
@@ -16,9 +17,9 @@ size_of_model_in_mb: 4095.28
 author:
   name: mlx-community
   url: https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-4bit
-  blurb: ''
+  blurb: ""
 resources:
   canonicalUrl: https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-4bit
   downloadUrl: https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-4bit
-  paperUrl: '?'
+  paperUrl: "?"
 model_group: qwen
