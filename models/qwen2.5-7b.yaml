@@ -1,12 +1,13 @@
 uniqueID: Qwen/Qwen2.5-7B
 name: Qwen2.5 7B
-description: 'Qwen2.5 is the latest series of Qwen large language models'
-added: '2024-11-19'
-parameters: '7B'
-context: '131072'
+archived: true
+description: "Qwen2.5 is the latest series of Qwen large language models"
+added: "2024-11-19"
+parameters: "7B"
+context: "131072"
 architecture: Qwen2ForCausalLM
 formats:
-- Safetensors
+  - Safetensors
 huggingface_repo: Qwen/Qwen2.5-7B
 transformers_version: 4.40.1
 gated: false
@@ -16,9 +17,9 @@ size_of_model_in_mb: 14535.06
 author:
   name: Qwen
   url: https://huggingface.co/Qwen/Qwen2.5-7B
-  blurb: ''
+  blurb: ""
 resources:
   canonicalUrl: https://huggingface.co/Qwen/Qwen2.5-7B
   downloadUrl: https://huggingface.co/Qwen/Qwen2.5-7B
-  paperUrl: '?'
+  paperUrl: "?"
 model_group: qwen
