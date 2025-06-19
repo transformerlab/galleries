@@ -1,0 +1,56 @@
+{
+  "id": "eval-common-benchmarks-non-mlx",
+  "title": "Evaluate a Model on Common Benchmarks (Non-MLX)",
+  "requiredMachineArchitecture": ["cuda", "amd"],
+  "description": "Performs evaluation on common benchmarks using the Eleuther AI LM Eval Harness. It evaluates the model `unsloth/Llama-3.2-1B-Instruct` on tasks such as MMLU, Winogrande, HellaSwag, and PIQA.",
+  "notes": "",
+  "dependencies": [
+    {
+      "type": "model",
+      "name": "unsloth/Llama-3.2-1B-Instruct"
+    },
+    {
+      "type": "plugin",
+      "name": "common-eleuther-ai-lm-eval-harness"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "KindMoose",
+      "task_type": "EVAL",
+      "plugin": "common-eleuther-ai-lm-eval-harness",
+      "config_json": "{\"template_name\":\"KindMoose\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"tasks\":\"mmlu,winogrande,hellaswag,piqa\",\"limit\":\"1\",\"run_name\":\"KindMoose\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"KindMoose\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"tasks\":\"mmlu,winogrande,hellaswag,piqa\",\"limit\":\"1\",\"run_name\":\"KindMoose\",\"predefined_tasks\":\"\"}}"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "evaluate-on-common-benchmarks",
+      "config": {
+        "nodes": [
+          {
+            "type": "START",
+            "id": "bc9dc3a4-afba-4956-a55f-bd51e96da24f",
+            "name": "START",
+            "out": [
+              "009309fa-1ed5-42bc-be5d-b84e32772bf1"
+            ]
+          },
+          {
+            "name": "EVAL HARNESS",
+            "task": "KindMoose",
+            "type": "EVAL",
+            "metadata": {
+              "position": {
+                "x": -60,
+                "y": 75
+              }
+            },
+            "id": "009309fa-1ed5-42bc-be5d-b84e32772bf1",
+            "out": []
+          }
+        ]
+      }
+    }
+  ],
+  "card_image": "https://images.unsplash.com/photo-1589595427524-2ddaf2d43fc9?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}
