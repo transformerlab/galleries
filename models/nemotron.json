@@ -58,5 +58,35 @@
       "paperUrl": "?"
     },
     "model_group": "nemotron"
+  },
+  {
+    "uniqueID": "nvidia/AceReason-Nemotron-1.1-7B",
+    "name": "AceReason-Nemotron-1.1-7B",
+    "description": "A math and code reasoning model built upon the Qwen2.5-Math-7B base. The model is first trained with supervised fine-tuning on math and code tasks, then further enhanced through reinforcement learning.",
+    "added": "2025-06-19",
+    "tags": ["Reasoning", "Math", "Coding"],
+    "parameters": "7B",
+    "context": "131072",
+    "architecture": "Qwen2ForCausalLM",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "nvidia/AceReason-Nemotron-1.1-7B",
+    "transformers_version": "4.48.2",
+    "gated": false,
+    "license": "other",
+    "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+    "size_of_model_in_mb": 14539.249306678772,
+    "author": {
+      "name": "nvidia",
+      "url": "https://huggingface.co/nvidia/AceReason-Nemotron-1.1-7B",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/nvidia/AceReason-Nemotron-1.1-7B",
+      "downloadUrl": "https://huggingface.co/nvidia/AceReason-Nemotron-1.1-7B",
+      "paperUrl": "?"
+    },
+    "model_group": "nemotron"
   }
 ]
