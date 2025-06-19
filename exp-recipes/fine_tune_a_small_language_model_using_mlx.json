@@ -28,11 +28,6 @@
       "name": "synthesizer_scratch"
     }
   ],
-  "documents": [
-    {
-      "url": "https://1005.filemail.com/api/file/get?filekey=MUvMFPaA10x_3t6cu84JfWIDPNjt-1JLfd5hXZGe0BAxoJ9usIrBk-g-OSG2w2gIoIvR2E8e3Q&pk_vid=e8ac06877b16db641749661128f39f65"
-    }
-  ],
   "tasks": [
     {
       "name": "fine_tune_touch_rugby",
