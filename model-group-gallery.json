@@ -200,6 +200,50 @@
         ]
     },
     {
+        "name": "openbmb",
+        "description": "Ultra-Efficient LLMs on End Devices",
+        "image": "https://gallery.transformerlab.net/openbmb.png ",
+        "tags": [
+            "Reasoning",
+            "Tiny"
+        ],
+        "models": [
+            {
+                "uniqueID": "openbmb/MiniCPM4-8B",
+                "name": "OpenBMB MiniCPM4 8B",
+                "description": "MiniCPM4 series are highly efficient large language models with sparse attention, built for long\u2011context processing and ultra\u2011efficient on\u2011device inference.",
+                "added": "2025-06-20",
+                "tags": [
+                    "Reasoning",
+                    "Tiny"
+                ],
+                "parameters": "8B",
+                "context": "32768",
+                "architecture": "MiniCPMForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "openbmb/MiniCPM4-8B",
+                "transformers_version": "4.46.3",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "",
+                "size_of_model_in_mb": 15619.835371017456,
+                "author": {
+                    "name": "openbmb",
+                    "url": "https://huggingface.co/openbmb/MiniCPM4-8B",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/openbmb/MiniCPM4-8B",
+                    "downloadUrl": "https://huggingface.co/openbmb/MiniCPM4-8B",
+                    "paperUrl": "?"
+                },
+                "model_group": "openbmb"
+            }
+        ]
+    },
+    {
         "name": "watt",
         "description": "Specialized for tool use and dynamic plugin-based reasoning tasks.",
         "tags": [
