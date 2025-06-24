@@ -2,7 +2,7 @@
     "name": "openbmb",
     "description": "Ultra-Efficient LLMs on End Devices",
     "image": "https://gallery.transformerlab.net/openbmb.png ",
-    "tags": ["Reasoning", "Tiny"],
+    "tags": ["Reasoning"],
     "models": []
   }
   

@@ -3350,8 +3350,7 @@
         "description": "MiniCPM4 series are highly efficient large language models with sparse attention, built for long\u2011context processing and ultra\u2011efficient on\u2011device inference.",
         "added": "2025-06-20",
         "tags": [
-            "Reasoning",
-            "Tiny"
+            "Reasoning"
         ],
         "parameters": "8B",
         "context": "32768",
