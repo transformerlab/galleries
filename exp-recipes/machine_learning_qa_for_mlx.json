@@ -50,14 +50,6 @@
       "config": {
         "nodes": [
           {
-            "type": "START",
-            "id": "0cb74790-9d31-446a-a498-31aa7b04db74",
-            "name": "START",
-            "out": [
-              "f50defa5-0b87-4158-914a-6588cafdacac"
-            ]
-          },
-          {
             "name": "Eval_Base_Model",
             "task": "MMLU_ML_Base",
             "type": "EVAL",
