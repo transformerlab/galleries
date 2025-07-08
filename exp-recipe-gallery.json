@@ -718,6 +718,204 @@
         "cardImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
+        "id": "rag_pipeline",
+        "title": "Custom Retrieval Augmented Generation (RAG) Pipeline",
+        "description": "Build and evaluate a complete custom Retrieval Augmented Generation (RAG) pipeline with a trained embedding model. RAG enhances language models by retrieving relevant information from external knowledge sources before generating responses.",
+        "notes": "# Custom RAG Pipeline with Trained Embedding Model\n\n## Overview\nThis recipe builds a complete **Retrieval Augmented Generation (RAG) pipeline** that trains a custom embedding model specifically for your data and compares its performance against baseline embeddings. RAG enhances language models by retrieving relevant information from external knowledge sources before generating responses, dramatically improving accuracy and reducing hallucinations.\n\n## Steps to Follow\n\n### Step 1: Upload Your Documents\nBefore running any workflows, you need to provide the documents that will serve as your knowledge base:\n\n1. Navigate to the **Documents** tab in Transformer Lab\n2. Create a new folder called `rag`\n3. Upload all the documents you want to use as your knowledge base into this folder\n4. These documents will be used to generate Q&A pairs and train your custom embedding model\n\n### Step 2: Run Part 1 of the Workflow\nOnce your documents are uploaded:\n\n1. Go to the **Workflows** page\n2. Find and run **rag_pipeline_part_1**\n3. This will:\n   - Generate a Q&A dataset from your documents\n   - Train a custom embedding model on your data\n   - Generate baseline outputs using the default embedding model\n\nWait for Part 1 to complete before proceeding to Step 3.\n\n### Step 3: Switch to Your Trained Embedding Model\nAfter Part 1 completes, you need to configure the system to use your newly trained embedding model:\n\n1. Go to the **Foundation** tab\n2. In the **Embedding Models** field, change the selection to any model beginning with:\n   `TrainedEmbeddingModel` followed by numbers\n3. This switches the system to use your custom-trained embedding model for retrieval\n\n### Step 4: Run Part 2 of the Workflow\nWith your trained embedding model now active:\n\n1. Return to the **Workflows** page\n2. Find and run **rag_pipeline_part_2**\n3. This will:\n   - Generate outputs using your trained embedding model\n   - Evaluate the performance of both the baseline and trained models\n   - Provide comparison metrics showing the improvement\n\n## Understanding RAG Benefits\nThis recipe demonstrates the key advantages of RAG:\n- **Reduced Hallucinations**: Models access real information instead of relying on training data\n- **Domain Expertise**: Custom embeddings understand your specific content better\n- **Up-to-date Information**: Retrieval allows access to current data not in training sets\n- **Measurable Improvement**: Direct comparison shows quantitative benefits\n\n## How to Use Your Trained Embedding Model\nOnce both workflows are complete, you can use your custom embedding model in any RAG application by keeping the **Foundation** tab configured with your `TrainedEmbeddingModel` selection. Your RAG queries will now benefit from domain-specific embeddings that understand your content better than generic models.\n\n## Important Notes\n- This recipe works on **Apple Silicon (MLX), CUDA, and AMD** architectures\n- The two-part workflow structure allows you to inspect results after training and before evaluation\n- **Automated evaluation** provides objective metrics comparing base vs. trained performance using Contextual Precision and Answer Relevancy\n- Uses the **Qwen 2.5-1.5B-Instruct** model for both generation and evaluation\n\n## Expected Outcomes\nAfter completing both workflows, you'll have:\n- A custom embedding model trained specifically for your domain\n- Quantitative evidence of improved RAG performance with custom embeddings\n- A complete RAG system ready for production use\n- Understanding of how domain-specific training enhances retrieval quality\n- Baseline metrics to measure future improvements",
+        "requiredMachineArchitecture": [
+            "mlx",
+            "cuda",
+            "amd"
+        ],
+        "dependencies": [
+            {
+                "type": "model",
+                "name": "Qwen/Qwen2.5-1.5B-Instruct"
+            },
+            {
+                "type": "dataset",
+                "name": "generateqnapairs"
+            },
+            {
+                "type": "plugin",
+                "name": "embedding_model_trainer"
+            },
+            {
+                "type": "plugin",
+                "name": "deepeval_llm_judge"
+            },
+            {
+                "type": "plugin",
+                "name": "generate_rag_outputs"
+            },
+            {
+                "type": "plugin",
+                "name": "synthetic_dataset_rag"
+            },
+            {
+                "type": "plugin",
+                "name": "llamaindex_simple_document_search"
+            }
+        ],
+        "tasks": [
+            {
+                "name": "TrainEmbeddingModel",
+                "task_type": "TRAIN",
+                "plugin": "embedding_model_trainer",
+                "config_json": "{\"template_name\":\"TrainEmbeddingModel\",\"plugin_name\":\"embedding_model_trainer\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"foundation_model_file_path\":\"\",\"embedding_model\":\"BAAI/bge-base-en-v1.5\",\"embedding_model_architecture\":\"BertModel\",\"embedding_model_file_path\":\"\",\"dataset_name\":\"generateqnapairs\",\"dataset_type\":\"single sentences\",\"loss_function\":\"DenoisingAutoEncoderLoss\",\"loss_modifier_name\":\"None\",\"text_column_name\":\"context\",\"num_train_epochs\":\"3\",\"batch_size\":\"16\",\"learning_rate\":\"0.00002\",\"warmup_ratio\":\"0.1\",\"max_samples\":\"-1\",\"type\":\"embedding\",\"run_sweeps\":false}"
+            },
+            {
+                "name": "TrainedModelEval",
+                "task_type": "EVAL",
+                "plugin": "deepeval_llm_judge",
+                "config_json": "{\"template_name\":\"TrainedModelEval\",\"plugin_name\":\"deepeval_llm_judge\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"generation_model\":\"local\",\"predefined_tasks\":\"Contextual Precision,Answer Relevancy\",\"tasks\":\"[]\",\"limit\":\"1\",\"dataset_split\":\"train\",\"dataset_name\":\"peacefulchinchilla_2879\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"TrainedModelEval\",\"script_parameters\":{\"template_name\":\"TrainedModelEval\",\"plugin_name\":\"deepeval_llm_judge\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"generation_model\":\"local\",\"predefined_tasks\":\"Contextual Precision,Answer Relevancy\",\"tasks\":\"[]\",\"limit\":\"1\",\"dataset_split\":\"train\",\"dataset_name\":\"peacefulchinchilla_2879\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"TrainedModelEval\"}}"
+            },
+            {
+                "name": "BaseModelEval",
+                "task_type": "EVAL",
+                "plugin": "deepeval_llm_judge",
+                "config_json": "{\"template_name\":\"BaseModelEval\",\"plugin_name\":\"deepeval_llm_judge\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"generation_model\":\"local\",\"predefined_tasks\":\"Contextual Precision,Answer Relevancy\",\"tasks\":\"[]\",\"limit\":\"1\",\"dataset_split\":\"train\",\"dataset_name\":\"radiantdonkey_2877\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"BaseModelEval\",\"script_parameters\":{\"template_name\":\"BaseModelEval\",\"plugin_name\":\"deepeval_llm_judge\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"generation_model\":\"local\",\"predefined_tasks\":\"Contextual Precision,Answer Relevancy\",\"tasks\":\"[]\",\"limit\":\"1\",\"dataset_split\":\"train\",\"dataset_name\":\"radiantdonkey_2877\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"BaseModelEval\"}}"
+            },
+            {
+                "name": "TrainedEmbeddingAnswers",
+                "task_type": "GENERATE",
+                "plugin": "generate_rag_outputs",
+                "config_json": "{\"template_name\":\"TrainedEmbeddingAnswers\",\"plugin_name\":\"generate_rag_outputs\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"input_field\":\"input\",\"response_mode\":\"compact\",\"number_of_search_results\":\"2\",\"temperature\":\"1\",\"context_window\":\"4096\",\"num_output\":\"256\",\"chunk_size\":\"512\",\"chunk_overlap\":\"50\",\"reranker_model\":\"cross-encoder/ms-marco-MiniLM-L-6-v2\",\"reranker_top_n\":\"20\",\"output_dataset_name\":\"generated_dataset\",\"dataset_name\":\"generateqnapairs\",\"_dataset_display_message\":\"This plugin requires a dataset to run. Please upload a dataset to continue.\",\"run_name\":\"TrainedEmbeddingAnswers\",\"generation_type\":\"scratch\",\"script_parameters\":{\"template_name\":\"TrainedEmbeddingAnswers\",\"plugin_name\":\"generate_rag_outputs\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"input_field\":\"input\",\"response_mode\":\"compact\",\"number_of_search_results\":\"2\",\"temperature\":\"1\",\"context_window\":\"4096\",\"num_output\":\"256\",\"chunk_size\":\"512\",\"chunk_overlap\":\"50\",\"reranker_model\":\"cross-encoder/ms-marco-MiniLM-L-6-v2\",\"reranker_top_n\":\"20\",\"output_dataset_name\":\"generated_dataset\",\"dataset_name\":\"generateqnapairs\",\"_dataset_display_message\":\"This plugin requires a dataset to run. Please upload a dataset to continue.\",\"run_name\":\"TrainedEmbeddingAnswers\",\"generation_type\":\"scratch\"}}"
+            },
+            {
+                "name": "BaseEmbeddingAnswers",
+                "task_type": "GENERATE",
+                "plugin": "generate_rag_outputs",
+                "config_json": "{\"template_name\":\"BaseEmbeddingAnswers\",\"plugin_name\":\"generate_rag_outputs\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"input_field\":\"input\",\"response_mode\":\"compact\",\"number_of_search_results\":\"2\",\"temperature\":\"1\",\"context_window\":\"4096\",\"num_output\":\"256\",\"chunk_size\":\"512\",\"chunk_overlap\":\"50\",\"reranker_model\":\"cross-encoder/ms-marco-MiniLM-L-6-v2\",\"reranker_top_n\":\"20\",\"output_dataset_name\":\"generated_dataset\",\"dataset_name\":\"generateqnapairs\",\"_dataset_display_message\":\"This plugin requires a dataset to run. Please upload a dataset to continue.\",\"run_name\":\"BaseEmbeddingAnswers\",\"generation_type\":\"scratch\",\"script_parameters\":{\"template_name\":\"BaseEmbeddingAnswers\",\"plugin_name\":\"generate_rag_outputs\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"input_field\":\"input\",\"response_mode\":\"compact\",\"number_of_search_results\":\"2\",\"temperature\":\"1\",\"context_window\":\"4096\",\"num_output\":\"256\",\"chunk_size\":\"512\",\"chunk_overlap\":\"50\",\"reranker_model\":\"cross-encoder/ms-marco-MiniLM-L-6-v2\",\"reranker_top_n\":\"20\",\"output_dataset_name\":\"generated_dataset\",\"dataset_name\":\"generateqnapairs\",\"_dataset_display_message\":\"This plugin requires a dataset to run. Please upload a dataset to continue.\",\"run_name\":\"BaseEmbeddingAnswers\",\"generation_type\":\"scratch\"}}"
+            },
+            {
+                "name": "GenerateQnAPairs",
+                "task_type": "GENERATE",
+                "plugin": "synthetic_dataset_rag",
+                "config_json": "{\"template_name\":\"GenerateQnAPairs\",\"plugin_name\":\"synthetic_dataset_rag\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"generation_model\":\"local\",\"chunk_size\":\"256\",\"chunk_overlap\":\"200\",\"n_generations\":\"200\",\"output_dataset_name\":\"GenerateQnAPairs\",\"docs\":\"rag\",\"run_name\":\"GenerateQnAPairs\",\"generation_type\":\"docs\",\"script_parameters\":{\"template_name\":\"GenerateQnAPairs\",\"plugin_name\":\"synthetic_dataset_rag\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"generation_model\":\"local\",\"chunk_size\":\"256\",\"chunk_overlap\":\"200\",\"n_generations\":\"200\",\"output_dataset_name\":\"GenerateQnAPairs\",\"docs\":\"rag\",\"run_name\":\"GenerateQnAPairs\",\"generation_type\":\"docs\"}}"
+            }
+        ],
+        "workflows": [
+            {
+                "name": "rag_pipeline_part_1",
+                "config": {
+                    "nodes": [
+                        {
+                            "type": "START",
+                            "id": "b914cda4-8363-43ec-9154-8b9bf6d251a3",
+                            "name": "START",
+                            "out": [
+                                "04e138e4-b1da-494d-b43d-77b69074a4d6"
+                            ]
+                        },
+                        {
+                            "name": "Generate_QnA_Dataset",
+                            "task": "GenerateQnAPairs",
+                            "type": "GENERATE",
+                            "metadata": {
+                                "position": {
+                                    "x": -15,
+                                    "y": 90
+                                }
+                            },
+                            "id": "04e138e4-b1da-494d-b43d-77b69074a4d6",
+                            "out": [
+                                "1796289f-6cae-449b-a4ad-e318825cd9f1"
+                            ]
+                        },
+                        {
+                            "name": "Train_Embedding_Model",
+                            "task": "TrainEmbeddingModel",
+                            "type": "TRAIN",
+                            "metadata": {
+                                "position": {
+                                    "x": -15,
+                                    "y": 210
+                                }
+                            },
+                            "id": "1796289f-6cae-449b-a4ad-e318825cd9f1",
+                            "out": [
+                                "ec414b7c-6b52-479c-a695-66619acf872d"
+                            ]
+                        },
+                        {
+                            "name": "Base_Model_Outputs",
+                            "task": "BaseEmbeddingAnswers",
+                            "type": "GENERATE",
+                            "metadata": {
+                                "position": {
+                                    "x": 0,
+                                    "y": 330
+                                }
+                            },
+                            "id": "ec414b7c-6b52-479c-a695-66619acf872d",
+                            "out": []
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "rag_pipeline_part_2",
+                "config": {
+                    "nodes": [
+                        {
+                            "type": "START",
+                            "id": "f1a2b3c4-d5e6-f7g8-h9i0-j1k2l3m4n5o6",
+                            "name": "START",
+                            "out": [
+                                "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6"
+                            ]
+                        },
+                        {
+                            "name": "Trained_Model_Outputs",
+                            "task": "TrainedEmbeddingAnswers",
+                            "type": "GENERATE",
+                            "metadata": {
+                                "position": {
+                                    "x": 0,
+                                    "y": 90
+                                }
+                            },
+                            "id": "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6",
+                            "out": [
+                                "b2c3d4e5-f6g7-h8i9-j0k1-l2m3n4o5p6q7"
+                            ]
+                        },
+                        {
+                            "name": "Base_Model_Eval",
+                            "task": "BaseModelEval",
+                            "type": "EVAL",
+                            "metadata": {
+                                "position": {
+                                    "x": 0,
+                                    "y": 210
+                                }
+                            },
+                            "id": "b2c3d4e5-f6g7-h8i9-j0k1-l2m3n4o5p6q7",
+                            "out": [
+                                "c3d4e5f6-g7h8-i9j0-k1l2-m3n4o5p6q7r8"
+                            ]
+                        },
+                        {
+                            "name": "Trained_Model_Eval",
+                            "task": "TrainedModelEval",
+                            "type": "EVAL",
+                            "metadata": {
+                                "position": {
+                                    "x": 0,
+                                    "y": 330
+                                }
+                            },
+                            "id": "c3d4e5f6-g7h8-i9j0-k1l2-m3n4o5p6q7r8",
+                            "out": []
+                        }
+                    ]
+                }
+            }
+        ],
+        "cardImage": "https://images.unsplash.com/flagged/photo-1558963675-94dc9c4a66a9?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
         "id": "run_on_edge",
         "title": "Run a Model on the Edge",
         "description": "Execute your model on edge devices using runtime environment. Achieve real-time performance and low power consumption.",
