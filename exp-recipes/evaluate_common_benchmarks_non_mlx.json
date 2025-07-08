@@ -1,6 +1,6 @@
 {
   "id": "eval-common-benchmarks-non-mlx",
-  "title": "Evaluate a Model on Common Benchmarks (Non-MLX)",
+  "title": "Evaluate a Model on Common Benchmarks",
   "requiredMachineArchitecture": ["cuda", "amd"],
   "description": "Performs evaluation on common benchmarks using the Eleuther AI LM Eval Harness. It evaluates the model `unsloth/Llama-3.2-1B-Instruct` on tasks such as MMLU, Winogrande, HellaSwag, and PIQA.",
   "notes": "",
@@ -31,9 +31,7 @@
             "type": "START",
             "id": "bc9dc3a4-afba-4956-a55f-bd51e96da24f",
             "name": "START",
-            "out": [
-              "009309fa-1ed5-42bc-be5d-b84e32772bf1"
-            ]
+            "out": ["009309fa-1ed5-42bc-be5d-b84e32772bf1"]
           },
           {
             "name": "EVAL HARNESS",
