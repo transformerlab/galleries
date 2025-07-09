@@ -1,0 +1,44 @@
+{
+  "id": "convert_to_mlx",
+  "title": "Convert a Model to the MLX Format",
+  "description": "Transform your model into the MLX format for compatibility with various deployment environments.",
+  "notes": "# Convert Qwen 2.5 to MLX Format\n\n## Overview\nThis recipe demonstrates how to convert the **Qwen 2.5-1.5B-Instruct** model to the MLX format for optimized performance on Apple Silicon. The conversion enables efficient inference on Mac devices while preserving the model's capabilities and reducing memory requirements.\n\nTo get started, simply go to the **Workflows** page and click **Run** \u2014 the entire conversion process is automated for you.\n\n## Workflow Breakdown\nThe workflow consists of the following automated step:\n\n1. **MLX Format Conversion**  \n   The Qwen 2.5 model is converted from its original format to MLX format using the AirLLM MLX server, optimizing it specifically for Apple Silicon architecture.\n\n## Understanding MLX Conversion\nThe MLX conversion process:\n- **Preserves Model Architecture**: All model weights and structure remain intact\n- **Optimizes for Apple Silicon**: Leverages Metal Performance Shaders for M1/M2/M3 chips\n- **Reduces Memory Footprint**: More efficient memory usage compared to standard formats\n- **Enables Fast Inference**: Optimized computation paths for Mac hardware\n\n## Using the Converted Model\nAfter conversion, the MLX-formatted model will be available for:\n- Faster inference on Apple Silicon devices\n- Integration with MLX-optimized applications\n- Deployment in Apple Silicon-specific environments\n\n## Important Notes\n- This recipe is **exclusively for Apple Silicon** (M1/M2/M3) architectures\n- **MLX format** provides significant performance improvements on Mac devices\n- The conversion maintains full model functionality while optimizing performance\n- Converted models are compatible with MLX-based inference frameworks\n\n## Expected Outcomes\nAfter completing this conversion, you'll have:\n- A Qwen 2.5 model optimized specifically for Apple Silicon\n- Significantly improved inference speeds on Mac devices\n- Reduced memory usage compared to standard model formats\n- A model ready for deployment in MLX-optimized environments\n- Enhanced performance for real-time applications on Apple hardware",
+  "requiredMachineArchitecture": [
+    "mlx"
+  ],
+  "dependencies": [
+    {
+      "type": "model",
+      "name": "Qwen/Qwen2.5-1.5B-Instruct"
+    },
+    {
+      "type": "plugin",
+      "name": "airllm_mlx_server"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "convert_to_mlx",
+      "task_type": "EXPORT",
+      "plugin": "airllm_mlx_server",
+      "config_json": "{\"template_name\":\"MLXConversion\",\"plugin_name\":\"airllm_mlx_server\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"output_format\":\"mlx\"}"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "MLX_Conversion",
+      "config": {
+        "nodes": [
+          {
+            "id": "node_convert",
+            "type": "EXPORT",
+            "task": "convert_to_mlx",
+            "name": "MLX Conversion Task",
+            "out": []
+          }
+        ]
+      }
+    }
+  ],
+  "cardImage": "https://images.unsplash.com/photo-1563203369-26f2e4a5ccf7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}
