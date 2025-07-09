@@ -738,7 +738,7 @@
                 "parameters": "1B",
                 "context": "32768",
                 "added": "2025-03-19",
-                "architecture": "Gemma3ForCausalLM",
+                "architecture": "MLX",
                 "formats": [
                     "Safetensors"
                 ],
@@ -770,7 +770,7 @@
                 "parameters": "12B",
                 "context": "32768",
                 "added": "2025-03-19",
-                "architecture": "Gemma3ForConditionalGeneration",
+                "architecture": "MLX",
                 "formats": [
                     "Safetensors"
                 ],
@@ -4785,6 +4785,166 @@
             }
         ],
         "image": "https://gallery.transformerlab.net/bytedance.png"
+    },
+    {
+        "name": "baidu",
+        "description": "Multimodal and emotionally intelligent. Excels in reasoning with superior accuracy and low cost.",
+        "image": "https://gallery.transformerlab.net/baidu.png",
+        "tags": [
+            "Mixture of Experts"
+        ],
+        "models": [
+            {
+                "uniqueID": "baidu/ERNIE-4.5-300B-A47B-Base-PT",
+                "name": "ERNIE-4.5-300B-A47B-Base-PT",
+                "description": "Massive-scale base model for general reasoning and generation across tasks.",
+                "added": "2025-07-02",
+                "tags": [],
+                "parameters": "300B",
+                "context": "131072",
+                "architecture": "Ernie4_5_MoeForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "baidu/ERNIE-4.5-300B-A47B-Base-PT",
+                "transformers_version": "4.51.3",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://gallery.transformerlab.net/baidu.png",
+                "size_of_model_in_mb": 571275.5021314621,
+                "author": {
+                    "name": "baidu",
+                    "url": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-Base-PT",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-Base-PT",
+                    "downloadUrl": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-Base-PT",
+                    "paperUrl": "?"
+                },
+                "model_group": "baidu"
+            },
+            {
+                "uniqueID": "baidu/ERNIE-4.5-300B-A47B-PT",
+                "name": "ERNIE-4.5-300B-A47B-PT",
+                "description": "Full 300B variant with optimized training for advanced multimodal capabilities.",
+                "added": "2025-07-02",
+                "tags": [],
+                "parameters": "300B",
+                "context": "131072",
+                "architecture": "Ernie4_5_MoeForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "baidu/ERNIE-4.5-300B-A47B-PT",
+                "transformers_version": "4.51.3",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://gallery.transformerlab.net/baidu.png",
+                "size_of_model_in_mb": 573163.566942215,
+                "author": {
+                    "name": "baidu",
+                    "url": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-PT",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-PT",
+                    "downloadUrl": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-PT",
+                    "paperUrl": "?"
+                },
+                "model_group": "baidu"
+            },
+            {
+                "uniqueID": "baidu/ERNIE-4.5-21B-A3B-Base-PT",
+                "name": "ERNIE-4.5-21B-A3B-Base-PT",
+                "description": "Lightweight 21B base model for balanced performance and reasoning.",
+                "added": "2025-07-02",
+                "tags": [],
+                "parameters": "21B",
+                "context": "131072",
+                "architecture": "Ernie4_5_MoeForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "baidu/ERNIE-4.5-21B-A3B-Base-PT",
+                "transformers_version": "4.51.3",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://gallery.transformerlab.net/baidu.png",
+                "size_of_model_in_mb": 42136.49228000641,
+                "author": {
+                    "name": "baidu",
+                    "url": "https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-Base-PT",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-Base-PT",
+                    "downloadUrl": "https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-Base-PT",
+                    "paperUrl": "?"
+                },
+                "model_group": "baidu"
+            },
+            {
+                "uniqueID": "baidu/ERNIE-4.5-21B-A3B-PT",
+                "name": "ERNIE-4.5-21B-A3B-PT",
+                "description": "Versatile 21B model with pretrained enhancements for efficient generation.",
+                "added": "2025-07-02",
+                "tags": [],
+                "parameters": "21B",
+                "context": "131072",
+                "architecture": "Ernie4_5_MoeForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "baidu/ERNIE-4.5-21B-A3B-PT",
+                "transformers_version": "4.51.3",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://gallery.transformerlab.net/baidu.png",
+                "size_of_model_in_mb": 41866.51383304596,
+                "author": {
+                    "name": "baidu",
+                    "url": "https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-PT",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-PT",
+                    "downloadUrl": "https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-PT",
+                    "paperUrl": "?"
+                },
+                "model_group": "baidu"
+            },
+            {
+                "uniqueID": "baidu/ERNIE-4.5-0.3B-Paddle",
+                "name": "ERNIE-4.5-0.3B-Paddle",
+                "description": "Ultra-compact 300M model designed for speed and low-resource inference.",
+                "added": "2025-07-02",
+                "tags": [],
+                "parameters": "0.3B",
+                "context": "131072",
+                "architecture": "Ernie4_5_ForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "baidu/ERNIE-4.5-0.3B-Paddle",
+                "transformers_version": "4.51.3",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://gallery.transformerlab.net/baidu.png",
+                "size_of_model_in_mb": 689.6623659133911,
+                "author": {
+                    "name": "baidu",
+                    "url": "https://huggingface.co/baidu/ERNIE-4.5-0.3B-Paddle",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/baidu/ERNIE-4.5-0.3B-Paddle",
+                    "downloadUrl": "https://huggingface.co/baidu/ERNIE-4.5-0.3B-Paddle",
+                    "paperUrl": "?"
+                },
+                "model_group": "baidu"
+            }
+        ]
     },
     {
         "name": "command",

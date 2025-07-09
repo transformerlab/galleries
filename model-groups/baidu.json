@@ -1,0 +1,7 @@
+{
+  "name": "baidu",
+  "description": "Multimodal and emotionally intelligent. Excels in reasoning with superior accuracy and low cost.",
+  "image": "https://gallery.transformerlab.net/baidu.png",
+  "tags": ["Mixture of Experts"],
+  "models": []
+}
