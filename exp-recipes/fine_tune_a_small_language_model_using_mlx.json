@@ -60,18 +60,14 @@
             "type": "TRAIN",
             "task": "fine_tune_touch_rugby",
             "name": "Training Task",
-            "out": [
-              "node_eval"
-            ]
+            "out": ["node_eval"]
           },
           {
             "id": "node_eval",
             "type": "EVAL",
             "task": "evaluate_touch_rugby",
             "name": "Evaluation Task",
-            "out": [
-              "node_generate"
-            ]
+            "out": ["node_generate"]
           },
           {
             "id": "node_generate",

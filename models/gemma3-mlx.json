@@ -6,7 +6,7 @@
     "parameters": "1B",
     "context": "32768",
     "added": "2025-03-19",
-    "architecture": "Gemma3ForCausalLM",
+    "architecture": "MLX",
     "formats": [
       "Safetensors"
     ],
@@ -38,7 +38,7 @@
     "parameters": "12B",
     "context": "32768",
     "added": "2025-03-19",
-    "architecture": "Gemma3ForConditionalGeneration",
+    "architecture": "MLX",
     "formats": [
       "Safetensors"
     ],

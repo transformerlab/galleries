@@ -1,47 +1,46 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "type": "array",
-    "items": {
-        "type": "object",
-        "properties": {
-            "id": {
-                "type": "string"
-            },
-            "title": {
-                "type": "string"
-            },
-            "description": {
-                "type": "string"
-            },
-            "notes": {
-                "type": "string"
-            },
-            "requiredMachineArchitecture": {
-                "type": "array",
-                "items": {
-                    "type": "string"
-                }
-            },
-            "dependencies": {
-                "type": "array"
-            },
-            "tasks": {
-                "type": "array"
-            },
-            "workflows": {
-                "type": "array"
-            },
-            "cardImage": {
-                "type": "string"
-            },
-            "documents": {
-                "type": "array"
-            }
-        },
-        "required": [
-            "id",
-            "title",
-            "description"
-        ]
-    }
-} 
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "notes": {
+        "type": "string"
+      },
+      "requiredMachineArchitecture": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "zOrder": {
+        "type": "integer"
+      },
+      "dependencies": {
+        "type": "array"
+      },
+      "tasks": {
+        "type": "array"
+      },
+      "workflows": {
+        "type": "array"
+      },
+      "cardImage": {
+        "type": "string"
+      },
+      "documents": {
+        "type": "array"
+      }
+    },
+    "required": ["id", "title", "description"]
+  }
+}

@@ -36,7 +36,7 @@
     },
     {
         "id": "answer_sql_queries_mlx",
-        "title": "Answer SQL Queries (for MLX)",
+        "title": "Answer SQL Queries using MLX",
         "description": "Fine-tune a Llama 3.2 1B model to understand and generate SQL queries, optimized for Apple Silicon using MLX framework.",
         "notes": "# SQL Query Assistant with MLX\n\n## Overview\nThis recipe adapts a Llama 3.2 1B model for SQL query generation and explanation, optimized for MLX.\n\n## Important Considerations\n- MLX optimization for Apple Silicon\n- Uses WikiSQL dataset for diverse query types\n- Focus on practical SQL scenarios\n\n## Training Tips\n- Monitor query correctness\n- Test across different SQL complexities\n- Validate query execution results\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Generate correct SQL queries\n- Explain query logic\n- Handle various database scenarios",
         "requiredMachineArchitecture": [
@@ -67,113 +67,6 @@
         ],
         "workflows": [],
         "cardImage": "https://images.unsplash.com/photo-1683322499436-f4383dd59f5a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-        "id": "convert_to_mlx",
-        "title": "Convert a Model to the MLX Format",
-        "description": "Transform your model into the MLX format for compatibility with various deployment environments.",
-        "notes": "# MLX Model Conversion\n\n## Overview\nThis recipe demonstrates how to convert a model to the MLX format for optimized performance on Apple Silicon.\n\n## Important Considerations\n- MLX format is optimized for Apple Silicon\n- Conversion preserves model architecture and weights\n- Enables efficient inference on Mac devices\n\n## Conversion Tips\n- Verify model compatibility\n- Check memory requirements\n- Test inference after conversion\n\n## Expected Outcomes\nAfter conversion, you will have:\n- MLX-compatible model\n- Optimized performance on Apple Silicon\n- Reduced memory footprint",
-        "requiredMachineArchitecture": [
-            "mlx"
-        ],
-        "dependencies": [
-            {
-                "type": "model",
-                "name": "Qwen/Qwen2.5-1.5B-Instruct"
-            },
-            {
-                "type": "plugin",
-                "name": "airllm_mlx_server"
-            }
-        ],
-        "tasks": [
-            {
-                "name": "convert_to_mlx",
-                "task_type": "EXPORT",
-                "plugin": "airllm_mlx_server",
-                "config_json": "{\"template_name\":\"MLXConversion\",\"plugin_name\":\"airllm_mlx_server\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"output_format\":\"mlx\"}"
-            }
-        ],
-        "workflows": [
-            {
-                "name": "MLX_Conversion",
-                "config": {
-                    "nodes": [
-                        {
-                            "id": "node_convert",
-                            "type": "EXPORT",
-                            "task": "convert_to_mlx",
-                            "name": "MLX Conversion Task",
-                            "out": []
-                        }
-                    ]
-                }
-            }
-        ],
-        "cardImage": "https://images.unsplash.com/photo-1563203369-26f2e4a5ccf7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-        "id": "deploy_to_edge",
-        "title": "Deploy a Model to the Edge",
-        "description": "Seamlessly deploy your model to edge devices using deployment tools. Ensure low-latency and efficient performance.",
-        "notes": "# Edge Deployment\n\n## Overview\nThis recipe demonstrates how to deploy a model to edge devices for efficient inference.\n\n## Important Considerations\n- Edge devices have limited resources\n- Optimization for target hardware\n- Balance between performance and size\n\n## Deployment Tips\n- Test on target hardware\n- Monitor resource usage\n- Optimize for specific use case\n\n## Expected Outcomes\nAfter deployment, you will have:\n- Edge-optimized model\n- Low-latency inference\n- Efficient resource usage",
-        "requiredMachineArchitecture": [
-            "mlx"
-        ],
-        "dependencies": [
-            {
-                "type": "model",
-                "name": "mlx-community/Llama-3.2-1B-Instruct-4bit"
-            },
-            {
-                "type": "plugin",
-                "name": "airllm_mlx_server"
-            },
-            {
-                "type": "plugin",
-                "name": "eleuther-ai-lm-evaluation-harness-mlx"
-            }
-        ],
-        "tasks": [
-            {
-                "name": "optimize_for_edge",
-                "task_type": "EXPORT",
-                "plugin": "airllm_mlx_server",
-                "config_json": "{\"template_name\":\"EdgeOptimization\",\"plugin_name\":\"airllm_mlx_server\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"output_format\":\"mlx\",\"optimize_for_edge\":true}"
-            },
-            {
-                "name": "evaluate_edge_model",
-                "task_type": "EVAL",
-                "plugin": "eleuther-ai-lm-evaluation-harness-mlx",
-                "config_json": "{\"template_name\":\"EvalEdge\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"mmlu\",\"limit\":\"0.5\",\"run_name\":\"EvalEdge\"}"
-            }
-        ],
-        "workflows": [
-            {
-                "name": "Edge_Deployment",
-                "config": {
-                    "nodes": [
-                        {
-                            "id": "node_optimize",
-                            "type": "EXPORT",
-                            "task": "optimize_for_edge",
-                            "name": "Edge Optimization Task",
-                            "out": [
-                                "node_eval"
-                            ]
-                        },
-                        {
-                            "id": "node_eval",
-                            "type": "EVAL",
-                            "task": "evaluate_edge_model",
-                            "name": "Evaluation Task",
-                            "out": []
-                        }
-                    ]
-                }
-            }
-        ],
-        "cardImage": "https://images.unsplash.com/photo-1667984390538-3dea7a3fe33d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": "dialogue_summarizing",
@@ -212,71 +105,8 @@
         "cardImage": "https://images.unsplash.com/photo-1590650046871-92c887180603?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-        "id": "evaluate_model",
-        "title": "Evaluate a Model",
-        "description": "Assess the performance of your model using Eleuther Labs AI Evaluation Harness. Gain insights into accuracy and reliability.",
-        "notes": "# Model Evaluation\n\n## Overview\nThis recipe demonstrates how to evaluate a model's performance using the Eleuther AI Evaluation Harness.\n\n## Important Considerations\n- Uses standardized benchmarks for comparison\n- Evaluates multiple aspects of model performance\n- Provides detailed metrics and analysis\n\n## Evaluation Tips\n- Choose appropriate evaluation tasks\n- Consider using multiple benchmarks\n- Compare results with baseline models\n\n## Expected Outcomes\nThe evaluation will provide:\n- Detailed performance metrics\n- Task-specific scores\n- Comparative analysis with other models",
-        "requiredMachineArchitecture": [
-            "mlx"
-        ],
-        "dependencies": [
-            {
-                "type": "model",
-                "name": "mlx-community/Llama-3.2-1B-Instruct-4bit"
-            },
-            {
-                "type": "dataset",
-                "name": "spencer/samsum_reformat"
-            },
-            {
-                "type": "plugin",
-                "name": "eleuther-ai-lm-evaluation-harness-mlx"
-            }
-        ],
-        "tasks": [
-            {
-                "name": "evaluate_model_mmlu",
-                "task_type": "EVAL",
-                "plugin": "eleuther-ai-lm-evaluation-harness-mlx",
-                "config_json": "{\"template_name\":\"EvalMMLU\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"mmlu\",\"limit\":\"1.0\",\"run_name\":\"EvalMMLU\"}"
-            },
-            {
-                "name": "evaluate_model_truthfulqa",
-                "task_type": "EVAL",
-                "plugin": "eleuther-ai-lm-evaluation-harness-mlx",
-                "config_json": "{\"template_name\":\"EvalTruthfulQA\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"truthfulqa\",\"limit\":\"1.0\",\"run_name\":\"EvalTruthfulQA\"}"
-            }
-        ],
-        "workflows": [
-            {
-                "name": "Comprehensive_Evaluation",
-                "config": {
-                    "nodes": [
-                        {
-                            "id": "node_eval_mmlu",
-                            "type": "EVAL",
-                            "task": "evaluate_model_mmlu",
-                            "name": "MMLU Evaluation",
-                            "out": [
-                                "node_eval_truthfulqa"
-                            ]
-                        },
-                        {
-                            "id": "node_eval_truthfulqa",
-                            "type": "EVAL",
-                            "task": "evaluate_model_truthfulqa",
-                            "name": "TruthfulQA Evaluation",
-                            "out": []
-                        }
-                    ]
-                }
-            }
-        ],
-        "cardImage": "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-        "id": "eval-common-benchmarks-non-mlx",
-        "title": "Evaluate a Model on Common Benchmarks (MLX)",
+        "id": "eval-common-benchmarks-mlx",
+        "title": "Evaluate a Model on Common Benchmarks on MLX",
         "requiredMachineArchitecture": [
             "mlx"
         ],
@@ -330,11 +160,11 @@
                 }
             }
         ],
-        "card_image": "https://images.unsplash.com/photo-1553268169-8232852a2377?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "cardImage": "https://recipes.transformerlab.net/radialchart.png"
     },
     {
         "id": "eval-common-benchmarks-non-mlx",
-        "title": "Evaluate a Model on Common Benchmarks (Non-MLX)",
+        "title": "Evaluate a Model on Common Benchmarks",
         "requiredMachineArchitecture": [
             "cuda",
             "amd"
@@ -389,7 +219,7 @@
                 }
             }
         ],
-        "card_image": "https://images.unsplash.com/photo-1589595427524-2ddaf2d43fc9?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "cardImage": "https://images.unsplash.com/photo-1589595427524-2ddaf2d43fc9?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": "fine_tune_small_mlx",
@@ -399,6 +229,7 @@
         "requiredMachineArchitecture": [
             "mlx"
         ],
+        "zOrder": 1,
         "dependencies": [
             {
                 "type": "model",
@@ -585,7 +416,7 @@
     },
     {
         "id": "ml_qa_mlx",
-        "title": "Machine Learning Q&A (for MLX)",
+        "title": "Machine Learning Q&A on MLX",
         "description": "Fine-tune a Gemma 2 model to become an expert in answering machine learning questions, optimized for Apple Silicon using MLX framework.",
         "notes": "# Machine Learning Q&A with Gemma 2\n\n## Overview\nThis recipe adapts a Gemma 2 model to specialize in machine learning concepts and explanations, optimized for MLX.\n\n## Important Considerations\n- MLX optimization for Apple Silicon\n- Comprehensive ML Q&A dataset coverage\n- Efficient inference on Mac devices\n\n## Training Tips\n- Balance technical accuracy with clarity\n- Monitor explanation quality\n- Test across different ML topics\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Explain ML concepts clearly\n- Provide technical insights\n- Answer both basic and advanced ML questions",
         "requiredMachineArchitecture": [
@@ -715,138 +546,7 @@
                 }
             }
         ],
-        "cardImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-        "id": "run_on_edge",
-        "title": "Run a Model on the Edge",
-        "description": "Execute your model on edge devices using runtime environment. Achieve real-time performance and low power consumption.",
-        "notes": "# Edge Inference\n\n## Overview\nThis recipe demonstrates how to run a model efficiently on edge devices.\n\n## Important Considerations\n- Resource constraints on edge devices\n- Real-time performance requirements\n- Power consumption optimization\n\n## Runtime Tips\n- Monitor inference latency\n- Optimize batch size for throughput\n- Balance CPU and GPU usage\n\n## Expected Outcomes\nAfter setup, you will have:\n- Efficient model inference\n- Real-time performance\n- Optimized resource usage",
-        "requiredMachineArchitecture": [
-            "cuda"
-        ],
-        "dependencies": [
-            {
-                "type": "model",
-                "name": "Qwen/Qwen2.5-1.5B-Instruct"
-            },
-            {
-                "type": "plugin",
-                "name": "fastchat_server"
-            },
-            {
-                "type": "plugin",
-                "name": "eleuther-ai-lm-evaluation-harness-mlx"
-            }
-        ],
-        "tasks": [
-            {
-                "name": "setup_edge_inference",
-                "task_type": "LOADER",
-                "plugin": "fastchat_server",
-                "config_json": "{\"template_name\":\"EdgeInference\",\"plugin_name\":\"fastchat_server\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"load_compressed\":\"4-bit\",\"model_dtype\":\"float16\"}"
-            },
-            {
-                "name": "evaluate_inference",
-                "task_type": "EVAL",
-                "plugin": "eleuther-ai-lm-evaluation-harness-mlx",
-                "config_json": "{\"template_name\":\"EvalInference\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"tasks\":\"mmlu\",\"limit\":\"0.5\",\"run_name\":\"EvalInference\"}"
-            }
-        ],
-        "workflows": [
-            {
-                "name": "Edge_Inference",
-                "config": {
-                    "nodes": [
-                        {
-                            "id": "node_setup",
-                            "type": "LOADER",
-                            "task": "setup_edge_inference",
-                            "name": "Edge Setup Task",
-                            "out": [
-                                "node_eval"
-                            ]
-                        },
-                        {
-                            "id": "node_eval",
-                            "type": "EVAL",
-                            "task": "evaluate_inference",
-                            "name": "Evaluation Task",
-                            "out": []
-                        }
-                    ]
-                }
-            }
-        ],
-        "cardImage": "https://images.unsplash.com/photo-1667984550708-a6beba23cb4c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-        "id": "train_from_scratch",
-        "title": "Train a Model From Scratch",
-        "description": "Build a new machine learning model from the ground up using MLX, optimized for Apple Silicon. Ideal for custom use cases and datasets.",
-        "notes": "# Training a Model From Scratch\n\n## Overview\nThis recipe demonstrates how to train a new machine learning model from scratch using MLX framework, optimized for Apple Silicon.\n\n## Important Considerations\n- Optimized for Apple Silicon (M1/M2/M3)\n- Uses MLX for efficient training\n- Dataset is formatted for instruction following\n\n## Training Tips\n- Monitor loss curves carefully\n- Adjust batch size based on available memory\n- Use appropriate learning rate schedule\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Follow basic instructions\n- Generate coherent responses\n- Demonstrate basic language understanding",
-        "requiredMachineArchitecture": [
-            "mlx"
-        ],
-        "dependencies": [
-            {
-                "type": "model",
-                "name": "mlx-community/Llama-3.2-1B-Instruct-4bit"
-            },
-            {
-                "type": "plugin",
-                "name": "mlx_lora_trainer"
-            },
-            {
-                "type": "dataset",
-                "name": "spencer/samsum_reformat"
-            },
-            {
-                "type": "plugin",
-                "name": "eleuther-ai-lm-evaluation-harness-mlx"
-            }
-        ],
-        "tasks": [
-            {
-                "name": "train_from_scratch",
-                "task_type": "TRAIN",
-                "type": "Training",
-                "plugin": "mlx_lora_trainer",
-                "config_json": "{\"template_name\":\"TrainFromScratch\",\"plugin_name\":\"mlx_lora_trainer\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"{{text}}\",\"lora_layers\":\"16\",\"batch_size\":\"8\",\"learning_rate\":\"0.0001\",\"lora_rank\":\"32\",\"lora_alpha\":\"128\",\"iters\":\"120\",\"steps_per_report\":\"10\",\"steps_per_eval\":\"20\",\"save_every\":\"10\",\"adaptor\":\"from_scratch\"}"
-            },
-            {
-                "name": "evaluate_model",
-                "task_type": "EVAL",
-                "plugin": "eleuther-ai-lm-evaluation-harness-mlx",
-                "config_json": "{\"template_name\":\"EvalFromScratch\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"mmlu\",\"limit\":\"0.5\",\"run_name\":\"EvalFromScratch\"}"
-            }
-        ],
-        "workflows": [
-            {
-                "name": "Train_and_Evaluate",
-                "config": {
-                    "nodes": [
-                        {
-                            "id": "node_train",
-                            "type": "TRAIN",
-                            "task": "train_from_scratch",
-                            "name": "Training Task",
-                            "out": [
-                                "node_eval"
-                            ]
-                        },
-                        {
-                            "id": "node_eval",
-                            "type": "EVAL",
-                            "task": "evaluate_model",
-                            "name": "Evaluation Task",
-                            "out": []
-                        }
-                    ]
-                }
-            }
-        ],
-        "cardImage": "https://plus.unsplash.com/premium_photo-1682142051662-eda5ad640633?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "cardImage": "https://recipes.transformerlab.net/quantization.png"
     },
     {
         "id": "conversational_intelligence",
