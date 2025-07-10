@@ -105,7 +105,7 @@
         "cardImage": "https://images.unsplash.com/photo-1590650046871-92c887180603?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-        "id": "eval-common-benchmarks-mlx",
+        "id": "eval-common-benchmarks-non-mlx",
         "title": "Evaluate a Model on Common Benchmarks on MLX",
         "requiredMachineArchitecture": [
             "mlx"
@@ -416,13 +416,17 @@
     },
     {
         "id": "ml_qa_mlx",
-        "title": "Train a Machine Learning Assistant (MLX)",
-        "description": "Fine-tune LLaMA 3 to answer machine learning questions using a high-quality Q&A dataset and automatically benchmark its improvement with MMLU.",
-        "notes": "# Fine-Tune LLaMA 3 on Machine Learning Q&A\n\n## Overview\nThis recipe fine-tunes the **LLaMA 3.2-1B-Instruct-4bit** model to specialize in answering questions about machine learning. It uses a high-quality dataset of ML-focused conversations and benchmarks performance using the MMLU Machine Learning subset.\n\nTo get started, simply go to the **Workflows** page and click **Run** \u2014 the entire process is automated for you.\n\n## Workflow Breakdown\nThe workflow consists of the following automated steps:\n\n1. **Baseline Evaluation**  \n   The untrained LLaMA 3.2-1B model is evaluated on the `mmlu_machine_learning` benchmark to establish a baseline performance score.\n\n2. **Fine-Tuning**  \n   The model is fine-tuned using the [`flytech/python-codes-25k`](https://huggingface.co/datasets/flytech/python-codes-25k) dataset. This dataset contains rich Q&A-style content related to machine learning and Python.\n\n3. **Post-Training Evaluation**  \n   After fine-tuning, the model is re-evaluated on the same benchmark to let you compare improvements in its ability to answer ML questions.\n\n## How to Use the Fine-Tuned Model\nOnce the training is complete, you can interact with the updated model directly:\n\n1. Go to the **Foundation** tab  \n2. Look for the model titled:  \n   `Llama-3.2-1B-Instruct-4bit_ml_qna`  \n3. Click **Run**  \n4. Navigate to the **Interact** tab to start chatting\n\nYou can now test the model on real-time questions about topics like supervised learning, gradient descent, overfitting, model selection, and more.\n\n## Important Notes\n- This recipe uses a **4-bit quantized version** of LLaMA 3.2-1B for faster training and inference  \n- The training duration is short and optimized for quick experimentation  \n- The evaluation is based solely on machine learning questions, not the full MMLU suite\n\n## Expected Outcomes\nAfter completing this recipe, your model should be able to:\n- Understand and answer common ML questions  \n- Explain technical concepts clearly and concisely  \n- Offer guidance on Python code related to machine learning tasks\n",
+        "title": "Machine Learning Q&A on MLX",
+        "description": "Fine-tune a Gemma 2 model to become an expert in answering machine learning questions, optimized for Apple Silicon using MLX framework.",
+        "notes": "# Machine Learning Q&A with Gemma 2\n\n## Overview\nThis recipe adapts a Gemma 2 model to specialize in machine learning concepts and explanations, optimized for MLX.\n\n## Important Considerations\n- MLX optimization for Apple Silicon\n- Comprehensive ML Q&A dataset coverage\n- Efficient inference on Mac devices\n\n## Training Tips\n- Balance technical accuracy with clarity\n- Monitor explanation quality\n- Test across different ML topics\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Explain ML concepts clearly\n- Provide technical insights\n- Answer both basic and advanced ML questions",
         "requiredMachineArchitecture": [
             "mlx"
         ],
         "dependencies": [
+            {
+                "type": "model",
+                "name": "google/gemma-2-2b-it"
+            },
             {
                 "type": "dataset",
                 "name": "win-wang/Machine_Learning_QA_Collection"
@@ -430,73 +434,18 @@
             {
                 "type": "plugin",
                 "name": "mlx_lora_trainer"
-            },
-            {
-                "type": "model",
-                "name": "mlx-community/Llama-3.2-1B-Instruct-4bit"
-            },
-            {
-                "type": "plugin",
-                "name": "eleuther-ai-lm-evaluation-harness-mlx"
             }
         ],
         "tasks": [
             {
-                "name": "ML_QnA_Training",
+                "name": "train_gemma_2_ml_qa",
                 "task_type": "TRAIN",
+                "type": "LoRA",
                 "plugin": "mlx_lora_trainer",
-                "config_json": "{\"template_name\":\"ML QnA Training\",\"plugin_name\":\"mlx_lora_trainer\",\"model_name\":\"\",\"model_architecture\":\"\",\"foundation_model_file_path\":\"\",\"embedding_model\":\"BAAI/bge-base-en-v1.5\",\"embedding_model_architecture\":\"BertModel\",\"embedding_model_file_path\":\"\",\"formatting_template\":\"Here is a conversation about a user asking a machine learning question and a model providing a helpful answer.\\n\\n{{text}}\",\"dataset_name\":\"win-wang/Machine_Learning_QA_Collection\",\"lora_layers\":\"4\",\"batch_size\":\"1\",\"learning_rate\":\"0.0005\",\"lora_rank\":\"4\",\"lora_alpha\":\"16\",\"iters\":\"3000\",\"num_train_epochs\":\"-1\",\"steps_per_report\":\"100\",\"steps_per_eval\":\"200\",\"save_every\":\"100\",\"adaptor_name\":\"ml_qna\",\"fuse_model\":\"on\",\"log_to_wandb\":\"on\",\"sweep_config\":\"{}\",\"run_sweeps\":false,\"type\":\"LoRA\"}"
-            },
-            {
-                "name": "MMLU_ML_Base",
-                "task_type": "EVAL",
-                "plugin": "eleuther-ai-lm-evaluation-harness-mlx",
-                "config_json": "{\"template_name\":\"MMLU Machine Learning (Base)\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"mmlu_machine_learning\",\"limit\":\"1\",\"run_name\":\"MMLU Machine Learning (Base)\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"MMLU Machine Learning (Base)\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"mmlu_machine_learning\",\"limit\":\"1\",\"run_name\":\"MMLU Machine Learning (Base)\",\"predefined_tasks\":\"\"}}"
-            },
-            {
-                "name": "MMLU_ML_Trained",
-                "task_type": "EVAL",
-                "plugin": "eleuther-ai-lm-evaluation-harness-mlx",
-                "config_json": "{\"template_name\":\"MMLU Machine Learning (Trained)\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"mmlu_machine_learning\",\"limit\":\"1\",\"run_name\":\"MMLU Machine Learning (Trained)\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"MMLU Machine Learning (Trained)\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"mmlu_machine_learning\",\"limit\":\"1\",\"run_name\":\"MMLU Machine Learning (Trained)\",\"predefined_tasks\":\"\"}}"
+                "config_json": "{\"template_name\":\"MachineLearningQnA-MLX\",\"plugin_name\":\"mlx_lora_trainer\",\"model_name\":\"google/gemma-2-2b-it\",\"model_architecture\":\"Gemma2ForCausalLM\",\"formatting_template\":\"{{text}}\",\"dataset_name\":\"win-wang/Machine_Learning_QA_Collection\",\"lora_layers\":\"8\",\"batch_size\":\"4\",\"learning_rate\":\"0.0001\",\"lora_rank\":\"8\",\"lora_alpha\":\"160\",\"iters\":\"200\",\"steps_per_report\":\"10\",\"steps_per_eval\":\"50\",\"save_every\":\"50\",\"adaptor_name\":\"ml-qa\",\"_tlab_recipe_datasets\":{\"name\":\"Machine Learning QA Collection\",\"path\":\"win-wang/Machine_Learning_QA_Collection\"},\"_tlab_recipe_models\":{\"name\":\"google/gemma-2-2b-it\",\"path\":\"google/gemma-2-2b-it\"}}"
             }
         ],
-        "workflows": [
-            {
-                "name": "ml_qna",
-                "config": {
-                    "nodes": [
-                        {
-                            "name": "Eval_Base_Model",
-                            "task": "MMLU_ML_Base",
-                            "type": "EVAL",
-                            "metadata": {},
-                            "id": "f50defa5-0b87-4158-914a-6588cafdacac",
-                            "out": [
-                                "e48473ca-98c3-4718-8661-3b04b969a6ef"
-                            ]
-                        },
-                        {
-                            "name": "Train_Model",
-                            "task": "ML_QnA_Training",
-                            "type": "TRAIN",
-                            "metadata": {},
-                            "id": "e48473ca-98c3-4718-8661-3b04b969a6ef",
-                            "out": [
-                                "86b109b3-fa4a-4baa-a72c-e04a39a836a8"
-                            ]
-                        },
-                        {
-                            "name": "Eval_Trained_Model",
-                            "task": "MMLU_ML_Trained",
-                            "type": "EVAL",
-                            "metadata": {},
-                            "id": "86b109b3-fa4a-4baa-a72c-e04a39a836a8",
-                            "out": []
-                        }
-                    ]
-                }
-            }
-        ],
+        "workflows": [],
         "cardImage": "https://images.unsplash.com/photo-1557562645-4eee56b29bc1?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {

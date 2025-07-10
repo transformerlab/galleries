@@ -78,7 +78,7 @@ for model_id in models:
     context_length = config_json.get("max_position_embeddings", "2048")
     context_length = str(context_length)
     print(context_length)
-    transformers_version = config_json.get("transformers_version", "4.51.3")
+    transformers_version = config_json["transformers_version"]
     print(transformers_version)
 
     # gated information is USUALLY stored in config
