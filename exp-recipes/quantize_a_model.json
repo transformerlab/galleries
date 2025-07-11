@@ -1,59 +1,65 @@
 {
-  "id": "quantize_model",
-  "title": "Quantize a Model",
-  "description": "Optimize your model for faster inference and reduced size using quantization tools.",
-  "notes": "# Model Quantization\n\n## Overview\nThis recipe demonstrates how to quantize a model to reduce its size and improve inference speed while maintaining performance.\n\n## Important Considerations\n- Quantization reduces model precision\n- Trade-off between size/speed and accuracy\n- Different quantization methods available\n\n## Quantization Tips\n- Test different quantization levels\n- Validate performance after quantization\n- Consider hardware compatibility\n\n## Expected Outcomes\nAfter quantization, you will have:\n- Reduced model size\n- Faster inference speed\n- Minimal accuracy loss",
-  "requiredMachineArchitecture": ["mlx", "cuda"],
-  "dependencies": [
-    {
-      "type": "model",
-      "name": "Qwen/Qwen2.5-1.5B-Instruct"
-    },
-    {
-      "type": "plugin",
-      "name": "llama_cpp_server"
-    },
-    {
-      "type": "plugin",
-      "name": "eleuther-ai-lm-evaluation-harness-mlx"
+        "id": "quantize_model",
+        "title": "Quantize a Model",
+        "description": "Optimize your model for faster inference and reduced size using quantization tools.",
+        "notes": "# Model Quantization\n\nThis recipe quantizes a model to reduce its size and improve inference speed while maintaining performance.\n\n## How to Use\nTo get a quantized model, simply go to the **Workflows** tab and run the `quantize-a-model-to-gguf` workflow.\n\n## What it does\n- Converts your model to GGUF format with q8_0 quantization\n- Reduces model size for faster loading\n- Maintains good performance with minimal accuracy loss",
+        "requiredMachineArchitecture": [
+            "mlx",
+            "cuda"
+        ],
+        "dependencies": [
+            {
+                "type": "model",
+                "name": "unsloth/Llama-3.2-1B-Instruct"
+            },
+            {
+                "type": "plugin",
+                "name": "gguf_exporter"
+            }
+        ],
+        "tasks": [
+            {
+                "name": "Export_Llama-3.2-1B-Instruct_to_GGUF",
+                "task_type": "EXPORT",
+                "plugin": "gguf_exporter",
+                "config_json": "{\"plugin_name\":\"gguf_exporter\",\"input_model_id\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_path\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_architecture\":\"LlamaForCausalLM\",\"output_model_id\":\"Llama-3.2-1B-Instruct-1752245303-q8_0.gguf\",\"output_model_architecture\":\"GGUF\",\"output_model_name\":\"Llama-3.2-1B-Instruct - GGUF - q8_0\",\"output_model_path\":\"/models/Llama-3.2-1B-Instruct-1752245303-q8_0.gguf\",\"output_filename\":\"Llama-3.2-1B-Instruct-1752245303-q8_0.gguf\",\"script_directory\":\"/plugins/gguf_exporter\",\"params\":{\"outtype\":\"q8_0\"}}"
+            }
+        ],
+        "workflows": [
+            {
+                "name": "quantize-a-model-to-gguf",
+                "config": {
+                    "nodes": [
+                        {
+                            "type": "START",
+                            "id": "c7d71d3e-98e2-4cd7-9c7a-dc749f2e5988",
+                            "name": "START",
+                            "out": [
+                                "40f0c960-c9c7-4be0-a8a3-7fc8e5c6e443"
+                            ],
+                            "metadata": {
+                                "position": {
+                                    "x": -15,
+                                    "y": -120
+                                }
+                            }
+                        },
+                        {
+                            "name": "EXPORT Model",
+                            "task": "Export_Llama-3.2-1B-Instruct_to_GGUF",
+                            "type": "EXPORT",
+                            "metadata": {
+                                "position": {
+                                    "x": -45,
+                                    "y": -15
+                                }
+                            },
+                            "id": "40f0c960-c9c7-4be0-a8a3-7fc8e5c6e443",
+                            "out": []
+                        }
+                    ]
+                }
+            }
+        ],
+        "cardImage": "https://recipes.transformerlab.net/quantization.png"
     }
-  ],
-  "tasks": [
-    {
-      "name": "quantize_model",
-      "task_type": "EXPORT",
-      "plugin": "llama_cpp_server",
-      "config_json": "{\"template_name\":\"Quantization\",\"plugin_name\":\"llama_cpp_server\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"quantization_type\":\"q4_k_m\",\"n_gpu_layers\":\"auto\"}"
-    },
-    {
-      "name": "evaluate_quantized",
-      "task_type": "EVAL",
-      "plugin": "eleuther-ai-lm-evaluation-harness-mlx",
-      "config_json": "{\"template_name\":\"EvalQuantized\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"tasks\":\"mmlu\",\"limit\":\"0.5\",\"run_name\":\"EvalQuantized\"}"
-    }
-  ],
-  "workflows": [
-    {
-      "name": "Quantize_and_Evaluate",
-      "config": {
-        "nodes": [
-          {
-            "id": "node_quantize",
-            "type": "EXPORT",
-            "task": "quantize_model",
-            "name": "Quantization Task",
-            "out": ["node_eval"]
-          },
-          {
-            "id": "node_eval",
-            "type": "EVAL",
-            "task": "evaluate_quantized",
-            "name": "Evaluation Task",
-            "out": []
-          }
-        ]
-      }
-    }
-  ],
-  "cardImage": "https://recipes.transformerlab.net/quantization.png"
-}
