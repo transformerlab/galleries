@@ -283,7 +283,8 @@
         "description": "Adapt a pre-trained model to your specific needs using LoRA. Save time and resources by leveraging existing knowledge.",
         "notes": "# What This Recipe Does\n\nThis recipe compares a base model's performance before and after fine-tuning on touch rugby data:\n\n1. **Generate Base Model Outputs** - Creates responses using the original model\n2. **Evaluate Base Model** - Measures quality using ROUGE scores\n3. **Fine-tune with LoRA** - Trains the model on touch rugby rules (efficient training method)\n4. **Generate Fine-tuned Outputs** - Creates responses using the trained adaptor\n5. **Evaluate Fine-tuned Model** - Measures improved quality\n\n## How to Use\n1. Go to the **Workflows** tab and run the \"fine_tune_model\" workflow\n2. Wait for all steps to complete\n3. Switch to the **Evaluate** tab to see the comparison results\n\n## What You'll Learn\n- How much fine-tuning improves performance on your specific domain\n- The difference between base model and fine-tuned model outputs",
         "requiredMachineArchitecture": [
-            "cuda"
+            "cuda",
+            "amd"
         ],
         "dependencies": [
             {
