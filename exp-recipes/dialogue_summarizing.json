@@ -22,10 +22,9 @@
     {
       "name": "train_tinyllama_summarizer",
       "task_type": "TRAIN",
-      "type": "LoRA",
       "plugin": "llama_trainer",
-      "formatting_template": "Instruction: Summarize the Following\nPrompt: {{dialogue}}\nGeneration: {{summary}}",
-      "config_json": "{\"template_name\":\"DialogueSummarizing\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"TinyLlama/TinyLlama-1.1B-Chat-v1.0\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"Instruction: Summarize the Following\\nPrompt: {{dialogue}}\\nGeneration: {{summary}}\",\"dataset_name\":\"knkarthick/samsum\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"4\",\"learning_rate\":\"0.00005\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"32\",\"lora_alpha\":\"64\",\"lora_dropout\":\"0.05\",\"adaptor_name\":\"Summarizer\",\"_tlab_recipe_datasets\":{\"name\":\"knkarthick/samsum\",\"path\":\"knkarthick/samsum\"},\"_tlab_recipe_models\":{\"name\":\"TinyLlama/TinyLlama-1.1B-Chat-v1.0\",\"path\":\"TinyLlama/TinyLlama-1.1B-Chat-v1.0\"}}"
+      "config_json": "{\"template_name\": \"DialogueSummarizing\", \"plugin_name\": \"llama_trainer\", \"model_name\": \"TinyLlama/TinyLlama-1.1B-Chat-v1.0\", \"model_architecture\": \"LlamaForCausalLM\", \"formatting_template\": \"Instruction: Summarize the Following\\nPrompt: {{dialogue}}\\nGeneration: {{summary}}\", \"dataset_name\": \"knkarthick/samsum\", \"maximum_sequence_length\": \"2048\", \"batch_size\": \"4\", \"learning_rate\": \"0.00005\", \"num_train_epochs\": \"1\", \"max_steps\": \"-1\", \"lora_r\": \"32\", \"lora_alpha\": \"64\", \"lora_dropout\": \"0.05\", \"adaptor_name\": \"Summarizer\", \"_tlab_recipe_datasets\": \"{\\\"name\\\": \\\"knkarthick/samsum\\\", \\\"path\\\": \\\"knkarthick/samsum\\\"}\", \"_tlab_recipe_models\": \"{\\\"name\\\": \\\"TinyLlama/TinyLlama-1.1B-Chat-v1.0\\\", \\\"path\\\": \\\"TinyLlama/TinyLlama-1.1B-Chat-v1.0\\\"}\"}",
+      "inputs_json": "{\"model_name\": \"TinyLlama/TinyLlama-1.1B-Chat-v1.0\", \"model_architecture\": \"LlamaForCausalLM\", \"dataset_name\": \"knkarthick/samsum\"}"
     }
   ],
   "workflows": [],
