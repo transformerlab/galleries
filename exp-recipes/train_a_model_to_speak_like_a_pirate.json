@@ -25,9 +25,9 @@
     {
       "name": "PirateSpeech",
       "task_type": "TRAIN",
-      "type": "LoRA",
       "plugin": "llama_trainer",
-      "config_json": "{\"template_name\":\"PirateSpeech\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"HuggingFaceTB/SmolLM-135M-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"<instruction>\\n{{instruction}}\\n</instruction>\\n<response>\\n{{response}}\\n</response>\",\"dataset_name\":\"Peyton3995/dolly-15k-mistral-pirate\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"4\",\"learning_rate_schedule\":\"cosine\",\"learning_rate\":\"0.01\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"64\",\"lora_alpha\":\"128\",\"lora_dropout\":\"0.05\",\"adaptor_name\":\"Pirate_Speech\",\"_tlab_recipe_datasets\":{\"name\":\"Peyton3995/dolly-15k-mistral-pirate\",\"path\":\"Peyton3995/dolly-15k-mistral-pirate\"},\"_tlab_recipe_models\":{\"name\":\"HuggingFaceTB/SmolLM-135M-Instruct\",\"path\":\"HuggingFaceTB/SmolLM-135M-Instruct\"}}"
+      "config_json": "{\"template_name\": \"PirateSpeech\", \"plugin_name\": \"llama_trainer\", \"model_name\": \"HuggingFaceTB/SmolLM-135M-Instruct\", \"model_architecture\": \"LlamaForCausalLM\", \"formatting_template\": \"<instruction>\\n{{instruction}}\\n</instruction>\\n<response>\\n{{response}}\\n</response>\", \"dataset_name\": \"Peyton3995/dolly-15k-mistral-pirate\", \"maximum_sequence_length\": \"2048\", \"batch_size\": \"4\", \"learning_rate_schedule\": \"cosine\", \"learning_rate\": \"0.01\", \"num_train_epochs\": \"1\", \"max_steps\": \"-1\", \"lora_r\": \"64\", \"lora_alpha\": \"128\", \"lora_dropout\": \"0.05\", \"adaptor_name\": \"Pirate_Speech\", \"_tlab_recipe_datasets\": \"{\\\"name\\\": \\\"Peyton3995/dolly-15k-mistral-pirate\\\", \\\"path\\\": \\\"Peyton3995/dolly-15k-mistral-pirate\\\"}\", \"_tlab_recipe_models\": \"{\\\"name\\\": \\\"HuggingFaceTB/SmolLM-135M-Instruct\\\", \\\"path\\\": \\\"HuggingFaceTB/SmolLM-135M-Instruct\\\"}\"}",
+      "inputs_json": "{\"model_name\": \"HuggingFaceTB/SmolLM-135M-Instruct\", \"model_architecture\": \"LlamaForCausalLM\", \"dataset_name\": \"Peyton3995/dolly-15k-mistral-pirate\"}"
     }
   ],
   "workflows": [],
