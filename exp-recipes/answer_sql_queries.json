@@ -2,11 +2,8 @@
   "id": "answer_sql_queries",
   "title": "Answer SQL Queries",
   "description": "Train a Qwen 2.5 model to excel at SQL query generation, understanding, and optimization across various database scenarios.",
-  "notes": "# SQL Query Assistant with Qwen 2.5\n\n## Overview\nThis recipe fine-tunes a Qwen 2.5 model to become a specialized SQL query assistant.\n\n## Important Considerations\n- Comprehensive SQL knowledge base\n- Focus on query optimization\n- Covers various SQL dialects\n\n## Training Tips\n- Balance between simple and complex queries\n- Test query correctness\n- Validate across different database types\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Write efficient SQL queries\n- Explain query optimization\n- Handle complex database operations",
-  "requiredMachineArchitecture": [
-    "cuda",
-    "amd"
-  ],
+  "notes": "# SQL Query Assistant with Qwen 2.5\n\n<-- To run this recipe, go to **Train** in the sidebar and click on Queue\n\n## Overview\nThis recipe fine-tunes a Qwen 2.5 model to become a specialized SQL query assistant.\n\n## Expected Outcome\nAfter training, the model should be able to:\n- Write efficient SQL queries\n- Explain query optimization\n- Handle complex database operations",
+  "requiredMachineArchitecture": ["cuda", "amd"],
   "dependencies": [
     {
       "type": "model",
