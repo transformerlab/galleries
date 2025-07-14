@@ -2,17 +2,13 @@
   "id": "fine_tune_small_mlx",
   "title": "Fine Tune a Small Language Model using MLX",
   "description": "Train a Llama 3.2 1B model to understand and answer questions about Touch Rugby rules using the MLX framework. Perfect for rule-based question answering.",
-  "notes": "# MLX Fine-Tuning Notes\n\n## Overview\nThis recipe fine-tunes a Llama 3.2 1B model specifically for Touch Rugby rules using the MLX framework.\n\n## Important Considerations\n- MLX is optimized for Apple Silicon (M1/M2/M3 chips)\n- The dataset contains Touch Rugby rules in Q&A format\n- Model size is kept small (1B parameters) for efficient inference\n\n## Training Tips\n- Monitor loss curves carefully\n- Use appropriate LoRA rank (typically 8-64)\n- Validate on unseen rugby scenarios\n\n## Expected Outcomes\nAfter training, the model should be able to answer questions about:\n- Touch Rugby rules and regulations\n- Game procedures and scoring\n- Player positions and responsibilities",
+  "notes": "# What This Recipe Does\n\nThis recipe compares a base model's performance before and after fine-tuning on touch rugby data using MLX (optimized for Apple Silicon):\n\n1. **Generate Base Model Outputs** - Creates responses using the original model\n2. **Evaluate Base Model** - Measures quality using ROUGE scores\n3. **Fine-tune with LoRA** - Trains the model on touch rugby rules using MLX framework\n4. **Generate Fine-tuned Outputs** - Creates responses using the trained adaptor\n5. **Evaluate Fine-tuned Model** - Measures improved quality\n\n## How to Use\n1. Go to the **Workflows** tab and run the \"fine_tune_model\" workflow\n2. Wait for all steps to complete\n3. Switch to the **Evaluate** tab to see the comparison results\n\n## What You'll Learn\n- How much fine-tuning improves performance on your specific domain\n- The difference between base model and fine-tuned model outputs\n- Benefits of using MLX for efficient training on Apple Silicon",
   "requiredMachineArchitecture": ["mlx"],
   "zOrder": 1,
-  "dependencies": [
+    "dependencies": [
     {
       "type": "model",
       "name": "mlx-community/Llama-3.2-1B-Instruct-4bit"
-    },
-    {
-      "type": "plugin",
-      "name": "mlx_lora_trainer"
     },
     {
       "type": "dataset",
@@ -20,59 +16,143 @@
     },
     {
       "type": "plugin",
-      "name": "common-eleuther-ai-lm-eval-harness-mlx"
+      "name": "mlx_lora_trainer"
     },
     {
       "type": "plugin",
-      "name": "synthesizer_scratch"
+      "name": "deepeval_objective"
+    },
+    {
+      "type": "dataset",
+      "name": "transformerlab/touch-rugby-evals"
+    },
+    {
+      "type": "plugin",
+      "name": "batched_generation_datasets"
     }
   ],
   "tasks": [
     {
-      "name": "fine_tune_touch_rugby",
+      "name": "TouchRugby",
       "task_type": "TRAIN",
-      "type": "LoRA",
       "plugin": "mlx_lora_trainer",
-      "formatting_template": "{{prompt}}\n{{completion}}",
-      "config_json": "{\"template_name\":\"TouchRugby\",\"plugin_name\":\"mlx_lora_trainer\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"{{prompt}}\\n{{completion}}\",\"dataset_name\":\"Trelis/touch-rugby-rules\",\"lora_layers\":\"16\",\"batch_size\":\"8\",\"learning_rate\":\"0.0001\",\"lora_rank\":\"32\",\"lora_alpha\":\"128\",\"iters\":\"120\",\"steps_per_report\":\"10\",\"steps_per_eval\":\"20\",\"save_every\":\"10\",\"adaptor\":\"touch-rugby\"}"
+      "config_json": "{\"template_name\":\"TouchRugby\",\"plugin_name\":\"mlx_lora_trainer\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"LlamaForCausalLM\",\"foundation_model_file_path\":\"\",\"embedding_model\":\"BAAI/bge-base-en-v1.5\",\"embedding_model_architecture\":\"BertModel\",\"embedding_model_file_path\":\"\",\"formatting_template\":\"{{prompt}}\\n{{completion}}\",\"dataset_name\":\"Trelis/touch-rugby-rules\",\"lora_layers\":\"16\",\"batch_size\":\"8\",\"learning_rate\":\"0.0001\",\"lora_rank\":\"32\",\"lora_alpha\":\"128\",\"iters\":\"120\",\"num_train_epochs\":\"-1\",\"steps_per_report\":\"10\",\"steps_per_eval\":\"20\",\"save_every\":\"10\",\"adaptor_name\":\"touch-rugby\",\"fuse_model\":\"true\",\"log_to_wandb\":\"true\",\"_tlab_recipe_datasets\":\"[object Object]\",\"_tlab_recipe_models\":\"[object Object]\",\"sweep_config\":\"{}\",\"run_sweeps\":false,\"type\":\"LoRA\"}"
     },
     {
-      "name": "evaluate_touch_rugby",
+      "name": "FineTunedOutputs",
       "task_type": "EVAL",
-      "plugin": "common-eleuther-ai-lm-eval-harness-mlx",
-      "config_json": "{\"template_name\":\"HandsomeBadger\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"mmlu\",\"limit\":\"0.5\",\"run_name\":\"HandsomeBadger\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"HandsomeBadger\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"mmlu\",\"limit\":\"0.5\",\"run_name\":\"HandsomeBadger\",\"predefined_tasks\":\"\"}}"
+      "plugin": "deepeval_objective",
+      "config_json": "{\"template_name\":\"FineTunedOutputs\",\"plugin_name\":\"deepeval_objective\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"\",\"limit\":\"1\",\"dataset_split\":\"train\",\"tasks\":\"Rouge\",\"dataset_name\":\"finetunedoutputs\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"FineTunedOutputs\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"FineTunedOutputs\",\"plugin_name\":\"deepeval_objective\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"\",\"limit\":\"1\",\"dataset_split\":\"train\",\"tasks\":\"Rouge\",\"dataset_name\":\"finetunedoutputs\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"FineTunedOutputs\",\"predefined_tasks\":\"\"}}"
     },
     {
-      "name": "generate_touch_rugby_examples",
+      "name": "BaseModelEvals",
+      "task_type": "EVAL",
+      "plugin": "deepeval_objective",
+      "config_json": "{\"template_name\":\"BaseModelEvals\",\"plugin_name\":\"deepeval_objective\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"\",\"limit\":\"1\",\"dataset_split\":\"train\",\"tasks\":\"Rouge\",\"dataset_name\":\"basemodeloutputs\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"BaseModelEvals\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"BaseModelEvals\",\"plugin_name\":\"deepeval_objective\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"\",\"limit\":\"1\",\"dataset_split\":\"train\",\"tasks\":\"Rouge\",\"dataset_name\":\"basemodeloutputs\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"BaseModelEvals\",\"predefined_tasks\":\"\"}}"
+    },
+    {
+      "name": "BaseModelOutputs",
       "task_type": "GENERATE",
-      "plugin": "synthesizer_scratch",
-      "config_json": "{\"template_name\":\"SparklingNarwhal\",\"plugin_name\":\"synthesizer_scratch\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"generation_model\":\"local\",\"num_goldens\":\"51\",\"generate_expected_output\":\"Yes\",\"scenario\":\"You are an expert in Touch Rugby rules and regulations. Generate diverse training examples that cover various aspects of the game.\",\"task\":\"Create question-answer pairs about Touch Rugby rules, focusing on game procedures, scoring rules, player positions, and common scenarios.\",\"input_format\":\"A specific question about Touch Rugby rules, formatted as: Question: [question text].\",\"expected_output_format\":\"A clear, accurate answer explaining the relevant Touch Rugby rule, formatted as: Answer: [detailed explanation]\",\"run_name\":\"SparklingNarwhal\",\"generation_type\":\"scratch\",\"script_parameters\":{\"template_name\":\"SparklingNarwhal\",\"plugin_name\":\"synthesizer_scratch\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"generation_model\":\"local\",\"num_goldens\":\"51\",\"generate_expected_output\":\"Yes\",\"scenario\":\"You are an expert in Touch Rugby rules and regulations. Generate diverse training examples that cover various aspects of the game.\",\"task\":\"Create question-answer pairs about Touch Rugby rules, focusing on game procedures, scoring rules, player positions, and common scenarios.\",\"input_format\":\"A specific question about Touch Rugby rules, formatted as: Question: [question text].\",\"expected_output_format\":\"A clear, accurate answer explaining the relevant Touch Rugby rule, formatted as: Answer: [detailed explanation]\",\"run_name\":\"SparklingNarwhal\",\"generation_type\":\"scratch\"}}"
+      "plugin": "batched_generation_datasets",
+      "config_json": "{\"template_name\":\"BaseModelOutputs\",\"plugin_name\":\"batched_generation_datasets\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"\",\"generation_model\":\"Local\",\"system_prompt\":\"Answer in the context of touch rugby\",\"input_column\":\"input\",\"output_column\":\"output\",\"batch_size\":\"1\",\"temperature\":\"0.7\",\"top_p\":\"1\",\"max_tokens\":\"1024\",\"dataset_split\":\"train\",\"output_dataset_name\":\"BaseModelOutputs\",\"dataset_name\":\"transformerlab/touch-rugby-evals\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"BaseModelOutputs\",\"generation_type\":\"scratch\",\"script_parameters\":{\"template_name\":\"BaseModelOutputs\",\"plugin_name\":\"batched_generation_datasets\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"\",\"generation_model\":\"Local\",\"system_prompt\":\"Answer in the context of touch rugby\",\"input_column\":\"input\",\"output_column\":\"output\",\"batch_size\":\"1\",\"temperature\":\"0.7\",\"top_p\":\"1\",\"max_tokens\":\"1024\",\"dataset_split\":\"train\",\"output_dataset_name\":\"BaseModelOutputs\",\"dataset_name\":\"transformerlab/touch-rugby-evals\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"BaseModelOutputs\",\"generation_type\":\"scratch\"}}"
+    },
+    {
+      "name": "FinedTunedModelOutputs",
+      "task_type": "GENERATE",
+      "plugin": "batched_generation_datasets",
+      "config_json": "{\"template_name\":\"FinedTunedModelOutputs\",\"plugin_name\":\"batched_generation_datasets\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"touch-rugby\",\"generation_model\":\"Local\",\"system_prompt\":\"Answer in the context of touch rugby\",\"input_column\":\"input\",\"output_column\":\"output\",\"batch_size\":\"1\",\"temperature\":\"0.7\",\"top_p\":\"1\",\"max_tokens\":\"1024\",\"dataset_split\":\"train\",\"output_dataset_name\":\"FineTunedOutputs\",\"dataset_name\":\"transformerlab/touch-rugby-evals\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"FinedTunedModelOutputs\",\"generation_type\":\"scratch\",\"script_parameters\":{\"template_name\":\"FinedTunedModelOutputs\",\"plugin_name\":\"batched_generation_datasets\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"touch-rugby\",\"generation_model\":\"Local\",\"system_prompt\":\"Answer in the context of touch rugby\",\"input_column\":\"input\",\"output_column\":\"output\",\"batch_size\":\"1\",\"temperature\":\"0.7\",\"top_p\":\"1\",\"max_tokens\":\"1024\",\"dataset_split\":\"train\",\"output_dataset_name\":\"FineTunedOutputs\",\"dataset_name\":\"transformerlab/touch-rugby-evals\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"FinedTunedModelOutputs\",\"generation_type\":\"scratch\"}}"
     }
   ],
   "workflows": [
     {
-      "name": "Workflow_1",
+      "name": "fine_tune_model",
       "config": {
         "nodes": [
           {
-            "id": "node_train",
-            "type": "TRAIN",
-            "task": "fine_tune_touch_rugby",
-            "name": "Training Task",
-            "out": ["node_eval"]
+            "type": "START",
+            "id": "c2a75b7e-ed71-40d6-ad35-e4dffc9f22f0",
+            "name": "START",
+            "out": [
+              "0f143d9a-0abe-4fbf-8254-d423b283ee64"
+            ],
+            "metadata": {
+              "position": {
+                "x": -15,
+                "y": -180
+              }
+            }
           },
           {
-            "id": "node_eval",
-            "type": "EVAL",
-            "task": "evaluate_touch_rugby",
-            "name": "Evaluation Task",
-            "out": ["node_generate"]
-          },
-          {
-            "id": "node_generate",
+            "name": "GenerateBaseOutputs",
+            "task": "BaseModelOutputs",
             "type": "GENERATE",
-            "task": "generate_touch_rugby_examples",
-            "name": "Generation Task",
+            "metadata": {
+              "position": {
+                "x": -75,
+                "y": -105
+              }
+            },
+            "id": "0f143d9a-0abe-4fbf-8254-d423b283ee64",
+            "out": [
+              "9d107acd-3815-4b45-b87b-d52e249a3799"
+            ]
+          },
+          {
+            "name": "EvalBaseOutputs",
+            "task": "BaseModelEvals",
+            "type": "EVAL",
+            "metadata": {
+              "position": {
+                "x": -75,
+                "y": 30
+              }
+            },
+            "id": "9d107acd-3815-4b45-b87b-d52e249a3799",
+            "out": [
+              "5c04dd3b-4e3e-47a2-bfdb-e97bf003b357"
+            ]
+          },
+          {
+            "name": "TrainLoRA",
+            "task": "TouchRugby",
+            "type": "TRAIN",
+            "metadata": {
+              "position": {
+                "x": -75,
+                "y": 165
+              }
+            },
+            "id": "5c04dd3b-4e3e-47a2-bfdb-e97bf003b357",
+            "out": [
+              "3d60693d-88be-4f38-bf51-415d6a68d709"
+            ]
+          },
+          {
+            "name": "GenerateFineTunedOutputs",
+            "task": "FinedTunedModelOutputs",
+            "type": "GENERATE",
+            "metadata": {
+              "position": {
+                "x": -90,
+                "y": 315
+              }
+            },
+            "id": "3d60693d-88be-4f38-bf51-415d6a68d709",
+            "out": [
+              "4ef42b37-fb9a-480e-b056-47e25584f7cd"
+            ]
+          },
+          {
+            "name": "EvalFineTuned",
+            "task": "FineTunedOutputs",
+            "type": "EVAL",
+            "metadata": {
+              "position": {
+                "x": -75,
+                "y": 465
+              }
+            },
+            "id": "4ef42b37-fb9a-480e-b056-47e25584f7cd",
             "out": []
           }
         ]
