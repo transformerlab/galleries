@@ -623,10 +623,11 @@
         ],
         "tasks": [
             {
-                "name": "Export_Llama-3.2-1B-Instruct_to_GGUF",
+                "name": "ExportGGUFTask",
                 "task_type": "EXPORT",
                 "plugin": "gguf_exporter",
-                "config_json": "{\"plugin_name\":\"gguf_exporter\",\"input_model_id\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_path\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_architecture\":\"LlamaForCausalLM\",\"output_model_id\":\"Llama-3.2-1B-Instruct-1752245303-q8_0.gguf\",\"output_model_architecture\":\"GGUF\",\"output_model_name\":\"Llama-3.2-1B-Instruct - GGUF - q8_0\",\"output_model_path\":\"/models/Llama-3.2-1B-Instruct-1752245303-q8_0.gguf\",\"output_filename\":\"Llama-3.2-1B-Instruct-1752245303-q8_0.gguf\",\"script_directory\":\"/plugins/gguf_exporter\",\"params\":{\"outtype\":\"q8_0\"}}"
+                "config_json": "{\"plugin_name\":\"gguf_exporter\",\"input_model_id\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_path\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_architecture\":\"LlamaForCausalLM\",\"output_model_id\":\"Llama-3.2-1B-Instruct-1752517918-q8_0.gguf\",\"output_model_architecture\":\"GGUF\",\"output_model_name\":\"Llama-3.2-1B-Instruct - GGUF - q8_0\",\"output_model_path\":\"/models/Llama-3.2-1B-Instruct-1752517918-q8_0.gguf\",\"output_filename\":\"Llama-3.2-1B-Instruct-1752517918-q8_0.gguf\",\"script_directory\":\"/plugins/gguf_exporter\",\"params\":{\"outtype\":\"q8_0\"},\"run_name\":\"ExportGGUFTask\"}",
+                "inputs_json": "{\"input_model_id\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_path\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_architecture\":\"LlamaForCausalLM\",\"plugin_name\":\"gguf_exporter\",\"plugin_architecture\":\"GGUF\"}"
             }
         ],
         "workflows": [
@@ -639,7 +640,7 @@
                             "id": "c7d71d3e-98e2-4cd7-9c7a-dc749f2e5988",
                             "name": "START",
                             "out": [
-                                "40f0c960-c9c7-4be0-a8a3-7fc8e5c6e443"
+                                "05b76236-0e85-4da3-a0f1-06dc36055179"
                             ],
                             "metadata": {
                                 "position": {
@@ -649,16 +650,16 @@
                             }
                         },
                         {
-                            "name": "EXPORT Model",
-                            "task": "Export_Llama-3.2-1B-Instruct_to_GGUF",
+                            "name": "ExportTask",
+                            "task": "ExportGGUFTask",
                             "type": "EXPORT",
                             "metadata": {
                                 "position": {
                                     "x": -45,
-                                    "y": -15
+                                    "y": 15
                                 }
                             },
-                            "id": "40f0c960-c9c7-4be0-a8a3-7fc8e5c6e443",
+                            "id": "05b76236-0e85-4da3-a0f1-06dc36055179",
                             "out": []
                         }
                     ]
