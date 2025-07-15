@@ -25,9 +25,9 @@
     {
       "name": "MachineLearningQnA",
       "task_type": "TRAIN",
-      "type": "LoRA",
       "plugin": "llama_trainer",
-      "config_json": "{\"template_name\":\"MachineLearningQnA\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"formatting_template\":\"{{text}}\\n\",\"dataset_name\":\"win-wang/Machine_Learning_QA_Collection\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"1\",\"learning_rate\":\"0.00005\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"16\",\"lora_alpha\":\"64\",\"lora_dropout\":\"0.1\",\"adaptor_name\":\"ML-QA\",\"_tlab_recipe_datasets\":{\"name\":\"win-wang/Machine_Learning_QA_Collection\",\"path\":\"win-wang/Machine_Learning_QA_Collection\"},\"_tlab_recipe_models\":{\"name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"path\":\"Qwen/Qwen2.5-1.5B-Instruct\"}}"
+      "config_json": "{\"template_name\": \"MachineLearningQnA\", \"plugin_name\": \"llama_trainer\", \"model_name\": \"Qwen/Qwen2.5-1.5B-Instruct\", \"model_architecture\": \"Qwen2ForCausalLM\", \"formatting_template\": \"{{text}}\\n\", \"dataset_name\": \"win-wang/Machine_Learning_QA_Collection\", \"maximum_sequence_length\": \"2048\", \"batch_size\": \"1\", \"learning_rate\": \"0.00005\", \"num_train_epochs\": \"1\", \"max_steps\": \"-1\", \"lora_r\": \"16\", \"lora_alpha\": \"64\", \"lora_dropout\": \"0.1\", \"adaptor_name\": \"ML-QA\", \"_tlab_recipe_datasets\": \"{\\\"name\\\": \\\"win-wang/Machine_Learning_QA_Collection\\\", \\\"path\\\": \\\"win-wang/Machine_Learning_QA_Collection\\\"}\", \"_tlab_recipe_models\": \"{\\\"name\\\": \\\"Qwen/Qwen2.5-1.5B-Instruct\\\", \\\"path\\\": \\\"Qwen/Qwen2.5-1.5B-Instruct\\\"}\"}",
+      "inputs_json": "{\"model_name\": \"Qwen/Qwen2.5-1.5B-Instruct\", \"model_architecture\": \"Qwen2ForCausalLM\", \"dataset_name\": \"win-wang/Machine_Learning_QA_Collection\"}"
     }
   ],
   "workflows": [],

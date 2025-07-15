@@ -3,7 +3,7 @@
         "id": "answer_sql_queries",
         "title": "Answer SQL Queries",
         "description": "Train a Qwen 2.5 model to excel at SQL query generation, understanding, and optimization across various database scenarios.",
-        "notes": "# SQL Query Assistant with Qwen 2.5\n\n## Overview\nThis recipe fine-tunes a Qwen 2.5 model to become a specialized SQL query assistant.\n\n## Important Considerations\n- Comprehensive SQL knowledge base\n- Focus on query optimization\n- Covers various SQL dialects\n\n## Training Tips\n- Balance between simple and complex queries\n- Test query correctness\n- Validate across different database types\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Write efficient SQL queries\n- Explain query optimization\n- Handle complex database operations",
+        "notes": "# SQL Query Assistant with Qwen 2.5\n\n<-- To run this recipe, go to **Train** in the sidebar and click on Queue\n\n## Overview\nThis recipe fine-tunes a Qwen 2.5 model to become a specialized SQL query assistant.\n\n## Expected Outcome\nAfter training, the model should be able to:\n- Write efficient SQL queries\n- Explain query optimization\n- Handle complex database operations",
         "requiredMachineArchitecture": [
             "cuda",
             "amd"
@@ -26,43 +26,9 @@
             {
                 "name": "WikiSQL",
                 "task_type": "TRAIN",
-                "type": "LoRA",
                 "plugin": "llama_trainer",
-                "config_json": "{\"template_name\":\"Wiki SQL\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"formatting_template\":\"{{text}} ;\",\"dataset_name\":\"mlx-community/wikisql\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"1\",\"learning_rate\":\"0.005\",\"num_train_epochs\":\"2\",\"max_steps\":\"-1\",\"lora_r\":\"32\",\"lora_alpha\":\"64\",\"lora_dropout\":\"0.1\",\"adaptor_name\":\"WikiSQL\",\"_tlab_recipe_datasets\":{\"name\":\"mlx-community/wikisql\",\"path\":\"mlx-community/wikisql\"},\"_tlab_recipe_models\":{\"name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"path\":\"Qwen/Qwen2.5-1.5B-Instruct\"}}"
-            }
-        ],
-        "workflows": [],
-        "cardImage": "https://images.unsplash.com/photo-1683322499436-f4383dd59f5a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-        "id": "answer_sql_queries_mlx",
-        "title": "Answer SQL Queries using MLX",
-        "description": "Fine-tune a Llama 3.2 1B model to understand and generate SQL queries, optimized for Apple Silicon using MLX framework.",
-        "notes": "# SQL Query Assistant with MLX\n\n## Overview\nThis recipe adapts a Llama 3.2 1B model for SQL query generation and explanation, optimized for MLX.\n\n## Important Considerations\n- MLX optimization for Apple Silicon\n- Uses WikiSQL dataset for diverse query types\n- Focus on practical SQL scenarios\n\n## Training Tips\n- Monitor query correctness\n- Test across different SQL complexities\n- Validate query execution results\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Generate correct SQL queries\n- Explain query logic\n- Handle various database scenarios",
-        "requiredMachineArchitecture": [
-            "mlx"
-        ],
-        "dependencies": [
-            {
-                "type": "model",
-                "name": "meta-llama/Llama-3.2-1B"
-            },
-            {
-                "type": "dataset",
-                "name": "mlx-community/wikisql"
-            },
-            {
-                "type": "plugin",
-                "name": "mlx_lora_trainer"
-            }
-        ],
-        "tasks": [
-            {
-                "name": "WikiSQL-MLX",
-                "task_type": "TRAIN",
-                "type": "LoRA",
-                "plugin": "mlx_lora_trainer",
-                "config_json": "{\"template_name\":\"WikiSQL-MLX\",\"plugin_name\":\"mlx_lora_trainer\",\"model_name\":\"meta-llama/Llama-3.2-1B\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"Given the following description of an SQL table and its columns, provide the corresponding SQL to answer the question.\\n{{text}}\",\"dataset_name\":\"mlx-community/wikisql\",\"lora_layers\":\"8\",\"batch_size\":\"4\",\"learning_rate\":\"0.0001\",\"lora_rank\":\"8\",\"lora_alpha\":\"160\",\"iters\":\"200\",\"steps_per_report\":\"10\",\"steps_per_eval\":\"50\",\"save_every\":\"50\",\"adaptor_name\":\"ml-qa\",\"_tlab_recipe_datasets\":{\"name\":\"mlx-community/wikisql\",\"path\":\"mlx-community/wikisql\"},\"_tlab_recipe_models\":{\"name\":\"meta-llama/Llama-3.2-1B\",\"path\":\"meta-llama/Llama-3.2-1B\"}}"
+                "config_json": "{\"template_name\": \"Wiki SQL\", \"plugin_name\": \"llama_trainer\", \"model_name\": \"Qwen/Qwen2.5-1.5B-Instruct\", \"model_architecture\": \"Qwen2ForCausalLM\", \"formatting_template\": \"{{text}} ;\", \"dataset_name\": \"mlx-community/wikisql\", \"maximum_sequence_length\": \"2048\", \"batch_size\": \"1\", \"learning_rate\": \"0.005\", \"num_train_epochs\": \"2\", \"max_steps\": \"-1\", \"lora_r\": \"32\", \"lora_alpha\": \"64\", \"lora_dropout\": \"0.1\", \"adaptor_name\": \"WikiSQL\", \"_tlab_recipe_datasets\": \"{\\\"name\\\": \\\"mlx-community/wikisql\\\", \\\"path\\\": \\\"mlx-community/wikisql\\\"}\", \"_tlab_recipe_models\": \"{\\\"name\\\": \\\"Qwen/Qwen2.5-1.5B-Instruct\\\", \\\"path\\\": \\\"Qwen/Qwen2.5-1.5B-Instruct\\\"}\"}",
+                "inputs_json": "{\"model_name\": \"Qwen/Qwen2.5-1.5B-Instruct\", \"model_architecture\": \"Qwen2ForCausalLM\", \"dataset_name\": \"mlx-community/wikisql\"}"
             }
         ],
         "workflows": [],
@@ -72,7 +38,7 @@
         "id": "dialogue_summarizing",
         "title": "Dialogue Summarizing",
         "description": "Fine-tune a TinyLlama model to create concise, accurate summaries of conversations and dialogues. Perfect for chat logs, meeting transcripts, and customer service interactions.",
-        "notes": "# Dialogue Summarization with TinyLlama\n\n## Overview\nThis recipe demonstrates how to fine-tune a TinyLlama model specifically for dialogue summarization using the SAMSum dataset.\n\n## Important Considerations\n- TinyLlama is optimized for efficiency while maintaining good performance\n- Uses LoRA for memory-efficient fine-tuning\n- Dataset contains diverse conversation styles and formats\n\n## Training Tips\n- Monitor the quality of generated summaries\n- Balance between brevity and information retention\n- Pay attention to maintaining conversation context\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Generate concise summaries of conversations\n- Maintain key points and context\n- Handle various dialogue formats and styles",
+        "notes": "# Dialogue Summarization with TinyLlama\n\n## Overview\nThis recipe demonstrates how to fine-tune a TinyLlama model specifically for dialogue summarization using the popular SAMSum dataset.\n\n<-- To run this recipe, go the **Training** tab and press Queue.\n\n## Background\n- TinyLlama is optimized for efficiency while maintaining good performance\n- Uses LoRA for memory-efficient fine-tuning\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Generate concise summaries of conversations\n- Maintain key points and context\n- Handle various dialogue formats and styles",
         "requiredMachineArchitecture": [
             "cuda",
             "amd"
@@ -95,10 +61,9 @@
             {
                 "name": "train_tinyllama_summarizer",
                 "task_type": "TRAIN",
-                "type": "LoRA",
                 "plugin": "llama_trainer",
-                "formatting_template": "Instruction: Summarize the Following\nPrompt: {{dialogue}}\nGeneration: {{summary}}",
-                "config_json": "{\"template_name\":\"DialogueSummarizing\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"TinyLlama/TinyLlama-1.1B-Chat-v1.0\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"Instruction: Summarize the Following\\nPrompt: {{dialogue}}\\nGeneration: {{summary}}\",\"dataset_name\":\"knkarthick/samsum\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"4\",\"learning_rate\":\"0.00005\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"32\",\"lora_alpha\":\"64\",\"lora_dropout\":\"0.05\",\"adaptor_name\":\"Summarizer\",\"_tlab_recipe_datasets\":{\"name\":\"knkarthick/samsum\",\"path\":\"knkarthick/samsum\"},\"_tlab_recipe_models\":{\"name\":\"TinyLlama/TinyLlama-1.1B-Chat-v1.0\",\"path\":\"TinyLlama/TinyLlama-1.1B-Chat-v1.0\"}}"
+                "config_json": "{\"template_name\": \"DialogueSummarizing\", \"plugin_name\": \"llama_trainer\", \"model_name\": \"TinyLlama/TinyLlama-1.1B-Chat-v1.0\", \"model_architecture\": \"LlamaForCausalLM\", \"formatting_template\": \"Instruction: Summarize the Following\\nPrompt: {{dialogue}}\\nGeneration: {{summary}}\", \"dataset_name\": \"knkarthick/samsum\", \"maximum_sequence_length\": \"2048\", \"batch_size\": \"4\", \"learning_rate\": \"0.00005\", \"num_train_epochs\": \"1\", \"max_steps\": \"-1\", \"lora_r\": \"32\", \"lora_alpha\": \"64\", \"lora_dropout\": \"0.05\", \"adaptor_name\": \"Summarizer\", \"_tlab_recipe_datasets\": \"{\\\"name\\\": \\\"knkarthick/samsum\\\", \\\"path\\\": \\\"knkarthick/samsum\\\"}\", \"_tlab_recipe_models\": \"{\\\"name\\\": \\\"TinyLlama/TinyLlama-1.1B-Chat-v1.0\\\", \\\"path\\\": \\\"TinyLlama/TinyLlama-1.1B-Chat-v1.0\\\"}\"}",
+                "inputs_json": "{\"model_name\": \"TinyLlama/TinyLlama-1.1B-Chat-v1.0\", \"model_architecture\": \"LlamaForCausalLM\", \"dataset_name\": \"knkarthick/samsum\"}"
             }
         ],
         "workflows": [],
@@ -110,8 +75,9 @@
         "requiredMachineArchitecture": [
             "mlx"
         ],
-        "description": "Performs evaluation on common benchmarks using the Eleuther AI LM Eval Harness. It evaluates the model `mlx-community/Llama-3.2-1B-Instruct-4bit` on tasks such as MMLU, Winogrande, HellaSwag, and PIQA.",
-        "notes": "",
+        "description": "Performs evaluation on common benchmarks using the Eleuther AI LM Eval Harness. It evaluates the model `mlx-community/Llama-3.2-1B-Instruct-4bit` on tasks such as Winogrande, HellaSwag, and PIQA.",
+        "notes": "In this simple eval experiment, we set up some common evaluations against\nthe open source mlx-community/Llama-3.2-1B-Instruct-4bit model.\n\nTo run it, go to Evaluate in the sidebar, and click on Queue. Once it is done, click on\n\"Detailed Report\" or \"Chart\" to see results.",
+        "zOrder": 2,
         "dependencies": [
             {
                 "type": "model",
@@ -124,10 +90,11 @@
         ],
         "tasks": [
             {
-                "name": "CleanMink",
+                "name": "EvalOnCommonBenchmarks",
                 "task_type": "EVAL",
                 "plugin": "common-eleuther-ai-lm-eval-harness-mlx",
-                "config_json": "{\"template_name\":\"CleanMink\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"hellaswag,mmlu,piqa,winogrande\",\"limit\":\"1\",\"run_name\":\"CleanMink\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"CleanMink\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"hellaswag,mmlu,piqa,winogrande\",\"limit\":\"1\",\"run_name\":\"CleanMink\",\"predefined_tasks\":\"\"}}"
+                "config_json": "{\"template_name\":\"EvalOnCommonBenchmarks\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"hellaswag,piqa,winogrande\",\"limit\":\"1\",\"run_name\":\"EvalOnCommonBenchmarks\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"EvalOnCommonBenchmarks\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"hellaswag,piqa,winogrande\",\"limit\":\"1\",\"run_name\":\"EvalOnCommonBenchmarks\",\"predefined_tasks\":\"\"}}",
+                "inputs_json": "{}"
             }
         ],
         "workflows": [
@@ -145,7 +112,7 @@
                         },
                         {
                             "name": "Eval on Harness Benchmarks",
-                            "task": "CleanMink",
+                            "task": "EvalOnCommonBenchmarks",
                             "type": "EVAL",
                             "metadata": {
                                 "position": {
@@ -186,7 +153,8 @@
                 "name": "KindMoose",
                 "task_type": "EVAL",
                 "plugin": "common-eleuther-ai-lm-eval-harness",
-                "config_json": "{\"template_name\":\"KindMoose\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"tasks\":\"mmlu,winogrande,hellaswag,piqa\",\"limit\":\"1\",\"run_name\":\"KindMoose\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"KindMoose\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"tasks\":\"mmlu,winogrande,hellaswag,piqa\",\"limit\":\"1\",\"run_name\":\"KindMoose\",\"predefined_tasks\":\"\"}}"
+                "config_json": "{\"template_name\":\"KindMoose\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"tasks\":\"mmlu,winogrande,hellaswag,piqa\",\"limit\":\"1\",\"run_name\":\"KindMoose\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"KindMoose\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"tasks\":\"mmlu,winogrande,hellaswag,piqa\",\"limit\":\"1\",\"run_name\":\"KindMoose\",\"predefined_tasks\":\"\"}}",
+                "inputs_json": "{}"
             }
         ],
         "workflows": [
@@ -225,7 +193,7 @@
         "id": "fine_tune_small_mlx",
         "title": "Fine Tune a Small Language Model using MLX",
         "description": "Train a Llama 3.2 1B model to understand and answer questions about Touch Rugby rules using the MLX framework. Perfect for rule-based question answering.",
-        "notes": "# MLX Fine-Tuning Notes\n\n## Overview\nThis recipe fine-tunes a Llama 3.2 1B model specifically for Touch Rugby rules using the MLX framework.\n\n## Important Considerations\n- MLX is optimized for Apple Silicon (M1/M2/M3 chips)\n- The dataset contains Touch Rugby rules in Q&A format\n- Model size is kept small (1B parameters) for efficient inference\n\n## Training Tips\n- Monitor loss curves carefully\n- Use appropriate LoRA rank (typically 8-64)\n- Validate on unseen rugby scenarios\n\n## Expected Outcomes\nAfter training, the model should be able to answer questions about:\n- Touch Rugby rules and regulations\n- Game procedures and scoring\n- Player positions and responsibilities",
+        "notes": "# What This Recipe Does\n\nThis recipe compares a base model's performance before and after fine-tuning on touch rugby data using MLX (optimized for Apple Silicon):\n\n1. **Generate Base Model Outputs** - Creates responses using the original model\n2. **Evaluate Base Model** - Measures quality using ROUGE scores\n3. **Fine-tune with LoRA** - Trains the model on touch rugby rules using MLX framework\n4. **Generate Fine-tuned Outputs** - Creates responses using the trained adaptor\n5. **Evaluate Fine-tuned Model** - Measures improved quality\n\n## How to Use\n1. Go to the **Workflows** tab and run the \"fine_tune_model\" workflow\n2. Wait for all steps to complete\n3. Switch to the **Evaluate** tab to see the comparison results\n\n## What You'll Learn\n- How much fine-tuning improves performance on your specific domain\n- The difference between base model and fine-tuned model outputs\n- Benefits of using MLX for efficient training on Apple Silicon",
         "requiredMachineArchitecture": [
             "mlx"
         ],
@@ -236,72 +204,157 @@
                 "name": "mlx-community/Llama-3.2-1B-Instruct-4bit"
             },
             {
-                "type": "plugin",
-                "name": "mlx_lora_trainer"
-            },
-            {
                 "type": "dataset",
                 "name": "Trelis/touch-rugby-rules"
             },
             {
                 "type": "plugin",
-                "name": "common-eleuther-ai-lm-eval-harness-mlx"
+                "name": "mlx_lora_trainer"
             },
             {
                 "type": "plugin",
-                "name": "synthesizer_scratch"
+                "name": "mlx_server"
+            },
+            {
+                "type": "plugin",
+                "name": "deepeval_objective"
+            },
+            {
+                "type": "dataset",
+                "name": "transformerlab/touch-rugby-evals"
+            },
+            {
+                "type": "plugin",
+                "name": "batched_generation_datasets"
             }
         ],
         "tasks": [
             {
-                "name": "fine_tune_touch_rugby",
+                "name": "TouchRugby",
                 "task_type": "TRAIN",
-                "type": "LoRA",
                 "plugin": "mlx_lora_trainer",
-                "formatting_template": "{{prompt}}\n{{completion}}",
-                "config_json": "{\"template_name\":\"TouchRugby\",\"plugin_name\":\"mlx_lora_trainer\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"{{prompt}}\\n{{completion}}\",\"dataset_name\":\"Trelis/touch-rugby-rules\",\"lora_layers\":\"16\",\"batch_size\":\"8\",\"learning_rate\":\"0.0001\",\"lora_rank\":\"32\",\"lora_alpha\":\"128\",\"iters\":\"120\",\"steps_per_report\":\"10\",\"steps_per_eval\":\"20\",\"save_every\":\"10\",\"adaptor\":\"touch-rugby\"}"
+                "config_json": "{\"template_name\":\"TouchRugby\",\"plugin_name\":\"mlx_lora_trainer\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"LlamaForCausalLM\",\"foundation_model_file_path\":\"\",\"embedding_model\":\"BAAI/bge-base-en-v1.5\",\"embedding_model_architecture\":\"BertModel\",\"embedding_model_file_path\":\"\",\"formatting_template\":\"{{prompt}}\\n{{completion}}\",\"dataset_name\":\"Trelis/touch-rugby-rules\",\"lora_layers\":\"16\",\"batch_size\":\"8\",\"learning_rate\":\"0.0001\",\"lora_rank\":\"32\",\"lora_alpha\":\"128\",\"iters\":\"120\",\"num_train_epochs\":\"-1\",\"steps_per_report\":\"10\",\"steps_per_eval\":\"20\",\"save_every\":\"10\",\"adaptor_name\":\"touch-rugby\",\"fuse_model\":\"true\",\"log_to_wandb\":\"true\",\"_tlab_recipe_datasets\":\"[object Object]\",\"_tlab_recipe_models\":\"[object Object]\",\"sweep_config\":\"{}\",\"run_sweeps\":false,\"type\":\"LoRA\"}",
+                "inputs_json": "{\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"LlamaForCausalLM\",\"dataset_name\":\"Trelis/touch-rugby-rules\"}"
             },
             {
-                "name": "evaluate_touch_rugby",
+                "name": "FineTunedOutputs",
                 "task_type": "EVAL",
-                "plugin": "common-eleuther-ai-lm-eval-harness-mlx",
-                "config_json": "{\"template_name\":\"HandsomeBadger\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"mmlu\",\"limit\":\"0.5\",\"run_name\":\"HandsomeBadger\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"HandsomeBadger\",\"plugin_name\":\"common-eleuther-ai-lm-eval-harness-mlx\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"tasks\":\"mmlu\",\"limit\":\"0.5\",\"run_name\":\"HandsomeBadger\",\"predefined_tasks\":\"\"}}"
+                "plugin": "deepeval_objective",
+                "config_json": "{\"template_name\":\"FineTunedOutputs\",\"plugin_name\":\"deepeval_objective\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"\",\"limit\":\"1\",\"dataset_split\":\"train\",\"tasks\":\"Rouge\",\"dataset_name\":\"finetunedoutputs\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"FineTunedOutputs\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"FineTunedOutputs\",\"plugin_name\":\"deepeval_objective\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"\",\"limit\":\"1\",\"dataset_split\":\"train\",\"tasks\":\"Rouge\",\"dataset_name\":\"finetunedoutputs\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"FineTunedOutputs\",\"predefined_tasks\":\"\"}}",
+                "inputs_json": "{}"
             },
             {
-                "name": "generate_touch_rugby_examples",
+                "name": "BaseModelEvals",
+                "task_type": "EVAL",
+                "plugin": "deepeval_objective",
+                "config_json": "{\"template_name\":\"BaseModelEvals\",\"plugin_name\":\"deepeval_objective\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"\",\"limit\":\"1\",\"dataset_split\":\"train\",\"tasks\":\"Rouge\",\"dataset_name\":\"basemodeloutputs\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"BaseModelEvals\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"BaseModelEvals\",\"plugin_name\":\"deepeval_objective\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"\",\"limit\":\"1\",\"dataset_split\":\"train\",\"tasks\":\"Rouge\",\"dataset_name\":\"basemodeloutputs\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"BaseModelEvals\",\"predefined_tasks\":\"\"}}",
+                "inputs_json": "{}"
+            },
+            {
+                "name": "BaseModelOutputs",
                 "task_type": "GENERATE",
-                "plugin": "synthesizer_scratch",
-                "config_json": "{\"template_name\":\"SparklingNarwhal\",\"plugin_name\":\"synthesizer_scratch\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"generation_model\":\"local\",\"num_goldens\":\"51\",\"generate_expected_output\":\"Yes\",\"scenario\":\"You are an expert in Touch Rugby rules and regulations. Generate diverse training examples that cover various aspects of the game.\",\"task\":\"Create question-answer pairs about Touch Rugby rules, focusing on game procedures, scoring rules, player positions, and common scenarios.\",\"input_format\":\"A specific question about Touch Rugby rules, formatted as: Question: [question text].\",\"expected_output_format\":\"A clear, accurate answer explaining the relevant Touch Rugby rule, formatted as: Answer: [detailed explanation]\",\"run_name\":\"SparklingNarwhal\",\"generation_type\":\"scratch\",\"script_parameters\":{\"template_name\":\"SparklingNarwhal\",\"plugin_name\":\"synthesizer_scratch\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"generation_model\":\"local\",\"num_goldens\":\"51\",\"generate_expected_output\":\"Yes\",\"scenario\":\"You are an expert in Touch Rugby rules and regulations. Generate diverse training examples that cover various aspects of the game.\",\"task\":\"Create question-answer pairs about Touch Rugby rules, focusing on game procedures, scoring rules, player positions, and common scenarios.\",\"input_format\":\"A specific question about Touch Rugby rules, formatted as: Question: [question text].\",\"expected_output_format\":\"A clear, accurate answer explaining the relevant Touch Rugby rule, formatted as: Answer: [detailed explanation]\",\"run_name\":\"SparklingNarwhal\",\"generation_type\":\"scratch\"}}"
+                "plugin": "batched_generation_datasets",
+                "config_json": "{\"template_name\":\"BaseModelOutputs\",\"plugin_name\":\"batched_generation_datasets\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"\",\"generation_model\":\"{\\\"provider\\\":\\\"local\\\",\\\"model_server\\\":\\\"mlx_server\\\"}\",\"system_prompt\":\"Answer in the context of touch rugby\",\"input_column\":\"input\",\"output_column\":\"output\",\"batch_size\":\"1\",\"temperature\":\"0.7\",\"top_p\":\"1\",\"max_tokens\":\"1024\",\"dataset_split\":\"train\",\"output_dataset_name\":\"BaseModelOutputs\",\"dataset_name\":\"transformerlab/touch-rugby-evals\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"BaseModelOutputs\",\"generation_type\":\"scratch\",\"script_parameters\":{\"template_name\":\"BaseModelOutputs\",\"plugin_name\":\"batched_generation_datasets\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"\",\"generation_model\":\"{\\\"provider\\\":\\\"local\\\",\\\"model_server\\\":\\\"mlx_server\\\"}\",\"system_prompt\":\"Answer in the context of touch rugby\",\"input_column\":\"input\",\"output_column\":\"output\",\"batch_size\":\"1\",\"temperature\":\"0.7\",\"top_p\":\"1\",\"max_tokens\":\"1024\",\"dataset_split\":\"train\",\"output_dataset_name\":\"BaseModelOutputs\",\"dataset_name\":\"transformerlab/touch-rugby-evals\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"BaseModelOutputs\",\"generation_type\":\"scratch\"}}",
+                "inputs_json": "{}"
+            },
+            {
+                "name": "FinedTunedModelOutputs",
+                "task_type": "GENERATE",
+                "plugin": "batched_generation_datasets",
+                "config_json": "{\"template_name\":\"FinedTunedModelOutputs\",\"plugin_name\":\"batched_generation_datasets\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"touch-rugby\",\"generation_model\":\"{\\\"provider\\\":\\\"local\\\",\\\"model_server\\\":\\\"mlx_server\\\"}\",\"system_prompt\":\"Answer in the context of touch rugby\",\"input_column\":\"input\",\"output_column\":\"output\",\"batch_size\":\"1\",\"temperature\":\"0.7\",\"top_p\":\"1\",\"max_tokens\":\"1024\",\"dataset_split\":\"train\",\"output_dataset_name\":\"FineTunedOutputs\",\"dataset_name\":\"transformerlab/touch-rugby-evals\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"FinedTunedModelOutputs\",\"generation_type\":\"scratch\",\"script_parameters\":{\"template_name\":\"FinedTunedModelOutputs\",\"plugin_name\":\"batched_generation_datasets\",\"model_name\":\"mlx-community/Llama-3.2-1B-Instruct-4bit\",\"model_architecture\":\"MLX\",\"model_adapter\":\"touch-rugby\",\"generation_model\":\"{\\\"provider\\\":\\\"local\\\",\\\"model_server\\\":\\\"mlx_server\\\"}\",\"system_prompt\":\"Answer in the context of touch rugby\",\"input_column\":\"input\",\"output_column\":\"output\",\"batch_size\":\"1\",\"temperature\":\"0.7\",\"top_p\":\"1\",\"max_tokens\":\"1024\",\"dataset_split\":\"train\",\"output_dataset_name\":\"FineTunedOutputs\",\"dataset_name\":\"transformerlab/touch-rugby-evals\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"FinedTunedModelOutputs\",\"generation_type\":\"scratch\"}}",
+                "inputs_json": "{}"
             }
         ],
         "workflows": [
             {
-                "name": "Workflow_1",
+                "name": "fine_tune_model",
                 "config": {
                     "nodes": [
                         {
-                            "id": "node_train",
-                            "type": "TRAIN",
-                            "task": "fine_tune_touch_rugby",
-                            "name": "Training Task",
+                            "type": "START",
+                            "id": "c2a75b7e-ed71-40d6-ad35-e4dffc9f22f0",
+                            "name": "START",
                             "out": [
-                                "node_eval"
-                            ]
+                                "0f143d9a-0abe-4fbf-8254-d423b283ee64"
+                            ],
+                            "metadata": {
+                                "position": {
+                                    "x": -15,
+                                    "y": -180
+                                }
+                            }
                         },
                         {
-                            "id": "node_eval",
-                            "type": "EVAL",
-                            "task": "evaluate_touch_rugby",
-                            "name": "Evaluation Task",
-                            "out": [
-                                "node_generate"
-                            ]
-                        },
-                        {
-                            "id": "node_generate",
+                            "name": "GenerateBaseOutputs",
+                            "task": "BaseModelOutputs",
                             "type": "GENERATE",
-                            "task": "generate_touch_rugby_examples",
-                            "name": "Generation Task",
+                            "metadata": {
+                                "position": {
+                                    "x": -75,
+                                    "y": -105
+                                }
+                            },
+                            "id": "0f143d9a-0abe-4fbf-8254-d423b283ee64",
+                            "out": [
+                                "9d107acd-3815-4b45-b87b-d52e249a3799"
+                            ]
+                        },
+                        {
+                            "name": "EvalBaseOutputs",
+                            "task": "BaseModelEvals",
+                            "type": "EVAL",
+                            "metadata": {
+                                "position": {
+                                    "x": -75,
+                                    "y": 30
+                                }
+                            },
+                            "id": "9d107acd-3815-4b45-b87b-d52e249a3799",
+                            "out": [
+                                "5c04dd3b-4e3e-47a2-bfdb-e97bf003b357"
+                            ]
+                        },
+                        {
+                            "name": "TrainLoRA",
+                            "task": "TouchRugby",
+                            "type": "TRAIN",
+                            "metadata": {
+                                "position": {
+                                    "x": -75,
+                                    "y": 165
+                                }
+                            },
+                            "id": "5c04dd3b-4e3e-47a2-bfdb-e97bf003b357",
+                            "out": [
+                                "3d60693d-88be-4f38-bf51-415d6a68d709"
+                            ]
+                        },
+                        {
+                            "name": "GenerateFineTunedOutputs",
+                            "task": "FinedTunedModelOutputs",
+                            "type": "GENERATE",
+                            "metadata": {
+                                "position": {
+                                    "x": -90,
+                                    "y": 315
+                                }
+                            },
+                            "id": "3d60693d-88be-4f38-bf51-415d6a68d709",
+                            "out": [
+                                "4ef42b37-fb9a-480e-b056-47e25584f7cd"
+                            ]
+                        },
+                        {
+                            "name": "EvalFineTuned",
+                            "task": "FineTunedOutputs",
+                            "type": "EVAL",
+                            "metadata": {
+                                "position": {
+                                    "x": -75,
+                                    "y": 465
+                                }
+                            },
+                            "id": "4ef42b37-fb9a-480e-b056-47e25584f7cd",
                             "out": []
                         }
                     ]
@@ -314,63 +367,168 @@
         "id": "fine_tune_existing_model",
         "title": "Fine-tune an Existing Model",
         "description": "Adapt a pre-trained model to your specific needs using LoRA. Save time and resources by leveraging existing knowledge.",
-        "notes": "# Fine-tuning with LoRA\n\n## Overview\nThis recipe demonstrates how to fine-tune a pre-trained model using Low-Rank Adaptation (LoRA) for efficient training.\n\n## Important Considerations\n- LoRA reduces memory requirements compared to full fine-tuning\n- Suitable for domain adaptation and task-specific training\n- Preserves base model knowledge while learning new tasks\n\n## Training Tips\n- Choose appropriate LoRA rank (typically 8-64)\n- Monitor training loss and validation metrics\n- Adjust learning rate and batch size based on task\n\n## Expected Outcomes\nAfter training, the model should:\n- Show improved performance on target domain\n- Maintain general language capabilities\n- Have smaller parameter footprint than full fine-tuning",
+        "notes": "# What This Recipe Does\n\nThis recipe compares a base model's performance before and after fine-tuning on touch rugby data:\n\n1. **Generate Base Model Outputs** - Creates responses using the original model\n2. **Evaluate Base Model** - Measures quality using ROUGE scores\n3. **Fine-tune with LoRA** - Trains the model on touch rugby rules (efficient training method)\n4. **Generate Fine-tuned Outputs** - Creates responses using the trained adaptor\n5. **Evaluate Fine-tuned Model** - Measures improved quality\n\n## How to Use\n1. Go to the **Workflows** tab and run the \"fine_tune_model\" workflow\n2. Wait for all steps to complete\n3. Switch to the **Evaluate** tab to see the comparison results\n\n## What You'll Learn\n- How much fine-tuning improves performance on your specific domain\n- The difference between base model and fine-tuned model outputs",
         "requiredMachineArchitecture": [
-            "cuda"
+            "cuda",
+            "amd"
         ],
         "dependencies": [
             {
                 "type": "model",
-                "name": "Qwen/Qwen2.5-1.5B-Instruct"
+                "name": "unsloth/Llama-3.2-1B-Instruct"
+            },
+            {
+                "type": "dataset",
+                "name": "Trelis/touch-rugby-rules"
             },
             {
                 "type": "plugin",
                 "name": "llama_trainer"
             },
             {
-                "type": "dataset",
-                "name": "knkarthick/samsum"
+                "type": "plugin",
+                "name": "fastchat_server"
             },
             {
                 "type": "plugin",
-                "name": "eleuther-ai-lm-evaluation-harness-mlx"
+                "name": "deepeval_objective"
+            },
+            {
+                "type": "dataset",
+                "name": "transformerlab/touch-rugby-evals"
+            },
+            {
+                "type": "plugin",
+                "name": "batched_generation_datasets"
             }
         ],
         "tasks": [
             {
-                "name": "finetune_model",
+                "name": "BrilliantBaboon",
                 "task_type": "TRAIN",
-                "type": "LoRA",
                 "plugin": "llama_trainer",
-                "formatting_template": "Instruction: Summarize the Following\nPrompt: {{dialogue}}\nGeneration: {{summary}}",
-                "config_json": "{\"template_name\":\"DialogueSummarizing\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"formatting_template\":\"Instruction: Summarize the Following\\nPrompt: {{dialogue}}\\nGeneration: {{summary}}\",\"dataset_name\":\"knkarthick/samsum\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"4\",\"learning_rate\":\"0.00005\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"32\",\"lora_alpha\":\"64\",\"lora_dropout\":\"0.05\",\"adaptor_name\":\"Summarizer\"}"
+                "config_json": "{\"template_name\":\"BrilliantBaboon\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"foundation_model_file_path\":\"\",\"embedding_model\":\"BAAI/bge-base-en-v1.5\",\"embedding_model_architecture\":\"BertModel\",\"embedding_model_file_path\":\"\",\"formatting_template\":\"{{prompt}}\\n{{completion}}\",\"dataset_name\":\"Trelis/touch-rugby-rules\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"4\",\"learning_rate_schedule\":\"constant\",\"learning_rate\":\"0.00005\",\"num_train_epochs\":\"200\",\"max_steps\":\"-1\",\"lora_r\":\"4\",\"lora_alpha\":\"8\",\"lora_dropout\":\"0.05\",\"adaptor_name\":\"touch-rugby-rules\",\"log_to_wandb\":\"true\",\"fuse_model\":\"true\",\"sweep_config\":\"{}\",\"run_sweeps\":false,\"type\":\"LoRA\"}",
+                "inputs_json": "{\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"dataset_name\":\"Trelis/touch-rugby-rules\"}"
             },
             {
-                "name": "evaluate_finetuned",
+                "name": "EvalFineTunedRugby",
                 "task_type": "EVAL",
-                "plugin": "eleuther-ai-lm-evaluation-harness-mlx",
-                "config_json": "{\"template_name\":\"EvalFineTuned\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"tasks\":\"mmlu\",\"limit\":\"0.5\",\"run_name\":\"EvalFineTuned\"}"
+                "plugin": "deepeval_objective",
+                "config_json": "{\"template_name\":\"EvalFineTunedRugby\",\"plugin_name\":\"deepeval_objective\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"model_adapter\":\"touch-rugby-rules\",\"limit\":\"1\",\"dataset_split\":\"train\",\"tasks\":\"Rouge\",\"dataset_name\":\"finetuned_rugby_outputs\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"EvalFineTunedRugby\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"EvalFineTunedRugby\",\"plugin_name\":\"deepeval_objective\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"model_adapter\":\"touch-rugby-rules\",\"limit\":\"1\",\"dataset_split\":\"train\",\"tasks\":\"Rouge\",\"dataset_name\":\"finetuned_rugby_outputs\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"EvalFineTunedRugby\",\"predefined_tasks\":\"\"}}",
+                "inputs_json": "{}"
+            },
+            {
+                "name": "EvalBaseModel",
+                "task_type": "EVAL",
+                "plugin": "deepeval_objective",
+                "config_json": "{\"template_name\":\"EvalBaseModel\",\"plugin_name\":\"deepeval_objective\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"model_adapter\":\"touch-rugby-rules\",\"limit\":\"1\",\"dataset_split\":\"train\",\"tasks\":\"Rouge\",\"dataset_name\":\"base_rugby_outputs\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"EvalBaseModel\",\"predefined_tasks\":\"\",\"script_parameters\":{\"template_name\":\"EvalBaseModel\",\"plugin_name\":\"deepeval_objective\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"model_adapter\":\"touch-rugby-rules\",\"limit\":\"1\",\"dataset_split\":\"train\",\"tasks\":\"Rouge\",\"dataset_name\":\"base_rugby_outputs\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"EvalBaseModel\",\"predefined_tasks\":\"\"}}",
+                "inputs_json": "{}"
+            },
+            {
+                "name": "TrainedAdaptorOutputs",
+                "task_type": "GENERATE",
+                "plugin": "batched_generation_datasets",
+                "config_json": "{\"template_name\":\"TrainedAdaptorOutputs\",\"plugin_name\":\"batched_generation_datasets\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"model_adapter\":\"touch-rugby-rules\",\"generation_model\":\"{\\\"provider\\\":\\\"local\\\",\\\"model_server\\\":\\\"fastchat_server\\\"}\",\"system_prompt\":\"Answer in terms of touch rugby\",\"input_column\":\"input\",\"output_column\":\"output\",\"batch_size\":\"128\",\"temperature\":\"0.7\",\"top_p\":\"1\",\"max_tokens\":\"1024\",\"dataset_split\":\"train\",\"output_dataset_name\":\"finetuned_rugby_outputs\",\"dataset_name\":\"transformerlab/touch-rugby-evals\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"TrainedAdaptorOutputs\",\"generation_type\":\"scratch\",\"script_parameters\":{\"template_name\":\"TrainedAdaptorOutputs\",\"plugin_name\":\"batched_generation_datasets\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"model_adapter\":\"touch-rugby-rules\",\"generation_model\":\"{\\\"provider\\\":\\\"local\\\",\\\"model_server\\\":\\\"fastchat_server\\\"}\",\"system_prompt\":\"Answer in terms of touch rugby\",\"input_column\":\"input\",\"output_column\":\"output\",\"batch_size\":\"128\",\"temperature\":\"0.7\",\"top_p\":\"1\",\"max_tokens\":\"1024\",\"dataset_split\":\"train\",\"output_dataset_name\":\"finetuned_rugby_outputs\",\"dataset_name\":\"transformerlab/touch-rugby-evals\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"TrainedAdaptorOutputs\",\"generation_type\":\"scratch\"}}",
+                "inputs_json": "{}"
+            },
+            {
+                "name": "BaseModelOutputs",
+                "task_type": "GENERATE",
+                "plugin": "batched_generation_datasets",
+                "config_json": "{\"template_name\":\"BaseModelOutputs\",\"plugin_name\":\"batched_generation_datasets\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"model_adapter\":\"\",\"generation_model\":\"{\\\"provider\\\":\\\"local\\\",\\\"model_server\\\":\\\"fastchat_server\\\"}\",\"system_prompt\":\"Answer in terms of touch rugby\",\"input_column\":\"input\",\"output_column\":\"output\",\"batch_size\":\"128\",\"temperature\":\"0.7\",\"top_p\":\"1\",\"max_tokens\":\"1024\",\"dataset_split\":\"train\",\"output_dataset_name\":\"base_rugby_outputs\",\"dataset_name\":\"transformerlab/touch-rugby-evals\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"BaseModelOutputs\",\"generation_type\":\"scratch\",\"script_parameters\":{\"template_name\":\"BaseModelOutputs\",\"plugin_name\":\"batched_generation_datasets\",\"model_name\":\"unsloth/Llama-3.2-1B-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"model_adapter\":\"\",\"generation_model\":\"{\\\"provider\\\":\\\"local\\\",\\\"model_server\\\":\\\"fastchat_server\\\"}\",\"system_prompt\":\"Answer in terms of touch rugby\",\"input_column\":\"input\",\"output_column\":\"output\",\"batch_size\":\"128\",\"temperature\":\"0.7\",\"top_p\":\"1\",\"max_tokens\":\"1024\",\"dataset_split\":\"train\",\"output_dataset_name\":\"base_rugby_outputs\",\"dataset_name\":\"transformerlab/touch-rugby-evals\",\"_dataset_display_message\":\"Please upload a dataset file with columns: 'input', 'output', 'expected_output'. The context column is optional if using metrics which don't require it.\",\"run_name\":\"BaseModelOutputs\",\"generation_type\":\"scratch\"}}",
+                "inputs_json": "{}"
             }
         ],
         "workflows": [
             {
-                "name": "Finetune_and_Evaluate",
+                "name": "fine_tune_model",
                 "config": {
                     "nodes": [
                         {
-                            "id": "node_finetune",
-                            "type": "TRAIN",
-                            "task": "finetune_model",
-                            "name": "Fine-tuning Task",
+                            "type": "START",
+                            "id": "b157b5ea-8778-486a-a94f-fef2cad1d07b",
+                            "name": "START",
                             "out": [
-                                "node_eval"
+                                "1b290a1e-aab3-494c-9502-dff4460db4b7"
+                            ],
+                            "metadata": {
+                                "position": {
+                                    "x": -30,
+                                    "y": -150
+                                }
+                            }
+                        },
+                        {
+                            "name": "GenerateBaseOutputs",
+                            "task": "BaseModelOutputs",
+                            "type": "GENERATE",
+                            "metadata": {
+                                "position": {
+                                    "x": -90,
+                                    "y": -75
+                                }
+                            },
+                            "id": "1b290a1e-aab3-494c-9502-dff4460db4b7",
+                            "out": [
+                                "6e5ade62-1163-4e60-9fe5-38ed36adc6a9"
                             ]
                         },
                         {
-                            "id": "node_eval",
+                            "name": "EvalBaseOutputs",
+                            "task": "EvalBaseModel",
                             "type": "EVAL",
-                            "task": "evaluate_finetuned",
-                            "name": "Evaluation Task",
+                            "metadata": {
+                                "position": {
+                                    "x": -90,
+                                    "y": 45
+                                }
+                            },
+                            "id": "6e5ade62-1163-4e60-9fe5-38ed36adc6a9",
+                            "out": [
+                                "969ef1ac-0e66-4f72-85a9-c4a9d08fa0fc"
+                            ]
+                        },
+                        {
+                            "name": "TrainTouchRugbyRules",
+                            "task": "BrilliantBaboon",
+                            "type": "TRAIN",
+                            "metadata": {
+                                "position": {
+                                    "x": -90,
+                                    "y": 195
+                                }
+                            },
+                            "id": "969ef1ac-0e66-4f72-85a9-c4a9d08fa0fc",
+                            "out": [
+                                "53d4a815-6ef8-47cd-b341-24ae233c4c04"
+                            ]
+                        },
+                        {
+                            "name": "GenerateTrainedAdaptorOutputs",
+                            "task": "TrainedAdaptorOutputs",
+                            "type": "GENERATE",
+                            "metadata": {
+                                "position": {
+                                    "x": -105,
+                                    "y": 330
+                                }
+                            },
+                            "id": "53d4a815-6ef8-47cd-b341-24ae233c4c04",
+                            "out": [
+                                "1e4e9270-4ac8-4870-a6e4-21fe04684f51"
+                            ]
+                        },
+                        {
+                            "name": "EvalTrainedAdaptor",
+                            "task": "EvalFineTunedRugby",
+                            "type": "EVAL",
+                            "metadata": {
+                                "position": {
+                                    "x": -90,
+                                    "y": 480
+                                }
+                            },
+                            "id": "1e4e9270-4ac8-4870-a6e4-21fe04684f51",
                             "out": []
                         }
                     ]
@@ -406,43 +564,9 @@
             {
                 "name": "MachineLearningQnA",
                 "task_type": "TRAIN",
-                "type": "LoRA",
                 "plugin": "llama_trainer",
-                "config_json": "{\"template_name\":\"MachineLearningQnA\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"formatting_template\":\"{{text}}\\n\",\"dataset_name\":\"win-wang/Machine_Learning_QA_Collection\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"1\",\"learning_rate\":\"0.00005\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"16\",\"lora_alpha\":\"64\",\"lora_dropout\":\"0.1\",\"adaptor_name\":\"ML-QA\",\"_tlab_recipe_datasets\":{\"name\":\"win-wang/Machine_Learning_QA_Collection\",\"path\":\"win-wang/Machine_Learning_QA_Collection\"},\"_tlab_recipe_models\":{\"name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"path\":\"Qwen/Qwen2.5-1.5B-Instruct\"}}"
-            }
-        ],
-        "workflows": [],
-        "cardImage": "https://images.unsplash.com/photo-1557562645-4eee56b29bc1?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-        "id": "ml_qa_mlx",
-        "title": "Machine Learning Q&A on MLX",
-        "description": "Fine-tune a Gemma 2 model to become an expert in answering machine learning questions, optimized for Apple Silicon using MLX framework.",
-        "notes": "# Machine Learning Q&A with Gemma 2\n\n## Overview\nThis recipe adapts a Gemma 2 model to specialize in machine learning concepts and explanations, optimized for MLX.\n\n## Important Considerations\n- MLX optimization for Apple Silicon\n- Comprehensive ML Q&A dataset coverage\n- Efficient inference on Mac devices\n\n## Training Tips\n- Balance technical accuracy with clarity\n- Monitor explanation quality\n- Test across different ML topics\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Explain ML concepts clearly\n- Provide technical insights\n- Answer both basic and advanced ML questions",
-        "requiredMachineArchitecture": [
-            "mlx"
-        ],
-        "dependencies": [
-            {
-                "type": "model",
-                "name": "google/gemma-2-2b-it"
-            },
-            {
-                "type": "dataset",
-                "name": "win-wang/Machine_Learning_QA_Collection"
-            },
-            {
-                "type": "plugin",
-                "name": "mlx_lora_trainer"
-            }
-        ],
-        "tasks": [
-            {
-                "name": "train_gemma_2_ml_qa",
-                "task_type": "TRAIN",
-                "type": "LoRA",
-                "plugin": "mlx_lora_trainer",
-                "config_json": "{\"template_name\":\"MachineLearningQnA-MLX\",\"plugin_name\":\"mlx_lora_trainer\",\"model_name\":\"google/gemma-2-2b-it\",\"model_architecture\":\"Gemma2ForCausalLM\",\"formatting_template\":\"{{text}}\",\"dataset_name\":\"win-wang/Machine_Learning_QA_Collection\",\"lora_layers\":\"8\",\"batch_size\":\"4\",\"learning_rate\":\"0.0001\",\"lora_rank\":\"8\",\"lora_alpha\":\"160\",\"iters\":\"200\",\"steps_per_report\":\"10\",\"steps_per_eval\":\"50\",\"save_every\":\"50\",\"adaptor_name\":\"ml-qa\",\"_tlab_recipe_datasets\":{\"name\":\"Machine Learning QA Collection\",\"path\":\"win-wang/Machine_Learning_QA_Collection\"},\"_tlab_recipe_models\":{\"name\":\"google/gemma-2-2b-it\",\"path\":\"google/gemma-2-2b-it\"}}"
+                "config_json": "{\"template_name\": \"MachineLearningQnA\", \"plugin_name\": \"llama_trainer\", \"model_name\": \"Qwen/Qwen2.5-1.5B-Instruct\", \"model_architecture\": \"Qwen2ForCausalLM\", \"formatting_template\": \"{{text}}\\n\", \"dataset_name\": \"win-wang/Machine_Learning_QA_Collection\", \"maximum_sequence_length\": \"2048\", \"batch_size\": \"1\", \"learning_rate\": \"0.00005\", \"num_train_epochs\": \"1\", \"max_steps\": \"-1\", \"lora_r\": \"16\", \"lora_alpha\": \"64\", \"lora_dropout\": \"0.1\", \"adaptor_name\": \"ML-QA\", \"_tlab_recipe_datasets\": \"{\\\"name\\\": \\\"win-wang/Machine_Learning_QA_Collection\\\", \\\"path\\\": \\\"win-wang/Machine_Learning_QA_Collection\\\"}\", \"_tlab_recipe_models\": \"{\\\"name\\\": \\\"Qwen/Qwen2.5-1.5B-Instruct\\\", \\\"path\\\": \\\"Qwen/Qwen2.5-1.5B-Instruct\\\"}\"}",
+                "inputs_json": "{\"model_name\": \"Qwen/Qwen2.5-1.5B-Instruct\", \"model_architecture\": \"Qwen2ForCausalLM\", \"dataset_name\": \"win-wang/Machine_Learning_QA_Collection\"}"
             }
         ],
         "workflows": [],
@@ -475,10 +599,9 @@
             {
                 "name": "train_smollm_python_completion",
                 "task_type": "TRAIN",
-                "type": "LoRA",
                 "plugin": "llama_trainer",
-                "formatting_template": "{{output}}",
-                "config_json": "{\"template_name\":\"PythonCompletion\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"HuggingFaceTB/SmolLM2-135M\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"{{output}}\\n\",\"dataset_name\":\"flytech/python-codes-25k\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"4\",\"learning_rate\":\"0.0005\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"64\",\"lora_alpha\":\"128\",\"lora_dropout\":\"0.05\",\"adaptor_name\":\"python\",\"_tlab_recipe_datasets\":{\"name\":\"flytech/python-codes-25k\",\"path\":\"flytech/python-codes-25k\"},\"_tlab_recipe_models\":{\"name\":\"HuggingFaceTB/SmolLM2-135M\",\"path\":\"HuggingFaceTB/SmolLM2-135M\"}}"
+                "config_json": "{\"template_name\": \"PythonCompletion\", \"plugin_name\": \"llama_trainer\", \"model_name\": \"HuggingFaceTB/SmolLM2-135M\", \"model_architecture\": \"LlamaForCausalLM\", \"formatting_template\": \"{{output}}\\n\", \"dataset_name\": \"flytech/python-codes-25k\", \"maximum_sequence_length\": \"2048\", \"batch_size\": \"4\", \"learning_rate\": \"0.0005\", \"num_train_epochs\": \"1\", \"max_steps\": \"-1\", \"lora_r\": \"64\", \"lora_alpha\": \"128\", \"lora_dropout\": \"0.05\", \"adaptor_name\": \"python\", \"_tlab_recipe_datasets\": \"{\\\"name\\\": \\\"flytech/python-codes-25k\\\", \\\"path\\\": \\\"flytech/python-codes-25k\\\"}\", \"_tlab_recipe_models\": \"{\\\"name\\\": \\\"HuggingFaceTB/SmolLM2-135M\\\", \\\"path\\\": \\\"HuggingFaceTB/SmolLM2-135M\\\"}\"}",
+                "inputs_json": "{\"model_name\": \"HuggingFaceTB/SmolLM2-135M\", \"model_architecture\": \"LlamaForCausalLM\", \"dataset_name\": \"flytech/python-codes-25k\"}"
             }
         ],
         "workflows": [],
@@ -488,7 +611,7 @@
         "id": "quantize_model",
         "title": "Quantize a Model",
         "description": "Optimize your model for faster inference and reduced size using quantization tools.",
-        "notes": "# Model Quantization\n\n## Overview\nThis recipe demonstrates how to quantize a model to reduce its size and improve inference speed while maintaining performance.\n\n## Important Considerations\n- Quantization reduces model precision\n- Trade-off between size/speed and accuracy\n- Different quantization methods available\n\n## Quantization Tips\n- Test different quantization levels\n- Validate performance after quantization\n- Consider hardware compatibility\n\n## Expected Outcomes\nAfter quantization, you will have:\n- Reduced model size\n- Faster inference speed\n- Minimal accuracy loss",
+        "notes": "# Model Quantization\n\nThis recipe quantizes a model to reduce its size and improve inference speed while maintaining performance.\n\n## How to Use\nTo get a quantized model, simply go to the **Workflows** tab and run the `quantize-a-model-to-gguf` workflow.\n\n## What it does\n- Converts your model to GGUF format with q8_0 quantization\n- Reduces model size for faster loading\n- Maintains good performance with minimal accuracy loss",
         "requiredMachineArchitecture": [
             "mlx",
             "cuda"
@@ -496,50 +619,52 @@
         "dependencies": [
             {
                 "type": "model",
-                "name": "Qwen/Qwen2.5-1.5B-Instruct"
+                "name": "unsloth/Llama-3.2-1B-Instruct"
             },
             {
                 "type": "plugin",
-                "name": "llama_cpp_server"
-            },
-            {
-                "type": "plugin",
-                "name": "eleuther-ai-lm-evaluation-harness-mlx"
+                "name": "gguf_exporter"
             }
         ],
         "tasks": [
             {
-                "name": "quantize_model",
+                "name": "ExportGGUFTask",
                 "task_type": "EXPORT",
-                "plugin": "llama_cpp_server",
-                "config_json": "{\"template_name\":\"Quantization\",\"plugin_name\":\"llama_cpp_server\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"quantization_type\":\"q4_k_m\",\"n_gpu_layers\":\"auto\"}"
-            },
-            {
-                "name": "evaluate_quantized",
-                "task_type": "EVAL",
-                "plugin": "eleuther-ai-lm-evaluation-harness-mlx",
-                "config_json": "{\"template_name\":\"EvalQuantized\",\"plugin_name\":\"eleuther-ai-lm-evaluation-harness-mlx\",\"model_name\":\"Qwen/Qwen2.5-1.5B-Instruct\",\"model_architecture\":\"Qwen2ForCausalLM\",\"tasks\":\"mmlu\",\"limit\":\"0.5\",\"run_name\":\"EvalQuantized\"}"
+                "plugin": "gguf_exporter",
+                "config_json": "{\"plugin_name\":\"gguf_exporter\",\"input_model_id\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_path\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_architecture\":\"LlamaForCausalLM\",\"output_model_id\":\"Llama-3.2-1B-Instruct-1752517918-q8_0.gguf\",\"output_model_architecture\":\"GGUF\",\"output_model_name\":\"Llama-3.2-1B-Instruct - GGUF - q8_0\",\"output_model_path\":\"/models/Llama-3.2-1B-Instruct-1752517918-q8_0.gguf\",\"output_filename\":\"Llama-3.2-1B-Instruct-1752517918-q8_0.gguf\",\"script_directory\":\"/plugins/gguf_exporter\",\"params\":{\"outtype\":\"q8_0\"},\"run_name\":\"ExportGGUFTask\"}",
+                "inputs_json": "{\"input_model_id\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_path\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_architecture\":\"LlamaForCausalLM\",\"plugin_name\":\"gguf_exporter\",\"plugin_architecture\":\"GGUF\"}"
             }
         ],
         "workflows": [
             {
-                "name": "Quantize_and_Evaluate",
+                "name": "quantize-a-model-to-gguf",
                 "config": {
                     "nodes": [
                         {
-                            "id": "node_quantize",
-                            "type": "EXPORT",
-                            "task": "quantize_model",
-                            "name": "Quantization Task",
+                            "type": "START",
+                            "id": "c7d71d3e-98e2-4cd7-9c7a-dc749f2e5988",
+                            "name": "START",
                             "out": [
-                                "node_eval"
-                            ]
+                                "05b76236-0e85-4da3-a0f1-06dc36055179"
+                            ],
+                            "metadata": {
+                                "position": {
+                                    "x": -15,
+                                    "y": -120
+                                }
+                            }
                         },
                         {
-                            "id": "node_eval",
-                            "type": "EVAL",
-                            "task": "evaluate_quantized",
-                            "name": "Evaluation Task",
+                            "name": "ExportTask",
+                            "task": "ExportGGUFTask",
+                            "type": "EXPORT",
+                            "metadata": {
+                                "position": {
+                                    "x": -45,
+                                    "y": 15
+                                }
+                            },
+                            "id": "05b76236-0e85-4da3-a0f1-06dc36055179",
                             "out": []
                         }
                     ]
@@ -575,9 +700,9 @@
             {
                 "name": "InstructTuning",
                 "task_type": "TRAIN",
-                "type": "LoRA",
                 "plugin": "llama_trainer",
-                "config_json": "{\"template_name\":\"InstructTuning\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"HuggingFaceTB/SmolLM2-135M\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"<User>\\n{{instruction}}\\n</User>\\n<Assistant>\\n{{output}}\\n</Assistant>\\n\",\"dataset_name\":\"nickrosh/Evol-Instruct-Code-80k-v1\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"4\",\"learning_rate\":\"0.00003\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"4\",\"lora_alpha\":\"16\",\"lora_dropout\":\"0.05\",\"adaptor_name\":\"instruct\",\"_tlab_recipe_datasets\":{\"name\":\"nickrosh/Evol-Instruct-Code-80k-v1\",\"path\":\"nickrosh/Evol-Instruct-Code-80k-v1\"},\"_tlab_recipe_models\":{\"name\":\"HuggingFaceTB/SmolLM2-135M\",\"path\":\"HuggingFaceTB/SmolLM2-135M\"}}"
+                "config_json": "{\"template_name\": \"InstructTuning\", \"plugin_name\": \"llama_trainer\", \"model_name\": \"HuggingFaceTB/SmolLM2-135M\", \"model_architecture\": \"LlamaForCausalLM\", \"formatting_template\": \"<User>\\n{{instruction}}\\n</User>\\n<Assistant>\\n{{output}}\\n</Assistant>\\n\", \"dataset_name\": \"nickrosh/Evol-Instruct-Code-80k-v1\", \"maximum_sequence_length\": \"2048\", \"batch_size\": \"4\", \"learning_rate\": \"0.00003\", \"num_train_epochs\": \"1\", \"max_steps\": \"-1\", \"lora_r\": \"4\", \"lora_alpha\": \"16\", \"lora_dropout\": \"0.05\", \"adaptor_name\": \"instruct\", \"_tlab_recipe_datasets\": \"{\\\"name\\\": \\\"nickrosh/Evol-Instruct-Code-80k-v1\\\", \\\"path\\\": \\\"nickrosh/Evol-Instruct-Code-80k-v1\\\"}\", \"_tlab_recipe_models\": \"{\\\"name\\\": \\\"HuggingFaceTB/SmolLM2-135M\\\", \\\"path\\\": \\\"HuggingFaceTB/SmolLM2-135M\\\"}\"}",
+                "inputs_json": "{\"model_name\": \"HuggingFaceTB/SmolLM2-135M\", \"model_architecture\": \"LlamaForCausalLM\", \"dataset_name\": \"nickrosh/Evol-Instruct-Code-80k-v1\"}"
             }
         ],
         "workflows": [],
@@ -610,9 +735,9 @@
             {
                 "name": "PirateSpeech",
                 "task_type": "TRAIN",
-                "type": "LoRA",
                 "plugin": "llama_trainer",
-                "config_json": "{\"template_name\":\"PirateSpeech\",\"plugin_name\":\"llama_trainer\",\"model_name\":\"HuggingFaceTB/SmolLM-135M-Instruct\",\"model_architecture\":\"LlamaForCausalLM\",\"formatting_template\":\"<instruction>\\n{{instruction}}\\n</instruction>\\n<response>\\n{{response}}\\n</response>\",\"dataset_name\":\"Peyton3995/dolly-15k-mistral-pirate\",\"maximum_sequence_length\":\"2048\",\"batch_size\":\"4\",\"learning_rate_schedule\":\"cosine\",\"learning_rate\":\"0.01\",\"num_train_epochs\":\"1\",\"max_steps\":\"-1\",\"lora_r\":\"64\",\"lora_alpha\":\"128\",\"lora_dropout\":\"0.05\",\"adaptor_name\":\"Pirate_Speech\",\"_tlab_recipe_datasets\":{\"name\":\"Peyton3995/dolly-15k-mistral-pirate\",\"path\":\"Peyton3995/dolly-15k-mistral-pirate\"},\"_tlab_recipe_models\":{\"name\":\"HuggingFaceTB/SmolLM-135M-Instruct\",\"path\":\"HuggingFaceTB/SmolLM-135M-Instruct\"}}"
+                "config_json": "{\"template_name\": \"PirateSpeech\", \"plugin_name\": \"llama_trainer\", \"model_name\": \"HuggingFaceTB/SmolLM-135M-Instruct\", \"model_architecture\": \"LlamaForCausalLM\", \"formatting_template\": \"<instruction>\\n{{instruction}}\\n</instruction>\\n<response>\\n{{response}}\\n</response>\", \"dataset_name\": \"Peyton3995/dolly-15k-mistral-pirate\", \"maximum_sequence_length\": \"2048\", \"batch_size\": \"4\", \"learning_rate_schedule\": \"cosine\", \"learning_rate\": \"0.01\", \"num_train_epochs\": \"1\", \"max_steps\": \"-1\", \"lora_r\": \"64\", \"lora_alpha\": \"128\", \"lora_dropout\": \"0.05\", \"adaptor_name\": \"Pirate_Speech\", \"_tlab_recipe_datasets\": \"{\\\"name\\\": \\\"Peyton3995/dolly-15k-mistral-pirate\\\", \\\"path\\\": \\\"Peyton3995/dolly-15k-mistral-pirate\\\"}\", \"_tlab_recipe_models\": \"{\\\"name\\\": \\\"HuggingFaceTB/SmolLM-135M-Instruct\\\", \\\"path\\\": \\\"HuggingFaceTB/SmolLM-135M-Instruct\\\"}\"}",
+                "inputs_json": "{\"model_name\": \"HuggingFaceTB/SmolLM-135M-Instruct\", \"model_architecture\": \"LlamaForCausalLM\", \"dataset_name\": \"Peyton3995/dolly-15k-mistral-pirate\"}"
             }
         ],
         "workflows": [],
