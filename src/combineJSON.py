@@ -13,8 +13,20 @@ def validate_json(json, schema):
         validate(instance=json, schema=schema)
         print('JSON maps to schema')
     except ValidationError as e:
-        print(e)
+        print(f"ERROR: {e}")
         exit(1)
+
+def check_for_duplicate_ids(combined_json):
+    """Check for duplicate 'id' or 'uniqueID' fields in combined_json."""
+    ids = set()
+    for item in combined_json:
+        id_value = item.get('id') or item.get('uniqueID')
+        if id_value:
+            if id_value in ids:
+                print(f"ERROR: ‼️ Duplicate ID found: {id_value}")
+                exit(1)
+            ids.add(id_value)
+    print('✅ No duplicate IDs found')
 
 
 def read_and_combine_json_files(directory: str):
@@ -51,12 +63,14 @@ def read_and_combine_json_files(directory: str):
         json.dumps(obj=combined_json)
         print('JSON is valid')
     except Exception as e:
-        print(e)
+        print(f"ERROR: {e}")
         exit(1)
 
     # Validate the combined_json against the schema
     schema = json.load(fp=open(file=f'schemas/{directory}.json', mode='r'))
     validate_json(json=combined_json, schema=schema)
+
+    check_for_duplicate_ids(combined_json)
 
     # generate the name of the file which matches what
     # the API expects. e.g. plugins -> plugin-gallery.json
@@ -82,7 +96,7 @@ def read_and_combine_json_files(directory: str):
                         group_data["models"] = []  # Reset
                         model_groups[group_data["name"]] = group_data
                     except Exception as e:
-                        print(f"Error reading model group {file}: {e}")
+                        print(f"ERROR: Error reading model group {file}: {e}")
 
         # Assign models to their group
         for model in combined_json:
