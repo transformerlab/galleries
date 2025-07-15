@@ -1,0 +1,62 @@
+[
+  {
+    "uniqueID": "moonshotai/Kimi-K2-Instruct",
+    "name": "Kimi-K2-Instruct",
+    "description": "Kimi K2 is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters.",
+    "added": "2025-07-15",
+    "tags": [],
+    "parameters": "1T",
+    "context": "131072",
+    "architecture": "DeepseekV3ForCausalLM",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "moonshotai/Kimi-K2-Instruct",
+    "transformers_version": "4.48.3",
+    "gated": false,
+    "license": "other",
+    "logo": "https://avatars.githubusercontent.com/u/129152888?s=200&v=4",
+    "size_of_model_in_mb": 981525.055316925,
+    "author": {
+      "name": "moonshotai",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "downloadUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "paperUrl": "?"
+    },
+    "model_group": "moonshot"
+  },
+  {
+    "uniqueID": "moonshotai/Kimi-K2-Base",
+    "name": "Kimi-K2-Base",
+    "description": "Kimi K2 is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters.",
+    "added": "2025-07-15",
+    "tags": [],
+    "parameters": "1T",
+    "context": "131072",
+    "architecture": "DeepseekV3ForCausalLM",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "moonshotai/Kimi-K2-Base",
+    "transformers_version": "4.48.3",
+    "gated": false,
+    "license": "other",
+    "logo": "https://avatars.githubusercontent.com/u/129152888?s=200&v=4",
+    "size_of_model_in_mb": 981525.0543870926,
+    "author": {
+      "name": "moonshotai",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2-Base",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/moonshotai/Kimi-K2-Base",
+      "downloadUrl": "https://huggingface.co/moonshotai/Kimi-K2-Base",
+      "paperUrl": "?"
+    },
+    "model_group": "moonshot"
+  }
+]
