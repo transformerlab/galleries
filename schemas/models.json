@@ -51,7 +51,8 @@
           "StableDiffusionXLPipeline",
           "StableDiffusionPipeline",
           "FluxPipeline",
-          "MiniCPMForCausalLM"
+          "MiniCPMForCausalLM",
+          "SmolLM3ForCausalLM"
         ]
       },
       "huggingface_repo": {
