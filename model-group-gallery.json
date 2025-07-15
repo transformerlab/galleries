@@ -1203,6 +1203,72 @@
                     "paperUrl": "?"
                 },
                 "model_group": "gemma"
+            },
+            {
+                "uniqueID": "unsloth/gemma-3-1b-it-GGUF",
+                "name": "Gemma 3 1B Instruct (GGUF Q8_0)",
+                "description": "GGUF-formatted 8-bit quantization of Google's Gemma 3 1B instruction-tuned model.",
+                "added": "2025-03-25",
+                "parameters": "1B",
+                "context": "32768",
+                "architecture": "GGUF",
+                "formats": [
+                    "GGUF"
+                ],
+                "tags": [
+                    "Tool Use"
+                ],
+                "huggingface_repo": "unsloth/gemma-3-1b-it-GGUF",
+                "huggingface_filename": "gemma-3-1b-it-Q8_0.gguf",
+                "transformers_version": "4.50.0.dev0",
+                "gated": "manual",
+                "license": "gemma",
+                "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
+                "size_of_model_in_mb": 1095.68,
+                "author": {
+                    "name": "unsloth",
+                    "url": "https://huggingface.co/unsloth/gemma-3-1b-it-GGUF",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/unsloth/gemma-3-1b-it-GGUF",
+                    "downloadUrl": "https://huggingface.co/unsloth/gemma-3-1b-it-GGUF",
+                    "paperUrl": "?"
+                },
+                "model_group": "gemma"
+            },
+            {
+                "uniqueID": "unsloth/gemma-3-27b-it-GGUF",
+                "name": "Gemma 3 27B Instruct (GGUF Q4_K_M)",
+                "description": "GGUF-formatted 4-bit quantization of Google's Gemma 3 27B instruction-tuned model.",
+                "added": "2025-03-25",
+                "tags": [
+                    "Tool Use"
+                ],
+                "parameters": "27B",
+                "context": "2048",
+                "architecture": "GGUF",
+                "formats": [
+                    "GGUF"
+                ],
+                "huggingface_repo": "unsloth/gemma-3-27b-it-GGUF",
+                "huggingface_filename": "gemma-3-27b-it-Q4_K_M.gguf",
+                "transformers_version": "4.50.0.dev0",
+                "gated": false,
+                "license": "gemma",
+                "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
+                "size_of_model_in_mb": 16896.0,
+                "author": {
+                    "name": "unsloth",
+                    "url": "https://huggingface.co/unsloth/gemma-3-27b-it-GGUF",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/unsloth/gemma-3-27b-it-GGUF",
+                    "downloadUrl": "https://huggingface.co/unsloth/gemma-3-27b-it-GGUF",
+                    "paperUrl": "?"
+                },
+                "model_group": "gemma"
             }
         ]
     },
@@ -2085,36 +2151,6 @@
         ],
         "models": [
             {
-                "uniqueID": "HuggingFaceTB/SmolLM3-3B",
-                "name": "SmolLM3-3B",
-                "description": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B\u20134B scale.",
-                "added": "2025-07-10",
-                "tags": [],
-                "parameters": "3B",
-                "context": "65536",
-                "architecture": "SmolLM3ForCausalLM",
-                "formats": [
-                    "Safetensors"
-                ],
-                "huggingface_repo": "HuggingFaceTB/SmolLM3-3B",
-                "transformers_version": "4.54.0.dev0",
-                "gated": false,
-                "license": "apache-2.0",
-                "logo": "https://webml-community-smollm-webgpu.static.hf.space/logo.png",
-                "size_of_model_in_mb": 5881.808727264404,
-                "author": {
-                    "name": "HuggingFaceTB",
-                    "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
-                    "blurb": ""
-                },
-                "resources": {
-                    "canonicalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
-                    "downloadUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
-                    "paperUrl": "?"
-                },
-                "model_group": "smollm"
-            },
-            {
                 "uniqueID": "HuggingFaceTB/SmolLM3-3B-Base",
                 "name": "SmolLM3-3B-Base",
                 "description": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B\u20134B scale.",
@@ -2140,6 +2176,36 @@
                 "resources": {
                     "canonicalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base",
                     "downloadUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base",
+                    "paperUrl": "?"
+                },
+                "model_group": "smollm"
+            },
+            {
+                "uniqueID": "HuggingFaceTB/SmolLM3-3B",
+                "name": "SmolLM3-3B",
+                "description": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B\u20134B scale.",
+                "added": "2025-07-10",
+                "tags": [],
+                "parameters": "3B",
+                "context": "65536",
+                "architecture": "SmolLM3ForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "HuggingFaceTB/SmolLM3-3B",
+                "transformers_version": "4.54.0.dev0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://webml-community-smollm-webgpu.static.hf.space/logo.png",
+                "size_of_model_in_mb": 5881.808727264404,
+                "author": {
+                    "name": "HuggingFaceTB",
+                    "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+                    "downloadUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
                     "paperUrl": "?"
                 },
                 "model_group": "smollm"
@@ -4583,6 +4649,74 @@
                     "paperUrl": "?"
                 },
                 "model_group": "qwen"
+            }
+        ]
+    },
+    {
+        "name": "moonshot",
+        "description": "General-purpose language models focused on strong downstream task performance.",
+        "image": "https://avatars.githubusercontent.com/u/129152888?s=200&v=4",
+        "tags": [],
+        "models": [
+            {
+                "uniqueID": "moonshotai/Kimi-K2-Instruct",
+                "name": "Kimi-K2-Instruct",
+                "description": "Kimi K2 is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters.",
+                "added": "2025-07-15",
+                "tags": [],
+                "parameters": "1T",
+                "context": "131072",
+                "architecture": "DeepseekV3ForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "moonshotai/Kimi-K2-Instruct",
+                "transformers_version": "4.48.3",
+                "gated": false,
+                "license": "other",
+                "logo": "https://avatars.githubusercontent.com/u/129152888?s=200&v=4",
+                "size_of_model_in_mb": 981525.055316925,
+                "author": {
+                    "name": "moonshotai",
+                    "url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+                    "downloadUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+                    "paperUrl": "?"
+                },
+                "model_group": "moonshot"
+            },
+            {
+                "uniqueID": "moonshotai/Kimi-K2-Base",
+                "name": "Kimi-K2-Base",
+                "description": "Kimi K2 is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters.",
+                "added": "2025-07-15",
+                "tags": [],
+                "parameters": "1T",
+                "context": "131072",
+                "architecture": "DeepseekV3ForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "moonshotai/Kimi-K2-Base",
+                "transformers_version": "4.48.3",
+                "gated": false,
+                "license": "other",
+                "logo": "https://avatars.githubusercontent.com/u/129152888?s=200&v=4",
+                "size_of_model_in_mb": 981525.0543870926,
+                "author": {
+                    "name": "moonshotai",
+                    "url": "https://huggingface.co/moonshotai/Kimi-K2-Base",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/moonshotai/Kimi-K2-Base",
+                    "downloadUrl": "https://huggingface.co/moonshotai/Kimi-K2-Base",
+                    "paperUrl": "?"
+                },
+                "model_group": "moonshot"
             }
         ]
     },
