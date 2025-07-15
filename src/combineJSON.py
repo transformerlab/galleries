@@ -17,6 +17,13 @@ def validate_json(json, schema):
         exit(1)
 
 
+# Configuration for uniqueness checking
+# Key: directory name, Value: list of fields to check for uniqueness
+UNIQUENESS_CONFIG = {
+    'exp-recipes': ['id'],
+    'models': ['uniqueID']
+}
+
 def read_and_combine_json_files(directory: str):
     print(f'Combining JSON files in {directory} directory')
 
@@ -32,6 +39,12 @@ def read_and_combine_json_files(directory: str):
 
     # Combine the JSON files into a single dictionary
     combined_json = []
+    
+    # Track values for uniqueness checking based on configuration
+    uniqueness_trackers = {}
+    if directory in UNIQUENESS_CONFIG:
+        for field in UNIQUENESS_CONFIG[directory]:
+            uniqueness_trackers[field] = set()
 
     for file in files_json:
         with open(file=os.path.join(directory, file), mode='r') as f:
@@ -42,8 +55,27 @@ def read_and_combine_json_files(directory: str):
                 file_contents = json.load(fp=f)
 
             if isinstance(file_contents, list):
-                combined_json.extend(file_contents)
+                for item in file_contents:
+                    # Check for duplicate values in configured fields
+                    if directory in UNIQUENESS_CONFIG:
+                        for field in UNIQUENESS_CONFIG[directory]:
+                            if field in item:
+                                field_value = item[field]
+                                if field_value in uniqueness_trackers[field]:
+                                    print(f'ERROR: Duplicate {field} "{field_value}" found in {file}')
+                                    exit(1)
+                                uniqueness_trackers[field].add(field_value)
+                    combined_json.append(item)
             else:
+                # Check for duplicate values in configured fields for single items
+                if directory in UNIQUENESS_CONFIG:
+                    for field in UNIQUENESS_CONFIG[directory]:
+                        if field in file_contents:
+                            field_value = file_contents[field]
+                            if field_value in uniqueness_trackers[field]:
+                                print(f'ERROR: Duplicate {field} "{field_value}" found in {file}')
+                                exit(1)
+                            uniqueness_trackers[field].add(field_value)
                 combined_json.append(file_contents)
 
     # Validate the combined_json to see if it is valid JSON:
@@ -53,6 +85,12 @@ def read_and_combine_json_files(directory: str):
     except Exception as e:
         print(e)
         exit(1)
+
+    # Report on uniqueness checks
+    if directory in UNIQUENESS_CONFIG:
+        for field in UNIQUENESS_CONFIG[directory]:
+            count = len(uniqueness_trackers[field])
+            print(f'✓ All {count} {directory} {field} values are unique')
 
     # Validate the combined_json against the schema
     schema = json.load(fp=open(file=f'schemas/{directory}.json', mode='r'))
