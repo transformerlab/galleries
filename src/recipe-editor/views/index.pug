@@ -8,7 +8,7 @@ block head
     }
     .recipe-item {
       display: grid;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 120px 1fr auto;
       align-items: center;
       padding: 15px;
       border: 1px solid #ddd;
@@ -49,6 +49,7 @@ block content
     .recipe-grid
       each recipe in recipes
         .recipe-item
+          img.card-image(src=recipe.cardImage || '' style='width:100px;')
           .recipe-info
             .recipe-title= recipe.title
             if recipe.description
