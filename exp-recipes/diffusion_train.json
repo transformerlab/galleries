@@ -1,0 +1,32 @@
+{
+  "id": "diffusion_train",
+  "title": "Train a Diffusion LoRA",
+  "description": "Train a LoRA adapter for Stable Diffusion XL to generate Simpsons-style images. Perfect for creating custom image generation models with specific artistic styles.",
+  "notes": "# Diffusion LoRA Training with Stable Diffusion XL\n\nTo run this recipe, go to **Train** in the sidebar and click on Queue\n\n## Overview\nThis recipe trains a LoRA adapter for Stable Diffusion XL to generate images in the Simpsons art style.\n\n## Expected Outcome\nAfter training, the model should be able to:\n- Generate Simpsons-style images from text prompts\n- Create characters and scenes in the distinctive animation style\n- Respond to the trigger word \"<simpsons sks>\" for style activation",
+  "requiredMachineArchitecture": ["cuda", "amd"],
+    "dependencies": [
+    {
+      "type": "model",
+      "name": "stabilityai/stable-diffusion-xl-base-1.0"
+    },
+    {
+      "type": "dataset",
+      "name": "Norod78/simpsons-blip-captions"
+    },
+    {
+      "type": "plugin",
+      "name": "diffusion_trainer"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "DiffusionLoRATrain",
+      "task_type": "TRAIN",
+      "plugin": "diffusion_trainer",
+      "config_json": "{\"template_name\":\"DiffusionLoRATrain\",\"plugin_name\":\"diffusion_trainer\",\"model_name\":\"stabilityai/stable-diffusion-xl-base-1.0\",\"model_architecture\":\"StableDiffusionXLPipeline\",\"foundation_model_file_path\":\"\",\"embedding_model\":\"BAAI/bge-base-en-v1.5\",\"embedding_model_architecture\":\"BertModel\",\"embedding_model_file_path\":\"\",\"dataset_name\":\"Norod78/simpsons-blip-captions\",\"adaptor_name\":\"simpsons-adaptor\",\"trigger_word\":\"<simpsons sks>\",\"num_train_epochs\":30,\"train_batch_size\":2,\"gradient_accumulation_steps\":1,\"caption_column\":\"text\",\"image_column\":\"image\",\"caption_dropout_rate\":0.2,\"resolution\":512,\"image_interpolation_mode\":\"lanczos\",\"color_jitter_brightness\":0.1,\"color_jitter_contrast\":0.1,\"color_jitter_saturation\":0.1,\"color_jitter_hue\":0.05,\"rotation_degrees\":5,\"rotation_prob\":0.3,\"lora_r\":16,\"lora_alpha\":16,\"learning_rate\":0.00006,\"lr_scheduler\":\"constant\",\"lr_warmup_steps\":50,\"adam_beta1\":0.9,\"adam_beta2\":0.999,\"adam_weight_decay\":0.01,\"adam_epsilon\":1e-8,\"max_grad_norm\":1,\"loss_type\":\"l2\",\"huber_c\":0.1,\"prediction_type\":\"epsilon\",\"snr_gamma\":0,\"min_snr_gamma\":0,\"noise_offset\":0,\"mixed_precision\":\"no\",\"ema_decay\":0.9999,\"eval_prompt\":\"\",\"eval_steps\":1,\"eval_num_inference_steps\":50,\"eval_guidance_scale\":7.5,\"log_to_wandb\":true,\"center_crop\":false,\"random_flip\":false,\"color_jitter\":false,\"random_rotation\":false,\"enable_xformers_memory_efficient_attention\":false,\"gradient_checkpointing\":false,\"use_ema\":false,\"type\":\"LoRA\",\"chatml_formatted_column\":\"\",\"run_sweeps\":false}",
+      "inputs_json": "{\"model_name\":\"stabilityai/stable-diffusion-xl-base-1.0\",\"model_architecture\":\"StableDiffusionXLPipeline\",\"dataset_name\":\"Norod78/simpsons-blip-captions\"}"
+    }
+  ],
+  "workflows": [],
+  "cardImage": "https://recipes.transformerlab.net/gemini_diffusion_image.jpeg"
+}

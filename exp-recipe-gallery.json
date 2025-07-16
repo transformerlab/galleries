@@ -38,7 +38,7 @@
         "id": "dialogue_summarizing",
         "title": "Dialogue Summarizing",
         "description": "Fine-tune a TinyLlama model to create concise, accurate summaries of conversations and dialogues. Perfect for chat logs, meeting transcripts, and customer service interactions.",
-        "notes": "# Dialogue Summarization with TinyLlama\n\n## Overview\nThis recipe demonstrates how to fine-tune a TinyLlama model specifically for dialogue summarization using the popular SAMSum dataset.\n\n<-- To run this recipe, go the **Training** tab and press Queue.\n\n## Background\n- TinyLlama is optimized for efficiency while maintaining good performance\n- Uses LoRA for memory-efficient fine-tuning\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Generate concise summaries of conversations\n- Maintain key points and context\n- Handle various dialogue formats and styles",
+        "notes": "# Dialogue Summarization with TinyLlama\n\n<-- To run this recipe, go to **Train** in the sidebar and click on Queue\n\n## Overview\nThis recipe fine-tunes a TinyLlama model to create concise, accurate summaries of conversations and dialogues.\n\n## Expected Outcome\nAfter training, the model should be able to:\n- Generate concise summaries of conversations\n- Maintain key points and context\n- Handle various dialogue formats and styles",
         "requiredMachineArchitecture": [
             "cuda",
             "amd"
@@ -70,13 +70,48 @@
         "cardImage": "https://images.unsplash.com/photo-1590650046871-92c887180603?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
+        "id": "diffusion_train",
+        "title": "Train a Diffusion LoRA",
+        "description": "Train a LoRA adapter for Stable Diffusion XL to generate Simpsons-style images. Perfect for creating custom image generation models with specific artistic styles.",
+        "notes": "# Diffusion LoRA Training with Stable Diffusion XL\n\nTo run this recipe, go to **Train** in the sidebar and click on Queue\n\n## Overview\nThis recipe trains a LoRA adapter for Stable Diffusion XL to generate images in the Simpsons art style.\n\n## Expected Outcome\nAfter training, the model should be able to:\n- Generate Simpsons-style images from text prompts\n- Create characters and scenes in the distinctive animation style\n- Respond to the trigger word \"<simpsons sks>\" for style activation",
+        "requiredMachineArchitecture": [
+            "cuda",
+            "amd"
+        ],
+        "dependencies": [
+            {
+                "type": "model",
+                "name": "stabilityai/stable-diffusion-xl-base-1.0"
+            },
+            {
+                "type": "dataset",
+                "name": "Norod78/simpsons-blip-captions"
+            },
+            {
+                "type": "plugin",
+                "name": "diffusion_trainer"
+            }
+        ],
+        "tasks": [
+            {
+                "name": "DiffusionLoRATrain",
+                "task_type": "TRAIN",
+                "plugin": "diffusion_trainer",
+                "config_json": "{\"template_name\":\"DiffusionLoRATrain\",\"plugin_name\":\"diffusion_trainer\",\"model_name\":\"stabilityai/stable-diffusion-xl-base-1.0\",\"model_architecture\":\"StableDiffusionXLPipeline\",\"foundation_model_file_path\":\"\",\"embedding_model\":\"BAAI/bge-base-en-v1.5\",\"embedding_model_architecture\":\"BertModel\",\"embedding_model_file_path\":\"\",\"dataset_name\":\"Norod78/simpsons-blip-captions\",\"adaptor_name\":\"simpsons-adaptor\",\"trigger_word\":\"<simpsons sks>\",\"num_train_epochs\":30,\"train_batch_size\":2,\"gradient_accumulation_steps\":1,\"caption_column\":\"text\",\"image_column\":\"image\",\"caption_dropout_rate\":0.2,\"resolution\":512,\"image_interpolation_mode\":\"lanczos\",\"color_jitter_brightness\":0.1,\"color_jitter_contrast\":0.1,\"color_jitter_saturation\":0.1,\"color_jitter_hue\":0.05,\"rotation_degrees\":5,\"rotation_prob\":0.3,\"lora_r\":16,\"lora_alpha\":16,\"learning_rate\":0.00006,\"lr_scheduler\":\"constant\",\"lr_warmup_steps\":50,\"adam_beta1\":0.9,\"adam_beta2\":0.999,\"adam_weight_decay\":0.01,\"adam_epsilon\":1e-8,\"max_grad_norm\":1,\"loss_type\":\"l2\",\"huber_c\":0.1,\"prediction_type\":\"epsilon\",\"snr_gamma\":0,\"min_snr_gamma\":0,\"noise_offset\":0,\"mixed_precision\":\"no\",\"ema_decay\":0.9999,\"eval_prompt\":\"\",\"eval_steps\":1,\"eval_num_inference_steps\":50,\"eval_guidance_scale\":7.5,\"log_to_wandb\":true,\"center_crop\":false,\"random_flip\":false,\"color_jitter\":false,\"random_rotation\":false,\"enable_xformers_memory_efficient_attention\":false,\"gradient_checkpointing\":false,\"use_ema\":false,\"type\":\"LoRA\",\"chatml_formatted_column\":\"\",\"run_sweeps\":false}",
+                "inputs_json": "{\"model_name\":\"stabilityai/stable-diffusion-xl-base-1.0\",\"model_architecture\":\"StableDiffusionXLPipeline\",\"dataset_name\":\"Norod78/simpsons-blip-captions\"}"
+            }
+        ],
+        "workflows": [],
+        "cardImage": "https://recipes.transformerlab.net/gemini_diffusion_image.jpeg"
+    },
+    {
         "id": "eval-common-benchmarks-mlx",
         "title": "Evaluate a Model on Common Benchmarks on MLX",
         "requiredMachineArchitecture": [
             "mlx"
         ],
         "description": "Performs evaluation on common benchmarks using the Eleuther AI LM Eval Harness. It evaluates the model `mlx-community/Llama-3.2-1B-Instruct-4bit` on tasks such as Winogrande, HellaSwag, and PIQA.",
-        "notes": "In this simple eval experiment, we set up some common evaluations against\nthe open source mlx-community/Llama-3.2-1B-Instruct-4bit model.\n\nTo run it, go to Evaluate in the sidebar, and click on Queue. Once it is done, click on\n\"Detailed Report\" or \"Chart\" to see results.",
+        "notes": "# Model Evaluation on Common Benchmarks (MLX)\n\nTo run this recipe, go to **Evaluate** in the sidebar and click on Queue\n\n## Overview\nThis recipe evaluates a Llama 3.2 model on common benchmarks using the Eleuther AI LM Eval Harness.\n\n## Expected Outcome\nAfter evaluation, you can view:\n- Detailed performance reports\n- Comparative charts and metrics\n- Benchmark scores for HellaSwag, PIQA, and Winogrande",
         "zOrder": 2,
         "dependencies": [
             {
@@ -137,7 +172,7 @@
             "amd"
         ],
         "description": "Performs evaluation on common benchmarks using the Eleuther AI LM Eval Harness. It evaluates the model `unsloth/Llama-3.2-1B-Instruct` on tasks such as MMLU, Winogrande, HellaSwag, and PIQA.",
-        "notes": "",
+        "notes": "# Model Evaluation on Common Benchmarks\n\n To run this recipe, go to **Evaluate** in the sidebar and click on Queue\n\n## Overview\nThis recipe evaluates a Llama 3.2 model on common benchmarks using the Eleuther AI LM Eval Harness.\n\n## Expected Outcome\nAfter evaluation, you can view:\n- Detailed performance reports\n- Comparative charts and metrics\n- Benchmark scores for MMLU, Winogrande, HellaSwag, and PIQA",
         "dependencies": [
             {
                 "type": "model",
@@ -187,7 +222,7 @@
                 }
             }
         ],
-        "cardImage": "https://images.unsplash.com/photo-1589595427524-2ddaf2d43fc9?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "cardImage": "https://recipes.transformerlab.net/radialchart.png"
     },
     {
         "id": "fine_tune_small_mlx",
@@ -541,7 +576,7 @@
         "id": "ml_qa",
         "title": "Machine Learning Q&A",
         "description": "Train a Qwen 2.5 model to provide expert-level answers to machine learning questions, suitable for both beginners and advanced practitioners.",
-        "notes": "# Machine Learning Q&A with Qwen 2.5\n\n## Overview\nThis recipe fine-tunes a Qwen 2.5 model to become a specialized machine learning assistant.\n\n## Important Considerations\n- Comprehensive ML knowledge coverage\n- Balanced between theoretical and practical knowledge\n- Suitable for various ML expertise levels\n\n## Training Tips\n- Focus on explanation clarity\n- Balance technical depth with accessibility\n- Validate answers across ML domains\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Provide detailed ML explanations\n- Answer implementation questions\n- Guide through ML concepts progressively",
+        "notes": "# Machine Learning Q&A with Qwen 2.5\n\n<-- To run this recipe, go to **Train** in the sidebar and click on Queue\n\n## Overview\nThis recipe fine-tunes a Qwen 2.5 model to become a specialized machine learning assistant.\n\n## Expected Outcome\nAfter training, the model should be able to:\n- Provide detailed ML explanations\n- Answer implementation questions\n- Guide through ML concepts progressively",
         "requiredMachineArchitecture": [
             "cuda",
             "amd"
@@ -576,7 +611,7 @@
         "id": "python_code_completion",
         "title": "Python Code Completion",
         "description": "Train a SmolLM Base model to provide intelligent Python code completions, suggestions, and assistance. Ideal for developers looking for an efficient coding assistant.",
-        "notes": "# Python Code Completion Training\n\n## Overview\nThis recipe fine-tunes a SmolLM Base model to become a specialized Python code completion assistant.\n\n## Important Considerations\n- SmolLM is designed for efficient inference\n- Dataset contains diverse Python coding examples\n- Model learns common Python patterns and best practices\n\n## Training Tips\n- Focus on code context understanding\n- Balance between common and specialized completions\n- Monitor completion accuracy and relevance\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Provide context-aware code completions\n- Suggest appropriate Python syntax\n- Complete common programming patterns",
+        "notes": "# Python Code Completion with SmolLM\n\n<-- To run this recipe, go to **Train** in the sidebar and click on Queue\n\n## Overview\nThis recipe fine-tunes a SmolLM Base model to become a specialized Python code completion assistant.\n\n## Expected Outcome\nAfter training, the model should be able to:\n- Provide context-aware code completions\n- Suggest appropriate Python syntax\n- Complete common programming patterns",
         "requiredMachineArchitecture": [
             "cuda",
             "amd"
@@ -677,7 +712,7 @@
         "id": "conversational_intelligence",
         "title": "Train a Model to be Conversationally Intelligent",
         "description": "Enhance a SmolLM model with advanced conversational abilities and structured response formatting using XML tags, ideal for creating a sophisticated dialogue agent.",
-        "notes": "# Conversational Intelligence Training\n\n## Overview\nThis recipe develops a SmolLM model into a sophisticated conversational agent using structured dialogue formats.\n\n## Important Considerations\n- XML-based response structuring\n- Focus on natural dialogue flow\n- Balanced conversation handling\n\n## Training Tips\n- Monitor response coherence\n- Validate XML format consistency\n- Test conversation flow\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Maintain structured conversations\n- Generate well-formatted responses\n- Handle diverse dialogue scenarios",
+        "notes": "# Conversational Intelligence with SmolLM\n\n<-- To run this recipe, go to **Train** in the sidebar and click on Queue\n\n## Overview\nThis recipe develops a SmolLM model into a sophisticated conversational agent using structured dialogue formats.\n\n## Expected Outcome\nAfter training, the model should be able to:\n- Maintain structured conversations\n- Generate well-formatted responses\n- Handle diverse dialogue scenarios",
         "requiredMachineArchitecture": [
             "cuda",
             "amd"
@@ -712,7 +747,7 @@
         "id": "pirate_speech",
         "title": "Train a Model to Speak like a Pirate",
         "description": "Transform a SmolLM model into a charismatic pirate conversationalist, perfect for creating engaging and entertaining interactions with a nautical twist.",
-        "notes": "# Pirate Speech Transformation\n\n## Overview\nThis recipe transforms a SmolLM model into an engaging pirate-speaking assistant using specialized dialogue data.\n\n## Important Considerations\n- Maintains coherent pirate-style speech\n- Balances authenticity with understandability\n- Preserves helpful responses in pirate style\n\n## Training Tips\n- Monitor consistency of pirate speech\n- Balance entertainment with usefulness\n- Maintain appropriate language level\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Respond in consistent pirate dialect\n- Maintain helpful information delivery\n- Create engaging pirate-themed interactions",
+        "notes": "# Pirate Speech with SmolLM\n\n<-- To run this recipe, go to **Train** in the sidebar and click on Queue\n\n## Overview\nThis recipe transforms a SmolLM model into an engaging pirate-speaking assistant using specialized dialogue data.\n\n## Expected Outcome\nAfter training, the model should be able to:\n- Respond in consistent pirate dialect\n- Maintain helpful information delivery\n- Create engaging pirate-themed interactions",
         "requiredMachineArchitecture": [
             "cuda",
             "amd"
