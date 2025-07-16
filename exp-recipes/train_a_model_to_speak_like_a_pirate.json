@@ -2,7 +2,7 @@
   "id": "pirate_speech",
   "title": "Train a Model to Speak like a Pirate",
   "description": "Transform a SmolLM model into a charismatic pirate conversationalist, perfect for creating engaging and entertaining interactions with a nautical twist.",
-  "notes": "# Pirate Speech Transformation\n\n## Overview\nThis recipe transforms a SmolLM model into an engaging pirate-speaking assistant using specialized dialogue data.\n\n## Important Considerations\n- Maintains coherent pirate-style speech\n- Balances authenticity with understandability\n- Preserves helpful responses in pirate style\n\n## Training Tips\n- Monitor consistency of pirate speech\n- Balance entertainment with usefulness\n- Maintain appropriate language level\n\n## Expected Outcomes\nAfter training, the model should be able to:\n- Respond in consistent pirate dialect\n- Maintain helpful information delivery\n- Create engaging pirate-themed interactions",
+  "notes": "# Pirate Speech with SmolLM\n\n<-- To run this recipe, go to **Train** in the sidebar and click on Queue\n\n## Overview\nThis recipe transforms a SmolLM model into an engaging pirate-speaking assistant using specialized dialogue data.\n\n## Expected Outcome\nAfter training, the model should be able to:\n- Respond in consistent pirate dialect\n- Maintain helpful information delivery\n- Create engaging pirate-themed interactions",
   "requiredMachineArchitecture": [
     "cuda",
     "amd"
