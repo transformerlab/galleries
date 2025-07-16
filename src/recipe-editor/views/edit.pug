@@ -1,0 +1,158 @@
+extends layout
+
+block head
+  title Edit Recipe - #{filename}
+  style.
+    .container {
+      max-width: 800px;
+    }
+    textarea {
+      height: 400px;
+    }
+
+block content
+  h1 Edit Recipe: #{recipe.title || filename}
+  
+  .filename-display Editing: #{filename}
+  
+  form#editForm
+    .form-group
+      label(for='title') Recipe Title
+      input#title(
+        type='text'
+        name='title'
+        value=recipe.title || ''
+        placeholder='Enter recipe title'
+      )
+    
+    .form-group
+      label(for='description') Description
+      textarea#description(
+        name='description'
+        rows='3'
+        placeholder='Enter recipe description'
+      )= recipe.description || ''
+    
+    .form-group
+      label(for='content') Recipe JSON Content
+      textarea#content(
+        name='content'
+        placeholder='Enter valid JSON content'
+        required
+      )= JSON.stringify(recipe, null, 2)
+      .validation-message#validation-message
+    
+    .button-group
+      button.btn.btn-primary(type='submit') Update Recipe
+      a.btn.btn-secondary(href='/') Cancel
+      button.btn.btn-danger(type='button', onclick=`deleteRecipe('${filename}')`) Delete Recipe
+
+block scripts
+  script.
+    const form = document.getElementById('editForm');
+    const contentTextarea = document.getElementById('content');
+    const titleInput = document.getElementById('title');
+    const descriptionTextarea = document.getElementById('description');
+    const validationMessage = document.getElementById('validation-message');
+
+    // Validate JSON in real-time
+    function validateJSON() {
+      try {
+        const content = contentTextarea.value.trim();
+        if (!content) {
+          validationMessage.textContent = 'JSON content is required';
+          validationMessage.className = 'validation-message validation-error';
+          return false;
+        }
+        
+        const parsed = JSON.parse(content);
+        validationMessage.textContent = 'Valid JSON ✓';
+        validationMessage.className = 'validation-message validation-success';
+        return true;
+      } catch (error) {
+        validationMessage.textContent = `Invalid JSON: ${error.message}`;
+        validationMessage.className = 'validation-message validation-error';
+        return false;
+      }
+    }
+
+    // Update JSON when title or description changes
+    function updateJSON() {
+      try {
+        const currentContent = JSON.parse(contentTextarea.value);
+        currentContent.title = titleInput.value;
+        currentContent.description = descriptionTextarea.value;
+        contentTextarea.value = JSON.stringify(currentContent, null, 2);
+        validateJSON();
+      } catch (error) {
+        // If JSON is invalid, don't update
+      }
+    }
+
+    // Event listeners
+    contentTextarea.addEventListener('input', validateJSON);
+    titleInput.addEventListener('input', updateJSON);
+    descriptionTextarea.addEventListener('input', updateJSON);
+
+    // Initial validation
+    validateJSON();
+
+    // Form submission
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      if (!validateJSON()) {
+        alert('Please fix the JSON content before saving');
+        return;
+      }
+      
+      try {
+        const content = contentTextarea.value;
+        const parsedContent = JSON.parse(content);
+        
+        const response = await fetch(`/api/recipes/${encodeURIComponent('#{filename}')}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ content: parsedContent })
+        });
+        
+        if (response.ok) {
+          // Show success message briefly before redirecting
+          const originalSubmitBtn = document.querySelector('.btn-primary');
+          originalSubmitBtn.textContent = 'Saved!';
+          originalSubmitBtn.style.background = '#28a745';
+          
+          setTimeout(() => {
+            window.location.href = '/';
+          }, 1000);
+        } else {
+          const error = await response.json();
+          alert(`Error updating recipe: ${error.error}`);
+        }
+      } catch (error) {
+        alert(`Error updating recipe: ${error.message}`);
+      }
+    });
+
+    // Delete function
+    async function deleteRecipe(filename) {
+      if (!confirm(`Are you sure you want to delete "${filename}"?`)) {
+        return;
+      }
+      
+      try {
+        const response = await fetch(`/api/recipes/${encodeURIComponent(filename)}`, {
+          method: 'DELETE'
+        });
+        
+        if (response.ok) {
+          alert('Recipe deleted successfully');
+          window.location.href = '/';
+        } else {
+          const error = await response.json();
+          alert(`Error deleting recipe: ${error.error}`);
+        }
+      } catch (error) {
+        alert(`Error deleting recipe: ${error.message}`);
+      }
+    }

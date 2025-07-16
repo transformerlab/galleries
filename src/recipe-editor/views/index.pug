@@ -1,0 +1,117 @@
+extends layout
+
+block head
+  style.
+    .recipe-grid {
+      display: grid;
+      gap: 15px;
+    }
+    .recipe-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #fafafa;
+    }
+    .recipe-info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .recipe-title {
+      font-weight: 600;
+      color: #333;
+      font-size: 16px;
+    }
+    .recipe-description {
+      color: #666;
+      font-size: 14px;
+      margin: 0;
+    }
+    .recipe-filename {
+      color: #888;
+      font-size: 12px;
+      font-family: monospace;
+    }
+    .recipe-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+block content
+  h1 Recipe Manager
+  
+  a.create-button(href='/create') Create New Recipe
+  
+  if recipes && recipes.length > 0
+    .recipe-grid
+      each recipe in recipes
+        .recipe-item
+          .recipe-info
+            .recipe-title= recipe.title
+            if recipe.description
+              .recipe-description= recipe.description
+            .recipe-filename= recipe.filename
+            if recipe.error
+              .error-message Error: #{recipe.error}
+          .recipe-actions
+            a.btn.btn-edit(href=`/edit/${recipe.filename}`) Edit
+            button.btn.btn-duplicate(onclick=`duplicateRecipe('${recipe.filename}')`) Duplicate
+            button.btn.btn-delete(onclick=`deleteRecipe('${recipe.filename}')`) Delete
+  else
+    .empty-state
+      p No recipes found
+      p 
+        a(href='/create') Create your first recipe
+
+block scripts
+  script.
+    async function deleteRecipe(filename) {
+      if (!confirm(`Are you sure you want to delete "${filename}"?`)) {
+        return;
+      }
+      
+      try {
+        const response = await fetch(`/api/recipes/${filename}`, {
+          method: 'DELETE'
+        });
+        
+        if (response.ok) {
+          location.reload();
+        } else {
+          const error = await response.json();
+          alert(`Error deleting recipe: ${error.error}`);
+        }
+      } catch (error) {
+        alert(`Error deleting recipe: ${error.message}`);
+      }
+    }
+    
+    async function duplicateRecipe(filename) {
+      const newFilename = prompt(`Enter new filename for duplicate (current: ${filename}):`);
+      if (!newFilename) return;
+      
+      // Ensure .json extension
+      const finalFilename = newFilename.endsWith('.json') ? newFilename : newFilename + '.json';
+      
+      try {
+        const response = await fetch(`/api/recipes/${filename}/duplicate`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ newFilename: finalFilename })
+        });
+        
+        if (response.ok) {
+          location.reload();
+        } else {
+          const error = await response.json();
+          alert(`Error duplicating recipe: ${error.error}`);
+        }
+      } catch (error) {
+        alert(`Error duplicating recipe: ${error.message}`);
+      }
+    }

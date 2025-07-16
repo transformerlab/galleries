@@ -1,0 +1,64 @@
+extends layout
+
+block head
+  title Create Recipe
+  style.
+    .container {
+      max-width: 600px;
+    }
+    textarea {
+      height: 300px;
+    }
+
+block content
+  h1 Create New Recipe
+  
+  form#createForm
+    .form-group
+      label(for='filename') Filename:
+      input#filename(
+        type='text'
+        name='filename'
+        placeholder='recipe-name.json'
+        required
+      )
+    
+    .form-group
+      label(for='content') Recipe JSON Content:
+      textarea#content(
+        name='content'
+        placeholder='{"id": "recipe-id", "title": "Recipe Title", "description": "Recipe description", ...}'
+        required
+      )
+    
+    .button-group
+      button.btn.btn-primary(type='submit') Create Recipe
+      a.btn.btn-secondary(href='/') Cancel
+
+block scripts
+  script.
+    document.getElementById('createForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const filename = formData.get('filename');
+      const content = formData.get('content');
+      
+      try {
+        const parsedContent = JSON.parse(content);
+        const response = await fetch('/api/recipes', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ filename, content: parsedContent })
+        });
+        
+        if (response.ok) {
+          alert('Recipe created successfully!');
+          window.location.href = '/';
+        } else {
+          const error = await response.json();
+          alert('Error: ' + error.error);
+        }
+      } catch (error) {
+        alert('Error: Invalid JSON content');
+      }
+    });
