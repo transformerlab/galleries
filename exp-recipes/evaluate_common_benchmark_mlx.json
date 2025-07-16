@@ -3,7 +3,7 @@
   "title": "Evaluate a Model on Common Benchmarks on MLX",
   "requiredMachineArchitecture": ["mlx"],
   "description": "Performs evaluation on common benchmarks using the Eleuther AI LM Eval Harness. It evaluates the model `mlx-community/Llama-3.2-1B-Instruct-4bit` on tasks such as Winogrande, HellaSwag, and PIQA.",
-  "notes": "# Model Evaluation on Common Benchmarks (MLX)\n\nTo run this recipe, go to **Evaluate** in the sidebar and click on Queue\n\n## Overview\nThis recipe evaluates a Llama 3.2 model on common benchmarks using the Eleuther AI LM Eval Harness.\n\n## Expected Outcome\nAfter evaluation, you can view:\n- Detailed performance reports\n- Comparative charts and metrics\n- Benchmark scores for HellaSwag, PIQA, and Winogrande",
+  "notes": "# Model Evaluation on Common Benchmarks (MLX)\n\nTo run this experiment, go to Evaluate in the sidebar, and click on Queue. Once it is done, click on \"Detailed Report\" or \"Chart\" to see results.\n\n## Overview\nThis recipe evaluates a Llama 3.2 model on common benchmarks using the Eleuther AI LM Eval Harness.\n\n## Expected Outcome\nAfter evaluation, you can view:\n- Detailed performance reports\n- Comparative charts and metrics\n- Benchmark scores for HellaSwag, PIQA, and Winogrande",
   "zOrder": 2,
   "dependencies": [
     {

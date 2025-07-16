@@ -2,7 +2,7 @@
   "id": "dialogue_summarizing",
   "title": "Dialogue Summarizing",
   "description": "Fine-tune a TinyLlama model to create concise, accurate summaries of conversations and dialogues. Perfect for chat logs, meeting transcripts, and customer service interactions.",
-  "notes": "# Dialogue Summarization with TinyLlama\n\n<-- To run this recipe, go to **Train** in the sidebar and click on Queue\n\n## Overview\nThis recipe fine-tunes a TinyLlama model to create concise, accurate summaries of conversations and dialogues.\n\n## Expected Outcome\nAfter training, the model should be able to:\n- Generate concise summaries of conversations\n- Maintain key points and context\n- Handle various dialogue formats and styles",
+  "notes": "# Dialogue Summarization with TinyLlama\n\n<-- To run this recipe, go to **Train** in the sidebar and click on Queue\n\n## Overview\nThis recipe fine-tunes a TinyLlama model to create concise, accurate summaries of conversations and dialogues using the popular Samsum dataset.\n\n## Expected Outcome\nAfter training, the model should be able to:\n- Generate concise summaries of conversations\n- Maintain key points and context\n- Handle various dialogue formats and styles",
   "requiredMachineArchitecture": ["cuda", "amd"],
   "dependencies": [
     {
