@@ -273,7 +273,7 @@ app.get("/edit/:filename", async (req, res) => {
     const recipe = await readJsonFile(filePath);
 
     res.render("edit", {
-      filename: filename,
+      recipeFilename: filename,
       recipe: recipe,
     });
   } catch (error) {

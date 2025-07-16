@@ -1,7 +1,7 @@
 extends layout
 
 block head
-  title Edit Recipe - #{filename}
+  title Edit Recipe - #{recipeFilename}
   style.
     .container {
       max-width: 800px;
@@ -127,9 +127,9 @@ block content
       img.card-image#cardImage(src=recipe.cardImage || '', alt='Recipe image', style=recipe.cardImage ? '' : 'display: none;')
       .card-image-placeholder#cardImagePlaceholder(style=recipe.cardImage ? 'display: none;' : '') No Image
     .recipe-header-content
-      h1 Edit Recipe: #{recipe.title || filename}
+      h1 Edit Recipe: #{recipe.title || recipeFilename}
   
-  .filename-display Editing: #{filename}
+  .filename-display Editing: #{recipeFilename}
   
   form#editForm
     .form-group
@@ -175,9 +175,9 @@ block content
       .validation-message#validation-message
     
     .button-group
-      button.btn.btn-primary(type='submit') Update Recipe
+      button.btn.btn-primary(type='submit') Save Changes
       a.btn.btn-secondary(href='/') Cancel
-      button.btn.btn-danger(type='button', onclick=`deleteRecipe('${filename}')`) Delete Recipe
+      button.btn.btn-danger(type='button', onclick=`deleteRecipe('${recipeFilename}')`) Delete Recipe
 
 block scripts
   script(src='https://cdn.jsdelivr.net/npm/marked/marked.min.js')
@@ -323,7 +323,7 @@ block scripts
         const content = contentTextarea.value;
         const parsedContent = JSON.parse(content);
         
-        const response = await fetch(`/api/recipes/${encodeURIComponent('#{filename}')}`, {
+        const response = await fetch(`/api/recipes/${encodeURIComponent('#{recipeFilename}')}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ content: parsedContent })
@@ -349,12 +349,12 @@ block scripts
 
     // Delete function
     async function deleteRecipe(filename) {
-      if (!confirm(`Are you sure you want to delete "${filename}"?`)) {
+      if (!confirm(`Are you sure you want to delete "${recipeFilename}"?`)) {
         return;
       }
       
       try {
-        const response = await fetch(`/api/recipes/${encodeURIComponent(filename)}`, {
+        const response = await fetch(`/api/recipes/${encodeURIComponent(recipeFilename)}`, {
           method: 'DELETE'
         });
         
