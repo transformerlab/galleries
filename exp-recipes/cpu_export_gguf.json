@@ -1,0 +1,28 @@
+{
+  "id": "quantize_model_cpu_gguf",
+  "title": "Quantize a Model on your CPU device",
+  "description": "Optimize your model for faster inference and reduced size using quantization tools.",
+  "notes": "# Model Quantization\n\nThis recipe quantizes a model to reduce its size and improve inference speed while maintaining performance.\n\n## How to Use\nTo get a quantized model, simply go to the **Export** tab and run the `ExportGGUF` task. Once it is complete, you can go to the Model Zoo -> Generated to see your newly generated model.\n\n## What it does\n- Converts your model to GGUF format with q8_0 quantization\n- Reduces model size for faster loading\n- Maintains good performance with minimal accuracy loss",
+  "requiredMachineArchitecture": ["cpu"],
+"dependencies": [
+    {
+      "type": "model",
+      "name": "unsloth/Llama-3.2-1B-Instruct"
+    },
+    {
+      "type": "plugin",
+      "name": "gguf_exporter"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "ExportGGUF",
+      "task_type": "EXPORT",
+      "plugin": "gguf_exporter",
+      "config_json": "{\"plugin_name\":\"gguf_exporter\",\"input_model_id\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_path\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_architecture\":\"LlamaForCausalLM\",\"output_model_id\":\"Llama-3.2-1B-Instruct-1752789244-q8_0.gguf\",\"output_model_architecture\":\"GGUF\",\"output_model_name\":\"Llama-3.2-1B-Instruct - GGUF - q8_0\",\"output_model_path\":\"/models/Llama-3.2-1B-Instruct-1752789244-q8_0.gguf\",\"output_filename\":\"Llama-3.2-1B-Instruct-1752789244-q8_0.gguf\",\"script_directory\":\"/plugins/gguf_exporter\",\"params\":{\"outtype\":\"q8_0\"},\"run_name\":\"ExportGGUF\"}",
+      "inputs_json": "{\"input_model_id\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_path\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_architecture\":\"LlamaForCausalLM\",\"plugin_name\":\"gguf_exporter\",\"plugin_architecture\":\"GGUF\"}"
+    }
+  ],
+  "workflows": [],
+  "cardImage": "https://recipes.transformerlab.net/quantization.png"
+}
