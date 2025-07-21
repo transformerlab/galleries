@@ -5973,6 +5973,42 @@
         ]
     },
     {
+        "name": "others",
+        "description": "",
+        "tags": [],
+        "models": [
+            {
+                "uniqueID": "LGAI-EXAONE/EXAONE-4.0-1.2B",
+                "name": "EXAONE-4.0-1.2B",
+                "description": "",
+                "added": "2025-07-21",
+                "tags": [],
+                "parameters": "1.2B",
+                "context": "65536",
+                "architecture": "Exaone4ForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "LGAI-EXAONE/EXAONE-4.0-1.2B",
+                "transformers_version": "4.54.0.dev0",
+                "gated": false,
+                "license": "other",
+                "logo": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B/resolve/main/assets/EXAONE_Symbol+BI_3d.png",
+                "size_of_model_in_mb": 2449.7439556121826,
+                "author": {
+                    "name": "LGAI-EXAONE",
+                    "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
+                    "downloadUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
+                    "paperUrl": "?"
+                }
+            }
+        ]
+    },
+    {
         "name": "zephyr",
         "description": "Hugging Face instruction-tuned model known for clean chat behavior and fast performance.",
         "image": "https://gallery.transformerlab.net/hfh4.png",
