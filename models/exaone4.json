@@ -28,7 +28,8 @@
       "canonicalUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
       "downloadUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "exaone"
   },
   {
     "uniqueID": "LGAI-EXAONE/EXAONE-4.0-32B",
@@ -59,6 +60,7 @@
       "canonicalUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B",
       "downloadUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B",
       "paperUrl": "?"
-    }
+    },
+    "model_group": "exaone"
   }
 ]
