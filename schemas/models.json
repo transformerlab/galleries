@@ -21,9 +21,14 @@
       },
       "architecture": {
         "enum": [
+          "AprielForCausalLM",
           "CohereForCausalLM",
+          "Cohere2ForCausalLM",
           "DeepseekV3ForCausalLM",
+          "ExaoneForCausalLM",
+          "Exaone4ForCausalLM",
           "FalconForCausalLM",
+          "FluxPipeline",
           "GemmaForCausalLM",
           "Gemma2ForCausalLM",
           "Gemma3ForCausalLM",
@@ -34,7 +39,9 @@
           "GraniteForCausalLM",
           "LlamaForCausalLM",
           "LlavaForConditionalGeneration",
+          "MiniCPMForCausalLM",
           "MistralForCausalLM",
+          "Mistral3ForConditionalGeneration",
           "MixtralForCausalLM",
           "MLX",
           "PhiForCausalLM",
@@ -42,17 +49,11 @@
           "Qwen2ForCausalLM",
           "Qwen3ForCausalLM",
           "Qwen3MoeForCausalLM",
-          "T5ForConditionalGeneration",
-          "Cohere2ForCausalLM",
-          "ExaoneForCausalLM",
-          "Mistral3ForConditionalGeneration",
-          "AprielForCausalLM",
+          "SmolLM3ForCausalLM",
           "StableDiffusion3Pipeline",
           "StableDiffusionXLPipeline",
           "StableDiffusionPipeline",
-          "FluxPipeline",
-          "MiniCPMForCausalLM",
-          "SmolLM3ForCausalLM"
+          "T5ForConditionalGeneration"
         ]
       },
       "huggingface_repo": {
