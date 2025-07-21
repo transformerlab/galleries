@@ -1180,11 +1180,79 @@
         "model_group": "exaone"
     },
     {
+        "uniqueID": "LGAI-EXAONE/EXAONE-4.0-1.2B-GGUF",
+        "name": "EXAONE-4.0-1.2B-GGUF (GGUF Q6_K)",
+        "description": "GGUF-formatted 6-bit quantization of LGAI's Exaone 4.0 reasoning model.",
+        "added": "2025-07-21",
+        "parameters": "1.2B",
+        "context": "65536",
+        "architecture": "GGUF",
+        "formats": [
+            "GGUF"
+        ],
+        "tags": [
+            "Reasoning"
+        ],
+        "huggingface_repo": "LGAI-EXAONE/EXAONE-4.0-1.2B-GGUF",
+        "huggingface_filename": "EXAONE-4.0-1.2B-Q6_K.gguf",
+        "transformers_version": "4.54.0.dev0",
+        "gated": false,
+        "license": "other",
+        "logo": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B/resolve/main/assets/EXAONE_Symbol+BI_3d.png",
+        "size_of_model_in_mb": 1075.2,
+        "author": {
+            "name": "LGAI-EXAONE",
+            "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
+            "downloadUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
+            "paperUrl": "?"
+        },
+        "model_group": "exaone"
+    },
+    {
+        "uniqueID": "LGAI-EXAONE/EXAONE-4.0-32B-GGUF",
+        "name": "EXAONE-4.0-32B-GGUF (GGUF Q6_K)",
+        "description": "GGUF-formatted 6-bit quantization of LGAI's Exaone 4.0 reasoning model.",
+        "added": "2025-07-21",
+        "parameters": "1.2B",
+        "context": "65536",
+        "architecture": "GGUF",
+        "formats": [
+            "GGUF"
+        ],
+        "tags": [
+            "Reasoning"
+        ],
+        "huggingface_repo": "LGAI-EXAONE/EXAONE-4.0-32B-GGUF",
+        "huggingface_filename": "EXAONE-4.0-32B-Q6_K.gguf",
+        "transformers_version": "4.54.0.dev0",
+        "gated": false,
+        "license": "other",
+        "logo": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B/resolve/main/assets/EXAONE_Symbol+BI_3d.png",
+        "size_of_model_in_mb": 26931.2,
+        "author": {
+            "name": "LGAI-EXAONE",
+            "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
+            "downloadUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
+            "paperUrl": "?"
+        },
+        "model_group": "exaone"
+    },
+    {
         "uniqueID": "LGAI-EXAONE/EXAONE-4.0-1.2B",
         "name": "EXAONE-4.0-1.2B",
         "description": "",
         "added": "2025-07-21",
-        "tags": [],
+        "tags": [
+            "Reasoning"
+        ],
         "parameters": "1.2B",
         "context": "65536",
         "architecture": "Exaone4ForCausalLM",
@@ -1206,7 +1274,40 @@
             "canonicalUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
             "downloadUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
             "paperUrl": "?"
-        }
+        },
+        "model_group": "exaone"
+    },
+    {
+        "uniqueID": "LGAI-EXAONE/EXAONE-4.0-32B",
+        "name": "EXAONE-4.0-32B",
+        "description": "",
+        "added": "2025-07-21",
+        "tags": [
+            "Reasoning"
+        ],
+        "parameters": "32B",
+        "context": "131072",
+        "architecture": "Exaone4ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "LGAI-EXAONE/EXAONE-4.0-32B",
+        "transformers_version": "4.54.0.dev0",
+        "gated": false,
+        "license": "other",
+        "logo": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B/resolve/main/assets/EXAONE_Symbol+BI_3d.png",
+        "size_of_model_in_mb": 61050.88821029663,
+        "author": {
+            "name": "LGAI-EXAONE",
+            "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B",
+            "downloadUrl": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B",
+            "paperUrl": "?"
+        },
+        "model_group": "exaone"
     },
     {
         "uniqueID": "tiiuae/falcon-7b",
