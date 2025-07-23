@@ -230,6 +230,7 @@ for model_id in models:
     model_object["resources"]["canonicalUrl"] = f"https://huggingface.co/{model_id}"
     model_object["resources"]["downloadUrl"] = f"https://huggingface.co/{model_id}"
     model_object["resources"]["paperUrl"] = "?"
+    model_object["model_group"] = ""
 
     print("-----------FINAL MODEL OBJECT")
     # print(yaml.dump(model_object, sort_keys=False))
