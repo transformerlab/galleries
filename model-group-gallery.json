@@ -2205,6 +2205,7 @@
             {
                 "uniqueID": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
                 "name": "SmolLM2 1.7B Instruct",
+                "archived": true,
                 "description": "1.7B parameter version of HuggingFace's SLM trained on publicly available datasets.",
                 "added": "2025-01-28",
                 "parameters": "1.7B",
