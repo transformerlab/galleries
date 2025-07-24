@@ -267,6 +267,39 @@
         "model_group": "llama"
     },
     {
+        "uniqueID": "Qwen/Qwen2-VL-2B-Instruct",
+        "name": "Qwen2-VL-2B-Instruct",
+        "description": " Qwen2-VL is the latest iteration of Qwen-VL model",
+        "added": "2025-07-24",
+        "tags": [
+            "Multimodal",
+            "Vision"
+        ],
+        "parameters": "2B",
+        "context": "32768",
+        "architecture": "Qwen2VLForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen2-VL-2B-Instruct",
+        "transformers_version": "4.41.2",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 4222.79434967041,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
+            "paperUrl": "?"
+        },
+        "model_group": "qwen"
+    },
+    {
         "uniqueID": "HuggingFaceTB/SmolLM3-3B-Base",
         "name": "SmolLM3-3B-Base",
         "description": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B\u20134B scale.",
