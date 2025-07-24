@@ -1,0 +1,30 @@
+{
+  "uniqueID": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "name": "Qwen3-235B-A22B-Instruct-2507",
+  "description": "Qwen3-235B-A22B-Instruct-2507 is an updated version of the Qwen3-235B-A22B model in non-thinking mode, featuring significant improvements in general capabilities such as instruction following, logical reasoning, text comprehension, mathematics, science, coding, and tool usage. This version offers substantial gains in long-tail knowledge coverage across multiple languages, and demonstrates markedly better alignment with user preferences in subjective and open-ended tasks, resulting in more helpful responses and higher-quality text generation. Additionally, it boasts enhanced capabilities in 256K long-context understanding.",
+  "added": "2025-07-23",
+  "tags": [],
+  "parameters": "235B",
+  "context": "262144",
+  "architecture": "Qwen3MoeForCausalLM",
+  "formats": [
+    "Safetensors"
+  ],
+  "huggingface_repo": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "transformers_version": "4.51.0",
+  "gated": false,
+  "license": "apache-2.0",
+  "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+  "size_of_model_in_mb": 448426.64600372314,
+  "author": {
+    "name": "Qwen",
+    "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "blurb": ""
+  },
+  "resources": {
+    "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "downloadUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "paperUrl": "?"
+  },
+  "model_group": "qwen"
+}
