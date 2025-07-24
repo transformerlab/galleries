@@ -271,7 +271,10 @@
         "name": "Qwen2-VL-2B-Instruct",
         "description": " Qwen2-VL is the latest iteration of Qwen-VL model",
         "added": "2025-07-24",
-        "tags": [],
+        "tags": [
+            "Multimodal",
+            "Vision"
+        ],
         "parameters": "2B",
         "context": "32768",
         "architecture": "Qwen2VLForConditionalGeneration",
