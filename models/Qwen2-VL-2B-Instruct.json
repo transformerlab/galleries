@@ -1,0 +1,30 @@
+{
+  "uniqueID": "Qwen/Qwen2-VL-2B-Instruct",
+  "name": "Qwen2-VL-2B-Instruct",
+  "description": "",
+  "added": "2025-07-24",
+  "tags": [],
+  "parameters": "2B",
+  "context": "32768",
+  "architecture": "Qwen2VLForConditionalGeneration",
+  "formats": [
+    "Safetensors"
+  ],
+  "huggingface_repo": "Qwen/Qwen2-VL-2B-Instruct",
+  "transformers_version": "4.41.2",
+  "gated": false,
+  "license": "apache-2.0",
+  "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+  "size_of_model_in_mb": 4222.79434967041,
+  "author": {
+    "name": "Qwen",
+    "url": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
+    "blurb": ""
+  },
+  "resources": {
+    "canonicalUrl": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
+    "downloadUrl": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
+    "paperUrl": "?"
+  },
+  "model_group": "qwen"
+}
