@@ -52,7 +52,8 @@
           "StableDiffusionPipeline",
           "FluxPipeline",
           "MiniCPMForCausalLM",
-          "SmolLM3ForCausalLM"
+          "SmolLM3ForCausalLM",
+          "Qwen2VLForConditionalGeneration"
         ]
       },
       "huggingface_repo": {
