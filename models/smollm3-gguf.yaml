@@ -1,0 +1,25 @@
+uniqueID: SmolLM3-Q8_0.gguf
+name: Phi-4 GGUF - 4bit
+description: "GGUF export of Hugging Face's SmolLM3 3B fully open model."
+added: 2025-7-23
+parameters: "3B"
+context: "65536"
+architecture: GGUF
+tags: []
+formats:
+  - GGUF
+huggingface_repo: ggml-org/SmolLM3-3B-GGUF
+huggingface_filename: SmolLM3-Q8_0.gguf
+gated: false
+license: MIT
+logo: https://webml-community-smollm-webgpu.static.hf.space/logo.png
+size_of_model_in_mb: 3358.72
+author:
+  name: ggml-org
+  url: https://huggingface.co/ggml-org
+  blurb: ""
+resources:
+  canonicalUrl: https://huggingface.co/ggml-org/SmolLM3-3B-GGUF
+  downloadUrl: https://huggingface.co/ggml-org/SmolLM3-3B-GGUF
+  paperUrl: "?"
+model_group: smollm

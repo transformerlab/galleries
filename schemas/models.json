@@ -47,6 +47,7 @@
           "PhiForCausalLM",
           "Phi3ForCausalLM",
           "Qwen2ForCausalLM",
+          "Qwen2VLForConditionalGeneration",
           "Qwen3ForCausalLM",
           "Qwen3MoeForCausalLM",
           "SmolLM3ForCausalLM",

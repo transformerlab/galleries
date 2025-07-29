@@ -2399,6 +2399,7 @@
             {
                 "uniqueID": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
                 "name": "SmolLM2 1.7B Instruct",
+                "archived": true,
                 "description": "1.7B parameter version of HuggingFace's SLM trained on publicly available datasets.",
                 "added": "2025-01-28",
                 "parameters": "1.7B",
@@ -2422,6 +2423,96 @@
                     "canonicalUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct",
                     "downloadUrl": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct",
                     "paperUrl": "https://huggingface.co/blog/smollm"
+                },
+                "model_group": "smollm"
+            },
+            {
+                "uniqueID": "SmolLM3-Q8_0.gguf",
+                "name": "Phi-4 GGUF - 4bit",
+                "description": "GGUF export of Hugging Face's SmolLM3 3B fully open model.",
+                "added": "2025-7-23",
+                "parameters": "3B",
+                "context": "65536",
+                "architecture": "GGUF",
+                "tags": [],
+                "formats": [
+                    "GGUF"
+                ],
+                "huggingface_repo": "ggml-org/SmolLM3-3B-GGUF",
+                "huggingface_filename": "SmolLM3-Q8_0.gguf",
+                "gated": false,
+                "license": "MIT",
+                "logo": "https://webml-community-smollm-webgpu.static.hf.space/logo.png",
+                "size_of_model_in_mb": 3358.72,
+                "author": {
+                    "name": "ggml-org",
+                    "url": "https://huggingface.co/ggml-org",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/ggml-org/SmolLM3-3B-GGUF",
+                    "downloadUrl": "https://huggingface.co/ggml-org/SmolLM3-3B-GGUF",
+                    "paperUrl": "?"
+                },
+                "model_group": "smollm"
+            },
+            {
+                "uniqueID": "mlx-community/SmolLM3-3B-8bit",
+                "name": "SmolLM3-3B-8bit",
+                "description": "8-bit quantized version of SmolLM3 3B parameter model in MLX format. SmolLM3 is a fully open model that is designed to push the boundaries of what is possible with 3B parameters.",
+                "added": "2025-07-23",
+                "tags": [],
+                "parameters": "3B",
+                "context": "65536",
+                "architecture": "MLX",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "mlx-community/SmolLM3-3B-8bit",
+                "transformers_version": "4.54.0.dev0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://webml-community-smollm-webgpu.static.hf.space/logo.png",
+                "size_of_model_in_mb": 3132.675096511841,
+                "author": {
+                    "name": "mlx-community",
+                    "url": "https://huggingface.co/mlx-community/SmolLM3-3B-8bit",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/mlx-community/SmolLM3-3B-8bit",
+                    "downloadUrl": "https://huggingface.co/mlx-community/SmolLM3-3B-8bit",
+                    "paperUrl": "?"
+                },
+                "model_group": "smollm"
+            },
+            {
+                "uniqueID": "mlx-community/SmolLM3-3B-4bit",
+                "name": "SmolLM3-3B-4bit",
+                "description": "8-bit quantized version of SmolLM3 3B parameter model in MLX format. SmolLM3 is a fully open model that is designed to push the boundaries of what is possible with 3B parameters.",
+                "added": "2025-07-23",
+                "tags": [],
+                "parameters": "3B",
+                "context": "65536",
+                "architecture": "MLX",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "mlx-community/SmolLM3-3B-4bit",
+                "transformers_version": "4.54.0.dev0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://webml-community-smollm-webgpu.static.hf.space/logo.png",
+                "size_of_model_in_mb": 1666.4246215820312,
+                "author": {
+                    "name": "mlx-community",
+                    "url": "https://huggingface.co/mlx-community/SmolLM3-3B-4bit",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/mlx-community/SmolLM3-3B-4bit",
+                    "downloadUrl": "https://huggingface.co/mlx-community/SmolLM3-3B-4bit",
+                    "paperUrl": "?"
                 },
                 "model_group": "smollm"
             }
@@ -3454,6 +3545,39 @@
             "Multilingual"
         ],
         "models": [
+            {
+                "uniqueID": "Qwen/Qwen2-VL-2B-Instruct",
+                "name": "Qwen2-VL-2B-Instruct",
+                "description": " Qwen2-VL is the latest iteration of Qwen-VL model",
+                "added": "2025-07-24",
+                "tags": [
+                    "Multimodal",
+                    "Vision"
+                ],
+                "parameters": "2B",
+                "context": "32768",
+                "architecture": "Qwen2VLForConditionalGeneration",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "Qwen/Qwen2-VL-2B-Instruct",
+                "transformers_version": "4.41.2",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+                "size_of_model_in_mb": 4222.79434967041,
+                "author": {
+                    "name": "Qwen",
+                    "url": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
+                    "downloadUrl": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
+                    "paperUrl": "?"
+                },
+                "model_group": "qwen"
+            },
             {
                 "uniqueID": "Qwen/Qwen2-7B-Instruct",
                 "name": "Qwen2 7B Instruct",
