@@ -1610,7 +1610,7 @@
         ],
         "huggingface_repo": "black-forest-labs/FLUX.1-Krea-dev",
         "transformers_version": "4.44.0",
-        "gated": false,
+        "gated": true,
         "license": "apache-2.0",
         "logo": "https://blackforestlabs.ai/favicon.ico",
         "size_of_model_in_mb": 55159.34513282776,
