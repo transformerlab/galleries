@@ -119,7 +119,9 @@
             "Math",
             "Text-to-Image",
             "Diffusion",
-            "Vision"
+            "Vision",
+            "Text-to-Speech",
+            "Audio"
           ]
         }
       },
