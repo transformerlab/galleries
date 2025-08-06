@@ -6,7 +6,7 @@
   "tags": ["Text-to-Speech", "Audio"],
   "parameters": "82M",
   "context": "2048",
-  "architecture": "MLX",
+  "architecture": "MLXTextToSpeech",
   "formats": [
     "Safetensors"
   ],
@@ -26,5 +26,5 @@
     "downloadUrl": "https://huggingface.co/mlx-community/Kokoro-82M-4bit",
     "paperUrl": "?"
   },
-  "model_group": ""
+  "model_group": "kokoro"
 }
