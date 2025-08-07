@@ -6614,5 +6614,195 @@
                 "model_group": "tinyllama"
             }
         ]
+    },
+    {
+        "name": "GPT OSS",
+        "description": "Open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
+        "image": "https://gallery.transformerlab.net/openai_logo.png",
+        "tags": [],
+        "models": [
+            {
+                "uniqueID": "unsloth/gpt-oss-20b-GGUF",
+                "name": "gpt-oss-20b-GGUF",
+                "description": "",
+                "added": "2025-08-07",
+                "tags": [],
+                "parameters": "20B",
+                "context": "131072",
+                "architecture": "GGUF",
+                "formats": [
+                    "GGUF"
+                ],
+                "huggingface_repo": "unsloth/gpt-oss-20b-GGUF",
+                "huggingface_filename": "gpt-oss-20b-F16.gguf",
+                "transformers_version": "4.55.0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://gallery.transformerlab.net/openai_logo.png",
+                "size_of_model_in_mb": 14131.2,
+                "author": {
+                    "name": "unsloth",
+                    "url": "https://huggingface.co/unsloth/gpt-oss-20b-GGUF",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/unsloth/gpt-oss-20b-GGUF",
+                    "downloadUrl": "https://huggingface.co/unsloth/gpt-oss-20b-GGUF",
+                    "paperUrl": "?"
+                },
+                "model_group": "GPT OSS"
+            },
+            {
+                "uniqueID": "unsloth/gpt-oss-120b-GGUF",
+                "name": "Unsloth gpt-oss-120b-GGUF",
+                "description": "",
+                "added": "2025-08-07",
+                "tags": [],
+                "parameters": "120B",
+                "context": "131072",
+                "architecture": "GGUF",
+                "formats": [
+                    "GGUF"
+                ],
+                "huggingface_repo": "unsloth/gpt-oss-120b-GGUF",
+                "huggingface_filename": "gpt-oss-120b-F16.gguf",
+                "transformers_version": "4.56.0.dev0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://gallery.transformerlab.net/openai_logo.png",
+                "size_of_model_in_mb": 66457.6,
+                "author": {
+                    "name": "unsloth",
+                    "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF",
+                    "downloadUrl": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF",
+                    "paperUrl": "?"
+                },
+                "model_group": "GPT OSS"
+            },
+            {
+                "uniqueID": "mlx-community/gpt-oss-120b-4bit",
+                "name": "gpt-oss-120b-4bit",
+                "description": "",
+                "added": "2025-08-07",
+                "tags": [],
+                "parameters": "120B",
+                "context": "131072",
+                "architecture": "MLX",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "mlx-community/gpt-oss-120b-4bit",
+                "transformers_version": "4.55.0.dev0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://gallery.transformerlab.net/openai_logo.png",
+                "size_of_model_in_mb": 62754.144881248474,
+                "author": {
+                    "name": "mlx-community",
+                    "url": "https://huggingface.co/mlx-community/gpt-oss-120b-4bit",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/mlx-community/gpt-oss-120b-4bit",
+                    "downloadUrl": "https://huggingface.co/mlx-community/gpt-oss-120b-4bit",
+                    "paperUrl": "?"
+                },
+                "model_group": "GPT OSS"
+            },
+            {
+                "uniqueID": "lmstudio-community/gpt-oss-20b-MLX-8bit",
+                "name": "gpt-oss-20b-MLX-8bit",
+                "description": "",
+                "added": "2025-08-07",
+                "tags": [],
+                "parameters": "20B",
+                "context": "131072",
+                "architecture": "MLX",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "lmstudio-community/gpt-oss-20b-MLX-8bit",
+                "transformers_version": "4.55.0.dev0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://gallery.transformerlab.net/openai_logo.png",
+                "size_of_model_in_mb": 21225.46273136139,
+                "author": {
+                    "name": "lmstudio-community",
+                    "url": "https://huggingface.co/lmstudio-community/gpt-oss-20b-MLX-8bit",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/lmstudio-community/gpt-oss-20b-MLX-8bit",
+                    "downloadUrl": "https://huggingface.co/lmstudio-community/gpt-oss-20b-MLX-8bit",
+                    "paperUrl": "?"
+                },
+                "model_group": "GPT OSS"
+            },
+            {
+                "uniqueID": "openai/gpt-oss-20b",
+                "name": "OpenAI GPT-OSS 20B",
+                "description": "Open Source 20B parameter GPT model from OpenAI",
+                "added": "2025-08-07",
+                "tags": [],
+                "parameters": "20B",
+                "context": "131072",
+                "architecture": "GptOssForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "openai/gpt-oss-20b",
+                "transformers_version": "4.55.0.dev0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://gallery.transformerlab.net/openai_logo.png",
+                "size_of_model_in_mb": 13150.432302474976,
+                "author": {
+                    "name": "openai",
+                    "url": "https://huggingface.co/openai/gpt-oss-20b",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/openai/gpt-oss-20b",
+                    "downloadUrl": "https://huggingface.co/openai/gpt-oss-20b",
+                    "paperUrl": "?"
+                },
+                "model_group": "GPT OSS"
+            },
+            {
+                "uniqueID": "openai/gpt-oss-120b",
+                "name": "OpenAI GPT-OSS 120B",
+                "description": "Open Source 120B parameter GPT model from OpenAI",
+                "added": "2025-08-07",
+                "tags": [],
+                "parameters": "120B",
+                "context": "131072",
+                "architecture": "GptOssForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "openai/gpt-oss-20b",
+                "transformers_version": "4.55.0.dev0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://gallery.transformerlab.net/openai_logo.png",
+                "size_of_model_in_mb": 13150.432302474976,
+                "author": {
+                    "name": "openai",
+                    "url": "https://huggingface.co/openai/gpt-oss-20b",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/openai/gpt-oss-20b",
+                    "downloadUrl": "https://huggingface.co/openai/gpt-oss-20b",
+                    "paperUrl": "?"
+                },
+                "model_group": "GPT OSS"
+            }
+        ]
     }
 ]
