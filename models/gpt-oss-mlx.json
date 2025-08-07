@@ -27,7 +27,7 @@
     "downloadUrl": "https://huggingface.co/mlx-community/gpt-oss-120b-4bit",
     "paperUrl": "?"
   },
-  "model_group": "GPT OSS"
+  "model_group": "OpenAI GPT OSS"
 },
 {
   "uniqueID": "lmstudio-community/gpt-oss-20b-MLX-8bit",
@@ -57,6 +57,6 @@
     "downloadUrl": "https://huggingface.co/lmstudio-community/gpt-oss-20b-MLX-8bit",
     "paperUrl": "?"
   },
-  "model_group": "GPT OSS"
+  "model_group": "OpenAI GPT OSS"
 }
 ]
