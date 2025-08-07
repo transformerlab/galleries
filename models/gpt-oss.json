@@ -26,7 +26,7 @@
     "downloadUrl": "https://huggingface.co/openai/gpt-oss-20b",
     "paperUrl": "?"
   },
-  "model_group": "GPT OSS"
+  "model_group": "OpenAI GPT OSS"
 },
 {
   "uniqueID": "openai/gpt-oss-120b",
@@ -45,7 +45,7 @@
   "gated": false,
   "license": "apache-2.0",
   "logo": "https://gallery.transformerlab.net/openai_logo.png",
-  "size_of_model_in_mb": 13150.432302474976,
+  "size_of_model_in_mb": 62252.82899951935,
   "author": {
     "name": "openai",
     "url": "https://huggingface.co/openai/gpt-oss-20b",
@@ -56,8 +56,9 @@
     "downloadUrl": "https://huggingface.co/openai/gpt-oss-20b",
     "paperUrl": "?"
   },
-  "model_group": "GPT OSS"
+  "model_group": "OpenAI GPT OSS"
 }
+
 
 
 ]

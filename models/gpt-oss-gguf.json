@@ -1,7 +1,7 @@
 [
   {
     "uniqueID": "unsloth/gpt-oss-20b-GGUF",
-    "name": "gpt-oss-20b-GGUF",
+    "name": "Unsloth GPT OSS 20b GGUF",
     "description": "",
     "added": "2025-08-07",
     "tags": [],
@@ -28,11 +28,11 @@
       "downloadUrl": "https://huggingface.co/unsloth/gpt-oss-20b-GGUF",
       "paperUrl": "?"
     },
-    "model_group": "GPT OSS"
+    "model_group": "OpenAI GPT OSS"
   },
     {
       "uniqueID": "unsloth/gpt-oss-120b-GGUF",
-      "name": "Unsloth gpt-oss-120b-GGUF",
+      "name": "Unsloth GPT OSS 120b GGUF",
       "description": "",
       "added": "2025-08-07",
       "tags": [],
@@ -59,6 +59,6 @@
         "downloadUrl": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF",
         "paperUrl": "?"
       },
-      "model_group": "GPT OSS"
+      "model_group": "OpenAI GPT OSS"
     }
 ]

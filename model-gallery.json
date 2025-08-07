@@ -2436,7 +2436,7 @@
     },
     {
         "uniqueID": "unsloth/gpt-oss-20b-GGUF",
-        "name": "gpt-oss-20b-GGUF",
+        "name": "Unsloth GPT OSS 20b GGUF",
         "description": "",
         "added": "2025-08-07",
         "tags": [],
@@ -2463,11 +2463,11 @@
             "downloadUrl": "https://huggingface.co/unsloth/gpt-oss-20b-GGUF",
             "paperUrl": "?"
         },
-        "model_group": "GPT OSS"
+        "model_group": "OpenAI GPT OSS"
     },
     {
         "uniqueID": "unsloth/gpt-oss-120b-GGUF",
-        "name": "Unsloth gpt-oss-120b-GGUF",
+        "name": "Unsloth GPT OSS 120b GGUF",
         "description": "",
         "added": "2025-08-07",
         "tags": [],
@@ -2494,7 +2494,7 @@
             "downloadUrl": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF",
             "paperUrl": "?"
         },
-        "model_group": "GPT OSS"
+        "model_group": "OpenAI GPT OSS"
     },
     {
         "uniqueID": "mlx-community/gpt-oss-120b-4bit",
@@ -2524,7 +2524,7 @@
             "downloadUrl": "https://huggingface.co/mlx-community/gpt-oss-120b-4bit",
             "paperUrl": "?"
         },
-        "model_group": "GPT OSS"
+        "model_group": "OpenAI GPT OSS"
     },
     {
         "uniqueID": "lmstudio-community/gpt-oss-20b-MLX-8bit",
@@ -2554,7 +2554,7 @@
             "downloadUrl": "https://huggingface.co/lmstudio-community/gpt-oss-20b-MLX-8bit",
             "paperUrl": "?"
         },
-        "model_group": "GPT OSS"
+        "model_group": "OpenAI GPT OSS"
     },
     {
         "uniqueID": "openai/gpt-oss-20b",
@@ -2584,7 +2584,7 @@
             "downloadUrl": "https://huggingface.co/openai/gpt-oss-20b",
             "paperUrl": "?"
         },
-        "model_group": "GPT OSS"
+        "model_group": "OpenAI GPT OSS"
     },
     {
         "uniqueID": "openai/gpt-oss-120b",
@@ -2603,7 +2603,7 @@
         "gated": false,
         "license": "apache-2.0",
         "logo": "https://gallery.transformerlab.net/openai_logo.png",
-        "size_of_model_in_mb": 13150.432302474976,
+        "size_of_model_in_mb": 62252.82899951935,
         "author": {
             "name": "openai",
             "url": "https://huggingface.co/openai/gpt-oss-20b",
@@ -2614,7 +2614,7 @@
             "downloadUrl": "https://huggingface.co/openai/gpt-oss-20b",
             "paperUrl": "?"
         },
-        "model_group": "GPT OSS"
+        "model_group": "OpenAI GPT OSS"
     },
     {
         "uniqueID": "ibm-granite/granite-3.3-2b-base",
