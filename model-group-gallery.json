@@ -2240,6 +2240,50 @@
         ]
     },
     {
+        "name": "dia",
+        "description": "Advanced text-to-speech model developed by Nari Labs, capable of generating highly realistic dialogue and expressive nonverbal audio from transcripts.",
+        "image": "",
+        "tags": [
+            "Text-to-Speech",
+            "Audio"
+        ],
+        "models": [
+            {
+                "uniqueID": "mlx-community/Dia-1.6B",
+                "name": "Dia-1.6B",
+                "description": "Dia is a 1.6B parameter text to speech model created by Nari Labs. Dia directly generates highly realistic dialogue from a transcript. You can condition the output on audio, enabling emotion and tone control. The model can also produce nonverbal communications like laughter, coughing, clearing throat, etc.",
+                "added": "2025-08-07",
+                "tags": [
+                    "Text-to-Speech",
+                    "Audio"
+                ],
+                "parameters": "1.6B",
+                "context": "2048",
+                "architecture": "MLXTextToSpeech",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "mlx-community/Dia-1.6B",
+                "transformers_version": "",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "",
+                "size_of_model_in_mb": 6146.1295347213745,
+                "author": {
+                    "name": "mlx-community",
+                    "url": "https://huggingface.co/mlx-community/Dia-1.6B",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/mlx-community/Dia-1.6B",
+                    "downloadUrl": "https://huggingface.co/mlx-community/Dia-1.6B",
+                    "paperUrl": "?"
+                },
+                "model_group": "dia"
+            }
+        ]
+    },
+    {
         "name": "nemotron",
         "description": "Reasoning models that are post trained for reasoning, human chat preferences, and tasks, such as RAG and tool calling.",
         "image": "https://gallery.transformerlab.net/NVLogo_2D.jpg",
@@ -6368,46 +6412,6 @@
                     "paperUrl": "?"
                 },
                 "model_group": "apriel"
-            }
-        ]
-    },
-    {
-        "name": "others",
-        "description": "",
-        "tags": [],
-        "models": [
-            {
-                "uniqueID": "mlx-community/Dia-1.6B",
-                "name": "Dia-1.6B",
-                "description": "Dia is a 1.6B parameter text to speech model created by Nari Labs. Dia directly generates highly realistic dialogue from a transcript. You can condition the output on audio, enabling emotion and tone control. The model can also produce nonverbal communications like laughter, coughing, clearing throat, etc.",
-                "added": "2025-08-07",
-                "tags": [
-                    "Text-to-Speech",
-                    "Audio"
-                ],
-                "parameters": "1.6B",
-                "context": "2048",
-                "architecture": "MLXTextToSpeech",
-                "formats": [
-                    "Safetensors"
-                ],
-                "huggingface_repo": "mlx-community/Dia-1.6B",
-                "transformers_version": "",
-                "gated": false,
-                "license": "apache-2.0",
-                "logo": "",
-                "size_of_model_in_mb": 6146.1295347213745,
-                "author": {
-                    "name": "mlx-community",
-                    "url": "https://huggingface.co/mlx-community/Dia-1.6B",
-                    "blurb": ""
-                },
-                "resources": {
-                    "canonicalUrl": "https://huggingface.co/mlx-community/Dia-1.6B",
-                    "downloadUrl": "https://huggingface.co/mlx-community/Dia-1.6B",
-                    "paperUrl": "?"
-                },
-                "model_group": "dia"
             }
         ]
     },

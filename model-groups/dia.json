@@ -1,6 +1,7 @@
 {
   "name": "dia",
-  "description": "Advanced text-to-speech model developed by Nari Labs, capable of generating highly realistic dialogue and expressive nonverbal audio from transcripts."  "image": "",
+  "description": "Advanced text-to-speech model developed by Nari Labs, capable of generating highly realistic dialogue and expressive nonverbal audio from transcripts.",
+  "image": "",
   "tags": ["Text-to-Speech", "Audio"],
   "models": []
 }
