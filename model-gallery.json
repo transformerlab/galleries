@@ -94,6 +94,39 @@
         "model_group": "intellect"
     },
     {
+        "uniqueID": "mlx-community/Kokoro-82M-4bit",
+        "name": "Kokoro-82M-4bit",
+        "description": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient.",
+        "added": "2025-08-01",
+        "tags": [
+            "Text-to-Speech",
+            "Audio"
+        ],
+        "parameters": "82M",
+        "context": "2048",
+        "architecture": "MLXTextToSpeech",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "mlx-community/Kokoro-82M-4bit",
+        "transformers_version": "",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "",
+        "size_of_model_in_mb": 269.65278339385986,
+        "author": {
+            "name": "mlx-community",
+            "url": "https://huggingface.co/mlx-community/Kokoro-82M-4bit",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mlx-community/Kokoro-82M-4bit",
+            "downloadUrl": "https://huggingface.co/mlx-community/Kokoro-82M-4bit",
+            "paperUrl": "?"
+        },
+        "model_group": "kokoro"
+    },
+    {
         "uniqueID": "mlx-community/Mistral-7B-Instruct-v0.1-4bit-mlx",
         "name": "Mistral 7B Instruct v0.1 (MLX 4bit)",
         "archived": true,
