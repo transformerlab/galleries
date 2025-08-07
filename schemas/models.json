@@ -35,6 +35,7 @@
           "Gemma3ForConditionalGeneration",
           "ShieldGemmaForImageClassification",
           "GGUF",
+          "GptOssForCausalLM",
           "GPTBigCodeForCausalLM",
           "GraniteForCausalLM",
           "LlamaForCausalLM",
