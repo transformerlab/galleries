@@ -54,7 +54,8 @@
           "StableDiffusion3Pipeline",
           "StableDiffusionXLPipeline",
           "StableDiffusionPipeline",
-          "T5ForConditionalGeneration"
+          "T5ForConditionalGeneration",
+          "MLXTextToSpeech"
         ]
       },
       "huggingface_repo": {
@@ -119,7 +120,9 @@
             "Math",
             "Text-to-Image",
             "Diffusion",
-            "Vision"
+            "Vision",
+            "Text-to-Speech",
+            "Audio"
           ]
         }
       },
