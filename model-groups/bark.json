@@ -1,0 +1,7 @@
+{
+  "name": "bark",
+  "description": "Bark is a transformer-based text-to-audio model created by Suno.",
+  "image": "",
+  "tags": ["Text-to-Speech", "Audio"],
+  "models": []
+}

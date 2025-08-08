@@ -534,6 +534,39 @@
         "model_group": "aya"
     },
     {
+        "uniqueID": "mlx-community/bark-small",
+        "name": "bark-small",
+        "description": "Bark can generate highly realistic, multilingual speech as well as other audio - including music, background noise and simple sound effects.",
+        "added": "2025-08-08",
+        "tags": [
+            "Text-to-Speech",
+            "Audio"
+        ],
+        "parameters": "",
+        "context": "2048",
+        "architecture": "MLXTextToSpeech",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "mlx-community/bark-small",
+        "transformers_version": "",
+        "gated": false,
+        "license": "mit",
+        "logo": "",
+        "size_of_model_in_mb": 1534.5867176055908,
+        "author": {
+            "name": "mlx-community",
+            "url": "https://huggingface.co/mlx-community/bark-small",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mlx-community/bark-small",
+            "downloadUrl": "https://huggingface.co/mlx-community/bark-small",
+            "paperUrl": "?"
+        },
+        "model_group": "bark"
+    },
+    {
         "uniqueID": "ByteDance-Seed/Seed-Coder-8B-Reasoning-bf16",
         "name": "Seed-Coder-8B-Reasoning-bf16",
         "description": "A powerful, transparent, and parameter-efficient open-source code model",
