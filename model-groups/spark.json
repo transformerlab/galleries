@@ -1,0 +1,7 @@
+{
+  "name": "spark",
+  "description": "An Efficient LLM-Based Text-to-Speech Model with Single-Stream Decoupled Speech Tokens.",
+  "image": "",
+  "tags": ["Text-to-Speech", "Audio"],
+  "models": []
+}
