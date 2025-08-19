@@ -1,0 +1,30 @@
+{
+  "uniqueID": "google/gemma-3-270m",
+  "name": "gemma-3-270m",
+  "description": "Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models.",
+  "added": "2025-08-18",
+  "tags": [],
+  "parameters": "270M",
+  "context": "32768",
+  "architecture": "Gemma3ForCausalLM",
+  "formats": [
+    "Safetensors"
+  ],
+  "huggingface_repo": "google/gemma-3-270m",
+  "transformers_version": "4.55.0.dev0",
+  "gated": "manual",
+  "license": "gemma",
+  "logo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-header.width-1200.format-webp.webp",
+  "size_of_model_in_mb": 548.7959451675415,
+  "author": {
+    "name": "google",
+    "url": "https://huggingface.co/google/gemma-3-270m",
+    "blurb": ""
+  },
+  "resources": {
+    "canonicalUrl": "https://huggingface.co/google/gemma-3-270m",
+    "downloadUrl": "https://huggingface.co/google/gemma-3-270m",
+    "paperUrl": "?"
+  },
+  "model_group": "gemma"
+}
