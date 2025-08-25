@@ -51,7 +51,7 @@
       ],
       "huggingface_repo": "black-forest-labs/FLUX.1-schnell",
       "transformers_version": "4.44.0",
-      "gated": false,
+      "gated": true,
       "license": "apache-2.0",
       "logo": "https://blackforestlabs.ai/favicon.ico",
       "size_of_model_in_mb": 55159.34513282776,
@@ -67,7 +67,7 @@
       },
       "model_group": "flux"
     },
-        {
+    {
       "uniqueID": "black-forest-labs/FLUX.1-Krea-dev",
       "name": "FLUX.1 [Krea]",
       "description": "FLUX.1 Krea [dev] is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions. ",
