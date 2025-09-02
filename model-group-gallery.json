@@ -6698,6 +6698,46 @@
         ]
     },
     {
+        "name": "others",
+        "description": "",
+        "tags": [],
+        "models": [
+            {
+                "uniqueID": "microsoft/VibeVoice-1.5B",
+                "name": "VibeVoice-1.5B",
+                "description": "VibeVoice is a novel framework designed for generating expressive, long-form, multi-speaker conversational audio, such as podcasts, from text.",
+                "added": "2025-09-02",
+                "tags": [
+                    "Text-to-Speech",
+                    "Audio"
+                ],
+                "parameters": "1.5B",
+                "context": "2048",
+                "architecture": "VibeVoiceForConditionalGeneration",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "microsoft/VibeVoice-1.5B",
+                "transformers_version": "4.51.3",
+                "gated": false,
+                "license": "mit",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/1583646260758-5e64858c87403103f9f1055d.png",
+                "size_of_model_in_mb": 5157.783682823181,
+                "author": {
+                    "name": "microsoft",
+                    "url": "https://huggingface.co/microsoft/VibeVoice-1.5B",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/microsoft/VibeVoice-1.5B",
+                    "downloadUrl": "https://huggingface.co/microsoft/VibeVoice-1.5B",
+                    "paperUrl": "?"
+                },
+                "model_group": ""
+            }
+        ]
+    },
+    {
         "name": "zephyr",
         "description": "Hugging Face instruction-tuned model known for clean chat behavior and fast performance.",
         "image": "https://gallery.transformerlab.net/hfh4.png",
