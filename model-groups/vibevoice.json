@@ -1,0 +1,7 @@
+{
+  "name": "vibevoice",
+  "description": "Text-to-speech models good for generating conversational audio like podcasts.",
+  "image": "https://cdn-avatars.huggingface.co/v1/production/uploads/1583646260758-5e64858c87403103f9f1055d.png",
+  "tags": ["Text-to-Speech", "Audio"],
+  "models": []
+}
