@@ -46,6 +46,7 @@
           "Mistral3ForConditionalGeneration",
           "MixtralForCausalLM",
           "MLX",
+          "MLXTextToSpeech",
           "PhiForCausalLM",
           "Phi3ForCausalLM",
           "Qwen2ForCausalLM",
@@ -57,7 +58,7 @@
           "StableDiffusionXLPipeline",
           "StableDiffusionPipeline",
           "T5ForConditionalGeneration",
-          "MLXTextToSpeech"
+          "VibeVoiceForConditionalGeneration"
         ]
       },
       "huggingface_repo": {
