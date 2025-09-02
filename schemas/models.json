@@ -24,6 +24,7 @@
           "AprielForCausalLM",
           "CohereForCausalLM",
           "Cohere2ForCausalLM",
+          "CsmForConditionalGeneration",
           "DeepseekV3ForCausalLM",
           "ExaoneForCausalLM",
           "Exaone4ForCausalLM",
