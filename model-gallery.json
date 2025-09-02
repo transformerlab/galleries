@@ -971,6 +971,39 @@
         "model_group": "command"
     },
     {
+        "uniqueID": "unsloth/csm-1b",
+        "name": "CSM 1B",
+        "description": "CSM (Conversational Speech Model) is a speech generation model from Sesame that generates RVQ audio codes from text and audio inputs. The model architecture employs a Llama backbone and a smaller audio decoder that produces Mimi audio codes.",
+        "added": "2025-09-02",
+        "tags": [
+            "Text-to-Speech",
+            "Audio"
+        ],
+        "parameters": "1B",
+        "context": "2048",
+        "architecture": "CsmForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "unsloth/csm-1b",
+        "transformers_version": "4.52.0.dev0",
+        "gated": "auto",
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/63170e08c92fd6fee316ee60/ytNeAB_Zte8zbkPoGSFQ3.jpeg",
+        "size_of_model_in_mb": 3977.432918548584,
+        "author": {
+            "name": "Sesame",
+            "url": "https://huggingface.co/sesame",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/unsloth/csm-1b",
+            "downloadUrl": "https://huggingface.co/unsloth/csm-1b",
+            "paperUrl": "?"
+        },
+        "model_group": "sesame"
+    },
+    {
         "uniqueID": "agentica-org/DeepCoder-14B-Preview",
         "name": "DeepCoder 14B Preview",
         "description": "DeepCoder is a code reasoning LLM fine-tuned from DeepSeek-R1-Distilled-Qwen-14B that achieves similar performance to OpenAI's o3-mini with just 14B parameters.",
