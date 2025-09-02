@@ -129,6 +129,11 @@
       },
       "model_group": {
         "type": "string"
+      },
+      "model_config": {
+        "type": "object",
+        "description": "Model-specific parameters and configurations in JSON format",
+        "additionalProperties": true
       }
     },
     "required": [
