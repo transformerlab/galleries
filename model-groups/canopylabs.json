@@ -1,0 +1,7 @@
+{
+  "name": "canopylabs",
+  "description": "SF-based lab creating responsive models for real world interaction.",
+  "image": "https://cdn-avatars.huggingface.co/v1/production/uploads/61840329647c869d57b0c5b3/OAOpnZvDFkcaAmc2P2EkZ.png",
+  "tags": ["Text-to-Speech", "Audio"],
+  "models": []
+}
