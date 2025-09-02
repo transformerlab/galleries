@@ -426,6 +426,39 @@
         "model_group": "smollm"
     },
     {
+        "uniqueID": "mlx-community/Spark-TTS-0.5B-bf16",
+        "name": "Spark-TTS-0.5B-bf16",
+        "description": "Spark-TTS is an advanced text-to-speech system that uses the power of large language models (LLM) for highly accurate and natural-sounding voice synthesis.",
+        "added": "2025-08-08",
+        "tags": [
+            "Text-to-Speech",
+            "Audio"
+        ],
+        "parameters": "0.5B",
+        "context": "32768",
+        "architecture": "MLXTextToSpeech",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "mlx-community/Spark-TTS-0.5B-bf16",
+        "transformers_version": "4.51.3",
+        "gated": false,
+        "license": "cc-by-nc-sa-4.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 985.4489002227783,
+        "author": {
+            "name": "mlx-community",
+            "url": "https://huggingface.co/mlx-community/Spark-TTS-0.5B-bf16",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mlx-community/Spark-TTS-0.5B-bf16",
+            "downloadUrl": "https://huggingface.co/mlx-community/Spark-TTS-0.5B-bf16",
+            "paperUrl": "?"
+        },
+        "model_group": "spark"
+    },
+    {
         "uniqueID": "ServiceNow-AI/Apriel-5B-Instruct",
         "name": "Apriel-5B-Instruct",
         "description": "Apriel is a family of models built for versatility, offering high throughput and efficiency across a wide range of tasks.",
