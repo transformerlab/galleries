@@ -481,6 +481,50 @@
         ]
     },
     {
+        "name": "canopylabs",
+        "description": "SF-based lab creating responsive models for real world interaction.",
+        "image": "https://cdn-avatars.huggingface.co/v1/production/uploads/61840329647c869d57b0c5b3/OAOpnZvDFkcaAmc2P2EkZ.png",
+        "tags": [
+            "Text-to-Speech",
+            "Audio"
+        ],
+        "models": [
+            {
+                "uniqueID": "unsloth/orpheus-3b-0.1-ft",
+                "name": "orpheus-3b-0.1-ft",
+                "description": "Orpheus TTS is a state-of-the-art, Llama-based Speech-LLM designed for high-quality, empathetic text-to-speech generation. This model has been finetuned to deliver human-level speech synthesis, achieving exceptional clarity, expressiveness, and real-time streaming performances.",
+                "added": "2025-09-01",
+                "tags": [
+                    "Text-to-Speech",
+                    "Audio"
+                ],
+                "parameters": "3B",
+                "context": "131072",
+                "architecture": "LlamaForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "unsloth/orpheus-3b-0.1-ft",
+                "transformers_version": "4.53.1",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/61840329647c869d57b0c5b3/OAOpnZvDFkcaAmc2P2EkZ.png",
+                "size_of_model_in_mb": 6322.901885986328,
+                "author": {
+                    "name": "Canopy Labs",
+                    "url": "https://canopylabs.ai",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/unsloth/orpheus-3b-0.1-ft",
+                    "downloadUrl": "https://huggingface.co/unsloth/orpheus-3b-0.1-ft",
+                    "paperUrl": "?"
+                },
+                "model_group": "canopylabs"
+            }
+        ]
+    },
+    {
         "name": "flux",
         "description": "State-of-the-art text-to-image generation model developed by Black Forest Labs.",
         "image": "https://gallery.transformerlab.net/flux.png",
