@@ -1,0 +1,7 @@
+{
+  "name": "csm",
+  "description": "CSM (Conversational Speech Model) is a speech generation model from Sesame that generates RVQ audio codes from text and audio inputs.",
+  "image": "",
+  "tags": ["Text-to-Speech", "Audio"],
+  "models": []
+}

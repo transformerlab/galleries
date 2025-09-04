@@ -971,6 +971,39 @@
         "model_group": "command"
     },
     {
+        "uniqueID": "mlx-community/csm-1b",
+        "name": "csm-1b",
+        "description": "CSM (Conversational Speech Model) is a speech generation model from Sesame that generates RVQ audio codes from text and audio inputs.",
+        "added": "2025-09-04",
+        "tags": [
+            "Text-to-Speech",
+            "Audio"
+        ],
+        "parameters": "1B",
+        "context": "2048",
+        "architecture": "MLXTextToSpeech",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "mlx-community/csm-1b",
+        "transformers_version": "",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "",
+        "size_of_model_in_mb": 5923.450663566589,
+        "author": {
+            "name": "mlx-community",
+            "url": "https://huggingface.co/mlx-community/csm-1b",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mlx-community/csm-1b",
+            "downloadUrl": "https://huggingface.co/mlx-community/csm-1b",
+            "paperUrl": "?"
+        },
+        "model_group": "csm"
+    },
+    {
         "uniqueID": "unsloth/csm-1b",
         "name": "CSM 1B",
         "description": "CSM (Conversational Speech Model) is a speech generation model from Sesame that generates RVQ audio codes from text and audio inputs. The model architecture employs a Llama backbone and a smaller audio decoder that produces Mimi audio codes.",
