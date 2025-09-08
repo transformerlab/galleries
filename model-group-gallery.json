@@ -554,6 +554,51 @@
                 "license": "apache-2.0",
                 "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/61840329647c869d57b0c5b3/OAOpnZvDFkcaAmc2P2EkZ.png",
                 "size_of_model_in_mb": 6322.901885986328,
+                "model_config": {
+                    "voices": {
+                        "American English": [
+                            "tara",
+                            "leah",
+                            "jess",
+                            "leo",
+                            "dan",
+                            "mia",
+                            "zac",
+                            "zoe"
+                        ],
+                        "French": [
+                            "pierre",
+                            "amelie",
+                            "marie"
+                        ],
+                        "German": [
+                            "jana",
+                            "thomas",
+                            "max"
+                        ],
+                        "Korean": [
+                            "\uc720\ub098",
+                            "\uc900\uc11c"
+                        ],
+                        "Hindi": [
+                            "\u090b\u0924\u093f\u0915\u093e"
+                        ],
+                        "Mandarin": [
+                            "\u957f\u4e50",
+                            "\u767d\u82b7"
+                        ],
+                        "Spanish": [
+                            "javi",
+                            "sergio",
+                            "maria"
+                        ],
+                        "Italian": [
+                            "pietro",
+                            "giulia",
+                            "carlo"
+                        ]
+                    }
+                },
                 "author": {
                     "name": "Canopy Labs",
                     "url": "https://canopylabs.ai",
@@ -838,13 +883,6 @@
                             "bm_fable",
                             "bm_george",
                             "bm_lewis"
-                        ],
-                        "Japanese": [
-                            "jf_alpha",
-                            "jf_gongitsune",
-                            "jf_nezumi",
-                            "jf_tebukuro",
-                            "jm_kumo"
                         ],
                         "Mandarin Chinese": [
                             "zf_xiaobei",
