@@ -14,6 +14,41 @@ gated: false
 license: apache-2.0
 logo: https://cdn-avatars.huggingface.co/v1/production/uploads/61840329647c869d57b0c5b3/OAOpnZvDFkcaAmc2P2EkZ.png
 size_of_model_in_mb: 6322.901885986328
+model_config:
+  voices:
+    American English:
+      - tara
+      - leah
+      - jess
+      - leo
+      - dan
+      - mia
+      - zac
+      - zoe
+    French:
+      - pierre
+      - amelie
+      - marie
+    German:
+      - jana
+      - thomas
+      - max
+    Korean:
+      - 유나
+      - 준서
+    Hindi:
+      - ऋतिका
+    Mandarin:
+      - 长乐
+      - 白芷
+    Spanish:
+      - javi
+      - sergio
+      - maria
+    Italian:
+      - pietro
+      - giulia
+      - carlo
 author:
   name: Canopy Labs
   url: https://canopylabs.ai
