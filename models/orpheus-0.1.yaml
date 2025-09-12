@@ -25,30 +25,6 @@ model_config:
       - mia
       - zac
       - zoe
-    French:
-      - pierre
-      - amelie
-      - marie
-    German:
-      - jana
-      - thomas
-      - max
-    Korean:
-      - 유나
-      - 준서
-    Hindi:
-      - ऋतिका
-    Mandarin:
-      - 长乐
-      - 白芷
-    Spanish:
-      - javi
-      - sergio
-      - maria
-    Italian:
-      - pietro
-      - giulia
-      - carlo
 author:
   name: Canopy Labs
   url: https://canopylabs.ai
