@@ -3,11 +3,16 @@
   "description": "Example remote task that uses transformerlab-sdk test_script and uploads its directory.",
   "type": "REMOTE",
   "plugin": "remote_orchestrator",
+  "tag": "TRAIN",
   "inputs": {},
   "outputs": {},
   "config": {
-    "command": "python src/test_script.py",
-    "notes": "Files from the task root are staged into a temporary src/ before upload."
+    "cluster_name": "meeting-demo-instance",
+    "command": "python /workspace/workspace/test_script.py",
+    "cpus": "2",
+    "memory": "4",
+    "accelerators": "RTX3090:1",
+    "setup": "uv pip install transformerlab"
   }
 }
 
