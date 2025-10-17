@@ -1,8 +1,0 @@
-[
-  {
-    "name": "Test Script Example",
-    "description": "Runs transformerlab-sdk/test_script.py and uploads its directory to remote.",
-    "tag": "TRAIN"
-  }
-]
-

@@ -35,9 +35,17 @@ def read_and_combine_json_files(directory: str):
     if not os.path.exists(directory):
         return
 
-    # Get all the JSON files in the subdirectories
-    files_json: list[str] = [f for f in os.listdir(
-        path=directory) if (f.endswith('.json') or f.endswith('.yaml'))]
+    # Get JSON/YAML files
+    # Special handling for 'tasks': gather nested task definitions
+    if directory == 'tasks':
+        files_json: list[str] = []
+        for root, _dirs, files in os.walk(directory):
+            for f in files:
+                if f == 'task.json':
+                    files_json.append(os.path.join(root, f))
+    else:
+        files_json: list[str] = [f for f in os.listdir(
+            path=directory) if (f.endswith('.json') or f.endswith('.yaml'))]
     
     # sort the files by name:
     files_json.sort()
@@ -46,17 +54,41 @@ def read_and_combine_json_files(directory: str):
     combined_json = []
 
     for file in files_json:
-        with open(file=os.path.join(directory, file), mode='r') as f:
-            print(f' - Processing {file}')
+        if directory == 'tasks':
+            open_path = file
+            display_name = os.path.relpath(file)
+        else:
+            open_path = os.path.join(directory, file)
+            display_name = file
+        with open(file=open_path, mode='r') as f:
+            print(f' - Processing {display_name}')
             if file.endswith('.yaml'):
                 file_contents = yaml.load(stream=f, Loader=yaml.FullLoader)
             else:
                 file_contents = json.load(fp=f)
 
-            if isinstance(file_contents, list):
-                combined_json.extend(file_contents)
+            if directory == 'tasks':
+                # Transform task definitions into minimal gallery entries
+                if isinstance(file_contents, list):
+                    for task_obj in file_contents:
+                        minimal = {
+                            'name': task_obj.get('name'),
+                            'description': task_obj.get('description'),
+                            'tag': task_obj.get('tag'),
+                        }
+                        combined_json.append(minimal)
+                else:
+                    minimal = {
+                        'name': file_contents.get('name'),
+                        'description': file_contents.get('description'),
+                        'tag': file_contents.get('tag'),
+                    }
+                    combined_json.append(minimal)
             else:
-                combined_json.append(file_contents)
+                if isinstance(file_contents, list):
+                    combined_json.extend(file_contents)
+                else:
+                    combined_json.append(file_contents)
 
     # Validate the combined_json to see if it is valid JSON:
     try:
@@ -66,9 +98,13 @@ def read_and_combine_json_files(directory: str):
         print(f"ERROR: {e}")
         exit(1)
 
-    # Validate the combined_json against the schema
-    schema = json.load(fp=open(file=f'schemas/{directory}.json', mode='r'))
-    validate_json(json=combined_json, schema=schema)
+    # Validate the combined_json against the schema (if present)
+    schema_path = f'schemas/{directory}.json'
+    if os.path.exists(schema_path):
+        schema = json.load(fp=open(file=schema_path, mode='r'))
+        validate_json(json=combined_json, schema=schema)
+    else:
+        print(f"No schema found at {schema_path}; skipping schema validation")
 
     check_for_duplicate_ids(combined_json)
 
@@ -124,3 +160,4 @@ read_and_combine_json_files(directory='plugins')
 read_and_combine_json_files(directory='prompts')
 read_and_combine_json_files(directory='recipes')
 read_and_combine_json_files(directory='exp-recipes')
+read_and_combine_json_files(directory='tasks')
