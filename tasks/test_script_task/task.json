@@ -6,9 +6,8 @@
   "inputs": {},
   "outputs": {},
   "config": {
-    "command": "python -m transformerlab_sdk.test_script",
-    "notes": "This is a sample command; replace with appropriate entrypoint on remote machine."
-  },
-  "upload_dir": "sample script" 
+    "command": "python src/test_script.py",
+    "notes": "Files from the task root are staged into a temporary src/ before upload."
+  }
 }
 
