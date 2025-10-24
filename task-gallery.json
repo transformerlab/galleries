@@ -1,12 +1,14 @@
 [
     {
-        "name": "gpt-oss-lora-train",
-        "description": "Remote task for training gpt-oss-20 with lora that uses transformerlab-sdk.",
+        "id": "gpt-oss-lora",
+        "name": "Train GPT OSS 20B with LoRA",
+        "description": "Remote task for training gpt-oss-20b with LoRA",
         "tag": "TRAIN"
     },
     {
-        "name": "test-script-remote",
-        "description": "Example remote task that uses transformerlab-sdk test_script and uploads its directory.",
+        "id": "test_script_task",
+        "name": "Remote Fake Train",
+        "description": "Example test script for doing a fake train with Transformer Lab",
         "tag": "TRAIN"
     }
 ]

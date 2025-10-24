@@ -69,9 +69,13 @@ def read_and_combine_json_files(directory: str):
 
             if directory == 'tasks':
                 # Transform task definitions into minimal gallery entries
+                # Extract the directory name as the task ID
+                task_dir = os.path.basename(os.path.dirname(open_path))
+                
                 if isinstance(file_contents, list):
                     for task_obj in file_contents:
                         minimal = {
+                            'id': task_dir,
                             'name': task_obj.get('name'),
                             'description': task_obj.get('description'),
                             'tag': task_obj.get('tag'),
@@ -79,6 +83,7 @@ def read_and_combine_json_files(directory: str):
                         combined_json.append(minimal)
                 else:
                     minimal = {
+                        'id': task_dir,
                         'name': file_contents.get('name'),
                         'description': file_contents.get('description'),
                         'tag': file_contents.get('tag'),
