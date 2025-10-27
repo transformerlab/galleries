@@ -1,6 +1,6 @@
 {
-  "name": "test-script-remote",
-  "description": "Example remote task that uses transformerlab-sdk test_script and uploads its directory.",
+  "name": "Remote Fake Train",
+  "description": "Example test script for doing a fake train with Transformer Lab",
   "type": "REMOTE",
   "plugin": "remote_orchestrator",
   "tag": "TRAIN",
