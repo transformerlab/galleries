@@ -10,5 +10,11 @@
         "name": "Remote Fake Train",
         "description": "Example test script for doing a fake train with Transformer Lab",
         "tag": "TRAIN"
+    },
+    {
+        "id": "trl_test_script",
+        "name": "SmolLM Training with Touch Rugby",
+        "description": "Fine-tune SmolLM using the Touch Rugby dataset with Transformer Lab",
+        "tag": "TRAIN"
     }
 ]

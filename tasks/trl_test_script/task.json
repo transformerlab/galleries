@@ -1,0 +1,18 @@
+{
+  "name": "SmolLM Training with Touch Rugby",
+  "description": "Fine-tune SmolLM using the Touch Rugby dataset with Transformer Lab",
+  "type": "REMOTE",
+  "plugin": "remote_orchestrator",
+  "tag": "TRAIN",
+  "inputs": {},
+  "outputs": {},
+  "config": {
+    "cluster_name": "smollm-touch-rugby-cluster",
+    "command": "WANDB_API_KEY=<your_wandb_api_key> python /workspace/workspace/trl_train_script.py",
+    "cpus": "2",
+    "memory": "4",
+    "accelerators": "RTX3090:1",
+    "setup": "uv pip install transformerlab wandb transformers datasets"
+  }
+}
+
