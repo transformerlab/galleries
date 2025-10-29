@@ -404,6 +404,7 @@
     {
         "uniqueID": "Qwen/Qwen2-VL-2B-Instruct",
         "name": "Qwen2-VL-2B-Instruct",
+        "archived": true,
         "description": " Qwen2-VL is the latest iteration of Qwen-VL model",
         "added": "2025-07-24",
         "tags": [
