@@ -4923,6 +4923,7 @@
     {
         "uniqueID": "Qwen/Qwen2.5-7B-Instruct-1M",
         "name": "Qwen2.5 7B Instruct - 1M context",
+        "archived": true,
         "description": "Long-context version of the Qwen2.5 series models, supporting a context length of up to 1M tokens. Compared to the Qwen2.5 128K version, Qwen2.5-1M demonstrates significantly improved performance in handling long-context tasks while maintaining its capability in short tasks.",
         "parameters": "7B",
         "added": "2025-01-28",
