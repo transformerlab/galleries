@@ -52,6 +52,8 @@
           "Qwen2VLForConditionalGeneration",
           "Qwen3ForCausalLM",
           "Qwen3MoeForCausalLM",
+          "Qwen3VLMoeForConditionalGeneration",
+          "Qwen3VLForConditionalGeneration",
           "SmolLM3ForCausalLM",
           "StableDiffusion3Pipeline",
           "StableDiffusionXLPipeline",

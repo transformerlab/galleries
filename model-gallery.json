@@ -404,6 +404,7 @@
     {
         "uniqueID": "Qwen/Qwen2-VL-2B-Instruct",
         "name": "Qwen2-VL-2B-Instruct",
+        "archived": true,
         "description": " Qwen2-VL is the latest iteration of Qwen-VL model",
         "added": "2025-07-24",
         "tags": [
@@ -4894,6 +4895,7 @@
         "uniqueID": "mlx-community/Qwen2.5-14B-Instruct-1M-8bit",
         "name": "Qwen2.5 14B Instruct - 1M context (MLX 8bit)",
         "description": "MLX 8-bit version of the long-context version of Qwen's 2.5 model.",
+        "archived": true,
         "parameters": "14B",
         "added": "2025-01-28",
         "context": "1010000",
@@ -4922,6 +4924,7 @@
     {
         "uniqueID": "Qwen/Qwen2.5-7B-Instruct-1M",
         "name": "Qwen2.5 7B Instruct - 1M context",
+        "archived": true,
         "description": "Long-context version of the Qwen2.5 series models, supporting a context length of up to 1M tokens. Compared to the Qwen2.5 128K version, Qwen2.5-1M demonstrates significantly improved performance in handling long-context tasks while maintaining its capability in short tasks.",
         "parameters": "7B",
         "added": "2025-01-28",
@@ -5341,6 +5344,204 @@
             "paperUrl": "?"
         },
         "model_group": "qwen"
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-VL-8B-Thinking",
+        "name": "Qwen3-VL-8B-Thinking",
+        "description": "8B parameter version of Qwen 3's vision-language model, specifically trained with reasoning capabilities.",
+        "added": "2025-10-29",
+        "tags": [
+            "Multimodal",
+            "Vision"
+        ],
+        "parameters": "8B",
+        "context": "262144",
+        "architecture": "Qwen3VLForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-VL-8B-Thinking",
+        "transformers_version": "4.57.0.dev0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 16731.48652935028,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking",
+            "paperUrl": "?"
+        },
+        "model_group": ""
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-VL-8B-Instruct",
+        "name": "Qwen3-VL-8B-Instruct",
+        "description": "8B parameter version of Qwen 3's vision-language model, without reasoning post-training.",
+        "added": "2025-10-29",
+        "tags": [
+            "Multimodal",
+            "Vision"
+        ],
+        "parameters": "8B",
+        "context": "262144",
+        "architecture": "Qwen3VLForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-VL-8B-Instruct",
+        "transformers_version": "4.57.0.dev0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 16731.486694335938,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+            "paperUrl": "?"
+        },
+        "model_group": ""
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-VL-2B-Instruct",
+        "name": "Qwen3-VL-2B-Instruct",
+        "description": "2B parameter version of Qwen 3's vision-language model, without reasoning post-training",
+        "added": "2025-10-29",
+        "tags": [
+            "Multimodal",
+            "Vision"
+        ],
+        "parameters": "2B",
+        "context": "262144",
+        "architecture": "Qwen3VLForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-VL-2B-Instruct",
+        "transformers_version": "4.57.0.dev0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 4067.390887260437,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+            "paperUrl": "?"
+        },
+        "model_group": ""
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-VL-2B-Thinking",
+        "name": "Qwen3-VL-2B-Thinking",
+        "description": "2B parameter version of Qwen 3's vision-language model, specifically trained with reasoning capabilities.",
+        "added": "2025-10-29",
+        "tags": [
+            "Multimodal",
+            "Vision"
+        ],
+        "parameters": "2B",
+        "context": "262144",
+        "architecture": "Qwen3VLForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-VL-2B-Thinking",
+        "transformers_version": "4.57.0.dev0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 4067.3907175064087,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking",
+            "paperUrl": "?"
+        },
+        "model_group": ""
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-VL-30B-A3B-Thinking",
+        "name": "Qwen3-VL-30B-A3B-Thinking",
+        "description": "30B parameter MoE version of Qwen 3's vision-language model, built on a mixture-of-experts architecture and trained with reasoning capabilities.",
+        "added": "2025-10-29",
+        "tags": [
+            "Multimodal",
+            "Vision"
+        ],
+        "parameters": "30B",
+        "context": "262144",
+        "architecture": "Qwen3VLMoeForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-VL-30B-A3B-Thinking",
+        "transformers_version": "4.57.0.dev0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 59272.31492614746,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking",
+            "paperUrl": "?"
+        },
+        "model_group": ""
+    },
+    {
+        "uniqueID": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+        "name": "Qwen3-VL-30B-A3B-Instruct",
+        "description": "30B parameter MoE version of Qwen 3's vision-language model, built on a mixture-of-experts architecture.",
+        "added": "2025-10-29",
+        "tags": [
+            "Multimodal",
+            "Vision"
+        ],
+        "parameters": "30B",
+        "context": "262144",
+        "architecture": "Qwen3VLMoeForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+        "transformers_version": "4.57.0.dev0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 59272.31508922577,
+        "author": {
+            "name": "Qwen",
+            "url": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
+            "downloadUrl": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
+            "paperUrl": "?"
+        },
+        "model_group": ""
     },
     {
         "uniqueID": "Qwen/Qwen3-30B-A3B",
