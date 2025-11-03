@@ -5,14 +5,80 @@ when wandb is initialized within ML frameworks like TRL.
 """
 
 import os
+import argparse
 from datetime import datetime
 from time import sleep
+from transformers import TrainerCallback, TrainerControl, TrainerState, TrainingArguments
 
 from lab import lab
 
 # Login to huggingface
 from huggingface_hub import login
 login(token=os.getenv("HF_TOKEN"))
+
+
+class LabCallback(TrainerCallback):
+    """Custom callback to update TransformerLab progress and save checkpoints"""
+    
+    def __init__(self):
+        self.training_started = False
+        self.total_steps = None
+        
+    def on_train_begin(self, args: TrainingArguments, state: TrainerState, control: TrainerControl, **kwargs):
+        """Called when training begins"""
+        lab.log("🚀 Training started with HuggingFace Trainer")
+        self.training_started = True
+        if state.max_steps and state.max_steps > 0:
+            self.total_steps = state.max_steps
+        else:
+            # Estimate steps if not provided
+            self.total_steps = 1000
+        
+    def on_step_end(self, args: TrainingArguments, state: TrainerState, control: TrainerControl, **kwargs):
+        """Called after each training step"""
+        if self.total_steps:
+            progress = int((state.global_step / self.total_steps) * 100)
+            progress = min(progress, 95)  # Keep some buffer for final operations
+            lab.update_progress(progress)
+            
+        # Log training metrics if available
+        if state.log_history:
+            latest_log = state.log_history[-1]
+            if "loss" in latest_log:
+                lab.log(f"Step {state.global_step}: loss={latest_log['loss']:.4f}")
+        
+    def on_save(self, args: TrainingArguments, state: TrainerState, control: TrainerControl, **kwargs):
+        """Called when a checkpoint is saved"""
+        lab.log(f"💾 Checkpoint saved at step {state.global_step}")
+        
+        # Attempt to save the checkpoint using lab's checkpoint mechanism
+        if hasattr(args, 'output_dir'):
+            checkpoint_dir = None
+            # Find the most recent checkpoint
+            if os.path.exists(args.output_dir):
+                checkpoints = [d for d in os.listdir(args.output_dir) if d.startswith('checkpoint-')]
+                if checkpoints:
+                    # Sort by checkpoint number
+                    checkpoints.sort(key=lambda x: int(x.split('-')[1]))
+                    latest_checkpoint = checkpoints[-1]
+                    checkpoint_dir = os.path.join(args.output_dir, latest_checkpoint)
+                    
+                    # Save checkpoint to TransformerLab
+                    try:
+                        saved_path = lab.save_checkpoint(checkpoint_dir, f"checkpoint-{state.global_step}")
+                        lab.log(f"✅ Saved checkpoint to TransformerLab: {saved_path}")
+                    except Exception as e:
+                        lab.log(f"⚠️  Could not save checkpoint to TransformerLab: {e}")
+    
+    def on_epoch_end(self, args: TrainingArguments, state: TrainerState, control: TrainerControl, **kwargs):
+        """Called at the end of each epoch"""
+        if state.epoch:
+            lab.log(f"📊 Completed epoch {int(state.epoch)} / {args.num_train_epochs}")
+    
+    def on_train_end(self, args: TrainingArguments, state: TrainerState, control: TrainerControl, **kwargs):
+        """Called when training ends"""
+        lab.log("✅ Training completed successfully")
+        lab.update_progress(95)
 
 
 def train_with_trl(quick_test=True):
@@ -49,8 +115,6 @@ def train_with_trl(quick_test=True):
             "max_steps": 3 if quick_test else -1,  # Limit steps for quick test
             "report_to": ["wandb"],  # Enable wandb reporting in SFTTrainer
             "dataloader_num_workers": 0,  # Avoid multiprocessing issues
-            "remove_unused_columns": False,
-            "push_to_hub": False,
         },
     }
 
@@ -58,6 +122,11 @@ def train_with_trl(quick_test=True):
         # Initialize lab with default/simple API
         lab.init()
         lab.set_config(training_config)
+
+        # Check if we should resume from a checkpoint
+        checkpoint = lab.get_checkpoint_to_resume()
+        if checkpoint:
+            lab.log(f"📁 Resuming training from checkpoint: {checkpoint}")
 
         # Log start time
         start_time = datetime.now()
@@ -99,17 +168,17 @@ def train_with_trl(quick_test=True):
         lab.log("Loading model and tokenizer...")
         try:
             from transformers import AutoTokenizer, AutoModelForCausalLM
-            
+
             model_name = training_config["model_name"]
             tokenizer = AutoTokenizer.from_pretrained(model_name)
             model = AutoModelForCausalLM.from_pretrained(model_name)
-            
+
             # Add pad token if it doesn't exist
             if tokenizer.pad_token is None:
                 tokenizer.pad_token = tokenizer.eos_token
             
             lab.log(f"Loaded model: {model_name}")
-            
+
         except ImportError:
             lab.log("⚠️  Transformers not available, skipping real training")
             lab.finish("Training skipped - transformers not available")
@@ -126,7 +195,7 @@ def train_with_trl(quick_test=True):
         try:
             from trl import SFTTrainer, SFTConfig
             
-            # SFTConfig with wandb reporting
+            # SFTConfig with wandb reporting and automatic checkpoint saving
             training_args = SFTConfig(
                 output_dir=training_config["output_dir"],
                 num_train_epochs=training_config["_config"]["num_train_epochs"],
@@ -144,33 +213,29 @@ def train_with_trl(quick_test=True):
                 remove_unused_columns=False,
                 push_to_hub=False,
                 dataset_text_field="text",  # Move dataset_text_field to SFTConfig
+                resume_from_checkpoint=checkpoint if checkpoint else None,
+                bf16=False,  # Disable bf16 for compatibility with older GPUs
+                # Enable automatic checkpoint saving
+                save_total_limit=3,  # Keep only the last 3 checkpoints to save disk space
+                save_strategy="steps",  # Save checkpoints every save_steps
+                load_best_model_at_end=False,
             )
             
-            # Create SFTTrainer - this will initialize wandb if report_to includes "wandb"
+            # Create custom callback for TransformerLab integration
+            transformerlab_callback = LabCallback()
+            
             trainer = SFTTrainer(
                 model=model,
                 args=training_args,
                 train_dataset=dataset["train"],
                 processing_class=tokenizer,
+                callbacks=[transformerlab_callback],  # Add our custom callback
             )
             
             lab.log("✅ SFTTrainer created - wandb should be initialized automatically!")
             lab.log("🔍 Checking for wandb URL detection...")
             
-        except ImportError:
-            lab.log("⚠️  TRL not available, using basic training simulation")
-            # Simulate wandb initialization for testing
-            try:
-                import wandb
-                if wandb.run is None:
-                    wandb.init(
-                        project="transformerlab-trl-test",
-                        name=f"trl-sim-{lab.job.id}",
-                        config=training_config["_config"]
-                    )
-                    lab.log("✅ Simulated wandb initialization for testing")
-            except Exception:
-                pass
+
         except Exception as e:
             lab.log(f"Error setting up SFTTrainer: {e}")
             lab.finish("Training failed - trainer setup error")
@@ -182,37 +247,20 @@ def train_with_trl(quick_test=True):
         if quick_test:
             lab.log("🚀 Quick test mode: Initializing SFTTrainer and testing wandb detection...")
         else:
-            lab.log("Starting training with SFTTrainer...")
+            lab.log("Starting training...")
             
         try:
             if 'trainer' in locals():
                 # Real training with SFTTrainer
                 if quick_test:
-                    lab.log("✅ SFTTrainer initialized successfully - testing wandb detection...")
+                    lab.log("✅ SFTTrainer initialized successfully...")
                     # Just test that wandb is initialized, don't actually train
                     lab.log("Quick test: Skipping actual training, just testing wandb URL detection")
                 else:
+                    # Training will automatically save checkpoints via the callback
                     trainer.train()
                     lab.log("✅ Training completed with SFTTrainer")
                     
-                    # Save checkpoints and artifacts after full training
-                    lab.log("Saving training checkpoints and artifacts...")
-                    
-                    # Create 5 fake checkpoints to simulate training progression
-                    for epoch in range(1, 6):
-                        checkpoint_file = os.path.join(training_config["output_dir"], f"checkpoint_epoch_{epoch}.txt")
-                        with open(checkpoint_file, "w") as f:
-                            f.write(f"Training checkpoint for epoch {epoch}\n")
-                            f.write(f"Model state: epoch_{epoch}\n")
-                            f.write(f"Loss: {0.5 - epoch * 0.08:.3f}\n")
-                            f.write(f"Accuracy: {0.6 + epoch * 0.08:.3f}\n")
-                            f.write(f"Timestamp: {datetime.now()}\n")
-                            f.write(f"Training step: {epoch * 100}\n")
-                            f.write(f"Learning rate: {training_config['_config']['lr']}\n")
-                        
-                        # Save checkpoint using lab facade
-                        saved_checkpoint_path = lab.save_checkpoint(checkpoint_file, f"epoch_{epoch}_checkpoint.txt")
-                        lab.log(f"Saved checkpoint: {saved_checkpoint_path}")
                     
                     # Create 2 additional artifacts for full training
                     # Artifact 1: Training progress summary
@@ -400,15 +448,18 @@ def train_with_trl(quick_test=True):
 
 
 if __name__ == "__main__":
-    import sys
     
-    # Check if user wants full training or quick test
-    quick_test = False # Default to quick test
-    if len(sys.argv) > 1 and sys.argv[1] == "--quick-training":
-        quick_test = True
+    parser = argparse.ArgumentParser(description="Train a model with automatic checkpoint resume support.")
+    parser.add_argument("--quick-training", action="store_true", help="Run in quick test mode")
+    
+    args = parser.parse_args()
+    
+    quick_test = args.quick_training
+    
+    if quick_test:
         print("🚀 Running quick test mode...")
     else:
-        print("🚀 Running full training mode (use --quick-training for quick test)...")
-    
+        print("🚀 Running full training mode...")
+
     result = train_with_trl(quick_test=quick_test)
     print("Training result:", result)
