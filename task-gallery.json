@@ -6,6 +6,12 @@
         "tag": "TRAIN"
     },
     {
+        "id": "orpheus-audio-training",
+        "name": "Train Orpheus Audio Model",
+        "description": "Remote task for fine-tuning Orpheus TTS (Text-to-Speech) models with custom voice datasets",
+        "tag": "TRAIN"
+    },
+    {
         "id": "test_script_task",
         "name": "Remote Fake Train",
         "description": "Example test script for doing a fake train with Transformer Lab",
