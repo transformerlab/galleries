@@ -1,0 +1,14 @@
+{
+  "name": "Train Orpheus Audio Model",
+  "description": "Remote task for fine-tuning Orpheus TTS (Text-to-Speech) models with custom voice datasets",
+  "type": "REMOTE",
+  "plugin": "remote_orchestrator",
+  "tag": "TRAIN",
+  "inputs": {},
+  "outputs": {},
+  "config": {
+    "command": "python ~/orpheus-audio-training/orpheus-audio-training/train.py --model_id unsloth/orpheus-3b-0.1-ft --dataset_id MrDragonFox/Elise --max_steps 100 --save_steps 20",
+    "accelerators": "A100-80GB:1",
+    "setup": "pip install torch && pip install unsloth && pip install 'transformers>=4.55.0' && pip install 'trl>=0.20.0' && pip install datasets && pip install xformers && pip install transformerlab"
+  }
+}
