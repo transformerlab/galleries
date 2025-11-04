@@ -9,6 +9,6 @@
   "config": {
     "command": "python ~/orpheus-audio-training/orpheus-audio-training/train.py --model_id unsloth/orpheus-3b-0.1-ft --dataset_id MrDragonFox/Elise --max_steps 100 --save_steps 20",
     "accelerators": "A100-80GB:1",
-    "setup": "conda install -c conda-forge ffmpeg -y && pip install torch unsloth transformers trl datasets transformerlab wandb librosa soundfile torchcodec"
+    "setup": "pip install unsloth snac transformerlab wandb datasets==3.6.0 librosa soundfile"
   }
 }
