@@ -9,6 +9,7 @@ import os
 import json
 from datetime import datetime
 from transformers import TrainerCallback, TrainingArguments
+import gc
 
 from lab import lab
 
@@ -64,6 +65,15 @@ class TransformerLabCallback(TrainerCallback):
 def main():
     """Main training function with TransformerLab SDK integration"""
     
+    # Clear GPU cache at start
+    gc.collect()
+    try:
+        import torch
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+    except:
+        pass
+    
     # Parse command line arguments
     parser = argparse.ArgumentParser(
         description="Fine-tune Orpheus TTS model on custom voice dataset")
@@ -77,6 +87,11 @@ def main():
         type=str,
         default="MrDragonFox/Elise",
         help="The dataset ID to use for training (default: MrDragonFox/Elise)")
+    parser.add_argument(
+        "--max_dataset_samples",
+        type=int,
+        default=None,
+        help="Maximum number of dataset samples to use (default: None, use full dataset)")
     parser.add_argument(
         "--gradient_accumulation_steps",
         type=int,
@@ -115,8 +130,8 @@ def main():
     parser.add_argument(
         "--max_seq_length",
         type=int,
-        default=2048,
-        help="Maximum sequence length (default: 2048)")
+        default=1024,
+        help="Maximum sequence length (default: 1024)")
     parser.add_argument(
         "--warmup_steps",
         type=int,
@@ -124,6 +139,7 @@ def main():
         help="Number of warmup steps (default: 5)")
     args = parser.parse_args()
     
+    checkpoint = None
     try:
         # Initialize TransformerLab SDK
         lab.init()
@@ -180,8 +196,8 @@ def main():
         import torch
         
         # Auto-detect dtype
-        dtype = None  # None for auto detection
-        load_in_4bit = False  # Use 16-bit for better audio quality
+        dtype = None
+        load_in_4bit = True
         
         model, tokenizer = FastLanguageModel.from_pretrained(
             model_name=args.model_id,
@@ -208,7 +224,11 @@ def main():
         dataset = load_dataset(args.dataset_id, split="train")
         lab.log(f"Loaded dataset with {len(dataset)} samples")
         
-        # Ensure all audio is at 24 kHz sampling rate (Orpheus's expected rate)
+        if args.max_dataset_samples is not None and len(dataset) > args.max_dataset_samples:
+            dataset = dataset.select(range(args.max_dataset_samples))
+            lab.log(f"⚠️ Limited dataset to {args.max_dataset_samples} samples to save memory")
+        
+        # Ensure all audio is at 24 kHz sampling rate
         if "audio" in dataset.column_names:
             dataset = dataset.cast_column("audio", Audio(sampling_rate=24000))
             lab.log("✅ Dataset audio resampled to 24kHz")
@@ -226,18 +246,18 @@ def main():
     try:
         model = FastLanguageModel.get_peft_model(
             model,
-            r=16,  # LoRA rank
+            r=4,
             target_modules=[
                 "q_proj", "k_proj", "v_proj", "o_proj",
                 "gate_proj", "up_proj", "down_proj"
             ],
-            lora_alpha=16,
-            lora_dropout=0,  # Supports any, but = 0 is optimized
-            bias="none",     # Supports any, but = "none" is optimized
-            use_gradient_checkpointing="unsloth",  # True or "unsloth" for very long context
+            lora_alpha=8,
+            lora_dropout=0,
+            bias="none",
+            use_gradient_checkpointing="unsloth",
             random_state=3407,
-            use_rslora=False,  # Support rank stabilized LoRA
-            loftq_config=None,  # And LoftQ
+            use_rslora=False,
+            loftq_config=None,
         )
         
         lab.log("✅ LoRA configuration applied")
