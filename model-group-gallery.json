@@ -2514,7 +2514,7 @@
             },
             {
                 "uniqueID": "openai/gpt-oss-safeguard-20b",
-                "name": "gpt-oss-safeguard-20b",
+                "name": "OpenAI GPT OSS Safeguard 20B",
                 "description": "A smaller, lower-latency 21B-parameter variant (with 3.6B active parameters) of gpt-oss-safeguard optimized for efficient, real-time safety reasoning and content moderation tasks.",
                 "added": "2025-11-04",
                 "tags": [],
@@ -2544,7 +2544,7 @@
             },
             {
                 "uniqueID": "openai/gpt-oss-safeguard-120b",
-                "name": "gpt-oss-safeguard-120b",
+                "name": "OpenAI GPT OSS Safeguard 120B",
                 "description": "A 117B-parameter safety reasoning model (with 5.1B active parameters) built on gpt-oss, designed for advanced policy-based content classification and Trust & Safety applications, optimized to run on a single H100 GPU.",
                 "added": "2025-11-04",
                 "tags": [],
