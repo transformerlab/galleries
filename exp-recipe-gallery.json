@@ -162,36 +162,7 @@
                 "inputs_json": "{}"
             }
         ],
-        "workflows": [
-            {
-                "name": "eval-on-common-benchmarks",
-                "config": {
-                    "nodes": [
-                        {
-                            "type": "START",
-                            "id": "99b97abd-82de-4745-b64a-6540801261c1",
-                            "name": "START",
-                            "out": [
-                                "06334a95-01c4-4ece-82fc-9a107a4036e2"
-                            ]
-                        },
-                        {
-                            "name": "Eval on Harness Benchmarks",
-                            "task": "EvalOnCommonBenchmarks",
-                            "type": "EVAL",
-                            "metadata": {
-                                "position": {
-                                    "x": -75,
-                                    "y": 105
-                                }
-                            },
-                            "id": "06334a95-01c4-4ece-82fc-9a107a4036e2",
-                            "out": []
-                        }
-                    ]
-                }
-            }
-        ],
+        "workflows": [],
         "cardImage": "https://recipes.transformerlab.net/radialchart.png"
     },
     {
@@ -222,43 +193,14 @@
                 "inputs_json": "{}"
             }
         ],
-        "workflows": [
-            {
-                "name": "evaluate-on-common-benchmarks",
-                "config": {
-                    "nodes": [
-                        {
-                            "type": "START",
-                            "id": "bc9dc3a4-afba-4956-a55f-bd51e96da24f",
-                            "name": "START",
-                            "out": [
-                                "009309fa-1ed5-42bc-be5d-b84e32772bf1"
-                            ]
-                        },
-                        {
-                            "name": "EVAL HARNESS",
-                            "task": "KindMoose",
-                            "type": "EVAL",
-                            "metadata": {
-                                "position": {
-                                    "x": -60,
-                                    "y": 75
-                                }
-                            },
-                            "id": "009309fa-1ed5-42bc-be5d-b84e32772bf1",
-                            "out": []
-                        }
-                    ]
-                }
-            }
-        ],
+        "workflows": [],
         "cardImage": "https://recipes.transformerlab.net/radialchart.png"
     },
     {
         "id": "fine_tune_small_mlx",
         "title": "Fine Tune a Small Language Model using MLX",
         "description": "Train a Llama 3.2 1B model to understand and answer questions about Touch Rugby rules using the MLX framework. Perfect for rule-based question answering.",
-        "notes": "# What This Recipe Does\n\nThis recipe compares a base model's performance before and after fine-tuning on touch rugby data using MLX (optimized for Apple Silicon):\n\n1. **Generate Base Model Outputs** - Creates responses using the original model\n2. **Evaluate Base Model** - Measures quality using ROUGE scores\n3. **Fine-tune with LoRA** - Trains the model on touch rugby rules using MLX framework\n4. **Generate Fine-tuned Outputs** - Creates responses using the trained adaptor\n5. **Evaluate Fine-tuned Model** - Measures improved quality\n\n## How to Use\n1. Go to the **Workflows** tab and run the \"fine_tune_model\" workflow\n2. Wait for all steps to complete\n3. Switch to the **Evaluate** tab to see the comparison results\n\n## What You'll Learn\n- How much fine-tuning improves performance on your specific domain\n- The difference between base model and fine-tuned model outputs\n- Benefits of using MLX for efficient training on Apple Silicon",
+        "notes": "# What This Recipe Does\n\nThis recipe compares a base model's performance before and after fine-tuning on touch rugby data using MLX (optimized for Apple Silicon):\n\n1. **Generate Base Model Outputs** - Creates responses using the original model\n2. **Evaluate Base Model** - Measures quality using ROUGE scores\n3. **Fine-tune with LoRA** - Trains the model on touch rugby rules using MLX framework\n4. **Generate Fine-tuned Outputs** - Creates responses using the trained adaptor\n5. **Evaluate Fine-tuned Model** - Measures improved quality\n\n## How to Use\n1. Go to the **Generate** tab to create base model outputs\n2. Go to the **Evaluate** tab to evaluate the base model\n3. Go to the **Train** tab to fine-tune with LoRA\n4. Go to the **Generate** tab to create fine-tuned outputs\n5. Go to the **Evaluate** tab to see the comparison results\n\n## What You'll Learn\n- How much fine-tuning improves performance on your specific domain\n- The difference between base model and fine-tuned model outputs\n- Benefits of using MLX for efficient training on Apple Silicon",
         "requiredMachineArchitecture": [
             "mlx"
         ],
@@ -330,109 +272,14 @@
                 "inputs_json": "{}"
             }
         ],
-        "workflows": [
-            {
-                "name": "fine_tune_model",
-                "config": {
-                    "nodes": [
-                        {
-                            "type": "START",
-                            "id": "c2a75b7e-ed71-40d6-ad35-e4dffc9f22f0",
-                            "name": "START",
-                            "out": [
-                                "0f143d9a-0abe-4fbf-8254-d423b283ee64"
-                            ],
-                            "metadata": {
-                                "position": {
-                                    "x": -15,
-                                    "y": -180
-                                }
-                            }
-                        },
-                        {
-                            "name": "GenerateBaseOutputs",
-                            "task": "BaseModelOutputs",
-                            "type": "GENERATE",
-                            "metadata": {
-                                "position": {
-                                    "x": -75,
-                                    "y": -105
-                                }
-                            },
-                            "id": "0f143d9a-0abe-4fbf-8254-d423b283ee64",
-                            "out": [
-                                "9d107acd-3815-4b45-b87b-d52e249a3799"
-                            ]
-                        },
-                        {
-                            "name": "EvalBaseOutputs",
-                            "task": "BaseModelEvals",
-                            "type": "EVAL",
-                            "metadata": {
-                                "position": {
-                                    "x": -75,
-                                    "y": 30
-                                }
-                            },
-                            "id": "9d107acd-3815-4b45-b87b-d52e249a3799",
-                            "out": [
-                                "5c04dd3b-4e3e-47a2-bfdb-e97bf003b357"
-                            ]
-                        },
-                        {
-                            "name": "TrainLoRA",
-                            "task": "TouchRugby",
-                            "type": "TRAIN",
-                            "metadata": {
-                                "position": {
-                                    "x": -75,
-                                    "y": 165
-                                }
-                            },
-                            "id": "5c04dd3b-4e3e-47a2-bfdb-e97bf003b357",
-                            "out": [
-                                "3d60693d-88be-4f38-bf51-415d6a68d709"
-                            ]
-                        },
-                        {
-                            "name": "GenerateFineTunedOutputs",
-                            "task": "FinedTunedModelOutputs",
-                            "type": "GENERATE",
-                            "metadata": {
-                                "position": {
-                                    "x": -90,
-                                    "y": 315
-                                }
-                            },
-                            "id": "3d60693d-88be-4f38-bf51-415d6a68d709",
-                            "out": [
-                                "4ef42b37-fb9a-480e-b056-47e25584f7cd"
-                            ]
-                        },
-                        {
-                            "name": "EvalFineTuned",
-                            "task": "FineTunedOutputs",
-                            "type": "EVAL",
-                            "metadata": {
-                                "position": {
-                                    "x": -75,
-                                    "y": 465
-                                }
-                            },
-                            "id": "4ef42b37-fb9a-480e-b056-47e25584f7cd",
-                            "out": []
-                        }
-                    ]
-                }
-            }
-        ],
+        "workflows": [],
         "cardImage": "https://images.unsplash.com/photo-1558151507-c1aa3d917dbb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": "fine_tune_existing_model",
         "title": "Fine-tune an Existing Model",
         "description": "Adapt a pre-trained model to your specific needs using LoRA. Save time and resources by leveraging existing knowledge.",
-        "notes": "# What This Recipe Does\n\nThis recipe compares a base model's performance before and after fine-tuning on touch rugby data:\n\n1. **Generate Base Model Outputs** - Creates responses using the original model\n2. **Evaluate Base Model** - Measures quality using ROUGE scores\n3. **Fine-tune with LoRA** - Trains the model on touch rugby rules (efficient training method)\n4. **Generate Fine-tuned Outputs** - Creates responses using the trained adaptor\n5. **Evaluate Fine-tuned Model** - Measures improved quality\n\n## How to Use\n1. Go to the **Workflows** tab and run the \"fine_tune_model\" workflow\n2. Wait for all steps to complete\n3. Switch to the **Evaluate** tab to see the comparison results\n\n## What You'll Learn\n- How much fine-tuning improves performance on your specific domain\n- The difference between base model and fine-tuned model outputs",
+        "notes": "# What This Recipe Does\n\nThis recipe compares a base model's performance before and after fine-tuning on touch rugby data:\n\n1. **Generate Base Model Outputs** - Creates responses using the original model\n2. **Evaluate Base Model** - Measures quality using ROUGE scores\n3. **Fine-tune with LoRA** - Trains the model on touch rugby rules (efficient training method)\n4. **Generate Fine-tuned Outputs** - Creates responses using the trained adaptor\n5. **Evaluate Fine-tuned Model** - Measures improved quality\n\n## How to Use\n1. Go to the **Generate** tab to create base model outputs\n2. Go to the **Evaluate** tab to evaluate the base model\n3. Go to the **Train** tab to fine-tune with LoRA\n4. Go to the **Generate** tab to create fine-tuned outputs\n5. Go to the **Evaluate** tab to see the comparison results\n\n## What You'll Learn\n- How much fine-tuning improves performance on your specific domain\n- The difference between base model and fine-tuned model outputs",
         "requiredMachineArchitecture": [
             "cuda",
             "amd"
@@ -504,102 +351,7 @@
                 "inputs_json": "{}"
             }
         ],
-        "workflows": [
-            {
-                "name": "fine_tune_model",
-                "config": {
-                    "nodes": [
-                        {
-                            "type": "START",
-                            "id": "b157b5ea-8778-486a-a94f-fef2cad1d07b",
-                            "name": "START",
-                            "out": [
-                                "1b290a1e-aab3-494c-9502-dff4460db4b7"
-                            ],
-                            "metadata": {
-                                "position": {
-                                    "x": -30,
-                                    "y": -150
-                                }
-                            }
-                        },
-                        {
-                            "name": "GenerateBaseOutputs",
-                            "task": "BaseModelOutputs",
-                            "type": "GENERATE",
-                            "metadata": {
-                                "position": {
-                                    "x": -90,
-                                    "y": -75
-                                }
-                            },
-                            "id": "1b290a1e-aab3-494c-9502-dff4460db4b7",
-                            "out": [
-                                "6e5ade62-1163-4e60-9fe5-38ed36adc6a9"
-                            ]
-                        },
-                        {
-                            "name": "EvalBaseOutputs",
-                            "task": "EvalBaseModel",
-                            "type": "EVAL",
-                            "metadata": {
-                                "position": {
-                                    "x": -90,
-                                    "y": 45
-                                }
-                            },
-                            "id": "6e5ade62-1163-4e60-9fe5-38ed36adc6a9",
-                            "out": [
-                                "969ef1ac-0e66-4f72-85a9-c4a9d08fa0fc"
-                            ]
-                        },
-                        {
-                            "name": "TrainTouchRugbyRules",
-                            "task": "BrilliantBaboon",
-                            "type": "TRAIN",
-                            "metadata": {
-                                "position": {
-                                    "x": -90,
-                                    "y": 195
-                                }
-                            },
-                            "id": "969ef1ac-0e66-4f72-85a9-c4a9d08fa0fc",
-                            "out": [
-                                "53d4a815-6ef8-47cd-b341-24ae233c4c04"
-                            ]
-                        },
-                        {
-                            "name": "GenerateTrainedAdaptorOutputs",
-                            "task": "TrainedAdaptorOutputs",
-                            "type": "GENERATE",
-                            "metadata": {
-                                "position": {
-                                    "x": -105,
-                                    "y": 330
-                                }
-                            },
-                            "id": "53d4a815-6ef8-47cd-b341-24ae233c4c04",
-                            "out": [
-                                "1e4e9270-4ac8-4870-a6e4-21fe04684f51"
-                            ]
-                        },
-                        {
-                            "name": "EvalTrainedAdaptor",
-                            "task": "EvalFineTunedRugby",
-                            "type": "EVAL",
-                            "metadata": {
-                                "position": {
-                                    "x": -90,
-                                    "y": 480
-                                }
-                            },
-                            "id": "1e4e9270-4ac8-4870-a6e4-21fe04684f51",
-                            "out": []
-                        }
-                    ]
-                }
-            }
-        ],
+        "workflows": [],
         "cardImage": "https://images.unsplash.com/photo-1561375996-8bbec3f2a481?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
@@ -676,7 +428,7 @@
         "id": "quantize_model",
         "title": "Quantize a Model",
         "description": "Optimize your model for faster inference and reduced size using quantization tools.",
-        "notes": "# Model Quantization\n\nThis recipe quantizes a model to reduce its size and improve inference speed while maintaining performance.\n\n## How to Use\nTo get a quantized model, simply go to the **Workflows** tab and run the `quantize-a-model-to-gguf` workflow. Once it is complete, you can go to the Model Zoo -> Generated to see your newly generated model.\n\n## What it does\n- Converts your model to GGUF format with q8_0 quantization\n- Reduces model size for faster loading\n- Maintains good performance with minimal accuracy loss",
+        "notes": "# Model Quantization\n\nThis recipe quantizes a model to reduce its size and improve inference speed while maintaining performance.\n\n## How to Use\nTo get a quantized model, simply go to the **Export** tab and run the export task. Once it is complete, you can go to the **Model Zoo** -> **Generated** to see your newly generated model.\n\n## What it does\n- Converts your model to GGUF format with q8_0 quantization\n- Reduces model size for faster loading\n- Maintains good performance with minimal accuracy loss",
         "requiredMachineArchitecture": [
             "mlx",
             "cuda"
@@ -700,42 +452,7 @@
                 "inputs_json": "{\"input_model_id\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_path\":\"unsloth/Llama-3.2-1B-Instruct\",\"input_model_architecture\":\"LlamaForCausalLM\",\"plugin_name\":\"gguf_exporter\",\"plugin_architecture\":\"GGUF\"}"
             }
         ],
-        "workflows": [
-            {
-                "name": "quantize-a-model-to-gguf",
-                "config": {
-                    "nodes": [
-                        {
-                            "type": "START",
-                            "id": "c7d71d3e-98e2-4cd7-9c7a-dc749f2e5988",
-                            "name": "START",
-                            "out": [
-                                "05b76236-0e85-4da3-a0f1-06dc36055179"
-                            ],
-                            "metadata": {
-                                "position": {
-                                    "x": -15,
-                                    "y": -120
-                                }
-                            }
-                        },
-                        {
-                            "name": "ExportTask",
-                            "task": "ExportGGUFTask",
-                            "type": "EXPORT",
-                            "metadata": {
-                                "position": {
-                                    "x": -45,
-                                    "y": 15
-                                }
-                            },
-                            "id": "05b76236-0e85-4da3-a0f1-06dc36055179",
-                            "out": []
-                        }
-                    ]
-                }
-            }
-        ],
+        "workflows": [],
         "cardImage": "https://recipes.transformerlab.net/quantization.png"
     },
     {
