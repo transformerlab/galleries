@@ -15,7 +15,7 @@
     "transformers_version": "4.57.0.dev0",
     "gated": false,
     "license": "apache-2.0",
-    "logo": "A 117B-parameter safety reasoning model (with 5.1B active parameters) built on gpt-oss, designed for advanced policy-based content classification and Trust & Safety applications, optimized to run on a single H100 GPU.",
+    "logo": "https://gallery.transformerlab.net/openai_logo.png",
     "size_of_model_in_mb": 13150.448954582214,
     "author": {
       "name": "openai",
@@ -32,7 +32,7 @@
   {
     "uniqueID": "openai/gpt-oss-safeguard-120b",
     "name": "gpt-oss-safeguard-120b",
-    "description": "",
+    "description": "A 117B-parameter safety reasoning model (with 5.1B active parameters) built on gpt-oss, designed for advanced policy-based content classification and Trust & Safety applications, optimized to run on a single H100 GPU.",
     "added": "2025-11-04",
     "tags": [],
     "parameters": "120B",
@@ -45,7 +45,7 @@
     "transformers_version": "4.57.0.dev0",
     "gated": false,
     "license": "apache-2.0",
-    "logo": "",
+    "logo": "https://gallery.transformerlab.net/openai_logo.png",
     "size_of_model_in_mb": 62252.84565162659,
     "author": {
       "name": "openai",
