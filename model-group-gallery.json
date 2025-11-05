@@ -7373,6 +7373,66 @@
                 "model_group": "OpenAI GPT OSS"
             },
             {
+                "uniqueID": "openai/gpt-oss-safeguard-20b",
+                "name": "OpenAI GPT OSS Safeguard 20B",
+                "description": "A smaller, lower-latency 21B-parameter variant (with 3.6B active parameters) of gpt-oss-safeguard optimized for efficient, real-time safety reasoning and content moderation tasks.",
+                "added": "2025-11-04",
+                "tags": [],
+                "parameters": "20B",
+                "context": "131072",
+                "architecture": "GptOssForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "openai/gpt-oss-safeguard-20b",
+                "transformers_version": "4.57.0.dev0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://gallery.transformerlab.net/openai_logo.png",
+                "size_of_model_in_mb": 13150.448954582214,
+                "author": {
+                    "name": "openai",
+                    "url": "https://huggingface.co/openai/gpt-oss-safeguard-20b",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/openai/gpt-oss-safeguard-20b",
+                    "downloadUrl": "https://huggingface.co/openai/gpt-oss-safeguard-20b",
+                    "paperUrl": "?"
+                },
+                "model_group": "OpenAI GPT OSS"
+            },
+            {
+                "uniqueID": "openai/gpt-oss-safeguard-120b",
+                "name": "OpenAI GPT OSS Safeguard 120B",
+                "description": "A 117B-parameter safety reasoning model (with 5.1B active parameters) built on gpt-oss, designed for advanced policy-based content classification and Trust & Safety applications, optimized to run on a single H100 GPU.",
+                "added": "2025-11-04",
+                "tags": [],
+                "parameters": "120B",
+                "context": "131072",
+                "architecture": "GptOssForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "openai/gpt-oss-safeguard-120b",
+                "transformers_version": "4.57.0.dev0",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "https://gallery.transformerlab.net/openai_logo.png",
+                "size_of_model_in_mb": 62252.84565162659,
+                "author": {
+                    "name": "openai",
+                    "url": "https://huggingface.co/openai/gpt-oss-safeguard-120b",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/openai/gpt-oss-safeguard-120b",
+                    "downloadUrl": "https://huggingface.co/openai/gpt-oss-safeguard-120b",
+                    "paperUrl": "?"
+                },
+                "model_group": "OpenAI GPT OSS"
+            },
+            {
                 "uniqueID": "openai/gpt-oss-20b",
                 "name": "OpenAI GPT-OSS 20B",
                 "description": "Open Source 20B parameter GPT model from OpenAI",
