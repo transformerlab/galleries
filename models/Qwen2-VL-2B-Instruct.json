@@ -27,5 +27,5 @@
     "downloadUrl": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
     "paperUrl": "?"
   },
-  "model_group": "qwen"
+  "model_group": "Qwen VL"
 }
