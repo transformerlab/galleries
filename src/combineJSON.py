@@ -139,6 +139,15 @@ def read_and_combine_json_files(directory: str):
                     except Exception as e:
                         print(f"ERROR: Error reading model group {file}: {e}")
 
+        # Check for blank model_group and error out
+        for model in combined_json:
+            group_name = model.get("model_group")
+            if not group_name or group_name.strip() == "":
+                model_name = model.get('name', 'Unknown')
+                model_id = model.get('id', model.get('uniqueID', 'Unknown'))
+                print(f"ERROR: ‼️ Model '{model_name}' (ID: {model_id}) has a blank or missing 'model_group' field")
+                exit(1)
+        
         # Assign models to their group
         for model in combined_json:
             group_name = model.get("model_group")
