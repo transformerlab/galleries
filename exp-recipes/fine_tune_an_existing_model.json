@@ -2,7 +2,7 @@
   "id": "fine_tune_existing_model",
   "title": "Fine-tune an Existing Model",
   "description": "Adapt a pre-trained model to your specific needs using LoRA. Save time and resources by leveraging existing knowledge.",
-  "notes": "# What This Recipe Does\n\nThis recipe compares a base model's performance before and after fine-tuning on touch rugby data:\n\n1. **Generate Base Model Outputs** - Creates responses using the original model\n2. **Evaluate Base Model** - Measures quality using ROUGE scores\n3. **Fine-tune with LoRA** - Trains the model on touch rugby rules (efficient training method)\n4. **Generate Fine-tuned Outputs** - Creates responses using the trained adaptor\n5. **Evaluate Fine-tuned Model** - Measures improved quality\n\n## How to Use\n1. Go to the **Workflows** tab and run the \"fine_tune_model\" workflow\n2. Wait for all steps to complete\n3. Switch to the **Evaluate** tab to see the comparison results\n\n## What You'll Learn\n- How much fine-tuning improves performance on your specific domain\n- The difference between base model and fine-tuned model outputs",
+  "notes": "# What This Recipe Does\n\nThis recipe compares a base model's performance before and after fine-tuning on touch rugby data:\n\n1. **Generate Base Model Outputs** - Creates responses using the original model\n2. **Evaluate Base Model** - Measures quality using ROUGE scores\n3. **Fine-tune with LoRA** - Trains the model on touch rugby rules (efficient training method)\n4. **Generate Fine-tuned Outputs** - Creates responses using the trained adaptor\n5. **Evaluate Fine-tuned Model** - Measures improved quality\n\n## How to Use\n1. Go to the **Generate** tab to create base model outputs\n2. Go to the **Evaluate** tab to evaluate the base model\n3. Go to the **Train** tab to fine-tune with LoRA\n4. Go to the **Generate** tab to create fine-tuned outputs\n5. Go to the **Evaluate** tab to see the comparison results\n\n## What You'll Learn\n- How much fine-tuning improves performance on your specific domain\n- The difference between base model and fine-tuned model outputs",
   "requiredMachineArchitecture": [
     "cuda", "amd"
   ],
@@ -73,101 +73,6 @@
       "inputs_json": "{}"
     }
   ],
-  "workflows": [
-    {
-      "name": "fine_tune_model",
-      "config": {
-        "nodes": [
-          {
-            "type": "START",
-            "id": "b157b5ea-8778-486a-a94f-fef2cad1d07b",
-            "name": "START",
-            "out": [
-              "1b290a1e-aab3-494c-9502-dff4460db4b7"
-            ],
-            "metadata": {
-              "position": {
-                "x": -30,
-                "y": -150
-              }
-            }
-          },
-          {
-            "name": "GenerateBaseOutputs",
-            "task": "BaseModelOutputs",
-            "type": "GENERATE",
-            "metadata": {
-              "position": {
-                "x": -90,
-                "y": -75
-              }
-            },
-            "id": "1b290a1e-aab3-494c-9502-dff4460db4b7",
-            "out": [
-              "6e5ade62-1163-4e60-9fe5-38ed36adc6a9"
-            ]
-          },
-          {
-            "name": "EvalBaseOutputs",
-            "task": "EvalBaseModel",
-            "type": "EVAL",
-            "metadata": {
-              "position": {
-                "x": -90,
-                "y": 45
-              }
-            },
-            "id": "6e5ade62-1163-4e60-9fe5-38ed36adc6a9",
-            "out": [
-              "969ef1ac-0e66-4f72-85a9-c4a9d08fa0fc"
-            ]
-          },
-          {
-            "name": "TrainTouchRugbyRules",
-            "task": "BrilliantBaboon",
-            "type": "TRAIN",
-            "metadata": {
-              "position": {
-                "x": -90,
-                "y": 195
-              }
-            },
-            "id": "969ef1ac-0e66-4f72-85a9-c4a9d08fa0fc",
-            "out": [
-              "53d4a815-6ef8-47cd-b341-24ae233c4c04"
-            ]
-          },
-          {
-            "name": "GenerateTrainedAdaptorOutputs",
-            "task": "TrainedAdaptorOutputs",
-            "type": "GENERATE",
-            "metadata": {
-              "position": {
-                "x": -105,
-                "y": 330
-              }
-            },
-            "id": "53d4a815-6ef8-47cd-b341-24ae233c4c04",
-            "out": [
-              "1e4e9270-4ac8-4870-a6e4-21fe04684f51"
-            ]
-          },
-          {
-            "name": "EvalTrainedAdaptor",
-            "task": "EvalFineTunedRugby",
-            "type": "EVAL",
-            "metadata": {
-              "position": {
-                "x": -90,
-                "y": 480
-              }
-            },
-            "id": "1e4e9270-4ac8-4870-a6e4-21fe04684f51",
-            "out": []
-          }
-        ]
-      }
-    }
-  ],
+  "workflows": [],
   "cardImage": "https://images.unsplash.com/photo-1561375996-8bbec3f2a481?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 }

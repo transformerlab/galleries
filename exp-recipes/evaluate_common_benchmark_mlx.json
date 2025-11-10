@@ -24,33 +24,6 @@
       "inputs_json": "{}"
     }
   ],
-  "workflows": [
-    {
-      "name": "eval-on-common-benchmarks",
-      "config": {
-        "nodes": [
-          {
-            "type": "START",
-            "id": "99b97abd-82de-4745-b64a-6540801261c1",
-            "name": "START",
-            "out": ["06334a95-01c4-4ece-82fc-9a107a4036e2"]
-          },
-          {
-            "name": "Eval on Harness Benchmarks",
-            "task": "EvalOnCommonBenchmarks",
-            "type": "EVAL",
-            "metadata": {
-              "position": {
-                "x": -75,
-                "y": 105
-              }
-            },
-            "id": "06334a95-01c4-4ece-82fc-9a107a4036e2",
-            "out": []
-          }
-        ]
-      }
-    }
-  ],
+  "workflows": [],
   "cardImage": "https://recipes.transformerlab.net/radialchart.png"
 }

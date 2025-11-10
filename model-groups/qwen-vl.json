@@ -1,0 +1,7 @@
+{
+  "name": "Qwen VL",
+  "description": "The Vision Language variant of Qwen, designed for multimodal understanding and generation tasks.",
+  "image": "https://gallery.transformerlab.net/qwen2.png",
+  "tags": ["Reasoning", "Multimodal"],
+  "models": []
+}
