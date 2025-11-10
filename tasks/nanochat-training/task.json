@@ -7,9 +7,9 @@
   "inputs": {},
   "outputs": {},
   "config": {
-    "command": "WANDB_API_KEY=<your_wandb_api_key> cd ~/nanochat && python ~/nanochat-training/nanochat-training/train.py",
+    "command": "cd ~/nanochat && source .venv/bin/activate && WANDB_API_KEY=<your_wandb_api_key> python ~/nanochat-training/nanochat-training/train.py",
     "accelerators": "H100:8",
-    "setup": "pip install transformerlab && git clone https://github.com/karpathy/nanochat.git ~/nanochat",
+    "setup": "git clone https://github.com/karpathy/nanochat.git ~/nanochat && cd ~/nanochat && ([ -d '.venv' ] || uv venv) && source .venv/bin/activate && uv sync --extra gpu && uv pip install transformerlab && unset CONDA_PREFIX && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && source $HOME/.cargo/env && uv run maturin develop --release --manifest-path rustbpe/Cargo.toml",
     "disk_size": 512
   }
 }

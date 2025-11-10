@@ -93,6 +93,12 @@ def main():
         os.environ["NANOCHAT_BASE_DIR"] = base_dir
         os.environ["OMP_NUM_THREADS"] = "1"
         
+        # Ensure CUDA libraries are in the library path for PyTorch
+        if "LD_LIBRARY_PATH" in os.environ:
+            os.environ["LD_LIBRARY_PATH"] = f"/usr/local/cuda/lib64:{os.environ['LD_LIBRARY_PATH']}"
+        else:
+            os.environ["LD_LIBRARY_PATH"] = "/usr/local/cuda/lib64"
+        
         lab.log(f"NANOCHAT_BASE_DIR: {base_dir}")
         
         # Ensure we're in the nanochat directory
@@ -115,10 +121,23 @@ def main():
             lab.log("ℹ️  No WANDB_API_KEY found, training will run without wandb logging")
             lab.log("Set WANDB_API_KEY environment variable to enable wandb logging")
         
+        # Deactivate conda if active (to avoid conflicts with uv venv)
+        # speedrun.sh will create and activate its own .venv
+        if os.environ.get("CONDA_PREFIX"):
+            lab.log("⚠️  Conda environment detected, will deactivate before running speedrun.sh")
+            # Unset conda variables to avoid conflicts with uv
+            conda_vars_to_unset = ["CONDA_PREFIX", "CONDA_DEFAULT_ENV", "CONDA_PROMPT_MODIFIER", 
+                                    "CONDA_SHLVL", "CONDA_PYTHON_EXE", "CONDA_EXE"]
+            for var in conda_vars_to_unset:
+                if var in os.environ:
+                    del os.environ[var]
+            lab.log("✅ Conda environment variables cleared")
+        
         lab.log("🚀 Running nanochat speedrun.sh...")
         lab.log("This will take approximately 4 hours on 8xH100...")
         lab.update_progress(10)
         
+        # Run speedrun.sh in a clean shell without conda
         run_command(
             "bash speedrun.sh",
             "Running nanochat speedrun pipeline",
