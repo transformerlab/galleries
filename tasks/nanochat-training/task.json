@@ -1,0 +1,15 @@
+{
+  "name": "Train Nanochat LLM",
+  "description": "Train nanochat - the best ChatGPT that $100 can buy.",
+  "type": "REMOTE",
+  "plugin": "remote_orchestrator",
+  "tag": "TRAIN",
+  "inputs": {},
+  "outputs": {},
+  "config": {
+    "command": "WANDB_API_KEY=<your_wandb_api_key> cd ~/nanochat && python ~/nanochat-training/nanochat-training/train.py",
+    "accelerators": "H100:8",
+    "setup": "pip install transformerlab && git clone https://github.com/karpathy/nanochat.git ~/nanochat",
+    "disk_size": 512
+  }
+}
