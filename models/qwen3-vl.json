@@ -27,7 +27,7 @@
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking",
       "paperUrl": "?"
     },
-    "model_group": ""
+    "model_group": "Qwen VL"
   },
   {
     "uniqueID": "Qwen/Qwen3-VL-8B-Instruct",
@@ -57,7 +57,7 @@
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
       "paperUrl": "?"
     },
-    "model_group": ""
+    "model_group": "Qwen VL"
   },
   {
     "uniqueID": "Qwen/Qwen3-VL-2B-Instruct",
@@ -87,7 +87,7 @@
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
       "paperUrl": "?"
     },
-    "model_group": ""
+    "model_group": "Qwen VL"
   },
   {
     "uniqueID": "Qwen/Qwen3-VL-2B-Thinking",
@@ -117,7 +117,7 @@
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking",
       "paperUrl": "?"
     },
-    "model_group": ""
+    "model_group": "Qwen VL"
   },
   {
     "uniqueID": "Qwen/Qwen3-VL-30B-A3B-Thinking",
@@ -147,7 +147,7 @@
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking",
       "paperUrl": "?"
     },
-    "model_group": ""
+    "model_group": "Qwen VL"
   },
   {
     "uniqueID": "Qwen/Qwen3-VL-30B-A3B-Instruct",
@@ -177,6 +177,6 @@
       "downloadUrl": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
       "paperUrl": "?"
     },
-    "model_group": ""
+    "model_group": "Qwen VL"
   }
 ]

@@ -2,7 +2,7 @@
   "id": "fine_tune_small_mlx",
   "title": "Fine Tune a Small Language Model using MLX",
   "description": "Train a Llama 3.2 1B model to understand and answer questions about Touch Rugby rules using the MLX framework. Perfect for rule-based question answering.",
-  "notes": "# What This Recipe Does\n\nThis recipe compares a base model's performance before and after fine-tuning on touch rugby data using MLX (optimized for Apple Silicon):\n\n1. **Generate Base Model Outputs** - Creates responses using the original model\n2. **Evaluate Base Model** - Measures quality using ROUGE scores\n3. **Fine-tune with LoRA** - Trains the model on touch rugby rules using MLX framework\n4. **Generate Fine-tuned Outputs** - Creates responses using the trained adaptor\n5. **Evaluate Fine-tuned Model** - Measures improved quality\n\n## How to Use\n1. Go to the **Workflows** tab and run the \"fine_tune_model\" workflow\n2. Wait for all steps to complete\n3. Switch to the **Evaluate** tab to see the comparison results\n\n## What You'll Learn\n- How much fine-tuning improves performance on your specific domain\n- The difference between base model and fine-tuned model outputs\n- Benefits of using MLX for efficient training on Apple Silicon",
+  "notes": "# What This Recipe Does\n\nThis recipe compares a base model's performance before and after fine-tuning on touch rugby data using MLX (optimized for Apple Silicon):\n\n1. **Generate Base Model Outputs** - Creates responses using the original model\n2. **Evaluate Base Model** - Measures quality using ROUGE scores\n3. **Fine-tune with LoRA** - Trains the model on touch rugby rules using MLX framework\n4. **Generate Fine-tuned Outputs** - Creates responses using the trained adaptor\n5. **Evaluate Fine-tuned Model** - Measures improved quality\n\n## How to Use\n1. Go to the **Generate** tab to create base model outputs\n2. Go to the **Evaluate** tab to evaluate the base model\n3. Go to the **Train** tab to fine-tune with LoRA\n4. Go to the **Generate** tab to create fine-tuned outputs\n5. Go to the **Evaluate** tab to see the comparison results\n\n## What You'll Learn\n- How much fine-tuning improves performance on your specific domain\n- The difference between base model and fine-tuned model outputs\n- Benefits of using MLX for efficient training on Apple Silicon",
   "requiredMachineArchitecture": ["mlx"],
   "zOrder": 1,
   "dependencies": [
@@ -72,101 +72,6 @@
       "inputs_json": "{}"
     }
   ],
-  "workflows": [
-    {
-      "name": "fine_tune_model",
-      "config": {
-        "nodes": [
-          {
-            "type": "START",
-            "id": "c2a75b7e-ed71-40d6-ad35-e4dffc9f22f0",
-            "name": "START",
-            "out": [
-              "0f143d9a-0abe-4fbf-8254-d423b283ee64"
-            ],
-            "metadata": {
-              "position": {
-                "x": -15,
-                "y": -180
-              }
-            }
-          },
-          {
-            "name": "GenerateBaseOutputs",
-            "task": "BaseModelOutputs",
-            "type": "GENERATE",
-            "metadata": {
-              "position": {
-                "x": -75,
-                "y": -105
-              }
-            },
-            "id": "0f143d9a-0abe-4fbf-8254-d423b283ee64",
-            "out": [
-              "9d107acd-3815-4b45-b87b-d52e249a3799"
-            ]
-          },
-          {
-            "name": "EvalBaseOutputs",
-            "task": "BaseModelEvals",
-            "type": "EVAL",
-            "metadata": {
-              "position": {
-                "x": -75,
-                "y": 30
-              }
-            },
-            "id": "9d107acd-3815-4b45-b87b-d52e249a3799",
-            "out": [
-              "5c04dd3b-4e3e-47a2-bfdb-e97bf003b357"
-            ]
-          },
-          {
-            "name": "TrainLoRA",
-            "task": "TouchRugby",
-            "type": "TRAIN",
-            "metadata": {
-              "position": {
-                "x": -75,
-                "y": 165
-              }
-            },
-            "id": "5c04dd3b-4e3e-47a2-bfdb-e97bf003b357",
-            "out": [
-              "3d60693d-88be-4f38-bf51-415d6a68d709"
-            ]
-          },
-          {
-            "name": "GenerateFineTunedOutputs",
-            "task": "FinedTunedModelOutputs",
-            "type": "GENERATE",
-            "metadata": {
-              "position": {
-                "x": -90,
-                "y": 315
-              }
-            },
-            "id": "3d60693d-88be-4f38-bf51-415d6a68d709",
-            "out": [
-              "4ef42b37-fb9a-480e-b056-47e25584f7cd"
-            ]
-          },
-          {
-            "name": "EvalFineTuned",
-            "task": "FineTunedOutputs",
-            "type": "EVAL",
-            "metadata": {
-              "position": {
-                "x": -75,
-                "y": 465
-              }
-            },
-            "id": "4ef42b37-fb9a-480e-b056-47e25584f7cd",
-            "out": []
-          }
-        ]
-      }
-    }
-  ],
+  "workflows": [],
   "cardImage": "https://images.unsplash.com/photo-1558151507-c1aa3d917dbb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 }

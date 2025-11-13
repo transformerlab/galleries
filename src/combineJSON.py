@@ -139,18 +139,22 @@ def read_and_combine_json_files(directory: str):
                     except Exception as e:
                         print(f"ERROR: Error reading model group {file}: {e}")
 
-        # Assign models to their group
+        # Check for blank model_group and assign models to their groups
         for model in combined_json:
             group_name = model.get("model_group")
-            if group_name and group_name in model_groups:
-                model_groups[group_name]["models"].append(model)
-            else:
-                print(f"Warning: Model '{model.get('name')}' missing or unknown group '{group_name}', adding to others")
-                model_groups["others"]["models"].append(model)
-
-        # Remove "others" group if it ended up empty
-        if not model_groups["others"]["models"]:
-            del model_groups["others"]
+            if not group_name or group_name.strip() == "":
+                model_name = model.get('name', 'Unknown')
+                model_id = model.get('id', model.get('uniqueID', 'Unknown'))
+                print(f"ERROR: ‼️ Model '{model_name}' (ID: {model_id}) has a blank or missing 'model_group' field")
+                exit(1)
+            
+            if group_name not in model_groups:
+                model_name = model.get('name', 'Unknown')
+                model_id = model.get('id', model.get('uniqueID', 'Unknown'))
+                print(f"ERROR: ‼️ Model '{model_name}' (ID: {model_id}) has unknown 'model_group' '{group_name}'")
+                exit(1)
+            
+            model_groups[group_name]["models"].append(model)
 
         # Write model-group-gallery.json
         with open('model-group-gallery.json', 'w') as f:

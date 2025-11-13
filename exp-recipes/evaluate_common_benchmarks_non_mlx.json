@@ -23,33 +23,6 @@
       "inputs_json": "{}"
     }
   ],
-  "workflows": [
-    {
-      "name": "evaluate-on-common-benchmarks",
-      "config": {
-        "nodes": [
-          {
-            "type": "START",
-            "id": "bc9dc3a4-afba-4956-a55f-bd51e96da24f",
-            "name": "START",
-            "out": ["009309fa-1ed5-42bc-be5d-b84e32772bf1"]
-          },
-          {
-            "name": "EVAL HARNESS",
-            "task": "KindMoose",
-            "type": "EVAL",
-            "metadata": {
-              "position": {
-                "x": -60,
-                "y": 75
-              }
-            },
-            "id": "009309fa-1ed5-42bc-be5d-b84e32772bf1",
-            "out": []
-          }
-        ]
-      }
-    }
-  ],
+  "workflows": [],
   "cardImage": "https://recipes.transformerlab.net/radialchart.png"
 }
