@@ -59,7 +59,8 @@
           "StableDiffusionXLPipeline",
           "StableDiffusionPipeline",
           "T5ForConditionalGeneration",
-          "MLXTextToSpeech"
+          "MLXTextToSpeech",
+          "MLXSpeechToText"
         ]
       },
       "huggingface_repo": {

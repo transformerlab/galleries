@@ -1,0 +1,7 @@
+{
+  "name": "whisper",
+  "description": "Whisper is a state-of-the-art model for automatic speech recognition (ASR) and speech translation",
+  "image": "",
+  "tags": ["Speech-to-Text", "Audio"],
+  "models": []
+}
