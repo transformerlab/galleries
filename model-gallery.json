@@ -7006,7 +7006,8 @@
             "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-mlx",
             "paperUrl": "?"
         },
-        "model_group": "whisper"
+        "model_group": "whisper",
+        "pipeline_tag": "speech-to-text"
     },
     {
         "uniqueID": "HuggingFaceH4/zephyr-7b-alpha",
