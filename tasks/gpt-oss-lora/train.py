@@ -8,7 +8,6 @@ from datasets import load_dataset
 from peft import get_peft_model
 from peft import LoraConfig
 from transformers import AutoModelForCausalLM
-from transformers import AutoTokenizer
 from transformers import Mxfp4Config
 from transformers import TrainerCallback
 from trl import SFTConfig
@@ -232,10 +231,10 @@ def main():
         model.print_trainable_parameters()
 
     # Prepare training configuration
-    lab.log(f"Output directory: {output_dir}")
+    lab.log(f"Output directory: {args.output_dir}")
     
     training_args = SFTConfig(
-        output_dir=output_dir,
+        output_dir=args.output_dir,
         learning_rate=args.learning_rate,
         num_train_epochs=args.num_train_epochs,
         logging_steps=1,
