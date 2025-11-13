@@ -6976,6 +6976,40 @@
         "model_group": "watt"
     },
     {
+        "uniqueID": "mlx-community/whisper-base-mlx",
+        "name": "whisper-base-mlx",
+        "description": "Whisper is a state-of-the-art model for automatic speech recognition (ASR) and speech translation.",
+        "added": "2025-11-13",
+        "tags": [
+            "Speech-to-Text",
+            "Audio"
+        ],
+        "parameters": "",
+        "context": "2048",
+        "architecture": "MLXSpeechToText",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "mlx-community/whisper-base-mlx",
+        "transformers_version": "",
+        "gated": false,
+        "license": "mit",
+        "logo": "",
+        "size_of_model_in_mb": 137.06633186340332,
+        "author": {
+            "name": "mlx-community",
+            "url": "https://huggingface.co/mlx-community/whisper-base-mlx",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/mlx-community/whisper-base-mlx",
+            "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-mlx",
+            "paperUrl": "?"
+        },
+        "model_group": "whisper",
+        "pipeline_tag": "speech-to-text"
+    },
+    {
         "uniqueID": "mlx-community/whisper-large-v3-mlx",
         "name": "whisper-large-v3-mlx",
         "description": "Whisper is a state-of-the-art model for automatic speech recognition (ASR) and speech translation.",
