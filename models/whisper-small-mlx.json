@@ -1,0 +1,31 @@
+{
+  "uniqueID": "mlx-community/whisper-small-mlx",
+  "name": "whisper-small-mlx",
+  "description": "Whisper is a state-of-the-art model for automatic speech recognition (ASR) and speech translation.",
+  "added": "2025-11-13",
+  "tags": ["Speech-to-Text", "Audio"],
+  "parameters": "",
+  "context": "2048",
+  "architecture": "MLXSpeechToText",
+  "formats": [
+    "Safetensors"
+  ],
+  "huggingface_repo": "mlx-community/whisper-small-mlx",
+  "transformers_version": "",
+  "gated": false,
+  "license": "mit",
+  "logo": "",
+  "size_of_model_in_mb": 459.01094245910645,
+  "author": {
+    "name": "mlx-community",
+    "url": "https://huggingface.co/mlx-community/whisper-small-mlx",
+    "blurb": ""
+  },
+  "resources": {
+    "canonicalUrl": "https://huggingface.co/mlx-community/whisper-small-mlx",
+    "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-mlx",
+    "paperUrl": "?"
+  },
+  "model_group": "whisper",
+  "pipeline_tag": "speech-to-text"
+}
