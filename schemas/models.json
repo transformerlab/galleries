@@ -127,7 +127,8 @@
             "Diffusion",
             "Vision",
             "Text-to-Speech",
-            "Audio"
+            "Audio",
+            "Speech-to-Text"
           ]
         }
       },
