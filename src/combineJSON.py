@@ -6,6 +6,7 @@ import os
 import json
 import yaml
 from jsonschema import validate, ValidationError
+from update_dataset_sizes import update_dataset_sizes
 
 
 def validate_json(json, schema):
@@ -164,6 +165,16 @@ def read_and_combine_json_files(directory: str):
 
 
 read_and_combine_json_files(directory='models')
+
+# Update dataset sizes from HuggingFace before combining datasets
+script_dir = os.path.dirname(os.path.abspath(__file__))
+galleries_dir = os.path.dirname(script_dir)
+preset_file = os.path.join(galleries_dir, "datasets", "preset.json")
+if os.path.exists(preset_file):
+    update_dataset_sizes(preset_file, quiet=True)
+else:
+    print(f"⚠️  Warning: Could not find preset.json at {preset_file}, skipping size update")
+
 read_and_combine_json_files(directory='datasets')
 read_and_combine_json_files(directory='plugins')
 read_and_combine_json_files(directory='prompts')
