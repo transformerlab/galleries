@@ -4,7 +4,7 @@
   "description": "Whisper is a state-of-the-art model for automatic speech recognition (ASR) and speech translation.",
   "added": "2025-11-13",
   "tags": ["Speech-to-Text", "Audio"],
-  "parameters": "",
+  "parameters": "244M",
   "context": "2048",
   "architecture": "MLXSpeechToText",
   "formats": [

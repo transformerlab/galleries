@@ -6984,7 +6984,7 @@
             "Speech-to-Text",
             "Audio"
         ],
-        "parameters": "",
+        "parameters": "74M",
         "context": "2048",
         "architecture": "MLXSpeechToText",
         "formats": [
@@ -7018,7 +7018,7 @@
             "Speech-to-Text",
             "Audio"
         ],
-        "parameters": "",
+        "parameters": "1.55B",
         "context": "2048",
         "architecture": "MLXSpeechToText",
         "formats": [
@@ -7052,7 +7052,7 @@
             "Speech-to-Text",
             "Audio"
         ],
-        "parameters": "",
+        "parameters": "769M",
         "context": "2048",
         "architecture": "MLXSpeechToText",
         "formats": [
@@ -7086,7 +7086,7 @@
             "Speech-to-Text",
             "Audio"
         ],
-        "parameters": "",
+        "parameters": "244M",
         "context": "2048",
         "architecture": "MLXSpeechToText",
         "formats": [
@@ -7120,7 +7120,7 @@
             "Speech-to-Text",
             "Audio"
         ],
-        "parameters": "",
+        "parameters": "39M",
         "context": "2048",
         "architecture": "MLXSpeechToText",
         "formats": [
