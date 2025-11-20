@@ -1,0 +1,92 @@
+[
+  {
+    "uniqueID": "Dream-org/Dream-v0-Instruct-7B",
+    "name": "Dream-v0-Instruct-7B",
+    "description": "",
+    "added": "2025-11-20",
+    "tags": [],
+    "parameters": "7B",
+    "context": "131072",
+    "architecture": "DreamModel",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "Dream-org/Dream-v0-Instruct-7B",
+    "transformers_version": "4.46.2",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "",
+    "size_of_model_in_mb": 14529.008292198181,
+    "author": {
+      "name": "Dream-org",
+      "url": "https://huggingface.co/Dream-org/Dream-v0-Instruct-7B",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/Dream-org/Dream-v0-Instruct-7B",
+      "downloadUrl": "https://huggingface.co/Dream-org/Dream-v0-Instruct-7B",
+      "paperUrl": "?"
+    },
+    "model_group": "Text Diffusion"
+  },
+  {
+    "uniqueID": "GSAI-ML/LLaDA-8B-Instruct",
+    "name": "LLaDA-8B-Instruct",
+    "description": "",
+    "added": "2025-11-20",
+    "tags": [],
+    "parameters": "8B",
+    "context": "2048",
+    "architecture": "LLaDAModelLM",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "GSAI-ML/LLaDA-8B-Instruct",
+    "transformers_version": "4.46.3",
+    "gated": false,
+    "license": "mit",
+    "logo": "",
+    "size_of_model_in_mb": 15294.502674102783,
+    "author": {
+      "name": "GSAI-ML",
+      "url": "https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct",
+      "downloadUrl": "https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct",
+      "paperUrl": "?"
+    },
+    "model_group": "Text Diffusion"
+  },
+    {
+      "uniqueID": "Dream-org/Dream-v0-Base-7B",
+      "name": "Dream-v0-Base-7B",
+      "description": "",
+      "added": "2025-11-20",
+      "tags": [],
+      "parameters": "7B",
+      "context": "131072",
+      "architecture": "DreamModel",
+      "formats": [
+        "Safetensors"
+      ],
+      "huggingface_repo": "Dream-org/Dream-v0-Base-7B",
+      "transformers_version": "4.46.2",
+      "gated": false,
+      "license": "apache-2.0",
+      "logo": "",
+      "size_of_model_in_mb": 14529.00807094574,
+      "author": {
+        "name": "Dream-org",
+        "url": "https://huggingface.co/Dream-org/Dream-v0-Base-7B",
+        "blurb": ""
+      },
+      "resources": {
+        "canonicalUrl": "https://huggingface.co/Dream-org/Dream-v0-Base-7B",
+        "downloadUrl": "https://huggingface.co/Dream-org/Dream-v0-Base-7B",
+        "paperUrl": "?"
+      },
+      "model_group": "Text Diffusion"
+    }
+]

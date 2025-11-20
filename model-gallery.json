@@ -4113,6 +4113,126 @@
         "model_group": "mistral"
     },
     {
+        "uniqueID": "dllm-collection/ModernBERT-base-chat-v0",
+        "name": "ModernBERT-base-chat-v0",
+        "description": "",
+        "added": "2025-11-20",
+        "tags": [],
+        "parameters": "",
+        "context": "8192",
+        "architecture": "ModernBertForMaskedLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "dllm-collection/ModernBERT-base-chat-v0",
+        "transformers_version": "4.57.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "",
+        "size_of_model_in_mb": 362.6850233078003,
+        "author": {
+            "name": "dllm-collection",
+            "url": "https://huggingface.co/dllm-collection/ModernBERT-base-chat-v0",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/dllm-collection/ModernBERT-base-chat-v0",
+            "downloadUrl": "https://huggingface.co/dllm-collection/ModernBERT-base-chat-v0",
+            "paperUrl": "?"
+        },
+        "model_group": "Text Diffusion"
+    },
+    {
+        "uniqueID": "dllm-collection/ModernBERT-large-chat-v0",
+        "name": "ModernBERT-large-chat-v0",
+        "description": "",
+        "added": "2025-11-20",
+        "tags": [],
+        "parameters": "",
+        "context": "8192",
+        "architecture": "ModernBertForMaskedLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "dllm-collection/ModernBERT-large-chat-v0",
+        "transformers_version": "4.57.0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "",
+        "size_of_model_in_mb": 856.9222221374512,
+        "author": {
+            "name": "dllm-collection",
+            "url": "https://huggingface.co/dllm-collection/ModernBERT-large-chat-v0",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/dllm-collection/ModernBERT-large-chat-v0",
+            "downloadUrl": "https://huggingface.co/dllm-collection/ModernBERT-large-chat-v0",
+            "paperUrl": "?"
+        },
+        "model_group": "Text Diffusion"
+    },
+    {
+        "uniqueID": "answerdotai/ModernBERT-base",
+        "name": "ModernBERT-base",
+        "description": "",
+        "added": "2025-11-20",
+        "tags": [],
+        "parameters": "",
+        "context": "8192",
+        "architecture": "ModernBertForMaskedLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "answerdotai/ModernBERT-base",
+        "transformers_version": "4.47.0.dev0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "",
+        "size_of_model_in_mb": 1143.889181137085,
+        "author": {
+            "name": "answerdotai",
+            "url": "https://huggingface.co/answerdotai/ModernBERT-base",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/answerdotai/ModernBERT-base",
+            "downloadUrl": "https://huggingface.co/answerdotai/ModernBERT-base",
+            "paperUrl": "?"
+        },
+        "model_group": "Text Diffusion"
+    },
+    {
+        "uniqueID": "answerdotai/ModernBERT-large",
+        "name": "ModernBERT-large",
+        "description": "",
+        "added": "2025-11-20",
+        "tags": [],
+        "parameters": "",
+        "context": "8192",
+        "architecture": "ModernBertForMaskedLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "answerdotai/ModernBERT-large",
+        "transformers_version": "4.47.0.dev0",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "",
+        "size_of_model_in_mb": 3022.462546348572,
+        "author": {
+            "name": "answerdotai",
+            "url": "https://huggingface.co/answerdotai/ModernBERT-large",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/answerdotai/ModernBERT-large",
+            "downloadUrl": "https://huggingface.co/answerdotai/ModernBERT-large",
+            "paperUrl": "?"
+        },
+        "model_group": "Text Diffusion"
+    },
+    {
         "uniqueID": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
         "name": "Llama-3.1-Nemotron-Nano-4B-v1.1",
         "description": "Offers a great tradeoff between model accuracy and efficiency. The model fits on a single RTX GPU and can be used locally",
@@ -4569,6 +4689,96 @@
             "paperUrl": "https://huggingface.co/cagliostrolab/animagine-xl-4.0"
         },
         "model_group": "Other Diffusion Models"
+    },
+    {
+        "uniqueID": "Dream-org/Dream-v0-Instruct-7B",
+        "name": "Dream-v0-Instruct-7B",
+        "description": "",
+        "added": "2025-11-20",
+        "tags": [],
+        "parameters": "7B",
+        "context": "131072",
+        "architecture": "DreamModel",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Dream-org/Dream-v0-Instruct-7B",
+        "transformers_version": "4.46.2",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "",
+        "size_of_model_in_mb": 14529.008292198181,
+        "author": {
+            "name": "Dream-org",
+            "url": "https://huggingface.co/Dream-org/Dream-v0-Instruct-7B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Dream-org/Dream-v0-Instruct-7B",
+            "downloadUrl": "https://huggingface.co/Dream-org/Dream-v0-Instruct-7B",
+            "paperUrl": "?"
+        },
+        "model_group": "Text Diffusion"
+    },
+    {
+        "uniqueID": "GSAI-ML/LLaDA-8B-Instruct",
+        "name": "LLaDA-8B-Instruct",
+        "description": "",
+        "added": "2025-11-20",
+        "tags": [],
+        "parameters": "8B",
+        "context": "2048",
+        "architecture": "LLaDAModelLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "GSAI-ML/LLaDA-8B-Instruct",
+        "transformers_version": "4.46.3",
+        "gated": false,
+        "license": "mit",
+        "logo": "",
+        "size_of_model_in_mb": 15294.502674102783,
+        "author": {
+            "name": "GSAI-ML",
+            "url": "https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct",
+            "downloadUrl": "https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct",
+            "paperUrl": "?"
+        },
+        "model_group": "Text Diffusion"
+    },
+    {
+        "uniqueID": "Dream-org/Dream-v0-Base-7B",
+        "name": "Dream-v0-Base-7B",
+        "description": "",
+        "added": "2025-11-20",
+        "tags": [],
+        "parameters": "7B",
+        "context": "131072",
+        "architecture": "DreamModel",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "Dream-org/Dream-v0-Base-7B",
+        "transformers_version": "4.46.2",
+        "gated": false,
+        "license": "apache-2.0",
+        "logo": "",
+        "size_of_model_in_mb": 14529.00807094574,
+        "author": {
+            "name": "Dream-org",
+            "url": "https://huggingface.co/Dream-org/Dream-v0-Base-7B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/Dream-org/Dream-v0-Base-7B",
+            "downloadUrl": "https://huggingface.co/Dream-org/Dream-v0-Base-7B",
+            "paperUrl": "?"
+        },
+        "model_group": "Text Diffusion"
     },
     {
         "uniqueID": "microsoft/Phi-3-mini-128k-instruct",
