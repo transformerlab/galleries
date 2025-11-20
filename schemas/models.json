@@ -131,7 +131,9 @@
             "Vision",
             "Text-to-Speech",
             "Audio",
-            "Speech-to-Text"
+            "Speech-to-Text",
+            "Text Generation", 
+            "Masked Language Modeling"
           ]
         }
       },
