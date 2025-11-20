@@ -2,7 +2,7 @@
   {
     "uniqueID": "Dream-org/Dream-v0-Instruct-7B",
     "name": "Dream-v0-Instruct-7B",
-    "description": "",
+    "description": "This is the instruct model of Dream 7B, which is an open diffusion large language model with top-tier performance released by HKUNLP",
     "added": "2025-11-20",
     "tags": [],
     "parameters": "7B",
@@ -15,7 +15,7 @@
     "transformers_version": "4.46.2",
     "gated": false,
     "license": "apache-2.0",
-    "logo": "",
+    "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/6364cc3912188d67e6526cfa/f0EYAVUgyJzJFEZOyWE42.png",
     "size_of_model_in_mb": 14529.008292198181,
     "author": {
       "name": "Dream-org",
@@ -32,7 +32,7 @@
   {
     "uniqueID": "GSAI-ML/LLaDA-8B-Instruct",
     "name": "LLaDA-8B-Instruct",
-    "description": "",
+    "description": "LLaDA is a diffusion model with an unprecedented 8B scale, trained entirely from scratch, rivaling LLaMA3 8B in performance.",
     "added": "2025-11-20",
     "tags": [],
     "parameters": "8B",
@@ -45,7 +45,7 @@
     "transformers_version": "4.46.3",
     "gated": false,
     "license": "mit",
-    "logo": "",
+    "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/624f909eac5dd186b01ac3f5/6tfvx3XT5Sx6YDGl7KUAU.jpeg",
     "size_of_model_in_mb": 15294.502674102783,
     "author": {
       "name": "GSAI-ML",
@@ -62,7 +62,7 @@
     {
       "uniqueID": "Dream-org/Dream-v0-Base-7B",
       "name": "Dream-v0-Base-7B",
-      "description": "",
+      "description": "This is the base model of Dream 7B, which is an open diffusion large language model with top-tier performance.",
       "added": "2025-11-20",
       "tags": [],
       "parameters": "7B",
@@ -75,7 +75,7 @@
       "transformers_version": "4.46.2",
       "gated": false,
       "license": "apache-2.0",
-      "logo": "",
+      "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/6364cc3912188d67e6526cfa/f0EYAVUgyJzJFEZOyWE42.png",
       "size_of_model_in_mb": 14529.00807094574,
       "author": {
         "name": "Dream-org",

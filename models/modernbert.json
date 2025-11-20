@@ -2,10 +2,10 @@
   {
     "uniqueID": "dllm-collection/ModernBERT-base-chat-v0",
     "name": "ModernBERT-base-chat-v0",
-    "description": "",
+    "description": "ModernBERT-base-chat-v0 is a generative variant of ModernBERT-base, finetuned using the dLLM framework. This model demonstrates that BERT can serve as a diffusion-based chatbot trained purely with supervised instruction data — no continual generative pretraining required.",
     "added": "2025-11-20",
     "tags": [],
-    "parameters": "",
+    "parameters": "0.2B",
     "context": "8192",
     "architecture": "ModernBertForMaskedLM",
     "formats": [
@@ -15,7 +15,7 @@
     "transformers_version": "4.57.0",
     "gated": false,
     "license": "apache-2.0",
-    "logo": "",
+    "logo": "https://www.gravatar.com/avatar/0cd0099e911d0ac6315a4ea9675343a2?d=retro&size=100",
     "size_of_model_in_mb": 362.6850233078003,
     "author": {
       "name": "dllm-collection",
@@ -32,10 +32,10 @@
   {
     "uniqueID": "dllm-collection/ModernBERT-large-chat-v0",
     "name": "ModernBERT-large-chat-v0",
-    "description": "",
+    "description": "ModernBERT-large-chat-v0 is a generative variant of ModernBERT-large, finetuned using the dLLM framework. This model demonstrates that BERT can serve as a diffusion-based chatbot trained purely with supervised instruction data — no continual generative pretraining required.",
     "added": "2025-11-20",
     "tags": [],
-    "parameters": "",
+    "parameters": "0.4B",
     "context": "8192",
     "architecture": "ModernBertForMaskedLM",
     "formats": [
@@ -45,7 +45,7 @@
     "transformers_version": "4.57.0",
     "gated": false,
     "license": "apache-2.0",
-    "logo": "",
+    "logo": "https://www.gravatar.com/avatar/0cd0099e911d0ac6315a4ea9675343a2?d=retro&size=100",
     "size_of_model_in_mb": 856.9222221374512,
     "author": {
       "name": "dllm-collection",
@@ -62,10 +62,10 @@
   {
     "uniqueID": "answerdotai/ModernBERT-base",
     "name": "ModernBERT-base",
-    "description": "",
+    "description": "ModernBERT is a modernized bidirectional encoder-only Transformer model (BERT-style) pre-trained on 2 trillion tokens of English and code data with a native context length of up to 8,192 tokens. ",
     "added": "2025-11-20",
     "tags": [],
-    "parameters": "",
+    "parameters": "0.1B",
     "context": "8192",
     "architecture": "ModernBertForMaskedLM",
     "formats": [
@@ -75,7 +75,7 @@
     "transformers_version": "4.47.0.dev0",
     "gated": false,
     "license": "apache-2.0",
-    "logo": "",
+    "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/623e19ff8972a8c030af5277/KTqmARlLjdqMClfLWA-A1.png",
     "size_of_model_in_mb": 1143.889181137085,
     "author": {
       "name": "answerdotai",
@@ -92,10 +92,10 @@
   {
     "uniqueID": "answerdotai/ModernBERT-large",
     "name": "ModernBERT-large",
-    "description": "",
+    "description": "ModernBERT is a modernized bidirectional encoder-only Transformer model (BERT-style) pre-trained on 2 trillion tokens of English and code data with a native context length of up to 8,192 tokens.",
     "added": "2025-11-20",
     "tags": [],
-    "parameters": "",
+    "parameters": "0.4B",
     "context": "8192",
     "architecture": "ModernBertForMaskedLM",
     "formats": [
@@ -105,7 +105,7 @@
     "transformers_version": "4.47.0.dev0",
     "gated": false,
     "license": "apache-2.0",
-    "logo": "",
+    "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/623e19ff8972a8c030af5277/KTqmARlLjdqMClfLWA-A1.png",
     "size_of_model_in_mb": 3022.462546348572,
     "author": {
       "name": "answerdotai",
