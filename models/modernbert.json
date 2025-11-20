@@ -1,0 +1,122 @@
+[
+  {
+    "uniqueID": "dllm-collection/ModernBERT-base-chat-v0",
+    "name": "ModernBERT-base-chat-v0",
+    "description": "",
+    "added": "2025-11-20",
+    "tags": [],
+    "parameters": "",
+    "context": "8192",
+    "architecture": "ModernBertForMaskedLM",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "dllm-collection/ModernBERT-base-chat-v0",
+    "transformers_version": "4.57.0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "",
+    "size_of_model_in_mb": 362.6850233078003,
+    "author": {
+      "name": "dllm-collection",
+      "url": "https://huggingface.co/dllm-collection/ModernBERT-base-chat-v0",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/dllm-collection/ModernBERT-base-chat-v0",
+      "downloadUrl": "https://huggingface.co/dllm-collection/ModernBERT-base-chat-v0",
+      "paperUrl": "?"
+    },
+    "model_group": "Text Diffusion"
+  },
+  {
+    "uniqueID": "dllm-collection/ModernBERT-large-chat-v0",
+    "name": "ModernBERT-large-chat-v0",
+    "description": "",
+    "added": "2025-11-20",
+    "tags": [],
+    "parameters": "",
+    "context": "8192",
+    "architecture": "ModernBertForMaskedLM",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "dllm-collection/ModernBERT-large-chat-v0",
+    "transformers_version": "4.57.0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "",
+    "size_of_model_in_mb": 856.9222221374512,
+    "author": {
+      "name": "dllm-collection",
+      "url": "https://huggingface.co/dllm-collection/ModernBERT-large-chat-v0",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/dllm-collection/ModernBERT-large-chat-v0",
+      "downloadUrl": "https://huggingface.co/dllm-collection/ModernBERT-large-chat-v0",
+      "paperUrl": "?"
+    },
+    "model_group": "Text Diffusion"
+  },
+  {
+    "uniqueID": "answerdotai/ModernBERT-base",
+    "name": "ModernBERT-base",
+    "description": "",
+    "added": "2025-11-20",
+    "tags": [],
+    "parameters": "",
+    "context": "8192",
+    "architecture": "ModernBertForMaskedLM",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "answerdotai/ModernBERT-base",
+    "transformers_version": "4.47.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "",
+    "size_of_model_in_mb": 1143.889181137085,
+    "author": {
+      "name": "answerdotai",
+      "url": "https://huggingface.co/answerdotai/ModernBERT-base",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/answerdotai/ModernBERT-base",
+      "downloadUrl": "https://huggingface.co/answerdotai/ModernBERT-base",
+      "paperUrl": "?"
+    },
+    "model_group": "Text Diffusion"
+  },
+  {
+    "uniqueID": "answerdotai/ModernBERT-large",
+    "name": "ModernBERT-large",
+    "description": "",
+    "added": "2025-11-20",
+    "tags": [],
+    "parameters": "",
+    "context": "8192",
+    "architecture": "ModernBertForMaskedLM",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "answerdotai/ModernBERT-large",
+    "transformers_version": "4.47.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "",
+    "size_of_model_in_mb": 3022.462546348572,
+    "author": {
+      "name": "answerdotai",
+      "url": "https://huggingface.co/answerdotai/ModernBERT-large",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/answerdotai/ModernBERT-large",
+      "downloadUrl": "https://huggingface.co/answerdotai/ModernBERT-large",
+      "paperUrl": "?"
+    },
+    "model_group": "Text Diffusion"
+  }
+]

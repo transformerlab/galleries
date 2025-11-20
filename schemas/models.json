@@ -60,7 +60,10 @@
           "StableDiffusionPipeline",
           "T5ForConditionalGeneration",
           "MLXTextToSpeech",
-          "MLXSpeechToText"
+          "MLXSpeechToText",
+          "DreamModel",
+          "ModernBertForMaskedLM",
+          "LLaDAModelLM"
         ]
       },
       "huggingface_repo": {

@@ -1,0 +1,7 @@
+{
+  "name": "Text Diffusion",
+  "image": "https://gallery.transformerlab.net/text_diffusion.png",
+  "description": "Text diffusion models designed for generating or transforming text data.",
+  "tags": ["Text Generation", "Diffusion"],
+  "models": []
+}
