@@ -591,7 +591,7 @@
     {
         "uniqueID": "ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
         "name": "Apriel Nemotron 15B Thinker",
-         "description": "Apriel-Nemotron-15b-Thinker is a 15\u202fbillion\u2011parameter reasoning model in ServiceNow\u2019s Apriel SLM series which achieves competitive performance against similarly sized state-of-the-art models like o1\u2011mini, QWQ\u201132b, and EXAONE\u2011Deep\u201132b, all while maintaining only half the memory footprint of those alternatives. It builds upon the Apriel\u201115b\u2011base checkpoint through a three\u2011stage training pipeline (CPT, SFT and GRPO).",
+        "description": "Apriel-Nemotron-15b-Thinker is a 15\u202fbillion\u2011parameter reasoning model in ServiceNow\u2019s Apriel SLM series which achieves competitive performance against similarly sized state-of-the-art models like o1\u2011mini, QWQ\u201132b, and EXAONE\u2011Deep\u201132b, all while maintaining only half the memory footprint of those alternatives. It builds upon the Apriel\u201115b\u2011base checkpoint through a three\u2011stage training pipeline (CPT, SFT and GRPO).",
         "added": "2025-05-07",
         "tags": [],
         "parameters": "15B",
