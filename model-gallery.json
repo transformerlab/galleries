@@ -3121,7 +3121,7 @@
     {
         "uniqueID": "allenai/Llama-3.1-Tulu-3-8B",
         "name": "Llama 3.1 Tulu 3 8B",
-        "description": "T\u00c3\u00bclu3 is a leading instruction following model family, offering fully open-source data, code, and recipes designed to serve as a comprehensive guide for modern post-training techniques. T\u00c3\u00bclu3 is designed for state-of-the-art performance on a diversity of tasks in addition to chat, such as MATH, GSM8K, and IFEval.",
+         "description": "T\u00fclu3 is a leading instruction following model family, offering fully open-source data, code, and recipes designed to serve as a comprehensive guide for modern post-training techniques. T\u00fclu3 is designed for state-of-the-art performance on a diversity of tasks in addition to chat, such as MATH, GSM8K, and IFEval.",
         "parameters": "8B",
         "added": "2025-01-31",
         "context": "131072",
@@ -4421,7 +4421,7 @@
     {
         "uniqueID": "openbmb/MiniCPM4-8B",
         "name": "OpenBMB MiniCPM4 8B",
-        "description": "MiniCPM4 series are highly efficient large language models with sparse attention, built for long\u00e2\u20ac\u2018context processing and ultra\u00e2\u20ac\u2018efficient on\u00e2\u20ac\u2018device inference.",
+        "description": "MiniCPM4 series are highly efficient large language models with sparse at
         "added": "2025-06-20",
         "tags": [
             "Reasoning"
@@ -4486,7 +4486,7 @@
         "uniqueID": "openlm-research/open_llama_3b_v2",
         "name": "Open LLama 3b v2",
         "archived": true,
-        "description": " we are releasing our public preview of OpenLLaMA, a permissively licensed open source reproduction of Meta AI\u00e2\u20ac\u2122s LLaMA. We are releasing a series of 3B, 7B and 13B models trained on different data mixtures. Our model weights can serve as the drop in replacement of LLaMA in existing implementations.",
+         "description": " we are releasing our public preview of OpenLLaMA, a permissively licensed open source reproduction of Meta AI\u2019s LLaMA. We are releasing a series of 3B, 7B and 13B models trained on different data mixtures. Our model weights can serve as the drop in replacement of LLaMA in existing implementations.",
         "parameters": "3B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
@@ -7074,7 +7074,7 @@
     {
         "uniqueID": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
         "name": "Tiny Llama 1.1B Chat",
-        "description": "The TinyLlama project aims to pretrain a 1.1B Llama model on 3 trillion tokens. With some proper optimization, we can achieve this within a span of 90 days using 16 A100-40G GPUs \u00f0\u0178\u0161\u20ac\u00f0\u0178\u0161\u20ac. The training has started on 2023-09-01.",
+        "description": "The TinyLlama project aims to pretrain a 1.1B Llama model on 3 trillion tokens. With some proper optimization, we can achieve this within a span of 90 days using 16 A100-40G GPUs \ud83d\ude80\ud83d\ude80. The training has started on 2023-09-01.",
         "parameters": "1.1B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
