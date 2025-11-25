@@ -438,7 +438,7 @@
     {
         "uniqueID": "HuggingFaceTB/SmolLM3-3B-Base",
         "name": "SmolLM3-3B-Base",
-        "description": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B\u00e2\u20ac\u201c4B scale.",
+        "description": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B\u20134B scale.",
         "added": "2025-07-09",
         "tags": [],
         "parameters": "3B",
@@ -468,7 +468,7 @@
     {
         "uniqueID": "HuggingFaceTB/SmolLM3-3B",
         "name": "SmolLM3-3B",
-        "description": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B\u00e2\u20ac\u201c4B scale.",
+        "description": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B\u20134B scale.",
         "added": "2025-07-10",
         "tags": [],
         "parameters": "3B",
@@ -591,7 +591,7 @@
     {
         "uniqueID": "ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
         "name": "Apriel Nemotron 15B Thinker",
-        "description": "Apriel-Nemotron-15b-Thinker is a 15\u00e2\u20ac\u00afbillion\u00e2\u20ac\u2018parameter reasoning model in ServiceNow\u00e2\u20ac\u2122s Apriel SLM series which achieves competitive performance against similarly sized state-of-the-art models like o1\u00e2\u20ac\u2018mini, QWQ\u00e2\u20ac\u201832b, and EXAONE\u00e2\u20ac\u2018Deep\u00e2\u20ac\u201832b, all while maintaining only half the memory footprint of those alternatives. It builds upon the Apriel\u00e2\u20ac\u201815b\u00e2\u20ac\u2018base checkpoint through a three\u00e2\u20ac\u2018stage training pipeline (CPT, SFT and GRPO).",
+         "description": "Apriel-Nemotron-15b-Thinker is a 15\u202fbillion\u2011parameter reasoning model in ServiceNow\u2019s Apriel SLM series which achieves competitive performance against similarly sized state-of-the-art models like o1\u2011mini, QWQ\u201132b, and EXAONE\u2011Deep\u201132b, all while maintaining only half the memory footprint of those alternatives. It builds upon the Apriel\u201115b\u2011base checkpoint through a three\u2011stage training pipeline (CPT, SFT and GRPO).",
         "added": "2025-05-07",
         "tags": [],
         "parameters": "15B",
