@@ -1726,6 +1726,36 @@
                 "model_group": "Qwen VL"
             },
             {
+                "uniqueID": "microsoft/Fara-7B",
+                "name": "Fara-7B",
+                "description": "",
+                "added": "2025-11-25",
+                "tags": [],
+                "parameters": "7B",
+                "context": "128000",
+                "architecture": "Qwen2_5_VLForConditionalGeneration",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "microsoft/Fara-7B",
+                "transformers_version": "4.52.4",
+                "gated": false,
+                "license": "mit",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+                "size_of_model_in_mb": 15829.736442565918,
+                "author": {
+                    "name": "microsoft",
+                    "url": "https://huggingface.co/microsoft/Fara-7B",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/microsoft/Fara-7B",
+                    "downloadUrl": "https://huggingface.co/microsoft/Fara-7B",
+                    "paperUrl": "?"
+                },
+                "model_group": "Qwen VL"
+            },
+            {
                 "uniqueID": "Qwen/Qwen3-VL-8B-Thinking",
                 "name": "Qwen3-VL-8B-Thinking",
                 "description": "8B parameter version of Qwen 3's vision-language model, specifically trained with reasoning capabilities.",
@@ -1919,36 +1949,6 @@
                 "resources": {
                     "canonicalUrl": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
                     "downloadUrl": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
-                    "paperUrl": "?"
-                },
-                "model_group": "Qwen VL"
-            },
-            {
-                "uniqueID": "microsoft/Fara-7B",
-                "name": "Fara-7B",
-                "description": "",
-                "added": "2025-11-25",
-                "tags": [],
-                "parameters": "7B",
-                "context": "128000",
-                "architecture": "Qwen2_5_VLForConditionalGeneration",
-                "formats": [
-                    "Safetensors"
-                ],
-                "huggingface_repo": "microsoft/Fara-7B",
-                "transformers_version": "4.52.4",
-                "gated": false,
-                "license": "mit",
-                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
-                "size_of_model_in_mb": 15829.736442565918,
-                "author": {
-                    "name": "microsoft",
-                    "url": "https://huggingface.co/microsoft/Fara-7B",
-                    "blurb": ""
-                },
-                "resources": {
-                    "canonicalUrl": "https://huggingface.co/microsoft/Fara-7B",
-                    "downloadUrl": "https://huggingface.co/microsoft/Fara-7B",
                     "paperUrl": "?"
                 },
                 "model_group": "Qwen VL"
