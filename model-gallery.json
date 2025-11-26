@@ -1736,6 +1736,36 @@
         "model_group": "falcon"
     },
     {
+        "uniqueID": "microsoft/Fara-7B",
+        "name": "Fara-7B",
+        "description": "",
+        "added": "2025-11-25",
+        "tags": [],
+        "parameters": "7B",
+        "context": "128000",
+        "architecture": "Qwen2_5_VLForConditionalGeneration",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "microsoft/Fara-7B",
+        "transformers_version": "4.52.4",
+        "gated": false,
+        "license": "mit",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 15829.736442565918,
+        "author": {
+            "name": "microsoft",
+            "url": "https://huggingface.co/microsoft/Fara-7B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/microsoft/Fara-7B",
+            "downloadUrl": "https://huggingface.co/microsoft/Fara-7B",
+            "paperUrl": "?"
+        },
+        "model_group": "Qwen VL"
+    },
+    {
         "uniqueID": "lmsys/fastchat-t5-3b-v1.0",
         "name": "FastChat T5",
         "description": "Open-source chatbot trained by fine-tuning Flan-t5-xl (3B parameters) on user-shared conversations collected from ShareGPT. It is based on an encoder-decoder transformer architecture, and can autoregressively generate responses to users' inputs.",
@@ -7385,36 +7415,6 @@
             "paperUrl": "?"
         },
         "model_group": "zephyr"
-    },
-    {
-        "uniqueID": "microsoft/Fara-7B",
-        "name": "Fara-7B",
-        "description": "Fara-7B is Microsoft's first agentic small language model (SLM) designed specifically for computer use. With only 7 billion parameters, Fara-7B is an ultra-compact Computer Use Agent (CUA) that achieves state-of-the-art performance within its size class and is competitive with larger, more resource-intensive agentic systems.",
-        "added": "2025-11-25",
-        "tags": [],
-        "parameters": "7B",
-        "context": "128000",
-        "architecture": "Qwen2_5_VLForConditionalGeneration",
-        "formats": [
-            "Safetensors"
-        ],
-        "huggingface_repo": "microsoft/Fara-7B",
-        "transformers_version": "4.52.4",
-        "gated": false,
-        "license": "mit",
-        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
-        "size_of_model_in_mb": 15829.736442565918,
-        "author": {
-            "name": "microsoft",
-            "url": "https://huggingface.co/microsoft/Fara-7B",
-            "blurb": ""
-        },
-        "resources": {
-            "canonicalUrl": "https://huggingface.co/microsoft/Fara-7B",
-            "downloadUrl": "https://huggingface.co/microsoft/Fara-7B",
-            "paperUrl": "?"
-        },
-        "model_group": "Qwen VL"
     },
     {
         "uniqueID": "Zyphra/ZR1-1.5B",
