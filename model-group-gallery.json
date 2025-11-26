@@ -1732,7 +1732,7 @@
                 "added": "2025-11-25",
                 "tags": [
                     "Tool Use",
-                    "Vision"                
+                    "Vision"
                 ],
                 "parameters": "7B",
                 "context": "128000",
