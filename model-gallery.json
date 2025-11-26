@@ -438,7 +438,7 @@
     {
         "uniqueID": "HuggingFaceTB/SmolLM3-3B-Base",
         "name": "SmolLM3-3B-Base",
-        "description": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B\u20134B scale.",
+        "description": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B\u00e2\u20ac\u201c4B scale.",
         "added": "2025-07-09",
         "tags": [],
         "parameters": "3B",
@@ -468,7 +468,7 @@
     {
         "uniqueID": "HuggingFaceTB/SmolLM3-3B",
         "name": "SmolLM3-3B",
-        "description": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B\u20134B scale.",
+        "description": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B\u00e2\u20ac\u201c4B scale.",
         "added": "2025-07-10",
         "tags": [],
         "parameters": "3B",
@@ -591,7 +591,7 @@
     {
         "uniqueID": "ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
         "name": "Apriel Nemotron 15B Thinker",
-        "description": "Apriel-Nemotron-15b-Thinker is a 15\u202fbillion\u2011parameter reasoning model in ServiceNow\u2019s Apriel SLM series which achieves competitive performance against similarly sized state-of-the-art models like o1\u2011mini, QWQ\u201132b, and EXAONE\u2011Deep\u201132b, all while maintaining only half the memory footprint of those alternatives. It builds upon the Apriel\u201115b\u2011base checkpoint through a three\u2011stage training pipeline (CPT, SFT and GRPO).",
+        "description": "Apriel-Nemotron-15b-Thinker is a 15\u00e2\u20ac\u00afbillion\u00e2\u20ac\u2018parameter reasoning model in ServiceNow\u00e2\u20ac\u2122s Apriel SLM series which achieves competitive performance against similarly sized state-of-the-art models like o1\u00e2\u20ac\u2018mini, QWQ\u00e2\u20ac\u201832b, and EXAONE\u00e2\u20ac\u2018Deep\u00e2\u20ac\u201832b, all while maintaining only half the memory footprint of those alternatives. It builds upon the Apriel\u00e2\u20ac\u201815b\u00e2\u20ac\u2018base checkpoint through a three\u00e2\u20ac\u2018stage training pipeline (CPT, SFT and GRPO).",
         "added": "2025-05-07",
         "tags": [],
         "parameters": "15B",
@@ -1743,7 +1743,7 @@
         "tags": [],
         "parameters": "7B",
         "context": "128000",
-        "architecture": "Qwen2VLForConditionalGeneration",
+        "architecture": "Qwen2_5_VLForConditionalGeneration",
         "formats": [
             "Safetensors"
         ],
@@ -3121,7 +3121,7 @@
     {
         "uniqueID": "allenai/Llama-3.1-Tulu-3-8B",
         "name": "Llama 3.1 Tulu 3 8B",
-        "description": "T\u00fclu3 is a leading instruction following model family, offering fully open-source data, code, and recipes designed to serve as a comprehensive guide for modern post-training techniques. T\u00fclu3 is designed for state-of-the-art performance on a diversity of tasks in addition to chat, such as MATH, GSM8K, and IFEval.",
+        "description": "T\u00c3\u00bclu3 is a leading instruction following model family, offering fully open-source data, code, and recipes designed to serve as a comprehensive guide for modern post-training techniques. T\u00c3\u00bclu3 is designed for state-of-the-art performance on a diversity of tasks in addition to chat, such as MATH, GSM8K, and IFEval.",
         "parameters": "8B",
         "added": "2025-01-31",
         "context": "131072",
@@ -4421,7 +4421,7 @@
     {
         "uniqueID": "openbmb/MiniCPM4-8B",
         "name": "OpenBMB MiniCPM4 8B",
-        "description": "MiniCPM4 series are highly efficient large language models with sparse attention, built for long\u2011context processing and ultra\u2011efficient on\u2011device inference.",
+        "description": "MiniCPM4 series are highly efficient large language models with sparse attention, built for long\u00e2\u20ac\u2018context processing and ultra\u00e2\u20ac\u2018efficient on\u00e2\u20ac\u2018device inference.",
         "added": "2025-06-20",
         "tags": [
             "Reasoning"
@@ -4486,7 +4486,7 @@
         "uniqueID": "openlm-research/open_llama_3b_v2",
         "name": "Open LLama 3b v2",
         "archived": true,
-        "description": " we are releasing our public preview of OpenLLaMA, a permissively licensed open source reproduction of Meta AI\u2019s LLaMA. We are releasing a series of 3B, 7B and 13B models trained on different data mixtures. Our model weights can serve as the drop in replacement of LLaMA in existing implementations.",
+        "description": " we are releasing our public preview of OpenLLaMA, a permissively licensed open source reproduction of Meta AI\u00e2\u20ac\u2122s LLaMA. We are releasing a series of 3B, 7B and 13B models trained on different data mixtures. Our model weights can serve as the drop in replacement of LLaMA in existing implementations.",
         "parameters": "3B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
@@ -4515,7 +4515,7 @@
         "uniqueID": "openlm-research/open_llama_7b_v2",
         "name": "Open LLama 7b v2",
         "archived": true,
-        "description": " we are releasing our public preview of OpenLLaMA, a permissively licensed open source reproduction of Meta AI\u2019s LLaMA. We are releasing a series of 3B, 7B and 13B models trained on different data mixtures. Our model weights can serve as the drop in replacement of LLaMA in existing implementations.",
+        "description": " we are releasing our public preview of OpenLLaMA, a permissively licensed open source reproduction of Meta AI\u00e2\u20ac\u2122s LLaMA. We are releasing a series of 3B, 7B and 13B models trained on different data mixtures. Our model weights can serve as the drop in replacement of LLaMA in existing implementations.",
         "parameters": "7B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
@@ -7074,7 +7074,7 @@
     {
         "uniqueID": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
         "name": "Tiny Llama 1.1B Chat",
-        "description": "The TinyLlama project aims to pretrain a 1.1B Llama model on 3 trillion tokens. With some proper optimization, we can achieve this within a span of 90 days using 16 A100-40G GPUs \ud83d\ude80\ud83d\ude80. The training has started on 2023-09-01.",
+        "description": "The TinyLlama project aims to pretrain a 1.1B Llama model on 3 trillion tokens. With some proper optimization, we can achieve this within a span of 90 days using 16 A100-40G GPUs \u00f0\u0178\u0161\u20ac\u00f0\u0178\u0161\u20ac. The training has started on 2023-09-01.",
         "parameters": "1.1B",
         "context": "4k",
         "architecture": "LlamaForCausalLM",
@@ -7388,7 +7388,7 @@
     {
         "uniqueID": "HuggingFaceH4/zephyr-7b-alpha",
         "name": "Zephyr 7b Alpha",
-        "description": "Zephyr is a series of language models that are trained to act as helpful assistants. Zephyr-7B-\u03b1 is the first model in the series, and is a fine-tuned version of mistralai/Mistral-7B-v0.1 that was trained on on a mix of publicly available, synthetic datasets using Direct Preference Optimization (DPO).",
+        "description": "Zephyr is a series of language models that are trained to act as helpful assistants. Zephyr-7B-\u00ce\u00b1 is the first model in the series, and is a fine-tuned version of mistralai/Mistral-7B-v0.1 that was trained on on a mix of publicly available, synthetic datasets using Direct Preference Optimization (DPO).",
         "parameters": "7B",
         "tags": [
             "RAG"
