@@ -3878,10 +3878,14 @@
             {
                 "uniqueID": "dllm-collection/ModernBERT-base-chat-v0",
                 "name": "ModernBERT-base-chat-v0",
-                "description": "",
+                "description": "ModernBERT-base-chat-v0 is a generative variant of ModernBERT-base, finetuned using the dLLM framework. This model demonstrates that BERT can serve as a diffusion-based chatbot trained purely with supervised instruction data \u2014 no continual generative pretraining required.",
                 "added": "2025-11-20",
-                "tags": [],
-                "parameters": "",
+                "tags": [
+                    "Diffusion",
+                    "Text Generation",
+                    "Masked Language Modeling"
+                ],
+                "parameters": "0.2B",
                 "context": "8192",
                 "architecture": "ModernBertForMaskedLM",
                 "formats": [
@@ -3891,7 +3895,7 @@
                 "transformers_version": "4.57.0",
                 "gated": false,
                 "license": "apache-2.0",
-                "logo": "",
+                "logo": "https://www.gravatar.com/avatar/0cd0099e911d0ac6315a4ea9675343a2?d=retro&size=100",
                 "size_of_model_in_mb": 362.6850233078003,
                 "author": {
                     "name": "dllm-collection",
@@ -3908,10 +3912,14 @@
             {
                 "uniqueID": "dllm-collection/ModernBERT-large-chat-v0",
                 "name": "ModernBERT-large-chat-v0",
-                "description": "",
+                "description": "ModernBERT-large-chat-v0 is a generative variant of ModernBERT-large, finetuned using the dLLM framework. This model demonstrates that BERT can serve as a diffusion-based chatbot trained purely with supervised instruction data \u2014 no continual generative pretraining required.",
                 "added": "2025-11-20",
-                "tags": [],
-                "parameters": "",
+                "tags": [
+                    "Diffusion",
+                    "Text Generation",
+                    "Masked Language Modeling"
+                ],
+                "parameters": "0.4B",
                 "context": "8192",
                 "architecture": "ModernBertForMaskedLM",
                 "formats": [
@@ -3921,7 +3929,7 @@
                 "transformers_version": "4.57.0",
                 "gated": false,
                 "license": "apache-2.0",
-                "logo": "",
+                "logo": "https://www.gravatar.com/avatar/0cd0099e911d0ac6315a4ea9675343a2?d=retro&size=100",
                 "size_of_model_in_mb": 856.9222221374512,
                 "author": {
                     "name": "dllm-collection",
@@ -3938,10 +3946,14 @@
             {
                 "uniqueID": "answerdotai/ModernBERT-base",
                 "name": "ModernBERT-base",
-                "description": "",
+                "description": "ModernBERT is a modernized bidirectional encoder-only Transformer model (BERT-style) pre-trained on 2 trillion tokens of English and code data with a native context length of up to 8,192 tokens. ",
                 "added": "2025-11-20",
-                "tags": [],
-                "parameters": "",
+                "tags": [
+                    "Diffusion",
+                    "Text Generation",
+                    "Masked Language Modeling"
+                ],
+                "parameters": "0.1B",
                 "context": "8192",
                 "architecture": "ModernBertForMaskedLM",
                 "formats": [
@@ -3951,7 +3963,7 @@
                 "transformers_version": "4.47.0.dev0",
                 "gated": false,
                 "license": "apache-2.0",
-                "logo": "",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/623e19ff8972a8c030af5277/KTqmARlLjdqMClfLWA-A1.png",
                 "size_of_model_in_mb": 1143.889181137085,
                 "author": {
                     "name": "answerdotai",
@@ -3968,10 +3980,14 @@
             {
                 "uniqueID": "answerdotai/ModernBERT-large",
                 "name": "ModernBERT-large",
-                "description": "",
+                "description": "ModernBERT is a modernized bidirectional encoder-only Transformer model (BERT-style) pre-trained on 2 trillion tokens of English and code data with a native context length of up to 8,192 tokens.",
                 "added": "2025-11-20",
-                "tags": [],
-                "parameters": "",
+                "tags": [
+                    "Diffusion",
+                    "Text Generation",
+                    "Masked Language Modeling"
+                ],
+                "parameters": "0.4B",
                 "context": "8192",
                 "architecture": "ModernBertForMaskedLM",
                 "formats": [
@@ -3981,7 +3997,7 @@
                 "transformers_version": "4.47.0.dev0",
                 "gated": false,
                 "license": "apache-2.0",
-                "logo": "",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/623e19ff8972a8c030af5277/KTqmARlLjdqMClfLWA-A1.png",
                 "size_of_model_in_mb": 3022.462546348572,
                 "author": {
                     "name": "answerdotai",
@@ -3998,9 +4014,13 @@
             {
                 "uniqueID": "Dream-org/Dream-v0-Instruct-7B",
                 "name": "Dream-v0-Instruct-7B",
-                "description": "",
+                "description": "This is the instruct model of Dream 7B, which is an open diffusion large language model with top-tier performance released by HKUNLP",
                 "added": "2025-11-20",
-                "tags": [],
+                "tags": [
+                    "Diffusion",
+                    "Text Generation",
+                    "Masked Language Modeling"
+                ],
                 "parameters": "7B",
                 "context": "131072",
                 "architecture": "DreamModel",
@@ -4011,7 +4031,7 @@
                 "transformers_version": "4.46.2",
                 "gated": false,
                 "license": "apache-2.0",
-                "logo": "",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/6364cc3912188d67e6526cfa/f0EYAVUgyJzJFEZOyWE42.png",
                 "size_of_model_in_mb": 14529.008292198181,
                 "author": {
                     "name": "Dream-org",
@@ -4028,9 +4048,13 @@
             {
                 "uniqueID": "GSAI-ML/LLaDA-8B-Instruct",
                 "name": "LLaDA-8B-Instruct",
-                "description": "",
+                "description": "LLaDA is a diffusion model with an unprecedented 8B scale, trained entirely from scratch, rivaling LLaMA3 8B in performance.",
                 "added": "2025-11-20",
-                "tags": [],
+                "tags": [
+                    "Diffusion",
+                    "Text Generation",
+                    "Masked Language Modeling"
+                ],
                 "parameters": "8B",
                 "context": "2048",
                 "architecture": "LLaDAModelLM",
@@ -4041,7 +4065,7 @@
                 "transformers_version": "4.46.3",
                 "gated": false,
                 "license": "mit",
-                "logo": "",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/624f909eac5dd186b01ac3f5/6tfvx3XT5Sx6YDGl7KUAU.jpeg",
                 "size_of_model_in_mb": 15294.502674102783,
                 "author": {
                     "name": "GSAI-ML",
@@ -4058,9 +4082,13 @@
             {
                 "uniqueID": "Dream-org/Dream-v0-Base-7B",
                 "name": "Dream-v0-Base-7B",
-                "description": "",
+                "description": "This is the base model of Dream 7B, which is an open diffusion large language model with top-tier performance.",
                 "added": "2025-11-20",
-                "tags": [],
+                "tags": [
+                    "Diffusion",
+                    "Text Generation",
+                    "Masked Language Modeling"
+                ],
                 "parameters": "7B",
                 "context": "131072",
                 "architecture": "DreamModel",
@@ -4071,7 +4099,7 @@
                 "transformers_version": "4.46.2",
                 "gated": false,
                 "license": "apache-2.0",
-                "logo": "",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/6364cc3912188d67e6526cfa/f0EYAVUgyJzJFEZOyWE42.png",
                 "size_of_model_in_mb": 14529.00807094574,
                 "author": {
                     "name": "Dream-org",
