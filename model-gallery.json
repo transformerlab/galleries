@@ -1743,7 +1743,7 @@
         "tags": [],
         "parameters": "7B",
         "context": "128000",
-        "architecture": "Qwen2_5_VLForConditionalGeneration",
+        "architecture": "Qwen2VLForConditionalGeneration",
         "formats": [
             "Safetensors"
         ],
