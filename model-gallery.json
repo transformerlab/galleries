@@ -7389,7 +7389,7 @@
     {
         "uniqueID": "microsoft/Fara-7B",
         "name": "Fara-7B",
-        "description": "",
+        "description": "Fara-7B is Microsoft's first agentic small language model (SLM) designed specifically for computer use. With only 7 billion parameters, Fara-7B is an ultra-compact Computer Use Agent (CUA) that achieves state-of-the-art performance within its size class and is competitive with larger, more resource-intensive agentic systems.",
         "added": "2025-11-25",
         "tags": [],
         "parameters": "7B",
