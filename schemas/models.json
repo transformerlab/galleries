@@ -50,6 +50,7 @@
           "Phi3ForCausalLM",
           "Qwen2ForCausalLM",
           "Qwen2VLForConditionalGeneration",
+          "Qwen2_5_VLForConditionalGeneration",
           "Qwen3ForCausalLM",
           "Qwen3MoeForCausalLM",
           "Qwen3VLMoeForConditionalGeneration",

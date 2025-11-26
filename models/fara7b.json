@@ -6,7 +6,7 @@
   "tags": [],
   "parameters": "7B",
   "context": "128000",
-  "architecture": "Qwen2VLForConditionalGeneration",
+  "architecture": "Qwen2_5_VLForConditionalGeneration",
   "formats": [
     "Safetensors"
   ],
