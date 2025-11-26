@@ -61,8 +61,7 @@ def read_and_combine_json_files(directory: str):
         else:
             open_path = os.path.join(directory, file)
             display_name = file
-        # Open files using UTF-8 to preserve original unicode characters correctly
-        with open(file=open_path, mode='r', encoding='utf-8') as f:
+        with open(file=open_path, mode='r') as f:
             print(f' - Processing {display_name}')
             if file.endswith('.yaml'):
                 file_contents = yaml.load(stream=f, Loader=yaml.FullLoader)
@@ -97,6 +96,7 @@ def read_and_combine_json_files(directory: str):
                 else:
                     combined_json.append(file_contents)
 
+    # Validate the combined_json to see if it is valid JSON:
     try:
         json.dumps(obj=combined_json)
         print('JSON is valid')
@@ -104,11 +104,10 @@ def read_and_combine_json_files(directory: str):
         print(f"ERROR: {e}")
         exit(1)
 
+    # Validate the combined_json against the schema (if present)
     schema_path = f'schemas/{directory}.json'
     if os.path.exists(schema_path):
-        # Ensure schema is read as UTF-8 too
-        with open(schema_path, 'r', encoding='utf-8') as sf:
-            schema = json.load(fp=sf)
+        schema = json.load(fp=open(file=schema_path, mode='r'))
         validate_json(json=combined_json, schema=schema)
     else:
         print(f"No schema found at {schema_path}; skipping schema validation")
@@ -121,51 +120,49 @@ def read_and_combine_json_files(directory: str):
     filename = f'{filename}-gallery.json'
     
     # Write the models out
-    # Write combined gallery using UTF-8 and preserve unicode characters (no re-escaping)
-    with open(file=filename, mode='w', encoding='utf-8') as f:
-        json.dump(obj=combined_json, fp=f, indent=4, ensure_ascii=False)
- 
+    with open(file=filename, mode='w') as f:
+        json.dump(obj=combined_json, fp=f, indent=4)
+
     print('---')
- 
+
     if directory == 'models':
-         # Load model group headers
-         model_groups_dir = 'model-groups'
-         model_groups = {}
- 
-         for file in os.listdir(model_groups_dir):
-             if file.endswith('.json'):
-                # Read model group files using UTF-8
-                with open(os.path.join(model_groups_dir, file), 'r', encoding='utf-8') as f:
-                     try:
-                         group_data = json.load(f)
-                         group_data["models"] = []  # Reset
-                         model_groups[group_data["name"]] = group_data
-                     except Exception as e:
-                         print(f"ERROR: Error reading model group {file}: {e}")
- 
-         # Check for blank model_group and assign models to their groups
-         for model in combined_json:
-             group_name = model.get("model_group")
-             if not group_name or group_name.strip() == "":
-                 model_name = model.get('name', 'Unknown')
-                 model_id = model.get('id', model.get('uniqueID', 'Unknown'))
-                 print(f"ERROR: ‼️ Model '{model_name}' (ID: {model_id}) has a blank or missing 'model_group' field")
-                 exit(1)
-             
-             if group_name not in model_groups:
-                 model_name = model.get('name', 'Unknown')
-                 model_id = model.get('id', model.get('uniqueID', 'Unknown'))
-                 print(f"ERROR: ‼️ Model '{model_name}' (ID: {model_id}) has unknown 'model_group' '{group_name}'")
-                 exit(1)
-             
-             model_groups[group_name]["models"].append(model)
- 
-         # Write model-group-gallery.json with UTF-8 and preserve unicode
-         with open('model-group-gallery.json', 'w', encoding='utf-8') as f:
-             json.dump(list(model_groups.values()), f, indent=4, ensure_ascii=False)
- 
-         print('---')
- 
+        # Load model group headers
+        model_groups_dir = 'model-groups'
+        model_groups = {}
+
+        for file in os.listdir(model_groups_dir):
+            if file.endswith('.json'):
+                with open(os.path.join(model_groups_dir, file), 'r') as f:
+                    try:
+                        group_data = json.load(f)
+                        group_data["models"] = []  # Reset
+                        model_groups[group_data["name"]] = group_data
+                    except Exception as e:
+                        print(f"ERROR: Error reading model group {file}: {e}")
+
+        # Check for blank model_group and assign models to their groups
+        for model in combined_json:
+            group_name = model.get("model_group")
+            if not group_name or group_name.strip() == "":
+                model_name = model.get('name', 'Unknown')
+                model_id = model.get('id', model.get('uniqueID', 'Unknown'))
+                print(f"ERROR: ‼️ Model '{model_name}' (ID: {model_id}) has a blank or missing 'model_group' field")
+                exit(1)
+            
+            if group_name not in model_groups:
+                model_name = model.get('name', 'Unknown')
+                model_id = model.get('id', model.get('uniqueID', 'Unknown'))
+                print(f"ERROR: ‼️ Model '{model_name}' (ID: {model_id}) has unknown 'model_group' '{group_name}'")
+                exit(1)
+            
+            model_groups[group_name]["models"].append(model)
+
+        # Write model-group-gallery.json
+        with open('model-group-gallery.json', 'w') as f:
+            json.dump(list(model_groups.values()), f, indent=4)
+
+        print('---')
+
 
 read_and_combine_json_files(directory='models')
 
