@@ -35,9 +35,11 @@
     {
       "uniqueID": "PrimeIntellect/INTELLECT-3-FP8",
       "name": "INTELLECT-3-FP8",
-      "description": "",
+      "description": "INTELLECT-3 is a 106B (A12B) parameter Mixture-of-Experts reasoning model post-trained from GLM-4.5-Air-Base using supervised fine-tuning (SFT) followed by large-scale reinforcement learning (RL).",
       "added": "2025-11-27",
-      "tags": [],
+      "tags": [
+        "Reasoning"
+      ],
       "parameters": "",
       "context": "131072",
       "architecture": "Glm4MoeForCausalLM",
@@ -60,7 +62,7 @@
         "downloadUrl": "https://huggingface.co/PrimeIntellect/INTELLECT-3-FP8",
         "paperUrl": "?"
       },
-      "model_group": ""
+      "model_group": "intellect"
     }
   ]
 ]
