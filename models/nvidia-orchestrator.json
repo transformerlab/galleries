@@ -15,7 +15,7 @@
   "huggingface_repo": "nvidia/Orchestrator-8B",
   "transformers_version": "4.51.3",
   "gated": false,
-  "license": null,
+  "license": "nvidia",
   "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
   "size_of_model_in_mb": 31258.803968429565,
   "author": {
