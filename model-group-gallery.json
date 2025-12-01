@@ -2913,6 +2913,38 @@
                     "paperUrl": "?"
                 },
                 "model_group": "nemotron"
+            },
+            {
+                "uniqueID": "nvidia/Orchestrator-8B",
+                "name": "Orchestrator-8B",
+                "description": "Orchestrator-8B is a state-of-the-art 8B parameter orchestration model designed to solve complex, multi-turn agentic tasks by coordinating a diverse set of expert models and tools.",
+                "added": "2025-11-29",
+                "tags": [
+                    "Tool Use"
+                ],
+                "parameters": "8B",
+                "context": "40960",
+                "architecture": "Qwen3ForCausalLM",
+                "formats": [
+                    "Safetensors"
+                ],
+                "huggingface_repo": "nvidia/Orchestrator-8B",
+                "transformers_version": "4.51.3",
+                "gated": false,
+                "license": "nvidia",
+                "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+                "size_of_model_in_mb": 31258.803968429565,
+                "author": {
+                    "name": "nvidia",
+                    "url": "https://huggingface.co/nvidia/Orchestrator-8B",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/nvidia/Orchestrator-8B",
+                    "downloadUrl": "https://huggingface.co/nvidia/Orchestrator-8B",
+                    "paperUrl": "?"
+                },
+                "model_group": "nemotron"
             }
         ]
     },
