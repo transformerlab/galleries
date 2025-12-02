@@ -5,14 +5,8 @@ and publishes them to the root of the repository.
 import os
 import json
 import yaml
-import requests
-import time
 from jsonschema import validate, ValidationError
 from update_dataset_sizes import update_dataset_sizes
-
-
-# Global cache for URL checks to avoid duplicate requests
-url_check_cache = {}
 
 
 def validate_json(json, schema):
@@ -36,143 +30,26 @@ def check_for_duplicate_ids(combined_json):
     print('✅ No duplicate IDs found')
 
 
-def check_url_reachable(url, timeout=10, max_retries=3):
-    """Check if a URL is reachable (doesn't return 404 or other error)."""
-    if not url or url == "?":
-        return True  # Skip validation for placeholder URLs
-    
-    # Check cache first
-    if url in url_check_cache:
-        return url_check_cache[url]
-    
-    for attempt in range(max_retries):
-        try:
-            # Add delay between requests to avoid rate limiting
-            if attempt > 0:
-                wait_time = 2 ** attempt  # Exponential backoff: 2s, 4s, 8s
-                print(f"   ⏳ Rate limited, waiting {wait_time}s before retry {attempt + 1}/{max_retries}...")
-                time.sleep(wait_time)
-            else:
-                # Small delay even on first request to be respectful
-                time.sleep(0.5)
-            
-            # Try HEAD request first
-            response = requests.head(url, timeout=timeout, allow_redirects=True)
-            
-            # If HEAD returns 404, it's definitely unreachable
-            if response.status_code == 404:
-                print(f"   🔍 HEAD request returned 404 for: {url}")
-                url_check_cache[url] = False
-                return False
-            
-            # If we got rate limited (429), retry
-            if response.status_code == 429:
-                if attempt < max_retries - 1:
-                    continue  # Retry
-                else:
-                    print(f"   ⚠️  Still rate limited after {max_retries} attempts, assuming URL is valid: {url}")
-                    url_check_cache[url] = True
-                    return True
-            
-            # Some servers don't support HEAD, so try GET if HEAD fails
-            if response.status_code >= 400:
-                print(f"   🔍 HEAD failed ({response.status_code}), trying GET for: {url}")
-                time.sleep(0.5)  # Extra delay before GET
-                response = requests.get(url, timeout=timeout, allow_redirects=True)
-                
-                if response.status_code == 404:
-                    print(f"   🔍 GET request returned 404 for: {url}")
-                    url_check_cache[url] = False
-                    return False
-                
-                # If we got rate limited on GET, retry
-                if response.status_code == 429:
-                    if attempt < max_retries - 1:
-                        continue  # Retry
-                    else:
-                        print(f"   ⚠️  Still rate limited after {max_retries} attempts, assuming URL is valid: {url}")
-                        url_check_cache[url] = True
-                        return True
-                
-                # For HuggingFace, check if the response contains 404 indicators in the HTML
-                if 'huggingface.co' in url and response.status_code == 200:
-                    content = response.text.lower()
-                    if '404' in content or 'not found' in content or 'repository not found' in content:
-                        print(f"   🔍 Found 404 indicators in page content for: {url}")
-                        url_check_cache[url] = False
-                        return False
-            
-            # Consider 2xx and 3xx as reachable
-            result = response.status_code < 400
-            url_check_cache[url] = result
-            return result
-            
-        except requests.RequestException as e:
-            # If we can't reach it due to network issues, assume it's unreachable
-            print(f"   🔍 Request exception for {url}: {e}")
-            url_check_cache[url] = False
-            return False
-    
-    # If we exhausted all retries, assume it's unreachable
-    url_check_cache[url] = False
-    return False
-
-
-def validate_model_urls(model):
-    """Validate that model URLs are reachable. Returns True if valid, False otherwise."""
-    resources = model.get('resources', {})
-    canonical_url = resources.get('canonicalUrl')
-    download_url = resources.get('downloadUrl')
-    
-    model_name = model.get('name', 'Unknown')
-    model_id = model.get('id', model.get('uniqueID', 'Unknown'))
-    
-    # Check canonical URL
-    if canonical_url and canonical_url != "?":
-        if not check_url_reachable(canonical_url):
-            print(f"⚠️  Warning: Model '{model_name}' (ID: {model_id}) has unreachable canonicalUrl: {canonical_url}")
-            return False
-    
-    # Check download URL
-    if download_url and download_url != "?":
-        if not check_url_reachable(download_url):
-            print(f"⚠️  Warning: Model '{model_name}' (ID: {model_id}) has unreachable downloadUrl: {download_url}")
-            return False
-    
-    return True
-
-
 def read_and_combine_json_files(directory: str):
     print(f'Combining JSON files in {directory} directory')
-    
-    # Check if directory exists relative to script location
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    parent_dir = os.path.dirname(script_dir)
-    directory_path = os.path.join(parent_dir, directory)
 
-    if not os.path.exists(directory_path):
-        print(f'  ⚠️  Directory {directory_path} does not exist, skipping...')
+    if not os.path.exists(directory):
         return
 
     # Get JSON/YAML files
     # Special handling for 'tasks': gather nested task definitions
     if directory == 'tasks':
         files_json: list[str] = []
-        for root, _dirs, files in os.walk(directory_path):
+        for root, _dirs, files in os.walk(directory):
             for f in files:
                 if f == 'task.json':
                     files_json.append(os.path.join(root, f))
     else:
         files_json: list[str] = [f for f in os.listdir(
-            path=directory_path) if (f.endswith('.json') or f.endswith('.yaml'))]
+            path=directory) if (f.endswith('.json') or f.endswith('.yaml'))]
     
     # sort the files by name:
     files_json.sort()
-    
-    print(f'  📁 Found {len(files_json)} files to process')
-    if len(files_json) == 0:
-        print(f'  ⚠️  No JSON/YAML files found in {directory}')
-        return
 
     # Combine the JSON files into a single dictionary
     combined_json = []
@@ -182,7 +59,7 @@ def read_and_combine_json_files(directory: str):
             open_path = file
             display_name = os.path.relpath(file)
         else:
-            open_path = os.path.join(directory_path, file)
+            open_path = os.path.join(directory, file)
             display_name = file
         with open(file=open_path, mode='r') as f:
             print(f' - Processing {display_name}')
@@ -215,30 +92,9 @@ def read_and_combine_json_files(directory: str):
                     combined_json.append(minimal)
             else:
                 if isinstance(file_contents, list):
-                    # Validate URLs for models directory
-                    if directory == 'models':
-                        valid_items = []
-                        for item in file_contents:
-                            if validate_model_urls(item):
-                                valid_items.append(item)
-                            else:
-                                model_name = item.get('name', 'Unknown')
-                                model_id = item.get('id', item.get('uniqueID', 'Unknown'))
-                                print(f"   ❌ Skipping model '{model_name}' (ID: {model_id}) due to unreachable URLs")
-                        combined_json.extend(valid_items)
-                    else:
-                        combined_json.extend(file_contents)
+                    combined_json.extend(file_contents)
                 else:
-                    # Validate URLs for models directory
-                    if directory == 'models':
-                        if validate_model_urls(file_contents):
-                            combined_json.append(file_contents)
-                        else:
-                            model_name = file_contents.get('name', 'Unknown')
-                            model_id = file_contents.get('id', file_contents.get('uniqueID', 'Unknown'))
-                            print(f"   ❌ Skipping model '{model_name}' (ID: {model_id}) due to unreachable URLs")
-                    else:
-                        combined_json.append(file_contents)
+                    combined_json.append(file_contents)
 
     # Validate the combined_json to see if it is valid JSON:
     try:
@@ -249,7 +105,7 @@ def read_and_combine_json_files(directory: str):
         exit(1)
 
     # Validate the combined_json against the schema (if present)
-    schema_path = os.path.join(parent_dir, 'schemas', f'{directory}.json')
+    schema_path = f'schemas/{directory}.json'
     if os.path.exists(schema_path):
         schema = json.load(fp=open(file=schema_path, mode='r'))
         validate_json(json=combined_json, schema=schema)
@@ -262,17 +118,16 @@ def read_and_combine_json_files(directory: str):
     # the API expects. e.g. plugins -> plugin-gallery.json
     filename = directory[:-1]     # remove the tailing s:
     filename = f'{filename}-gallery.json'
-    output_path = os.path.join(parent_dir, filename)
     
     # Write the models out
-    with open(file=output_path, mode='w') as f:
+    with open(file=filename, mode='w') as f:
         json.dump(obj=combined_json, fp=f, indent=4)
 
     print('---')
 
     if directory == 'models':
         # Load model group headers
-        model_groups_dir = os.path.join(parent_dir, 'model-groups')
+        model_groups_dir = 'model-groups'
         model_groups = {}
 
         for file in os.listdir(model_groups_dir):
@@ -303,7 +158,7 @@ def read_and_combine_json_files(directory: str):
             model_groups[group_name]["models"].append(model)
 
         # Write model-group-gallery.json
-        with open(os.path.join(parent_dir, 'model-group-gallery.json'), 'w') as f:
+        with open('model-group-gallery.json', 'w') as f:
             json.dump(list(model_groups.values()), f, indent=4)
 
         print('---')
