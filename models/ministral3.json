@@ -1,0 +1,272 @@
+[
+  {
+    "uniqueID": "mistralai/Ministral-3-14B-Instruct-2512",
+    "name": "Ministral-3-14B-Instruct-2512",
+    "description": "",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "14B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-14B-Instruct-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 30028.735153198242,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "paperUrl": "?"
+    },
+    "model_group": ""
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-8B-Instruct-2512",
+    "name": "Ministral-3-8B-Instruct-2512",
+    "description": "",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "8B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-8B-Instruct-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 19908.187615394592,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+      "paperUrl": "?"
+    },
+    "model_group": ""
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-3B-Instruct-2512",
+    "name": "Ministral-3-3B-Instruct-2512",
+    "description": "",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "3B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-3B-Instruct-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 8943.600494384766,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
+      "paperUrl": "?"
+    },
+    "model_group": ""
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-14B-Reasoning-2512",
+    "name": "Ministral-3-14B-Reasoning-2512",
+    "description": "",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "14B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-14B-Reasoning-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 53228.86742210388,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512",
+      "paperUrl": "?"
+    },
+    "model_group": ""
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-8B-Reasoning-2512",
+    "name": "Ministral-3-8B-Reasoning-2512",
+    "description": "",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "8B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-8B-Reasoning-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 34052.34588909149,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512",
+      "paperUrl": "?"
+    },
+    "model_group": ""
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-3B-Reasoning-2512",
+    "name": "Ministral-3-3B-Reasoning-2512",
+    "description": "",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "3B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-3B-Reasoning-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 14715.864577293396,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512",
+      "paperUrl": "?"
+    },
+    "model_group": ""
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-14B-Base-2512",
+    "name": "Ministral-3-14B-Base-2512",
+    "description": "",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "14B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-14B-Base-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 53228.86742210388,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-14B-Base-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Base-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Base-2512",
+      "paperUrl": "?"
+    },
+    "model_group": ""
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-8B-Base-2512",
+    "name": "Ministral-3-8B-Base-2512",
+    "description": "",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "8B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-8B-Base-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 34052.34588909149,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-8B-Base-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Base-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Base-2512",
+      "paperUrl": "?"
+    },
+    "model_group": ""
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-3B-Base-2512",
+    "name": "Ministral-3-3B-Base-2512",
+    "description": "",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "3B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-3B-Base-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 14715.864577293396,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Base-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Base-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Base-2512",
+      "paperUrl": "?"
+    },
+    "model_group": ""
+  }
+]
