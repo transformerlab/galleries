@@ -5,7 +5,6 @@ and publishes them to the root of the repository.
 import os
 import json
 import yaml
-from jsonschema import validate, ValidationError
 from update_dataset_sizes import update_dataset_sizes
 
 
