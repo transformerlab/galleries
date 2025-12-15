@@ -3,7 +3,7 @@
     "uniqueID": "PrimeIntellect/INTELLECT-3",
     "name": "INTELLECT-3",
     "description": "INTELLECT-3 is a 106B (A12B) parameter Mixture-of-Experts reasoning model post-trained from GLM-4.5-Air-Base using supervised fine-tuning (SFT) followed by large-scale reinforcement learning (RL).",
-    "added": "2025-11-27",
+    "added": "2025-12-15",
     "tags": [
       "Reasoning"
     ],
@@ -36,7 +36,7 @@
       "uniqueID": "PrimeIntellect/INTELLECT-3-FP8",
       "name": "INTELLECT-3-FP8",
       "description": "INTELLECT-3 is a 106B (A12B) parameter Mixture-of-Experts reasoning model post-trained from GLM-4.5-Air-Base using supervised fine-tuning (SFT) followed by large-scale reinforcement learning (RL).",
-      "added": "2025-11-27",
+      "added": "2025-12-15",
       "tags": [
         "Reasoning"
       ],
