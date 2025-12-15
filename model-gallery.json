@@ -6874,40 +6874,6 @@
         "model_group": "Stable Diffusion"
     },
     {
-        "uniqueID": "stabilityai/stable-diffusion-2-1",
-        "name": "Stable Diffusion 2.1",
-        "description": "An improved version of Stable Diffusion 2.0 with better image quality and fewer artifacts. Uses OpenCLIP-ViT/H as the text encoder and a 768x768 default resolution.",
-        "parameters": "865M",
-        "architecture": "StableDiffusionPipeline",
-        "added": "2025-06-03",
-        "tags": [
-            "Text-to-Image",
-            "Diffusion"
-        ],
-        "formats": [
-            "Safetensors",
-            "PyTorch"
-        ],
-        "huggingface_repo": "stabilityai/stable-diffusion-2-1",
-        "transformers_version": "4.25.0",
-        "model_type": "diffusion",
-        "gated": false,
-        "license": "creativeml-openrail-m",
-        "logo": "https://stability.ai/favicon.ico",
-        "size_of_model_in_mb": 34656.23947143555,
-        "author": {
-            "name": "Stability AI",
-            "url": "https://huggingface.co/stabilityai/stable-diffusion-2-1",
-            "blurb": "Stability AI is building the foundation to activate humanity's potential through open AI."
-        },
-        "resources": {
-            "canonicalUrl": "https://huggingface.co/stabilityai/stable-diffusion-2-1",
-            "downloadUrl": "https://huggingface.co/stabilityai/stable-diffusion-2-1",
-            "paperUrl": "https://arxiv.org/abs/2112.10752"
-        },
-        "model_group": "Stable Diffusion"
-    },
-    {
         "uniqueID": "stabilityai/stable-diffusion-xl-base-1.0",
         "name": "Stable Diffusion XL Base 1.0",
         "model_type": "diffusion",
