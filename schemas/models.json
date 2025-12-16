@@ -64,7 +64,8 @@
           "MLXSpeechToText",
           "DreamModel",
           "ModernBertForMaskedLM",
-          "LLaDAModelLM"
+          "LLaDAModelLM",
+          "Glm4MoeForCausalLM"
         ]
       },
       "huggingface_repo": {
