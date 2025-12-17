@@ -9,7 +9,7 @@
   ],
   "parameters": "6B",
   "context": "N/A",
-  "architecture": "DiffusionPipeline",
+  "architecture": "ZImageTransformer2DModel",
   "formats": [
     "Diffusers"
   ],
