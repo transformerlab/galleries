@@ -3062,6 +3062,70 @@
         "model_group": "granite"
     },
     {
+        "uniqueID": "PrimeIntellect/INTELLECT-3",
+        "name": "INTELLECT-3",
+        "description": "INTELLECT-3 is a 106B (A12B) parameter Mixture-of-Experts reasoning model post-trained from GLM-4.5-Air-Base using supervised fine-tuning (SFT) followed by large-scale reinforcement learning (RL).",
+        "added": "2025-12-15",
+        "tags": [
+            "Reasoning"
+        ],
+        "parameters": "",
+        "context": "131072",
+        "architecture": "Glm4MoeForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "PrimeIntellect/INTELLECT-3",
+        "transformers_version": "4.56.1",
+        "gated": false,
+        "license": "mit",
+        "logo": "",
+        "size_of_model_in_mb": 203827.23168373108,
+        "author": {
+            "name": "PrimeIntellect",
+            "url": "https://huggingface.co/PrimeIntellect/INTELLECT-3",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/PrimeIntellect/INTELLECT-3",
+            "downloadUrl": "https://huggingface.co/PrimeIntellect/INTELLECT-3",
+            "paperUrl": "?"
+        },
+        "model_group": "intellect"
+    },
+    {
+        "uniqueID": "PrimeIntellect/INTELLECT-3-FP8",
+        "name": "INTELLECT-3-FP8",
+        "description": "INTELLECT-3 is a 106B (A12B) parameter Mixture-of-Experts reasoning model post-trained from GLM-4.5-Air-Base using supervised fine-tuning (SFT) followed by large-scale reinforcement learning (RL).",
+        "added": "2025-12-15",
+        "tags": [
+            "Reasoning"
+        ],
+        "parameters": "",
+        "context": "131072",
+        "architecture": "Glm4MoeForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "PrimeIntellect/INTELLECT-3-FP8",
+        "transformers_version": "4.56.1",
+        "gated": false,
+        "license": "mit",
+        "logo": "",
+        "size_of_model_in_mb": 103292.57446479797,
+        "author": {
+            "name": "PrimeIntellect",
+            "url": "https://huggingface.co/PrimeIntellect/INTELLECT-3-FP8",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/PrimeIntellect/INTELLECT-3-FP8",
+            "downloadUrl": "https://huggingface.co/PrimeIntellect/INTELLECT-3-FP8",
+            "paperUrl": "?"
+        },
+        "model_group": "intellect"
+    },
+    {
         "uniqueID": "moonshotai/Kimi-K2-Instruct",
         "name": "Kimi-K2-Instruct",
         "description": "Kimi K2 is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters.",
@@ -4436,6 +4500,38 @@
             "paperUrl": "?"
         },
         "model_group": "nous-hermes"
+    },
+    {
+        "uniqueID": "nvidia/Orchestrator-8B",
+        "name": "Orchestrator-8B",
+        "description": "Orchestrator-8B is a state-of-the-art 8B parameter orchestration model designed to solve complex, multi-turn agentic tasks by coordinating a diverse set of expert models and tools.",
+        "added": "2025-11-29",
+        "tags": [
+            "Tool Use"
+        ],
+        "parameters": "8B",
+        "context": "40960",
+        "architecture": "Qwen3ForCausalLM",
+        "formats": [
+            "Safetensors"
+        ],
+        "huggingface_repo": "nvidia/Orchestrator-8B",
+        "transformers_version": "4.51.3",
+        "gated": false,
+        "license": "nvidia",
+        "logo": "https://cdn-avatars.huggingface.co/v1/production/uploads/62088594a5943c8a8fc94560/y5SEKiE8TkjBKs9xfjCx5.png",
+        "size_of_model_in_mb": 31258.803968429565,
+        "author": {
+            "name": "nvidia",
+            "url": "https://huggingface.co/nvidia/Orchestrator-8B",
+            "blurb": ""
+        },
+        "resources": {
+            "canonicalUrl": "https://huggingface.co/nvidia/Orchestrator-8B",
+            "downloadUrl": "https://huggingface.co/nvidia/Orchestrator-8B",
+            "paperUrl": "?"
+        },
+        "model_group": "nemotron"
     },
     {
         "uniqueID": "openbmb/MiniCPM4-8B",
