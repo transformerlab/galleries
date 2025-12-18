@@ -221,5 +221,11 @@
       "gpus": "2",
       "setup": "uv pip install -r requirements.txt"
     }
+  },
+  {
+    "title": "Unsloth Text-to-Speech Training Task",
+    "description": "A Text-to-Speech (TTS) trainer based on the unsloth audio training notebooks.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "unsloth-text-to-speech-train"
   }
 ]
