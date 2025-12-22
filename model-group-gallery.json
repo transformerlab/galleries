@@ -6109,6 +6109,39 @@
                     "paperUrl": "https://huggingface.co/cagliostrolab/animagine-xl-4.0"
                 },
                 "model_group": "Other Diffusion Models"
+            },
+            {
+                "uniqueID": "Tongyi-MAI/Z-Image-Turbo",
+                "name": "Z-Image-Turbo",
+                "description": "A distilled version of Z-Image that matches or exceeds leading competitors with only 8 NFEs (Number of Function Evaluations). It offers sub-second inference latency on enterprise-grade H800 GPUs and fits comfortably within 16G VRAM consumer devices. It excels in photorealistic image generation, bilingual text rendering (English & Chinese), and robust instruction adherence.",
+                "added": "2025-11-27",
+                "tags": [
+                    "Text-to-Image",
+                    "Diffusion"
+                ],
+                "parameters": "6B",
+                "context": "N/A",
+                "architecture": "ZImagePipeline",
+                "formats": [
+                    "Diffusers"
+                ],
+                "huggingface_repo": "Tongyi-MAI/Z-Image-Turbo",
+                "transformers_version": "",
+                "gated": false,
+                "license": "apache-2.0",
+                "logo": "",
+                "size_of_model_in_mb": 33689.6,
+                "author": {
+                    "name": "Tongyi-MAI",
+                    "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+                    "blurb": ""
+                },
+                "resources": {
+                    "canonicalUrl": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+                    "downloadUrl": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+                    "paperUrl": "?"
+                },
+                "model_group": "Other Diffusion Models"
             }
         ]
     },
