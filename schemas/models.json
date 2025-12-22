@@ -59,7 +59,6 @@
           "StableDiffusion3Pipeline",
           "StableDiffusionXLPipeline",
           "StableDiffusionPipeline",
-          "DiffusionPipeline",
           "T5ForConditionalGeneration",
           "MLXTextToSpeech",
           "MLXSpeechToText",
