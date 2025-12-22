@@ -60,6 +60,7 @@
           "StableDiffusionXLPipeline",
           "StableDiffusionPipeline",
           "DiffusionPipeline",
+          "ZImagePipeline",
           "T5ForConditionalGeneration",
           "MLXTextToSpeech",
           "MLXSpeechToText",
