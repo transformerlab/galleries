@@ -22,5 +22,11 @@
         "name": "SmolLM Training with Touch Rugby",
         "description": "Fine-tune SmolLM using the Touch Rugby dataset with Transformer Lab",
         "tag": "TRAIN"
-    }
+    },
+    {
+        "title": "LLM Evaluation (EleutherAI)",
+        "description": "Evaluates an LLM using the EleutherAI LM Evaluation Harness. Defaults to Qwen2.5-0.5B on HellaSwag and ARC-Easy benchmarks.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "llm-eval-task"
+    },
 ]
