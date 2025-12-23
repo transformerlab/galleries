@@ -229,9 +229,15 @@
     }
   },
   {
-      "title": "LLM Evaluation (EleutherAI)",
-      "description": "Evaluates an LLM using the EleutherAI LM Evaluation Harness. Defaults to Qwen2.5-0.5B on HellaSwag and ARC-Easy benchmarks.",
-      "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-      "github_repo_dir": "llm-eval-task"
+    "title": "LLM Evaluation (EleutherAI)",
+    "description": "Evaluates an LLM using the EleutherAI LM Evaluation Harness. Defaults to Qwen2.5-0.5B on HellaSwag and ARC-Easy benchmarks.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "llm-eval-task"
+  },
+  {
+    "title": "Unsloth GRPO Training Task",
+    "description": "A GRPO trainer based on the unsloth grpo training notebooks for training models with reasoning capabilities.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "unsloth-grpo-train"
   }
 ]
