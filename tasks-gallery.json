@@ -227,5 +227,11 @@
       "gpus": "2",
       "setup": "uv pip install -r requirements.txt"
     }
+  },
+  {
+    "title": "Unsloth GRPO Training Task",
+    "description": "A GRPO trainer based on the unsloth grpo training notebooks for training models with reasoning capabilities.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "unsloth-grpo-train"
   }
 ]
