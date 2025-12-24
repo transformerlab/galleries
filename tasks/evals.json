@@ -11,6 +11,11 @@
       "cpus": "2",
       "memory": "4",
       "setup": "uv pip install transformerlab datasets;"
+    },
+    "metadata": {
+      "category": "eval",
+      "modality": "text",
+      "framework": ["huggingface"]
     }
   },
   {

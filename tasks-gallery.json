@@ -11,6 +11,13 @@
             "cpus": "2",
             "memory": "4",
             "setup": "uv pip install transformerlab datasets;"
+        },
+        "metadata": {
+            "category": "eval",
+            "modality": "text",
+            "framework": [
+                "huggingface"
+            ]
         }
     },
     {
@@ -30,13 +37,27 @@
         "title": "AutoTrain SFT Training",
         "description": "SFT training task using Hugging Face AutoTrain. Requires a Hugging Face token in HF_TOKEN env var for model access.",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "autotrain-sft"
+        "github_repo_dir": "autotrain-sft",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "huggingface"
+            ]
+        }
     },
     {
         "title": "Unsloth LLM Fine-tuning",
         "description": "LLM training task using Unsloth FastLanguageModel with LoRA fine-tuning. Requires a Hugging Face token in HF_TOKEN env var for model access.",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "unsloth-llm-train"
+        "github_repo_dir": "unsloth-llm-train",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "unsloth"
+            ]
+        }
     },
     {
         "title": "Train GPT OSS 20b with LoRA",
@@ -51,6 +72,13 @@
             "memory": "128",
             "gpus": "4",
             "setup": "uv pip install -r requirements.txt"
+        },
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "huggingface"
+            ]
         }
     },
     {
@@ -66,13 +94,27 @@
             "memory": "72",
             "gpus": "2",
             "setup": "uv pip install -r requirements.txt"
+        },
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "huggingface"
+            ]
         }
     },
     {
         "title": "Unsloth GRPO Training Task",
         "description": "A GRPO trainer based on the unsloth grpo training notebooks for training models with reasoning capabilities.",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "unsloth-grpo-train"
+        "github_repo_dir": "unsloth-grpo-train",
+        "metadata": {
+            "category": "training",
+            "modality": "text",
+            "framework": [
+                "unsloth"
+            ]
+        }
     },
     {
         "title": "Sample Task Example",
@@ -86,6 +128,11 @@
             "cpus": "2",
             "memory": "4",
             "setup": "uv pip install wandb"
+        },
+        "metadata": {
+            "category": "other",
+            "modality": "other",
+            "framework": []
         }
     },
     {
@@ -100,6 +147,11 @@
             "cpus": "2",
             "memory": "4",
             "setup": "uv pip install transformerlab datasets;"
+        },
+        "metadata": {
+            "category": "dataset-generation",
+            "modality": "other",
+            "framework": []
         }
     },
     {
@@ -115,6 +167,13 @@
             "memory": "4",
             "accelerators": "RTX3090:1",
             "setup": "uv pip install datasets transformers torch wandb ultralytics transformerlab;\nsudo apt update;\nsudo apt install -y libgl1 libglib2.0-0;"
+        },
+        "metadata": {
+            "category": "training",
+            "modality": "vision",
+            "framework": [
+                "yolo"
+            ]
         }
     },
     {
@@ -130,6 +189,13 @@
             "memory": "64",
             "gpus": "2",
             "setup": "uv pip install -r requirements.txt"
+        },
+        "metadata": {
+            "category": "training",
+            "modality": "text",
+            "framework": [
+                "huggingface"
+            ]
         }
     },
     {
@@ -145,6 +211,13 @@
             "memory": "48",
             "gpus": "2",
             "setup": "uv pip install -r requirements.txt"
+        },
+        "metadata": {
+            "category": "finetuning",
+            "modality": "vision",
+            "framework": [
+                "huggingface"
+            ]
         }
     },
     {
@@ -160,6 +233,13 @@
             "memory": "32",
             "gpus": "1",
             "setup": "uv pip install ultralytics"
+        },
+        "metadata": {
+            "category": "training",
+            "modality": "vision",
+            "framework": [
+                "yolo"
+            ]
         }
     },
     {
@@ -174,6 +254,13 @@
             "cpus": "20",
             "memory": "96",
             "setup": "uv pip install -r requirements.txt"
+        },
+        "metadata": {
+            "category": "training",
+            "modality": "other",
+            "framework": [
+                "xgboost"
+            ]
         }
     },
     {
@@ -188,6 +275,13 @@
             "cpus": "10",
             "memory": "40",
             "setup": "uv pip install -r requirements.txt"
+        },
+        "metadata": {
+            "category": "training",
+            "modality": "other",
+            "framework": [
+                "xgboost"
+            ]
         }
     },
     {
@@ -202,6 +296,11 @@
             "cpus": "8",
             "memory": "24",
             "setup": "uv pip install -r requirements.txt"
+        },
+        "metadata": {
+            "category": "eval",
+            "modality": "audio",
+            "framework": []
         }
     },
     {
@@ -216,6 +315,11 @@
             "cpus": "6",
             "memory": "32",
             "setup": "uv pip install -r requirements.txt"
+        },
+        "metadata": {
+            "category": "eval",
+            "modality": "audio",
+            "framework": []
         }
     },
     {
@@ -230,6 +334,11 @@
             "cpus": "12",
             "memory": "48",
             "setup": "uv pip install -r requirements.txt"
+        },
+        "metadata": {
+            "category": "finetuning",
+            "modality": "other",
+            "framework": []
         }
     },
     {
@@ -245,6 +354,13 @@
             "memory": "80",
             "gpus": "2",
             "setup": "uv pip install -r requirements.txt"
+        },
+        "metadata": {
+            "category": "training",
+            "modality": "audio",
+            "framework": [
+                "huggingface"
+            ]
         }
     }
 ]
