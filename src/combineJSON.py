@@ -4,6 +4,7 @@ and publishes them to the root of the repository.
 """
 import os
 import json
+import shutil
 import yaml
 from jsonschema import validate, ValidationError
 from update_dataset_sizes import update_dataset_sizes
@@ -36,18 +37,9 @@ def read_and_combine_json_files(directory: str):
     if not os.path.exists(directory):
         return
 
-    # Get JSON/YAML files
-    # Special handling for 'tasks': gather nested task definitions
-    if directory == 'tasks':
-        files_json: list[str] = []
-        for root, _dirs, files in os.walk(directory):
-            for f in files:
-                if f == 'task.json':
-                    files_json.append(os.path.join(root, f))
-    else:
-        files_json: list[str] = [f for f in os.listdir(
-            path=directory) if (f.endswith('.json') or f.endswith('.yaml'))]
-    
+    files_json: list[str] = [f for f in os.listdir(
+        path=directory) if (f.endswith('.json') or f.endswith('.yaml'))]
+
     # sort the files by name:
     files_json.sort()
 
@@ -55,12 +47,8 @@ def read_and_combine_json_files(directory: str):
     combined_json = []
 
     for file in files_json:
-        if directory == 'tasks':
-            open_path = file
-            display_name = os.path.relpath(file)
-        else:
-            open_path = os.path.join(directory, file)
-            display_name = file
+        open_path = os.path.join(directory, file)
+        display_name = file
         with open(file=open_path, mode='r') as f:
             print(f' - Processing {display_name}')
             if file.endswith('.yaml'):
@@ -68,33 +56,10 @@ def read_and_combine_json_files(directory: str):
             else:
                 file_contents = json.load(fp=f)
 
-            if directory == 'tasks':
-                # Transform task definitions into minimal gallery entries
-                # Extract the directory name as the task ID
-                task_dir = os.path.basename(os.path.dirname(open_path))
-                
-                if isinstance(file_contents, list):
-                    for task_obj in file_contents:
-                        minimal = {
-                            'id': task_dir,
-                            'name': task_obj.get('name'),
-                            'description': task_obj.get('description'),
-                            'tag': task_obj.get('tag'),
-                        }
-                        combined_json.append(minimal)
-                else:
-                    minimal = {
-                        'id': task_dir,
-                        'name': file_contents.get('name'),
-                        'description': file_contents.get('description'),
-                        'tag': file_contents.get('tag'),
-                    }
-                    combined_json.append(minimal)
+            if isinstance(file_contents, list):
+                combined_json.extend(file_contents)
             else:
-                if isinstance(file_contents, list):
-                    combined_json.extend(file_contents)
-                else:
-                    combined_json.append(file_contents)
+                combined_json.append(file_contents)
 
     # Validate the combined_json to see if it is valid JSON:
     try:
@@ -181,3 +146,8 @@ read_and_combine_json_files(directory='prompts')
 read_and_combine_json_files(directory='recipes')
 read_and_combine_json_files(directory='exp-recipes')
 read_and_combine_json_files(directory='tasks')
+
+# Copy task-gallery.json to tasks-gallery.json for backward compatibility
+if os.path.exists('task-gallery.json'):
+    shutil.copyfile('task-gallery.json', 'tasks-gallery.json')
+    print('Copied task-gallery.json to tasks-gallery.json for backward compatibility')

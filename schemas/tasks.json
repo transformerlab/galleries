@@ -4,14 +4,39 @@
     "items": {
         "type": "object",
         "properties": {
-            "name": { "type": "string" },
             "description": { "type": "string" },
-            "tag": { "type": "string" }
+            "tag": { "type": "string" },
+            "title": { "type": "string" },
+            "github_repo_url": { "type": "string", "format": "uri" },
+            "github_repo_dir": { "type": "string" },
+            "config": {
+                "type": "object",
+                "properties": {
+                    "name": { "type": "string" },
+                    "cluster_name": { "type": "string" },
+                    "command": { "type": "string" },
+                    "cpus": { "type": "string" },
+                    "accelerators": { "type": "string" },
+                    "gpus": { "type": "string" },
+                    "memory": { "type": "string" },
+                    "setup": { "type": "string" }
+                },
+                "required": [
+                    "name",
+                    "cluster_name",
+                    "command",
+                    "cpus",
+                    "memory",
+                    "setup"
+                ],
+                "additionalProperties": false
+            }
         },
         "required": [
-            "name",
             "description",
-            "tag"
+            "title",
+            "github_repo_url",
+            "github_repo_dir"
         ],
         "additionalProperties": true
     }

@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Evaluation Task Example",
+    "description": "A sample evaluation task that runs an evaluation script and creates reports.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-app",
+    "github_repo_dir": "lab-sdk",
+    "config": {
+      "name": "demo-eval-task",
+      "cluster_name": "demo-eval-task",
+      "command": "cd ~/lab-sdk/scripts/examples && python fake_evals.py;",
+      "cpus": "2",
+      "memory": "4",
+      "setup": "uv pip install transformerlab datasets;"
+    }
+  }
+]
