@@ -11,6 +11,11 @@
       "cpus": "2",
       "memory": "4",
       "setup": "uv pip install wandb"
+    },
+    "metadata": {
+      "category": "other",
+      "modality": "other",
+      "framework": []
     }
   },
   {
@@ -25,6 +30,11 @@
       "cpus": "2",
       "memory": "4",
       "setup": "uv pip install transformerlab datasets;"
+    },
+    "metadata": {
+      "category": "dataset-generation",
+      "modality": "other",
+      "framework": []
     }
   },
   {
@@ -40,6 +50,11 @@
       "memory": "4",
       "accelerators": "RTX3090:1",
       "setup": "uv pip install datasets transformers torch wandb ultralytics transformerlab;\nsudo apt update;\nsudo apt install -y libgl1 libglib2.0-0;"
+    },
+    "metadata": {
+      "category": "training",
+      "modality": "vision",
+      "framework": ["yolo"]
     }
   }
 ]
