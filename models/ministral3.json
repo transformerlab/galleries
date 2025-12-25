@@ -1,0 +1,278 @@
+[
+  {
+    "uniqueID": "mistralai/Ministral-3-14B-Instruct-2512",
+    "name": "Ministral-3-14B-Instruct-2512",
+    "description": "Ministral 3 14B is a high-performance, instruction-tuned language model with vision capabilities, delivering frontier-level results comparable to larger models. Post-trained in FP8, it is optimized for chat and instruction-based tasks. Designed for efficient edge deployment, it runs across a wide range of hardware. It fits locally within 24GB VRAM in FP8 and even less with further quantization.",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "14B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-14B-Instruct-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 30028.735153198242,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "paperUrl": "?"
+    },
+    "model_group": "mistral"
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-8B-Instruct-2512",
+    "name": "Ministral-3-8B-Instruct-2512",
+    "description": "Ministral 3 8B is a balanced, efficient language model with vision capabilities, designed for strong performance at a compact scale. Instruction-tuned in FP8, it excels at chat and instruction-following tasks. Built for edge deployment, it runs smoothly across diverse hardware setups. It fits locally within 12GB VRAM in FP8, with even lower requirements when further quantized.",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "8B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-8B-Instruct-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 19908.187615394592,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+      "paperUrl": "?"
+    },
+    "model_group": "mistral"
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-3B-Instruct-2512",
+    "name": "Ministral-3-3B-Instruct-2512",
+    "description": "Ministral 3 3B is the smallest and most lightweight model in the family, offering efficient performance with vision capabilities. Instruction-tuned in FP8, it is well suited for chat and instruction-following tasks. Optimized for edge deployment, it runs on a wide range of hardware. It fits locally within 8GB VRAM in FP8, with lower requirements through further quantization.",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "3B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-3B-Instruct-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 8943.600494384766,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
+      "paperUrl": "?"
+    },
+    "model_group": "mistral"
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-14B-Reasoning-2512",
+    "name": "Ministral-3-14B-Reasoning-2512",
+    "description": "Ministral 3 14B is the largest model in the family, delivering frontier-level performance comparable to much larger models. Post-trained for reasoning, it excels in math, coding, and STEM-focused tasks. Designed for efficient edge deployment, it runs across a wide range of hardware. It fits locally within 32GB VRAM in BF16, or under 24GB RAM/VRAM when quantized.",
+    "added": "2025-12-06",
+    "tags": [
+      "Reasoning"
+    ],
+    "parameters": "14B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-14B-Reasoning-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 53228.86742210388,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512",
+      "paperUrl": "?"
+    },
+    "model_group": "mistral"
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-8B-Reasoning-2512",
+    "name": "Ministral-3-8B-Reasoning-2512",
+    "description": "Ministral 3 8B is a balanced model offering strong performance with efficient compute and vision capabilities. Post-trained for reasoning, it is well suited for math, coding, and STEM applications. Built for edge deployment, it runs across a wide range of hardware. It fits locally within 24GB VRAM in BF16, or under 12GB RAM/VRAM when quantized.",
+    "added": "2025-12-06",
+    "tags": [
+      "Reasoning"
+    ],
+    "parameters": "8B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-8B-Reasoning-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 34052.34588909149,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512",
+      "paperUrl": "?"
+    },
+    "model_group": "mistral"
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-3B-Reasoning-2512",
+    "name": "Ministral-3-3B-Reasoning-2512",
+    "description": "Ministral 3 3B is the smallest and most lightweight model in the family, delivering efficient performance with vision capabilities. Post-trained for reasoning, it excels at math, coding, and STEM-focused tasks. Designed for edge deployment, it runs on a wide range of hardware. It fits locally within 16GB VRAM in BF16, or under 8GB RAM/VRAM when quantized.",
+    "added": "2025-12-06",
+    "tags": [
+      "Reasoning"
+    ],
+    "parameters": "3B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-3B-Reasoning-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 14715.864577293396,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512",
+      "paperUrl": "?"
+    },
+    "model_group": "mistral"
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-14B-Base-2512",
+    "name": "Ministral-3-14B-Base-2512",
+    "description": "Ministral 3 14B is the largest model in the family, delivering frontier-level performance comparable to much larger models. Post-trained for reasoning, it is optimized for math, coding, and STEM workloads. Built for edge deployment, it runs efficiently across a wide range of hardware. It fits locally within 32GB VRAM in BF16, or under 24GB RAM/VRAM when quantized.",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "14B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-14B-Base-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 53228.86742210388,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-14B-Base-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Base-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-14B-Base-2512",
+      "paperUrl": "?"
+    },
+    "model_group": "mistral"
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-8B-Base-2512",
+    "name": "Ministral-3-8B-Base-2512",
+    "description": "Ministral 3 8B is a balanced, efficient language model with vision capabilities, designed for flexible deployment. This base pre-trained version is ideal for custom post-training and fine-tuning workflows. For chat and instruction use cases, Ministral 3 8B Instruct 2512 is recommended. It supports edge deployment and fits locally within 24GB VRAM in BF16, or under 12GB RAM/VRAM when quantized.",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "8B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-8B-Base-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 34052.34588909149,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-8B-Base-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Base-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-8B-Base-2512",
+      "paperUrl": "?"
+    },
+    "model_group": "mistral"
+  },
+  {
+    "uniqueID": "mistralai/Ministral-3-3B-Base-2512",
+    "name": "Ministral-3-3B-Base-2512",
+    "description": "Ministral 3 3B is the smallest and most lightweight model in the family, offering efficient performance with vision capabilities. This base pre-trained version is well suited for custom fine-tuning and post-training workflows. For chat and instruction use cases, Ministral 3 3B Instruct 2512 is recommended. Designed for edge deployment, it fits within 16GB VRAM in BF16, or under 8GB RAM/VRAM when quantized.",
+    "added": "2025-12-06",
+    "tags": [],
+    "parameters": "3B",
+    "context": "2048",
+    "architecture": "Mistral3ForConditionalGeneration",
+    "formats": [
+      "Safetensors"
+    ],
+    "huggingface_repo": "mistralai/Ministral-3-3B-Base-2512",
+    "transformers_version": "5.0.0.dev0",
+    "gated": false,
+    "license": "apache-2.0",
+    "logo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "size_of_model_in_mb": 14715.864577293396,
+    "author": {
+      "name": "mistralai",
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Base-2512",
+      "blurb": ""
+    },
+    "resources": {
+      "canonicalUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Base-2512",
+      "downloadUrl": "https://huggingface.co/mistralai/Ministral-3-3B-Base-2512",
+      "paperUrl": "?"
+    },
+    "model_group": "mistral"
+  }
+]
