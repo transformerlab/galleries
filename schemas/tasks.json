@@ -33,10 +33,7 @@
             }
         },
         "required": [
-            "description",
-            "title",
-            "github_repo_url",
-            "github_repo_dir"
+            "description"
         ],
         "additionalProperties": true
     }
