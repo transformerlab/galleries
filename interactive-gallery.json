@@ -6,7 +6,8 @@
         "description": "Remote VS Code development environment via tunnel",
         "setup": "export DEBIAN_FRONTEND=noninteractive; sudo apt update && sudo apt install -y gnupg software-properties-common apt-transport-https wget && wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg && sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/ && echo \"deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main\" | sudo tee /etc/apt/sources.list.d/vscode.list && sudo apt update && sudo apt install -y code;",
         "command": "code tunnel --accept-server-license-terms --disable-telemetry",
-        "env_parameters": []
+        "env_parameters": [],
+        "icon": "https://lab.cloud/img/icons/vscode.png"
     },
     {
         "id": "jupyter",
@@ -25,7 +26,8 @@
                 "help_text": "Your ngrok authentication token. You can get your token from https://dashboard.ngrok.com/get-started/your-authtoken.",
                 "password": true
             }
-        ]
+        ],
+        "icon": "https://lab.cloud/img/icons/jupyter.png"
     },
     {
         "id": "vllm",
@@ -69,7 +71,8 @@
                 "help_text": "Your ngrok authentication token. You can get your token from https://dashboard.ngrok.com/get-started/your-authtoken.",
                 "password": true
             }
-        ]
+        ],
+        "icon": "https://lab.cloud/img/icons/vllm.png"
     },
     {
         "id": "ollama",
@@ -96,7 +99,8 @@
                 "help_text": "Your ngrok authentication token. You can get your token from https://dashboard.ngrok.com/get-started/your-authtoken.",
                 "password": true
             }
-        ]
+        ],
+        "icon": "https://lab.cloud/img/icons/ollama.png"
     },
     {
         "id": "ssh",
@@ -115,6 +119,7 @@
                 "help_text": "Your ngrok authentication token. Note: You may need to add a payment method to your ngrok account (it won't be charged, but it's necessary for SSH connections). You can get your token from https://dashboard.ngrok.com/get-started/your-authtoken.",
                 "password": true
             }
-        ]
+        ],
+        "icon": "https://lab.cloud/img/icons/ssh.png"
     }
 ]
