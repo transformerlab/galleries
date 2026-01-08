@@ -1,0 +1,13 @@
+[
+    {
+        "title": "SDXL Image Generation",
+        "description": "Generates images using Stable Diffusion XL",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "sdxl-gen-task",
+        "metadata": {
+            "category": "generate",
+            "modality": "image",
+            "framework": ["stability-ai"]
+        }
+    }
+]

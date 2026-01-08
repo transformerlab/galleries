@@ -45,6 +45,7 @@ def update_dataset_sizes(preset_file_path: str, quiet: bool = False):
         preset_file_path: Path to the preset.json file
         quiet: If True, reduce output verbosity (useful when called from other scripts)
     """
+    print(f"Updating dataset sizes in: {preset_file_path}\n")
     # Read the current preset.json
     with open(preset_file_path, 'r') as f:
         datasets = json.load(f)

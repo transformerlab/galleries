@@ -1,0 +1,35 @@
+[
+  {
+    "title": "AutoTrain SFT Training",
+    "description": "SFT training task using Hugging Face AutoTrain. Requires a Hugging Face token in HF_TOKEN env var for model access.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "autotrain-sft",
+    "metadata": {
+      "category": "finetuning",
+      "modality": "text",
+      "framework": ["huggingface"]
+    }
+  },
+  {
+    "title": "Unsloth LLM Fine-tuning",
+    "description": "LLM training task using Unsloth FastLanguageModel with LoRA fine-tuning. Requires a Hugging Face token in HF_TOKEN env var for model access.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "unsloth-llm-train",
+    "metadata": {
+      "category": "finetuning",
+      "modality": "text",
+      "framework": ["unsloth"]
+    }
+  },
+  {
+    "title": "Unsloth GRPO Training Task",
+    "description": "A GRPO trainer based on the unsloth grpo training notebooks for training models with reasoning capabilities.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "unsloth-grpo-train",
+    "metadata": {
+      "category": "training",
+      "modality": "text",
+      "framework": ["unsloth"]
+    }
+  }
+]
