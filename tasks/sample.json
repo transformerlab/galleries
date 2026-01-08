@@ -60,16 +60,8 @@
   {
     "title": "MNIST Train Task",
     "description": "A task to train a neural network on the MNIST dataset using PyTorch.",
-    "github_repo_url": "https://github.com/transformerlab/transformerlab-app/",
-    "github_repo_dir": "lab-sdk",
-    "config": {
-      "name": "mnist-train-task",
-      "cluster_name": "mnist-train-task",
-      "command": "cd ~/lab-sdk/scripts/examples && python mnist_train.py",
-      "cpus": "1",
-      "memory": "4",
-      "setup": "uv pip install transformers torch torchvision wandb transformerlab"
-    },
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
+    "github_repo_dir": "mnist-train-task",
     "metadata": {
       "category": "training",
       "modality": "other",
