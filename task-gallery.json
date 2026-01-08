@@ -111,5 +111,18 @@
                 "yolo"
             ]
         }
+    },
+    {
+        "title": "HF Training with Evals",
+        "description": "A task to train a language model using the TRL library on a specified dataset with evaluation done using the EleutherAI Harness.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "trl-training-evals",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "huggingface"
+            ]
+        }
     }
 ]
