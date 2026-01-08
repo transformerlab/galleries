@@ -22,46 +22,6 @@
     }
   },
   {
-    "title": "Train GPT OSS 20b with LoRA",
-    "description": "LoRA fine-tuning of an open-source GPT-NeoX 20B checkpoint using DeepSpeed ZeRO",
-    "github_repo_url": "https://github.com/transformerlab/transformerlab-app.git",
-    "github_repo_dir": "examples/gpt-20b-lora",
-    "config": {
-      "name": "gpt-oss-20b-lora",
-      "cluster_name": "gpt-oss-20b",
-      "command": "bash scripts/train_lora.sh",
-      "cpus": "16",
-      "memory": "128",
-      "gpus": "4",
-      "setup": "uv pip install -r requirements.txt"
-    },
-    "metadata": {
-      "category": "finetuning",
-      "modality": "text",
-      "framework": ["huggingface"]
-    }
-  },
-  {
-    "title": "Fine-tune LLMs with Llama-Factory",
-    "description": "Run Llama-Factory to fine-tune multiple LLM backbones with adapters and validation sweeps",
-    "github_repo_url": "https://github.com/transformerlab/transformerlab-app.git",
-    "github_repo_dir": "examples/llama-factory",
-    "config": {
-      "name": "llama-factory-finetune",
-      "cluster_name": "llama-factory",
-      "command": "bash launch_llama_factory.sh",
-      "cpus": "14",
-      "memory": "72",
-      "gpus": "2",
-      "setup": "uv pip install -r requirements.txt"
-    },
-    "metadata": {
-      "category": "finetuning",
-      "modality": "text",
-      "framework": ["huggingface"]
-    }
-  },
-  {
     "title": "Unsloth GRPO Training Task",
     "description": "A GRPO trainer based on the unsloth grpo training notebooks for training models with reasoning capabilities.",
     "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
