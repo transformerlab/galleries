@@ -81,7 +81,7 @@ def read_and_combine_json_files(directory: str):
 
     # generate the name of the file which matches what
     # the API expects. e.g. plugins -> plugin-gallery.json
-    filename = directory[:-1]     # remove the tailing s:
+    filename = directory[:-1] if directory[-1] == 's' else directory    # remove the tailing s:
     filename = f'{filename}-gallery.json'
     
     # Write the models out
@@ -146,6 +146,7 @@ read_and_combine_json_files(directory='prompts')
 read_and_combine_json_files(directory='recipes')
 read_and_combine_json_files(directory='exp-recipes')
 read_and_combine_json_files(directory='tasks')
+read_and_combine_json_files(directory='interactive')
 
 # Copy task-gallery.json to tasks-gallery.json for backward compatibility
 if os.path.exists('task-gallery.json'):
