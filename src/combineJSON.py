@@ -79,13 +79,9 @@ def read_and_combine_json_files(directory: str):
 
     check_for_duplicate_ids(combined_json)
 
-    # For tasks directory, exclude interactive tasks from the gallery
-    if directory == 'tasks':
-        combined_json = [task for task in combined_json if task.get('task_type', '') != 'INTERACTIVE']
-
     # generate the name of the file which matches what
     # the API expects. e.g. plugins -> plugin-gallery.json
-    filename = directory[:-1]     # remove the tailing s:
+    filename = directory[:-1] if directory[-1] == 's' else directory    # remove the tailing s:
     filename = f'{filename}-gallery.json'
     
     # Write the models out
@@ -150,44 +146,7 @@ read_and_combine_json_files(directory='prompts')
 read_and_combine_json_files(directory='recipes')
 read_and_combine_json_files(directory='exp-recipes')
 read_and_combine_json_files(directory='tasks')
-
-# Filter tasks with task_type: INTERACTIVE and create interactive-gallery.json
-# Read directly from tasks directory since task-gallery.json excludes interactive tasks
-if os.path.exists('tasks'):
-    all_tasks = []
-    files_json = [f for f in os.listdir('tasks') if (f.endswith('.json') or f.endswith('.yaml'))]
-    
-    for file in files_json:
-        open_path = os.path.join('tasks', file)
-        with open(file=open_path, mode='r') as f:
-            if file.endswith('.yaml'):
-                file_contents = yaml.load(stream=f, Loader=yaml.FullLoader)
-            else:
-                file_contents = json.load(fp=f)
-            
-            if isinstance(file_contents, list):
-                all_tasks.extend(file_contents)
-            else:
-                all_tasks.append(file_contents)
-    
-    interactive_tasks = [task for task in all_tasks if task.get('task_type') == 'INTERACTIVE']
-    
-    if interactive_tasks:
-        # Remove task_type field from each task before writing to gallery
-        interactive_tasks_cleaned = []
-        for task in interactive_tasks:
-            task_copy = task.copy()
-            task_copy.pop('task_type', None)
-            interactive_tasks_cleaned.append(task_copy)
-        
-        print(f'Creating interactive-gallery.json with {len(interactive_tasks_cleaned)} interactive tasks')
-        with open('interactive-gallery.json', 'w') as f:
-            json.dump(interactive_tasks_cleaned, f, indent=2)
-        print('✅ Created interactive-gallery.json')
-    else:
-        print('⚠️  No interactive tasks found (task_type: INTERACTIVE)')
-    
-    print('---')
+read_and_combine_json_files(directory='interactive')
 
 # Copy task-gallery.json to tasks-gallery.json for backward compatibility
 if os.path.exists('task-gallery.json'):
