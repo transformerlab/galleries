@@ -73,6 +73,45 @@
         }
     },
     {
+        "title": "Unsloth Text-to-Speech Training Task",
+        "description": "A Text-to-Speech (TTS) trainer based on the unsloth audio training notebooks.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "unsloth-text-to-speech-train",
+        "metadata": {
+            "category": "training",
+            "modality": "audio",
+            "framework": [
+                "unsloth"
+            ]
+        }
+    },
+    {
+        "title": "Diffusion LoRA Trainer",
+        "description": "A LoRA trainer for Stable Diffusion models. Trains on images with captions and generates sample images before and after training.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "diffusion-train",
+        "metadata": {
+            "category": "training",
+            "modality": "image",
+            "framework": [
+                "diffusers"
+            ]
+        }
+    },
+    {
+        "title": "SDXL Image Generation",
+        "description": "Generates images using Stable Diffusion XL",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "sdxl-gen-task",
+        "metadata": {
+            "category": "generate",
+            "modality": "image",
+            "framework": [
+                "stability-ai"
+            ]
+        }
+    },
+    {
         "title": "Sample Task Example",
         "description": "A sample PyTorch training task that clones a repository and runs training script",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-app.git",
@@ -129,32 +168,6 @@
             "modality": "vision",
             "framework": [
                 "yolo"
-            ]
-        }
-    },
-    {
-        "title": "Unsloth Text-to-Speech Training Task",
-        "description": "A Text-to-Speech (TTS) trainer based on the unsloth audio training notebooks.",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "unsloth-text-to-speech-train",
-        "metadata": {
-            "category": "training",
-            "modality": "audio",
-            "framework": [
-                "unsloth"
-            ]
-        }
-    },
-    {
-        "title": "Diffusion LoRA Trainer",
-        "description": "A LoRA trainer for Stable Diffusion models. Trains on images with captions and generates sample images before and after training.",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "diffusion-train",
-        "metadata": {
-            "category": "training",
-            "modality": "image",
-            "framework": [
-                "diffusers"
             ]
         }
     }
