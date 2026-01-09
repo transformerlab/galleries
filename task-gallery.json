@@ -91,19 +91,6 @@
         }
     },
     {
-        "title": "SDXL Image Generation",
-        "description": "Generates images using Stable Diffusion XL",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "sdxl-gen-task",
-        "metadata": {
-            "category": "generate",
-            "modality": "image",
-            "framework": [
-                "stability-ai"
-            ]
-        }
-    },
-    {
         "title": "Sample Task Example",
         "description": "A sample PyTorch training task that clones a repository and runs training script",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
@@ -136,6 +123,17 @@
             "framework": [
                 "yolo"
             ]
+        }
+    },
+    {
+        "title": "MNIST Train Task",
+        "description": "A task to train a neural network on the MNIST dataset using PyTorch.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
+        "github_repo_dir": "mnist-train-task",
+        "metadata": {
+            "category": "training",
+            "modality": "other",
+            "framework": []
         }
     },
     {
