@@ -57,5 +57,18 @@
                 "diffusers"
             ]
         }
+    },
+    {
+        "title": "Embedding Model Trainer",
+        "description": "A trainer for embedding models using Sentence Transformers. Supports various dataset types and loss functions for training high-quality embeddings.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "embedding-model-train",
+        "metadata": {
+            "category": "training",
+            "modality": "embedding",
+            "framework": [
+                "sentence-transformers"
+            ]
+        }
     }
 ]
