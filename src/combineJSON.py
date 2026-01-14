@@ -147,8 +147,4 @@ read_and_combine_json_files(directory='recipes')
 read_and_combine_json_files(directory='exp-recipes')
 read_and_combine_json_files(directory='tasks')
 read_and_combine_json_files(directory='interactive')
-
-# Copy task-gallery.json to tasks-gallery.json for backward compatibility
-if os.path.exists('task-gallery.json'):
-    shutil.copyfile('task-gallery.json', 'tasks-gallery.json')
-    print('Copied task-gallery.json to tasks-gallery.json for backward compatibility')
+read_and_combine_json_files(directory='announcements')
