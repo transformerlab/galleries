@@ -26,6 +26,6 @@
             "downloadUrl": "https://huggingface.co/microsoft/phi-2",
             "paperUrl": "https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/"
         },
-        "model_group": "phi"
+        "model_group": "microsoft"
     }
 ]
