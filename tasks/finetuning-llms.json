@@ -96,5 +96,18 @@
                 "nanochat"
             ]
         }
+    },
+    {
+        "title": "LoRA Multi-GPU Trainer",
+        "description": "A multi-GPU LoRA fine-tuning trainer for LLMs supporting Llama2, Qwen, Gemma, and other causal LMs with 4-bit quantization and accelerate multi-GPU support.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "lora-trainer-multi-gpu",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "lora"
+            ]
+        }
     }
 ]
