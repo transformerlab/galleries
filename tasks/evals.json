@@ -9,5 +9,16 @@
       "modality": "text",
       "framework": ["huggingface"]
     }
+  },
+  {
+    "title": "Basic Evaluation Metrics",
+    "description": "Evaluating outputs of LLMs using basic defined metrics including regex patterns, word counts, and custom Python code.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "basic-evals-metrics",
+    "metadata": {
+      "category": "eval",
+      "modality": "text",
+      "framework": [""]
+    }
   }
 ]
