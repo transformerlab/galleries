@@ -13,6 +13,58 @@
         }
     },
     {
+        "title": "Basic Evaluation Metrics",
+        "description": "Evaluating outputs of LLMs using basic defined metrics including regex patterns, word counts, and custom Python code.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "basic-evals-metrics",
+        "metadata": {
+            "category": "eval",
+            "modality": "text",
+            "framework": [
+                ""
+            ]
+        }
+    },
+    {
+        "title": "EleutherAI LM Evaluation Harness",
+        "description": "EleutherAI LM Evaluation Harness for evaluating language models on various benchmarks.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "eleutherai-lm-evaluation-harness",
+        "metadata": {
+            "category": "eval",
+            "modality": "text",
+            "framework": [
+                "eleutherai"
+            ]
+        }
+    },
+    {
+        "title": "Objective Metrics Evaluation",
+        "description": "Evaluating outputs of LLMs using objective metrics powered by DeepEval Framework. Supports metrics like Rouge, BLEU, Exact Match, Quasi Exact Match, Quasi Contains, and BERT Score.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "objective-eval",
+        "metadata": {
+            "category": "eval",
+            "modality": "text",
+            "framework": [
+                "deepeval"
+            ]
+        }
+    },
+    {
+        "title": "LLM-as-Judge Evaluation Task",
+        "description": "Using LLMs as Judges for evaluating outputs of other LLMs.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "llm-judge-eval",
+        "metadata": {
+            "category": "eval",
+            "modality": "text",
+            "framework": [
+                "deepeval"
+            ]
+        }
+    },
+    {
         "title": "AutoTrain SFT Training",
         "description": "SFT training task using Hugging Face AutoTrain. Requires a Hugging Face token in HF_TOKEN env var for model access.",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
@@ -87,6 +139,58 @@
             "modality": "embedding",
             "framework": [
                 "sentence-transformers"
+            ]
+        }
+    },
+    {
+        "title": "GPT-OSS Trainer",
+        "description": "A trainer for GPT-OSS models using HuggingFace SFTTrainer with optional LoRA fine-tuning.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "gpt-oss",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "huggingface"
+            ]
+        }
+    },
+    {
+        "title": "NanoChat Trainer",
+        "description": "A complete NanoChat training task that runs the full speedrun pipeline including tokenizer training, base model pretraining, midtraining and supervised finetuning on GSM8K.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "nanochat",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "nanochat"
+            ]
+        }
+    },
+    {
+        "title": "LoRA Multi-GPU Trainer",
+        "description": "A multi-GPU LoRA fine-tuning trainer for LLMs supporting Llama2, Qwen, Gemma, and other causal LMs with 4-bit quantization and accelerate multi-GPU support.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "lora-trainer-multi-gpu",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "lora"
+            ]
+        }
+    },
+    {
+        "title": "GRPO Multi-GPU Trainer",
+        "description": "A GRPO trainer using multi-GPU setup trained with TRL and Accelerate for distributed training across multiple GPUs.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "grpo-multi-gpu-train",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "trl"
             ]
         }
     },

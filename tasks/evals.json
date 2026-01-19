@@ -9,5 +9,49 @@
       "modality": "text",
       "framework": ["huggingface"]
     }
+  },
+  {
+    "title": "Basic Evaluation Metrics",
+    "description": "Evaluating outputs of LLMs using basic defined metrics including regex patterns, word counts, and custom Python code.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "basic-evals-metrics",
+    "metadata": {
+      "category": "eval",
+      "modality": "text",
+      "framework": [""]
+    }
+  },
+  {
+    "title": "EleutherAI LM Evaluation Harness",
+    "description": "EleutherAI LM Evaluation Harness for evaluating language models on various benchmarks.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "eleutherai-lm-evaluation-harness",
+    "metadata": {
+      "category": "eval",
+      "modality": "text",
+      "framework": ["eleutherai"]
+    }
+  },
+  {
+    "title": "Objective Metrics Evaluation",
+    "description": "Evaluating outputs of LLMs using objective metrics powered by DeepEval Framework. Supports metrics like Rouge, BLEU, Exact Match, Quasi Exact Match, Quasi Contains, and BERT Score.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "objective-eval",
+    "metadata": {
+      "category": "eval",
+      "modality": "text",
+      "framework": ["deepeval"]
+    }
+  },
+  {
+    "title": "LLM-as-Judge Evaluation Task",
+    "description": "Using LLMs as Judges for evaluating outputs of other LLMs.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "llm-judge-eval",
+    "metadata": {
+      "category": "eval",
+      "modality": "text",
+      "framework": ["deepeval"]
+    }
   }
 ]
