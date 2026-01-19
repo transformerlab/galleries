@@ -83,5 +83,18 @@
                 "huggingface"
             ]
         }
+    },
+     {
+        "title": "NanoChat Trainer",
+        "description": "A complete NanoChat training task that runs the full speedrun pipeline including tokenizer training, base model pretraining, midtraining and supervised finetuning on GSM8K.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "nanochat",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "nanochat"
+            ]
+        }
     }
 ]
