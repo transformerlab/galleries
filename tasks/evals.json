@@ -42,5 +42,16 @@
       "modality": "text",
       "framework": ["deepeval"]
     }
+  },
+  {
+    "title": "LLM-as-Judge Evaluation Task",
+    "description": "Using LLMs as Judges for evaluating outputs of other LLMs.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "llm-judge-eval",
+    "metadata": {
+      "category": "eval",
+      "modality": "text",
+      "framework": ["deepeval"]
+    }
   }
 ]
