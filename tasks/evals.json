@@ -20,5 +20,16 @@
       "modality": "text",
       "framework": [""]
     }
+  },
+  {
+    "title": "EleutherAI LM Evaluation Harness",
+    "description": "EleutherAI LM Evaluation Harness for evaluating language models on various benchmarks.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "eleutherai-lm-evaluation-harness",
+    "metadata": {
+      "category": "eval",
+      "modality": "text",
+      "framework": ["eleutherai"]
+    }
   }
 ]
