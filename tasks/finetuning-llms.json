@@ -70,5 +70,18 @@
                 "sentence-transformers"
             ]
         }
+    },
+    {
+        "title": "GPT-OSS Trainer",
+        "description": "A trainer for GPT-OSS models using HuggingFace SFTTrainer with optional LoRA fine-tuning.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "gpt-oss",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "huggingface"
+            ]
+        }
     }
 ]
