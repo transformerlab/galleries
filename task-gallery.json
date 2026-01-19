@@ -130,6 +130,19 @@
         }
     },
     {
+        "title": "GRPO Multi-GPU Trainer",
+        "description": "A GRPO trainer using multi-GPU setup trained with TRL and Accelerate for distributed training across multiple GPUs.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "grpo-multi-gpu-train",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "trl"
+            ]
+        }
+    },
+    {
         "title": "Sample Task Example",
         "description": "A sample PyTorch training task that clones a repository and runs training script",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",

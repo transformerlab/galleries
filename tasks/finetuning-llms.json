@@ -109,5 +109,18 @@
                 "lora"
             ]
         }
+    },
+    {
+        "title": "GRPO Multi-GPU Trainer",
+        "description": "A GRPO trainer using multi-GPU setup trained with TRL and Accelerate for distributed training across multiple GPUs.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "grpo-multi-gpu-train",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "trl"
+            ]
+        }
     }
 ]
