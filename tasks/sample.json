@@ -36,7 +36,7 @@
     "title": "MNIST Train Task",
     "description": "A task to train a neural network on the MNIST dataset using PyTorch.",
     "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
-    "github_repo_dir": "mnist-train-task",
+    "github_repo_dir": "mnist-train",
     "metadata": {
       "category": "training",
       "modality": "other",
