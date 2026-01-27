@@ -148,6 +148,20 @@
         }
     },
     {
+        "title": "MNIST JAX Train Task",
+        "description": "A task to train a neural network on the MNIST dataset using JAX and Flax.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
+        "github_repo_dir": "mnist-jax-train",
+        "metadata": {
+            "category": "training",
+            "modality": "other",
+            "framework": [
+                "jax",
+                "flax"
+            ]
+        }
+    },
+    {
         "title": "HF Training with Evals",
         "description": "A task to train a language model using the TRL library on a specified dataset with evaluation done using the EleutherAI Harness.",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
