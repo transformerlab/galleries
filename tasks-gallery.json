@@ -126,6 +126,17 @@
         }
     },
     {
+      "title": "Batch Image Generation using FLUX2",
+      "description": "A task to generate images in batch using the FLUX2 model.",
+      "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+      "github_repo_dir": "batch-image-gen-flux",
+      "metadata": {
+        "category": "generation",
+        "modality": "vision",
+        "framework": [""]
+      }
+    },
+    {
         "title": "MNIST Train Task",
         "description": "A task to train a neural network on the MNIST dataset using PyTorch.",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
