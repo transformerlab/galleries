@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Auto Tagging Images using WD14 Auto Captioner",
+        "description": "This task uses the WD14 Auto Captioner model to generate descriptive captions for images. It leverages the capabilities of the TransformerLab library for image captioning.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "auto-caption-wd14",
+        "metadata": {
+            "category": "generation",
+            "modality": "image",
+            "framework": [
+                "pytorch",
+                "transformers"
+            ]
+        }
+    }
+]
