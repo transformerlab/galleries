@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Video Generation using Wan Task",
+        "description": "Video generation task using Wan2.1 models. Requires a Hugging Face token in HF_TOKEN env var for model access.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "video-diffusion",
+        "metadata": {
+            "category": "generation",
+            "modality": "video",
+            "framework": [
+                "pytorch",
+                "transformers"
+            ]
+        }
+    }
+]
