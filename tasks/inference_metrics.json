@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Inference Metrics Task",
+        "description": "An inference metrics task measuring LLM performance using TransformerLab",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
+        "github_repo_dir": "inference-metrics",
+        "metadata": {
+            "category": "metrics",
+            "modality": "text",
+            "framework": []
+        }
+    }
+]
