@@ -182,6 +182,20 @@
         }
     },
     {
+        "title": "MNIST JAX Train Task",
+        "description": "A task to train a neural network on the MNIST dataset using JAX and Flax.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
+        "github_repo_dir": "mnist-jax-train",
+        "metadata": {
+            "category": "training",
+            "modality": "other",
+            "framework": [
+                "jax",
+                "flax"
+            ]
+        }
+    },
+    {
         "title": "Sample Task Example",
         "description": "A sample PyTorch training task that clones a repository and runs training script",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
