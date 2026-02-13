@@ -199,7 +199,7 @@
         "title": "Sample Task Example",
         "description": "A sample PyTorch training task that clones a repository and runs training script",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "new-task-test",
+        "github_repo_dir": "sample-task",
         "metadata": {
             "category": "other",
             "modality": "other",
