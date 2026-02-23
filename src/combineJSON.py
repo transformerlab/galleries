@@ -49,7 +49,7 @@ def read_and_combine_json_files(directory: str):
     for file in files_json:
         open_path = os.path.join(directory, file)
         display_name = file
-        with open(file=open_path, mode='r') as f:
+        with open(file=open_path, mode='r', encoding='utf-8') as f:
             print(f' - Processing {display_name}')
             if file.endswith('.yaml'):
                 file_contents = yaml.load(stream=f, Loader=yaml.FullLoader)
@@ -97,7 +97,7 @@ def read_and_combine_json_files(directory: str):
 
         for file in os.listdir(model_groups_dir):
             if file.endswith('.json'):
-                with open(os.path.join(model_groups_dir, file), 'r') as f:
+                with open(os.path.join(model_groups_dir, file), 'r', encoding='utf-8') as f:
                     try:
                         group_data = json.load(f)
                         group_data["models"] = []  # Reset
