@@ -1,9 +1,15 @@
 [
     {
+        "date": "2026-02-24",
+        "title": "Transformer Lab is changing how it works locally",
+        "content": "We will be changing the interface to run Transformer Lab locally providing more options to run Transformer Lab locally along with remote providers to support more features. Please keep an eye out for future announcements for more details on this change.",
+        "expires": null
+    },
+    {
         "date": "2025-12-22",
         "title": "Deprecating Transformer Lab Desktop App",
         "content": "The Transformer Lab desktop app is being deprecated. Starting with v0.28.0, new versions of the desktop app will no longer be published. Going forward, the supported method to run Transformer Lab will be to install via the command line and access through a browser. Full details are available at [https://lab.cloud/docs/install](https://lab.cloud/docs/install).",
-        "expires": null
+        "expires": "2026-02-24"
     },
     {
         "date": "2025-11-27",
