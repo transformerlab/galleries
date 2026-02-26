@@ -182,6 +182,19 @@
         }
     },
     {
+        "title": "MLX LoRA Train Task",
+        "description": "A LoRA fine-tuning trainer for LLMs using MLX with multi-GPU support.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "mlx_lora_train",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "mlx"
+            ]
+        }
+    },
+    {
         "title": "MNIST JAX Train Task",
         "description": "A task to train a neural network on the MNIST dataset using JAX and Flax.",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
