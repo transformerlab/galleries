@@ -122,5 +122,18 @@
                 "trl"
             ]
         }
+    },
+    {
+        "title": "MLX LoRA Train Task",
+        "description": "A LoRA fine-tuning trainer for LLMs using MLX with multi-GPU support.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "mlx_lora_train",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "mlx"
+            ]
+        }
     }
 ]
