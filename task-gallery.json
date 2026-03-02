@@ -1,11 +1,11 @@
 [
     {
-        "title": "Evaluation Task Example",
-        "description": "A sample evaluation task that runs an evaluation script and creates reports.",
+        "title": "HF Training with Evals",
+        "description": "A task to train a language model using the TRL library on a specified dataset with evaluation done using the EleutherAI Harness.",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "demo-eval-task",
+        "github_repo_dir": "trl-training-evals",
         "metadata": {
-            "category": "eval",
+            "category": "finetuning",
             "modality": "text",
             "framework": [
                 "huggingface"
@@ -13,41 +13,15 @@
         }
     },
     {
-        "title": "Basic Evaluation Metrics",
-        "description": "Evaluating outputs of LLMs using basic defined metrics including regex patterns, word counts, and custom Python code.",
+        "title": "PPO Trainer with TRL",
+        "description": "A task to train a language model using the PPO algorithm from the TRL library on a specified dataset.",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "basic-evals-metrics",
+        "github_repo_dir": "ppo-train",
         "metadata": {
-            "category": "eval",
+            "category": "rlhf",
             "modality": "text",
             "framework": [
-                ""
-            ]
-        }
-    },
-    {
-        "title": "EleutherAI LM Evaluation Harness",
-        "description": "EleutherAI LM Evaluation Harness for evaluating language models on various benchmarks.",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "eleutherai-lm-evaluation-harness",
-        "metadata": {
-            "category": "eval",
-            "modality": "text",
-            "framework": [
-                "eleutherai"
-            ]
-        }
-    },
-    {
-        "title": "Objective Metrics Evaluation",
-        "description": "Evaluating outputs of LLMs using objective metrics powered by DeepEval Framework. Supports metrics like Rouge, BLEU, Exact Match, Quasi Exact Match, Quasi Contains, and BERT Score.",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "objective-eval",
-        "metadata": {
-            "category": "eval",
-            "modality": "text",
-            "framework": [
-                "deepeval"
+                "huggingface"
             ]
         }
     },
@@ -209,6 +183,95 @@
         }
     },
     {
+        "title": "MNIST Train Task",
+        "description": "A task to train a neural network on the MNIST dataset using PyTorch.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
+        "github_repo_dir": "mnist-train",
+        "metadata": {
+            "category": "training",
+            "modality": "other",
+            "framework": []
+        }
+    },
+    {
+        "title": "YOLO Object Detection Train Task Example",
+        "description": "A sample YOLO object detection train task that runs a YOLO object detection train script on COCO8 dataset for 10 epochs",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "yolo-train-task",
+        "metadata": {
+            "category": "training",
+            "modality": "vision",
+            "framework": [
+                "yolo"
+            ]
+        }
+    },
+    {
+        "title": "Evaluation Task Example",
+        "description": "A sample evaluation task that runs an evaluation script and creates reports.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "demo-eval-task",
+        "metadata": {
+            "category": "eval",
+            "modality": "text",
+            "framework": [
+                "huggingface"
+            ]
+        }
+    },
+    {
+        "title": "Basic Evaluation Metrics",
+        "description": "Evaluating outputs of LLMs using basic defined metrics including regex patterns, word counts, and custom Python code.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "basic-evals-metrics",
+        "metadata": {
+            "category": "eval",
+            "modality": "text",
+            "framework": [
+                ""
+            ]
+        }
+    },
+    {
+        "title": "EleutherAI LM Evaluation Harness",
+        "description": "EleutherAI LM Evaluation Harness for evaluating language models on various benchmarks.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "eleutherai-lm-evaluation-harness",
+        "metadata": {
+            "category": "eval",
+            "modality": "text",
+            "framework": [
+                "eleutherai"
+            ]
+        }
+    },
+    {
+        "title": "Objective Metrics Evaluation",
+        "description": "Evaluating outputs of LLMs using objective metrics powered by DeepEval Framework. Supports metrics like Rouge, BLEU, Exact Match, Quasi Exact Match, Quasi Contains, and BERT Score.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "objective-eval",
+        "metadata": {
+            "category": "eval",
+            "modality": "text",
+            "framework": [
+                "deepeval"
+            ]
+        }
+    },
+    {
+        "title": "Batch Image Generation using FLUX2",
+        "description": "A task to generate images in batch using the FLUX2 model.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "batch-image-gen-flux",
+        "metadata": {
+            "category": "generation",
+            "modality": "vision",
+            "framework": [
+                ""
+            ]
+        }
+    },
+    {
         "title": "Sample Task Example",
         "description": "A sample PyTorch training task that clones a repository and runs training script",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
@@ -228,56 +291,6 @@
             "category": "dataset-generation",
             "modality": "other",
             "framework": []
-        }
-    },
-    {
-        "title": "YOLO Object Detection Train Task Example",
-        "description": "A sample YOLO object detection train task that runs a YOLO object detection train script on COCO8 dataset for 10 epochs",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "yolo-train-task",
-        "metadata": {
-            "category": "training",
-            "modality": "vision",
-            "framework": [
-                "yolo"
-            ]
-        }
-    },
-    {
-        "title": "MNIST Train Task",
-        "description": "A task to train a neural network on the MNIST dataset using PyTorch.",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
-        "github_repo_dir": "mnist-train",
-        "metadata": {
-            "category": "training",
-            "modality": "other",
-            "framework": []
-        }
-    },
-    {
-        "title": "Batch Image Generation using FLUX2",
-        "description": "A task to generate images in batch using the FLUX2 model.",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "batch-image-gen-flux",
-        "metadata": {
-            "category": "generation",
-            "modality": "vision",
-            "framework": [
-                ""
-            ]
-        }
-    },
-    {
-        "title": "HF Training with Evals",
-        "description": "A task to train a language model using the TRL library on a specified dataset with evaluation done using the EleutherAI Harness.",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "trl-training-evals",
-        "metadata": {
-            "category": "finetuning",
-            "modality": "text",
-            "framework": [
-                "huggingface"
-            ]
         }
     }
 ]
