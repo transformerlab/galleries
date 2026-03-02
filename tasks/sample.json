@@ -1,5 +1,16 @@
 [
   {
+    "title": "Batch Image Generation using FLUX2",
+    "description": "A task to generate images in batch using the FLUX2 model.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "batch-image-gen-flux",
+    "metadata": {
+      "category": "generation",
+      "modality": "vision",
+      "framework": [""]
+    }
+  },
+  {
     "title": "Sample Task Example",
     "description": "A sample PyTorch training task that clones a repository and runs training script",
     "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
@@ -19,39 +30,6 @@
       "category": "dataset-generation",
       "modality": "other",
       "framework": []
-    }
-  },
-  {
-    "title": "YOLO Object Detection Train Task Example",
-    "description": "A sample YOLO object detection train task that runs a YOLO object detection train script on COCO8 dataset for 10 epochs",
-    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-    "github_repo_dir": "yolo-train-task",
-    "metadata": {
-      "category": "training",
-      "modality": "vision",
-      "framework": ["yolo"]
-    }
-  },
-  {
-    "title": "MNIST Train Task",
-    "description": "A task to train a neural network on the MNIST dataset using PyTorch.",
-    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
-    "github_repo_dir": "mnist-train",
-    "metadata": {
-      "category": "training",
-      "modality": "other",
-      "framework": []
-    }
-  },
-  {
-    "title": "Batch Image Generation using FLUX2",
-    "description": "A task to generate images in batch using the FLUX2 model.",
-    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-    "github_repo_dir": "batch-image-gen-flux",
-    "metadata": {
-      "category": "generation",
-      "modality": "vision",
-      "framework": [""]
     }
   }
 ]
