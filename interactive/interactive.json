@@ -183,7 +183,7 @@
         "password": true
       }
     ],
-    "icon": "https://github.com/ml-explore/mlx-lm.png",
+    "icon": "https://github.com/ml-explore.png",
     "supported_accelerators": ["AppleSilicon"],
     "logic": {
       "core": "ADAPTER_FLAG=''; if [ -n \"$ADAPTER_PATH\" ]; then ADAPTER_FLAG=\"--adapter-path $ADAPTER_PATH\"; fi; ~/mlx-lm-venv/bin/python -m mlx_lm.server --model $MODEL_NAME $ADAPTER_FLAG --host 0.0.0.0 --port 8001 > /tmp/mlx-lm.log 2>&1 & sleep 5 && OPENAI_API_BASE_URL=http://127.0.0.1:8001/v1 OPENAI_API_KEY=dummy WEBUI_AUTH=false ~/mlx-lm-venv/bin/open-webui serve --host 0.0.0.0 --port 8080 > /tmp/openwebui.log 2>&1 & sleep 5",
