@@ -203,7 +203,7 @@
                 "password": true
             }
         ],
-        "icon": "https://github.com/ml-explore/mlx-lm.png",
+        "icon": "https://github.com/ml-explore.png",
         "supported_accelerators": [
             "AppleSilicon"
         ],
