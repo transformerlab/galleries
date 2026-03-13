@@ -376,5 +376,92 @@
                 "placeholder": "Waiting for Gradio to start. The URL will appear here once the connection is available..."
             }
         ]
+    },
+    {
+        "id": "mlx_lm",
+        "interactive_type": "mlx_lm",
+        "name": "MLX LM Server",
+        "description": "MLX LM OpenAI-compatible inference server for Apple Silicon (plus Open WebUI)",
+        "setup": "if ! command -v uv >/dev/null 2>&1; then curl -LsSf https://astral.sh/uv/install.sh | sh; fi && export PATH=\"$HOME/.local/bin:$HOME/.cargo/bin:$PATH\" && uv venv ~/mlx-lm-venv --seed --python 3.11 && . ~/mlx-lm-venv/bin/activate && uv pip install \"mlx-lm>=0.28.3\" open-webui",
+        "command": "ADAPTER_FLAG=''; if [ -n \"$ADAPTER_PATH\" ]; then ADAPTER_FLAG=\"--adapter-path $ADAPTER_PATH\"; fi; ~/mlx-lm-venv/bin/python -m mlx_lm.server --model $MODEL_NAME $ADAPTER_FLAG --host 0.0.0.0 --port 8001 > /tmp/mlx-lm.log 2>&1 & sleep 5 && OPENAI_API_BASE_URL=http://127.0.0.1:8001/v1 OPENAI_API_KEY=dummy WEBUI_AUTH=false ~/mlx-lm-venv/bin/open-webui serve --host 0.0.0.0 --port 8080 > /tmp/openwebui.log 2>&1 & sleep 5 && echo 'Local MLX LM API: http://localhost:8001' && echo 'Local Open WebUI: http://localhost:8080' && tail -f /tmp/mlx-lm.log /tmp/openwebui.log",
+        "env_parameters": [
+            {
+                "field_name": "Model Name",
+                "env_var": "MODEL_NAME",
+                "field_type": "str",
+                "required": true,
+                "placeholder": "e.g. mlx-community/Llama-3.2-3B-Instruct-4bit",
+                "help_text": "HuggingFace model identifier (must be an MLX-compatible model, e.g. from mlx-community)"
+            },
+            {
+                "field_name": "Adapter Path",
+                "env_var": "ADAPTER_PATH",
+                "field_type": "str",
+                "required": false,
+                "placeholder": "e.g. /path/to/adapter",
+                "help_text": "Optional: Path to a LoRA adapter to apply on top of the base model"
+            },
+            {
+                "field_name": "HuggingFace Token",
+                "env_var": "HF_TOKEN",
+                "field_type": "str",
+                "required": false,
+                "placeholder": "hf_...",
+                "help_text": "Optional: Required for private/gated models",
+                "password": true
+            }
+        ],
+        "icon": "https://github.com/ml-explore.png",
+        "supported_accelerators": [
+            "AppleSilicon"
+        ],
+        "logic": {
+            "core": "ADAPTER_FLAG=''; if [ -n \"$ADAPTER_PATH\" ]; then ADAPTER_FLAG=\"--adapter-path $ADAPTER_PATH\"; fi; ~/mlx-lm-venv/bin/python -m mlx_lm.server --model $MODEL_NAME $ADAPTER_FLAG --host 0.0.0.0 --port 8001 > /tmp/mlx-lm.log 2>&1 & sleep 5 && OPENAI_API_BASE_URL=http://127.0.0.1:8001/v1 OPENAI_API_KEY=dummy WEBUI_AUTH=false ~/mlx-lm-venv/bin/open-webui serve --host 0.0.0.0 --port 8080 > /tmp/openwebui.log 2>&1 & sleep 5",
+            "tail_logs": "tail -f /tmp/mlx-lm.log /tmp/openwebui.log"
+        },
+        "_comment_ports": "MLX LM API on 8001, Open WebUI on 8080.",
+        "ports": [
+            {
+                "port": 8001,
+                "label": "MLX LM API",
+                "protocol": "http"
+            },
+            {
+                "port": 8080,
+                "label": "Open WebUI",
+                "protocol": "http"
+            }
+        ],
+        "url_patterns": [
+            {
+                "value_key": "mlx_lm_url",
+                "regex": "Local MLX LM API:\\s*(https?://[^\\s]+)",
+                "group": 1
+            },
+            {
+                "value_key": "openwebui_url",
+                "regex": "Local Open WebUI:\\s*(https?://[^\\s]+)",
+                "group": 1
+            }
+        ],
+        "modal_title": "MLX LM Server Interactive Session",
+        "modal_subtitle": "Access your MLX LM API server through the URLs below.",
+        "instructions": [
+            {
+                "kind": "url",
+                "title": "Access MLX LM API Server",
+                "description": "Once ready, use the URL below to access your MLX LM server. The MLX LM server provides an OpenAI-compatible API endpoint.",
+                "value_key": "mlx_lm_url",
+                "placeholder": "Waiting for service to start. The URL will appear here once the connection is available...",
+                "example_template": "curl {{mlx_lm_url}}/v1/completions \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"model\": \"your-model-name\",\n    \"prompt\": \"Hello, world!\",\n    \"max_tokens\": 50\n  }'"
+            },
+            {
+                "kind": "url",
+                "title": "Access Open WebUI",
+                "description": "Use the URL below to open Open WebUI connected to this MLX LM server. This provides a browser-based chat UI backed by the same MLX LM API.",
+                "value_key": "openwebui_url",
+                "placeholder": "Waiting for the Open WebUI service to start..."
+            }
+        ]
     }
 ]
