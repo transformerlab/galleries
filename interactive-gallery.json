@@ -428,5 +428,68 @@
                 "placeholder": "Waiting for Gradio to start. The URL will appear here once the connection is available..."
             }
         ]
+    },
+    {
+        "id": "mlx_audio_tts",
+        "name": "MLX Audio TTS + Gradio",
+        "description": "Text-to-Speech using MLX Audio with Gradio UI for Apple Silicon",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "inference-mlx-audio-tts",
+        "env_parameters": [
+            {
+                "field_name": "Model Name",
+                "env_var": "MODEL_NAME",
+                "field_type": "str",
+                "required": true,
+                "placeholder": "e.g. mlx-community/Kokoro-82M-bf16",
+                "help_text": "HuggingFace model identifier for an MLX-compatible TTS model (e.g. mlx-community/Kokoro-82M-bf16, mlx-community/Dia-1.6B-fp16)"
+            },
+            {
+                "field_name": "Default Voice",
+                "env_var": "VOICE",
+                "field_type": "str",
+                "required": false,
+                "placeholder": "e.g. af_heart",
+                "help_text": "Default voice preset (e.g. af_heart, af_bella, am_adam). Leave empty for model default."
+            },
+            {
+                "field_name": "Language Code",
+                "env_var": "LANG_CODE",
+                "field_type": "str",
+                "required": false,
+                "placeholder": "e.g. a",
+                "help_text": "Language code: a=American English, b=British English, j=Japanese, z=Chinese, e=Spanish, f=French."
+            }
+        ],
+        "icon": "https://github.com/ml-explore.png",
+        "supported_accelerators": [
+            "AppleSilicon"
+        ],
+        "_comment_ports": "Gradio TTS UI on 7860.",
+        "ports": [
+            {
+                "port": 7860,
+                "label": "Gradio TTS UI",
+                "protocol": "http"
+            }
+        ],
+        "url_patterns": [
+            {
+                "value_key": "gradio_url",
+                "regex": "Running on (?:local URL:\\s*)?(https?://[^\\s]+)",
+                "group": 1
+            }
+        ],
+        "modal_title": "MLX Audio TTS + Gradio Interactive Session",
+        "modal_subtitle": "Access your MLX Audio text-to-speech interface through the URL below.",
+        "instructions": [
+            {
+                "kind": "url",
+                "title": "Access Gradio TTS UI",
+                "description": "Once ready, click the link below to open the Gradio text-to-speech interface.",
+                "value_key": "gradio_url",
+                "placeholder": "Waiting for Gradio to start. The URL will appear here once the connection is available..."
+            }
+        ]
     }
 ]
