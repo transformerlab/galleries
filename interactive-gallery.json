@@ -443,22 +443,6 @@
                 "required": true,
                 "placeholder": "e.g. mlx-community/Kokoro-82M-bf16",
                 "help_text": "HuggingFace model identifier for an MLX-compatible TTS model (e.g. mlx-community/Kokoro-82M-bf16, mlx-community/Dia-1.6B-fp16)"
-            },
-            {
-                "field_name": "Default Voice",
-                "env_var": "VOICE",
-                "field_type": "str",
-                "required": false,
-                "placeholder": "e.g. af_heart",
-                "help_text": "Default voice preset (e.g. af_heart, af_bella, am_adam). Leave empty for model default."
-            },
-            {
-                "field_name": "Language Code",
-                "env_var": "LANG_CODE",
-                "field_type": "str",
-                "required": false,
-                "placeholder": "e.g. a",
-                "help_text": "Language code: a=American English, b=British English, j=Japanese, z=Chinese, e=Spanish, f=French."
             }
         ],
         "icon": "https://github.com/ml-explore.png",
