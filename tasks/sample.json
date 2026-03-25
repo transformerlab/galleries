@@ -8,6 +8,18 @@
       "category": "generation",
       "modality": "vision",
       "framework": [""]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "RTX3090:1"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "accelerators": "7900XTX:1"
+        }
+      }
     }
   },
   {
@@ -19,6 +31,32 @@
       "category": "other",
       "modality": "other",
       "framework": []
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "cpus": "2",
+          "memory": "4"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "cpus": "2",
+          "memory": "4"
+        }
+      },
+      "AppleSilicon": {
+        "resources": {
+          "cpus": "2",
+          "memory": "4"
+        }
+      },
+      "cpu": {
+        "resources": {
+          "cpus": "2",
+          "memory": "4"
+        }
+      }
     }
   },
   {
@@ -30,6 +68,32 @@
       "category": "dataset-generation",
       "modality": "other",
       "framework": []
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "cpus": "2",
+          "memory": "4"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "cpus": "2",
+          "memory": "4"
+        }
+      },
+      "AppleSilicon": {
+        "resources": {
+          "cpus": "2",
+          "memory": "4"
+        }
+      },
+      "cpu": {
+        "resources": {
+          "cpus": "2",
+          "memory": "4"
+        }
+      }
     }
   }
 ]

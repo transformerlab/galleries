@@ -1,3 +1,4 @@
+[
   {
     "title": "YOLO Object Detection Train Task Example",
     "description": "A sample YOLO object detection train task that runs a YOLO object detection train script on COCO8 dataset for 10 epochs",
@@ -7,5 +8,18 @@
       "category": "training",
       "modality": "vision",
       "framework": ["yolo"]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "RTX3090:1"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "accelerators": "7900XTX:1"
+        }
+      }
     }
   }
+]
