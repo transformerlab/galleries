@@ -6,29 +6,6 @@
     "github_repo_dir": "distilkit-distillation",
     "setup": "git clone https://github.com/arcee-ai/distillkit.git && cd distillkit && pip install -e . && uv pip install transformers datasets huggingface-hub torch wandb",
     "run": "python ~/distilkit-distillation/train.py",
-    "envs": {
-      "WANDB_PROJECT": "distilkit-distillation",
-      "PYTHONUNBUFFERED": "1",
-      "HF_TOKEN": "{{secret._HF_TOKEN}}",
-      "WANDB_API_KEY": "{{secret._WANDB_API_KEY}}"
-    },
-    "parameters": {
-      "model": "Qwen/Qwen3-8B",
-      "sequence_length": 8192,
-      "train_dataset_repo": "arcee-ai/Qwen3-235B-Logits-Packed-8192",
-      "train_dataset_split": "train",
-      "teacher_kind": "dataset",
-      "vocab_size": 151936,
-      "k": 128,
-      "exact_k": 32,
-      "num_train_epochs": 1,
-      "per_device_train_batch_size": 1,
-      "gradient_accumulation_steps": 8,
-      "learning_rate": 0.000002,
-      "bf16": true,
-      "optim": "adamw_torch",
-      "gradient_checkpointing": true
-    },
     "metadata": {
       "category": "training",
       "modality": "text",
