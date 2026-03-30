@@ -8,6 +8,18 @@
       "category": "finetuning",
       "modality": "text",
       "framework": ["huggingface"]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "RTX3090:1"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "accelerators": "7900XTX:1"
+        }
+      }
     }
   }
 ]
