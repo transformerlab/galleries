@@ -1,54 +1,52 @@
 [
     {
-        "title": "Evaluation Task Example",
-        "description": "A sample evaluation task that runs an evaluation script and creates reports.",
+        "title": "HF Training with Evals",
+        "description": "A task to train a language model using the TRL library on a specified dataset with evaluation done using the EleutherAI Harness.",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "demo-eval-task",
+        "github_repo_dir": "trl-training-evals",
         "metadata": {
-            "category": "eval",
+            "category": "finetuning",
             "modality": "text",
             "framework": [
                 "huggingface"
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
-        "title": "Basic Evaluation Metrics",
-        "description": "Evaluating outputs of LLMs using basic defined metrics including regex patterns, word counts, and custom Python code.",
+        "title": "PPO Trainer with TRL",
+        "description": "A task to train a language model using the PPO algorithm from the TRL library on a specified dataset.",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "basic-evals-metrics",
+        "github_repo_dir": "ppo-train",
         "metadata": {
-            "category": "eval",
+            "category": "rlhf",
             "modality": "text",
             "framework": [
-                ""
+                "huggingface"
             ]
-        }
-    },
-    {
-        "title": "EleutherAI LM Evaluation Harness",
-        "description": "EleutherAI LM Evaluation Harness for evaluating language models on various benchmarks.",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "eleutherai-lm-evaluation-harness",
-        "metadata": {
-            "category": "eval",
-            "modality": "text",
-            "framework": [
-                "eleutherai"
-            ]
-        }
-    },
-    {
-        "title": "Objective Metrics Evaluation",
-        "description": "Evaluating outputs of LLMs using objective metrics powered by DeepEval Framework. Supports metrics like Rouge, BLEU, Exact Match, Quasi Exact Match, Quasi Contains, and BERT Score.",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "objective-eval",
-        "metadata": {
-            "category": "eval",
-            "modality": "text",
-            "framework": [
-                "deepeval"
-            ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
@@ -62,6 +60,18 @@
             "framework": [
                 "huggingface"
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
@@ -75,6 +85,18 @@
             "framework": [
                 "unsloth"
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
@@ -88,6 +110,18 @@
             "framework": [
                 "unsloth"
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
@@ -101,6 +135,18 @@
             "framework": [
                 "unsloth"
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
@@ -114,6 +160,18 @@
             "framework": [
                 "diffusers"
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
@@ -127,6 +185,18 @@
             "framework": [
                 "sentence-transformers"
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
@@ -140,6 +210,18 @@
             "framework": [
                 "huggingface"
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
@@ -153,6 +235,18 @@
             "framework": [
                 "nanochat"
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
@@ -166,6 +260,18 @@
             "framework": [
                 "lora"
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
@@ -179,6 +285,39 @@
             "framework": [
                 "trl"
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
+        }
+    },
+    {
+        "title": "MLX LoRA Train Task",
+        "description": "A LoRA fine-tuning trainer for LLMs using MLX with multi-GPU support.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "mlx_lora_train",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "mlx"
+            ]
+        },
+        "supportedAccelerators": {
+            "AppleSilicon": {
+                "resources": {
+                    "cpus": "2",
+                    "memory": "4"
+                }
+            }
         }
     },
     {
@@ -193,28 +332,41 @@
                 "jax",
                 "flax"
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
-        "title": "Sample Task Example",
-        "description": "A sample PyTorch training task that clones a repository and runs training script",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "new-task-test",
+        "title": "MNIST Train Task",
+        "description": "A task to train a neural network on the MNIST dataset using PyTorch.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
+        "github_repo_dir": "mnist-train",
         "metadata": {
-            "category": "other",
+            "category": "training",
             "modality": "other",
             "framework": []
-        }
-    },
-    {
-        "title": "Dataset Generation Task Example",
-        "description": "A sample dataset generation task that runs a dataset generation script and creates a dataset.",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "demo-generate-task",
-        "metadata": {
-            "category": "dataset-generation",
-            "modality": "other",
-            "framework": []
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
@@ -228,17 +380,161 @@
             "framework": [
                 "yolo"
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
-        "title": "MNIST Train Task",
-        "description": "A task to train a neural network on the MNIST dataset using PyTorch.",
-        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
-        "github_repo_dir": "mnist-train",
+        "title": "Evaluation Task Example",
+        "description": "A sample evaluation task that runs an evaluation script and creates reports.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "demo-eval-task",
         "metadata": {
-            "category": "training",
-            "modality": "other",
-            "framework": []
+            "category": "eval",
+            "modality": "text",
+            "framework": [
+                "huggingface"
+            ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "cpus": "2",
+                    "memory": "4"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "cpus": "2",
+                    "memory": "4"
+                }
+            },
+            "AppleSilicon": {
+                "resources": {
+                    "cpus": "2",
+                    "memory": "4"
+                }
+            },
+            "cpu": {
+                "resources": {
+                    "cpus": "2",
+                    "memory": "4"
+                }
+            }
+        }
+    },
+    {
+        "title": "Basic Evaluation Metrics",
+        "description": "Evaluating outputs of LLMs using basic defined metrics including regex patterns, word counts, and custom Python code.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "basic-evals-metrics",
+        "metadata": {
+            "category": "eval",
+            "modality": "text",
+            "framework": [
+                ""
+            ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
+        }
+    },
+    {
+        "title": "EleutherAI LM Evaluation Harness",
+        "description": "EleutherAI LM Evaluation Harness for evaluating language models on various benchmarks.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "eleutherai-lm-evaluation-harness",
+        "metadata": {
+            "category": "eval",
+            "modality": "text",
+            "framework": [
+                "eleutherai"
+            ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
+        }
+    },
+    {
+        "title": "Objective Metrics Evaluation",
+        "description": "Evaluating outputs of LLMs using objective metrics powered by DeepEval Framework. Supports metrics like Rouge, BLEU, Exact Match, Quasi Exact Match, Quasi Contains, and BERT Score.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "objective-eval",
+        "metadata": {
+            "category": "eval",
+            "modality": "text",
+            "framework": [
+                "deepeval"
+            ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
+        }
+    },
+    {
+        "title": "Video Generation with Wan2.1",
+        "description": "A video generation task using the Wan2.1-T2V model. Generates videos from text prompts using the Wan pipeline from Diffusers. Requires HF_TOKEN environment variable for model access.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "video-diffusion",
+        "metadata": {
+            "category": "generation",
+            "modality": "video",
+            "framework": [
+                "diffusers"
+            ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "A100:1"
+                }
+            }
+        }
+    },
+    {
+        "title": "Multinode Example Task",
+        "description": "A sample multinode task that just prints out node IPs on each node (2 node config).",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "multinode-example",
+        "metadata": {
+            "category": "training"
         }
     },
     {
@@ -252,19 +548,92 @@
             "framework": [
                 ""
             ]
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "accelerators": "RTX3090:1"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "accelerators": "7900XTX:1"
+                }
+            }
         }
     },
     {
-        "title": "HF Training with Evals",
-        "description": "A task to train a language model using the TRL library on a specified dataset with evaluation done using the EleutherAI Harness.",
+        "title": "Sample Task Example",
+        "description": "A sample PyTorch training task that clones a repository and runs training script",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
-        "github_repo_dir": "trl-training-evals",
+        "github_repo_dir": "sample-task",
         "metadata": {
-            "category": "finetuning",
-            "modality": "text",
-            "framework": [
-                "huggingface"
-            ]
+            "category": "other",
+            "modality": "other",
+            "framework": []
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "cpus": "2",
+                    "memory": "4"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "cpus": "2",
+                    "memory": "4"
+                }
+            },
+            "AppleSilicon": {
+                "resources": {
+                    "cpus": "2",
+                    "memory": "4"
+                }
+            },
+            "cpu": {
+                "resources": {
+                    "cpus": "2",
+                    "memory": "4"
+                }
+            }
+        }
+    },
+    {
+        "title": "Dataset Generation Task Example",
+        "description": "A sample dataset generation task that runs a dataset generation script and creates a dataset.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "demo-generate-task",
+        "metadata": {
+            "category": "dataset-generation",
+            "modality": "other",
+            "framework": []
+        },
+        "supportedAccelerators": {
+            "NVIDIA": {
+                "resources": {
+                    "cpus": "2",
+                    "memory": "4"
+                }
+            },
+            "AMD": {
+                "resources": {
+                    "cpus": "2",
+                    "memory": "4"
+                }
+            },
+            "AppleSilicon": {
+                "resources": {
+                    "cpus": "2",
+                    "memory": "4"
+                }
+            },
+            "cpu": {
+                "resources": {
+                    "cpus": "2",
+                    "memory": "4"
+                }
+            }
         }
     }
 ]

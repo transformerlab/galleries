@@ -8,6 +8,18 @@
       "category": "finetuning",
       "modality": "text",
       "framework": ["huggingface"]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "RTX3090:1"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "accelerators": "7900XTX:1"
+        }
+      }
     }
   },
   {
@@ -19,6 +31,18 @@
       "category": "finetuning",
       "modality": "text",
       "framework": ["unsloth"]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "RTX3090:1"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "accelerators": "7900XTX:1"
+        }
+      }
     }
   },
   {
@@ -30,6 +54,18 @@
       "category": "training",
       "modality": "text",
       "framework": ["unsloth"]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "RTX3090:1"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "accelerators": "7900XTX:1"
+        }
+      }
     }
   },
   {
@@ -43,6 +79,18 @@
             "framework": [
                 "unsloth"
             ]
+        },
+        "supportedAccelerators": {
+          "NVIDIA": {
+            "resources": {
+              "accelerators": "RTX3090:1"
+            }
+          },
+          "AMD": {
+            "resources": {
+              "accelerators": "7900XTX:1"
+            }
+          }
         }
     },
     {
@@ -56,6 +104,18 @@
             "framework": [
                 "diffusers"
             ]
+        },
+        "supportedAccelerators": {
+          "NVIDIA": {
+            "resources": {
+              "accelerators": "RTX3090:1"
+            }
+          },
+          "AMD": {
+            "resources": {
+              "accelerators": "7900XTX:1"
+            }
+          }
         }
     },
     {
@@ -69,6 +129,18 @@
             "framework": [
                 "sentence-transformers"
             ]
+        },
+        "supportedAccelerators": {
+          "NVIDIA": {
+            "resources": {
+              "accelerators": "RTX3090:1"
+            }
+          },
+          "AMD": {
+            "resources": {
+              "accelerators": "7900XTX:1"
+            }
+          }
         }
     },
     {
@@ -82,6 +154,18 @@
             "framework": [
                 "huggingface"
             ]
+        },
+        "supportedAccelerators": {
+          "NVIDIA": {
+            "resources": {
+              "accelerators": "RTX3090:1"
+            }
+          },
+          "AMD": {
+            "resources": {
+              "accelerators": "7900XTX:1"
+            }
+          }
         }
     },
      {
@@ -95,6 +179,18 @@
             "framework": [
                 "nanochat"
             ]
+        },
+        "supportedAccelerators": {
+          "NVIDIA": {
+            "resources": {
+              "accelerators": "RTX3090:1"
+            }
+          },
+          "AMD": {
+            "resources": {
+              "accelerators": "7900XTX:1"
+            }
+          }
         }
     },
     {
@@ -108,6 +204,18 @@
             "framework": [
                 "lora"
             ]
+        },
+        "supportedAccelerators": {
+          "NVIDIA": {
+            "resources": {
+              "accelerators": "RTX3090:1"
+            }
+          },
+          "AMD": {
+            "resources": {
+              "accelerators": "7900XTX:1"
+            }
+          }
         }
     },
     {
@@ -121,6 +229,39 @@
             "framework": [
                 "trl"
             ]
+        },
+        "supportedAccelerators": {
+          "NVIDIA": {
+            "resources": {
+              "accelerators": "RTX3090:1"
+            }
+          },
+          "AMD": {
+            "resources": {
+              "accelerators": "7900XTX:1"
+            }
+          }
+        }
+    },
+    {
+        "title": "MLX LoRA Train Task",
+        "description": "A LoRA fine-tuning trainer for LLMs using MLX with multi-GPU support.",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "mlx_lora_train",
+        "metadata": {
+            "category": "finetuning",
+            "modality": "text",
+            "framework": [
+                "mlx"
+            ]
+        },
+        "supportedAccelerators": {
+          "AppleSilicon": {
+            "resources": {
+              "cpus": "2",
+              "memory": "4"
+            }
+          }
         }
     }
 ]

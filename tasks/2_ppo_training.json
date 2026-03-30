@@ -1,0 +1,25 @@
+[
+  {
+    "title": "PPO Trainer with TRL",
+    "description": "A task to train a language model using the PPO algorithm from the TRL library on a specified dataset.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "ppo-train",
+    "metadata": {
+      "category": "rlhf",
+      "modality": "text",
+      "framework": ["huggingface"]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "RTX3090:1"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "accelerators": "7900XTX:1"
+        }
+      }
+    }
+  }
+]

@@ -8,6 +8,32 @@
       "category": "eval",
       "modality": "text",
       "framework": ["huggingface"]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "cpus": "2",
+          "memory": "4"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "cpus": "2",
+          "memory": "4"
+        }
+      },
+      "AppleSilicon": {
+        "resources": {
+          "cpus": "2",
+          "memory": "4"
+        }
+      },
+      "cpu": {
+        "resources": {
+          "cpus": "2",
+          "memory": "4"
+        }
+      }
     }
   },
   {
@@ -19,6 +45,18 @@
       "category": "eval",
       "modality": "text",
       "framework": [""]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "RTX3090:1"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "accelerators": "7900XTX:1"
+        }
+      }
     }
   },
   {
@@ -30,6 +68,18 @@
       "category": "eval",
       "modality": "text",
       "framework": ["eleutherai"]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "RTX3090:1"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "accelerators": "7900XTX:1"
+        }
+      }
     }
   },
   {
@@ -41,6 +91,18 @@
       "category": "eval",
       "modality": "text",
       "framework": ["deepeval"]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "RTX3090:1"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "accelerators": "7900XTX:1"
+        }
+      }
     }
   }
 ]

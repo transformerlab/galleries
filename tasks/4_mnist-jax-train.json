@@ -1,0 +1,50 @@
+[{
+    "title": "MNIST JAX Train Task",
+    "description": "A task to train a neural network on the MNIST dataset using JAX and Flax.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
+    "github_repo_dir": "mnist-jax-train",
+    "metadata": {
+        "category": "training",
+        "modality": "other",
+        "framework": [
+            "jax",
+            "flax"
+        ]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "RTX3090:1"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "accelerators": "7900XTX:1"
+        }
+      }
+    }
+},
+{
+    "title": "MNIST Train Task",
+    "description": "A task to train a neural network on the MNIST dataset using PyTorch.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples/",
+    "github_repo_dir": "mnist-train",
+    "metadata": {
+      "category": "training",
+      "modality": "other",
+      "framework": []
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "RTX3090:1"
+        }
+      },
+      "AMD": {
+        "resources": {
+          "accelerators": "7900XTX:1"
+        }
+      }
+    }
+  }
+]

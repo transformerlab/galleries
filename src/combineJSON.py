@@ -3,7 +3,9 @@ This script combines all the JSON files in the models, plugins, and datasets fol
 and publishes them to the root of the repository.
 """
 import os
+import sys
 import json
+import hashlib
 import shutil
 import yaml
 from jsonschema import validate, ValidationError
@@ -49,7 +51,7 @@ def read_and_combine_json_files(directory: str):
     for file in files_json:
         open_path = os.path.join(directory, file)
         display_name = file
-        with open(file=open_path, mode='r') as f:
+        with open(file=open_path, mode='r', encoding='utf-8') as f:
             print(f' - Processing {display_name}')
             if file.endswith('.yaml'):
                 file_contents = yaml.load(stream=f, Loader=yaml.FullLoader)
@@ -97,7 +99,7 @@ def read_and_combine_json_files(directory: str):
 
         for file in os.listdir(model_groups_dir):
             if file.endswith('.json'):
-                with open(os.path.join(model_groups_dir, file), 'r') as f:
+                with open(os.path.join(model_groups_dir, file), 'r', encoding='utf-8') as f:
                     try:
                         group_data = json.load(f)
                         group_data["models"] = []  # Reset
@@ -132,11 +134,31 @@ def read_and_combine_json_files(directory: str):
 read_and_combine_json_files(directory='models')
 
 # Update dataset sizes from HuggingFace before combining datasets
+# Skip if preset.json hasn't changed since last update (use --force-update-sizes to override)
 script_dir = os.path.dirname(os.path.abspath(__file__))
 galleries_dir = os.path.dirname(script_dir)
 preset_file = os.path.join(galleries_dir, "datasets", "preset.json")
+cache_file = os.path.join(galleries_dir, ".dataset_sizes_cache")
+force_update = "--force-update-sizes" in sys.argv
+
 if os.path.exists(preset_file):
-    update_dataset_sizes(preset_file, quiet=True)
+    with open(preset_file, 'rb') as f:
+        current_hash = hashlib.sha256(f.read()).hexdigest()
+
+    previous_hash = None
+    if os.path.exists(cache_file):
+        with open(cache_file, 'r') as f:
+            previous_hash = f.read().strip()
+
+    if force_update or current_hash != previous_hash:
+        update_dataset_sizes(preset_file, quiet=True)
+        # Re-hash after update since update_dataset_sizes modifies the file
+        with open(preset_file, 'rb') as f:
+            updated_hash = hashlib.sha256(f.read()).hexdigest()
+        with open(cache_file, 'w') as f:
+            f.write(updated_hash)
+    else:
+        print("⏭️  Skipping dataset size update (preset.json unchanged)")
 else:
     print(f"⚠️  Warning: Could not find preset.json at {preset_file}, skipping size update")
 

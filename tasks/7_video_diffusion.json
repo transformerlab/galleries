@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Video Generation with Wan2.1",
+    "description": "A video generation task using the Wan2.1-T2V model. Generates videos from text prompts using the Wan pipeline from Diffusers. Requires HF_TOKEN environment variable for model access.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "video-diffusion",
+    "metadata": {
+      "category": "generation",
+      "modality": "video",
+      "framework": [
+        "diffusers"
+      ]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "A100:1"
+        }
+      }
+    }
+  }
+]
