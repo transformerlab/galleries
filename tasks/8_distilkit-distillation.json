@@ -14,7 +14,6 @@
     },
     "parameters": {
       "model": "Qwen/Qwen3-8B",
-      "output_path": "./output",
       "sequence_length": 8192,
       "train_dataset_repo": "arcee-ai/Qwen3-235B-Logits-Packed-8192",
       "train_dataset_split": "train",

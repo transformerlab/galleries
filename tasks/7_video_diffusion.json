@@ -1,5 +1,6 @@
 [
   {
+    "name": "video-generation-wan-task",
     "title": "Video Generation with Wan2.1",
     "description": "A video generation task using the Wan2.1-T2V model. Generates videos from text prompts using the Wan pipeline from Diffusers. Requires HF_TOKEN environment variable for model access.",
     "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
@@ -17,6 +18,22 @@
           "accelerators": "A100:1"
         }
       }
-    }
+    },
+    "envs": {
+      "PYTHONUNBUFFERED": "1",
+      "HF_TOKEN": "{{secret._HF_TOKEN}}"
+    },
+    "setup": "uv pip install --upgrade pip && uv pip install git+https://github.com/huggingface/diffusers.git && uv pip install 'transformers>=4.41.0' 'peft>=0.17.0' accelerate ftfy huggingface-hub opencv-python transformerlab imageio-ffmpeg",
+    "parameters": {
+      "model_id": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+      "prompt": "A cat walks on the grass, realistic",
+      "negative_prompt": "",
+      "height": 480,
+      "width": 832,
+      "num_frames": 81,
+      "guidance_scale": 5.0,
+      "fps": 15
+    },
+    "run": "python ~/video-diffusion/main.py"
   }
 ]
