@@ -509,6 +509,15 @@
         }
     },
     {
+        "title": "Multinode Example Task",
+        "description": "A sample multinode task that just prints out node IPs on each node (2 node config).",
+        "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+        "github_repo_dir": "multinode-example",
+        "metadata": {
+            "category": "training"
+        }
+    },
+    {
         "title": "Batch Image Generation using FLUX2",
         "description": "A task to generate images in batch using the FLUX2 model.",
         "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
