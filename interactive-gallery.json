@@ -74,6 +74,13 @@
                 "protocol": "http"
             }
         ],
+        "url_patterns": [
+            {
+                "value_key": "jupyter_url",
+                "regex": "(https?://(?:localhost|127\\.0\\.0\\.1|0\\.0\\.0\\.0):8888[^\\s]*)",
+                "group": 1
+            }
+        ],
         "modal_title": "Jupyter Notebook Interactive Session",
         "modal_subtitle": "Access your Jupyter notebook through the URL below.",
         "instructions": [
@@ -147,6 +154,18 @@
                 "protocol": "http"
             }
         ],
+        "url_patterns": [
+            {
+                "value_key": "vllm_url",
+                "regex": "(https?://(?:localhost|127\\.0\\.0\\.1|0\\.0\\.0\\.0):8000[^\\s]*)",
+                "group": 1
+            },
+            {
+                "value_key": "openwebui_url",
+                "regex": "(https?://(?:localhost|127\\.0\\.0\\.1|0\\.0\\.0\\.0):8080[^\\s]*)",
+                "group": 1
+            }
+        ],
         "modal_title": "vLLM Server Interactive Session",
         "modal_subtitle": "Access your vLLM API server through the URL below.",
         "instructions": [
@@ -211,6 +230,18 @@
                 "port": 8080,
                 "label": "Open WebUI",
                 "protocol": "http"
+            }
+        ],
+        "url_patterns": [
+            {
+                "value_key": "ollama_url",
+                "regex": "(https?://(?:localhost|127\\.0\\.0\\.1|0\\.0\\.0\\.0):11434[^\\s]*)",
+                "group": 1
+            },
+            {
+                "value_key": "openwebui_url",
+                "regex": "(https?://(?:localhost|127\\.0\\.0\\.1|0\\.0\\.0\\.0):8080[^\\s]*)",
+                "group": 1
             }
         ],
         "modal_title": "Ollama Server Interactive Session",

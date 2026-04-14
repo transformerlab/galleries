@@ -8,11 +8,7 @@
     "github_repo_dir": "interactive-vscode",
     "env_parameters": [],
     "icon": "https://lab.cloud/img/icons/vscode.png",
-    "supported_accelerators": [
-      "cpu",
-      "NVIDIA",
-      "AMD"
-    ],
+    "supported_accelerators": ["cpu", "NVIDIA", "AMD"],
     "remoteOnly": true,
     "_comment_ports": "VS Code tunnel does not expose fixed local ports; the tunnel URL is generated dynamically by the VS Code CLI.",
     "ports": [],
@@ -60,18 +56,20 @@
       }
     ],
     "icon": "https://lab.cloud/img/icons/jupyter.png",
-    "supported_accelerators": [
-      "cpu",
-      "NVIDIA",
-      "AMD",
-      "AppleSilicon"
-    ],
+    "supported_accelerators": ["cpu", "NVIDIA", "AMD", "AppleSilicon"],
     "_comment_ports": "Jupyter Lab listens on port 8888. The ngrok tunnel exposes this port externally.",
     "ports": [
       {
         "port": 8888,
         "label": "Jupyter Lab",
         "protocol": "http"
+      }
+    ],
+    "url_patterns": [
+      {
+        "value_key": "jupyter_url",
+        "regex": "(https?://(?:localhost|127\\.0\\.0\\.1|0\\.0\\.0\\.0):8888[^\\s]*)",
+        "group": 1
       }
     ],
     "modal_title": "Jupyter Notebook Interactive Session",
@@ -129,10 +127,7 @@
         "password": true
       }
     ],
-    "supported_accelerators": [
-      "NVIDIA",
-      "AMD"
-    ],
+    "supported_accelerators": ["NVIDIA", "AMD"],
     "icon": "https://lab.cloud/img/icons/vllm.png",
     "_comment_ports": "vLLM API on 8000, Open WebUI on 8080. Both tunneled via ngrok.",
     "ports": [
@@ -145,6 +140,18 @@
         "port": 8080,
         "label": "Open WebUI",
         "protocol": "http"
+      }
+    ],
+    "url_patterns": [
+      {
+        "value_key": "vllm_url",
+        "regex": "(https?://(?:localhost|127\\.0\\.0\\.1|0\\.0\\.0\\.0):8000[^\\s]*)",
+        "group": 1
+      },
+      {
+        "value_key": "openwebui_url",
+        "regex": "(https?://(?:localhost|127\\.0\\.0\\.1|0\\.0\\.0\\.0):8080[^\\s]*)",
+        "group": 1
       }
     ],
     "modal_title": "vLLM Server Interactive Session",
@@ -194,12 +201,7 @@
       }
     ],
     "icon": "https://lab.cloud/img/icons/ollama.png",
-    "supported_accelerators": [
-      "cpu",
-      "NVIDIA",
-      "AMD",
-      "AppleSilicon"
-    ],
+    "supported_accelerators": ["cpu", "NVIDIA", "AMD", "AppleSilicon"],
     "_comment_ports": "Ollama API on 11434, Open WebUI on 8080. Both tunneled via ngrok.",
     "ports": [
       {
@@ -211,6 +213,18 @@
         "port": 8080,
         "label": "Open WebUI",
         "protocol": "http"
+      }
+    ],
+    "url_patterns": [
+      {
+        "value_key": "ollama_url",
+        "regex": "(https?://(?:localhost|127\\.0\\.0\\.1|0\\.0\\.0\\.0):11434[^\\s]*)",
+        "group": 1
+      },
+      {
+        "value_key": "openwebui_url",
+        "regex": "(https?://(?:localhost|127\\.0\\.0\\.1|0\\.0\\.0\\.0):8080[^\\s]*)",
+        "group": 1
       }
     ],
     "modal_title": "Ollama Server Interactive Session",
@@ -250,12 +264,7 @@
       }
     ],
     "icon": "https://lab.cloud/img/icons/ollama.png",
-    "supported_accelerators": [
-      "cpu",
-      "NVIDIA",
-      "AMD",
-      "AppleSilicon"
-    ],
+    "supported_accelerators": ["cpu", "NVIDIA", "AMD", "AppleSilicon"],
     "_comment_ports": "Ollama API on 11434, Gradio UI on 7860. Both tunneled via ngrok.",
     "ports": [
       {
@@ -306,12 +315,7 @@
       }
     ],
     "icon": "https://lab.cloud/img/icons/comfyui.png",
-    "supported_accelerators": [
-      "cpu",
-      "NVIDIA",
-      "AMD",
-      "AppleSilicon"
-    ],
+    "supported_accelerators": ["cpu", "NVIDIA", "AMD", "AppleSilicon"],
     "ports": [
       {
         "port": 8188,
@@ -357,11 +361,7 @@
       }
     ],
     "icon": "https://lab.cloud/img/icons/ssh.png",
-    "supported_accelerators": [
-      "cpu",
-      "NVIDIA",
-      "AMD"
-    ],
+    "supported_accelerators": ["cpu", "NVIDIA", "AMD"],
     "remoteOnly": true,
     "_comment_ports": "SSH runs on port 22, tunneled via ngrok TCP tunnel.",
     "ports": [
@@ -424,9 +424,7 @@
       }
     ],
     "icon": "https://github.com/ml-explore.png",
-    "supported_accelerators": [
-      "AppleSilicon"
-    ],
+    "supported_accelerators": ["AppleSilicon"],
     "_comment_ports": "MLX LM API on 8001, Gradio UI on 7860.",
     "ports": [
       {
@@ -476,9 +474,7 @@
       }
     ],
     "icon": "https://github.com/ml-explore.png",
-    "supported_accelerators": [
-      "AppleSilicon"
-    ],
+    "supported_accelerators": ["AppleSilicon"],
     "_comment_ports": "Gradio TTS UI on 7860.",
     "ports": [
       {
