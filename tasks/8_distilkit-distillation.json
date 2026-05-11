@@ -1,0 +1,25 @@
+[
+  {
+    "title": "DistilKit Distillation",
+    "description": "A task for distilling large language models using DistilKit. Trains a student model using knowledge distillation from a teacher model or dataset.",
+    "github_repo_url": "https://github.com/transformerlab/transformerlab-examples",
+    "github_repo_dir": "distilkit-distillation",
+    "setup": "git clone https://github.com/arcee-ai/distillkit.git && cd distillkit && pip install -e . && uv pip install transformers datasets huggingface-hub torch wandb",
+    "run": "python ~/distilkit-distillation/train.py",
+    "metadata": {
+      "category": "training",
+      "modality": "text",
+      "framework": [
+        "distilkit",
+        "huggingface"
+      ]
+    },
+    "supportedAccelerators": {
+      "NVIDIA": {
+        "resources": {
+          "accelerators": "A100:1"
+        }
+      }
+    }
+  }
+]
